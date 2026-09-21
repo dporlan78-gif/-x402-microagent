@@ -1,0 +1,13 @@
+{
+  "dryRun": true,
+  "maxSpendPerTaskUsd": 0,
+  "maxDailySpendUsd": 0,
+  "minExpectedProfitUsd": 0.001,
+  "maxRisk": 0.2,
+  "githubSearchQueries": [
+    "bounty reward",
+    "cash reward",
+    "paid issue",
+    "micro bounty"
+  ]
+}

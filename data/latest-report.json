@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T23:28:55.621Z",
+  "generatedAt": "2026-09-22T00:36:54.857Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -456,6 +456,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5533873306",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/135",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-22 00:17 UTC\n\n#### 1. [[Bounty proposal] fix(arxiv-app): exception text leaks into chat tool responses across 3 endpoints ($50 proposed)](https://github.com/BasedHardware/omi/issues/15588)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$50 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #15587.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-21T23:45:51Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 50,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 50,
+      "profitPerHourUsd": 600,
+      "eligible": true
+    },
+    {
       "id": "github-5532430894",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 17 New Opportunities",
@@ -579,20 +593,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 25,
       "profitPerHourUsd": 300,
-      "eligible": true
-    },
-    {
-      "id": "github-5516141699",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/120",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-20 06:07 UTC\n\n#### 1. [change-control: existing files mutated on push-master-aa961fff1562 [evt:46df238001]](https://github.com/kwizzlesurp10-ctrl/x402-mcp/issues/570)\n- **Project:** [kwizzlesurp10-ctrl/x402-mcp](https://github.com/kwizzlesurp10-ctrl/x402-mcp)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** event: push\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-20T04:13:41Z\n\n#### 2. [Document environment variables](https://github.com/xevrion-v2/agent-playground/issues/4)\n- **Project:** [xevrion-v2/agent-playground](https://github.com/xevrion-v2/agent-playground)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** Link this issue in the pull request description.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 35\n- **Competition:** 有竞争：57 条评论；35 个相关 open PR\n- **Original Issue comments:** 57\n- **Last updated:** 2026-09-20T05:45:19Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 50,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 50,
-      "profitPerHourUsd": 600,
       "eligible": true
     }
   ]

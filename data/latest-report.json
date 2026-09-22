@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T17:29:52.946Z",
+  "generatedAt": "2026-09-22T18:34:50.948Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -102,6 +102,20 @@
       "eligible": true
     },
     {
+      "id": "github-5437122699",
+      "source": "github",
+      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+24,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1e+24,
+      "profitPerHourUsd": 1.2e+25,
+      "eligible": true
+    },
+    {
       "id": "github-5399303366",
       "source": "github",
       "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
@@ -115,20 +129,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5437122699",
-      "source": "github",
-      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 1e+24,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1e+24,
-      "profitPerHourUsd": 1.2e+25,
-      "eligible": true
     },
     {
       "id": "github-5401256698",
@@ -145,11 +145,11 @@
       "eligible": true
     },
     {
-      "id": "github-5401256267",
+      "id": "github-5401256487",
       "source": "github",
-      "title": "[Bounty] [Bounty] Seed a paid CLI child bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1291",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1371\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid CLI child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xfffecb0fcd36477c5f6ecec808f6f0cf53819562\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete CLI coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0x7e8e455f2a454358383cb92b9db9f9e0cfa8e8a3e73caaf739a17a033ed641b6&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xfffecb0fcd36477c5f6ecec808f6f0cf53819562)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xfffecb0fcd36477c5f6ecec808f6f0cf53819562&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xfffecb0fcd36477c5f6ecec808f6f0cf53819562)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/333)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "title": "[Bounty] [Bounty] Seed a paid API child bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1293",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1368\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid API child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xbe17ef2d154265ebe3142d7bda5e99610d571455\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete API coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0x99f668fc2f432e156033fd2fda2c9e91edffa30cc598013b4f2aaebbfd2348e3&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xbe17ef2d154265ebe3142d7bda5e99610d571455)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xbe17ef2d154265ebe3142d7bda5e99610d571455&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xbe17ef2d154265ebe3142d7bda5e99610d571455)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/334)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 90,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -247,6 +247,21 @@
       "eligible": true
     },
     {
+      "id": "github-5538785464",
+      "source": "github",
+      "title": "[QUEUE][TO: CODING-RUNTIME] Kakashi V2 presentation polish + reward-screen projection",
+      "url": "https://github.com/NinjaSteveXer0/Shinobi-Chronicles/issues/302",
+      "description": "FROM: Stephen installed-browser validation\nTO: CODING / RUNTIME\nPRIORITY: QUEUE — explicitly NON-BLOCKING; do not interrupt current Alpha progression.\n\nCURRENT AUTHORITY\n\nStephen synced and tested current main:\n`0119fcfa8ac5f5a8d9a27100e23d3b3be7cae21c`\n\nManual installed-browser result:\n- Academy Kakashi V2 is playable start-to-finish on the tested route;\n- clean-room V2 presentation is visibly simpler than the retired layered implementation;\n- Stephen accepts that simpler presentation as the correct architectural direction for now.\n\nDEFERRED PRESENTATION FOLLOW-UP\n\n1. Visual polish\nThe V2 renderer is intentionally plainer after removal of the old layered presentation stack. Future polish may restore approved modern presentation quality, but only by extending the canonical V2 renderer/transition owners. Do NOT resurrect retired Kakashi modules or add overlay patch stacks.\n\n2. Reward-screen projection discrepancy\nStephen observed that reward details are visible on the Chronicle Receipt but are not visibly repeated on the separate rewards screen.\n\nImportant:\n- Stephen explicitly said this is an observation, not a request to fix immediately.\n- Do not change reward amounts, reward semantics, receipt authority, development authority, or commit timing without separate evidence.\n- When consumed later, first determine whether this is presentation-only projection drift or an actual reward-state defect.\n- Preserve the rule that Chronicle Receipt reads committed authority rather than recommitting rewards.\n\nThis queue item does NOT block the current Kakashi functional completion or the next Alpha Coding tranche.\n\nStephen relay: NONE.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5212047589",
       "source": "github",
       "title": "Add player kill cash rewards",
@@ -282,21 +297,6 @@
       "title": "Stage 2: scratch manager RL economic curriculum",
       "url": "https://github.com/BillXu21/Kaggriculture/issues/32",
       "description": "## Goal\nTest whether a random-init daily manager can improve monotonically through RL now that the deterministic opening/executor removes most primitive mechanical exploration.\n\nThis is manager-level scratch RL, not primitive-action-from-scratch learning.\n\n## Phase A — economic bootstrapping\n- random-init manager;\n- repaired deterministic opening + executor;\n- opponent pathway exists but opponent inputs are masked/zeroed;\n- optimize for cash/economic performance rather than W/L/T;\n- no competitive terminal reward initially;\n- strong cash/bank shaping is allowed;\n- first milestone: reliable ~50k-60k economic performance.\n\n## Phase B — transition\nAround ~50k-60k:\n- expose real opponent inputs gradually;\n- introduce competitive terminal reward;\n- anneal dense cash shaping;\n- add current/snapshot opposition.\n\n## Phase C — competitive\nAround ~70k-80k:\n- cash shaping should become small or zero;\n- competitive terminal reward becomes primary;\n- use current/current + current/snapshot self-play;\n- keep frozen BC control evaluation.\n\nThresholds are empirical curriculum gates, not hard mechanics rules.\n\n## Important\nDo not add a generic penalty for holding cash: terminal cash is valuable. The policy should learn opportunity cost and remaining-horizon ROI. Track final-day/late `BUY_LAND` and idle-capital behavior as diagnostics.\n\nRun this in parallel with the corrected-distribution BC->PPO mainline, not as a replacement for it.\n\n## Context\nSee `research/STAGE_2_DIRECTION_2026-08-30.md`.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5054308317",
-      "source": "github",
-      "title": "Reward flight search and redemption",
-      "url": "https://github.com/scottdensmore/travel-app/issues/130",
-      "description": "Split out of #70, where the task was \"implement reward search and redemption, or remove the control until the loyalty model supports it\". The control is removed; this tracks the feature.\n\n## Why it could not be wired up\n\nThe search form had a \"Search reward flights\" checkbox that was uncontrolled — no state, no handler, no effect. Wiring it up was not an option, because there is nothing behind it:\n\n- `PointsActivityService` records status points **earned** and reversed on cancellation\n- there is no spendable balance, no award chart, no redemption ledger, and no notion of a fare priced in points\n- `Flight.price` is a single cash price\n\nSo this is not a control fix. It is a pricing and loyalty model.\n\n## What it would need\n\n- A points balance distinct from status points, with its own ledger and expiry rules\n- Award availability per flight and cabin — typically a separate inventory bucket from cash fares, not a conversion of one\n- Award pricing (fixed chart, dynamic, or both) and the rules for taxes and carrier charges still payable in cash\n- Redemption at checkout, including partial pay-with-points if that is wanted\n- Refund and cancellation behaviour for redeemed bookings, which must return points rather than money (#76 covers the cash side)\n\n## Scope note\n\nThis is Phase 2 scale and overlaps #76 (cancellation and refund rules). It should not be started before the payment work in #75, since redemption is a payment method.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

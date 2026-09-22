@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T04:30:54.528Z",
+  "generatedAt": "2026-09-22T05:30:28.866Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 21,
+  "eligible": 22,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -145,11 +145,11 @@
       "eligible": true
     },
     {
-      "id": "github-5401256487",
+      "id": "github-5401256267",
       "source": "github",
-      "title": "[Bounty] [Bounty] Seed a paid API child bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1293",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1368\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid API child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xbe17ef2d154265ebe3142d7bda5e99610d571455\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete API coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0x99f668fc2f432e156033fd2fda2c9e91edffa30cc598013b4f2aaebbfd2348e3&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xbe17ef2d154265ebe3142d7bda5e99610d571455)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xbe17ef2d154265ebe3142d7bda5e99610d571455&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xbe17ef2d154265ebe3142d7bda5e99610d571455)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/334)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "title": "[Bounty] [Bounty] Seed a paid CLI child bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1291",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1371\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid CLI child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xfffecb0fcd36477c5f6ecec808f6f0cf53819562\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete CLI coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0x7e8e455f2a454358383cb92b9db9f9e0cfa8e8a3e73caaf739a17a033ed641b6&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xfffecb0fcd36477c5f6ecec808f6f0cf53819562)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xfffecb0fcd36477c5f6ecec808f6f0cf53819562&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xfffecb0fcd36477c5f6ecec808f6f0cf53819562)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/333)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 90,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -442,19 +442,18 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5355287711",
+      "id": "github-5378488450",
       "source": "github",
-      "title": "[BUG]: Video Playback issue - - Video on paid channel not playing",
-      "url": "https://github.com/yuliskov/SmartTube/issues/6177",
-      "description": "### Checklist\n\n- [x] I made sure that there are *no existing issues* - [open](https://github.com/yuliskov/SmartTube/issues) or [closed](https://github.com/yuliskov/SmartTube/issues?q=is%3Aissue+is%3Aclosed) - which I could contribute my information to.\n- [x] I have read the [FAQ](https://github.com/yuliskov/SmartTube#faq) and my problem isn't listed.\n- [x] I have taken the time to fill in all the required details. I understand that the bug report will be dismissed otherwise.\n- [x] This issue contains only one bug.\n\n### Affected version\n\n32.38\n\n### Device Type\n\nSmart TV/Box\n\n### Affected Android\n\nAndroid 11, 14\n\n### Steps to reproduce the bug\n\nSelect Channel\nSelect Video with Member Access\nBlack Screen and Loading Circle\n\n### Actual behavior\n\nI can't play a video on a paid channel where I'm a contributing creator - Members Only. The video seems to keep loading.\n\n### Additional information\n\nNvidia Shield 2019, Dune HD",
-      "rewardUsd": 0,
+      "title": "[PAID GA ONLY] Complete paid-reading activation controls and provider E2E proof",
+      "url": "https://github.com/kauanszpaiva/RoughBid/issues/23",
+      "description": "## Scope\n\nThis issue blocks **paid general availability only**. It does not block the founder demo or the controlled, budget-capped pilot.\n\n## Current verified state — 2026-09-19\n\n- Repository cleanup/release integration is complete: **0 open PRs** and this is the **only open RoughBid issue**.\n- PR #84 was merged to `main` as `d7b4b5ec2de2a4763860f847399fa00fc09b64c4`; low-cost DeepSeek/Kimi support exists but remains disabled by default, and private-plan DeepSeek usage remains behind its separate privacy gate.\n- PR #85 was fully validated and released to production as `f54e79de985b2e66e93c563f1caff2abffdff77f`.\n- Before #85 merge, the exact final head `f142bc09053eb0a5eafa7ab6d94a4e0966646479` passed CI #187 and Durable AI Plan Gate #234, including browser PDF/CSP, review/pricing boundary, paid-return recovery, and physical-page safe-resume checks.\n- Production Supabase migrations `plan_reading_ground_truth_reviews` and `plan_reading_finding_review_fk_indexes` are applied. RLS is active; authenticated users have SELECT-only table access; anon cannot execute the review RPC; the review RPC uses a fixed search_path and enforces authenticated workspace role/product-access checks. A real authenticated review was exercised inside a production transaction and rolled back cleanly.\n- Post-migration performance advisor returned to the pre-release baseline after the FK indexes were added. The new authenticated SECURITY DEFINER warning for `review_plan_reading_finding` is intentional because the authenticated RPC is the write boundary; anonymous execution is revoked and authorization is checked inside the function.\n- Exact production deployment `dpl_FrZyRFK4pwzFMbDVY9s7V3nf3rGC` is READY on merge `f54e79de985b2e66e93c563f1caff2abffdff77f`; `/`, `/app/`, `/api/health`, and `/api/capabilities` returned 200 and no runtime error clusters were observed after release.\n- Company AI usage metering and the global provider-spend circuit breaker are present in current main.\n- The controlled-pilot protections remain live: 60-day expiry, rolling project quota, file/attempt limits, and the approved US$100 aggregate reserve ceiling.\n- The exact founder/owner account remains **complimentary and pre-entitled**: it must not require Stripe Checkout, a paid subscription, purchased credits, or a paid project-reading entitlement to access/use RoughBid. Authentication, workspace/role authorization, tenant isolation, provider-spend controls, and technical safety limits still apply.\n- Paid GA remains **NOT ACTIVATED**.\n\n## Definition of done before paid GA\n\n### Commercial controls\n- [ ] Kauan approves exact project pricing values and a versioned `PROJECT_PRICING_VERSION`.\n- [ ] Revalidate margin floors including payment fees and observed provider usage.\n- [ ] Complete provider billing reconciliation so recorded usage/estimated cost can be compared with actual provider charges.\n- [x] Add a company-wide dollar circuit breaker for paid AI independent of job-count throttles.\n- [ ] Define terminal failure/credit/refund handling.\n\n### Stripe TEST + paid provider E2E\n- [ ] Configure an isolated RoughBid TEST webhook with only required events.\n- [ ] Prove quote → Checkout TEST → signed webhook → paid quote → reservation → real provider reading → persistence → human review.\n- [ ] Prove duplicate/replayed webhook idempotency.\n- [ ] Prove wrong amount, currency, mode and session cannot authorize a reading.\n- [ ] Prove changed PDF identity cannot consume a paid reading.\n- [ ] Prove provider failure respects retry/terminal-failure policy.\n- [ ] Exercise the supported large-file path and hard limits.\n\n### Release evidence\n- [ ] Exact final Paid-GA SHA has green required CI/build/security checks.\n- [ ] Exact Stripe configuration and webhook endpoint are verified against the intended account/environment.\n- [ ] Required production migrations for the **final Paid-GA candidate** are applied and post-migration security/RLS checks pass. (The #85 foundation migrations are already complete and verified.)\n- [ ] One explicitly approved KSP-owned paid canary succeeds end to end.\n- [ ] Re-run the paid-GA release gate and record GO/NO-GO.\n\n## Safety\n\nDo **not** turn paid GA on just because Vercel is READY, the controlled pilot works, or the RB.AI engineering foundation is production-live. Paid GA remains a separate commercial and operational release decision.\n",
+      "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 100,
+      "profitPerHourUsd": 1200,
+      "eligible": true
     },
     {
       "id": "github-5533873306",

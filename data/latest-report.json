@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T05:30:28.866Z",
+  "generatedAt": "2026-09-22T06:36:57.360Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 22,
+  "eligible": 21,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -442,18 +442,19 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5378488450",
+      "id": "github-5355287711",
       "source": "github",
-      "title": "[PAID GA ONLY] Complete paid-reading activation controls and provider E2E proof",
-      "url": "https://github.com/kauanszpaiva/RoughBid/issues/23",
-      "description": "## Scope\n\nThis issue blocks **paid general availability only**. It does not block the founder demo or the controlled, budget-capped pilot.\n\n## Current verified state — 2026-09-19\n\n- Repository cleanup/release integration is complete: **0 open PRs** and this is the **only open RoughBid issue**.\n- PR #84 was merged to `main` as `d7b4b5ec2de2a4763860f847399fa00fc09b64c4`; low-cost DeepSeek/Kimi support exists but remains disabled by default, and private-plan DeepSeek usage remains behind its separate privacy gate.\n- PR #85 was fully validated and released to production as `f54e79de985b2e66e93c563f1caff2abffdff77f`.\n- Before #85 merge, the exact final head `f142bc09053eb0a5eafa7ab6d94a4e0966646479` passed CI #187 and Durable AI Plan Gate #234, including browser PDF/CSP, review/pricing boundary, paid-return recovery, and physical-page safe-resume checks.\n- Production Supabase migrations `plan_reading_ground_truth_reviews` and `plan_reading_finding_review_fk_indexes` are applied. RLS is active; authenticated users have SELECT-only table access; anon cannot execute the review RPC; the review RPC uses a fixed search_path and enforces authenticated workspace role/product-access checks. A real authenticated review was exercised inside a production transaction and rolled back cleanly.\n- Post-migration performance advisor returned to the pre-release baseline after the FK indexes were added. The new authenticated SECURITY DEFINER warning for `review_plan_reading_finding` is intentional because the authenticated RPC is the write boundary; anonymous execution is revoked and authorization is checked inside the function.\n- Exact production deployment `dpl_FrZyRFK4pwzFMbDVY9s7V3nf3rGC` is READY on merge `f54e79de985b2e66e93c563f1caff2abffdff77f`; `/`, `/app/`, `/api/health`, and `/api/capabilities` returned 200 and no runtime error clusters were observed after release.\n- Company AI usage metering and the global provider-spend circuit breaker are present in current main.\n- The controlled-pilot protections remain live: 60-day expiry, rolling project quota, file/attempt limits, and the approved US$100 aggregate reserve ceiling.\n- The exact founder/owner account remains **complimentary and pre-entitled**: it must not require Stripe Checkout, a paid subscription, purchased credits, or a paid project-reading entitlement to access/use RoughBid. Authentication, workspace/role authorization, tenant isolation, provider-spend controls, and technical safety limits still apply.\n- Paid GA remains **NOT ACTIVATED**.\n\n## Definition of done before paid GA\n\n### Commercial controls\n- [ ] Kauan approves exact project pricing values and a versioned `PROJECT_PRICING_VERSION`.\n- [ ] Revalidate margin floors including payment fees and observed provider usage.\n- [ ] Complete provider billing reconciliation so recorded usage/estimated cost can be compared with actual provider charges.\n- [x] Add a company-wide dollar circuit breaker for paid AI independent of job-count throttles.\n- [ ] Define terminal failure/credit/refund handling.\n\n### Stripe TEST + paid provider E2E\n- [ ] Configure an isolated RoughBid TEST webhook with only required events.\n- [ ] Prove quote → Checkout TEST → signed webhook → paid quote → reservation → real provider reading → persistence → human review.\n- [ ] Prove duplicate/replayed webhook idempotency.\n- [ ] Prove wrong amount, currency, mode and session cannot authorize a reading.\n- [ ] Prove changed PDF identity cannot consume a paid reading.\n- [ ] Prove provider failure respects retry/terminal-failure policy.\n- [ ] Exercise the supported large-file path and hard limits.\n\n### Release evidence\n- [ ] Exact final Paid-GA SHA has green required CI/build/security checks.\n- [ ] Exact Stripe configuration and webhook endpoint are verified against the intended account/environment.\n- [ ] Required production migrations for the **final Paid-GA candidate** are applied and post-migration security/RLS checks pass. (The #85 foundation migrations are already complete and verified.)\n- [ ] One explicitly approved KSP-owned paid canary succeeds end to end.\n- [ ] Re-run the paid-GA release gate and record GO/NO-GO.\n\n## Safety\n\nDo **not** turn paid GA on just because Vercel is READY, the controlled pilot works, or the RB.AI engineering foundation is production-live. Paid GA remains a separate commercial and operational release decision.\n",
-      "rewardUsd": 100,
+      "title": "[BUG]: Video Playback issue - - Video on paid channel not playing",
+      "url": "https://github.com/yuliskov/SmartTube/issues/6177",
+      "description": "### Checklist\n\n- [x] I made sure that there are *no existing issues* - [open](https://github.com/yuliskov/SmartTube/issues) or [closed](https://github.com/yuliskov/SmartTube/issues?q=is%3Aissue+is%3Aclosed) - which I could contribute my information to.\n- [x] I have read the [FAQ](https://github.com/yuliskov/SmartTube#faq) and my problem isn't listed.\n- [x] I have taken the time to fill in all the required details. I understand that the bug report will be dismissed otherwise.\n- [x] This issue contains only one bug.\n\n### Affected version\n\n32.38\n\n### Device Type\n\nSmart TV/Box\n\n### Affected Android\n\nAndroid 11, 14\n\n### Steps to reproduce the bug\n\nSelect Channel\nSelect Video with Member Access\nBlack Screen and Loading Circle\n\n### Actual behavior\n\nI can't play a video on a paid channel where I'm a contributing creator - Members Only. The video seems to keep loading.\n\n### Additional information\n\nNvidia Shield 2019, Dune HD",
+      "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 100,
-      "profitPerHourUsd": 1200,
-      "eligible": true
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-5533873306",

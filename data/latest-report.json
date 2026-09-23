@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T17:30:16.134Z",
+  "generatedAt": "2026-09-23T18:34:32.874Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 19,
+  "eligible": 18,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -46,20 +46,6 @@
       "eligible": true
     },
     {
-      "id": "github-5505252302",
-      "source": "github",
-      "title": "[Bounty] EKEODKDE9DKE9DO BOUNTY",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1602",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/40\n\n### 漏洞描述 / Description\nEKEODKDE9DKE9DO BOUNTY\n\nI will pay eleventy gazillion PPPDUD dollars (~$10000000000000000000000000099987898000000) to whoever can write the most complicated, token-intensive PR possible. I mean lengthy descriptions, Brainf, meaningless essays, whatever wastes the most tokens for no apparent reason. Do something absurd and ambitious, like writing a simulation of the universe.\n\n1 PPPDUD dollar is equal to approximately 0 USD.\n\n### 积分币奖励 / Coin Reward\n12500000000000000077501080630097289936896 coins\n\n### 真实赏金（USD）/ Real Reward\n$10,000,000,000,000,000,000,000,000,099,987,898,000,000\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 1e+40,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1e+40,
-      "profitPerHourUsd": 1.2e+41,
-      "eligible": true
-    },
-    {
       "id": "github-5476627612",
       "source": "github",
       "title": "[Bounty] Bounty",
@@ -71,6 +57,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 100,
       "profitPerHourUsd": 1200,
+      "eligible": true
+    },
+    {
+      "id": "github-5505252302",
+      "source": "github",
+      "title": "[Bounty] EKEODKDE9DKE9DO BOUNTY",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1602",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/40\n\n### 漏洞描述 / Description\nEKEODKDE9DKE9DO BOUNTY\n\nI will pay eleventy gazillion PPPDUD dollars (~$10000000000000000000000000099987898000000) to whoever can write the most complicated, token-intensive PR possible. I mean lengthy descriptions, Brainf, meaningless essays, whatever wastes the most tokens for no apparent reason. Do something absurd and ambitious, like writing a simulation of the universe.\n\n1 PPPDUD dollar is equal to approximately 0 USD.\n\n### 积分币奖励 / Coin Reward\n12500000000000000077501080630097289936896 coins\n\n### 真实赏金（USD）/ Real Reward\n$10,000,000,000,000,000,000,000,000,099,987,898,000,000\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+40,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1e+40,
+      "profitPerHourUsd": 1.2e+41,
       "eligible": true
     },
     {
@@ -457,6 +457,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5557315481",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/150",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-23 17:51 UTC\n\n#### 1. [[Playtest][Jobs] Veridian ace bounty row names an ordinary pirate at 300 UU and keeps it after the kill](https://github.com/barryrwilson/Rimward/issues/269)\n- **Project:** [barryrwilson/Rimward](https://github.com/barryrwilson/Rimward)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [ ] Focused test; npm run build and npm run test:boot pass.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-23T16:08:57Z\n\n#### 2. [No existence pre-checks on FK-referencing ids across bounty/milestone/team create and claim paths — unknown UUIDs crash with an unhandled Postgres FK-violation 500](https://github.com/MergeFi/backend/issues/265)\n- **Project:** [MergeFi/backend](https://github.com/MergeFi/backend)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Fix: add a lightweight repo.exists({ where: { id } }) (or findOne) check for each of these ids before the insert/update, throwing BadRequestException/NotFoundException with a clear message identifying which id was invalid.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 6\n- **Last updated:** 2026-09-23T16:06:02Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5552764996",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
@@ -582,20 +597,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 50,
       "profitPerHourUsd": 600,
-      "eligible": true
-    },
-    {
-      "id": "github-5526118822",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/130",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-21 11:05 UTC\n\n#### 1. [Bounty submission channel for verified TextualTemplates 0.1.22 correctness report](https://github.com/InductiveComputerScience/pbTpl/issues/2)\n- **Project:** [InductiveComputerScience/pbTpl](https://github.com/InductiveComputerScience/pbTpl)\n- **Source:** GitHub Issue\n- **Reward:** $100\n- **Task:** Hello, I have an AI-assisted correctness report reproduced locally against the official standalone Java export of TextualTemplates 0.1.22, not the older GitHub mirror. GenerateDocument returns success while leaving a valid print tag uninstantiated in a normal web-page-generation template. The input uses only short ASCI\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、电子邮件\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 页面描述：The bounty page says reports should be emailed to martinfjohansen@progsbase.com. Before publishing the full details here, could you confirm whether a report submitted through this \n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-21T07:31:25Z\n\n#### 2. [[Bounty proposal] fix(clickup-app): exception text leaks into HTTP responses on 4 endpoints ($35 proposed)](https://github.com/BasedHardware/omi/issues/15361)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $35；US$35；$35.00 USD\n- **Task:** New testerrormessagesdontleak.py: drives all four handlers through a failing dependency carrying a sensitive-looking message and asserts the response is the fixed generic string, containing none of it. Registered in .github/checks-manifest.yaml, confirmed discovered and run. Full plugins/omi-clickup-app suite: 46/46 pa\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 3\n- **Last updated:** 2026-09-21T10:27:53Z\n\n#### 3. [[$30 BOUNTY] [Python] Expand backend API contract edge-case tests](https://github.com/jackjin1997/zeroeye/issues/1)\n- **Project:** [jackjin1997/zeroeye](https://github.com/jackjin1997/zeroeye)\n- **Source:** GitHub Issue\n- **Reward:** $30\n- **Task:** Include the generated diagnostic/build-.logd artifact from diagnostic/; include the matching diagnostic/build-.json if present.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 7\n- **Competition:** 有竞争：7 个相关 open PR\n- **Original Issue comments:** 10\n- **Last updated:** 2026-09-21T09:48:40Z\n\n#### 4. [[Bounty] low-latency runpod session support](https://github.com/ivrit-ai/ivrit-py/issues/11)\n- **Project:** [ivrit-ai/ivrit-py](https://github.com/ivrit-ai/ivrit-py)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Implement in a way that makes it easy to use other non-RunPod services in the future.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 6\n- **Last updated:** 2026-09-21T09:40:34Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 100,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 100,
-      "profitPerHourUsd": 1200,
       "eligible": true
     }
   ]

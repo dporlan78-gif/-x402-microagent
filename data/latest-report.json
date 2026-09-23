@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T11:30:43.122Z",
+  "generatedAt": "2026-09-23T12:36:58.332Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 20,
+  "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -46,20 +46,6 @@
       "eligible": true
     },
     {
-      "id": "github-5476627612",
-      "source": "github",
-      "title": "[Bounty] Bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1573",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/Boxy-gh/issues/143\n\n### 漏洞描述 / Description\nBounty\n\nI will pay $100 for whoever can implement a feature in Boxy's code review bot that pre-emptively closes the PRs of people who aren't in the organization and aren't explicitly whitelisted, and then pings @OmniBlocks/coders to reopen before a review.\n\nAdditionally, to get a bonus payment of $200, you may implement a feature that makes Boxy reject PRs that attempt to remove humor, and accept ones that try to add it.\n\nWill pay in BTC, XMR, SOL, any centralized financial service, cash, gold, goats, whatever. Instant delivery or <sup>I'll take</sup> your money back. All of it. Even the money you had before.\n\n<sup>Disclaimer: Bounties to be paid in PPPDUD Dollars. Value: 0.00 USD per PPPDUD dollar.</sup>\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 100,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 100,
-      "profitPerHourUsd": 1200,
-      "eligible": true
-    },
-    {
       "id": "github-5505252302",
       "source": "github",
       "title": "[Bounty] EKEODKDE9DKE9DO BOUNTY",
@@ -71,6 +57,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 1e+40,
       "profitPerHourUsd": 1.2e+41,
+      "eligible": true
+    },
+    {
+      "id": "github-5476627612",
+      "source": "github",
+      "title": "[Bounty] Bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1573",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/Boxy-gh/issues/143\n\n### 漏洞描述 / Description\nBounty\n\nI will pay $100 for whoever can implement a feature in Boxy's code review bot that pre-emptively closes the PRs of people who aren't in the organization and aren't explicitly whitelisted, and then pings @OmniBlocks/coders to reopen before a review.\n\nAdditionally, to get a bonus payment of $200, you may implement a feature that makes Boxy reject PRs that attempt to remove humor, and accept ones that try to add it.\n\nWill pay in BTC, XMR, SOL, any centralized financial service, cash, gold, goats, whatever. Instant delivery or <sup>I'll take</sup> your money back. All of it. Even the money you had before.\n\n<sup>Disclaimer: Bounties to be paid in PPPDUD Dollars. Value: 0.00 USD per PPPDUD dollar.</sup>\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 100,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 100,
+      "profitPerHourUsd": 1200,
       "eligible": true
     },
     {
@@ -457,6 +457,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5552764996",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/148",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-23 11:32 UTC\n\n#### 1. [[Workspace]: Exercise shipped AW in isolated consumer environments](https://github.com/rickardvh/agentic-workspace/issues/3600)\n- **Project:** [rickardvh/agentic-workspace](https://github.com/rickardvh/agentic-workspace)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Source inspected at a43ab87de8414190790da83cc567cd9360448168: the six-target release workflow already builds/installs exact artifacts; firstcontact.py supplies one deterministic happy path; the agent harness has one Codex sandbox template, a v0.4.3 fixture dependency, and active CLI-first/retired-contract expectations.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：几十分钟到数小时\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-23T10:54:15Z\n\n#### 2. [Feasibility: a feeless payout rail beside Circle Credits for cleared task earnings](https://github.com/txw842lkj-cmd/silicon-circle-skill/issues/3)\n- **Project:** [txw842lkj-cmd/silicon-circle-skill](https://github.com/txw842lkj-cmd/silicon-circle-skill)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Reusable pieces that already exist (nothing to build from scratch)\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** PayPal、支付宝\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：几十分钟到数小时\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-23T07:28:46Z\n\n#### 3. [POST /api/proposals endpoint missing authentication middleware (reissue via #743)](https://github.com/SecureBananaLabs/bug-bounty/issues/2773)\n- **Project:** [SecureBananaLabs/bug-bounty](https://github.com/SecureBananaLabs/bug-bounty)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Expected behavior: Require authMiddleware before postProposal.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 10\n- **Competition:** 有竞争：10 个相关 open PR\n- **Original Issue comments:** 9\n- **Last updated:** 2026-09-23T09:43:30Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5549478271",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 8 New Opportunities",
@@ -581,20 +596,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 100,
       "profitPerHourUsd": 1200,
-      "eligible": true
-    },
-    {
-      "id": "github-5523072082",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 8 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/128",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-21 05:20 UTC\n\n#### 1. [Settlement request for merged $90 bounty contribution from woahwhattheheck](https://github.com/Lilly-Protocol/lily-sdk/issues/577)\n- **Project:** [Lilly-Protocol/lily-sdk](https://github.com/Lilly-Protocol/lily-sdk)\n- **Source:** GitHub Issue\n- **Reward:** $90；US$90\n- **Task:** Settlement request for merged $90 bounty contribution from woahwhattheheck\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** Stripe\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-21T02:44:13Z\n\n#### 2. [[Bounty proposal] fix(web): memory insights count an evening memory on the next day ($25 proposed)](https://github.com/BasedHardware/omi/issues/15320)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** Fix with test in #15321. Proposing this as a paid bounty ($25) as per the contribution guide, @kodjima33.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-21T02:19:38Z\n\n#### 3. [[Bounty proposal] fix(backend): folder tab keeps counting a deleted conversation ($25 proposed)](https://github.com/BasedHardware/omi/issues/15318)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** Fix with test in #15319. Proposing this as a paid bounty ($25) as per the contribution guide, @kodjima33.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-21T02:07:43Z\n\n#### 4. [[Bounty proposal] fix(backend): reminder still fires for a task deleted from its conversation ($25 proposed)](https://github.com/BasedHardware/omi/issues/15316)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** Fix with test in #15317. Proposing this as a paid bounty ($25) as per the contribution guide, @kodjima33.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-21T02:01:56Z\n\n#### 5. [[Bounty proposal] fix(app): a failed capture-gaps read hides the Not captured rows for good ($25 proposed)](https://github.com/BasedHardware/omi/issues/15314)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** Fix with test in #15315. Proposing this as a paid bounty ($25) as per the contribution guide, @kodjima33.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-21T01:55:50Z\n\n#### 6. [[Bounty proposal] fix(app): reordering a completed task rewrites its due date ($25 proposed)](https://github.com/BasedHardware/omi/issues/15311)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** Fix with test in #15312. Proposing this as a paid bounty ($25) as per the contribution guide, @kodjima33.\n- **Deadline:** [Bounty proposal] fix(app): reordering a completed task rewrites its due date ($25 proposed)\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 页面描述：A completed task with no due date created more than 7 days ago hits the same thing from the other side: the list shows it under No deadline, the handler reads Overdue, and reorderi\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-21T01:40:55Z\n\n#### 7. [[Bounty proposal] fix(backend): accepting a suggested task never schedules its reminder ($25 proposed)](https://github.com/BasedHardware/omi/issues/15307)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** Fix with test in #15308. Proposing this as a paid bounty ($25) as per the contribution guide, @kodjima33.\n- **Deadline:** Accept a suggested task that has a due date and the task is created with it, but no reminder is ever armed, so the notification never comes. Accepting a suggestion that moves a due date or completes an existing task leaves the old reminder armed instead, so it fires at the wrong \n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-21T01:23:04Z\n\n#### 8. [[Bounty proposal] fix(backend): Apple Health keeps serving last month's workouts as fresh ($25 proposed)](https://github.com/BasedHardware/omi/issues/15305)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** Fix with test in #15306. Proposing this as a paid bounty ($25) as per the contribution guide, @kodjima33.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-21T01:15:53Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 90,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 90,
-      "profitPerHourUsd": 1080,
       "eligible": true
     }
   ]

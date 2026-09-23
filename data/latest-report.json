@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T19:29:50.931Z",
+  "generatedAt": "2026-09-23T20:30:57.011Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -352,6 +352,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5558865479",
+      "source": "github",
+      "title": "paid_status: add boundary test for already-paid transition",
+      "url": "https://github.com/CemAyyildiz/Quittance/issues/590",
+      "description": "## Goal\nLock the documented error/rejection path when marking an invoice that is already paid.\n\n## Context\n`contracts/paid_status` exposes paid-status helpers; edge coverage for double-mark / already-paid should be explicit in tests.\n\n## Acceptance criteria\n- [ ] One `#[test]` covering the already-paid / invalid transition path per crate API\n- [ ] Comment documents expected error or panic message\n- [ ] `cargo test` for the crate package passes\n\n## Out of scope\n- Changing production transition semantics\n- Editing backend invoice-status helpers\n\n## Conflict rule\nOnly edit the crate test module under `contracts/paid_status/`.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5331032008",
       "source": "github",
       "title": "[CI failure] Paid OpenRouter on issue-355",
@@ -432,21 +447,6 @@
       "title": "[ISSUE-035] Admin order API/state machine",
       "url": "https://github.com/hoanghan-dev/techzone-sba/issues/35",
       "description": "## Objective\nImplement admin order filtering and validated order state transitions.\n\n## Metadata\n| Field | Value |\n|---|---|\n| Custom ID | `ISSUE-035` |\n| Type | `Backend/Orders` |\n| Primary owner | `M5` |\n| Reviewer | `M3` |\n| Module | `MOD-05` |\n| Story points | `3` |\n| Requirements | `R03`, `R05`, `R06`, `R08` |\n| Phase | `-` |\n\n## Prerequisites\nISSUE-032\n\n## Work\n- GET admin orders with status/paymentStatus/search.\n- PATCH status.\n- Valid PROCESSING→PENDING→COMPLETED/CANCELED.\n- Non-COD completion requires PAID.\n- COD completion auto PAID.\n- Cancel PROCESSING unpaid restocks.\n- Completed cannot cancel.\n\n## Acceptance Criteria\n- [ ] Invalid transitions are rejected.\n- [ ] Payment prerequisite is enforced.\n- [ ] COD completion updates payment.\n\n## Evidence\n- State-machine API tests.\n\n## Dependencies\n- [ISSUE-032](https://github.com/hoanghan-dev/techzone-sba/issues/32)\n\n---\n*Imported automatically from the project backlog. Custom ID is preserved in the title because GitHub assigns its own issue number.*\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5409486562",
-      "source": "github",
-      "title": "login issues",
-      "url": "https://github.com/nab138/iloader/issues/682",
-      "description": "### Describe the issue\n\n● Failed to log in to Apple ID\n ├ /Users/runner/.cargo/git/checkouts/isideload-20730d57cf5f2f1f/3d42025/isideload/src/auth/apple_account.rs:182\n │\n ● Failed to send initial login request\n ├ /Users/runner/.cargo/git/checkouts/isideload-20730d57cf5f2f1f/3d42025/isideload/src/auth/apple_account.rs:713\n │\n ● Received error response from grandslam\n ├ /Users/runner/.cargo/git/checkouts/isideload-20730d57cf5f2f1f/3d42025/isideload/src/auth/grandslam.rs:151\n │\n ● HTTP status server error (503 Service Temporarily Unavailable) for url (https://gsa.apple.com/grandslam/GsService2)\n ╰ /Users/runner/.cargo/git/checkouts/isideload-20730d57cf5f2f1f/3d42025/isideload/src/auth/grandslam.rs:151\n\n### Error message\n\n_No response_\n\n### Please read and follow any suggestions iloader gives before making this issue.\n\n- [x] I followed ALL suggestions given by iloader\n\n### Computer OS\n\nMacOs\n\n### iloader version\n\n2.3.1\n\n### What distribution of iloader did you download?\n\n.dmg (macOS)\n\n### Please certify that if you use Windows, you have iTunes or Apple Mobile Devices installed, or if you use Linux, you have usbmuxd installed.\n\n- [x] I certify the above is true\n\n### iOS Version\n\n26.1\n\n### Phone model\n\niPhone 17 Pro Max\n\n### Please certify the following about your iPhone/iPad:\n\n- [x] My phone is in developer mode\n- [x] My phone has a passcode set\n- [x] My phone is connected to my computer over USB\n\n### Do you have a paid or free developer account?\n\nPaid\n\n### Two-factor auth (2FA) type\n\nTrusted Device",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

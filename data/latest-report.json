@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T06:37:34.649Z",
+  "generatedAt": "2026-09-23T07:31:57.914Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -367,21 +367,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5549343784",
-      "source": "github",
-      "title": "reservation issue",
-      "url": "https://github.com/Balakrishna-kini18/FatFox-issue-/issues/2",
-      "description": "## Issue Title\n\nTable status remains **“Reserved”** after reservation and payment are completed\n\n## Module / Page\n\nTable Reservation / Admin Dashboard\n\n## Issue Type\n\n* [x] Bug\n* [ ] UI/UX issue\n* [x] Functional issue\n* [ ] API/backend issue\n* [ ] Validation issue\n* [ ] Other\n\n## Description\n\nWhen a client reserves a table, attends at the scheduled time, and completes the payment, the table should automatically be marked as **“Cleared”** or **“Available.”**\n\nHowever, after the bill amount is paid and the reservation is completed, the table status continues to display as **“Reserved”** instead of being cleared.\n\n## Steps to Reproduce\n\n1. Reserve a table from the client side.\n2. Attend the reservation at the scheduled time.\n3. Complete the required order/actions.\n4. Pay the final bill amount.\n5. Check the table status in the Admin Dashboard.\n\n## Expected Result\n\nAfter the client completes the reservation and pays the bill, the table should automatically change from **“Reserved”** to **“Cleared”** or **“Available.”**\n\n## Actual Result\n\nAfter the bill is paid and the reservation is completed, the table still displays the status as **“Reserved.”**\n\n## Screenshot / Screen Recording\n\n<!-- Attach screenshot(s) or screen recording here. -->\n\n<!-- If possible, highlight the table showing “Reserved” after the payment is completed. -->\n\n## Additional Information\n\n<!-- Add the table number, reservation ID, order/bill ID, or any other relevant information here. -->\n\n## Checklist\n\n* [ ] I checked that this issue is not already reported.\n* [ ] I included steps to reproduce.\n* [ ] I attached a screenshot or recording where applicable.\n* [ ] I provided the expected and actual results.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5546115821",
       "source": "github",
       "title": "feat(config): a paid IDE declared without a name resolves to `vscode-paid`, 8.b's paid-default IDE",
@@ -447,6 +432,21 @@
       "title": "[ISSUE-034] Order history/cancel + atomic restock",
       "url": "https://github.com/hoanghan-dev/techzone-sba/issues/34",
       "description": "## Objective\nImplement order history/details/cancellation with transactional restock and payment failure.\n\n## Metadata\n| Field | Value |\n|---|---|\n| Custom ID | `ISSUE-034` |\n| Type | `Backend+Frontend/Orders` |\n| Primary owner | `M5` |\n| Reviewer | `M2` |\n| Module | `MOD-05` |\n| Story points | `4` |\n| Requirements | `R01`, `R02`, `R03`, `R05`, `R08` |\n| Phase | `-` |\n\n## Prerequisites\nISSUE-032\n\n## Work\n- increaseStock.\n- GET /api/orders and /api/orders/{id}.\n- Cancel only own PROCESSING unpaid.\n- Set CANCELED/cancel_reason, increase stock, pending payments FAILED.\n- PAID order cancellation -> 400.\n- React /orders and /orders/:id with 4-step stepper and cancel modal.\n\n## Acceptance Criteria\n- [ ] Cancellation restores stock atomically.\n- [ ] Paid order cannot be canceled.\n- [ ] Order history/detail works.\n\n## Evidence\n- API + frontend E2E tests.\n\n## Dependencies\n- [ISSUE-032](https://github.com/hoanghan-dev/techzone-sba/issues/32)\n\n---\n*Imported automatically from the project backlog. Custom ID is preserved in the title because GitHub assigns its own issue number.*\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5547712861",
+      "source": "github",
+      "title": "[Maintenance] OpenCode maintenance issues detected",
+      "url": "https://github.com/dianlight/opencode-modelselect-action/issues/46",
+      "description": "# OpenCode Maintenance Report\n\n> Automatically detected by the `opencode-maintenance` workflow.\n> Run date: 2026-09-23\n\n## ✅ Tasks\n\nCheck the boxes below to trigger OpenCode. The workflow will automatically detect checked tasks and open PRs with the ranking adjustments.\n\n> Requires **OWNER / MEMBER / COLLABORATOR** permissions (verified via the collaborator permission API).\n\n### 🔍 Models Missing Score Data\n\n- [ ] **Search the web for missing score data** — Research and add scores for the models listed below that have no data on LiveBench or in the static fallback. Update `config/model-scores.yaml` with the found scores.\n\n- [ ] **Correct the model coverage issues** — fix the models listed under Model Coverage Issues below (remove stale fallback entries now on LiveBench, add scores for models missing data). Update only `config/model-scores.yaml` and open a PR containing only those coverage changes.\n\n---\n\n## 📋 Model Coverage Issues\n\n### Models Missing Score Data\n\nThe following OpenCode models have **no score data** from LiveBench or the static fallback. Consider adding them to `config/model-scores.yaml`.\n\n| Model | Tier |\n|-------|------|\n| mimo-v2.6-flash | Go (Paid) |\n| mimo-v2.6-flash-free | Free |\n| mimo-v2.6-pro | Go (Paid) |\n\n---\n*Generated by `opencode-maintenance` workflow.*\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

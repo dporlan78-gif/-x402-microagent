@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T13:32:20.426Z",
+  "generatedAt": "2026-09-23T14:32:27.533Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -46,20 +46,6 @@
       "eligible": true
     },
     {
-      "id": "github-5505252302",
-      "source": "github",
-      "title": "[Bounty] EKEODKDE9DKE9DO BOUNTY",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1602",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/40\n\n### 漏洞描述 / Description\nEKEODKDE9DKE9DO BOUNTY\n\nI will pay eleventy gazillion PPPDUD dollars (~$10000000000000000000000000099987898000000) to whoever can write the most complicated, token-intensive PR possible. I mean lengthy descriptions, Brainf, meaningless essays, whatever wastes the most tokens for no apparent reason. Do something absurd and ambitious, like writing a simulation of the universe.\n\n1 PPPDUD dollar is equal to approximately 0 USD.\n\n### 积分币奖励 / Coin Reward\n12500000000000000077501080630097289936896 coins\n\n### 真实赏金（USD）/ Real Reward\n$10,000,000,000,000,000,000,000,000,099,987,898,000,000\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 1e+40,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1e+40,
-      "profitPerHourUsd": 1.2e+41,
-      "eligible": true
-    },
-    {
       "id": "github-5476627612",
       "source": "github",
       "title": "[Bounty] Bounty",
@@ -71,6 +57,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 100,
       "profitPerHourUsd": 1200,
+      "eligible": true
+    },
+    {
+      "id": "github-5505252302",
+      "source": "github",
+      "title": "[Bounty] EKEODKDE9DKE9DO BOUNTY",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1602",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/40\n\n### 漏洞描述 / Description\nEKEODKDE9DKE9DO BOUNTY\n\nI will pay eleventy gazillion PPPDUD dollars (~$10000000000000000000000000099987898000000) to whoever can write the most complicated, token-intensive PR possible. I mean lengthy descriptions, Brainf, meaningless essays, whatever wastes the most tokens for no apparent reason. Do something absurd and ambitious, like writing a simulation of the universe.\n\n1 PPPDUD dollar is equal to approximately 0 USD.\n\n### 积分币奖励 / Coin Reward\n12500000000000000077501080630097289936896 coins\n\n### 真实赏金（USD）/ Real Reward\n$10,000,000,000,000,000,000,000,000,099,987,898,000,000\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+40,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1e+40,
+      "profitPerHourUsd": 1.2e+41,
       "eligible": true
     },
     {

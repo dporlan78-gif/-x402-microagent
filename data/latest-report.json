@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T22:29:12.686Z",
+  "generatedAt": "2026-09-23T23:27:22.304Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 18,
+  "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -46,20 +46,6 @@
       "eligible": true
     },
     {
-      "id": "github-5476627612",
-      "source": "github",
-      "title": "[Bounty] Bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1573",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/Boxy-gh/issues/143\n\n### 漏洞描述 / Description\nBounty\n\nI will pay $100 for whoever can implement a feature in Boxy's code review bot that pre-emptively closes the PRs of people who aren't in the organization and aren't explicitly whitelisted, and then pings @OmniBlocks/coders to reopen before a review.\n\nAdditionally, to get a bonus payment of $200, you may implement a feature that makes Boxy reject PRs that attempt to remove humor, and accept ones that try to add it.\n\nWill pay in BTC, XMR, SOL, any centralized financial service, cash, gold, goats, whatever. Instant delivery or <sup>I'll take</sup> your money back. All of it. Even the money you had before.\n\n<sup>Disclaimer: Bounties to be paid in PPPDUD Dollars. Value: 0.00 USD per PPPDUD dollar.</sup>\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 100,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 100,
-      "profitPerHourUsd": 1200,
-      "eligible": true
-    },
-    {
       "id": "github-5505252302",
       "source": "github",
       "title": "[Bounty] EKEODKDE9DKE9DO BOUNTY",
@@ -71,6 +57,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 1e+40,
       "profitPerHourUsd": 1.2e+41,
+      "eligible": true
+    },
+    {
+      "id": "github-5476627612",
+      "source": "github",
+      "title": "[Bounty] Bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1573",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/Boxy-gh/issues/143\n\n### 漏洞描述 / Description\nBounty\n\nI will pay $100 for whoever can implement a feature in Boxy's code review bot that pre-emptively closes the PRs of people who aren't in the organization and aren't explicitly whitelisted, and then pings @OmniBlocks/coders to reopen before a review.\n\nAdditionally, to get a bonus payment of $200, you may implement a feature that makes Boxy reject PRs that attempt to remove humor, and accept ones that try to add it.\n\nWill pay in BTC, XMR, SOL, any centralized financial service, cash, gold, goats, whatever. Instant delivery or <sup>I'll take</sup> your money back. All of it. Even the money you had before.\n\n<sup>Disclaimer: Bounties to be paid in PPPDUD Dollars. Value: 0.00 USD per PPPDUD dollar.</sup>\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 100,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 100,
+      "profitPerHourUsd": 1200,
       "eligible": true
     },
     {
@@ -219,6 +219,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5560730511",
+      "source": "github",
+      "title": "product(growth): research and recommend the first invite reward",
+      "url": "https://github.com/jessepollak/home/issues/812",
+      "description": "## Question\n\nWhich single invite reward should Home ship first, and how should it work end to end?\n\nMVP includes invite links, attribution and **one** operator-run reward program (`docs/product-strategy.md`). Revenue-share rewards come later.\n\n## Research\n\n1. **Candidates:** fixed cash bonus to inviter (e.g. $5), two-sided bonus (inviter and invitee), boosted yield for a period, fee-free swaps for a period, % of invitee's future fees. Compare on growth effectiveness, cost predictability for the operator, abuse resistance, implementation effort, and regulatory/disclosure sensitivity.\n2. **Prior art:** How Cash App, Revolut, Robinhood, Coinbase, Wise, Nubank and crypto wallets structure referrals: qualifying event (sign-up, KYC, first deposit ≥ $X, holding period), caps, payout timing, clawback, fraud controls, disclosure placement.\n3. **Qualification in Home:** which qualifying event Home can verify today (first funding, first save, held balance for N days) given there is no identity provider yet (#640), and how to resist self-referral and farming (one reward per funded account, operator approval, caps, hold periods).\n4. **Payout:** paid in USDC from an operator-controlled wallet. Recommend the approval model (operator approves a payout queue vs automatic within caps), the money-action path, and how rewards appear in Activity for both parties. Reward payouts are money movement: identify what needs security review.\n5. **Operator controls:** what the operator configures (amount, qualifying event, caps, active window) and what they see (invites sent, conversions, cost, pending/paid rewards).\n\n## Deliverable\n\nAn issue comment recommending one reward mechanic with qualifying event, abuse controls, payout/approval model, operator settings, customer-facing surfaces (invite entry point, invitee landing, reward status), and a slice plan. Jesse approves before implementation issues are written.\n\n## Depends on\n\nNothing to start. Implementation depends on event log/#623, #809, #810/event log.",
+      "rewardUsd": 5,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 5,
+      "profitPerHourUsd": 60,
+      "eligible": true
+    },
+    {
       "id": "github-5410704722",
       "source": "github",
       "title": "[TASK HUNTER] Agents for Humans — $2,000–$10,000 cash",
@@ -292,21 +306,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5290336412",
-      "source": "github",
-      "title": "Stage 2: scratch manager RL economic curriculum",
-      "url": "https://github.com/BillXu21/Kaggriculture/issues/32",
-      "description": "## Goal\nTest whether a random-init daily manager can improve monotonically through RL now that the deterministic opening/executor removes most primitive mechanical exploration.\n\nThis is manager-level scratch RL, not primitive-action-from-scratch learning.\n\n## Phase A — economic bootstrapping\n- random-init manager;\n- repaired deterministic opening + executor;\n- opponent pathway exists but opponent inputs are masked/zeroed;\n- optimize for cash/economic performance rather than W/L/T;\n- no competitive terminal reward initially;\n- strong cash/bank shaping is allowed;\n- first milestone: reliable ~50k-60k economic performance.\n\n## Phase B — transition\nAround ~50k-60k:\n- expose real opponent inputs gradually;\n- introduce competitive terminal reward;\n- anneal dense cash shaping;\n- add current/snapshot opposition.\n\n## Phase C — competitive\nAround ~70k-80k:\n- cash shaping should become small or zero;\n- competitive terminal reward becomes primary;\n- use current/current + current/snapshot self-play;\n- keep frozen BC control evaluation.\n\nThresholds are empirical curriculum gates, not hard mechanics rules.\n\n## Important\nDo not add a generic penalty for holding cash: terminal cash is valuable. The policy should learn opportunity cost and remaining-horizon ROI. Track final-day/late `BUY_LAND` and idle-capital behavior as diagnostics.\n\nRun this in parallel with the corrected-distribution BC->PPO mainline, not as a replacement for it.\n\n## Context\nSee `research/STAGE_2_DIRECTION_2026-08-30.md`.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5555898937",
       "source": "github",
       "title": "[Invoice] Implement draft → issued → paid status flow",
@@ -337,11 +336,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5486551225",
+      "id": "github-5558865479",
       "source": "github",
-      "title": "[PAID PILOT]",
-      "url": "https://github.com/Hirokimm/data-act-exit-audit/issues/13",
-      "description": "> **Public submission notice:** submitting this template creates a public GitHub Issue. A GitHub account/sign-in is required. The issue and anything you enter will be publicly visible and may be indexed by search engines. Do not include company-confidential information, credentials, private contracts, personal data, security secrets, or other confidential information.\n\n## What are you interested in?\n- [x] One-time SaaS exit evidence audit\n- [ ] Recurring monitoring / evidence report\n\n## Public SaaS / website to review\nPlease provide only public URLs.\n\n## What would make this useful?\nBriefly describe only non-confidential switching / export / open-interface / fee evidence you want monitored.\n\n## Timing\nOptional target timing.\n\n---\nSubmitting this issue is an inquiry only. Pricing, scope, billing, and any delivery commitment must be agreed separately before paid work starts. This service provides public-evidence technical screening and is not legal advice or a compliance certification.",
+      "title": "paid_status: add boundary test for already-paid transition",
+      "url": "https://github.com/CemAyyildiz/Quittance/issues/590",
+      "description": "## Goal\nLock the documented error/rejection path when marking an invoice that is already paid.\n\n## Context\n`contracts/paid_status` exposes paid-status helpers; edge coverage for double-mark / already-paid should be explicit in tests.\n\n## Acceptance criteria\n- [ ] One `#[test]` covering the already-paid / invalid transition path per crate API\n- [ ] Comment documents expected error or panic message\n- [ ] `cargo test` for the crate package passes\n\n## Out of scope\n- Changing production transition semantics\n- Editing backend invoice-status helpers\n\n## Conflict rule\nOnly edit the crate test module under `contracts/paid_status/`.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -352,11 +351,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5558865479",
+      "id": "github-5486551225",
       "source": "github",
-      "title": "paid_status: add boundary test for already-paid transition",
-      "url": "https://github.com/CemAyyildiz/Quittance/issues/590",
-      "description": "## Goal\nLock the documented error/rejection path when marking an invoice that is already paid.\n\n## Context\n`contracts/paid_status` exposes paid-status helpers; edge coverage for double-mark / already-paid should be explicit in tests.\n\n## Acceptance criteria\n- [ ] One `#[test]` covering the already-paid / invalid transition path per crate API\n- [ ] Comment documents expected error or panic message\n- [ ] `cargo test` for the crate package passes\n\n## Out of scope\n- Changing production transition semantics\n- Editing backend invoice-status helpers\n\n## Conflict rule\nOnly edit the crate test module under `contracts/paid_status/`.",
+      "title": "[PAID PILOT]",
+      "url": "https://github.com/Hirokimm/data-act-exit-audit/issues/13",
+      "description": "> **Public submission notice:** submitting this template creates a public GitHub Issue. A GitHub account/sign-in is required. The issue and anything you enter will be publicly visible and may be indexed by search engines. Do not include company-confidential information, credentials, private contracts, personal data, security secrets, or other confidential information.\n\n## What are you interested in?\n- [x] One-time SaaS exit evidence audit\n- [ ] Recurring monitoring / evidence report\n\n## Public SaaS / website to review\nPlease provide only public URLs.\n\n## What would make this useful?\nBriefly describe only non-confidential switching / export / open-interface / fee evidence you want monitored.\n\n## Timing\nOptional target timing.\n\n---\nSubmitting this issue is an inquiry only. Pricing, scope, billing, and any delivery commitment must be agreed separately before paid work starts. This service provides public-evidence technical screening and is not legal advice or a compliance certification.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

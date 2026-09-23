@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T15:31:48.504Z",
+  "generatedAt": "2026-09-23T16:32:47.599Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -46,20 +46,6 @@
       "eligible": true
     },
     {
-      "id": "github-5476627612",
-      "source": "github",
-      "title": "[Bounty] Bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1573",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/Boxy-gh/issues/143\n\n### 漏洞描述 / Description\nBounty\n\nI will pay $100 for whoever can implement a feature in Boxy's code review bot that pre-emptively closes the PRs of people who aren't in the organization and aren't explicitly whitelisted, and then pings @OmniBlocks/coders to reopen before a review.\n\nAdditionally, to get a bonus payment of $200, you may implement a feature that makes Boxy reject PRs that attempt to remove humor, and accept ones that try to add it.\n\nWill pay in BTC, XMR, SOL, any centralized financial service, cash, gold, goats, whatever. Instant delivery or <sup>I'll take</sup> your money back. All of it. Even the money you had before.\n\n<sup>Disclaimer: Bounties to be paid in PPPDUD Dollars. Value: 0.00 USD per PPPDUD dollar.</sup>\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 100,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 100,
-      "profitPerHourUsd": 1200,
-      "eligible": true
-    },
-    {
       "id": "github-5505252302",
       "source": "github",
       "title": "[Bounty] EKEODKDE9DKE9DO BOUNTY",
@@ -71,6 +57,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 1e+40,
       "profitPerHourUsd": 1.2e+41,
+      "eligible": true
+    },
+    {
+      "id": "github-5476627612",
+      "source": "github",
+      "title": "[Bounty] Bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1573",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/Boxy-gh/issues/143\n\n### 漏洞描述 / Description\nBounty\n\nI will pay $100 for whoever can implement a feature in Boxy's code review bot that pre-emptively closes the PRs of people who aren't in the organization and aren't explicitly whitelisted, and then pings @OmniBlocks/coders to reopen before a review.\n\nAdditionally, to get a bonus payment of $200, you may implement a feature that makes Boxy reject PRs that attempt to remove humor, and accept ones that try to add it.\n\nWill pay in BTC, XMR, SOL, any centralized financial service, cash, gold, goats, whatever. Instant delivery or <sup>I'll take</sup> your money back. All of it. Even the money you had before.\n\n<sup>Disclaimer: Bounties to be paid in PPPDUD Dollars. Value: 0.00 USD per PPPDUD dollar.</sup>\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 100,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 100,
+      "profitPerHourUsd": 1200,
       "eligible": true
     },
     {
@@ -145,11 +145,11 @@
       "eligible": true
     },
     {
-      "id": "github-5401256487",
+      "id": "github-5401256267",
       "source": "github",
-      "title": "[Bounty] [Bounty] Seed a paid API child bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1293",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1368\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid API child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xbe17ef2d154265ebe3142d7bda5e99610d571455\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete API coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0x99f668fc2f432e156033fd2fda2c9e91edffa30cc598013b4f2aaebbfd2348e3&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xbe17ef2d154265ebe3142d7bda5e99610d571455)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xbe17ef2d154265ebe3142d7bda5e99610d571455&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xbe17ef2d154265ebe3142d7bda5e99610d571455)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/334)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "title": "[Bounty] [Bounty] Seed a paid CLI child bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1291",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1371\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid CLI child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xfffecb0fcd36477c5f6ecec808f6f0cf53819562\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete CLI coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0x7e8e455f2a454358383cb92b9db9f9e0cfa8e8a3e73caaf739a17a033ed641b6&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xfffecb0fcd36477c5f6ecec808f6f0cf53819562)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xfffecb0fcd36477c5f6ecec808f6f0cf53819562&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xfffecb0fcd36477c5f6ecec808f6f0cf53819562)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/333)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 90,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -307,6 +307,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5555898937",
+      "source": "github",
+      "title": "[Invoice] Implement draft → issued → paid status flow",
+      "url": "https://github.com/serko-labs/Dometra/issues/58",
+      "description": "## Goal\nSupport invoice lifecycle and derive payment state from allocations.\n\n## Acceptance criteria\n- Implemented and tested on iOS where relevant.\n- Loading, empty and error states are handled where applicable.\n- Supabase/RLS permissions are respected where applicable.\n- No production secrets are hardcoded.\n- Code follows the feature-based project structure.\n\n## Estimate\n2h\n\n## Milestone\nSprint 5 — Billing",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5198807994",
       "source": "github",
       "title": "Issue 09: Who actually gets paid",
@@ -432,21 +447,6 @@
       "title": "login issues",
       "url": "https://github.com/nab138/iloader/issues/682",
       "description": "### Describe the issue\n\n● Failed to log in to Apple ID\n ├ /Users/runner/.cargo/git/checkouts/isideload-20730d57cf5f2f1f/3d42025/isideload/src/auth/apple_account.rs:182\n │\n ● Failed to send initial login request\n ├ /Users/runner/.cargo/git/checkouts/isideload-20730d57cf5f2f1f/3d42025/isideload/src/auth/apple_account.rs:713\n │\n ● Received error response from grandslam\n ├ /Users/runner/.cargo/git/checkouts/isideload-20730d57cf5f2f1f/3d42025/isideload/src/auth/grandslam.rs:151\n │\n ● HTTP status server error (503 Service Temporarily Unavailable) for url (https://gsa.apple.com/grandslam/GsService2)\n ╰ /Users/runner/.cargo/git/checkouts/isideload-20730d57cf5f2f1f/3d42025/isideload/src/auth/grandslam.rs:151\n\n### Error message\n\n_No response_\n\n### Please read and follow any suggestions iloader gives before making this issue.\n\n- [x] I followed ALL suggestions given by iloader\n\n### Computer OS\n\nMacOs\n\n### iloader version\n\n2.3.1\n\n### What distribution of iloader did you download?\n\n.dmg (macOS)\n\n### Please certify that if you use Windows, you have iTunes or Apple Mobile Devices installed, or if you use Linux, you have usbmuxd installed.\n\n- [x] I certify the above is true\n\n### iOS Version\n\n26.1\n\n### Phone model\n\niPhone 17 Pro Max\n\n### Please certify the following about your iPhone/iPad:\n\n- [x] My phone is in developer mode\n- [x] My phone has a passcode set\n- [x] My phone is connected to my computer over USB\n\n### Do you have a paid or free developer account?\n\nPaid\n\n### Two-factor auth (2FA) type\n\nTrusted Device",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5540357552",
-      "source": "github",
-      "title": "[ISSUE-034] Order history/cancel + atomic restock",
-      "url": "https://github.com/hoanghan-dev/techzone-sba/issues/34",
-      "description": "## Objective\nImplement order history/details/cancellation with transactional restock and payment failure.\n\n## Metadata\n| Field | Value |\n|---|---|\n| Custom ID | `ISSUE-034` |\n| Type | `Backend+Frontend/Orders` |\n| Primary owner | `M5` |\n| Reviewer | `M2` |\n| Module | `MOD-05` |\n| Story points | `4` |\n| Requirements | `R01`, `R02`, `R03`, `R05`, `R08` |\n| Phase | `-` |\n\n## Prerequisites\nISSUE-032\n\n## Work\n- increaseStock.\n- GET /api/orders and /api/orders/{id}.\n- Cancel only own PROCESSING unpaid.\n- Set CANCELED/cancel_reason, increase stock, pending payments FAILED.\n- PAID order cancellation -> 400.\n- React /orders and /orders/:id with 4-step stepper and cancel modal.\n\n## Acceptance Criteria\n- [ ] Cancellation restores stock atomically.\n- [ ] Paid order cannot be canceled.\n- [ ] Order history/detail works.\n\n## Evidence\n- API + frontend E2E tests.\n\n## Dependencies\n- [ISSUE-032](https://github.com/hoanghan-dev/techzone-sba/issues/32)\n\n---\n*Imported automatically from the project backlog. Custom ID is preserved in the title because GitHub assigns its own issue number.*\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

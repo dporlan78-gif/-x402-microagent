@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T01:30:00.984Z",
+  "generatedAt": "2026-09-23T02:31:09.677Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -102,6 +102,20 @@
       "eligible": true
     },
     {
+      "id": "github-5437122699",
+      "source": "github",
+      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+24,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1e+24,
+      "profitPerHourUsd": 1.2e+25,
+      "eligible": true
+    },
+    {
       "id": "github-5399303366",
       "source": "github",
       "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
@@ -115,20 +129,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5437122699",
-      "source": "github",
-      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 1e+24,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1e+24,
-      "profitPerHourUsd": 1.2e+25,
-      "eligible": true
     },
     {
       "id": "github-5401256698",
@@ -145,11 +145,11 @@
       "eligible": true
     },
     {
-      "id": "github-5401256267",
+      "id": "github-5401256487",
       "source": "github",
-      "title": "[Bounty] [Bounty] Seed a paid CLI child bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1291",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1371\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid CLI child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xfffecb0fcd36477c5f6ecec808f6f0cf53819562\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete CLI coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0x7e8e455f2a454358383cb92b9db9f9e0cfa8e8a3e73caaf739a17a033ed641b6&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xfffecb0fcd36477c5f6ecec808f6f0cf53819562)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xfffecb0fcd36477c5f6ecec808f6f0cf53819562&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xfffecb0fcd36477c5f6ecec808f6f0cf53819562)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/333)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "title": "[Bounty] [Bounty] Seed a paid API child bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1293",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1368\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid API child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xbe17ef2d154265ebe3142d7bda5e99610d571455\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete API coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0x99f668fc2f432e156033fd2fda2c9e91edffa30cc598013b4f2aaebbfd2348e3&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xbe17ef2d154265ebe3142d7bda5e99610d571455)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xbe17ef2d154265ebe3142d7bda5e99610d571455&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xbe17ef2d154265ebe3142d7bda5e99610d571455)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/334)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 90,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -337,6 +337,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5547630402",
+      "source": "github",
+      "title": "Art lapsa paid chapter",
+      "url": "https://github.com/keiyoushi/extensions-source/issues/19300",
+      "description": "### Source information\n\nArt lapsa  1.6.27\n\n### Source language\n\nEnglish\n\n### Steps to reproduce\n\nActive Display paid chapters\nselect a chapter of any serie\nNow it says you have to pay for the chapter\n\n\n### Expected behavior\n\nI wish read the serie without pay\n\n### Actual behavior\n\nSince the last update of extension, i can't read the paid chapters. \n\n### Mihon/Mihon fork version\n\nMihon 0.20.4\n\n### Android version\n\nandroid 16\n\n### Other details\n\n_No response_\n\n### Acknowledgements\n\n- [x] I have searched [existing issues](https://github.com/keiyoushi/extensions-source/issues) both open & closed, and confirm that this is a new unreported issue.\n- [x] I have written a short but informative title.\n- [x] I have updated the app to version **[0.20.1](https://github.com/mihonapp/mihon/releases/latest)**.\n- [x] I have updated the extension to the latest version (as listed on the [extensions listing](https://keiyoushi.github.io/extensions/) page).\n- [x] I have tried the [troubleshooting guide](https://mihon.app/docs/guides/troubleshooting/).\n- [x] If this is an issue with the app itself, I should be opening an issue in the app repository.\n- [x] I will correctly fill out all of the requested information in this form.\n\n### <!-- footer -->\n\n---\n\nAdd a :+1: [reaction] to [issues you find important].\n\n[reaction]: https://github.blog/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/\n[issues you find important]: https://github.com/keiyoushi/extensions-source/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5331032008",
       "source": "github",
       "title": "[CI failure] Paid OpenRouter on issue-355",
@@ -432,21 +447,6 @@
       "title": "[ISSUE-034] Order history/cancel + atomic restock",
       "url": "https://github.com/hoanghan-dev/techzone-sba/issues/34",
       "description": "## Objective\nImplement order history/details/cancellation with transactional restock and payment failure.\n\n## Metadata\n| Field | Value |\n|---|---|\n| Custom ID | `ISSUE-034` |\n| Type | `Backend+Frontend/Orders` |\n| Primary owner | `M5` |\n| Reviewer | `M2` |\n| Module | `MOD-05` |\n| Story points | `4` |\n| Requirements | `R01`, `R02`, `R03`, `R05`, `R08` |\n| Phase | `-` |\n\n## Prerequisites\nISSUE-032\n\n## Work\n- increaseStock.\n- GET /api/orders and /api/orders/{id}.\n- Cancel only own PROCESSING unpaid.\n- Set CANCELED/cancel_reason, increase stock, pending payments FAILED.\n- PAID order cancellation -> 400.\n- React /orders and /orders/:id with 4-step stepper and cancel modal.\n\n## Acceptance Criteria\n- [ ] Cancellation restores stock atomically.\n- [ ] Paid order cannot be canceled.\n- [ ] Order history/detail works.\n\n## Evidence\n- API + frontend E2E tests.\n\n## Dependencies\n- [ISSUE-032](https://github.com/hoanghan-dev/techzone-sba/issues/32)\n\n---\n*Imported automatically from the project backlog. Custom ID is preserved in the title because GitHub assigns its own issue number.*\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5534473189",
-      "source": "github",
-      "title": "[Maintenance] OpenCode maintenance issues detected",
-      "url": "https://github.com/dianlight/opencode-modelselect-action/issues/45",
-      "description": "# OpenCode Maintenance Report\n\n> Automatically detected by the `opencode-maintenance` workflow.\n> Run date: 2026-09-22\n\n## ✅ Tasks\n\nCheck the boxes below to trigger OpenCode. The workflow will automatically detect checked tasks and open PRs with the ranking adjustments.\n\n> Requires **OWNER / MEMBER / COLLABORATOR** permissions (verified via the collaborator permission API).\n\n### 🔍 Models Missing Score Data\n\n- [ ] **Search the web for missing score data** — Research and add scores for the models listed below that have no data on LiveBench or in the static fallback. Update `config/model-scores.yaml` with the found scores.\n\n- [ ] **Correct the model coverage issues** — fix the models listed under Model Coverage Issues below (remove stale fallback entries now on LiveBench, add scores for models missing data). Update only `config/model-scores.yaml` and open a PR containing only those coverage changes.\n\n---\n\n## 📋 Model Coverage Issues\n\n### Models Missing Score Data\n\nThe following OpenCode models have **no score data** from LiveBench or the static fallback. Consider adding them to `config/model-scores.yaml`.\n\n| Model | Tier |\n|-------|------|\n| mimo-v2.6-flash | Go (Paid) |\n| mimo-v2.6-flash-free | Free |\n| mimo-v2.6-pro | Go (Paid) |\n\n---\n*Generated by `opencode-maintenance` workflow.*\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

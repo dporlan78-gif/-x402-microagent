@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T04:31:45.362Z",
+  "generatedAt": "2026-09-24T05:30:30.701Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -46,20 +46,6 @@
       "eligible": true
     },
     {
-      "id": "github-5476627612",
-      "source": "github",
-      "title": "[Bounty] Bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1573",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/Boxy-gh/issues/143\n\n### 漏洞描述 / Description\nBounty\n\nI will pay $100 for whoever can implement a feature in Boxy's code review bot that pre-emptively closes the PRs of people who aren't in the organization and aren't explicitly whitelisted, and then pings @OmniBlocks/coders to reopen before a review.\n\nAdditionally, to get a bonus payment of $200, you may implement a feature that makes Boxy reject PRs that attempt to remove humor, and accept ones that try to add it.\n\nWill pay in BTC, XMR, SOL, any centralized financial service, cash, gold, goats, whatever. Instant delivery or <sup>I'll take</sup> your money back. All of it. Even the money you had before.\n\n<sup>Disclaimer: Bounties to be paid in PPPDUD Dollars. Value: 0.00 USD per PPPDUD dollar.</sup>\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 100,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 100,
-      "profitPerHourUsd": 1200,
-      "eligible": true
-    },
-    {
       "id": "github-5505252302",
       "source": "github",
       "title": "[Bounty] EKEODKDE9DKE9DO BOUNTY",
@@ -71,6 +57,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 1e+40,
       "profitPerHourUsd": 1.2e+41,
+      "eligible": true
+    },
+    {
+      "id": "github-5476627612",
+      "source": "github",
+      "title": "[Bounty] Bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1573",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/Boxy-gh/issues/143\n\n### 漏洞描述 / Description\nBounty\n\nI will pay $100 for whoever can implement a feature in Boxy's code review bot that pre-emptively closes the PRs of people who aren't in the organization and aren't explicitly whitelisted, and then pings @OmniBlocks/coders to reopen before a review.\n\nAdditionally, to get a bonus payment of $200, you may implement a feature that makes Boxy reject PRs that attempt to remove humor, and accept ones that try to add it.\n\nWill pay in BTC, XMR, SOL, any centralized financial service, cash, gold, goats, whatever. Instant delivery or <sup>I'll take</sup> your money back. All of it. Even the money you had before.\n\n<sup>Disclaimer: Bounties to be paid in PPPDUD Dollars. Value: 0.00 USD per PPPDUD dollar.</sup>\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 100,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 100,
+      "profitPerHourUsd": 1200,
       "eligible": true
     },
     {
@@ -102,20 +102,6 @@
       "eligible": true
     },
     {
-      "id": "github-5437122699",
-      "source": "github",
-      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 1e+24,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1e+24,
-      "profitPerHourUsd": 1.2e+25,
-      "eligible": true
-    },
-    {
       "id": "github-5399303366",
       "source": "github",
       "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
@@ -129,6 +115,20 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5437122699",
+      "source": "github",
+      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+24,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1e+24,
+      "profitPerHourUsd": 1.2e+25,
+      "eligible": true
     },
     {
       "id": "github-5556777041",
@@ -456,6 +456,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5563194669",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 6 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/153",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-24 04:34 UTC\n\n#### 1. [[ Laravel ] Implement audit logging trait for Eloquent model change tracking](https://github.com/UnsafeLabs/Bounty-Hunters/issues/786)\n- **Project:** [UnsafeLabs/Bounty-Hunters](https://github.com/UnsafeLabs/Bounty-Hunters)\n- **Source:** GitHub Issue\n- **Reward:** $350\n- **Task:** [ Laravel ] Implement audit logging trait for Eloquent model change tracking\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 16\n- **Last updated:** 2026-09-24T01:50:58Z\n\n#### 2. [[ FastAPI ] Add rate limiting and key rotation support to API key authentication](https://github.com/UnsafeLabs/Bounty-Hunters/issues/768)\n- **Project:** [UnsafeLabs/Bounty-Hunters](https://github.com/UnsafeLabs/Bounty-Hunters)\n- **Source:** GitHub Issue\n- **Reward:** $350\n- **Task:** Implementation\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 23\n- **Last updated:** 2026-09-24T01:18:16Z\n\n#### 3. [[ Laravel ] Implement API authentication controller with token-based login and registration](https://github.com/UnsafeLabs/Bounty-Hunters/issues/752)\n- **Project:** [UnsafeLabs/Bounty-Hunters](https://github.com/UnsafeLabs/Bounty-Hunters)\n- **Source:** GitHub Issue\n- **Reward:** $200\n- **Task:** [ Laravel ] Implement API authentication controller with token-based login and registration\n- **Deadline:** 待确认\n- **Submission:** 电子邮件\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 3\n- **Competition:** 有竞争：3 个相关 open PR\n- **Original Issue comments:** 14\n- **Last updated:** 2026-09-24T03:12:37Z\n\n#### 4. [[ FastAPI ] Add router-level middleware support to APIRouter](https://github.com/UnsafeLabs/Bounty-Hunters/issues/796)\n- **Project:** [UnsafeLabs/Bounty-Hunters](https://github.com/UnsafeLabs/Bounty-Hunters)\n- **Source:** GitHub Issue\n- **Reward:** $250\n- **Task:** Implementation\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 2\n- **Competition:** 有竞争：2 个相关 open PR\n- **Original Issue comments:** 16\n- **Last updated:** 2026-09-24T02:29:12Z\n\n#### 5. [[Bounty] Investigate and optimize CPU impact on faster-whisper transcription](https://github.com/ivrit-ai/ivrit-py/issues/15)\n- **Project:** [ivrit-ai/ivrit-py](https://github.com/ivrit-ai/ivrit-py)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [Bounty] Investigate and optimize CPU impact on faster-whisper transcription\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 7\n- **Last updated:** 2026-09-24T03:54:13Z\n\n#### 6. [Consignment v1: sell 1–2 guest artists through Studio, without becoming a marketplace](https://github.com/hirobius/concrete/issues/12)\n- **Project:** [hirobius/concrete](https://github.com/hirobius/concrete)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Why this shape\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Discord\n- **Payment method:** Stripe\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-24T03:19:36Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 350,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 350,
+      "profitPerHourUsd": 4200,
+      "eligible": true
+    },
+    {
       "id": "github-5561239509",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 10 New Opportunities",
@@ -582,20 +596,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 15,
       "profitPerHourUsd": 180,
-      "eligible": true
-    },
-    {
-      "id": "github-5533873306",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/135",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-22 00:17 UTC\n\n#### 1. [[Bounty proposal] fix(arxiv-app): exception text leaks into chat tool responses across 3 endpoints ($50 proposed)](https://github.com/BasedHardware/omi/issues/15588)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$50 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #15587.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-21T23:45:51Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 50,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 50,
-      "profitPerHourUsd": 600,
       "eligible": true
     }
   ]

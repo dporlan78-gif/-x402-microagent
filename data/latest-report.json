@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T07:31:58.916Z",
+  "generatedAt": "2026-09-24T08:33:23.428Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -174,6 +174,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5544038868",
+      "source": "github",
+      "title": "[QUEUE][TO: CODING-RUNTIME] Implement Kakashi two-outcome dispositions + reward recalibration",
+      "url": "https://github.com/NinjaSteveXer0/Shinobi-Chronicles/issues/322",
+      "description": "FROM: CE / CODEX / COORDINATION\n\nTO: CODING / RUNTIME\n\nPRIORITY: QUEUE — real Alpha implementation, but DO NOT start a parallel Kakashi executor while #312 / PR #318 is still modifying overlapping V2 runtime. Begin after #312 reaches a safe merged/reconciled checkpoint, or explicitly consolidate under one executor.\n\nUPSTREAM CE AUTHORITY\n\n`Documentation/Coordination/Academy_Kakashi_V2_Two_Outcome_Disposition_Reward_Evidence_and_Restraint_Reconciliation_2026-09-23.md`\n\ncommit:\n`9861bdc3bf2bbe2ebccae598035f868871d09c29`\n\nCURRENT STORY CONTENT SOURCE\n\n`Documentation/Story/Academy_Kakashi_Kill_and_Restrain_Two_Outcome_Resolver_and_Scene_Authority_2026-09-23.md`\n@ `469de7c67ece78364c947953abef07e32856c1ba`\n\n`runtime/academy-kakashi-v2-content-36000.js`\n@ current live commit `a0ccb6097967db21348bec56d6139c39448a09d9`\n\nWriting has already supplied 25 declarative `dispositionResolvers` sections. Consume them; do not duplicate prose.\n\nWORLD / REWARD AUTHORITY\n\n`Documentation/World/Academy Kakashi Origin Reward Recalibration and Disposition Lock 2026-09-23.md`\ncorrected authority @ `5bc5108918adeab9b6fe58266d58d61663c48fd8`\n\nCHANGE TYPE\n\n**REPLACE**, not patch.\n\nREPLACE:\n- direct `dispose(...,\"KILL\") -> DEAD`;\n- aggregate `disposeGroup(\"KILL\") -> all DEAD`;\n- Kakashi V2 `addField()/fieldSecured[]` restraint truth;\n- Kakashi V2 `FIELD_SECURED_PENDING_COLLECTION`;\n- Kakashi V2 `COLLECTED_ACTIVE_ESCORT`.\n\nWITH:\n\n```\nKILL     -> KILLED | ESCAPED\nRESTRAIN -> RESTRAINED | ESCAPED\n```\n\nPER EXACT PARTICIPANT.\n\nRUNTIME REQUIREMENTS\n\n1. Register/use idempotent factual resolvers through existing Story factual-resolver architecture.\n2. Single-target KILL resolves exact participant to KILLED|ESCAPED.\n3. Group KILL resolves each exact participant independently under one causal parent occurrence.\n4. RESTRAIN resolves exact participant to RESTRAINED|ESCAPED.\n5. No SURVIVED / INTERRUPTED / hidden CONTROL states.\n6. No save/load reroll.\n7. Re-key collection from exact RESTRAINED participant facts.\n8. Collection may carry location/escort continuity metadata but must not invent a replacement custody enum.\n9. Institutional custody commits only on exact ANBU/Police delivery.\n10. Preserve authored pursuit timing; disposition does not invent a timing penalty.\n11. Bind exact new Story scenes from the content package.\n12. Report / Minato / Chronicle Receipt must distinguish KILLED, lethal ESCAPED, RESTRAINED, restraint ESCAPED and RELEASED.\n13. Preserve package-holder truth, Pakkun rules, Knowledge, Battle result and existing direct institutional transfers except where current authority explicitly changes them.\n14. Retire/de-load obsolete Kakashi V2 fieldSecured/direct-death readers/writers and prove they cannot regain production ownership.\n15. Migrate bounded current Alpha saves intentionally if retired fields may exist.\n\nREWARD IMPLEMENTATION\n\nImmediate qualifying Kakashi Origin Battle cash:\n- 1v1 = 50 Ryō\n- 2v1 = 100 Ryō\n- failed direct-pickpocket 3v1 = 200 Ryō\n\nDo not rely on an incomplete accidental config-ID list; key from authoritative occurrence/config participants.\n\nRetain:\n- MI Field Recovery Pill exact source\n- terminal/debrief 100\n- package +75\n- actionable intelligence +25\n- exceptional +25\n- Training Tantō eligibility where already authorised\n\nLive delivered capture tier:\n- 1 = 25 total\n- 2 = 50 total\n- 3 = 100 total\nNOT cumulative stacking.\n\nRelease:\n- no new cash\n- no penalty/clawback\n\nKill:\n- no corpse bounty\n- no morality cash\n- no cash clawback\n- specialist/history/opportunity channels only\n\n250 Ryō terminal cap:\n- unresolved World arithmetic.\n- DO NOT silently clip newly approved value.\n- immediate Battle cash and resolver replacement can proceed independently.\n- if terminal aggregation is touched before World closes cap, expose/fail the unresolved boundary rather than choosing policy.\n\nSPECIALIST EVIDENCE\n\nUse existing #23 producer architecture only.\n\nGET CLOSER and PICKPOCKET exact significance mappings are already in CE authority.\n\nOther exact Progression mappings are pending the dedicated SEND NOW Progression handoff created from #320.\n\nCoding may prepare generic producer hooks, but MUST NOT invent significance/capstone values. Consume the Progression result before final evidence implementation/merge.\n\nREGRESSION MINIMUM\n\nUse CE doc §14 as binding minimum, including:\n- all single-target KILL/RESTRAIN outcomes;\n- package variants;\n- 2-target and 3-target mixed group KILL;\n- save/load idempotence;\n- no ESCAPED->RELEASED collapse;\n- sequential all-three RESTRAINED -> collect -> ANBU/Police;\n- partial subset exclusion;\n- pursuit timing preserved;\n- 1v1/2v1/3v1 Battle cash once;\n- MI pill source;\n- capture tiers 25/50/100 noncumulative;\n- no kill/release cash invention;\n- observer/institutional Knowledge scoping;\n- producer idempotence / causal breadth;\n- obsolete Kakashi fieldSecured/direct-death owners absent.\n\nBROWSER\n\nDo not claim Browser Golden from source/headless GREEN.\n\nWhen a browser candidate is ready:\n- state LOCAL SYNC status;\n- exact expected branch/head;\n- exact runtime fingerprint;\n- exact manual routes needed.\n\nStephen relay: NONE.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5460422244",
       "source": "github",
       "title": "Automate Whop bounty payout receipt evidence for zero-touch settlement",
@@ -281,21 +296,6 @@
       "title": "Add player kill cash rewards",
       "url": "https://github.com/zakomarvic/Roblox-Game-Systems/issues/18",
       "description": "Implement server-authoritative player kill rewards using the existing creator attribution on damaged Humanoids.\n\nRequirements:\n- Award the killer a configurable cash amount when they cause a player death.\n- Keep reward logic in the Economy system rather than weapon-specific scripts.\n- Ignore self-kills, missing/invalid creator attribution, and non-player creators.\n- Ensure each death rewards at most once.\n- Preserve existing death cash-drop behavior.\n- Use the existing CashService for the actual cash mutation.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5290336412",
-      "source": "github",
-      "title": "Stage 2: scratch manager RL economic curriculum",
-      "url": "https://github.com/BillXu21/Kaggriculture/issues/32",
-      "description": "## Goal\nTest whether a random-init daily manager can improve monotonically through RL now that the deterministic opening/executor removes most primitive mechanical exploration.\n\nThis is manager-level scratch RL, not primitive-action-from-scratch learning.\n\n## Phase A — economic bootstrapping\n- random-init manager;\n- repaired deterministic opening + executor;\n- opponent pathway exists but opponent inputs are masked/zeroed;\n- optimize for cash/economic performance rather than W/L/T;\n- no competitive terminal reward initially;\n- strong cash/bank shaping is allowed;\n- first milestone: reliable ~50k-60k economic performance.\n\n## Phase B — transition\nAround ~50k-60k:\n- expose real opponent inputs gradually;\n- introduce competitive terminal reward;\n- anneal dense cash shaping;\n- add current/snapshot opposition.\n\n## Phase C — competitive\nAround ~70k-80k:\n- cash shaping should become small or zero;\n- competitive terminal reward becomes primary;\n- use current/current + current/snapshot self-play;\n- keep frozen BC control evaluation.\n\nThresholds are empirical curriculum gates, not hard mechanics rules.\n\n## Important\nDo not add a generic penalty for holding cash: terminal cash is valuable. The policy should learn opportunity cost and remaining-horizon ROI. Track final-day/late `BUY_LAND` and idle-capital behavior as diagnostics.\n\nRun this in parallel with the corrected-distribution BC->PPO mainline, not as a replacement for it.\n\n## Context\nSee `research/STAGE_2_DIRECTION_2026-08-30.md`.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

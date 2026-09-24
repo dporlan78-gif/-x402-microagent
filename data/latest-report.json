@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T11:31:16.925Z",
+  "generatedAt": "2026-09-24T12:37:57.482Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 19,
+  "eligible": 18,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -411,6 +411,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5552633681",
+      "source": "github",
+      "title": "[Events] Implement Royalty Paid Event",
+      "url": "https://github.com/ANYTECHS/clips-contract/issues/971",
+      "description": "Description\n\nEmit an event whenever creator royalties are successfully distributed.\n\nAcceptance Criteria\n\nInclude:\n\nToken ID\nCreator/recipient\nAmount\nAsset\nSale reference\nTimestamp\n\nLabels\n\ncontract\nevents\nroyalties\npayments\npriority:high",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5546115821",
       "source": "github",
       "title": "feat(config): a paid IDE declared without a name resolves to `vscode-paid`, 8.b's paid-default IDE",
@@ -441,11 +456,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5540357725",
+      "id": "github-5567682422",
       "source": "github",
-      "title": "[ISSUE-035] Admin order API/state machine",
-      "url": "https://github.com/hoanghan-dev/techzone-sba/issues/35",
-      "description": "## Objective\nImplement admin order filtering and validated order state transitions.\n\n## Metadata\n| Field | Value |\n|---|---|\n| Custom ID | `ISSUE-035` |\n| Type | `Backend/Orders` |\n| Primary owner | `M5` |\n| Reviewer | `M3` |\n| Module | `MOD-05` |\n| Story points | `3` |\n| Requirements | `R03`, `R05`, `R06`, `R08` |\n| Phase | `-` |\n\n## Prerequisites\nISSUE-032\n\n## Work\n- GET admin orders with status/paymentStatus/search.\n- PATCH status.\n- Valid PROCESSING→PENDING→COMPLETED/CANCELED.\n- Non-COD completion requires PAID.\n- COD completion auto PAID.\n- Cancel PROCESSING unpaid restocks.\n- Completed cannot cancel.\n\n## Acceptance Criteria\n- [ ] Invalid transitions are rejected.\n- [ ] Payment prerequisite is enforced.\n- [ ] COD completion updates payment.\n\n## Evidence\n- State-machine API tests.\n\n## Dependencies\n- [ISSUE-032](https://github.com/hoanghan-dev/techzone-sba/issues/32)\n\n---\n*Imported automatically from the project backlog. Custom ID is preserved in the title because GitHub assigns its own issue number.*\n",
+      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/155",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-24 11:36 UTC\n\n#### 1. [[R37-06] Align the real GitLab CE lab with the intended supported profile (P2, M1)](https://github.com/forcewake/forge/issues/287)\n- **Project:** [forcewake/forge](https://github.com/forcewake/forge)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Template pins + installed fingerprints generated from one approved profile record; mixed versions only with explicitly qualified compatibility.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 推测：几十分钟到数小时\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-24T08:21:49Z\n\n#### 2. [Question: proof of contributor payments?](https://github.com/KingFRANKHOOD/Amana/issues/1338)\n- **Project:** [KingFRANKHOOD/Amana](https://github.com/KingFRANKHOOD/Amana)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-24T09:01:00Z\n\n#### 3. [V1-038: Publish supported dividend facts without composite scores](https://github.com/issacamara/tradvisor/issues/27)\n- **Project:** [issacamara/tradvisor](https://github.com/issacamara/tradvisor)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** No changes to approved scoring, scope or contracts; no real portfolio/broker execution, automatic orders, extra indicator families, Dividend/Balanced scoring, or five-year dividend acquisition. No production mutation, secret/user/state cloning, unapproved live queries/provider calls, cloud provisioning, data seeding or\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-24T09:11:05Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -582,20 +597,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 30,
       "profitPerHourUsd": 360,
-      "eligible": true
-    },
-    {
-      "id": "github-5538022854",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/138",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-22 10:01 UTC\n\n#### 1. [Paid proposal: direct Developer API memory GET + faster omi memory get ($15 proposed)](https://github.com/BasedHardware/omi/issues/15704)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $15\n- **Task:** Payment would use the contribution guide's documented PayPal claim process. No implementation or bounty award is assumed yet.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-22T08:35:13Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 15,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 15,
-      "profitPerHourUsd": 180,
       "eligible": true
     }
   ]

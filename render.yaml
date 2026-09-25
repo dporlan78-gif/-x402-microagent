@@ -7,11 +7,9 @@ services:
     envVars:
       - key: PAY_TO
         sync: false
-      - key: CDP_API_KEY_ID
-        sync: false
-      - key: CDP_API_KEY_SECRET
-        sync: false
+      - key: FACILITATOR_URL
+        value: https://facilitator.payai.network
       - key: X402_NETWORK
-        value: eip155:84532
+        value: solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp
       - key: PORT
         value: "4020"

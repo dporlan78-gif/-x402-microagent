@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T12:37:35.545Z",
+  "generatedAt": "2026-09-25T13:32:45.773Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -102,6 +102,20 @@
       "eligible": true
     },
     {
+      "id": "github-5437122699",
+      "source": "github",
+      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+24,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1e+24,
+      "profitPerHourUsd": 1.2e+25,
+      "eligible": true
+    },
+    {
       "id": "github-5399303366",
       "source": "github",
       "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
@@ -115,20 +129,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5437122699",
-      "source": "github",
-      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 1e+24,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1e+24,
-      "profitPerHourUsd": 1.2e+25,
-      "eligible": true
     },
     {
       "id": "github-5556777041",
@@ -381,6 +381,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5583493711",
+      "source": "github",
+      "title": "ISSUE-13 — Automated tests (backend)",
+      "url": "https://github.com/saifudinreza/Loka-living/issues/13",
+      "description": "Konteks bersama (aturan umum, peta kode, keputusan desain) ada di [`issues.md`](../blob/main/issues.md) di root repo.\n\n---\n\n\n\n**Tipe:** test · **Tergantung:** ISSUE-05, ISSUE-06, ISSUE-07, ISSUE-08\n\n**Konteks:** `TECHNICAL-LokaLiving.md` §7 mewajibkan test untuk area uang & stok. Midtrans SDK memanggil curl langsung (bukan `Http::`), jadi **jangan** memanggil Midtrans asli di test. Bungkus panggilan `Transaction::status/cancel/expire` di `MidtransService`, lalu mock `MidtransService` lewat container (`$this->mock(MidtransService::class, ...)`).\n\n**Test minimal (`tests/Feature/...`), pakai database test PostgreSQL terpisah:**\n- [ ] Webhook: signature valid → 200; signature salah → 401; server key kosong → 401.\n- [ ] Webhook: setiap baris tabel mapping ISSUE-05, termasuk efek ke stok.\n- [ ] Webhook: `deny` lalu `settlement` → `paid`, 2 row payment_transactions.\n- [ ] Webhook: `settlement` lalu `expire` → tetap `paid`.\n- [ ] Webhook: payload sama 2x → diproses sekali.\n- [ ] Webhook: amount mismatch → ditolak, order tidak berubah.\n- [ ] Confirm: total dihitung server (kirim `total_amount` palsu di body → diabaikan).\n- [ ] Confirm: Midtrans throw → order tetap `draft`, response `MIDTRANS_UNAVAILABLE` tanpa pesan internal.\n- [ ] Cancel: sukses / sudah paid (409) / Midtrans sudah settlement saat cancel (409 + order jadi paid) / Midtrans timeout (502).\n- [ ] GET order: tidak ada field terlarang di JSON.\n- [ ] Scheduler: order awaiting_payment lewat batas → expired + stok kembali; kalau Midtrans bilang settlement → paid.\n\nJalankan: `php artisan test`.\n\n---\n\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5331032008",
       "source": "github",
       "title": "[CI failure] Paid OpenRouter on issue-355",
@@ -431,21 +446,6 @@
       "title": "[India] Paid fundamentals vendor adapter",
       "url": "https://github.com/dev-pmallapp/jesse/issues/36",
       "description": "Part of epic: **[India][Epic] Backlog: broker/vendor sources and enhancements**\n\n## Scope\nSecond `FundamentalsProvider` once a vendor is chosen.\n\n## Acceptance criteria\n- [ ] Contract tests on fixtures\n\nPlan: `docs/india-markets/PLAN.md` (branch `feat/india-markets`) and the tracking issue.\n\n**Workflow:** Opus writes the spec → `implementer` (Sonnet) → `tester` (Sonnet) → `reviewer` (Sonnet) → `doc-writer` (Haiku). Branch `feat/india-*` off `origin/master`, PR against `dev-pmallapp/jesse` master.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5572590334",
-      "source": "github",
-      "title": "Issue recoverable licenses that verify offline",
-      "url": "https://github.com/Gogorichielab/PPCollection/issues/608",
-      "description": "## User need\nAfter paying, the buyer can unlock the full paid product on a self-hosted PPCollection installation and continue to use it without an internet connection. An activation code grants an all-access entitlement; it does **not** authenticate the local admin. Product/installation rules come from #606, and verified paid orders come from #607.\n\n## Boundary\n- Hosted issuer: one license per eligible order according to P5/P6 in #606; redemption/recovery state and signing private key.\n- Local verifier: validates the entitlement with a bundled public key and stores it in persistent `/data`; no Stripe secret or signing key ships in the app.\n- In-app feature access/UI is #609. Full purchase journey and support docs are #610.\n\n## Required flows\n1. Issue a unique high-entropy redemption code for each paid order and store its hash. Do not use a static Payment Link message as a shared code.\n2. Redeem or manually exchange a code for a signed payload containing an `all_access` product entitlement, license ID, format/key version, and an installation binding only if P5 chooses that model.\n3. Support an offline installation through a copy/paste challenge-response or signed-license import path that does not require inbound access to the local server. Normal feature use makes no licensing network calls.\n4. Recover a lost code/license and handle reinstalls/transfers through the policy in #606, with abuse controls, a stable order record, and no duplicate paid grants.\n5. Document key rotation and the limits of enforcing refund/chargeback revocation while an installation stays offline.\n\n## Acceptance scenarios\n- [ ] Given an eligible paid order, when issuing is retried, the same entitlement/order association is returned and no extra license is created.\n- [ ] Given a valid signed payload, when imported, the local app enables all paid-tier features after restart, offline.\n- [ ] Given altered, wrong-product, unsupported-version, unbound-to-this-installation (if binding is chosen), or otherwise invalid payloads, the local app refuses activation and explains recovery.\n- [ ] Given a lost email or reinstall, the approved owner can recover/transfer access per #606 without paying again when policy allows.\n- [ ] Given the issuer is unavailable, already activated installations continue working.\n- [ ] Tests cover signature verification, replay, recovery, key rotation, and backup/restore.\n\n**Decision gate:** P5 and P6 in #606 must define whether a license is per purchaser or installation, transfer limits, and refund behavior. Avoid claiming that an offline entitlement can be revoked instantly.\n\nDepends on #606 and the paid-order contract from #607.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

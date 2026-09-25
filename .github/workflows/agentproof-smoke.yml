@@ -51,10 +51,11 @@ jobs:
 
       - name: Verify paid endpoint returns 402
         run: |
-          status=$(curl -sS -o /tmp/paid-response.json -w '%{http_code}'             -X POST http://127.0.0.1:4020/verify             -H 'content-type: application/json'             --data '{"claim":"example domains","sources":["https://www.iana.org/help/example-domains"]}')
+          status=$(curl -sS -D /tmp/paid-headers.txt -o /tmp/paid-response.json -w '%{http_code}'             -X POST http://127.0.0.1:4020/verify             -H 'content-type: application/json'             --data '{"claim":"example domains","sources":["https://www.iana.org/help/example-domains"]}')
+          cat /tmp/paid-headers.txt
           cat /tmp/paid-response.json
           test "$status" = "402"
-          grep -qi "payment" /tmp/paid-response.json
+          grep -Eqi 'payment-required|payment-signature' /tmp/paid-headers.txt
 
       - name: Server log on failure
         if: failure()

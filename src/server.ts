@@ -125,7 +125,7 @@ app.post("/verify", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(
+app.listen(PORT, "0.0.0.0", () => console.log(
   `AgentProof listening on :${PORT} — ${NETWORK} — ${DEV_BYPASS_PAYMENT
     ? "DEV BYPASS: no wallet/payment required"
     : `receiver ${PAY_TO} via ${FACILITATOR_URL}`}`

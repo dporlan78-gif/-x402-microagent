@@ -21,12 +21,26 @@ jobs:
 
       - run: npm install
 
-      - name: Start server
+      - name: Check facilitator supports Solana exact
+        run: |
+          curl -fsS https://facilitator.payai.network/supported | tee /tmp/supported.json
+          node - <<'NODE'
+          const r = require('/tmp/supported.json');
+          const text = JSON.stringify(r);
+          if (!text.includes('solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp') && !text.includes('"solana"')) {
+            throw new Error('Facilitator does not advertise Solana support');
+          }
+          console.log('PayAI facilitator advertises Solana support');
+          NODE
+
+      - name: Start server without payment bypass
         env:
-          DEV_BYPASS_PAYMENT: "true"
+          PAY_TO: "8GZJ4rdBzb3YpThF3e6kcoY4QiEek453f3NxvTUxpbfb"
+          FACILITATOR_URL: "https://facilitator.payai.network"
+          X402_NETWORK: "solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp"
           PORT: "4020"
         run: |
-          nohup npm run server > /tmp/agentproof.log 2>&1 &
+          nohup npm run server > /tmp/agentproof-paid.log 2>&1 &
           for i in {1..30}; do
             if curl -fsS http://127.0.0.1:4020/health; then
               echo
@@ -35,15 +49,13 @@ jobs:
             sleep 1
           done
 
-      - name: Verify endpoint without wallet
+      - name: Verify paid endpoint returns 402
         run: |
-          curl -fsS -X POST http://127.0.0.1:4020/verify \
-            -H 'content-type: application/json' \
-            --data '{"claim":"example domains","sources":["https://www.iana.org/help/example-domains"]}' \
-            | tee /tmp/verify.json
-          node -e "const r=require('/tmp/verify.json'); if(!r.claim || !Array.isArray(r.evidence)) process.exit(1); console.log('AgentProof smoke test OK')"
+          status=$(curl -sS -o /tmp/paid-response.json -w '%{http_code}'             -X POST http://127.0.0.1:4020/verify             -H 'content-type: application/json'             --data '{"claim":"example domains","sources":["https://www.iana.org/help/example-domains"]}')
+          cat /tmp/paid-response.json
+          test "$status" = "402"
+          grep -qi "payment" /tmp/paid-response.json
 
       - name: Server log on failure
         if: failure()
-        run: cat /tmp/agentproof.log
-
+        run: cat /tmp/agentproof-paid.log

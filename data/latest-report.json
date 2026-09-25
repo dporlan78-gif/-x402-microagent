@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T18:33:21.841Z",
+  "generatedAt": "2026-09-25T19:28:52.706Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -456,6 +456,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5587289386",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 5 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/169",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-25 19:05 UTC\n\n#### 1. [[Bounty proposal] fix(backend/updates): sanitize value error reflections and prevent internal state leaks ($50 proposed)](https://github.com/BasedHardware/omi/issues/18911)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Fix is implemented and tested in PR #18910.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-25T14:17:03Z\n\n#### 2. [parse_reset_input returns None instead of exiting on malformed JSON](https://github.com/tenstorrent/tt-tools-common/issues/76)\n- **Project:** [tenstorrent/tt-tools-common](https://github.com/tenstorrent/tt-tools-common)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Before the fix: 1 failed, 4 passed, 1 hardware test deselected.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T17:20:03Z\n\n#### 3. [[TASK HUNTER] Build With AI: Basics — $2,500 prize pool](https://github.com/Inkh95/t3n-trusted-approval-agent/issues/26)\n- **Project:** [Inkh95/t3n-trusted-approval-agent](https://github.com/Inkh95/t3n-trusted-approval-agent)\n- **Source:** GitHub Issue\n- **Reward:** $2,500；$1,250；$750；$500\n- **Task:** Evidence: Official Devpost overview requires a new app built with the Devpost Learn Skill Pack and public scope.md/prd.md/spec.md; official rules confirm no purchase/payment required, Bulgaria is not excluded, AI coding agents are explicitly allowed, and cash prizes are $1,250/$750/$500. Official dates show submissions\n- **Deadline:** Deadline: 2026-10-26 23:00 Europe/Sofia\n- **Submission:** 待确认\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 页面描述：Estimated effort: 12–25 hours for a focused new proof-of-concept, planning docs, public repo, tests, and 1–3 minute demo\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T14:49:22Z\n\n#### 4. [bounty-watch 2026-09-25: 0 new, 0 resumed, 2 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/42)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-09-25: 0 new, 0 resumed, 2 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T17:10:59Z\n\n#### 5. [🎁 Build Something with Salam (Community Reward)](https://github.com/SalamLang/Salam/issues/1713)\n- **Project:** [SalamLang/Salam](https://github.com/SalamLang/Salam)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Salam is still growing, and one of the best ways to improve a programming language is to build real things with it.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 有竞争：2 个 assignee\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T15:22:54Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 50,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 50,
+      "profitPerHourUsd": 600,
+      "eligible": true
+    },
+    {
       "id": "github-5583852207",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 9 New Opportunities",
@@ -581,20 +595,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 50,
       "profitPerHourUsd": 600,
-      "eligible": true
-    },
-    {
-      "id": "github-5559876821",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 5 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/151",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-23 21:41 UTC\n\n#### 1. [[Bounty proposal] fix(backend): cross-speaker sentence repair reorders and reattributes transcript segments ($75 proposed)](https://github.com/BasedHardware/omi/issues/17831)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $75；US$75\n- **Task:** The branch now runs only when the next segment starts and ends no earlier than the first one and begins within 3 seconds of it, the same window the same-speaker path uses. Three tests were added in backend/tests/unit/testtranscriptsegment.py; two of them fail without the fix.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-23T19:36:41Z\n\n#### 2. [Deleting an account leaves its marketplace app subscriptions billing](https://github.com/BasedHardware/omi/issues/17836)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $75\n- **Task:** Account deletion cancels only the Omi plan subscription, the one #6750 reported and #7679 fixed. App subscriptions are separate Stripe subscriptions made through the app's payment link, and the deletion wipe never looks for them. After deletion the user cannot sign in, and the only place that cancels an app subscriptio\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** Stripe\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-23T19:57:52Z\n\n#### 3. [Account export drops tasks past 2000, repeats others, and empties their provenance](https://github.com/BasedHardware/omi/issues/17833)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $75\n- **Task:** Fix in #17832.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-23T19:39:40Z\n\n#### 4. [[ Laravel ] Implement user notification preferences with channel routing](https://github.com/UnsafeLabs/Bounty-Hunters/issues/793)\n- **Project:** [UnsafeLabs/Bounty-Hunters](https://github.com/UnsafeLabs/Bounty-Hunters)\n- **Source:** GitHub Issue\n- **Reward:** $450\n- **Task:** [ Laravel ] Implement user notification preferences with channel routing\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 20\n- **Last updated:** 2026-09-23T18:47:09Z\n\n#### 5. [One scorer, one vocabulary: the live gate reads what the harness measures](https://github.com/vltnkiz/numerai/issues/93)\n- **Project:** [vltnkiz/numerai](https://github.com/vltnkiz/numerai)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Capability-only does NOT hold here — this is the deviation. #74 and #82 both gated on production artifacts being byte-identical. This map changes what the numbers mean, so that gate cannot carry. What replaces it: the submission is frozen, only the scores move. livepredictions.csv and livepredictionsneutralized.csv byt\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：几十分钟到数小时\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-23T19:50:00Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 75,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 75,
-      "profitPerHourUsd": 900,
       "eligible": true
     }
   ]

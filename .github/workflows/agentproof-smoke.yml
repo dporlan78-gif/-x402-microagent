@@ -47,3 +47,4 @@ jobs:
       - name: Server log on failure
         if: failure()
         run: cat /tmp/agentproof.log
+

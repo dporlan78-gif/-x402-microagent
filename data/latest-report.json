@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T05:30:28.489Z",
+  "generatedAt": "2026-09-25T06:38:25.759Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -102,20 +102,6 @@
       "eligible": true
     },
     {
-      "id": "github-5437122699",
-      "source": "github",
-      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 1e+24,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1e+24,
-      "profitPerHourUsd": 1.2e+25,
-      "eligible": true
-    },
-    {
       "id": "github-5399303366",
       "source": "github",
       "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
@@ -129,6 +115,20 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5437122699",
+      "source": "github",
+      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+24,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1e+24,
+      "profitPerHourUsd": 1.2e+25,
+      "eligible": true
     },
     {
       "id": "github-5556777041",
@@ -336,6 +336,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5578906086",
+      "source": "github",
+      "title": "Paid help needed – RTL9601D VLAN/OMCI issue with Huawei MA5800",
+      "url": "https://github.com/Anime4000/RTL960x/issues/490",
+      "description": "Hello,\n\nWe are Start Bit Net, a fiber optic equipment distributor from Romania, and we are looking for someone with experience in Realtek RTL9601D firmware / OMCI / VLAN handling who can help us solve a compatibility issue.\n\nTest environment:\n\nXPON SFP ONU Stick: Realtek RTL9601D\nOLT: Huawei MA5800\nRouter: Huawei AR5710\nGPON connection\n\nProblem:\n\nWe tested two firmware versions:\n\nV1.0-230303\n\nONU registers successfully on the MA5800 and remains online.\nTraffic passes through the interface and VLANs.\nHowever, we cannot correctly see/identify the VLAN IDs being transported.\n\nV1.10-240408\n\nONU also registers successfully and remains online.\nHowever, no traffic passes through the device.\n\nWe tested several configurations together with the manufacturer's engineer without solving the problem.\n\nOn the same MA5800 OLT port and with the same configuration, a Huawei GPON Stick works correctly without any additional configuration.\n\nTherefore, we believe the problem is related to RTL9601D firmware / OMCI VLAN handling, rather than the optical link or GPON registration.\n\nWe are looking for someone who can help us:\n\ndiagnose the OMCI/VLAN configuration;\ndetermine whether the problem can be solved by RTL9601D configuration parameters;\nanalyze the existing firmware if necessary;\nmodify/build firmware if required;\nachieve correct VLAN operation with Huawei MA5800.\n\nWe can provide the firmware files, configuration information and test results, and we have access to the MA5800 for testing.\n\nThis is a paid engineering job.\n\nIf you have experience with RTL9601D/RTL960x + Huawei MA5800 + OMCI/VLAN, please contact us or reply here.\n\nThank you.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5558865479",
       "source": "github",
       "title": "paid_status: add boundary test for already-paid transition",
@@ -430,21 +445,6 @@
       "title": "[India] Paid fundamentals vendor adapter",
       "url": "https://github.com/dev-pmallapp/jesse/issues/36",
       "description": "Part of epic: **[India][Epic] Backlog: broker/vendor sources and enhancements**\n\n## Scope\nSecond `FundamentalsProvider` once a vendor is chosen.\n\n## Acceptance criteria\n- [ ] Contract tests on fixtures\n\nPlan: `docs/india-markets/PLAN.md` (branch `feat/india-markets`) and the tracking issue.\n\n**Workflow:** Opus writes the spec → `implementer` (Sonnet) → `tester` (Sonnet) → `reviewer` (Sonnet) → `doc-writer` (Haiku). Branch `feat/india-*` off `origin/master`, PR against `dev-pmallapp/jesse` master.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5572590334",
-      "source": "github",
-      "title": "Issue recoverable licenses that verify offline",
-      "url": "https://github.com/Gogorichielab/PPCollection/issues/608",
-      "description": "## User need\nAfter paying, the buyer can unlock the full paid product on a self-hosted PPCollection installation and continue to use it without an internet connection. An activation code grants an all-access entitlement; it does **not** authenticate the local admin. Product/installation rules come from #606, and verified paid orders come from #607.\n\n## Boundary\n- Hosted issuer: one license per eligible order according to P5/P6 in #606; redemption/recovery state and signing private key.\n- Local verifier: validates the entitlement with a bundled public key and stores it in persistent `/data`; no Stripe secret or signing key ships in the app.\n- In-app feature access/UI is #609. Full purchase journey and support docs are #610.\n\n## Required flows\n1. Issue a unique high-entropy redemption code for each paid order and store its hash. Do not use a static Payment Link message as a shared code.\n2. Redeem or manually exchange a code for a signed payload containing an `all_access` product entitlement, license ID, format/key version, and an installation binding only if P5 chooses that model.\n3. Support an offline installation through a copy/paste challenge-response or signed-license import path that does not require inbound access to the local server. Normal feature use makes no licensing network calls.\n4. Recover a lost code/license and handle reinstalls/transfers through the policy in #606, with abuse controls, a stable order record, and no duplicate paid grants.\n5. Document key rotation and the limits of enforcing refund/chargeback revocation while an installation stays offline.\n\n## Acceptance scenarios\n- [ ] Given an eligible paid order, when issuing is retried, the same entitlement/order association is returned and no extra license is created.\n- [ ] Given a valid signed payload, when imported, the local app enables all paid-tier features after restart, offline.\n- [ ] Given altered, wrong-product, unsupported-version, unbound-to-this-installation (if binding is chosen), or otherwise invalid payloads, the local app refuses activation and explains recovery.\n- [ ] Given a lost email or reinstall, the approved owner can recover/transfer access per #606 without paying again when policy allows.\n- [ ] Given the issuer is unavailable, already activated installations continue working.\n- [ ] Tests cover signature verification, replay, recovery, key rotation, and backup/restore.\n\n**Decision gate:** P5 and P6 in #606 must define whether a license is per purchaser or installation, transfer limits, and refund behavior. Avoid claiming that an offline entitlement can be revoked instantly.\n\nDepends on #606 and the paid-order contract from #607.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

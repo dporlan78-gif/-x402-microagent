@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T15:31:41.794Z",
+  "generatedAt": "2026-09-25T16:33:15.964Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -174,21 +174,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5291891057",
-      "source": "github",
-      "title": "OWNER ACTION — B64 Adscend cash-video approval + Korea inventory proof",
-      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/1117",
-      "description": "Parent: #1112\n\n## Owner schedule\n- Planned account creation date: **2026-08-31 (Monday, KST)**\n- Until then, CENTRAL must not attempt signup, approval, credential entry, or live-provider activation.\n- This issue remains OWNER ACTION; CENTRAL may continue account-independent product work in parallel.\n\n## Goal\nEstablish Adscend Media as the second real web AD_VIEW/reward lane, without treating generic offers or points-only traffic as cash-reward supply.\n\n## Current code authority\nThe account-independent implementation is already merged to `main` via #1127 and #1128.\nCurrent product state: `TECHNICAL_COMPLETE_OWNER_ACTIVATION_PENDING`.\nImplemented already: video category filter, `allowed_traffic=3` cash-incentive gate, web browser config with server-only API credentials, go-live readiness contract, external payout dependency.\n\n## External requirements\n- [ ] publisher account approved\n- [ ] B64 use case explicitly approved as GPT/cash or external-value reward model\n- [ ] website Offer Wall / PixelPointTV profile created\n- [ ] video-only category/path configured\n- [ ] stable opaque user identifiers configured\n- [ ] server postback configured\n- [ ] secure hash/provider-supported postback verification enabled and verified\n- [ ] API credentials stored server-side only\n- [ ] South Korea video inventory observed live\n- [ ] only offers with `allowed_traffic=3` accepted for cash/external-value reward lane\n- [ ] real conversion/postback observed and duplicate controls verified\n- [ ] external reward fulfillment live-ready before consumer activation\n\n## Acceptance\n`allowed_traffic` 0/1/2 never enters B64 cash P0. Provider approval and KR supply must be observed, not inferred. Technical integration without a user payout path is NOT live completion.\n\nNever put publisher API keys, secrets or account credentials in this issue or repository.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5460422244",
       "source": "github",
       "title": "Automate Whop bounty payout receipt evidence for zero-touch settlement",
@@ -231,6 +216,21 @@
       "expectedProfitUsd": 5,
       "profitPerHourUsd": 60,
       "eligible": true
+    },
+    {
+      "id": "github-5291891057",
+      "source": "github",
+      "title": "[OWNER-ACTION][HOLD][B64] Adscend approval + Korea rewarded-video inventory proof",
+      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/1117",
+      "description": "Parent: #1112\n\n## Owner schedule\n- Planned account creation date: **2026-08-31 (Monday, KST)**\n- Until then, CENTRAL must not attempt signup, approval, credential entry, or live-provider activation.\n- This issue remains OWNER ACTION; CENTRAL may continue account-independent product work in parallel.\n\n## Goal\nEstablish Adscend Media as the second real web AD_VIEW/reward lane, without treating generic offers or points-only traffic as cash-reward supply.\n\n## Current code authority\nThe account-independent implementation is already merged to `main` via #1127 and #1128.\nCurrent product state: `TECHNICAL_COMPLETE_OWNER_ACTIVATION_PENDING`.\nImplemented already: video category filter, `allowed_traffic=3` cash-incentive gate, web browser config with server-only API credentials, go-live readiness contract, external payout dependency.\n\n## External requirements\n- [ ] publisher account approved\n- [ ] B64 use case explicitly approved as GPT/cash or external-value reward model\n- [ ] website Offer Wall / PixelPointTV profile created\n- [ ] video-only category/path configured\n- [ ] stable opaque user identifiers configured\n- [ ] server postback configured\n- [ ] secure hash/provider-supported postback verification enabled and verified\n- [ ] API credentials stored server-side only\n- [ ] South Korea video inventory observed live\n- [ ] only offers with `allowed_traffic=3` accepted for cash/external-value reward lane\n- [ ] real conversion/postback observed and duplicate controls verified\n- [ ] external reward fulfillment live-ready before consumer activation\n\n## Acceptance\n`allowed_traffic` 0/1/2 never enters B64 cash P0. Provider approval and KR supply must be observed, not inferred. Technical integration without a user payout path is NOT live completion.\n\nNever put publisher API keys, secrets or account credentials in this issue or repository.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-5410704722",
@@ -411,21 +411,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5572950666",
-      "source": "github",
-      "title": "Ensure open issues are never invisibly blocked by internal Paid state",
-      "url": "https://github.com/viamin/paid/issues/4004",
-      "description": "## Problem\nPaid's database and internal state management should never invisibly block work on open issues. There have been cases where open issues are not processed because of internal state that is not visible to users.\n\n**Current behavior**:\n- Issues can be in a \"paid-recommend-close\" state that prevents them from being picked up for work.\n- Internal Paid states (e.g., `paid_state`) can override the GitHub issue state, making it appear open on GitHub but not actionable in Paid.\n- Users may not be aware that their open issue is blocked by internal Paid state.\n\n**Requested improvements**:\n1. **Transparency**: Expose the internal Paid state (e.g., `paid_state`) to users via comments or UI so they understand why an issue is not being processed.\n2. **Never block open issues**: Ensure that if an issue is open on GitHub, it should always be eligible for processing in Paid, unless explicitly marked as \"wontfix\" or \"duplicate\" by a human.\n3. **State synchronization**: When an issue is re-opened on GitHub, Paid should automatically sync the internal state to match (e.g., from \"completed\" back to \"new\" or \"analyzed\").\n4. **Visibility dashboard**: Add a dashboard or log showing which open issues are blocked and why, so users can take action.\n\n**Impact**:\n- Prevents invisible blocking of work\n- Improves user trust and transparency\n- Ensures that open issues are always actionable\n- Aligns with Paid's principle that \"Fix forward should be a core tenet\" — work should progress logically, not be reset arbitrarily\n\n**Related issues**:\n- #3925 (open, labeled \"paid-recommend-close\")\n- #4001 (process improvement for re-opened issue review)\n- #4002 (chat feature should prefer new issues over re-opening)\n- #4003 (trust verification required for re-opening and editing issues)\n- app/models/issue.rb (defines PAID_STATES and AUTO_PICK_ELIGIBLE_PAID_STATES)\n\n**Proposed solution**:\n- Add a comment or UI element showing the current Paid state when an issue is open on GitHub but blocked\n- Update the auto-pick logic to treat open GitHub issues as always eligible, regardless of internal Paid state\n- Add a sync mechanism that updates Paid state when GitHub issue state changes\n- Consider adding a \"blocked\" reason field to issues that can be queried and displayed",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5522774905",
       "source": "github",
       "title": "Issue 1.1 – Payment state machine",
@@ -446,6 +431,21 @@
       "title": "[India] Paid fundamentals vendor adapter",
       "url": "https://github.com/dev-pmallapp/jesse/issues/36",
       "description": "Part of epic: **[India][Epic] Backlog: broker/vendor sources and enhancements**\n\n## Scope\nSecond `FundamentalsProvider` once a vendor is chosen.\n\n## Acceptance criteria\n- [ ] Contract tests on fixtures\n\nPlan: `docs/india-markets/PLAN.md` (branch `feat/india-markets`) and the tracking issue.\n\n**Workflow:** Opus writes the spec → `implementer` (Sonnet) → `tester` (Sonnet) → `reviewer` (Sonnet) → `doc-writer` (Haiku). Branch `feat/india-*` off `origin/master`, PR against `dev-pmallapp/jesse` master.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5572590334",
+      "source": "github",
+      "title": "Issue recoverable licenses that verify offline",
+      "url": "https://github.com/Gogorichielab/PPCollection/issues/608",
+      "description": "## User need\nAfter paying, the buyer can unlock the full paid product on a self-hosted PPCollection installation and continue to use it without an internet connection. An activation code grants an all-access entitlement; it does **not** authenticate the local admin. Product/installation rules come from #606, and verified paid orders come from #607.\n\n## Boundary\n- Hosted issuer: one license per eligible order according to P5/P6 in #606; redemption/recovery state and signing private key.\n- Local verifier: validates the entitlement with a bundled public key and stores it in persistent `/data`; no Stripe secret or signing key ships in the app.\n- In-app feature access/UI is #609. Full purchase journey and support docs are #610.\n\n## Required flows\n1. Issue a unique high-entropy redemption code for each paid order and store its hash. Do not use a static Payment Link message as a shared code.\n2. Redeem or manually exchange a code for a signed payload containing an `all_access` product entitlement, license ID, format/key version, and an installation binding only if P5 chooses that model.\n3. Support an offline installation through a copy/paste challenge-response or signed-license import path that does not require inbound access to the local server. Normal feature use makes no licensing network calls.\n4. Recover a lost code/license and handle reinstalls/transfers through the policy in #606, with abuse controls, a stable order record, and no duplicate paid grants.\n5. Document key rotation and the limits of enforcing refund/chargeback revocation while an installation stays offline.\n\n## Acceptance scenarios\n- [ ] Given an eligible paid order, when issuing is retried, the same entitlement/order association is returned and no extra license is created.\n- [ ] Given a valid signed payload, when imported, the local app enables all paid-tier features after restart, offline.\n- [ ] Given altered, wrong-product, unsupported-version, unbound-to-this-installation (if binding is chosen), or otherwise invalid payloads, the local app refuses activation and explains recovery.\n- [ ] Given a lost email or reinstall, the approved owner can recover/transfer access per #606 without paying again when policy allows.\n- [ ] Given the issuer is unavailable, already activated installations continue working.\n- [ ] Tests cover signature verification, replay, recovery, key rotation, and backup/restore.\n\n**Decision gate:** P5 and P6 in #606 must define whether a license is per purchaser or installation, transfer limits, and refund behavior. Avoid claiming that an offline entitlement can be revoked instantly.\n\nDepends on #606 and the paid-order contract from #607.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

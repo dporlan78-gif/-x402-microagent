@@ -7,21 +7,23 @@ import { createCdpFacilitatorClient } from "@coinbase/cdp-sdk/x402";
 const PORT = Number(process.env.PORT ?? 4020);
 const PAY_TO = (process.env.PAY_TO ?? "") as Address;
 const NETWORK = process.env.X402_NETWORK ?? "eip155:84532";
+const DEV_BYPASS_PAYMENT = process.env.DEV_BYPASS_PAYMENT === "true";
 
-if (!PAY_TO) throw new Error("PAY_TO is required");
+if (!PAY_TO && !DEV_BYPASS_PAYMENT) throw new Error("PAY_TO is required unless DEV_BYPASS_PAYMENT=true");
 
 const app = express();
 app.use(express.json({ limit: "32kb" }));
 
-const facilitator = createCdpFacilitatorClient();
-const server = new x402ResourceServer(facilitator).register(NETWORK, new ExactEvmScheme());
-
-app.use(paymentMiddleware({
-  "POST /verify": {
-    accepts: [{ scheme: "exact", price: "$0.005", network: NETWORK, payTo: PAY_TO }],
-    description: "Check whether public source pages contain evidence relevant to a claim"
-  }
-}, server));
+if (!DEV_BYPASS_PAYMENT) {
+  const facilitator = createCdpFacilitatorClient();
+  const server = new x402ResourceServer(facilitator).register(NETWORK, new ExactEvmScheme());
+  app.use(paymentMiddleware({
+    "POST /verify": {
+      accepts: [{ scheme: "exact", price: "$0.005", network: NETWORK, payTo: PAY_TO }],
+      description: "Check whether public source pages contain evidence relevant to a claim"
+    }
+  }, server));
+}
 
 type VerifyRequest = { claim: string; sources: string[] };
 
@@ -49,7 +51,7 @@ async function inspectSource(url: string, terms: string[]) {
   return { url, status: response.status, matchedTerms, coverage: terms.length ? Number((matchedTerms.length / terms.length).toFixed(2)) : 0, retrievedAt: new Date().toISOString() };
 }
 
-app.get("/health", (_req, res) => res.json({ ok: true, service: "agentproof", network: NETWORK }));
+app.get("/health", (_req, res) => res.json({ ok: true, service: "agentproof", network: NETWORK, paymentRequired: !DEV_BYPASS_PAYMENT }));
 
 app.post("/verify", async (req, res) => {
   try {
@@ -75,4 +77,4 @@ app.post("/verify", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`AgentProof listening on :${PORT} — ${NETWORK} — receiver ${PAY_TO}`));
+app.listen(PORT, () => console.log(`AgentProof listening on :${PORT} — ${NETWORK} — ${DEV_BYPASS_PAYMENT ? "DEV BYPASS: no wallet/payment required" : `receiver ${PAY_TO}`}`));

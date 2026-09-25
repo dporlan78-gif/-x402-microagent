@@ -1,0 +1,49 @@
+name: AgentProof smoke test
+
+on:
+  push:
+    branches:
+      - agentproof-mvp
+  pull_request:
+    branches:
+      - main
+      - agentproof-mvp
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm install
+
+      - name: Start server
+        env:
+          DEV_BYPASS_PAYMENT: "true"
+          PORT: "4020"
+        run: |
+          nohup npm run server > /tmp/agentproof.log 2>&1 &
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:4020/health; then
+              echo
+              break
+            fi
+            sleep 1
+          done
+
+      - name: Verify endpoint without wallet
+        run: |
+          curl -fsS -X POST http://127.0.0.1:4020/verify \
+            -H 'content-type: application/json' \
+            --data '{"claim":"example domains","sources":["https://www.iana.org/help/example-domains"]}' \
+            | tee /tmp/verify.json
+          node -e "const r=require('/tmp/verify.json'); if(!r.claim || !Array.isArray(r.evidence)) process.exit(1); console.log('AgentProof smoke test OK')"
+
+      - name: Server log on failure
+        if: failure()
+        run: cat /tmp/agentproof.log

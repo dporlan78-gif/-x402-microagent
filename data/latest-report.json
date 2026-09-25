@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T13:32:45.773Z",
+  "generatedAt": "2026-09-25T14:33:11.799Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 19,
+  "eligible": 20,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -456,6 +456,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5583852207",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 9 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/167",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-25 14:00 UTC\n\n#### 1. [[FIX][MCPDeployer._call][Enforce positive timeouts for blocking targets]](https://github.com/kyegomez/swarms/issues/2357)\n- **Project:** [kyegomez/swarms](https://github.com/kyegomez/swarms)\n- **Source:** GitHub Issue\n- **Reward:** US$20\n- **Task:** This is a direct runtime reproduction, not a full framework test run or an MCP client/server integration test. No production fix has been implemented yet.\n- **Deadline:** MCPDeployer(timeout=...) does not reliably impose a response deadline once an ordinary blocking target is running. call() wraps anyio.tothread.runsync(fn) in anyio.failafter(), but the worker wait is shielded by default. A target can finish after the deadline and still return a s\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 页面描述：The published bounty program describes documentation rewards, so I am not assuming it covers this runtime fix. Would you consider a fixed US$20 bounty for the focused runtime repai\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-25T11:56:50Z\n\n#### 2. [[Bounty proposal] fix(backend/csat): sanitize store error reflections and add fallback resilience ($50 proposed)](https://github.com/BasedHardware/omi/issues/18868)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$50 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #18867.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T07:55:46Z\n\n#### 3. [[Bounty proposal] docs(cli): memories -> ClickHouse analytical warehouse recipe ($25 proposed)](https://github.com/BasedHardware/omi/issues/18866)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25；US$25\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$25 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #18865.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T07:37:30Z\n\n#### 4. [[Bounty proposal] docs(cli): memories -> PostgreSQL export recipe ($25 proposed)](https://github.com/BasedHardware/omi/issues/18864)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25；US$25\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$25 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #18863.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T07:35:17Z\n\n#### 5. [Enable CodeQL default setup (Python + Actions)](https://github.com/glunk-works/bedrock-serverless-rag/issues/134)\n- **Project:** [glunk-works/bedrock-serverless-rag](https://github.com/glunk-works/bedrock-serverless-rag)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Say who triages the alerts it produces — a comment here is enough.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T12:21:53Z\n\n#### 6. [New in-scope 2026-09-25: 2 program(s) added targets](https://github.com/abdulsalam-create/bounty-watch/issues/41)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** New in-scope 2026-09-25: 2 program(s) added targets\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T11:51:46Z\n\n#### 7. [Scope digest 2026-09-25: 4 changes across 3 bounty programs](https://github.com/abdulsalam-create/bounty-watch/issues/40)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Scope digest 2026-09-25: 4 changes across 3 bounty programs\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T11:51:45Z\n\n#### 8. [bounty-watch 2026-09-25: 0 new, 0 resumed, 5 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/39)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-09-25: 0 new, 0 resumed, 5 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T11:51:44Z\n\n#### 9. [[PROJECT] Homeowner paid funnel: the plan checklist (Arm F first; realtor test slotted)](https://github.com/StellarEdgeServices/otterquote-platform/issues/2121)\n- **Project:** [StellarEdgeServices/otterquote-platform](https://github.com/StellarEdgeServices/otterquote-platform)\n- **Source:** GitHub Issue\n- **Reward:** $15；$30；$50；$100\n- **Task:** The test is written first. Every build issue states its \"working\" test before any code is written. Sloane runs the test on a phone inside the Facebook in-app browser and posts the evidence. Only then does the item get ✅.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、电子邮件\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 页面描述：| 0.7 | Speed to lead: lead/claim alert rings Dustin's phone; target is a call within 5 min, 8 a.m. to 8 p.m. (committed 09-23; alert shipped under #1932, needs a proof ping) | Dus\n- **Related open PRs:** 3\n- **Competition:** 有竞争：38 条评论；3 个相关 open PR\n- **Original Issue comments:** 38\n- **Last updated:** 2026-09-25T13:21:51Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 20,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 20,
+      "profitPerHourUsd": 240,
+      "eligible": true
+    },
+    {
       "id": "github-5580362910",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 5 New Opportunities",
@@ -582,21 +596,6 @@
       "expectedProfitUsd": 75,
       "profitPerHourUsd": 900,
       "eligible": true
-    },
-    {
-      "id": "github-5557315481",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/150",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-23 17:51 UTC\n\n#### 1. [[Playtest][Jobs] Veridian ace bounty row names an ordinary pirate at 300 UU and keeps it after the kill](https://github.com/barryrwilson/Rimward/issues/269)\n- **Project:** [barryrwilson/Rimward](https://github.com/barryrwilson/Rimward)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [ ] Focused test; npm run build and npm run test:boot pass.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-23T16:08:57Z\n\n#### 2. [No existence pre-checks on FK-referencing ids across bounty/milestone/team create and claim paths — unknown UUIDs crash with an unhandled Postgres FK-violation 500](https://github.com/MergeFi/backend/issues/265)\n- **Project:** [MergeFi/backend](https://github.com/MergeFi/backend)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Fix: add a lightweight repo.exists({ where: { id } }) (or findOne) check for each of these ids before the insert/update, throwing BadRequestException/NotFoundException with a clear message identifying which id was invalid.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 6\n- **Last updated:** 2026-09-23T16:06:02Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     }
   ]
 }

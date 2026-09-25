@@ -6,7 +6,7 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: PAY_TO
-        sync: false
+        value: 8GZJ4rdBzb3YpThF3e6kcoY4QiEek453f3NxvTUxpbfb
       - key: FACILITATOR_URL
         value: https://facilitator.payai.network
       - key: X402_NETWORK

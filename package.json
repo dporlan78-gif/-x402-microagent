@@ -4,10 +4,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "agent": "tsx src/index.ts"
+    "agent": "tsx src/index.ts",
+    "server": "tsx src/server.ts"
   },
   "dependencies": {
-    "axios": "^1.7.9"
+    "axios": "^1.7.9",
+    "express": "^5.1.0",
+    "@coinbase/cdp-sdk": "latest",
+    "@x402/express": "latest",
+    "@x402/core": "latest",
+    "@x402/evm": "latest"
   },
   "devDependencies": {
     "@types/node": "^22.10.5",

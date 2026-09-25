@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T03:30:50.666Z",
+  "generatedAt": "2026-09-25T04:32:37.321Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -174,6 +174,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5291891057",
+      "source": "github",
+      "title": "OWNER ACTION — B64 Adscend cash-video approval + Korea inventory proof",
+      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/1117",
+      "description": "Parent: #1112\n\n## Owner schedule\n- Planned account creation date: **2026-08-31 (Monday, KST)**\n- Until then, CENTRAL must not attempt signup, approval, credential entry, or live-provider activation.\n- This issue remains OWNER ACTION; CENTRAL may continue account-independent product work in parallel.\n\n## Goal\nEstablish Adscend Media as the second real web AD_VIEW/reward lane, without treating generic offers or points-only traffic as cash-reward supply.\n\n## Current code authority\nThe account-independent implementation is already merged to `main` via #1127 and #1128.\nCurrent product state: `TECHNICAL_COMPLETE_OWNER_ACTIVATION_PENDING`.\nImplemented already: video category filter, `allowed_traffic=3` cash-incentive gate, web browser config with server-only API credentials, go-live readiness contract, external payout dependency.\n\n## External requirements\n- [ ] publisher account approved\n- [ ] B64 use case explicitly approved as GPT/cash or external-value reward model\n- [ ] website Offer Wall / PixelPointTV profile created\n- [ ] video-only category/path configured\n- [ ] stable opaque user identifiers configured\n- [ ] server postback configured\n- [ ] secure hash/provider-supported postback verification enabled and verified\n- [ ] API credentials stored server-side only\n- [ ] South Korea video inventory observed live\n- [ ] only offers with `allowed_traffic=3` accepted for cash/external-value reward lane\n- [ ] real conversion/postback observed and duplicate controls verified\n- [ ] external reward fulfillment live-ready before consumer activation\n\n## Acceptance\n`allowed_traffic` 0/1/2 never enters B64 cash P0. Provider approval and KR supply must be observed, not inferred. Technical integration without a user payout path is NOT live completion.\n\nNever put publisher API keys, secrets or account credentials in this issue or repository.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5460422244",
       "source": "github",
       "title": "Automate Whop bounty payout receipt evidence for zero-touch settlement",
@@ -230,21 +245,6 @@
       "expectedProfitUsd": 2,
       "profitPerHourUsd": 24,
       "eligible": true
-    },
-    {
-      "id": "github-5291891057",
-      "source": "github",
-      "title": "OWNER ACTION — B64 Adscend cash-video approval + Korea inventory proof",
-      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/1117",
-      "description": "Parent: #1112\n\n## Owner schedule\n- Planned account creation date: **2026-08-31 (Monday, KST)**\n- Until then, CENTRAL must not attempt signup, approval, credential entry, or live-provider activation.\n- This issue remains OWNER ACTION; CENTRAL may continue account-independent product work in parallel.\n\n## Goal\nEstablish Adscend Media as the second real web AD_VIEW/reward lane, without treating generic offers or points-only traffic as cash-reward supply.\n\n## Current code authority\nThe account-independent implementation is already merged to `main` via #1127 and #1128.\nCurrent product state: `TECHNICAL_COMPLETE_OWNER_ACTIVATION_PENDING`.\nImplemented already: video category filter, `allowed_traffic=3` cash-incentive gate, web browser config with server-only API credentials, go-live readiness contract, external payout dependency.\n\n## External requirements\n- [ ] publisher account approved\n- [ ] B64 use case explicitly approved as GPT/cash or external-value reward model\n- [ ] website Offer Wall / PixelPointTV profile created\n- [ ] video-only category/path configured\n- [ ] stable opaque user identifiers configured\n- [ ] server postback configured\n- [ ] secure hash/provider-supported postback verification enabled and verified\n- [ ] API credentials stored server-side only\n- [ ] South Korea video inventory observed live\n- [ ] only offers with `allowed_traffic=3` accepted for cash/external-value reward lane\n- [ ] real conversion/postback observed and duplicate controls verified\n- [ ] external reward fulfillment live-ready before consumer activation\n\n## Acceptance\n`allowed_traffic` 0/1/2 never enters B64 cash P0. Provider approval and KR supply must be observed, not inferred. Technical integration without a user payout path is NOT live completion.\n\nNever put publisher API keys, secrets or account credentials in this issue or repository.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-5160514049",

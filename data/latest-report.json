@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T07:32:13.659Z",
+  "generatedAt": "2026-09-25T08:33:28.145Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -102,20 +102,6 @@
       "eligible": true
     },
     {
-      "id": "github-5437122699",
-      "source": "github",
-      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 1e+24,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1e+24,
-      "profitPerHourUsd": 1.2e+25,
-      "eligible": true
-    },
-    {
       "id": "github-5399303366",
       "source": "github",
       "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
@@ -129,6 +115,20 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5437122699",
+      "source": "github",
+      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+24,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1e+24,
+      "profitPerHourUsd": 1.2e+25,
+      "eligible": true
     },
     {
       "id": "github-5556777041",
@@ -426,20 +426,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5577019268",
-      "source": "github",
-      "title": "[Bug]: Purchasing issue",
-      "url": "https://github.com/PlummersSoftwareLLC/tmog-feedback/issues/994",
-      "description": "### TMOG version and build\n\n0.1.1 beta 2\n\n### Platform\n\nWindows\n\n### Operating-system version\n\nwin 11 25h2\n\n### Hardware\n\n_No response_\n\n### What happened?\n\nI didn't see any other place to leave feedback but please do something to make getting a key easier once you purchase the product. I paid $42.90 over two hours ago and still have not got a key. \n\n### Steps to reproduce\n\n1. purchase a copy of pro\n2. have it ask you to verify your email and get the email with the link but then it never completes and you never get a key for the pro version\n\n### Expected behavior\n\nI make my payment and get a key so I can use what I paid for.\n\n### Frequency\n\nOnce\n\n### Screenshots or diagnostics\n\n_No response_\n\n### Before submitting\n\n- [x] I searched for an existing report of this problem.\n- [x] I removed secrets and unnecessary personal information from this public report.",
-      "rewardUsd": 42.9,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 42.9,
-      "profitPerHourUsd": 514.8,
-      "eligible": true
-    },
-    {
       "id": "github-5550453487",
       "source": "github",
       "title": "[India] Paid fundamentals vendor adapter",
@@ -453,6 +439,35 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5572590334",
+      "source": "github",
+      "title": "Issue recoverable licenses that verify offline",
+      "url": "https://github.com/Gogorichielab/PPCollection/issues/608",
+      "description": "## User need\nAfter paying, the buyer can unlock the full paid product on a self-hosted PPCollection installation and continue to use it without an internet connection. An activation code grants an all-access entitlement; it does **not** authenticate the local admin. Product/installation rules come from #606, and verified paid orders come from #607.\n\n## Boundary\n- Hosted issuer: one license per eligible order according to P5/P6 in #606; redemption/recovery state and signing private key.\n- Local verifier: validates the entitlement with a bundled public key and stores it in persistent `/data`; no Stripe secret or signing key ships in the app.\n- In-app feature access/UI is #609. Full purchase journey and support docs are #610.\n\n## Required flows\n1. Issue a unique high-entropy redemption code for each paid order and store its hash. Do not use a static Payment Link message as a shared code.\n2. Redeem or manually exchange a code for a signed payload containing an `all_access` product entitlement, license ID, format/key version, and an installation binding only if P5 chooses that model.\n3. Support an offline installation through a copy/paste challenge-response or signed-license import path that does not require inbound access to the local server. Normal feature use makes no licensing network calls.\n4. Recover a lost code/license and handle reinstalls/transfers through the policy in #606, with abuse controls, a stable order record, and no duplicate paid grants.\n5. Document key rotation and the limits of enforcing refund/chargeback revocation while an installation stays offline.\n\n## Acceptance scenarios\n- [ ] Given an eligible paid order, when issuing is retried, the same entitlement/order association is returned and no extra license is created.\n- [ ] Given a valid signed payload, when imported, the local app enables all paid-tier features after restart, offline.\n- [ ] Given altered, wrong-product, unsupported-version, unbound-to-this-installation (if binding is chosen), or otherwise invalid payloads, the local app refuses activation and explains recovery.\n- [ ] Given a lost email or reinstall, the approved owner can recover/transfer access per #606 without paying again when policy allows.\n- [ ] Given the issuer is unavailable, already activated installations continue working.\n- [ ] Tests cover signature verification, replay, recovery, key rotation, and backup/restore.\n\n**Decision gate:** P5 and P6 in #606 must define whether a license is per purchaser or installation, transfer limits, and refund behavior. Avoid claiming that an offline entitlement can be revoked instantly.\n\nDepends on #606 and the paid-order contract from #607.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5580362910",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 5 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/165",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-25 08:32 UTC\n\n#### 1. [[Bounty proposal] fix(backend/candidates): sanitize store error and task link validation reflections ($50 proposed)](https://github.com/BasedHardware/omi/issues/18852)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** In backend/routers/candidates.py, caught WorkstreamCandidateResolverUnavailableError, generic CandidateStoreError, and TaskLinkValidationError previously reflected raw str(exc) directly into HTTP responses. This risks exposing internal database schemas, collection identifiers, or validator implementation internals in A\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-25T07:16:03Z\n\n#### 2. [[Bounty proposal] fix(backend/memories): sanitize temporal read view and device scope error reflections ($50 proposed)](https://github.com/BasedHardware/omi/issues/18860)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$50 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #18859.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T07:14:32Z\n\n#### 3. [[Bounty proposal] fix(backend/action_items): sanitize task relationship conflict error reflections ($50 proposed)](https://github.com/BasedHardware/omi/issues/18857)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$50 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #18856.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T06:57:36Z\n\n#### 4. [[Bounty proposal] fix(backend/static_map): sanitize coordinate parsing and provider error reflections ($50 proposed)](https://github.com/BasedHardware/omi/issues/18850)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$50 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #18849.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-25T06:34:20Z\n\n#### 5. [[Bounty proposal] fix(backend/memory_use): sanitize value error and firestore conflict reflections to prevent internal detail leaks ($50 proposed)](https://github.com/BasedHardware/omi/issues/18847)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$50 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #18846.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-25T06:12:52Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 50,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 50,
+      "profitPerHourUsd": 600,
+      "eligible": true
     },
     {
       "id": "github-5576972577",
@@ -574,21 +589,6 @@
       "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
       "url": "https://github.com/2510034127qq-wq/BountyScout/issues/150",
       "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-23 17:51 UTC\n\n#### 1. [[Playtest][Jobs] Veridian ace bounty row names an ordinary pirate at 300 UU and keeps it after the kill](https://github.com/barryrwilson/Rimward/issues/269)\n- **Project:** [barryrwilson/Rimward](https://github.com/barryrwilson/Rimward)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [ ] Focused test; npm run build and npm run test:boot pass.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-23T16:08:57Z\n\n#### 2. [No existence pre-checks on FK-referencing ids across bounty/milestone/team create and claim paths — unknown UUIDs crash with an unhandled Postgres FK-violation 500](https://github.com/MergeFi/backend/issues/265)\n- **Project:** [MergeFi/backend](https://github.com/MergeFi/backend)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Fix: add a lightweight repo.exists({ where: { id } }) (or findOne) check for each of these ids before the insert/update, throwing BadRequestException/NotFoundException with a clear message identifying which id was invalid.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 6\n- **Last updated:** 2026-09-23T16:06:02Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5552764996",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/148",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-23 11:32 UTC\n\n#### 1. [[Workspace]: Exercise shipped AW in isolated consumer environments](https://github.com/rickardvh/agentic-workspace/issues/3600)\n- **Project:** [rickardvh/agentic-workspace](https://github.com/rickardvh/agentic-workspace)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Source inspected at a43ab87de8414190790da83cc567cd9360448168: the six-target release workflow already builds/installs exact artifacts; firstcontact.py supplies one deterministic happy path; the agent harness has one Codex sandbox template, a v0.4.3 fixture dependency, and active CLI-first/retired-contract expectations.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：几十分钟到数小时\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-23T10:54:15Z\n\n#### 2. [Feasibility: a feeless payout rail beside Circle Credits for cleared task earnings](https://github.com/txw842lkj-cmd/silicon-circle-skill/issues/3)\n- **Project:** [txw842lkj-cmd/silicon-circle-skill](https://github.com/txw842lkj-cmd/silicon-circle-skill)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Reusable pieces that already exist (nothing to build from scratch)\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** PayPal、支付宝\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：几十分钟到数小时\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-23T07:28:46Z\n\n#### 3. [POST /api/proposals endpoint missing authentication middleware (reissue via #743)](https://github.com/SecureBananaLabs/bug-bounty/issues/2773)\n- **Project:** [SecureBananaLabs/bug-bounty](https://github.com/SecureBananaLabs/bug-bounty)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Expected behavior: Require authMiddleware before postProposal.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 10\n- **Competition:** 有竞争：10 个相关 open PR\n- **Original Issue comments:** 9\n- **Last updated:** 2026-09-23T09:43:30Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

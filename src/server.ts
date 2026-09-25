@@ -2,7 +2,6 @@ import express from "express";
 import type { Address } from "viem";
 import { paymentMiddleware, x402ResourceServer } from "@x402/express";
 import { ExactEvmScheme } from "@x402/evm/exact/server";
-import { createCdpFacilitatorClient } from "@coinbase/cdp-sdk/x402";
 
 const PORT = Number(process.env.PORT ?? 4020);
 const PAY_TO = (process.env.PAY_TO ?? "") as Address;
@@ -15,6 +14,7 @@ const app = express();
 app.use(express.json({ limit: "32kb" }));
 
 if (!DEV_BYPASS_PAYMENT) {
+  const { createCdpFacilitatorClient } = await import("@coinbase/cdp-sdk/x402");
   const facilitator = createCdpFacilitatorClient();
   const server = new x402ResourceServer(facilitator).register(NETWORK, new ExactEvmScheme());
   app.use(paymentMiddleware({

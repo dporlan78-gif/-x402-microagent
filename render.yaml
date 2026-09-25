@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: agentproof-x402
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PAY_TO
+        value: 8GZJ4rdBzb3YpThF3e6kcoY4QiEek453f3NxvTUxpbfb
+      - key: FACILITATOR_URL
+        value: https://facilitator.payai.network
+      - key: X402_NETWORK
+        value: solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp
+      - key: PORT
+        value: "4020"

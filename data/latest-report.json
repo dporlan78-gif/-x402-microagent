@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T13:29:11.167Z",
+  "generatedAt": "2026-09-26T14:30:27.095Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 21,
+  "eligible": 22,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -441,11 +441,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5550453487",
+      "id": "github-5594515313",
       "source": "github",
-      "title": "[India] Paid fundamentals vendor adapter",
-      "url": "https://github.com/dev-pmallapp/jesse/issues/36",
-      "description": "Part of epic: **[India][Epic] Backlog: broker/vendor sources and enhancements**\n\n## Scope\nSecond `FundamentalsProvider` once a vendor is chosen.\n\n## Acceptance criteria\n- [ ] Contract tests on fixtures\n\nPlan: `docs/india-markets/PLAN.md` (branch `feat/india-markets`) and the tracking issue.\n\n**Workflow:** Opus writes the spec → `implementer` (Sonnet) → `tester` (Sonnet) → `reviewer` (Sonnet) → `doc-writer` (Haiku). Branch `feat/india-*` off `origin/master`, PR against `dev-pmallapp/jesse` master.\n",
+      "title": "Paid launch timeline: Paid Apps Agreement + StoreKit subscriptions before day-90 flip",
+      "url": "https://github.com/candrikanich/recruiting-compass-ios/issues/209",
+      "description": "## Context\n\nLaunch plan: app is **free for the first 90 days**, then monthly + annual auto-renewing subscriptions. The Paid Applications Agreement (Schedule 2, v126, 17 Dec 2025) is **not** needed for the free launch — only before the first sale. This issue tracks the timeline so Apple paperwork and review don't block the day-90 flip.\n\nRelated: #91 (Small Business Program enrollment), `planning/2026-09-03-pricing-model-and-entitlement-plumbing-spec.md`.\n\n## Timeline (relative to launch day 0 → flip day 90)\n\n### ~Day 45–60 — paperwork (Chris)\n- [ ] Accept **Paid Applications Agreement** in App Store Connect → Business\n- [ ] Complete tax forms (W-9) + banking — Apple withholds proceeds until tax docs are on file (§3.3)\n- [ ] Set **tax category** for the app deliberately — developer indemnifies Apple for miscategorization (§3.2)\n- [ ] Enroll in Small Business Program (#91) — Apple approves within 15 days of each fiscal month-end, so enroll ≥1 month before first sale or early sales are charged 30%\n\n### ~Day 60 — StoreKit implementation\n- [ ] Create **one subscription group** containing monthly + annual (enables upgrade/downgrade/crossgrade; tenure accrues per group)\n- [ ] StoreKit 2 purchase + restore flow; map Apple transactions into existing entitlement plumbing\n- [ ] Web-purchased subscriptions unlock iOS (multiplatform) — iOS must **not** sell or link to web checkout (§3.11: in-app subscriptions must use IAP)\n- [ ] Paywall disclosures (§3.8(b)): subscription title, length, price (+ per-unit price if applicable), links to Privacy Policy + Terms of Use inside the app\n- [ ] Paywall copy review: no \"buy now\"/\"upgrade now\" pressure — audience includes minors (§5.4)\n- [ ] Verify `ITSAppUsesNonExemptEncryption` export-compliance answer is accurate (§2.3)\n\n### ~Day 60–75 — review\n- [ ] Submit first subscription products **together with a new app version** (Apple requires first IAPs be reviewed with a binary)\n- [ ] Sandbox + TestFlight purchase testing (monthly, annual, restore, upgrade/downgrade, expiry)\n\n### Before Day 90 — user comms / product decisions\n- [ ] Decide: grandfather or discount the free-period early users?\n- [ ] Decide: introductory free trial for users who join after day 90? (configured as an intro offer on the subscription)\n- [ ] Decide: enable Family Sharing on subscriptions? (one purchase covers family Apple accounts — check fit with family-unit model)\n- [ ] Notify existing users ahead of the flip — avoid surprise feature locking\n\n## Agreement terms worth knowing (no action)\n- Apple may refund users within 90 days at its discretion; developer reimburses (§6.3)\n- Payouts: wire only, ~45 days after month close, monthly minimum threshold (§3.5)\n- Apple may withhold payments on termination or suspected misconduct (§7.1)\n- Apple may pull the app with or without cause (§7.3)\n- Existing users keep re-download access after withdrawal unless opted out (§1.4, §7.4)\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -454,6 +454,20 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5594664097",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/175",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-26 14:20 UTC\n\n#### 1. [Scope digest 2026-09-26: 1 changes across 1 bounty programs](https://github.com/abdulsalam-create/bounty-watch/issues/45)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Scope digest 2026-09-26: 1 changes across 1 bounty programs\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-26T11:24:18Z\n\n#### 2. [[PAID BOUNTY - $440] Messenger Group Chat Poll Creation & Voting UI](https://github.com/warpspeedopen-source/warpspeed-bounties/issues/3)\n- **Project:** [warpspeedopen-source/warpspeed-bounties](https://github.com/warpspeedopen-source/warpspeed-bounties)\n- **Source:** GitHub Issue\n- **Reward:** $440\n- **Task:** Payment is processed only after the pull request is approved and merged.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 12\n- **Competition:** 有竞争：44 条评论；12 个相关 open PR\n- **Original Issue comments:** 44\n- **Last updated:** 2026-09-26T12:06:16Z\n\n#### 3. [BOUNTY: add support for Google Palm2 API in javascript/typescript](https://github.com/arakoodev/EdgeChains/issues/279)\n- **Project:** [arakoodev/EdgeChains](https://github.com/arakoodev/EdgeChains)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** BOUNTY: add support for Google Palm2 API in javascript/typescript\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 6\n- **Competition:** 有竞争：49 条评论；6 个相关 open PR\n- **Original Issue comments:** 49\n- **Last updated:** 2026-09-26T12:12:32Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 440,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 440,
+      "profitPerHourUsd": 5280,
+      "eligible": true
     },
     {
       "id": "github-5592518300",
@@ -580,21 +594,6 @@
       "expectedProfitUsd": 25,
       "profitPerHourUsd": 300,
       "eligible": true
-    },
-    {
-      "id": "github-5571427632",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/156",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-24 16:31 UTC\n\n#### 1. [[Program]: stormrake](https://github.com/lissy93/bug-bounties/issues/211)\n- **Project:** [lissy93/bug-bounties](https://github.com/lissy93/bug-bounties)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** stormrake\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-24T13:32:22Z\n\n#### 2. [Question: proof of contributor payments?](https://github.com/nextellarlabs/nextellar-docs/issues/1212)\n- **Project:** [nextellarlabs/nextellar-docs](https://github.com/nextellarlabs/nextellar-docs)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个 assignee；1 个相关 open PR\n- **Original Issue comments:** 6\n- **Last updated:** 2026-09-24T12:58:26Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     }
   ]
 }

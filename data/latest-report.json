@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T03:30:49.252Z",
+  "generatedAt": "2026-09-26T04:30:55.725Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -426,11 +426,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5550453487",
+      "id": "github-5591348401",
       "source": "github",
-      "title": "[India] Paid fundamentals vendor adapter",
-      "url": "https://github.com/dev-pmallapp/jesse/issues/36",
-      "description": "Part of epic: **[India][Epic] Backlog: broker/vendor sources and enhancements**\n\n## Scope\nSecond `FundamentalsProvider` once a vendor is chosen.\n\n## Acceptance criteria\n- [ ] Contract tests on fixtures\n\nPlan: `docs/india-markets/PLAN.md` (branch `feat/india-markets`) and the tracking issue.\n\n**Workflow:** Opus writes the spec → `implementer` (Sonnet) → `tester` (Sonnet) → `reviewer` (Sonnet) → `doc-writer` (Haiku). Branch `feat/india-*` off `origin/master`, PR against `dev-pmallapp/jesse` master.\n",
+      "title": "Android: label paid-access models with a Paid badge on browse cards",
+      "url": "https://github.com/rioX432/CivitDeck/issues/1078",
+      "description": "## Goal\nOn Android (and Desktop, which shares the card), model cards show a \"Paid\" chip next to the model type when `model.hasActivePaidAccess` is true.\n\n## Context\n- `{G6-10}` exposes `Model.hasActivePaidAccess` (true when any version has a live paid-access gate, which blocks download without purchase). 19 of the monthly top-100 CivitAI models have it (live 2026-09-26); users currently find out only when the download fails.\n- CivitAI labels the same models \"Paid\" on its own cards (comment in `civitai/civitai` `src/server/services/paid-access.service.ts` ~L859-865).\n- The shared card `ModelCardLayout` (core-ui commonMain) renders the type chip and `SourceBadge` in one row (`ModelCardLayout.kt:212-233`); it is used by Android `ModelCard.kt:39` and Desktop `DesktopModelCard.kt:29`.\nSource: CivitDeck audit 2026-09-26, §6 row 3 (E G7).\n\n## Scope\n**In:**\n- A `PaidBadge` in `ModelCardInfoSection`'s type/source row, shown only when `model.hasActivePaidAccess`, styled like the existing chips (`labelSmall`, `CornerRadius.chip`, theme colors / design tokens), with a content description such as \"Requires purchase on CivitAI\".\n\n**Out:**\n- iOS (`{G6-12}`).\n- Swipe cards (`CardStack.kt`), recommendation rows, collection cards, and the model detail screen.\n- Per-version or early-access countdown display.\n\n## Done when\n- [ ] `./gradlew :androidApp:assembleDebug :desktopApp:compileKotlinJvm detekt` output shows `BUILD SUCCESSFUL`\n- [ ] `git grep -n \"hasActivePaidAccess\" core/core-ui/` shows the badge condition in `ModelCardLayout.kt`\n- [ ] Manual (owner, not required for merge): Discover → Most Downloaded / Month → models such as id 958009 show \"Paid\"; free models do not\n\n## Files (expected)\n- `core/core-ui/src/commonMain/kotlin/com/riox432/civitdeck/ui/components/ModelCardLayout.kt` — `PaidBadge` composable + call site\n\n## Core Value Alignment\nCV1 — users can tell which models need a purchase while browsing, before opening or downloading them.\n\n## Risks / Notes\n- Label default \"Paid\": matches CivitAI's own card label for the same predicate.\n- core-ui has no string-resource mechanism yet (existing \"NSFW\", \"HF\", \"TA\" labels in this file are literals); follow that precedent here rather than adding a resource system in this issue.\n- Keep the row from overflowing on narrow cards: the chip is short and sits after the type chip; verify with a long type name such as \"TextualInversion\".\nDepends on: G6-10\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -441,11 +441,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5572590334",
+      "id": "github-5550453487",
       "source": "github",
-      "title": "Issue recoverable licenses that verify offline",
-      "url": "https://github.com/Gogorichielab/PPCollection/issues/608",
-      "description": "## User need\nAfter paying, the buyer can unlock the full paid product on a self-hosted PPCollection installation and continue to use it without an internet connection. An activation code grants an all-access entitlement; it does **not** authenticate the local admin. Product/installation rules come from #606, and verified paid orders come from #607.\n\n## Boundary\n- Hosted issuer: one license per eligible order according to P5/P6 in #606; redemption/recovery state and signing private key.\n- Local verifier: validates the entitlement with a bundled public key and stores it in persistent `/data`; no Stripe secret or signing key ships in the app.\n- In-app feature access/UI is #609. Full purchase journey and support docs are #610.\n\n## Required flows\n1. Issue a unique high-entropy redemption code for each paid order and store its hash. Do not use a static Payment Link message as a shared code.\n2. Redeem or manually exchange a code for a signed payload containing an `all_access` product entitlement, license ID, format/key version, and an installation binding only if P5 chooses that model.\n3. Support an offline installation through a copy/paste challenge-response or signed-license import path that does not require inbound access to the local server. Normal feature use makes no licensing network calls.\n4. Recover a lost code/license and handle reinstalls/transfers through the policy in #606, with abuse controls, a stable order record, and no duplicate paid grants.\n5. Document key rotation and the limits of enforcing refund/chargeback revocation while an installation stays offline.\n\n## Acceptance scenarios\n- [ ] Given an eligible paid order, when issuing is retried, the same entitlement/order association is returned and no extra license is created.\n- [ ] Given a valid signed payload, when imported, the local app enables all paid-tier features after restart, offline.\n- [ ] Given altered, wrong-product, unsupported-version, unbound-to-this-installation (if binding is chosen), or otherwise invalid payloads, the local app refuses activation and explains recovery.\n- [ ] Given a lost email or reinstall, the approved owner can recover/transfer access per #606 without paying again when policy allows.\n- [ ] Given the issuer is unavailable, already activated installations continue working.\n- [ ] Tests cover signature verification, replay, recovery, key rotation, and backup/restore.\n\n**Decision gate:** P5 and P6 in #606 must define whether a license is per purchaser or installation, transfer limits, and refund behavior. Avoid claiming that an offline entitlement can be revoked instantly.\n\nDepends on #606 and the paid-order contract from #607.",
+      "title": "[India] Paid fundamentals vendor adapter",
+      "url": "https://github.com/dev-pmallapp/jesse/issues/36",
+      "description": "Part of epic: **[India][Epic] Backlog: broker/vendor sources and enhancements**\n\n## Scope\nSecond `FundamentalsProvider` once a vendor is chosen.\n\n## Acceptance criteria\n- [ ] Contract tests on fixtures\n\nPlan: `docs/india-markets/PLAN.md` (branch `feat/india-markets`) and the tracking issue.\n\n**Workflow:** Opus writes the spec → `implementer` (Sonnet) → `tester` (Sonnet) → `reviewer` (Sonnet) → `doc-writer` (Haiku). Branch `feat/india-*` off `origin/master`, PR against `dev-pmallapp/jesse` master.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

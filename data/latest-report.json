@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T07:29:44.531Z",
+  "generatedAt": "2026-09-26T08:31:45.608Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 20,
+  "eligible": 21,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -456,6 +456,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5592518300",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/173",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-26 08:16 UTC\n\n#### 1. [[Bounty proposal] fix(backend): accept Pydantic ChunkSpan in chunk_span_bounds ($50 proposed)](https://github.com/BasedHardware/omi/issues/19096)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$50 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #19095.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-26T06:59:54Z\n\n#### 2. [bounty-watch 2026-09-26: 0 new, 0 resumed, 3 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/44)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-09-26: 0 new, 0 resumed, 3 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-26T04:59:20Z\n\n#### 3. [CityPet 前端支持电邮验证码、WebAuthn 登录](https://github.com/Open-Source-Bazaar/CityPet-PWA/issues/3)\n- **Project:** [Open-Source-Bazaar/CityPet-PWA](https://github.com/Open-Source-Bazaar/CityPet-PWA)\n- **Source:** GitHub Issue\n- **Reward:** 45 TQT\n- **Task:** 移植 https://github.com/idea2app/idea2app.github.io/pull/105 中的注册、登录、WebAuthn 相关组件和 MobX 类，可忽略因环境变量缺失导致的构建失败，以“提交代码”为第一优先级。\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 3\n- **Competition:** 有竞争：2 个 assignee；3 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-26T07:07:28Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 50,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 50,
+      "profitPerHourUsd": 600,
+      "eligible": true
+    },
+    {
       "id": "github-5590315268",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
@@ -573,21 +587,6 @@
       "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
       "url": "https://github.com/2510034127qq-wq/BountyScout/issues/156",
       "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-24 16:31 UTC\n\n#### 1. [[Program]: stormrake](https://github.com/lissy93/bug-bounties/issues/211)\n- **Project:** [lissy93/bug-bounties](https://github.com/lissy93/bug-bounties)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** stormrake\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-24T13:32:22Z\n\n#### 2. [Question: proof of contributor payments?](https://github.com/nextellarlabs/nextellar-docs/issues/1212)\n- **Project:** [nextellarlabs/nextellar-docs](https://github.com/nextellarlabs/nextellar-docs)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个 assignee；1 个相关 open PR\n- **Original Issue comments:** 6\n- **Last updated:** 2026-09-24T12:58:26Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5567682422",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/155",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-24 11:36 UTC\n\n#### 1. [[R37-06] Align the real GitLab CE lab with the intended supported profile (P2, M1)](https://github.com/forcewake/forge/issues/287)\n- **Project:** [forcewake/forge](https://github.com/forcewake/forge)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Template pins + installed fingerprints generated from one approved profile record; mixed versions only with explicitly qualified compatibility.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 推测：几十分钟到数小时\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-24T08:21:49Z\n\n#### 2. [Question: proof of contributor payments?](https://github.com/KingFRANKHOOD/Amana/issues/1338)\n- **Project:** [KingFRANKHOOD/Amana](https://github.com/KingFRANKHOOD/Amana)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-24T09:01:00Z\n\n#### 3. [V1-038: Publish supported dividend facts without composite scores](https://github.com/issacamara/tradvisor/issues/27)\n- **Project:** [issacamara/tradvisor](https://github.com/issacamara/tradvisor)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** No changes to approved scoring, scope or contracts; no real portfolio/broker execution, automatic orders, extra indicator families, Dividend/Balanced scoring, or five-year dividend acquisition. No production mutation, secret/user/state cloning, unapproved live queries/provider calls, cloud provisioning, data seeding or\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-24T09:11:05Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

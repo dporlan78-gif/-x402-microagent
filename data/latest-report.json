@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T14:30:05.069Z",
+  "generatedAt": "2026-09-27T15:30:24.307Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -233,6 +233,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5603628643",
+      "source": "github",
+      "title": "[HANDOFF][TO: WORLD-MISSIONS-EVENTS-REWARDS][SEND NOW] Adopt reward-spectrum firewall + re-audit money-heavy Wasabi rewards",
+      "url": "https://github.com/NinjaSteveXer0/Shinobi-Chronicles/issues/406",
+      "description": "FROM: Stephen / CE-Codex-Coordination\n\nTO: WORLD / MISSIONS / EVENTS / REWARDS\n\nPRIORITY: 🔴 SEND NOW — confirmed reward-authoring drift is producing money-first / money-only packages and is now directly affecting current Origin reward design quality.\n\n## BINDING NEW CE AUTHORITY\n\n`Documentation/Coordination/World_Reward_Portfolio_Authoring_Firewall_and_Reward_Spectrum_Contract_2026-09-27.md`\n\ncommit:\n`0ae529004b14ba739a345c3bc6c9480b2e1e15de`\n\nThis contract is now mandatory before World closes new or revised reward packages.\n\n## PROBLEM TO CORRECT\n\nStephen has explicitly rejected the recurring pattern where materially different actions are all translated into Ryō or filler Items.\n\nThe game already has and World must actively consider:\n\n- Ryō;\n- Items / consumables / materials;\n- Weapons;\n- Equipment / tools;\n- Skills / technique access;\n- Summons / Familiars / Tailed-Beast access;\n- Enhancements / transformations / source-power access;\n- all seven persistent development disciplines / Stats:\n  - Ninjutsu;\n  - Taijutsu;\n  - Genjutsu;\n  - Bukijutsu;\n  - Fūinjutsu;\n  - Kinjutsu;\n  - Stamina;\n- fieldcraft evidence;\n- exact Special Jōnin qualification evidence;\n- Knowledge / intelligence / evidence;\n- Shared History / relationship consequences;\n- reputation / Recognition;\n- access / services / training;\n- World follow-ups / secret locations / side arcs;\n- acquisition / recruitment / representation eligibility where the correct owner authorises it;\n- Chronicle Engine factual consequences / later Story callbacks.\n\nWorld must stop acting as though the reward economy is `Ryō + 3x Kunai`.\n\n## HARD RULES TO CONSUME\n\n1. **Consequences first. Material reward second. Currency last.**\n2. **Ryō is economic compensation, not universal praise.**\n3. A route that tracks well / cooperates / uses a capability / notices something / resolves an incident does not automatically deserve cash.\n4. **Owner gap != cash substitute.** If the appropriate reward is a Skill, Summon, Enhancement, Weapon, Equipment, source access, specialist training/evidence, development or other cross-owned consequence, preserve that reward class and route the missing owner dependency.\n5. No global “if unavailable, pay Ryō” rule. Exact authored fallbacks remain exact exceptions only.\n6. No filler loot. “3x Kunai because we need an Item” is invalid authoring.\n7. Diversity does not mean giving everything. Every channel still needs factual causal support.\n8. Check all seven discipline-development channels from exact committed action evidence; World must not invent arbitrary Stat points and must not ignore legitimate Progression receipts.\n9. Special Jōnin uses exact qualification evidence, NOT generic specialization XP.\n10. Knowledge, relationship, access, future opportunity and Chronicle history are first-class consequences.\n11. Failure / partial success can preserve development, Knowledge, evidence, relationships and future hooks without consolation money.\n12. No morality payout.\n13. No automatic duplicate-to-cash conversion.\n14. Every package must run the mandatory **Reward Spectrum Audit** in the new contract before closure.\n15. Multiple semantically different route facts being converted into identical small Ryō increments is a **currency-fragmentation smell** and must trigger re-audit.\n\n## CURRENT RE-AUDIT TARGET — WASABI #404\n\nCurrent durable file:\n\n`Documentation/World/Academy Wasabi Izuno Origin Route Sensitive Reward Lock 2026-09-27.md`\n\ncurrently assigns additive Ryō to:\n- Origin completion;\n- pursuit success;\n- tracking analysis;\n- route interception;\n- cooperative search;\n- secondary incident resolution;\n\nand explicitly defines the material package as Ryō-only.\n\nThe file correctly notes some non-material channels such as Tracker-nin evidence and action-derived Battle development, but its reward-selection layer was authored before this mandatory firewall and demonstrates the exact drift Stephen is rejecting.\n\n### Required World action\n\nRe-audit #404 under the new contract.\n\nDo NOT blindly delete all Ryō.\n\nFor each exact IZU source:\n- run the Reward Spectrum Audit;\n- preserve any genuine economic compensation;\n- consume existing action-derived development / Special Jōnin / CE history authority;\n- consider Knowledge, relationship, recognition, access, training, Item/Equipment, future-opportunity or other legitimate channels;\n- if a better reward requires another owner, create the exact downstream GitHub dependency yourself rather than replacing it with cash;\n- do not invent random rewards merely for variety.\n\nReturn one corrected durable Wasabi reward package and exact downstream Coding delta if material/runtime reward fields change.\n\n## FUTURE WORLD WORK\n\nApply this firewall to every new/revised Origin, Mission, Event, World encounter, Arc debrief and side-content reward package.\n\nDo not reopen already-closed reward contracts merely because they contain Ryō if they are already causally diversified / Stephen-approved and no current contradiction exists.\n\nKakashi remains a useful benchmark because its Chronicle can legitimately create:\n- Ryō;\n- Field Recovery Pill;\n- Academy Training Tantō;\n- technical Discipline development;\n- Stamina development;\n- fieldcraft evidence;\n- Special Jōnin evidence;\n- Knowledge;\n- custody/disposition history;\n- later hooks.\n\nThe point is not “copy Kakashi rewards.”\nThe point is: **use the systems the game actually has.**\n\n## COMPLETION\n\n1. Consume the new firewall as current World authority.\n2. Re-audit Wasabi #404.\n3. Publish corrected durable package.\n4. Route any owner dependencies directly through GitHub.\n5. Comment exact evidence here.\n6. Close when #404 is corrected and the firewall is acknowledged as the active reward-authoring gate.\n\nStephen relay: NONE.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5410704722",
       "source": "github",
       "title": "[TASK HUNTER] Agents for Humans — $2,000–$10,000 cash",
@@ -281,21 +296,6 @@
       "title": "Add player kill cash rewards",
       "url": "https://github.com/zakomarvic/Roblox-Game-Systems/issues/18",
       "description": "Implement server-authoritative player kill rewards using the existing creator attribution on damaged Humanoids.\n\nRequirements:\n- Award the killer a configurable cash amount when they cause a player death.\n- Keep reward logic in the Economy system rather than weapon-specific scripts.\n- Ignore self-kills, missing/invalid creator attribution, and non-player creators.\n- Ensure each death rewards at most once.\n- Preserve existing death cash-drop behavior.\n- Use the existing CashService for the actual cash mutation.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5290336412",
-      "source": "github",
-      "title": "Stage 2: scratch manager RL economic curriculum",
-      "url": "https://github.com/BillXu21/Kaggriculture/issues/32",
-      "description": "## Goal\nTest whether a random-init daily manager can improve monotonically through RL now that the deterministic opening/executor removes most primitive mechanical exploration.\n\nThis is manager-level scratch RL, not primitive-action-from-scratch learning.\n\n## Phase A — economic bootstrapping\n- random-init manager;\n- repaired deterministic opening + executor;\n- opponent pathway exists but opponent inputs are masked/zeroed;\n- optimize for cash/economic performance rather than W/L/T;\n- no competitive terminal reward initially;\n- strong cash/bank shaping is allowed;\n- first milestone: reliable ~50k-60k economic performance.\n\n## Phase B — transition\nAround ~50k-60k:\n- expose real opponent inputs gradually;\n- introduce competitive terminal reward;\n- anneal dense cash shaping;\n- add current/snapshot opposition.\n\n## Phase C — competitive\nAround ~70k-80k:\n- cash shaping should become small or zero;\n- competitive terminal reward becomes primary;\n- use current/current + current/snapshot self-play;\n- keep frozen BC control evaluation.\n\nThresholds are empirical curriculum gates, not hard mechanics rules.\n\n## Important\nDo not add a generic penalty for holding cash: terminal cash is valuable. The policy should learn opportunity cost and remaining-horizon ROI. Track final-day/late `BUY_LAND` and idle-capital behavior as diagnostics.\n\nRun this in parallel with the corrected-distribution BC->PPO mainline, not as a replacement for it.\n\n## Context\nSee `research/STAGE_2_DIRECTION_2026-08-30.md`.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T18:33:47.377Z",
+  "generatedAt": "2026-09-27T19:28:47.029Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 22,
+  "eligible": 21,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -456,6 +456,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5605251437",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/183",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-27 18:41 UTC\n\n#### 1. [[TRAFFIC GATES] ENTITY open developer challenge ladder — reproduce, break, model, rebuild, interoperate](https://github.com/blackmore-technology-group/ENTITY/issues/76)\n- **Project:** [blackmore-technology-group/ENTITY](https://github.com/blackmore-technology-group/ENTITY)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Goal: independently implement one narrow ENTITY primitive without copying BTG implementation code.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：几十分钟到数小时\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-27T15:21:05Z\n\n#### 2. [Spec: one pooled DA committee bond replaces the per-block DA bond](https://github.com/Anastasia-Labs/midgard/issues/685)\n- **Project:** [Anastasia-Labs/midgard](https://github.com/Anastasia-Labs/midgard)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** | TopUp | Anyone can submit. Same address, same datum. The output value is the input value plus lovelace only, and the increase is ≥ dabondmintopuplovelace. |\n- **Deadline:** | Open | Exactly 3 inputs: bond, challenger, node. Spends the bond into ChallengedBond, which already carries the attested commitment. No deadline. | 2 inputs: node and challenger. The challenger supplies the CommitmentV1 preimage, which must hash to the node's commitmenthash. Cr\n- **Submission:** | TopUp | Anyone can submit. Same address, same datum. The output value is the input value plus lovelace only, and the increase is ≥ dabondmintopuplovelace. |\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-27T17:38:24Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5603323672",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 8 New Opportunities",
@@ -573,20 +588,6 @@
       "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
       "url": "https://github.com/2510034127qq-wq/BountyScout/issues/171",
       "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-25 22:48 UTC\n\n#### 1. [[Bounty proposal] fix(backend/speaker_tag_prompts): sanitize error reflections and prevent internal state leaks ($50 proposed)](https://github.com/BasedHardware/omi/issues/18966)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Fix is implemented and tested in PR #18965 (https://github.com/BasedHardware/omi/pull/18965).\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T19:39:09Z\n\n#### 2. [[Regression on closed #1] BountiesService.claim still has the unguarded concurrent-claim race — closed by an unrelated PR](https://github.com/MergeFi/backend/issues/342)\n- **Project:** [MergeFi/backend](https://github.com/MergeFi/backend)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** This is exactly the scenario originally described by issue #1 (\"Race condition: concurrent bounty claims can double-assign a single FUNDED bounty\"), which shows CLOSED/COMPLETED. Tracing the closing PR: gh issue view 1 --json closedByPullRequestsReferences points to PR #224. gh pr view 224 shows its title is \"fix(auth,\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 4\n- **Last updated:** 2026-09-25T21:54:49Z\n\n#### 3. [bounty-watch 2026-09-25: 0 new, 0 resumed, 5 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/43)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-09-25: 0 new, 0 resumed, 5 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T21:39:23Z\n\n#### 4. [Contract bounty-escrow: add community arcade bounty and speedrun escrow contract](https://github.com/theblockcade/stellarcade/issues/1232)\n- **Project:** [theblockcade/stellarcade](https://github.com/theblockcade/stellarcade)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Where to Implement (Exact Targets)\n- **Deadline:** Sponsor expiration refund if bounty is unclaimed after deadline.\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T21:38:41Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 50,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 50,
-      "profitPerHourUsd": 600,
-      "eligible": true
-    },
-    {
-      "id": "github-5587289386",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 5 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/169",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-25 19:05 UTC\n\n#### 1. [[Bounty proposal] fix(backend/updates): sanitize value error reflections and prevent internal state leaks ($50 proposed)](https://github.com/BasedHardware/omi/issues/18911)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Fix is implemented and tested in PR #18910.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-25T14:17:03Z\n\n#### 2. [parse_reset_input returns None instead of exiting on malformed JSON](https://github.com/tenstorrent/tt-tools-common/issues/76)\n- **Project:** [tenstorrent/tt-tools-common](https://github.com/tenstorrent/tt-tools-common)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Before the fix: 1 failed, 4 passed, 1 hardware test deselected.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T17:20:03Z\n\n#### 3. [[TASK HUNTER] Build With AI: Basics — $2,500 prize pool](https://github.com/Inkh95/t3n-trusted-approval-agent/issues/26)\n- **Project:** [Inkh95/t3n-trusted-approval-agent](https://github.com/Inkh95/t3n-trusted-approval-agent)\n- **Source:** GitHub Issue\n- **Reward:** $2,500；$1,250；$750；$500\n- **Task:** Evidence: Official Devpost overview requires a new app built with the Devpost Learn Skill Pack and public scope.md/prd.md/spec.md; official rules confirm no purchase/payment required, Bulgaria is not excluded, AI coding agents are explicitly allowed, and cash prizes are $1,250/$750/$500. Official dates show submissions\n- **Deadline:** Deadline: 2026-10-26 23:00 Europe/Sofia\n- **Submission:** 待确认\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 页面描述：Estimated effort: 12–25 hours for a focused new proof-of-concept, planning docs, public repo, tests, and 1–3 minute demo\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T14:49:22Z\n\n#### 4. [bounty-watch 2026-09-25: 0 new, 0 resumed, 2 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/42)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-09-25: 0 new, 0 resumed, 2 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T17:10:59Z\n\n#### 5. [🎁 Build Something with Salam (Community Reward)](https://github.com/SalamLang/Salam/issues/1713)\n- **Project:** [SalamLang/Salam](https://github.com/SalamLang/Salam)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Salam is still growing, and one of the best ways to improve a programming language is to build real things with it.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 有竞争：2 个 assignee\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T15:22:54Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 50,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

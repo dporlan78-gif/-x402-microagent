@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T23:28:54.437Z",
+  "generatedAt": "2026-09-27T00:39:38.662Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -145,17 +145,17 @@
       "eligible": true
     },
     {
-      "id": "github-5401256698",
+      "id": "github-4864398464",
       "source": "github",
-      "title": "[Bounty] [Bounty] Seed a paid MCP child bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1295",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1364\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid MCP child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0x43d42cb227d76588ab16693f14efd6cff851fa7a\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete MCP coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0x12ad2fa99de272728311a3eb07c3c741048382260cb91ba1e8f001ed3b5759d0&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0x43d42cb227d76588ab16693f14efd6cff851fa7a)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0x43d42cb227d76588ab16693f14efd6cff851fa7a&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0x43d42cb227d76588ab16693f14efd6cff851fa7a)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/335)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 90,
+      "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] GraphQL Batch Query + Rate Li",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/261",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/243\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] GraphQL Batch Query + Rate Limit Bypas\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/194\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [BUG] GraphQL Batch Query + Rate Limit Bypass $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/140\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [BUG] GraphQL Batch Query + Rate Limit Bypass $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/65\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [BUG] GraphQL Batch Query + Rate Limit Bypass $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/36\n\n### 漏洞描述 / Description\n[Bounty] [BUG] GraphQL Batch Query + Rate Limit Bypass $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/ai-research/issues/947\n\n### 漏洞描述 / Description\n[BUG] GraphQL Batch Query + Rate Limit Bypass $150\n\n## GraphQL Batch Query 速率限制绕过\n\n**难度**: Hard | **赏金**: $150\n\n### 漏洞描述\nGraphQL 端点允许 batch 请求（一次发送多个 query），但速率限制只按 HTTP 请求计数，而非 query 数量。攻击者可在一个请求中发送数百个 query，绕过限制进行数据爬取。\n\n### 要求\n实现 query 复杂度分析 + 深度限制 + 按 cost 计费。\n\n### 验收标准\n- [ ] 计算每个 query 的复杂度分数\n- [ ] 对 batch 请求聚合计算总成本\n- [ ] 限制最大查询深度\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 150,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 90,
-      "profitPerHourUsd": 1080,
+      "expectedProfitUsd": 150,
+      "profitPerHourUsd": 1800,
       "eligible": true
     },
     {

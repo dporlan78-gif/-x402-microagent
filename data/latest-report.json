@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T21:30:20.232Z",
+  "generatedAt": "2026-09-27T22:30:50.741Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 20,
+  "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -457,6 +457,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5606813493",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/184",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-27 22:24 UTC\n\n#### 1. [useBountyStatus: a transient fetch failure mid-session silently swaps the live bounty for static fallbackBounty and fires a false onStatusChange](https://github.com/MergeFi/frontend/issues/571)\n- **Project:** [MergeFi/frontend](https://github.com/MergeFi/frontend)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Suggested fix\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-27T21:52:04Z\n\n#### 2. [Frontend feature: add experimental tournament prize pool distribution donut chart](https://github.com/theblockcade/stellarcade/issues/1287)\n- **Project:** [theblockcade/stellarcade](https://github.com/theblockcade/stellarcade)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Where to Implement (Exact Targets)\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-27T21:46:11Z\n\n#### 3. [[CONTRACT] resolve_dispute never charges the platform fee, unlike every other payout path](https://github.com/StayLitCodes/Vaultix/issues/735)\n- **Project:** [StayLitCodes/Vaultix](https://github.com/StayLitCodes/Vaultix)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [CONTRACT] resolvedispute never charges the platform fee, unlike every other payout path\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 7\n- **Last updated:** 2026-09-27T21:35:40Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5605251437",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
@@ -575,20 +590,6 @@
       "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
       "url": "https://github.com/2510034127qq-wq/BountyScout/issues/172",
       "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-26 01:21 UTC\n\n#### 1. [[UTXO-BUG] state_root can return Merkle root and count from different SQLite snapshots](https://github.com/Scottcjn/rustchain-bounties/issues/17058)\n- **Project:** [Scottcjn/rustchain-bounties](https://github.com/Scottcjn/rustchain-bounties)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Suggested fix\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-26T00:47:22Z\n\n#### 2. [Question: proof of contributor payments?](https://github.com/WattCoin-Org/wattcoin/issues/304)\n- **Project:** [WattCoin-Org/wattcoin](https://github.com/WattCoin-Org/wattcoin)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T23:46:01Z\n\n#### 3. [[Bounty proposal] fix(desktop_tts_updates): sanitize error reflections in release promotion endpoint ($50 proposed)](https://github.com/BasedHardware/omi/issues/19001)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Following the contribution guide's invitation to propose paid work — @kodjima33, @josancamon19, would a US$50 bounty be appropriate for this? Proposed amount, not an existing award. Fix and tests are already up as PR #19000.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 2\n- **Competition:** 有竞争：2 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T22:34:27Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 50,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 50,
-      "profitPerHourUsd": 600,
-      "eligible": true
-    },
-    {
-      "id": "github-5589378126",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/171",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-25 22:48 UTC\n\n#### 1. [[Bounty proposal] fix(backend/speaker_tag_prompts): sanitize error reflections and prevent internal state leaks ($50 proposed)](https://github.com/BasedHardware/omi/issues/18966)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50；US$50\n- **Task:** Fix is implemented and tested in PR #18965 (https://github.com/BasedHardware/omi/pull/18965).\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T19:39:09Z\n\n#### 2. [[Regression on closed #1] BountiesService.claim still has the unguarded concurrent-claim race — closed by an unrelated PR](https://github.com/MergeFi/backend/issues/342)\n- **Project:** [MergeFi/backend](https://github.com/MergeFi/backend)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** This is exactly the scenario originally described by issue #1 (\"Race condition: concurrent bounty claims can double-assign a single FUNDED bounty\"), which shows CLOSED/COMPLETED. Tracing the closing PR: gh issue view 1 --json closedByPullRequestsReferences points to PR #224. gh pr view 224 shows its title is \"fix(auth,\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 4\n- **Last updated:** 2026-09-25T21:54:49Z\n\n#### 3. [bounty-watch 2026-09-25: 0 new, 0 resumed, 5 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/43)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-09-25: 0 new, 0 resumed, 5 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T21:39:23Z\n\n#### 4. [Contract bounty-escrow: add community arcade bounty and speedrun escrow contract](https://github.com/theblockcade/stellarcade/issues/1232)\n- **Project:** [theblockcade/stellarcade](https://github.com/theblockcade/stellarcade)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Where to Implement (Exact Targets)\n- **Deadline:** Sponsor expiration refund if bounty is unclaimed after deadline.\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-25T21:38:41Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 50,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

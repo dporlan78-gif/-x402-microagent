@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T15:35:09.128Z",
+  "generatedAt": "2026-09-28T16:34:41.475Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -292,11 +292,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-4461892787",
+      "id": "github-5356489924",
       "source": "github",
-      "title": "T1-12: Implement mission reward dispatch (xp/cash/items)",
-      "url": "https://github.com/SandboxServers/Cimmeria/issues/310",
-      "description": "**Problem.** Completing a mission grants nothing. Three facts on main:\r\n- `chosenRewards` (cell method 87) logs `UNIMPLEMENTED` (`crates/services/src/cell/cell_methods/player/world/mod.rs:136-139`).\r\n- No code sends `onMissionRewardsDisplay` (client method 127, `crates/services/src/cell/client_methods/player.rs:62`).\r\n- Mission completion (`crates/services/src/cell/missions/progression.rs::complete_mission_direct`) flips state only.\r\n\r\n**Evidence.**\r\n- Seed: every one of the 1,041 missions has `reward_xp = 0` and `reward_naq = 0`, and 1,018 have `award_xp = true` (`db/resources/Missions/Seed/missions.sql`). Item rewards exist only for missions 40 and 1001 (`mission_reward_groups.sql`: 3 groups; `mission_rewards.sql`: 8 items).\r\n- Wire shapes are known: `Rewards` and `RewardChoices` are FIXED_DICTs in `entities/defs/alias.xml:461-496`. `docs/reverse-engineering/findings/mission-wire-formats.md:50-68` documents `chosenRewards`.\r\n- Grant sinks already exist: `CellToBaseMsg::GrantXP`, `GrantCash` and `GrantItem`, with handlers in `base/.../progression` and `inventory/grant`. There is also an `Action::GrantXP` executor arm.\r\n- Reference flow (intent, not client truth): `deprecated/python/cell/SGWPlayer.py:1091-1552`. `displayMissionRewards` sends method 127 or short-circuits. `chosenRewards` validates `lastRewardsMissionId`, that the mission is Active, the exact per-group choice count, and index bounds, then grants XP → cash → items and only then completes the mission.\r\n- `crates/game/src/missions/` (`rewards.rs:52`, `manager.rs:102,107`) is an abandoned prototype with `todo!()`s and no external callers.\r\n\r\n**Owner decision needed (blocks part B only).** What is the mission-completion XP formula? Every `reward_xp` is 0, the Castle spec observed 52 XP for missions 680/681/686, and Castle decision D-CB10 / GC3 excludes a hardcoded constant. Options: (a) RE the formula from the client or spreadsheets, (b) adopt a documented level×difficulty table as a Cimmeria decision, or (c) author per-mission `grant_xp` chain actions.\r\n\r\n**Acceptance criteria.**\r\n- A. Reward dialog round trip (formula-independent):\r\n  - On completion, missions with reward groups send `onMissionRewardsDisplay` and stay Active. Missions without groups grant and complete in the same tick.\r\n  - `chosenRewards` parses `RewardChoices` and validates last-offered mission, Active status, exact choice count per group, and index bounds. Each validation failure logs one `warn!`/`error!` with `mission_id`, `player_id` and `failure_kind`.\r\n  - On success, grant XP, then naquadah, then items (count 1 per chosen index), then complete the mission last.\r\n  - Delete `crates/game/src/missions/`.\r\n- B. XP amount: implement whatever the decision above settles. Until then the XP field is 0, which matches today's seed.\r\n- Transactionality: either one base-side aggregate transaction (grants + completion) or explicitly best-effort. State which, and test it.\r\n\r\n**Test type.**\r\n- Wire-format: byte-exact `Rewards` encode and `RewardChoices` decode.\r\n- Unit tests for each validation rejection. Mission 1001 choice arithmetic: `[0,1]` → 5620+5621, `[1,1]` → a duplicate grant, `[0]` and `[0,1,2]` rejected, `[3]` out of bounds.\r\n- A live-DB guard for the chosen atomicity rule that fails when the fix is reverted.\r\n\r\n**Docs to update.** `docs/gameplay/mission-system.md`, `docs/reverse-engineering/findings/mission-wire-formats.md` (add `Rewards`), and `docs/protocol/client-method-dispatch-table.md` (mark 127 as implemented).\r\n\r\n**Client impact.** Free: both messages are already in the client's def.\r\n\r\n**Domain advisor.** `mission-systems-advisor` and `items-systems-advisor`.\r\n",
+      "title": "Prepare an end-to-end mission reward test",
+      "url": "https://github.com/Lexer-Lux/Lexeditor/issues/344",
+      "description": "**Status: Implemented and ready for an end-to-end Story Mode check.** PR #376 adds a deterministic **Mission reward test** card for mission ID 2 / `Ranch 01` (`New Friends, Old Problems`). It stages cash **123**, fame **321**, honor **222** versus vanilla `0 / 0 / 50`, preserves all other mission overrides, snapshots/restores any pre-existing mission-2 override exactly, and refuses to restore over a later conflicting edit. The native runtime from `Lexer-Lux/Lexers-Mod-For-RDR` consumes `LexerRDR.missions.json` directly from the workspace; Mission Replay is deliberately rejected, so this check uses the real Story path.\n\n**Runtime candidate:** `rdr1-native-candidate` from native workflow run **34058214637**, artifact **9996670257** (main SHA `94dce21d193b2d78aad94702d5924fce08e9ecd2`). Extract the artifact, then `artifacts/RDR1-runtime.zip`; with RDR1 closed, run `powershell -NoProfile -ExecutionPolicy Bypass -File .\\Install-Runtime.ps1` from that folder.\n\n- [ ] Restart Lexeditor, open RDR1 → **Project**, find **Mission reward test**, and confirm it names `Ranch 01` / mission 2 and shows vanilla `0 / 0 / 50` versus test `123 / 321 / 222`.\n- [ ] Click **Stage Mission Test**. Open **Missions** through the card and confirm mission 2 shows the staged cash/fame/honor values. RPF **Deploy Project is not required** for this JSON-backed test.\n- [ ] Launch a **normal-difficulty New Game**. Complete `Intro 01`, then play and complete `Ranch 01` / `New Friends, Old Problems` through the real Story path; do not use Mission Replay.\n- [ ] At completion, confirm the reward result reflects cash 123, fame 321, honor 222 rather than vanilla 0/0/50. As corroboration, `LexersMod.rdr.log` should contain a `mission-rewards` `completion applied mission=2` entry rather than a rejected transition.\n- [ ] Fully close RDR1. Return to Lexeditor → Project and click **Restore Mission Test**. Confirm mission 2 returns exactly to its prior override if one existed, otherwise to vanilla, while all other mission overrides remain unchanged.\n- [ ] If Restore reports mission 2 changed after staging, do not force it; inspect the newer edit and report that conflict.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -457,6 +457,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5617373115",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/188",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-28 15:50 UTC\n\n#### 1. [Proposal and Poll: GUI Implementation Fund Match](https://github.com/gridcoin-community/Gridcoin-Research/issues/1401)\n- **Project:** [gridcoin-community/Gridcoin-Research](https://github.com/gridcoin-community/Gridcoin-Research)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The core development team is considering that rebuilding the GUI (not the core) from the ground up in a modern framework might be the best path. This changes nothing with the poll and the bounty. Anyone considering putting work into implementing the GUI is encouraged to start a discussion with the dev team.\n- **Deadline:** 待确认\n- **Submission:** Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 24\n- **Last updated:** 2026-09-28T14:26:52Z\n\n#### 2. [Grant Application - Zcash Global Community & Marketing Operations](https://github.com/ZcashCommunityGrants/zcashcommunitygrants/issues/450)\n- **Project:** [ZcashCommunityGrants/zcashcommunitygrants](https://github.com/ZcashCommunityGrants/zcashcommunitygrants)\n- **Source:** GitHub Issue\n- **Reward:** $3,000\n- **Task:** [x] I understand when contributing to existing Zcash code, I am required to adhere to the project specific contribution guidelines, paying close attention to any merge (https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#merge-workflow), branch (https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.m\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request、Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：7 个 assignee；1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-28T14:54:21Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 3,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 3,
+      "profitPerHourUsd": 36,
+      "eligible": true
+    },
+    {
       "id": "github-5610746648",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
@@ -583,20 +597,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 25,
       "profitPerHourUsd": 300,
-      "eligible": true
-    },
-    {
-      "id": "github-5594664097",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/175",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-26 14:20 UTC\n\n#### 1. [Scope digest 2026-09-26: 1 changes across 1 bounty programs](https://github.com/abdulsalam-create/bounty-watch/issues/45)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Scope digest 2026-09-26: 1 changes across 1 bounty programs\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-26T11:24:18Z\n\n#### 2. [[PAID BOUNTY - $440] Messenger Group Chat Poll Creation & Voting UI](https://github.com/warpspeedopen-source/warpspeed-bounties/issues/3)\n- **Project:** [warpspeedopen-source/warpspeed-bounties](https://github.com/warpspeedopen-source/warpspeed-bounties)\n- **Source:** GitHub Issue\n- **Reward:** $440\n- **Task:** Payment is processed only after the pull request is approved and merged.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 12\n- **Competition:** 有竞争：44 条评论；12 个相关 open PR\n- **Original Issue comments:** 44\n- **Last updated:** 2026-09-26T12:06:16Z\n\n#### 3. [BOUNTY: add support for Google Palm2 API in javascript/typescript](https://github.com/arakoodev/EdgeChains/issues/279)\n- **Project:** [arakoodev/EdgeChains](https://github.com/arakoodev/EdgeChains)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** BOUNTY: add support for Google Palm2 API in javascript/typescript\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 6\n- **Competition:** 有竞争：49 条评论；6 个相关 open PR\n- **Original Issue comments:** 49\n- **Last updated:** 2026-09-26T12:12:32Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 440,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 440,
-      "profitPerHourUsd": 5280,
       "eligible": true
     }
   ]

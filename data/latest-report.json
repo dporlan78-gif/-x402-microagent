@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T04:34:10.782Z",
+  "generatedAt": "2026-09-28T05:33:05.553Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -382,6 +382,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5609664371",
+      "source": "github",
+      "title": "Issue 21 - Section: Financial management — “Track income, get paid, stress less”",
+      "url": "https://github.com/OBLIQ-in/OBLIQ-Website/issues/31",
+      "description": "## 🎯 Goal\n\nMirror twin of #20: image left, copy right — invoicing, expenses and earnings.\n\n## ✅ Definition of done\n\n- [ ] `src/components/sections/FinancialManagement.tsx` per [spec §05](https://github.com/obliq-in/obliq-website/blob/main/docs/site-spec.md#05--financial-management--issue-21-medium)\n- [ ] Layout mirrors #20 (image left, copy right)\n- [ ] `ui/ChipList` with Invoicing, Budgets, Forecasting, Integrations\n- [ ] Mock shows an invoice/budget UI (skeleton bars + a lime total pill)\n\n## 💡 Implementation notes\n\nIf #20 is already merged, reuse its structural patterns — the two sections should feel like siblings, not clones.\n\n## 📚 References\n\n- [Contributing guide](https://github.com/obliq-in/obliq-website/blob/main/CONTRIBUTING.md) — the step-by-step workflow\n- [Design system](https://github.com/obliq-in/obliq-website/blob/main/docs/design-system.md) — tokens, components, rules\n- [Site spec](https://github.com/obliq-in/obliq-website/blob/main/docs/site-spec.md) — what every section contains\n- Live reference: https://obliqq.framer.ai/ (financial management section)\n\n---\n\n🙋 **Want to work on this?** Comment “I’d like to work on this” below and a maintainer will assign you. Stuck for more than an hour? Ask in [Discussions](https://github.com/obliq-in/obliq-website/discussions) — that’s normal around here.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5331032008",
       "source": "github",
       "title": "[CI failure] Paid OpenRouter on issue-355",
@@ -432,21 +447,6 @@
       "title": "Android: label paid-access models with a Paid badge on browse cards",
       "url": "https://github.com/rioX432/CivitDeck/issues/1078",
       "description": "Part of #1016\n\n## Goal\nOn Android (and Desktop, which shares the card), model cards show a \"Paid\" chip next to the model type when `model.hasActivePaidAccess` is true.\n\n## Context\n- #1077 exposes `Model.hasActivePaidAccess` (true when any version has a live paid-access gate, which blocks download without purchase). 19 of the monthly top-100 CivitAI models have it (live 2026-09-26); users currently find out only when the download fails.\n- CivitAI labels the same models \"Paid\" on its own cards (comment in `civitai/civitai` `src/server/services/paid-access.service.ts` ~L859-865).\n- The shared card `ModelCardLayout` (core-ui commonMain) renders the type chip and `SourceBadge` in one row (`ModelCardLayout.kt:212-233`); it is used by Android `ModelCard.kt:39` and Desktop `DesktopModelCard.kt:29`.\nSource: CivitDeck audit 2026-09-26, §6 row 3 (E G7).\n\n## Scope\n**In:**\n- A `PaidBadge` in `ModelCardInfoSection`'s type/source row, shown only when `model.hasActivePaidAccess`, styled like the existing chips (`labelSmall`, `CornerRadius.chip`, theme colors / design tokens), with a content description such as \"Requires purchase on CivitAI\".\n\n**Out:**\n- iOS (#1079).\n- Swipe cards (`CardStack.kt`), recommendation rows, collection cards, and the model detail screen.\n- Per-version or early-access countdown display.\n\n## Done when\n- [ ] `./gradlew :androidApp:assembleDebug :desktopApp:compileKotlinJvm detekt` output shows `BUILD SUCCESSFUL`\n- [ ] `git grep -n \"hasActivePaidAccess\" core/core-ui/` shows the badge condition in `ModelCardLayout.kt`\n- [ ] Manual (owner, not required for merge): Discover → Most Downloaded / Month → models such as id 958009 show \"Paid\"; free models do not\n\n## Files (expected)\n- `core/core-ui/src/commonMain/kotlin/com/riox432/civitdeck/ui/components/ModelCardLayout.kt` — `PaidBadge` composable + call site\n\n## Core Value Alignment\nCV1 — users can tell which models need a purchase while browsing, before opening or downloading them.\n\n## Risks / Notes\n- Label default \"Paid\": matches CivitAI's own card label for the same predicate.\n- core-ui has no string-resource mechanism yet (existing \"NSFW\", \"HF\", \"TA\" labels in this file are literals); follow that precedent here rather than adding a resource system in this issue.\n- Keep the row from overflowing on narrow cards: the chip is short and sits after the type chip; verify with a long type name such as \"TextualInversion\".\n\nDepends on #1077\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5594515313",
-      "source": "github",
-      "title": "Paid launch timeline: Paid Apps Agreement + StoreKit subscriptions before day-90 flip",
-      "url": "https://github.com/candrikanich/recruiting-compass-ios/issues/209",
-      "description": "## Context\n\nLaunch plan: app is **free for the first 90 days**, then monthly + annual auto-renewing subscriptions. The Paid Applications Agreement (Schedule 2, v126, 17 Dec 2025) is **not** needed for the free launch — only before the first sale. This issue tracks the timeline so Apple paperwork and review don't block the day-90 flip.\n\nRelated: #91 (Small Business Program enrollment), `planning/2026-09-03-pricing-model-and-entitlement-plumbing-spec.md`.\n\n## Timeline (relative to launch day 0 → flip day 90)\n\n### ~Day 45–60 — paperwork (Chris)\n- [ ] Accept **Paid Applications Agreement** in App Store Connect → Business\n- [ ] Complete tax forms (W-9) + banking — Apple withholds proceeds until tax docs are on file (§3.3)\n- [ ] Set **tax category** for the app deliberately — developer indemnifies Apple for miscategorization (§3.2)\n- [ ] Enroll in Small Business Program (#91) — Apple approves within 15 days of each fiscal month-end, so enroll ≥1 month before first sale or early sales are charged 30%\n\n### ~Day 60 — StoreKit implementation\n- [ ] Create **one subscription group** containing monthly + annual (enables upgrade/downgrade/crossgrade; tenure accrues per group)\n- [ ] StoreKit 2 purchase + restore flow; map Apple transactions into existing entitlement plumbing\n- [ ] Web-purchased subscriptions unlock iOS (multiplatform) — iOS must **not** sell or link to web checkout (§3.11: in-app subscriptions must use IAP)\n- [ ] Paywall disclosures (§3.8(b)): subscription title, length, price (+ per-unit price if applicable), links to Privacy Policy + Terms of Use inside the app\n- [ ] Paywall copy review: no \"buy now\"/\"upgrade now\" pressure — audience includes minors (§5.4)\n- [ ] Verify `ITSAppUsesNonExemptEncryption` export-compliance answer is accurate (§2.3)\n\n### ~Day 60–75 — review\n- [ ] Submit first subscription products **together with a new app version** (Apple requires first IAPs be reviewed with a binary)\n- [ ] Sandbox + TestFlight purchase testing (monthly, annual, restore, upgrade/downgrade, expiry)\n\n### Before Day 90 — user comms / product decisions\n- [ ] Decide: grandfather or discount the free-period early users?\n- [ ] Decide: introductory free trial for users who join after day 90? (configured as an intro offer on the subscription)\n- [ ] Decide: enable Family Sharing on subscriptions? (one purchase covers family Apple accounts — check fit with family-unit model)\n- [ ] Notify existing users ahead of the flip — avoid surprise feature locking\n\n## Agreement terms worth knowing (no action)\n- Apple may refund users within 90 days at its discretion; developer reimburses (§6.3)\n- Payouts: wire only, ~45 days after month close, monthly minimum threshold (§3.5)\n- Apple may withhold payments on termination or suspected misconduct (§7.1)\n- Apple may pull the app with or without cause (§7.3)\n- Existing users keep re-download access after withdrawal unless opted out (§1.4, §7.4)\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

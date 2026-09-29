@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T01:30:43.853Z",
+  "generatedAt": "2026-09-29T02:30:36.325Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 18,
+  "eligible": 17,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -322,6 +322,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5623982211",
+      "source": "github",
+      "title": "Leader & Issue Watch: alerts + daily brief (first paid product)",
+      "url": "https://github.com/bparlapalli/sansad/issues/48",
+      "description": "Both strategy reviews' first product. User picks ~20 politicians + ~5 issues → daily\nemail/WhatsApp brief; each item = quote, source link (PDF page / video second / PIB), party on\nthat date, evidence label. Plus instant alerts on keywords. Target: 3 paid pilots at ₹25–50k/month\nby day 90. See [`PRODUCT_STRATEGY.md`](https://github.com/bparlapalli/sansad/blob/main/docs/PRODUCT_STRATEGY.md). Related: #29.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5198807994",
       "source": "github",
       "title": "Issue 09: Who actually gets paid",
@@ -442,11 +457,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5583493711",
+      "id": "github-5623846240",
       "source": "github",
-      "title": "ISSUE-13 — Automated tests (backend)",
-      "url": "https://github.com/saifudinreza/Loka-living/issues/13",
-      "description": "Konteks bersama (aturan umum, peta kode, keputusan desain) ada di [`issues.md`](../blob/main/issues.md) di root repo.\n\n---\n\n\n\n**Tipe:** test · **Tergantung:** ISSUE-05, ISSUE-06, ISSUE-07, ISSUE-08\n\n**Konteks:** `TECHNICAL-LokaLiving.md` §7 mewajibkan test untuk area uang & stok. Midtrans SDK memanggil curl langsung (bukan `Http::`), jadi **jangan** memanggil Midtrans asli di test. Bungkus panggilan `Transaction::status/cancel/expire` di `MidtransService`, lalu mock `MidtransService` lewat container (`$this->mock(MidtransService::class, ...)`).\n\n**Test minimal (`tests/Feature/...`), pakai database test PostgreSQL terpisah:**\n- [ ] Webhook: signature valid → 200; signature salah → 401; server key kosong → 401.\n- [ ] Webhook: setiap baris tabel mapping ISSUE-05, termasuk efek ke stok.\n- [ ] Webhook: `deny` lalu `settlement` → `paid`, 2 row payment_transactions.\n- [ ] Webhook: `settlement` lalu `expire` → tetap `paid`.\n- [ ] Webhook: payload sama 2x → diproses sekali.\n- [ ] Webhook: amount mismatch → ditolak, order tidak berubah.\n- [ ] Confirm: total dihitung server (kirim `total_amount` palsu di body → diabaikan).\n- [ ] Confirm: Midtrans throw → order tetap `draft`, response `MIDTRANS_UNAVAILABLE` tanpa pesan internal.\n- [ ] Cancel: sukses / sudah paid (409) / Midtrans sudah settlement saat cancel (409 + order jadi paid) / Midtrans timeout (502).\n- [ ] GET order: tidak ada field terlarang di JSON.\n- [ ] Scheduler: order awaiting_payment lewat batas → expired + stok kembali; kalau Midtrans bilang settlement → paid.\n\nJalankan: `php artisan test`.\n\n---\n\n",
+      "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/192",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-29 01:52 UTC\n\n#### 1. [bounty-watch 2026-09-28: 0 new, 0 resumed, 4 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/52)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** 60 historical URL(s) from Wayback (possible dead/old API surface): https://www.shffls.com/next/static/--lsB3kjamhSOu1GsCaIX/buildManifest.js, https://www.shffls.com/next/static/--lsB3kjamhSOu1GsCaIX/middlewareManifest.js, https://www.shffls.com/next/static/--lsB3kjamhSOu1GsCaIX/ssgManifest.js, https://www.shffls.com/ne\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-28T23:28:43Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -583,20 +598,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 250,
       "profitPerHourUsd": 3000,
-      "eligible": true
-    },
-    {
-      "id": "github-5597076483",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/179",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-26 20:28 UTC\n\n#### 1. [[Bounty proposal] feat(python-cli): memories -> JSON Lines (JSONL) export recipe ( proposed)](https://github.com/BasedHardware/omi/issues/19264)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25 USD\n- **Task:** Pull Request: https://github.com/BasedHardware/omi/pull/19263\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** PayPal、USDC\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-26T18:56:02Z\n\n#### 2. [Register /create-bounty slash command and configure channel settings](https://github.com/devloot-xyz/devloot_discord_bot/issues/16)\n- **Project:** [devloot-xyz/devloot_discord_bot](https://github.com/devloot-xyz/devloot_discord_bot)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Register /create-bounty slash command and configure channel settings\n- **Deadline:** 待确认\n- **Submission:** Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-26T19:20:40Z\n\n#### 3. [Model qualification run](https://github.com/nick-neely/tendnote/issues/653)\n- **Project:** [nick-neely/tendnote](https://github.com/nick-neely/tendnote)\n- **Source:** GitHub Issue\n- **Reward:** $15\n- **Task:** #599 Disclose every tool family and measure the fixed per-turn overhead\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-26T18:12:43Z\n\n#### 4. [[Bounty proposal] feat(python-cli): memories -> SQLite export recipe ( proposed)](https://github.com/BasedHardware/omi/issues/19261)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [Bounty proposal] feat(python-cli): memories -> SQLite export recipe ( proposed)\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** PayPal、USDC\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-26T18:54:30Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 25,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 25,
-      "profitPerHourUsd": 300,
       "eligible": true
     }
   ]

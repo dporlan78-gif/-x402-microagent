@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T06:40:01.681Z",
+  "generatedAt": "2026-09-30T07:35:29.994Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 18,
+  "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -352,6 +352,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5642477210",
+      "source": "github",
+      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
+      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
+      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5598839206",
       "source": "github",
       "title": "Regression: paid Spark msat quotes cannot issue after #1156",
@@ -442,19 +457,18 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5609664371",
+      "id": "github-5642464457",
       "source": "github",
-      "title": "Issue 21 - Section: Financial management — “Track income, get paid, stress less”",
-      "url": "https://github.com/OBLIQ-in/OBLIQ-Website/issues/31",
-      "description": "## 🎯 Goal\n\nMirror twin of #20: image left, copy right — invoicing, expenses and earnings.\n\n## ✅ Definition of done\n\n- [ ] `src/components/sections/FinancialManagement.tsx` per [spec §05](https://github.com/obliq-in/obliq-website/blob/main/docs/site-spec.md#05--financial-management--issue-21-medium)\n- [ ] Layout mirrors #20 (image left, copy right)\n- [ ] `ui/ChipList` with Invoicing, Budgets, Forecasting, Integrations\n- [ ] Mock shows an invoice/budget UI (skeleton bars + a lime total pill)\n\n## 💡 Implementation notes\n\nIf #20 is already merged, reuse its structural patterns — the two sections should feel like siblings, not clones.\n\n## 📚 References\n\n- [Contributing guide](https://github.com/obliq-in/obliq-website/blob/main/CONTRIBUTING.md) — the step-by-step workflow\n- [Design system](https://github.com/obliq-in/obliq-website/blob/main/docs/design-system.md) — tokens, components, rules\n- [Site spec](https://github.com/obliq-in/obliq-website/blob/main/docs/site-spec.md) — what every section contains\n- Live reference: https://obliqq.framer.ai/ (financial management section)\n\n---\n\n🙋 **Want to work on this?** Comment “I’d like to work on this” below and a maintainer will assign you. Stuck for more than an hour? Ask in [Discussions](https://github.com/obliq-in/obliq-website/discussions) — that’s normal around here.",
-      "rewardUsd": 0,
+      "title": "🎯 Micro Bounty Alert: 7 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/198",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-30 07:04 UTC\n\n#### 1. [[Bounty Proposal] Harden database durable queue age against timezone subtraction crashes, malformed summaries, and query errors ($50)](https://github.com/BasedHardware/omi/issues/19872)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** Solution Implemented\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-30T00:50:20Z\n\n#### 2. [[Bounty Proposal] Harden database translation admission against delimiter injection, NaN deadline overflow, and Redis type mismatches ($50)](https://github.com/BasedHardware/omi/issues/19869)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** The translation admission coordinator (backend/database/translationadmission.py) implements fail-closed Redis admission rate limiting and concurrency locking for live and explicit translation requests. Currently, it interpolates uid directly into Redis key namespaces without delimiter protection, allows boolean/float v\n- **Deadline:** [Bounty Proposal] Harden database translation admission against delimiter injection, NaN deadline overflow, and Redis type mismatches ($50)\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-30T00:36:25Z\n\n#### 3. [[Bounty Proposal] Harden database listen continuations against invalid identifiers, timezone mismatch, and Firestore exceptions ($50)](https://github.com/BasedHardware/omi/issues/19866)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** Solution Implemented\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-30T00:24:55Z\n\n#### 4. [[Bounty Proposal] Harden database mentor gate state against invalid inputs, TTL overflow, and Redis transport blips ($50)](https://github.com/BasedHardware/omi/issues/19863)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** Solution Implemented\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-30T00:19:48Z\n\n#### 5. [[BOUNTY] Suggestion #1232](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/1258)\n- **Project:** [SPLURT-Station/S.P.L.U.R.T-tg](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [BOUNTY] Suggestion #1232\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Discord\n- **Payment method:** PayPal\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 4\n- **Last updated:** 2026-09-30T06:00:22Z\n\n#### 6. [bounty-watch 2026-09-30: 0 new, 0 resumed, 3 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/58)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-09-30: 0 new, 0 resumed, 3 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-30T05:36:07Z\n\n#### 7. [Burnside Production 16 — The City That Forgot / Memory Disclosure Choice](https://github.com/JOHNNYMACONNY/art/issues/175)\n- **Project:** [JOHNNYMACONNY/art](https://github.com/JOHNNYMACONNY/art)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** public PLAYTESTBUILD.txt verified at exact P15 gameplay SHA\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-30T04:12:47Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 50,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 50,
+      "profitPerHourUsd": 600,
+      "eligible": true
     },
     {
       "id": "github-5639448261",
@@ -575,21 +589,6 @@
       "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
       "url": "https://github.com/2510034127qq-wq/BountyScout/issues/185",
       "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-28 01:05 UTC\n\n#### 1. [[BOUNTY: 1 air] This is not a problem](https://github.com/explorerscat/cautious-octo-fishstick/issues/13)\n- **Project:** [explorerscat/cautious-octo-fishstick](https://github.com/explorerscat/cautious-octo-fishstick)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Build system\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 4\n- **Last updated:** 2026-09-28T00:16:24Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5606813493",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/184",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-27 22:24 UTC\n\n#### 1. [useBountyStatus: a transient fetch failure mid-session silently swaps the live bounty for static fallbackBounty and fires a false onStatusChange](https://github.com/MergeFi/frontend/issues/571)\n- **Project:** [MergeFi/frontend](https://github.com/MergeFi/frontend)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Suggested fix\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-27T21:52:04Z\n\n#### 2. [Frontend feature: add experimental tournament prize pool distribution donut chart](https://github.com/theblockcade/stellarcade/issues/1287)\n- **Project:** [theblockcade/stellarcade](https://github.com/theblockcade/stellarcade)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Where to Implement (Exact Targets)\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-27T21:46:11Z\n\n#### 3. [[CONTRACT] resolve_dispute never charges the platform fee, unlike every other payout path](https://github.com/StayLitCodes/Vaultix/issues/735)\n- **Project:** [StayLitCodes/Vaultix](https://github.com/StayLitCodes/Vaultix)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [CONTRACT] resolvedispute never charges the platform fee, unlike every other payout path\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 7\n- **Last updated:** 2026-09-27T21:35:40Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

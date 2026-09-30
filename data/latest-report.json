@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T13:35:03.592Z",
+  "generatedAt": "2026-09-30T14:37:51.633Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -174,11 +174,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5646370837",
+      "id": "github-5647589338",
       "source": "github",
-      "title": "US-29: Capture finder details and calculate reward date for cash",
+      "title": "US-28: Cash 6-month reminder",
       "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/28",
-      "description": "### User Story\nAs office staff, I want to record the finder's name and contact details when I log found cash, so we know who to reach when the six-month period is up.\n\n### Acceptance Criteria (Given-When-Then)\nGiven I log an item of type cash, when I save the record, then finder name and contact are required, a reward date is calculated from the date received, and the amount is excluded from announcements.\n\n---\n* **Story ID:** US-29\n* **Epic:** E8\n* **Track:** Staff\n* **Story Points:** 3 pts",
+      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want a reminder when lost cash is approaching the 6-month mark, so I know when it's time to release it to the finder under existing policy.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven a logged item marked as cash, when it approaches 6 months held, then staff receive a reminder to process the finder's reward per current practice.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -189,11 +189,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5646370445",
+      "id": "github-5647588840",
       "source": "github",
-      "title": "US-22: 6-month cash retention reminder",
+      "title": "US-27: Finder details on cash intake",
       "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/27",
-      "description": "### User Story\nAs office staff, I want a reminder when lost cash is approaching the 6-month mark, so I know when it's time to release it to the finder under existing policy.\n\n### Acceptance Criteria (Given-When-Then)\nGiven a logged item marked as cash, when it approaches 6 months held, then staff receive a reminder to process the finder's reward per current practice.\n\n---\n* **Story ID:** US-22\n* **Epic:** E8\n* **Track:** Staff\n* **Story Points:** 3 pts",
+      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want to record the finder's name and contact details when I log found cash, so we know who to reach when the six-month period is up.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven I log an item of type cash, when I save the record, then finder name and contact are required, a reward date is calculated from the date received, and the amount is excluded from any announcement draft.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

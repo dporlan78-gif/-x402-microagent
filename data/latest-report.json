@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T16:33:28.222Z",
+  "generatedAt": "2026-10-01T17:33:56.058Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -458,6 +458,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5666114565",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/206",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-01 17:10 UTC\n\n#### 1. [[Bounty proposal] feat(python-cli): conversations -> Jupyter notebook (.ipynb) export recipe ($25 proposed)](https://github.com/BasedHardware/omi/issues/20193)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** sdks/python-cli/tests/testconversationstojupyter.py — 19 hermetic unit tests (JSON fixtures in, notebook bytes out; no network, no CLI, no services)\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-01T15:50:29Z\n\n#### 2. [[BOUNTY] Suggestion #1248](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/1271)\n- **Project:** [SPLURT-Station/S.P.L.U.R.T-tg](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [BOUNTY] Suggestion #1248\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Discord\n- **Payment method:** PayPal\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-01T16:00:08Z\n\n#### 3. [Qualify source-distribution installs as independent consumer artifacts](https://github.com/AstralDeep/AstralPrimitives/issues/14)\n- **Project:** [AstralDeep/AstralPrimitives](https://github.com/AstralDeep/AstralPrimitives)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** CI builds and checks both distribution formats, but the clean-install smoke installs only the wheel. A source archive missing a package input can pass current metadata checks and fail for consumers that install from source. Rebuild/install the committed source distribution in isolation and reuse the same version, typin\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 4\n- **Last updated:** 2026-10-01T15:19:05Z\n\n#### 4. [[medium] [bounty] Implement load balancing across multiple providers](https://github.com/mallonepay/pay-per-token-llm-gateway/issues/3)\n- **Project:** [mallonepay/pay-per-token-llm-gateway](https://github.com/mallonepay/pay-per-token-llm-gateway)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [medium] [bounty] Implement load balancing across multiple providers\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 2\n- **Competition:** 有竞争：31 条评论；2 个相关 open PR\n- **Original Issue comments:** 31\n- **Last updated:** 2026-10-01T15:23:40Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 25,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
+    },
+    {
       "id": "github-5659874662",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
@@ -585,20 +599,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 50,
       "profitPerHourUsd": 600,
-      "eligible": true
-    },
-    {
-      "id": "github-5627744156",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 5 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/193",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-29 08:42 UTC\n\n#### 1. [bounty-watch 2026-09-29: 0 new, 0 resumed, 1 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/53)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-09-29: 0 new, 0 resumed, 1 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-29T05:59:31Z\n\n#### 2. [Qtags security - full analysis ](https://github.com/quantacms/quanta/issues/191)\n- **Project:** [quantacms/quanta](https://github.com/quantacms/quanta)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** and perform a security check of each of them.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-29T08:00:09Z\n\n#### 3. [[CLAIM] Star & Share beacon-skill (Bounty #157)](https://github.com/Scottcjn/rustchain-bounties/issues/14157)\n- **Project:** [Scottcjn/rustchain-bounties](https://github.com/Scottcjn/rustchain-bounties)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [CLAIM] Star & Share beacon-skill (Bounty #157)\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-29T07:50:36Z\n\n#### 4. [[CLAIM] Add RustChain to Profile README (Bounty #515)](https://github.com/Scottcjn/rustchain-bounties/issues/14158)\n- **Project:** [Scottcjn/rustchain-bounties](https://github.com/Scottcjn/rustchain-bounties)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [CLAIM] Add RustChain to Profile README (Bounty #515)\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 3\n- **Last updated:** 2026-09-29T07:50:34Z\n\n#### 5. [Benchmark APIs with p50, p95, p99 latency, RPS, error rate and TTFB](https://github.com/SecureBananaLabs/bug-bounty/issues/30)\n- **Project:** [SecureBananaLabs/bug-bounty](https://github.com/SecureBananaLabs/bug-bounty)\n- **Source:** GitHub Issue\n- **Reward:** $750\n- **Task:** Produce a reproducible report that can be re-run on future builds for regression tracking\n- **Deadline:** If submitted by or with an AI agent\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 19\n- **Competition:** 有竞争：180 条评论；19 个相关 open PR\n- **Original Issue comments:** 180\n- **Last updated:** 2026-09-29T06:32:49Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 750,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 750,
-      "profitPerHourUsd": 9000,
       "eligible": true
     }
   ]

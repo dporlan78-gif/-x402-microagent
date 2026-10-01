@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T06:41:45.399Z",
+  "generatedAt": "2026-10-01T07:35:51.960Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,9 +14,24 @@
     ]
   },
   "discovered": 40,
-  "eligible": 18,
+  "eligible": 16,
   "realMoneySpentUsd": 0,
   "opportunities": [
+    {
+      "id": "github-5658125732",
+      "source": "github",
+      "title": "Bounty Reward 💎",
+      "url": "https://github.com/kalashnikovski/cvn_node/issues/4",
+      "description": "# 💎 BOUNTY: Refactor P2P Network Layer to Support Dynamic Peer Discovery (`peers.json`)\n\n**Label:** `Bounty Reward 💎`, `p2p-mesh`, `enhancement`  \n**Reward Pool:** 1,500.00 CVN from Genesis Allocations\n\n### 🎯 Objective\nWe need a distributed systems engineer to refactor our current networking loops to migrate the protocol away from strict static bootstrapping toward an autonomous, self-healing Gossip mesh network.\n\n### 🛠️ Technical Requirements\n1. **Dynamic Serialization:** Implement a background worker thread that serializes newly validated inbound peer socket connections directly to a local `peers.json` file inside the workspace directory.\n2. **Autonomous Bootstrapping:** On node launch, if the primary seed node is unreachable, the networking engine must parse `peers.json` chronologically and attempt to dial historical cached sockets to achieve network consensus.\n3. **Randomized Gossip Fan-out:** Limit transaction and block broadcast propagation payloads to a randomized subset of 5-8 peers rather than the global known peer list to optimize bandwidth and mitigate network congestion under heavy transaction traffic volumes.\n\n# 💎 BOUNTY: Implement Optimized Binary Serialization for Block Ledger Data\n\n**Label:** `Bounty Reward 💎`, `performance`, `storage`  \n**Reward Pool:** 1,000.00 CVN from Genesis Allocations\n\n### 🎯 Objective\nWe are seeking a Go data engineer to refactor our ledger serialization engine, migrating long-term block database writes away from human-readable JSON text strings to a highly compact binary encoding standard.\n\n### 🛠️ Technical Requirements\n1. **Binary Encoding Backplane:** Integrate Protocol Buffers (protobuf) or an optimized custom byte-level encoder into our block schema structs.\n2. **Asynchronous Compaction:** Ensure that when the background worker thread captures state snapshots via `ledger_vault_backup.json`, the payload size is minimized to drop disk storage requirements under heavy transactional loads.\n3. **Backward Compatible Telemetry:** The backend must preserve the standard un-encoded JSON endpoints (`/req_chain`, `/req_mempool`) so our current web block explorer HTML UI can parse network telemetry statistics seamlessly.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
     {
       "id": "github-5465070719",
       "source": "github",
@@ -144,20 +159,6 @@
       "eligible": true
     },
     {
-      "id": "github-5556777041",
-      "source": "github",
-      "title": "[Bounty] [Bounty] Fix one deterministic RPC failover regression",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1635",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1500\n\n### 漏洞描述 / Description\n[Bounty] Fix one deterministic RPC failover regression\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0x26f0a0a60f8a1c12ca9b724062b9c5bfe8d013ce\"} -->\n## Canonical bounty discovery\n\nMake the pinned failing rpc-failover fixture pass without weakening its assertion.\n\n- **Current work state:** `verification_pending`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.99 USDC\n- **Entry/claim bond:** 0.01 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** signed_quorum (`signed_quorum`; ready: `true`)\n\n### Next action\n\n**[Inspect verification work](https://api.agentbounties.app/v1/base/autonomous-bounties/verification-jobs?network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0x26f0a0a60f8a1c12ca9b724062b9c5bfe8d013ce)** — Inspect the committed verifier job. A submission is not acceptance or payment.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0x26f0a0a60f8a1c12ca9b724062b9c5bfe8d013ce&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0x26f0a0a60f8a1c12ca9b724062b9c5bfe8d013ce)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/647)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n123 coins\n\n### 真实赏金（USD）/ Real Reward\n$99\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 99,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 99,
-      "profitPerHourUsd": 1188,
-      "eligible": true
-    },
-    {
       "id": "github-5460333471",
       "source": "github",
       "title": "Reward system on races not working",
@@ -278,6 +279,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5592184782",
+      "source": "github",
+      "title": "Arcade: [placeholder] Risk-and-reward planning game (teaches Markov decision processes)",
+      "url": "https://github.com/diagonalcounty/heliopoly/issues/297",
+      "description": "**Status:** Placeholder. Needs design before it meets Definition of Ready.\n\n## Idea\nA short, replayable Arcade game that teaches Markov decision processes (MDPs), the math behind planning when outcomes are partly random. The player learns by playing runs, not by reading math.\n\n## Learning goals (from Stanford CS221, MDPs 1: Value Iteration)\n- Judge a strategy by its average payoff over many runs, not by one lucky or unlucky run.\n- Policy evaluation: what a fixed strategy is really worth.\n- Value iteration: finding the best move at each spot by working backward from the payoffs.\n- Discounting: a reward now beats the same reward later.\n\n## Arcade-sized concepts (pick one for the first slice)\n1. **Risky jump run:** a small star map where each jump has odds of success, delay, or damage. The player picks a move at each node, flies a batch of runs, and sees their average next to the best possible average.\n2. **Stay or cash out:** a dice-style contract (the lecture's example). Each round the player keeps flying for a steady payout with a chance the contract ends, or takes a one-time payout. Short, and it teaches expected value quickly.\n3. **Out-plan the AI pilot:** the same map, but an AI pilot fills in values on each node sweep by sweep. The player tries to set a strategy that matches or beats it before the values settle.\n\n## Fits existing Arcade patterns\n- Short runs with fresh layouts each launch (like #293 hull panels and #290 fuel connection).\n- End-of-run message through the shared clerk results card (#296), which could show \"your average vs. best possible.\"\n\n## Open questions\n- How much of the numbers to show (values on nodes, odds on edges, or hidden until the end)?\n- Difficulty ladder: bigger maps, more random outcomes, a lower discount?\n- Any carryover rewards outside the Arcade?\n\n## References\n- Lecture: https://www.youtube.com/watch?v=9g32v7bK3Co\n- Slides: https://web.stanford.edu/class/archive/cs/cs221/cs221.1196/lectures/mdp1.pdf\n\n## Acceptance criteria\nTBD once a concept is chosen.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5410704722",
       "source": "github",
       "title": "[TASK HUNTER] Agents for Humans — $2,000–$10,000 cash",
@@ -289,20 +305,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 2,
       "profitPerHourUsd": 24,
-      "eligible": true
-    },
-    {
-      "id": "github-5160514049",
-      "source": "github",
-      "title": "Global cash promoter — authoritative payout + competition filter",
-      "url": "https://github.com/liubaining-louis/louis-os/issues/403",
-      "description": "Build and run a worldwide promotion stage after Global Opportunity Radar.\n\nDefinition of done:\n- search fresh open GitHub bounty/reward issues globally;\n- inspect authoritative provider evidence in comments (Algora/Opire or documented funded receipt);\n- extract reward amount and active attempt count where available;\n- reject saturated (>5 active attempts), stale, unsafe, KYC/spend/signature-gated, or unverifiable payout tasks;\n- favor $1–$100 bounded Python/JS/TS/Go/docs/data/research tasks;\n- maintain target shortlist of 8, max 10;\n- do not count shortlist as submission or revenue;\n- hand safe candidates to existing execution/Mission Bridge path.",
-      "rewardUsd": 1,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1,
-      "profitPerHourUsd": 12,
       "eligible": true
     },
     {
@@ -321,11 +323,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5198807994",
+      "id": "github-5623982211",
       "source": "github",
-      "title": "Issue 09: Who actually gets paid",
-      "url": "https://github.com/juvinciariadi/data-worn-thin.-/issues/12",
-      "description": "## Issue #9 (pillar 3)\n\n**Pillar:** 3 (who actually gets paid)\n**Chart theme:** Cocoa background / Cream text (odd-numbered issue)\n**Note:** Revisit of Pillar 3 (last: Issue #4, garment workers). New mechanism required.\n\n### Checklist\n- [ ] Hook stat sourced\n- [ ] Data slides drafted\n- [ ] The take written\n- [ ] Caption drafted\n- [ ] Canva carousel designed\n- [ ] Published\n- [ ] Issue backfilled",
+      "title": "Leader & Issue Watch: alerts + daily brief (first paid product)",
+      "url": "https://github.com/bparlapalli/sansad/issues/48",
+      "description": "Both strategy reviews' first product. User picks ~20 politicians + ~5 issues → daily\nemail/WhatsApp brief; each item = quote, source link (PDF page / video second / PIB), party on\nthat date, evidence label. Plus instant alerts on keywords. Target: 3 paid pilots at ₹25–50k/month\nby day 90. See [`PRODUCT_STRATEGY.md`](https://github.com/bparlapalli/sansad/blob/main/docs/PRODUCT_STRATEGY.md). Related: #29.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -336,11 +338,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5623982211",
+      "id": "github-5198807994",
       "source": "github",
-      "title": "Leader & Issue Watch: alerts + daily brief (first paid product)",
-      "url": "https://github.com/bparlapalli/sansad/issues/48",
-      "description": "Both strategy reviews' first product. User picks ~20 politicians + ~5 issues → daily\nemail/WhatsApp brief; each item = quote, source link (PDF page / video second / PIB), party on\nthat date, evidence label. Plus instant alerts on keywords. Target: 3 paid pilots at ₹25–50k/month\nby day 90. See [`PRODUCT_STRATEGY.md`](https://github.com/bparlapalli/sansad/blob/main/docs/PRODUCT_STRATEGY.md). Related: #29.",
+      "title": "Issue 09: Who actually gets paid",
+      "url": "https://github.com/juvinciariadi/data-worn-thin.-/issues/12",
+      "description": "## Issue #9 (pillar 3)\n\n**Pillar:** 3 (who actually gets paid)\n**Chart theme:** Cocoa background / Cream text (odd-numbered issue)\n**Note:** Revisit of Pillar 3 (last: Issue #4, garment workers). New mechanism required.\n\n### Checklist\n- [ ] Hook stat sourced\n- [ ] Data slides drafted\n- [ ] The take written\n- [ ] Caption drafted\n- [ ] Canva carousel designed\n- [ ] Published\n- [ ] Issue backfilled",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

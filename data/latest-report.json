@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T07:35:51.960Z",
+  "generatedAt": "2026-10-01T08:37:08.171Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -323,11 +323,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5623982211",
+      "id": "github-5198807994",
       "source": "github",
-      "title": "Leader & Issue Watch: alerts + daily brief (first paid product)",
-      "url": "https://github.com/bparlapalli/sansad/issues/48",
-      "description": "Both strategy reviews' first product. User picks ~20 politicians + ~5 issues → daily\nemail/WhatsApp brief; each item = quote, source link (PDF page / video second / PIB), party on\nthat date, evidence label. Plus instant alerts on keywords. Target: 3 paid pilots at ₹25–50k/month\nby day 90. See [`PRODUCT_STRATEGY.md`](https://github.com/bparlapalli/sansad/blob/main/docs/PRODUCT_STRATEGY.md). Related: #29.",
+      "title": "Issue 09: Who actually gets paid",
+      "url": "https://github.com/juvinciariadi/data-worn-thin.-/issues/12",
+      "description": "## Issue #9 (pillar 3)\n\n**Pillar:** 3 (who actually gets paid)\n**Chart theme:** Cocoa background / Cream text (odd-numbered issue)\n**Note:** Revisit of Pillar 3 (last: Issue #4, garment workers). New mechanism required.\n\n### Checklist\n- [ ] Hook stat sourced\n- [ ] Data slides drafted\n- [ ] The take written\n- [ ] Caption drafted\n- [ ] Canva carousel designed\n- [ ] Published\n- [ ] Issue backfilled",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -338,11 +338,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5198807994",
+      "id": "github-5623982211",
       "source": "github",
-      "title": "Issue 09: Who actually gets paid",
-      "url": "https://github.com/juvinciariadi/data-worn-thin.-/issues/12",
-      "description": "## Issue #9 (pillar 3)\n\n**Pillar:** 3 (who actually gets paid)\n**Chart theme:** Cocoa background / Cream text (odd-numbered issue)\n**Note:** Revisit of Pillar 3 (last: Issue #4, garment workers). New mechanism required.\n\n### Checklist\n- [ ] Hook stat sourced\n- [ ] Data slides drafted\n- [ ] The take written\n- [ ] Caption drafted\n- [ ] Canva carousel designed\n- [ ] Published\n- [ ] Issue backfilled",
+      "title": "Leader & Issue Watch: alerts + daily brief (first paid product)",
+      "url": "https://github.com/bparlapalli/sansad/issues/48",
+      "description": "Both strategy reviews' first product. User picks ~20 politicians + ~5 issues → daily\nemail/WhatsApp brief; each item = quote, source link (PDF page / video second / PIB), party on\nthat date, evidence label. Plus instant alerts on keywords. Target: 3 paid pilots at ₹25–50k/month\nby day 90. See [`PRODUCT_STRATEGY.md`](https://github.com/bparlapalli/sansad/blob/main/docs/PRODUCT_STRATEGY.md). Related: #29.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

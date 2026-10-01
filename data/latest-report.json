@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T23:30:57.870Z",
+  "generatedAt": "2026-10-01T00:43:45.957Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 19,
+  "eligible": 18,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -321,11 +321,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5198807994",
+      "id": "github-5623982211",
       "source": "github",
-      "title": "Issue 09: Who actually gets paid",
-      "url": "https://github.com/juvinciariadi/data-worn-thin.-/issues/12",
-      "description": "## Issue #9 (pillar 3)\n\n**Pillar:** 3 (who actually gets paid)\n**Chart theme:** Cocoa background / Cream text (odd-numbered issue)\n**Note:** Revisit of Pillar 3 (last: Issue #4, garment workers). New mechanism required.\n\n### Checklist\n- [ ] Hook stat sourced\n- [ ] Data slides drafted\n- [ ] The take written\n- [ ] Caption drafted\n- [ ] Canva carousel designed\n- [ ] Published\n- [ ] Issue backfilled",
+      "title": "Leader & Issue Watch: alerts + daily brief (first paid product)",
+      "url": "https://github.com/bparlapalli/sansad/issues/48",
+      "description": "Both strategy reviews' first product. User picks ~20 politicians + ~5 issues → daily\nemail/WhatsApp brief; each item = quote, source link (PDF page / video second / PIB), party on\nthat date, evidence label. Plus instant alerts on keywords. Target: 3 paid pilots at ₹25–50k/month\nby day 90. See [`PRODUCT_STRATEGY.md`](https://github.com/bparlapalli/sansad/blob/main/docs/PRODUCT_STRATEGY.md). Related: #29.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -336,11 +336,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5623982211",
+      "id": "github-5198807994",
       "source": "github",
-      "title": "Leader & Issue Watch: alerts + daily brief (first paid product)",
-      "url": "https://github.com/bparlapalli/sansad/issues/48",
-      "description": "Both strategy reviews' first product. User picks ~20 politicians + ~5 issues → daily\nemail/WhatsApp brief; each item = quote, source link (PDF page / video second / PIB), party on\nthat date, evidence label. Plus instant alerts on keywords. Target: 3 paid pilots at ₹25–50k/month\nby day 90. See [`PRODUCT_STRATEGY.md`](https://github.com/bparlapalli/sansad/blob/main/docs/PRODUCT_STRATEGY.md). Related: #29.",
+      "title": "Issue 09: Who actually gets paid",
+      "url": "https://github.com/juvinciariadi/data-worn-thin.-/issues/12",
+      "description": "## Issue #9 (pillar 3)\n\n**Pillar:** 3 (who actually gets paid)\n**Chart theme:** Cocoa background / Cream text (odd-numbered issue)\n**Note:** Revisit of Pillar 3 (last: Issue #4, garment workers). New mechanism required.\n\n### Checklist\n- [ ] Hook stat sourced\n- [ ] Data slides drafted\n- [ ] The take written\n- [ ] Caption drafted\n- [ ] Canva carousel designed\n- [ ] Published\n- [ ] Issue backfilled",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -446,6 +446,21 @@
       "title": "Recover paid Orders awaiting Tickets",
       "url": "https://github.com/fvckzest/HP-OS/issues/36",
       "description": "## Parent\n\nhttps://github.com/fvckzest/HP-OS/issues/22\n\n## What to build\n\nAutomatic recovery and a guarded staff retry complete Ticket issuance without charging again or issuing duplicates.\n\n**Implementation stage:** Recovery. Work includes the HP-OS and LMNL responsibilities needed for this behavior. Use the two approved testing boundaries, keep external credentials on the Site backend, update affected repository guidance, and leave existing live Events on the current system. No visual review.\n\nGuidance: [ticketing](https://github.com/fvckzest/HP-OS/blob/main/docs/features/ticketing.md), [api](https://github.com/fvckzest/HP-OS/blob/main/docs/api/api.md).\n\n## Acceptance criteria\n\n- [ ] Deliberately fail issuance after confirmed payment; buyer status remains paid and awaiting Tickets and staff see unresolved work.\n- [ ] Scheduled recovery retries durable issuance work without visitor traffic and tolerates overlapping/interrupted invocations.\n- [ ] The authorized retry action enforces version/state rules, cannot override cancellation/full refund, and cannot duplicate Ticket identities or initial delivery work.\n- [ ] Verify eventual issuance and Order/Ticket access after both automatic and guarded retry; retain failure evidence until resolved.\n\n## Blocked by\n\n- [Prove the complete public single-ticket journey](https://github.com/fvckzest/HP-OS/issues/33)\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5654757845",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/202",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-01 00:14 UTC\n\n#### 1. [ATDevOutreach/CodeChallengeSwahiliPot — README.md](https://github.com/ATDevOutreach/CodeChallengeSwahiliPot/blob/b8f1a6ac9554203b11621d89b47fe2a580b80098/README.md)\n- **Project:** [ATDevOutreach/CodeChallengeSwahiliPot](https://github.com/ATDevOutreach/CodeChallengeSwahiliPot)\n- **Source:** Repository Markdown\n- **Reward:** 金额待确认\n- **Task:** Using the GitHub Pull Request Time Stamp and correct code quality & structure, the first developer whose code runs successfully on the sandbox/simulator wins\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -582,20 +597,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 1,
       "profitPerHourUsd": 12,
-      "eligible": true
-    },
-    {
-      "id": "github-5617373115",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/188",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-28 15:50 UTC\n\n#### 1. [Proposal and Poll: GUI Implementation Fund Match](https://github.com/gridcoin-community/Gridcoin-Research/issues/1401)\n- **Project:** [gridcoin-community/Gridcoin-Research](https://github.com/gridcoin-community/Gridcoin-Research)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The core development team is considering that rebuilding the GUI (not the core) from the ground up in a modern framework might be the best path. This changes nothing with the poll and the bounty. Anyone considering putting work into implementing the GUI is encouraged to start a discussion with the dev team.\n- **Deadline:** 待确认\n- **Submission:** Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 24\n- **Last updated:** 2026-09-28T14:26:52Z\n\n#### 2. [Grant Application - Zcash Global Community & Marketing Operations](https://github.com/ZcashCommunityGrants/zcashcommunitygrants/issues/450)\n- **Project:** [ZcashCommunityGrants/zcashcommunitygrants](https://github.com/ZcashCommunityGrants/zcashcommunitygrants)\n- **Source:** GitHub Issue\n- **Reward:** $3,000\n- **Task:** [x] I understand when contributing to existing Zcash code, I am required to adhere to the project specific contribution guidelines, paying close attention to any merge (https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.md#merge-workflow), branch (https://github.com/zcash/librustzcash/blob/main/CONTRIBUTING.m\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request、Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：7 个 assignee；1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-28T14:54:21Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 3,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 3,
-      "profitPerHourUsd": 36,
       "eligible": true
     }
   ]

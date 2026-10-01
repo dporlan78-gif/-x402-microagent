@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T11:33:19.046Z",
+  "generatedAt": "2026-10-01T12:42:08.528Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -219,21 +219,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5530939483",
-      "source": "github",
-      "title": "Give landed sabotage hits a direct comeback reward",
-      "url": "https://github.com/joshuaclemons1/Rob-Everyone/issues/60",
-      "description": "## Summary\n\nRight now using a sabotage item is a pure Cash cost with only an\n*indirect* benefit (slowing a rival down) — nothing rewards the\nattacker directly. Super Battle Golf's own comeback system does the\nopposite on purpose: hitting another player grants the attacker a\nspeed boost, plus a named \"comeback points\" bonus specifically scaled\nto how far behind the attacker is. This is this project's own\n[retention-research.md](docs/stages/retention-research.md)\nrecommendation #1 — the top-priority fix for the reported \"sessions\nstall after the first quota batch\" playtest problem.\n\n## Why this matters\n\nA landed hit right now only removes value from a rival; it never adds\nvalue to the attacker. Giving it a direct payoff (possibly scaled by\nhow far behind on quota the attacker currently is, mirroring Super\nBattle Golf's comeback-points design) turns \"I bought a Taser\" into\n\"now I get to use it to actually catch up\" rather than just griefing.\n\n## Where to look\n\n- `Assets/Scripts/Sabotage/SabotageUseController.cs` — where a landed\n  hit already resolves; the natural hook point for a direct reward.\n- `docs/stages/retention-research.md` — full reasoning, recommendation\n  #1.\n- Related: #58 could eventually interact with the same Cash economy,\n  but not a dependency.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5460422244",
       "source": "github",
       "title": "Automate Whop bounty payout receipt evidence for zero-touch settlement",
@@ -249,11 +234,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5291891057",
+      "id": "github-5530939483",
       "source": "github",
-      "title": "[OWNER-ACTION][HOLD][B64] Adscend approval + Korea rewarded-video inventory proof",
-      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/1117",
-      "description": "Parent: #1112\n\n## Owner schedule\n- Planned account creation date: **2026-08-31 (Monday, KST)**\n- Until then, CENTRAL must not attempt signup, approval, credential entry, or live-provider activation.\n- This issue remains OWNER ACTION; CENTRAL may continue account-independent product work in parallel.\n\n## Goal\nEstablish Adscend Media as the second real web AD_VIEW/reward lane, without treating generic offers or points-only traffic as cash-reward supply.\n\n## Current code authority\nThe account-independent implementation is already merged to `main` via #1127 and #1128.\nCurrent product state: `TECHNICAL_COMPLETE_OWNER_ACTIVATION_PENDING`.\nImplemented already: video category filter, `allowed_traffic=3` cash-incentive gate, web browser config with server-only API credentials, go-live readiness contract, external payout dependency.\n\n## External requirements\n- [ ] publisher account approved\n- [ ] B64 use case explicitly approved as GPT/cash or external-value reward model\n- [ ] website Offer Wall / PixelPointTV profile created\n- [ ] video-only category/path configured\n- [ ] stable opaque user identifiers configured\n- [ ] server postback configured\n- [ ] secure hash/provider-supported postback verification enabled and verified\n- [ ] API credentials stored server-side only\n- [ ] South Korea video inventory observed live\n- [ ] only offers with `allowed_traffic=3` accepted for cash/external-value reward lane\n- [ ] real conversion/postback observed and duplicate controls verified\n- [ ] external reward fulfillment live-ready before consumer activation\n\n## Acceptance\n`allowed_traffic` 0/1/2 never enters B64 cash P0. Provider approval and KR supply must be observed, not inferred. Technical integration without a user payout path is NOT live completion.\n\nNever put publisher API keys, secrets or account credentials in this issue or repository.",
+      "title": "Give landed sabotage hits a direct comeback reward",
+      "url": "https://github.com/joshuaclemons1/Rob-Everyone/issues/60",
+      "description": "## Summary\n\nRight now using a sabotage item is a pure Cash cost with only an\n*indirect* benefit (slowing a rival down) — nothing rewards the\nattacker directly. Super Battle Golf's own comeback system does the\nopposite on purpose: hitting another player grants the attacker a\nspeed boost, plus a named \"comeback points\" bonus specifically scaled\nto how far behind the attacker is. This is this project's own\n[retention-research.md](docs/stages/retention-research.md)\nrecommendation #1 — the top-priority fix for the reported \"sessions\nstall after the first quota batch\" playtest problem.\n\n## Why this matters\n\nA landed hit right now only removes value from a rival; it never adds\nvalue to the attacker. Giving it a direct payoff (possibly scaled by\nhow far behind on quota the attacker currently is, mirroring Super\nBattle Golf's comeback-points design) turns \"I bought a Taser\" into\n\"now I get to use it to actually catch up\" rather than just griefing.\n\n## Where to look\n\n- `Assets/Scripts/Sabotage/SabotageUseController.cs` — where a landed\n  hit already resolves; the natural hook point for a direct reward.\n- `docs/stages/retention-research.md` — full reasoning, recommendation\n  #1.\n- Related: #58 could eventually interact with the same Cash economy,\n  but not a dependency.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -294,17 +279,32 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5410704722",
+      "id": "github-5291891057",
       "source": "github",
-      "title": "[TASK HUNTER] Agents for Humans — $2,000–$10,000 cash",
-      "url": "https://github.com/Inkh95/t3n-trusted-approval-agent/issues/1",
-      "description": "Status: SUBMITTED\nPlatform: Devpost / Amazon Web Services\nTask URL: https://agentsforhumans.devpost.com/\nReward: $40,000 total prize pool; $10,000 Grand Prize; $5,000/$3,000/$2,000 per track\nPayout method: Electronic payment to a winner's bank account or mailed monetary prize; SEPA not explicitly confirmed\nBulgaria eligibility: ELIGIBLE\nAI policy: AI ALLOWED\nDeadline: 2026-09-15 00:00 UTC (2026-09-15 03:00 Europe/Sofia)\nCompetition: Judged contest; no reward is guaranteed for completing/submitting\nEstimated effort: 20–40 hours\nExpected EUR/hour: Not reliably quantifiable because payout depends on winning\nEvidence: Official Devpost connector verified submissions open; Strands Agents SDK required; winner forms and possible W-8BEN/tax information required; payout may take up to 60 days.\nPayout speed: STANDARD, not instant\nEntry cost: No purchase/payment necessary, but implementation time is substantial\nKYC required: YES IF WINNER\nRecommendation: REVIEW REQUIRED\nAutomation decision: NOT AUTO-CLAIMED — fails the standing rules for guaranteed reward, confirmed SEPA/PayPal payout, instant/same-day preference, and no KYC dependency.\n\nSubmission evidence: Devpost project https://devpost.com/software/t3n-trusted-approval-agent\nSubmitted at: 2026-09-10T15:27:11.025-04:00\nVideo URL recorded by Devpost: https://www.youtube.com/watch?v=RLi-Bnrscas\nVerification: Official Devpost connector returned non-null submitted_at and the replacement video URL on 2026-09-10.",
-      "rewardUsd": 2,
+      "title": "[OWNER-ACTION][HOLD][B64] Adscend approval + Korea rewarded-video inventory proof",
+      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/1117",
+      "description": "## 2026-10-01 CURRENT RECONCILIATION\n\nFresh repository truth:\n\n```text\nCURRENT_MAIN=3d16307a9c1c729b728081f52710ed56b1b819a9\nBUSINESS=B64\nROLE=OWNER_ACTION_LIVE_PROVIDER_PROOF\nPROVIDER=Adscend\nORIGINAL_PLANNED_ACTION_DATE=2026-08-31_PASSED\nTECHNICAL_ACCOUNT_INDEPENDENT_CODE=MERGED\nPUBLISHER_APPROVAL / KR_VIDEO_SUPPLY / ALLOWED_TRAFFIC_LIVE_GATE / POSTBACK=NOT_EVIDENCED\nLIVE_PRODUCTION_PROOF=NO\nPRODUCTION_MUTATION=0\nDISPOSITION=KEEP_OPEN_OWNER_DECISION\n```\n\nThe original 2026-08-31 owner-action date has passed. No later repository evidence proves that the required external provider/account/live Korea proof was completed.\n\nThis issue therefore remains OPEN, but it should no longer read as a scheduled action for August 31. The next owner decision is one of:\n\n```text\nPROCEED_WITH_PROVIDER\nREPLACE_PROVIDER\nCANCEL_THIS_PROVIDER_LANE\n```\n\nDo not infer approval, inventory, payout capability, funding, live callback/postback or real-user readiness from the already-merged technical contracts.\n\nIf the provider lane is abandoned or replaced, close this issue as not planned and preserve the technical contract as historical evidence.\n---\n\nParent: #1112\n\n## Owner schedule\n- Planned account creation date: **2026-08-31 (Monday, KST)**\n- Until then, CENTRAL must not attempt signup, approval, credential entry, or live-provider activation.\n- This issue remains OWNER ACTION; CENTRAL may continue account-independent product work in parallel.\n\n## Goal\nEstablish Adscend Media as the second real web AD_VIEW/reward lane, without treating generic offers or points-only traffic as cash-reward supply.\n\n## Current code authority\nThe account-independent implementation is already merged to `main` via #1127 and #1128.\nCurrent product state: `TECHNICAL_COMPLETE_OWNER_ACTIVATION_PENDING`.\nImplemented already: video category filter, `allowed_traffic=3` cash-incentive gate, web browser config with server-only API credentials, go-live readiness contract, external payout dependency.\n\n## External requirements\n- [ ] publisher account approved\n- [ ] B64 use case explicitly approved as GPT/cash or external-value reward model\n- [ ] website Offer Wall / PixelPointTV profile created\n- [ ] video-only category/path configured\n- [ ] stable opaque user identifiers configured\n- [ ] server postback configured\n- [ ] secure hash/provider-supported postback verification enabled and verified\n- [ ] API credentials stored server-side only\n- [ ] South Korea video inventory observed live\n- [ ] only offers with `allowed_traffic=3` accepted for cash/external-value reward lane\n- [ ] real conversion/postback observed and duplicate controls verified\n- [ ] external reward fulfillment live-ready before consumer activation\n\n## Acceptance\n`allowed_traffic` 0/1/2 never enters B64 cash P0. Provider approval and KR supply must be observed, not inferred. Technical integration without a user payout path is NOT live completion.\n\nNever put publisher API keys, secrets or account credentials in this issue or repository.",
+      "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 2,
-      "profitPerHourUsd": 24,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5160514049",
+      "source": "github",
+      "title": "Global cash promoter — authoritative payout + competition filter",
+      "url": "https://github.com/liubaining-louis/louis-os/issues/403",
+      "description": "Build and run a worldwide promotion stage after Global Opportunity Radar.\n\nDefinition of done:\n- search fresh open GitHub bounty/reward issues globally;\n- inspect authoritative provider evidence in comments (Algora/Opire or documented funded receipt);\n- extract reward amount and active attempt count where available;\n- reject saturated (>5 active attempts), stale, unsafe, KYC/spend/signature-gated, or unverifiable payout tasks;\n- favor $1–$100 bounded Python/JS/TS/Go/docs/data/research tasks;\n- maintain target shortlist of 8, max 10;\n- do not count shortlist as submission or revenue;\n- hand safe candidates to existing execution/Mission Bridge path.",
+      "rewardUsd": 1,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1,
+      "profitPerHourUsd": 12,
       "eligible": true
     },
     {

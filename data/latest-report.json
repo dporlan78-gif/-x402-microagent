@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T01:33:08.869Z",
+  "generatedAt": "2026-10-02T02:31:35.035Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 16,
+  "eligible": 15,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -458,6 +458,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5671697176",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/210",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-02 01:50 UTC\n\n#### 1. [Bounty submission packet (Scaffold-HBAR) — awaiting official form URL](https://github.com/agentbuddha88/saucerswap-liquidity-kit/issues/1)\n- **Project:** [agentbuddha88/saucerswap-liquidity-kit](https://github.com/agentbuddha88/saucerswap-liquidity-kit)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Bounty submission packet (Scaffold-HBAR) — awaiting official form URL\n- **Deadline:** Public timestamped claim for the Scaffold-HBAR Template Bounty (deadline 4 Oct 2026 23:59 ET).\n- **Submission:** GitHub Issue、Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-02T01:03:41Z\n\n#### 2. [Validate finite, correctly typed SDK deadline and retry limits](https://github.com/AstralDeep/LETS/issues/66)\n- **Project:** [AstralDeep/LETS](https://github.com/AstralDeep/LETS)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Validate finite, correctly typed SDK deadline and retry limits\n- **Deadline:** Validate finite, correctly typed SDK deadline and retry limits\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-02T00:42:35Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5670085234",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
@@ -585,20 +600,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 750,
       "profitPerHourUsd": 9000,
-      "eligible": true
-    },
-    {
-      "id": "github-5637122170",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 11 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/196",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-29 21:12 UTC\n\n#### 1. [[Bounty proposal] fix(backend): validate inputs and add resilience guards in database tasks ( proposed)](https://github.com/BasedHardware/omi/issues/19824)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** [Bounty proposal] fix(backend): validate inputs and add resilience guards in database tasks ( proposed)\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-29T17:45:55Z\n\n#### 2. [[Bounty proposal] fix(backend): validate inputs and add resilience guards in database dev api key ( proposed)](https://github.com/BasedHardware/omi/issues/19822)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** [Bounty proposal] fix(backend): validate inputs and add resilience guards in database dev api key ( proposed)\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-29T17:42:32Z\n\n#### 3. [[Bounty proposal] fix(backend): validate inputs and add resilience guards in database mcp api key ( proposed)](https://github.com/BasedHardware/omi/issues/19817)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** [Bounty proposal] fix(backend): validate inputs and add resilience guards in database mcp api key ( proposed)\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-29T17:28:09Z\n\n#### 4. [[Bounty proposal] fix(backend): validate inputs and add resilience guards in database dev api key ($50 proposed)](https://github.com/BasedHardware/omi/issues/19806)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** [Bounty proposal] fix(backend): validate inputs and add resilience guards in database dev api key ($50 proposed)\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-29T16:48:12Z\n\n#### 5. [[Bounty proposal] fix(backend): validate inputs and add resilience guards in database phone call usage ($50 proposed)](https://github.com/BasedHardware/omi/issues/19810)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** [Bounty proposal] fix(backend): validate inputs and add resilience guards in database phone call usage ($50 proposed)\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-29T16:48:08Z\n\n#### 6. [[Bounty proposal] fix(backend): validate inputs and add resilience guards in database person aliases ($50 proposed)](https://github.com/BasedHardware/omi/issues/19813)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** [Bounty proposal] fix(backend): validate inputs and add resilience guards in database person aliases ($50 proposed)\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-29T16:48:04Z\n\n#### 7. [[Bounty $750] Fix fused scale-mask softmax tile-padding leakage at non-32 widths](https://github.com/tenstorrent/tt-metal/issues/58495)\n- **Project:** [tenstorrent/tt-metal](https://github.com/tenstorrent/tt-metal)\n- **Source:** GitHub Issue\n- **Reward:** $750\n- **Task:** [Bounty $750] Fix fused scale-mask softmax tile-padding leakage at non-32 widths\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 5\n- **Last updated:** 2026-09-29T20:32:54Z\n\n#### 8. [[Bounty Proposal] Harden database live language profile against malformed inputs and transient Firestore errors ($50)](https://github.com/BasedHardware/omi/issues/19835)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $50\n- **Task:** Solution Implemented\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-29T18:34:15Z\n\n#### 9. [Sharing readiness: explain the learning experience and evidence limits](https://github.com/rosshd/openlearn/issues/83)\n- **Project:** [rosshd/openlearn](https://github.com/rosshd/openlearn)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** No implementation dependencies; update any moved CLI helper references after the bounded extraction worker finishes.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 2\n- **Last updated:** 2026-09-29T19:23:43Z\n\n#### 10. [Enforce upstream-mode feature restrictions server-side (no reviews, auto-merge, labeling, or PR automation against upstream)](https://github.com/viamin/paid/issues/4078)\n- **Project:** [viamin/paid](https://github.com/viamin/paid)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Auto-fix merge conflicts (autofixmergeconflicts) — no conflict-fix runs against upstream PRs.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-29T18:42:40Z\n\n#### 11. [Open-source flow: project setting to choose PR target (own repo vs upstream) with gated settings UI](https://github.com/viamin/paid/issues/4076)\n- **Project:** [viamin/paid](https://github.com/viamin/paid)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Max Draft Review Rounds (maxdraftreviewrounds), Max PR Auto-Continue Tokens (maxprautocontinuetokens), Auto-Fix Merge Conflicts (autofixmergeconflicts — part of Project::AUTOMATIONSETTINGS)\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 1\n- **Last updated:** 2026-09-29T18:01:32Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 50,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 50,
-      "profitPerHourUsd": 600,
       "eligible": true
     }
   ]

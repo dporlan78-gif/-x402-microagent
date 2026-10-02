@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T09:35:20.142Z",
+  "generatedAt": "2026-10-02T10:33:20.782Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -412,11 +412,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5486551225",
+      "id": "github-5650911516",
       "source": "github",
-      "title": "[PAID PILOT]",
-      "url": "https://github.com/Hirokimm/data-act-exit-audit/issues/13",
-      "description": "> **Public submission notice:** submitting this template creates a public GitHub Issue. A GitHub account/sign-in is required. The issue and anything you enter will be publicly visible and may be indexed by search engines. Do not include company-confidential information, credentials, private contracts, personal data, security secrets, or other confidential information.\n\n## What are you interested in?\n- [x] One-time SaaS exit evidence audit\n- [ ] Recurring monitoring / evidence report\n\n## Public SaaS / website to review\nPlease provide only public URLs.\n\n## What would make this useful?\nBriefly describe only non-confidential switching / export / open-interface / fee evidence you want monitored.\n\n## Timing\nOptional target timing.\n\n---\nSubmitting this issue is an inquiry only. Pricing, scope, billing, and any delivery commitment must be agreed separately before paid work starts. This service provides public-evidence technical screening and is not legal advice or a compliance certification.",
+      "title": "workers paid - request for artifacts",
+      "url": "https://github.com/cloudflare/workers-sdk/issues/15976",
+      "description": "Hi there,\n\nI had completed the form for beta artifacts and still do not have access.\n\n\n▲ [WARNING] 🚧 `wrangler artifacts namespaces list` is a private beta command. Please report any issues to https://github.com/cloudflare/workers-sdk/issues/new/choose\n\n\n\n✘ [ERROR] A request to the Cloudflare API (/accounts/20a3745a981fae4905d68c954f6c9547/artifacts/namespaces) failed.\n\n  Access denied by feature gate [code: 10004]\n  To learn more about this error, visit:\n  https://developers.cloudflare.com/artifacts/api/errors#10004\n\n\n  If you think this is a bug, please open an issue at:\n  https://github.com/cloudflare/workers-sdk/issues/new/choose",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -427,11 +427,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5650911516",
+      "id": "github-5486551225",
       "source": "github",
-      "title": "workers paid - request for artifacts",
-      "url": "https://github.com/cloudflare/workers-sdk/issues/15976",
-      "description": "Hi there,\n\nI had completed the form for beta artifacts and still do not have access.\n\n\n▲ [WARNING] 🚧 `wrangler artifacts namespaces list` is a private beta command. Please report any issues to https://github.com/cloudflare/workers-sdk/issues/new/choose\n\n\n\n✘ [ERROR] A request to the Cloudflare API (/accounts/20a3745a981fae4905d68c954f6c9547/artifacts/namespaces) failed.\n\n  Access denied by feature gate [code: 10004]\n  To learn more about this error, visit:\n  https://developers.cloudflare.com/artifacts/api/errors#10004\n\n\n  If you think this is a bug, please open an issue at:\n  https://github.com/cloudflare/workers-sdk/issues/new/choose",
+      "title": "[PAID PILOT]",
+      "url": "https://github.com/Hirokimm/data-act-exit-audit/issues/13",
+      "description": "> **Public submission notice:** submitting this template creates a public GitHub Issue. A GitHub account/sign-in is required. The issue and anything you enter will be publicly visible and may be indexed by search engines. Do not include company-confidential information, credentials, private contracts, personal data, security secrets, or other confidential information.\n\n## What are you interested in?\n- [x] One-time SaaS exit evidence audit\n- [ ] Recurring monitoring / evidence report\n\n## Public SaaS / website to review\nPlease provide only public URLs.\n\n## What would make this useful?\nBriefly describe only non-confidential switching / export / open-interface / fee evidence you want monitored.\n\n## Timing\nOptional target timing.\n\n---\nSubmitting this issue is an inquiry only. Pricing, scope, billing, and any delivery commitment must be agreed separately before paid work starts. This service provides public-evidence technical screening and is not legal advice or a compliance certification.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

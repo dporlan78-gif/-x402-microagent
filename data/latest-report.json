@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T17:33:33.999Z",
+  "generatedAt": "2026-10-02T18:38:09.247Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -204,21 +204,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5530939483",
-      "source": "github",
-      "title": "Give landed sabotage hits a direct comeback reward",
-      "url": "https://github.com/joshuaclemons1/Rob-Everyone/issues/60",
-      "description": "## Summary\n\nRight now using a sabotage item is a pure Cash cost with only an\n*indirect* benefit (slowing a rival down) — nothing rewards the\nattacker directly. Super Battle Golf's own comeback system does the\nopposite on purpose: hitting another player grants the attacker a\nspeed boost, plus a named \"comeback points\" bonus specifically scaled\nto how far behind the attacker is. This is this project's own\n[retention-research.md](docs/stages/retention-research.md)\nrecommendation #1 — the top-priority fix for the reported \"sessions\nstall after the first quota batch\" playtest problem.\n\n## Why this matters\n\nA landed hit right now only removes value from a rival; it never adds\nvalue to the attacker. Giving it a direct payoff (possibly scaled by\nhow far behind on quota the attacker currently is, mirroring Super\nBattle Golf's comeback-points design) turns \"I bought a Taser\" into\n\"now I get to use it to actually catch up\" rather than just griefing.\n\n## Where to look\n\n- `Assets/Scripts/Sabotage/SabotageUseController.cs` — where a landed\n  hit already resolves; the natural hook point for a direct reward.\n- `docs/stages/retention-research.md` — full reasoning, recommendation\n  #1.\n- Related: #58 could eventually interact with the same Cash economy,\n  but not a dependency.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5460422244",
       "source": "github",
       "title": "Automate Whop bounty payout receipt evidence for zero-touch settlement",
@@ -296,6 +281,21 @@
       "source": "github",
       "title": "Add player kill cash rewards",
       "url": "https://github.com/zakomarvic/Roblox-Game-Systems/issues/20",
+      "description": "Implement server-authoritative player kill rewards using the existing creator attribution on damaged Humanoids.\n\nRequirements:\n- Award the killer a configurable cash amount when they cause a player death.\n- Keep reward logic in the Economy system rather than weapon-specific scripts.\n- Ignore self-kills, missing/invalid creator attribution, and non-player creators.\n- Ensure each death rewards at most once.\n- Preserve existing death cash-drop behavior.\n- Use the existing CashService for the actual cash mutation.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5212045270",
+      "source": "github",
+      "title": "Add player kill cash rewards",
+      "url": "https://github.com/zakomarvic/Roblox-Game-Systems/issues/18",
       "description": "Implement server-authoritative player kill rewards using the existing creator attribution on damaged Humanoids.\n\nRequirements:\n- Award the killer a configurable cash amount when they cause a player death.\n- Keep reward logic in the Economy system rather than weapon-specific scripts.\n- Ignore self-kills, missing/invalid creator attribution, and non-player creators.\n- Ensure each death rewards at most once.\n- Preserve existing death cash-drop behavior.\n- Use the existing CashService for the actual cash mutation.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T06:40:40.724Z",
+  "generatedAt": "2026-10-02T07:34:41.514Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -445,7 +445,7 @@
     {
       "id": "github-5673869724",
       "source": "github",
-      "title": "SSecure Paid Backup Lost Media",
+      "title": "Secure Paid Backup Lost Media",
       "url": "https://github.com/signalapp/Signal-iOS/issues/6355",
       "description": "<!-- This is a bug report template. By following the instructions below and filling out the sections with your information, you will help the developers get all the necessary data to fix your issue.\nYou can also preview your report before submitting it. You may remove sections that aren't relevant to your particular case.\n\nBefore we begin, please note that this tracker is only for issues. It is not for questions, comments, or feature requests.\n\nIf you would like to discuss a new feature or submit suggestions, please visit the community forum:\nhttps://community.signalusers.org\n\nIf you are looking for support, please visit our support center:\nhttps://support.signal.org/\nor email support@signal.org\n\nLet's begin with a checklist: Replace the empty checkboxes [ ] below with checked ones [x] accordingly. -->\n\n- [x] I have searched open and closed issues for duplicates\n- [x] I am submitting a bug report for existing functionality that does not work as intended\n- [x] This isn't a feature request or a discussion topic\n\n----------------------------------------\n\n### Bug description\nI recently did a secure paid backup transfer to my new iPhone. There were multiple gigs of data transferred and it looked like everything went through, or so I thought. \n\nI went to search for an older picture and it just shows “this media is no longer available”. It somehow backed up more than 45 days worth but less than my full data? Last picture I’m able to see in the chat is from February 2025 but everything from June 2024 thru then just has the blurred out thumbnail and error. \n\n### Device info\n<!-- replace the examples with your info -->\n**Device**: iPhone 18 pro\n\n**iOS version**: 27.0.1\n\n**Signal version:** 8.31 (1895)\n\n### Link to debug log\nhttps://debuglogs.org/ios/8.31.0/bdc74403882910c3ef8fdd22f70ae1729e0a804894cde0fdece883fcc313b737.zip",
       "rewardUsd": 0,

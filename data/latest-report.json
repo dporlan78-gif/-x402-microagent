@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T20:32:28.886Z",
+  "generatedAt": "2026-10-02T21:32:56.852Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 16,
+  "eligible": 17,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -457,6 +457,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5683345653",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/216",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-02 21:00 UTC\n\n#### 1. [Pagination on saved searches](https://github.com/HHS/simpler-grants-gov/issues/12569)\n- **Project:** [HHS/simpler-grants-gov](https://github.com/HHS/simpler-grants-gov)\n- **Source:** GitHub Issue\n- **Reward:** $200\n- **Task:** Test coverage for this feature, including saving more than 25 queries and looking for a pagination element to appear. (depending on test implementation it may be difficult to make more than 2 pages show up)\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-02T18:36:26Z\n\n#### 2. [Define and enforce JSON-native values in arbitrary primitive payloads](https://github.com/AstralDeep/AstralPrimitives/issues/9)\n- **Project:** [AstralDeep/AstralPrimitives](https://github.com/AstralDeep/AstralPrimitives)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Define and enforce JSON-native values in arbitrary primitive payloads\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 2\n- **Last updated:** 2026-10-02T18:23:54Z\n\n#### 3. [Preserve balanced parentheses in rendered Markdown link destinations](https://github.com/AstralDeep/AstralProjection/issues/37)\n- **Project:** [AstralDeep/AstralProjection](https://github.com/AstralDeep/AstralProjection)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The regex for Markdown destinations stops at the first closing parenthesis. A normal link such as https://example.test/A(B) becomes a link to https://example.test/A(B with an extra visible closing parenthesis. Fix bounded destination parsing while keeping escape-first rendering and the existing URL allowlist.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 2\n- **Last updated:** 2026-10-02T18:23:55Z\n\n#### 4. [Fail fast when custom primitives collide with an existing wire type](https://github.com/AstralDeep/AstralPrimitives/issues/10)\n- **Project:** [AstralDeep/AstralPrimitives](https://github.com/AstralDeep/AstralPrimitives)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [ ] Test custom unique types, literal/default validation, collision with built-ins, repeated union rebuild, and alias behavior.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-10-02T18:31:58Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 200,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 200,
+      "profitPerHourUsd": 2400,
+      "eligible": true
+    },
+    {
       "id": "github-5680297538",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 6 New Opportunities",
@@ -577,21 +591,6 @@
       "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
       "url": "https://github.com/2510034127qq-wq/BountyScout/issues/201",
       "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-30 20:18 UTC\n\n#### 1. [Maximizer does not always reliably handle multiple requirements](https://github.com/kolmafia/kolmafia/issues/3796)\n- **Project:** [kolmafia/kolmafia](https://github.com/kolmafia/kolmafia)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Updating character status...\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 3\n- **Last updated:** 2026-09-30T18:51:54Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5648260218",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/200",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-30 14:42 UTC\n\n#### 1. [Question: proof of contributor payments?](https://github.com/Heliobond/contracts/issues/501)\n- **Project:** [Heliobond/contracts](https://github.com/Heliobond/contracts)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 13\n- **Last updated:** 2026-09-30T12:45:43Z\n\n#### 2. [MVP-14: Run the first real paid PR pilot end-to-end](https://github.com/mako0120/grume-match/issues/14)\n- **Project:** [mako0120/grume-match](https://github.com/mako0120/grume-match)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [ ] Production Build GREEN\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-09-30T06:51:39Z\n\n#### 3. [Frantic bounty #136: Add a newly launched startup to Stompstart](https://github.com/auscaster/frantic-board/issues/476)\n- **Project:** [auscaster/frantic-board](https://github.com/auscaster/frantic-board)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Frantic bounty #136: Add a newly launched startup to Stompstart\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：claimed；27 条评论；1 个相关 open PR\n- **Original Issue comments:** 27\n- **Last updated:** 2026-09-30T13:22:01Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

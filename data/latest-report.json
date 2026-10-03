@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T00:40:26.008Z",
+  "generatedAt": "2026-10-03T01:32:19.333Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -457,6 +457,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5685307322",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/218",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-03 01:01 UTC\n\n#### 1. [[CTP-019 / CTP-011 child] Allocate private support test minutes and record bounded operator effort](https://github.com/deepnative/deep-native-engine/issues/441)\n- **Project:** [deepnative/deep-native-engine](https://github.com/deepnative/deep-native-engine)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Lead GPT-6 Astra / XHigh; design and self-review High. Separate review only when requested or required, not inferred from the review label. No work claim is created by this issue. Next implementation action only after #438 completes: re-read claims/main, claim this child and begin fail-first tests for the complete scop\n- **Deadline:** [ ] AC4 — Atomic partial settlement and accounting. Entry creation,15 consumed one-minute reservations/events and5 released unused reservations/events commit together once, with no intermediate externally visible state or nested pool transaction. The owned member balance shows co\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：几十分钟到数小时\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-03T00:12:42Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5683345653",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
@@ -576,21 +591,6 @@
       "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
       "url": "https://github.com/2510034127qq-wq/BountyScout/issues/202",
       "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-01 00:14 UTC\n\n#### 1. [ATDevOutreach/CodeChallengeSwahiliPot — README.md](https://github.com/ATDevOutreach/CodeChallengeSwahiliPot/blob/b8f1a6ac9554203b11621d89b47fe2a580b80098/README.md)\n- **Project:** [ATDevOutreach/CodeChallengeSwahiliPot](https://github.com/ATDevOutreach/CodeChallengeSwahiliPot)\n- **Source:** Repository Markdown\n- **Reward:** 金额待确认\n- **Task:** Using the GitHub Pull Request Time Stamp and correct code quality & structure, the first developer whose code runs successfully on the sandbox/simulator wins\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5652489645",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/201",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-09-30 20:18 UTC\n\n#### 1. [Maximizer does not always reliably handle multiple requirements](https://github.com/kolmafia/kolmafia/issues/3796)\n- **Project:** [kolmafia/kolmafia](https://github.com/kolmafia/kolmafia)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Updating character status...\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 3\n- **Last updated:** 2026-09-30T18:51:54Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

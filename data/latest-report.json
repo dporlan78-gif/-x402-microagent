@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T14:41:28.107Z",
+  "generatedAt": "2026-10-03T19:43:29.622Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -117,20 +117,6 @@
       "eligible": true
     },
     {
-      "id": "github-5401256371",
-      "source": "github",
-      "title": "[Bounty] [Bounty] Seed a paid wallet UX child bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1292",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1369\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid wallet UX child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete wallet UX coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0xed39b0f29e43a16acff555865d464eeb94b13eac27c4ead88e598c52609ab253&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/336)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 90,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 90,
-      "profitPerHourUsd": 1080,
-      "eligible": true
-    },
-    {
       "id": "github-5651834741",
       "source": "github",
       "title": "[Bounty] [Bounty] Fix one deterministic agent-card discovery regression",
@@ -142,6 +128,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 99,
       "profitPerHourUsd": 1188,
+      "eligible": true
+    },
+    {
+      "id": "github-5401256371",
+      "source": "github",
+      "title": "[Bounty] [Bounty] Seed a paid wallet UX child bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1292",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1369\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid wallet UX child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete wallet UX coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0xed39b0f29e43a16acff555865d464eeb94b13eac27c4ead88e598c52609ab253&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/336)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 90,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 90,
+      "profitPerHourUsd": 1080,
       "eligible": true
     },
     {
@@ -397,6 +397,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5692362572",
+      "source": "github",
+      "title": "Implement mark-as-paid flow",
+      "url": "https://github.com/Monster0506/Divvy/issues/97",
+      "description": "## Summary\nRecord settlements from the app.\n\n## Parent issue\n#17 - this is sub-task 3 of 4.\n\n## Steps\n1. Tap a transfer to open a confirm sheet with editable amount (partial payment)\n2. Call settlement API and refresh balances automatically\n3. Show success snackbar with undo (records reversing settlement)\n\n## Acceptance criteria\n- [ ] Recording a settlement updates the screen without manual refresh\n\n## Definition of done\n- [ ] All steps above completed\n- [ ] All acceptance criteria above are met and verified\n- [ ] Code reviewed and merged into `main` via pull request (PR references this issue)\n- [ ] Automated tests added/updated and passing in CI\n- [ ] Relevant documentation updated\n- [ ] Parent issue #17 updated if scope or approach changed\n\n## Dependencies\n- Part of #17\n- Builds on the previous sub-issue: \"Show suggested settle-up transfers\"",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5615978261",
       "source": "github",
       "title": "Paid resource consumption: a paid door beside every personhood door",
@@ -442,11 +457,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5673869724",
+      "id": "github-5691867249",
       "source": "github",
-      "title": "Secure Paid Backup Lost Media",
-      "url": "https://github.com/signalapp/Signal-iOS/issues/6355",
-      "description": "<!-- This is a bug report template. By following the instructions below and filling out the sections with your information, you will help the developers get all the necessary data to fix your issue.\nYou can also preview your report before submitting it. You may remove sections that aren't relevant to your particular case.\n\nBefore we begin, please note that this tracker is only for issues. It is not for questions, comments, or feature requests.\n\nIf you would like to discuss a new feature or submit suggestions, please visit the community forum:\nhttps://community.signalusers.org\n\nIf you are looking for support, please visit our support center:\nhttps://support.signal.org/\nor email support@signal.org\n\nLet's begin with a checklist: Replace the empty checkboxes [ ] below with checked ones [x] accordingly. -->\n\n- [x] I have searched open and closed issues for duplicates\n- [x] I am submitting a bug report for existing functionality that does not work as intended\n- [x] This isn't a feature request or a discussion topic\n\n----------------------------------------\n\n### Bug description\nI recently did a secure paid backup transfer to my new iPhone. There were multiple gigs of data transferred and it looked like everything went through, or so I thought. \n\nI went to search for an older picture and it just shows “this media is no longer available”. It somehow backed up more than 45 days worth but less than my full data? Last picture I’m able to see in the chat is from February 2025 but everything from June 2024 thru then just has the blurred out thumbnail and error. \n\n### Device info\n<!-- replace the examples with your info -->\n**Device**: iPhone 18 pro\n\n**iOS version**: 27.0.1\n\n**Signal version:** 8.31 (1895)\n\n### Link to debug log\nhttps://debuglogs.org/ios/8.31.0/bdc74403882910c3ef8fdd22f70ae1729e0a804894cde0fdece883fcc313b737.zip",
+      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/221",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-03 17:25 UTC\n\n#### 1. [Give benchmark CLI credentials one documented resolution path](https://github.com/LearningCircuit/local-deep-research/issues/7122)\n- **Project:** [LearningCircuit/local-deep-research](https://github.com/LearningCircuit/local-deep-research)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The earlier local benchmark CLI draft concerns dropped model/provider/endpoint/strategy kwargs, a separate problem. Coordinate both changes if one focused CLI initialization fix can address them without reviving paid PR-triggered CI.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-03T13:34:40Z\n\n#### 2. [Validate successful SDK response envelopes before returning typed mappings](https://github.com/AstralDeep/LETS/issues/70)\n- **Project:** [AstralDeep/LETS](https://github.com/AstralDeep/LETS)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Validate successful SDK response envelopes before returning typed mappings\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-10-03T16:14:54Z\n\n#### 3. [26/27 source-bound booking + invoice release gate for website courses](https://github.com/ironstripe/yeti-alpine-booking/issues/36)\n- **Project:** [ironstripe/yeti-alpine-booking](https://github.com/ironstripe/yeti-alpine-booking)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Initial source baseline 2d6bef8 independently inspected; containment in d3f229c, additional validation fixes merged via PR #42 as c9d8f38. This is an implementation/release epic, not a completed booking flow.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、电子邮件\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-03T16:58:39Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -584,21 +599,6 @@
       "expectedProfitUsd": 25,
       "profitPerHourUsd": 300,
       "eligible": true
-    },
-    {
-      "id": "github-5659874662",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/205",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-01 09:17 UTC\n\n#### 1. [[API-4] Summary statistics endpoint](https://github.com/kete1987/poker-bankroll/issues/11)\n- **Project:** [kete1987/poker-bankroll](https://github.com/kete1987/poker-bankroll)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Aggregated results for a filtered set of games (equivalent to the sheet's Totales tab).\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-01T08:20:30Z\n\n#### 2. [Add Miratext text and page analysis as a provider (miratext-analyze / seo_miratext_analyze)](https://github.com/PavloSEO/seotools/issues/730)\n- **Project:** [PavloSEO/seotools](https://github.com/PavloSEO/seotools)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The provider's JSON documentation is wrong today; if Miratext fixes it, form encoding must still keep working (it is the documented-by-behaviour path).\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-01T05:47:55Z\n\n#### 3. [Provide an A2A task/delegation profile with replay and cancellation conformance](https://github.com/AstralDeep/LETS/issues/72)\n- **Project:** [AstralDeep/LETS](https://github.com/AstralDeep/LETS)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [ ] Exercise duplicate delivery, reconnect/status lookup, cancellation race, changed request content, wrong audience, attenuated delegation and parent expiry with deterministic fixtures.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-01T08:27:37Z\n\n#### 4. [Bounty API: reject bounties whose composed evaluation query exceeds the arbiters' 10,000-character cap](https://github.com/verdikta/verdikta-applications/issues/36)\n- **Project:** [verdikta/verdikta-applications](https://github.com/verdikta/verdikta-applications)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** POST /api/jobs/create (server/routes/jobRoutes.js:338) only checks that title, description and creator are present (~:394). It then builds the archive (~:555) and pins it (:585).\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 3\n- **Competition:** 有竞争：3 个相关 open PR\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-01T08:10:11Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     }
   ]
 }

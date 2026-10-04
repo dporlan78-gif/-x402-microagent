@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T05:26:48.757Z",
+  "generatedAt": "2026-10-04T13:47:47.758Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -412,21 +412,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5692362572",
-      "source": "github",
-      "title": "Implement mark-as-paid flow",
-      "url": "https://github.com/Monster0506/Divvy/issues/97",
-      "description": "## Summary\nRecord settlements from the app.\n\n## Parent issue\n#17 - this is sub-task 3 of 4.\n\n## Steps\n1. Tap a transfer to open a confirm sheet with editable amount (partial payment)\n2. Call settlement API and refresh balances automatically\n3. Show success snackbar with undo (records reversing settlement)\n\n## Acceptance criteria\n- [ ] Recording a settlement updates the screen without manual refresh\n\n## Definition of done\n- [ ] All steps above completed\n- [ ] All acceptance criteria above are met and verified\n- [ ] Code reviewed and merged into `main` via pull request (PR references this issue)\n- [ ] Automated tests added/updated and passing in CI\n- [ ] Relevant documentation updated\n- [ ] Parent issue #17 updated if scope or approach changed\n\n## Dependencies\n- Part of #17\n- Builds on the previous sub-issue: \"Show suggested settle-up transfers\"",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5615978261",
       "source": "github",
       "title": "Paid resource consumption: a paid door beside every personhood door",
@@ -455,6 +440,50 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5650911516",
+      "source": "github",
+      "title": "workers paid - request for artifacts",
+      "url": "https://github.com/cloudflare/workers-sdk/issues/15976",
+      "description": "Hi there,\n\nI had completed the form for beta artifacts and still do not have access.\n\n\n▲ [WARNING] 🚧 `wrangler artifacts namespaces list` is a private beta command. Please report any issues to https://github.com/cloudflare/workers-sdk/issues/new/choose\n\n\n\n✘ [ERROR] A request to the Cloudflare API (/accounts/20a3745a981fae4905d68c954f6c9547/artifacts/namespaces) failed.\n\n  Access denied by feature gate [code: 10004]\n  To learn more about this error, visit:\n  https://developers.cloudflare.com/artifacts/api/errors#10004\n\n\n  If you think this is a bug, please open an issue at:\n  https://github.com/cloudflare/workers-sdk/issues/new/choose",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5699365659",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/226",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-04 12:40 UTC\n\n#### 1. [Foundation Mission Request: NumbaNERD S8 [CONTRIBUTIONS]](https://github.com/ethereum-optimism/ecosystem-contributions/issues/284)\n- **Project:** [ethereum-optimism/ecosystem-contributions](https://github.com/ethereum-optimism/ecosystem-contributions)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Proposed Foundation Mission Request: This Mission proposal is to create a bounty board for governance related analytics. The bounty program will be managed by the proposal Sponsors. Some bounties may be restricted to contributors who have previously contributed (numbaNERDs). The entire requested grant goes towards prog\n- **Deadline:** Submit by: Applications are accepted on a rolling basis.\n- **Submission:** GitHub Issue、Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 5\n- **Last updated:** 2026-10-04T11:32:48Z\n\n#### 2. [Volunteer tasks: a task may carry no payout, and the buyer chooses the deposit](https://github.com/MultiAgency/near-agencies/issues/89)\n- **Project:** [MultiAgency/near-agencies](https://github.com/MultiAgency/near-agencies)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Also let the buyer choose the deposit for a job, instead of the server's fixed ENGAGEMENTDEPOSIT.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-04T07:43:00Z\n\n#### 3. [feat(mini-app): remove upfront paid-event fees + Stars payout ledger](https://github.com/ExecutESG/onton/issues/1033)\n- **Project:** [ExecutESG/onton](https://github.com/ExecutESG/onton)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Organizers pay nothing upfront to create paid events. Fix Stars payout tracking so an event is marked paid only when a real transfer is recorded.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-04T08:48:55Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5696576595",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/224",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-04 05:36 UTC\n\n#### 1. [[Bounty proposal] feat(python-cli): memories -> CSV export recipe ($25 proposed)](https://github.com/BasedHardware/omi/issues/20285)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** sdks/python-cli/examples/memoriestocsv.py — stdlib-only converter: fixed columns (id, content, category, tags, visibility, createdat, updatedat, appid with sourceapp fallback), pipe-joined tags, timestamps normalized to ISO-8601 UTC, default CSV to stdout plus exclusive-creation -o writes.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 2\n- **Competition:** 有竞争：2 个相关 open PR\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-04T03:45:03Z\n\n#### 2. [Run a complete public-vocabulary serialization and round-trip contract matrix](https://github.com/AstralDeep/AstralPrimitives/issues/12)\n- **Project:** [AstralDeep/AstralPrimitives](https://github.com/AstralDeep/AstralPrimitives)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The compact suite has extensive examples and a six-type composite matrix, but default construction/round-trip/adapter/JSON tests are not systematically parameterized over every built-in registry type. Add one registry-derived matrix plus representative non-default/nested fixtures so external clients can depend on every\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-04T04:34:45Z\n\n#### 3. [Explore Parallel Task MCP for deep research and batch enrichment](https://github.com/imsid/mashpy/issues/193)\n- **Project:** [imsid/mashpy](https://github.com/imsid/mashpy)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Current integration: src/mash/tools/websearch.py has ParallelSearchProvider, which builds an MCP server config \"parallelwebsearch\", defaults to https://search.parallel.ai/mcp-oauth, allows websearch/webfetch, and sends a Bearer API key or OAuth token (no interactive OAuth flow).\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-04T02:13:31Z\n\n#### 4. [A payout counts a pull request only from the task's repo and by its claimant](https://github.com/MultiAgency/near-agencies/issues/80)\n- **Project:** [MultiAgency/near-agencies](https://github.com/MultiAgency/near-agencies)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Before a code task is paid, payoutProblem checks only that each pull request linked in its handoff is merged (lib/payouts.mjs:27-30, pullRequest in lib/github.mjs:36). It doesn't check which repository the pull request is in, or who opened it. A claimant can link anyone's merged pull request, in any repository, and the\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-04T04:08:18Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 25,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
     },
     {
       "id": "github-5694662594",
@@ -570,35 +599,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 25,
       "profitPerHourUsd": 300,
-      "eligible": true
-    },
-    {
-      "id": "github-5671697176",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/210",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-02 01:50 UTC\n\n#### 1. [Bounty submission packet (Scaffold-HBAR) — awaiting official form URL](https://github.com/agentbuddha88/saucerswap-liquidity-kit/issues/1)\n- **Project:** [agentbuddha88/saucerswap-liquidity-kit](https://github.com/agentbuddha88/saucerswap-liquidity-kit)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Bounty submission packet (Scaffold-HBAR) — awaiting official form URL\n- **Deadline:** Public timestamped claim for the Scaffold-HBAR Template Bounty (deadline 4 Oct 2026 23:59 ET).\n- **Submission:** GitHub Issue、Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-02T01:03:41Z\n\n#### 2. [Validate finite, correctly typed SDK deadline and retry limits](https://github.com/AstralDeep/LETS/issues/66)\n- **Project:** [AstralDeep/LETS](https://github.com/AstralDeep/LETS)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Validate finite, correctly typed SDK deadline and retry limits\n- **Deadline:** Validate finite, correctly typed SDK deadline and retry limits\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-02T00:42:35Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5670085234",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/208",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-01 22:28 UTC\n\n#### 1. [[Agent] 🟨 CM Mr. Vijay pledges ₹75 lakh to Vithya Ramraj for Asian Games gold — third award in five days](https://github.com/ssriramhere/cmvijay/issues/98)\n- **Project:** [ssriramhere/cmvijay](https://github.com/ssriramhere/cmvijay)\n- **Source:** GitHub Issue\n- **Reward:** ₹75；₹50；₹30；₹1.55\n- **Task:** [Agent] 🟨 CM Mr. Vijay pledges ₹75 lakh to Vithya Ramraj for Asian Games gold — third award in five days\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 页面描述：Series consolidation question: This is the third sports reward announcement for Vithya Ramraj within 5 days (₹30L + ₹50L + ₹75L = ₹1.55 crore total). Human editor should decide whe\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-01T19:21:38Z\n\n#### 2. [Restore SecretsManager RC observation floor after split-runner validation](https://github.com/pedrosakuma/aws2azure/issues/1016)\n- **Project:** [pedrosakuma/aws2azure](https://github.com/pedrosakuma/aws2azure)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The Actions run remains failed because Azure CLI teardown reused an expired assertion (AADSTS700024). Measurements completed; manual cleanup and absence checks are recorded in the run-result comment. #1073 fixed teardown reauthentication and closed #1072. That does not rewrite the failed run or require another hour-lon\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 24\n- **Last updated:** 2026-10-01T18:28:22Z\n\n#### 3. [Build Stateful Mock-Cloud Investigation and Containment](https://github.com/Netstrike-development-team/NetStrike_Capstone_17/issues/82)\n- **Project:** [Netstrike-development-team/NetStrike_Capstone_17](https://github.com/Netstrike-development-team/NetStrike_Capstone_17)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Fixtures are deterministic, testable, and reset completely.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 3\n- **Last updated:** 2026-10-01T19:20:17Z\n\n#### 4. [Technical Poem Generation and Content Creation](https://github.com/SecureBananaLabs/bug-bounty/issues/76)\n- **Project:** [SecureBananaLabs/bug-bounty](https://github.com/SecureBananaLabs/bug-bounty)\n- **Source:** GitHub Issue\n- **Reward:** $430\n- **Task:** [ ] Submitted as POEM.md in the project root\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 16\n- **Competition:** 有竞争：240 条评论；16 个相关 open PR\n- **Original Issue comments:** 240\n- **Last updated:** 2026-10-01T21:09:23Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 430,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 430,
-      "profitPerHourUsd": 5160,
       "eligible": true
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T19:43:29.622Z",
+  "generatedAt": "2026-10-04T02:41:30.970Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 17,
+  "eligible": 16,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -117,45 +117,45 @@
       "eligible": true
     },
     {
-      "id": "github-5651834741",
+      "id": "github-5437122699",
       "source": "github",
-      "title": "[Bounty] [Bounty] Fix one deterministic agent-card discovery regression",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1715",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1531\n\n### 漏洞描述 / Description\n[Bounty] Fix one deterministic agent-card discovery regression\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xf87087509a34a1cf3654ddc36884b925ccf2ccaa\"} -->\n## Canonical bounty discovery\n\nMake the pinned failing a2a-agent-card fixture pass without weakening its assertion.\n\n- **Current work state:** `verification_pending`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.99 USDC\n- **Entry/claim bond:** 0.01 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** signed_quorum (`signed_quorum`; ready: `true`)\n\n### Next action\n\n**[Inspect verification work](https://api.agentbounties.app/v1/base/autonomous-bounties/verification-jobs?network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xf87087509a34a1cf3654ddc36884b925ccf2ccaa)** — Inspect the committed verifier job. A submission is not acceptance or payment.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xf87087509a34a1cf3654ddc36884b925ccf2ccaa&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xf87087509a34a1cf3654ddc36884b925ccf2ccaa)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/590)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n123 coins\n\n### 真实赏金（USD）/ Real Reward\n$99\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 99,
+      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+24,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 99,
-      "profitPerHourUsd": 1188,
+      "expectedProfitUsd": 1e+24,
+      "profitPerHourUsd": 1.2e+25,
       "eligible": true
     },
     {
-      "id": "github-5401256371",
+      "id": "github-4864398540",
       "source": "github",
-      "title": "[Bounty] [Bounty] Seed a paid wallet UX child bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1292",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1369\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid wallet UX child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete wallet UX coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0xed39b0f29e43a16acff555865d464eeb94b13eac27c4ead88e598c52609ab253&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/336)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 90,
+      "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] MongoDB NoSQL Injection → Aut",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/265",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/240\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] MongoDB NoSQL Injection → Authenticati\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/196\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [BUG] MongoDB NoSQL Injection → Authentication Bypass\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/136\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [BUG] MongoDB NoSQL Injection → Authentication Bypass $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/69\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [BUG] MongoDB NoSQL Injection → Authentication Bypass $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/34\n\n### 漏洞描述 / Description\n[Bounty] [BUG] MongoDB NoSQL Injection → Authentication Bypass $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/ai-research/issues/949\n\n### 漏洞描述 / Description\n[BUG] MongoDB NoSQL Injection → Authentication Bypass $150\n\n## MongoDB NoSQL 注入 → 认证绕过\n\n**难度**: Hard | **赏金**: $150\n\n### 漏洞描述\n登录接口 JSON body 直接传入 `db.users.find({username: body.username, password: body.password})`。攻击者发送 `{\"username\": \"admin\", \"password\": {\"$ne\": \"\"}}` 绕过认证。\n\n### 要求\n使用参数化查询 / ORM / 输入类型校验。\n\n### 验收标准\n- [ ] 禁止操作符注入 (\\$ne, \\$gt, \\$where 等)\n- [ ] 输入类型强制为 string\n- [ ] 服务端加盐哈希密码\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 150,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 90,
-      "profitPerHourUsd": 1080,
+      "expectedProfitUsd": 150,
+      "profitPerHourUsd": 1800,
       "eligible": true
     },
     {
-      "id": "github-5387619809",
+      "id": "github-4864398453",
       "source": "github",
-      "title": "[Bounty] [Bounty] Seed a paid wallet UX child bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1219",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/NSPG13/agent-bounties/issues/1350\n\n### 漏洞描述 / Description\n[Bounty] Seed a paid wallet UX child bounty\n\n<!-- agent-bounties/github-discovery-v1:start -->\n<!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b\"} -->\n## Canonical bounty discovery\n\nCreate and fully fund a concrete wallet UX coding bounty that a different registered participant completes and receives canonical settlement for.\n\n- **Current work state:** `unavailable`\n- **Current payment state:** `escrowed`\n- **Current competition state:** `exclusive_claim`\n- **Solver reward:** 0.90 USDC\n- **Entry/claim bond:** 0.10 USDC\n- **Funding:** 1.00 / 1.00 USDC\n- **Verifier:** deterministic_module (`deterministic_module`; ready: `false`)\n- **Funding Deadline:** `2026-10-11T00:00:00+00:00`\n\n### Next action\n\n**[Inspect canonical state](https://api.agentbounties.app/v1/base/autonomous-bounties/events?network=base-mainnet&bounty_id=0xed39b0f29e43a16acff555865d464eeb94b13eac27c4ead88e598c52609ab253&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b)** — Inspect confirmed canonical events. GitHub state is not settlement evidence.\n\n[Open the public bounty page](https://agentbounties.app/earn.html?bountyContract=0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b&network=base-mainnet&utm_source=github&utm_medium=issue&utm_campaign=bounty-discovery-v1&discovery_id=eip155%3A8453%3Aagent-bounties%2Fautonomous-v1%3A0xe8c1d3f046f3e4690bef59ba4abd5d02d2a6984b)\n[Original source](https://github.com/NSPG13/agent-bounties/issues/336)\n\n> GitHub mirrors canonical public state and cannot fund, claim, verify, settle, or prove payment. Only a confirmed canonical `BountySettled` receipt below proves solver payment.\n<!-- agent-bounties/github-discovery-v1:end -->\n\n\n### 积分币奖励 / Coin Reward\n112 coins\n\n### 真实赏金（USD）/ Real Reward\n$90\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 90,
+      "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] AWS IAM Privilege Escalation ",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/260",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/244\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] AWS IAM Privilege Escalation via PassR\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/189\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [BUG] AWS IAM Privilege Escalation via PassRole + EC2\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/145\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [BUG] AWS IAM Privilege Escalation via PassRole + EC2 $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/59\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [BUG] AWS IAM Privilege Escalation via PassRole + EC2 $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/41\n\n### 漏洞描述 / Description\n[Bounty] [BUG] AWS IAM Privilege Escalation via PassRole + EC2 $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/ai-research/issues/942\n\n### 漏洞描述 / Description\n[BUG] AWS IAM Privilege Escalation via PassRole + EC2 $150\n\n## AWS IAM PassRole 权限提升\n\n**难度**: Hard | **赏金**: $150\n\n### 漏洞描述\nIAM 策略允许 `iam:PassRole` 到 EC2，且附带 `ec2:RunInstances`。攻击者可以启动一个拥有高权限 Role 的 EC2 实例，通过 user-data 脚本获取临时凭证，实现权限提升。\n\n### 要求\n实施最小权限策略 + PassRole 条件键限制 + 敏感 Role 保护。\n\n### 验收标准\n- [ ] PassRole 限定特定 Role 白名单\n- [ ] 移除通配符 Resource\n- [ ] 添加 aws:SourceArn 条件键\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（U\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 150,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 90,
-      "profitPerHourUsd": 1080,
+      "expectedProfitUsd": 150,
+      "profitPerHourUsd": 1800,
       "eligible": true
     },
     {
@@ -457,6 +457,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5694662594",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/222",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-03 23:46 UTC\n\n#### 1. [Question: proof of contributor payments?](https://github.com/Heliobond/contracts/issues/502)\n- **Project:** [Heliobond/contracts](https://github.com/Heliobond/contracts)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-03T23:17:42Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5691867249",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
@@ -584,20 +599,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 430,
       "profitPerHourUsd": 5160,
-      "eligible": true
-    },
-    {
-      "id": "github-5666114565",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/206",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-01 17:10 UTC\n\n#### 1. [[Bounty proposal] feat(python-cli): conversations -> Jupyter notebook (.ipynb) export recipe ($25 proposed)](https://github.com/BasedHardware/omi/issues/20193)\n- **Project:** [BasedHardware/omi](https://github.com/BasedHardware/omi)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** sdks/python-cli/tests/testconversationstojupyter.py — 19 hermetic unit tests (JSON fixtures in, notebook bytes out; no network, no CLI, no services)\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-01T15:50:29Z\n\n#### 2. [[BOUNTY] Suggestion #1248](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/1271)\n- **Project:** [SPLURT-Station/S.P.L.U.R.T-tg](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [BOUNTY] Suggestion #1248\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Discord\n- **Payment method:** PayPal\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-01T16:00:08Z\n\n#### 3. [Qualify source-distribution installs as independent consumer artifacts](https://github.com/AstralDeep/AstralPrimitives/issues/14)\n- **Project:** [AstralDeep/AstralPrimitives](https://github.com/AstralDeep/AstralPrimitives)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** CI builds and checks both distribution formats, but the clean-install smoke installs only the wheel. A source archive missing a package input can pass current metadata checks and fail for consumers that install from source. Rebuild/install the committed source distribution in isolation and reuse the same version, typin\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 4\n- **Last updated:** 2026-10-01T15:19:05Z\n\n#### 4. [[medium] [bounty] Implement load balancing across multiple providers](https://github.com/mallonepay/pay-per-token-llm-gateway/issues/3)\n- **Project:** [mallonepay/pay-per-token-llm-gateway](https://github.com/mallonepay/pay-per-token-llm-gateway)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [medium] [bounty] Implement load balancing across multiple providers\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 2\n- **Competition:** 有竞争：31 条评论；2 个相关 open PR\n- **Original Issue comments:** 31\n- **Last updated:** 2026-10-01T15:23:40Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 25,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 25,
-      "profitPerHourUsd": 300,
       "eligible": true
     }
   ]

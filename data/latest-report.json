@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T22:32:00.608Z",
+  "generatedAt": "2026-10-04T23:30:49.887Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -189,6 +189,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5704041313",
+      "source": "github",
+      "title": "Card benefits review — 2026-10-04",
+      "url": "https://github.com/CreditOdds/creditodds/issues/2262",
+      "description": "Weekly review queue from the local `card-rewards-benefits-local` routine. Two kinds of items show up here: (a) **stale rotating-category periods** — quarterly cards (Discover It, Freedom Flex, etc.) whose `current_period` doesn't match this quarter, and (b) **borderline benefits** the checker spotted on apply pages but couldn't auto-PR (generic travel insurance, secondary CDW, purchase protection, and similar). Triage each manually.\n\n\n## Bank of America Cash Rewards Secured\n**Apply link:** https://www.bankofamerica.com/credit-cards/products/cash-back-secured-credit-card/\n\n### Reward category present in YAML but not on apply page\n- `wholesale_clubs`: 2% (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `bank-of-america-cash-rewards-secured`) so it stops coming back every week.</sub>\n\n## Bilt Palladium\n**Apply link:** https://www.biltrewards.com/card/apply\n\n### New reward category proposed (needs human routing)\n- `dining`: 5x — Up to 5X at Bilt partner restaurants (20,000+ U.S. restaurants)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `bilt-palladium`) so it stops coming back every week.</sub>\n\n## Chase Freedom Flex\n**Apply link:** https://creditcards.chase.com/cash-back-credit-cards/freedom/flex\n\n### New reward category proposed (needs human routing)\n- `transit`: 2% — Qualifying Lyft purchases through the Lyft app through September 30, 2027 (limited-time promo)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-freedom-flex`) so it stops coming back every week.</sub>\n\n## Ink Business Cash\n**Apply link:** https://creditcards.chase.com/business-credit-cards/ink/cash\n\n### Reward category present in YAML but not on apply page\n- `tv_internet_streaming`: 5% (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-ink-business-cash`) so it stops coming back every week.</sub>\n\n## Ink Business Preferred\n**Apply link:** https://creditcards.chase.com/business-credit-cards/ink/business-preferred\n\n### Reward category present in YAML but not on apply page\n- `tv_internet_streaming`: 3x (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-ink-business-preferred`) so it stops coming back every week.</sub>\n\n## IHG One Rewards Premier\n**Apply link:** https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier\n\n### New reward category proposed (needs human routing)\n- `airlines`: 5x — Flights booked directly with the airline\n- `car_rentals`: 5x\n- `groceries`: 5x\n### Reward category present in YAML but not on apply page\n- `travel`: 5x (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `ihg-rewards-club-premier-credit-card`) so it stops coming back every week.</sub>\n\n## IHG Rewards Club Traveler\n**Apply link:** https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/traveler\n\n### New reward category proposed (needs human routing)\n- `groceries`: 3x\n### Reward category present in YAML but not on apply page\n- `phone`: 3x (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `ihg-rewards-club-traveler-credit-card`) so it stops coming back every week.</sub>\n\n## IHG One Rewards Premier Business\n**Apply link:** https://creditcards.chase.com/business-credit-cards/IHG/business-premier\n\n### New reward category proposed (needs human routing)\n- `airlines`: 5x — Airline tickets purchased directly with the airline\n- `car_rentals`: 5x — Car rental agencies\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `ihg-rewards-premier-business`) so it stops coming back every week.</sub>\n\n## PenFed Power Cash Rewards Visa Signature\n**Apply link:** https://www.penfed.org/credit-cards/power-cash-rewards-visa\n\n### Base-rate decrease proposed — verify against the live page before applying\n- `everything_else`: 2% → 1.5% (the extractor frequently misreads flat base rates as 1 — confirm the cut is real)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `penfed-power-cash-rewards`) so it stops coming back every week.</sub>\n\n## Venmo Credit Card\n**Apply link:** https://venmo.com/about/creditcard\n\n### Reward category present in YAML but not on apply page\n- `streaming`: 3% (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `venmo-credit-card`) so it stops coming back every week.</sub>",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5647588840",
       "source": "github",
       "title": "US-27: Finder details on cash intake",
@@ -281,21 +296,6 @@
       "source": "github",
       "title": "Add player kill cash rewards",
       "url": "https://github.com/zakomarvic/Roblox-Game-Systems/issues/20",
-      "description": "Implement server-authoritative player kill rewards using the existing creator attribution on damaged Humanoids.\n\nRequirements:\n- Award the killer a configurable cash amount when they cause a player death.\n- Keep reward logic in the Economy system rather than weapon-specific scripts.\n- Ignore self-kills, missing/invalid creator attribution, and non-player creators.\n- Ensure each death rewards at most once.\n- Preserve existing death cash-drop behavior.\n- Use the existing CashService for the actual cash mutation.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5212045270",
-      "source": "github",
-      "title": "Add player kill cash rewards",
-      "url": "https://github.com/zakomarvic/Roblox-Game-Systems/issues/18",
       "description": "Implement server-authoritative player kill rewards using the existing creator attribution on damaged Humanoids.\n\nRequirements:\n- Award the killer a configurable cash amount when they cause a player death.\n- Keep reward logic in the Economy system rather than weapon-specific scripts.\n- Ignore self-kills, missing/invalid creator attribution, and non-player creators.\n- Ensure each death rewards at most once.\n- Preserve existing death cash-drop behavior.\n- Use the existing CashService for the actual cash mutation.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,

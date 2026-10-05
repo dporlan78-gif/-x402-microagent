@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T23:30:49.887Z",
+  "generatedAt": "2026-10-05T00:45:16.223Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -457,6 +457,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5704761046",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/231",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-05 00:37 UTC\n\n#### 1. [📌 FAQ — RTC Bounty Payouts and Wallets](https://github.com/Scottcjn/rustchain-bounties/issues/509)\n- **Project:** [Scottcjn/rustchain-bounties](https://github.com/Scottcjn/rustchain-bounties)\n- **Source:** GitHub Issue\n- **Reward:** $0.15\n- **Task:** Yes, if they do real work. Bots that submit actual code, find real bugs, or make substantive contributions get paid like anyone else. Zero-effort spam, template-only \"I'd like to work on this\" claims with no follow-through, and disposable accounts aren't eligible.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request\n- **Payment method:** PayPal、USDC、USDT、RTC、ETH\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 8\n- **Last updated:** 2026-10-04T21:18:40Z\n\n#### 2. [Question: proof of contributor payments?](https://github.com/Heliobond/contracts/issues/503)\n- **Project:** [Heliobond/contracts](https://github.com/Heliobond/contracts)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-04T23:40:51Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 0.15,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0.15,
+      "profitPerHourUsd": 1.8,
+      "eligible": true
+    },
+    {
       "id": "github-5703788893",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 5 New Opportunities",
@@ -586,20 +600,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5683345653",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/216",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-02 21:00 UTC\n\n#### 1. [Pagination on saved searches](https://github.com/HHS/simpler-grants-gov/issues/12569)\n- **Project:** [HHS/simpler-grants-gov](https://github.com/HHS/simpler-grants-gov)\n- **Source:** GitHub Issue\n- **Reward:** $200\n- **Task:** Test coverage for this feature, including saving more than 25 queries and looking for a pagination element to appear. (depending on test implementation it may be difficult to make more than 2 pages show up)\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-02T18:36:26Z\n\n#### 2. [Define and enforce JSON-native values in arbitrary primitive payloads](https://github.com/AstralDeep/AstralPrimitives/issues/9)\n- **Project:** [AstralDeep/AstralPrimitives](https://github.com/AstralDeep/AstralPrimitives)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Define and enforce JSON-native values in arbitrary primitive payloads\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 2\n- **Last updated:** 2026-10-02T18:23:54Z\n\n#### 3. [Preserve balanced parentheses in rendered Markdown link destinations](https://github.com/AstralDeep/AstralProjection/issues/37)\n- **Project:** [AstralDeep/AstralProjection](https://github.com/AstralDeep/AstralProjection)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The regex for Markdown destinations stops at the first closing parenthesis. A normal link such as https://example.test/A(B) becomes a link to https://example.test/A(B with an extra visible closing parenthesis. Fix bounded destination parsing while keeping escape-first rendering and the existing URL allowlist.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 2\n- **Last updated:** 2026-10-02T18:23:55Z\n\n#### 4. [Fail fast when custom primitives collide with an existing wire type](https://github.com/AstralDeep/AstralPrimitives/issues/10)\n- **Project:** [AstralDeep/AstralPrimitives](https://github.com/AstralDeep/AstralPrimitives)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [ ] Test custom unique types, literal/default validation, collision with built-ins, repeated union rebuild, and alias behavior.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-10-02T18:31:58Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 200,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 200,
-      "profitPerHourUsd": 2400,
-      "eligible": true
     }
   ]
 }

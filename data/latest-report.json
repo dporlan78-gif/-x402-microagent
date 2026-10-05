@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T06:47:07.664Z",
+  "generatedAt": "2026-10-05T07:39:06.275Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,24 +14,9 @@
     ]
   },
   "discovered": 40,
-  "eligible": 16,
+  "eligible": 17,
   "realMoneySpentUsd": 0,
   "opportunities": [
-    {
-      "id": "github-5658125732",
-      "source": "github",
-      "title": "Bounty Reward 💎",
-      "url": "https://github.com/kalashnikovski/cvn_node/issues/4",
-      "description": "# 💎 BOUNTY: Refactor P2P Network Layer to Support Dynamic Peer Discovery (`peers.json`)\n\n**Label:** `Bounty Reward 💎`, `p2p-mesh`, `enhancement`  \n**Reward Pool:** 1,500.00 CVN from Genesis Allocations\n\n### 🎯 Objective\nWe need a distributed systems engineer to refactor our current networking loops to migrate the protocol away from strict static bootstrapping toward an autonomous, self-healing Gossip mesh network.\n\n### 🛠️ Technical Requirements\n1. **Dynamic Serialization:** Implement a background worker thread that serializes newly validated inbound peer socket connections directly to a local `peers.json` file inside the workspace directory.\n2. **Autonomous Bootstrapping:** On node launch, if the primary seed node is unreachable, the networking engine must parse `peers.json` chronologically and attempt to dial historical cached sockets to achieve network consensus.\n3. **Randomized Gossip Fan-out:** Limit transaction and block broadcast propagation payloads to a randomized subset of 5-8 peers rather than the global known peer list to optimize bandwidth and mitigate network congestion under heavy transaction traffic volumes.\n\n# 💎 BOUNTY: Implement Optimized Binary Serialization for Block Ledger Data\n\n**Label:** `Bounty Reward 💎`, `performance`, `storage`  \n**Reward Pool:** 1,000.00 CVN from Genesis Allocations\n\n### 🎯 Objective\nWe are seeking a Go data engineer to refactor our ledger serialization engine, migrating long-term block database writes away from human-readable JSON text strings to a highly compact binary encoding standard.\n\n### 🛠️ Technical Requirements\n1. **Binary Encoding Backplane:** Integrate Protocol Buffers (protobuf) or an optimized custom byte-level encoder into our block schema structs.\n2. **Asynchronous Compaction:** Ensure that when the background worker thread captures state snapshots via `ledger_vault_backup.json`, the payload size is minimized to drop disk storage requirements under heavy transactional loads.\n3. **Backward Compatible Telemetry:** The backend must preserve the standard un-encoded JSON endpoints (`/req_chain`, `/req_mempool`) so our current web block explorer HTML UI can parse network telemetry statistics seamlessly.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
     {
       "id": "github-5465070719",
       "source": "github",
@@ -156,6 +141,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 20,
       "profitPerHourUsd": 240,
+      "eligible": true
+    },
+    {
+      "id": "github-4864398540",
+      "source": "github",
+      "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] MongoDB NoSQL Injection → Aut",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/265",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/240\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] MongoDB NoSQL Injection → Authenticati\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/196\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [BUG] MongoDB NoSQL Injection → Authentication Bypass\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/136\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [BUG] MongoDB NoSQL Injection → Authentication Bypass $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/69\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [BUG] MongoDB NoSQL Injection → Authentication Bypass $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/34\n\n### 漏洞描述 / Description\n[Bounty] [BUG] MongoDB NoSQL Injection → Authentication Bypass $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/ai-research/issues/949\n\n### 漏洞描述 / Description\n[BUG] MongoDB NoSQL Injection → Authentication Bypass $150\n\n## MongoDB NoSQL 注入 → 认证绕过\n\n**难度**: Hard | **赏金**: $150\n\n### 漏洞描述\n登录接口 JSON body 直接传入 `db.users.find({username: body.username, password: body.password})`。攻击者发送 `{\"username\": \"admin\", \"password\": {\"$ne\": \"\"}}` 绕过认证。\n\n### 要求\n使用参数化查询 / ORM / 输入类型校验。\n\n### 验收标准\n- [ ] 禁止操作符注入 (\\$ne, \\$gt, \\$where 等)\n- [ ] 输入类型强制为 string\n- [ ] 服务端加盐哈希密码\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 150,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 150,
+      "profitPerHourUsd": 1800,
       "eligible": true
     },
     {

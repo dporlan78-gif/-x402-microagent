@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T07:39:06.275Z",
+  "generatedAt": "2026-10-05T08:38:40.665Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 17,
+  "eligible": 18,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -456,6 +456,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5708393191",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 6 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/233",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-05 07:51 UTC\n\n#### 1. [GRUB/Boot Repair Wizard](https://github.com/cxlinux-ai/cx-distro/issues/22)\n- **Project:** [cxlinux-ai/cx-distro](https://github.com/cxlinux-ai/cx-distro)\n- **Source:** GitHub Issue\n- **Reward:** $75\n- **Task:** Fix requires advanced CLI knowledge\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 15\n- **Last updated:** 2026-10-05T06:37:13Z\n\n#### 2. [bounty-watch 2026-10-05: 0 new, 0 resumed, 2 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/77)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-10-05: 0 new, 0 resumed, 2 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-05T05:43:48Z\n\n#### 3. [Security report: tari-ootle a `blob!(\"...\")` manifest with an invalid identifier string panics the parser; walletd's global panic hook kills the whole daemon on it (GHSA-256m-v6v9-82mp)](https://github.com/tari-project/special_contributions/issues/57)\n- **Project:** [tari-project/special_contributions](https://github.com/tari-project/special_contributions)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The fix was implemented separately by @sdbondi in tari-project/tari-ootle#2766. No code work is required here. Details stay in the advisory until it is published.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-05T05:07:29Z\n\n#### 4. [Security report: tari-ootle submit_transaction RPC decodes a transaction in full before the size cap, amplifying a 6 MiB frame into ~640 MiB of heap (GHSA-6mvf-8pp4-3c5j)](https://github.com/tari-project/special_contributions/issues/56)\n- **Project:** [tari-project/special_contributions](https://github.com/tari-project/special_contributions)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The fix was implemented separately by @sdbondi in tari-project/tari-ootle#2761. No code work is required here. Details stay in the advisory until it is published.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-05T04:59:02Z\n\n#### 5. [Scaffold-HBAR Template Bounty](https://github.com/Bomabgp/My-project/issues/2)\n- **Project:** [Bomabgp/My-project](https://github.com/Bomabgp/My-project)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Create a reusable scaffold/template for the HBAR-related project work in this repository so contributors can quickly bootstrap a new implementation or prototype with the expected structure, conventions, and configuration.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 有竞争：1 个 assignee\n- **Original Issue comments:** 2\n- **Last updated:** 2026-10-05T04:51:11Z\n\n#### 6. [Security report: tari-ootle @cbor-keyed metadata values are committed by the engine but cannot be read back through tari_bor's JSON projection (GHSA-6gp9-g8wp-9mhc)](https://github.com/tari-project/special_contributions/issues/58)\n- **Project:** [tari-project/special_contributions](https://github.com/tari-project/special_contributions)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The fix was implemented separately by @sdbondi in tari-project/tari-ootle#2777. No code work is required here. Details stay in the advisory until it is published.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-05T05:46:13Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 75,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 75,
+      "profitPerHourUsd": 900,
+      "eligible": true
+    },
+    {
       "id": "github-5704761046",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 2 New Opportunities",
@@ -576,21 +590,6 @@
       "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
       "url": "https://github.com/2510034127qq-wq/BountyScout/issues/219",
       "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-03 06:45 UTC\n\n#### 1. [bounty-watch 2026-10-03: 0 new, 0 resumed, 2 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/73)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-10-03: 0 new, 0 resumed, 2 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-03T05:25:56Z\n\n#### 2. [[BOUNTY] Suggestion #1250](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/1270)\n- **Project:** [SPLURT-Station/S.P.L.U.R.T-tg](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [BOUNTY] Suggestion #1250\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Discord\n- **Payment method:** PayPal\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 3\n- **Last updated:** 2026-10-03T03:52:46Z\n\n#### 3. [Legacy copy (#2423): fix titles, descriptions, author schema and \"free\" claims on the 20 older articles (D-326, public-adjuster line), then the full week-2 read](https://github.com/StellarEdgeServices/otterquote-platform/issues/2480)\n- **Project:** [StellarEdgeServices/otterquote-platform](https://github.com/StellarEdgeServices/otterquote-platform)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Legacy copy (#2423): fix titles, descriptions, author schema and \"free\" claims on the 20 older articles (D-326, public-adjuster line), then the full week-2 read\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-03T04:40:21Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5685307322",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/218",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-03 01:01 UTC\n\n#### 1. [[CTP-019 / CTP-011 child] Allocate private support test minutes and record bounded operator effort](https://github.com/deepnative/deep-native-engine/issues/441)\n- **Project:** [deepnative/deep-native-engine](https://github.com/deepnative/deep-native-engine)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Lead GPT-6 Astra / XHigh; design and self-review High. Separate review only when requested or required, not inferred from the review label. No work claim is created by this issue. Next implementation action only after #438 completes: re-read claims/main, claim this child and begin fail-first tests for the complete scop\n- **Deadline:** [ ] AC4 — Atomic partial settlement and accounting. Entry creation,15 consumed one-minute reservations/events and5 released unused reservations/events commit together once, with no intermediate externally visible state or nested pool transaction. The owned member balance shows co\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：几十分钟到数小时\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-03T00:12:42Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

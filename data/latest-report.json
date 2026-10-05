@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T15:38:07.991Z",
+  "generatedAt": "2026-10-05T16:37:17.611Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 18,
+  "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -456,6 +456,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5715604726",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/234",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-05 16:30 UTC\n\n#### 1. [microsoft/Powerful-Devs-Hack-Together — README.md](https://github.com/microsoft/Powerful-Devs-Hack-Together/blob/3bdcaa8214a7a76d6f9dc6fe3925291bc57b7eaa/README.md)\n- **Project:** [microsoft/Powerful-Devs-Hack-Together](https://github.com/microsoft/Powerful-Devs-Hack-Together)\n- **Source:** Repository Markdown\n- **Reward:** $550\n- **Task:** | <a id=\"building-mega-apps\"></a>Building mega apps with the Power Platform | <ul> <li> D365 and M65 compliance center (https://learn.microsoft.com/en-us/compliance/regulatory/offering-home?wt.mcid=powerfuldevs2025repo1peventscxa) </li> <li> The Power Platform guidance documentation (https://learn.microsoft.com/en-us/p\n- **Deadline:** 待确认\n- **Submission:** Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：几十分钟到数小时\n\n#### 2. [Canadian PR bounty #007: funding, scope and AI-assisted contribution eligibility](https://github.com/angeloasante/Diaspora_AI_Visa_data/issues/8)\n- **Project:** [angeloasante/Diaspora_AI_Visa_data](https://github.com/angeloasante/Diaspora_AI_Visa_data)\n- **Source:** GitHub Issue\n- **Reward:** £20\n- **Task:** A small Canadian PR → Mexico sample has been prepared locally with substantial AI assistance, using the official INM source: https://www.inm.gob.mx/gobmx/word/index.php/paises-requieren-visa-para-mexico/ . It has not been submitted as a PR.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** PayPal、Wise\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-05T14:54:43Z\n\n#### 3. [[Data update proposal] NG to GB Standard Visitor fee and decision-time sources](https://github.com/angeloasante/Diaspora_AI_Visa_data/issues/4)\n- **Project:** [angeloasante/Diaspora_AI_Visa_data](https://github.com/angeloasante/Diaspora_AI_Visa_data)\n- **Source:** GitHub Issue\n- **Reward:** £15\n- **Task:** This is a data-update proposal, not a bounty claim or payment request. No PR or traveller data has been submitted.\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-05T09:32:05Z\n\n#### 4. [[CONTRACTS] feat(escrow): Standardize Soroban Event Emission and Topic Indexing for Match Lifecycle](https://github.com/Kaycee276/Chesster/issues/397)\n- **Project:** [Kaycee276/Chesster](https://github.com/Kaycee276/Chesster)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The goal of this issue is to define and implement a standardized EscrowEvent emission framework across all lifecycle endpoints in contracts/soroban/contracts/escrow/src/lib.rs. Every critical contract transition (creatematch, joinmatch, resolvematch, refundaftertimeout, depositpool) must emit a strongly-typed event wit\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-05T15:29:26Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 550,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 550,
+      "profitPerHourUsd": 6600,
+      "eligible": true
+    },
+    {
       "id": "github-5708393191",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 6 New Opportunities",
@@ -583,21 +597,6 @@
       "expectedProfitUsd": 25,
       "profitPerHourUsd": 300,
       "eligible": true
-    },
-    {
-      "id": "github-5687325519",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/219",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-03 06:45 UTC\n\n#### 1. [bounty-watch 2026-10-03: 0 new, 0 resumed, 2 watchlist changes](https://github.com/abdulsalam-create/bounty-watch/issues/73)\n- **Project:** [abdulsalam-create/bounty-watch](https://github.com/abdulsalam-create/bounty-watch)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** bounty-watch 2026-10-03: 0 new, 0 resumed, 2 watchlist changes\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-03T05:25:56Z\n\n#### 2. [[BOUNTY] Suggestion #1250](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/1270)\n- **Project:** [SPLURT-Station/S.P.L.U.R.T-tg](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [BOUNTY] Suggestion #1250\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Discord\n- **Payment method:** PayPal\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 3\n- **Last updated:** 2026-10-03T03:52:46Z\n\n#### 3. [Legacy copy (#2423): fix titles, descriptions, author schema and \"free\" claims on the 20 older articles (D-326, public-adjuster line), then the full week-2 read](https://github.com/StellarEdgeServices/otterquote-platform/issues/2480)\n- **Project:** [StellarEdgeServices/otterquote-platform](https://github.com/StellarEdgeServices/otterquote-platform)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Legacy copy (#2423): fix titles, descriptions, author schema and \"free\" claims on the 20 older articles (D-326, public-adjuster line), then the full week-2 read\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-03T04:40:21Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     }
   ]
 }

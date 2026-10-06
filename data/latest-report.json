@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T02:34:15.556Z",
+  "generatedAt": "2026-10-06T03:34:53.415Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -218,21 +218,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5721471370",
-      "source": "github",
-      "title": "feat(referral): Profile referrals with first-subscription and recharge rewards, clawback and two-tier attribution",
-      "url": "https://github.com/portfonia/portfonia/issues/675",
-      "description": "## Summary\n\nLet a signed-in user refer someone from Profile. The referred email becomes a `pending` waitlist entry with source `referral` and enters the normal automatic invitation-letter flow (#672). When the referee signs up, the referrer and the referrer's own referrer (grand-referrer) are recorded on the referee's user row. The referrer earns a gift reward on the referee's first subscription and a cash-bucket reward on every Paddle recharge by the referee; a refund of that recharge claws the reward back, and the clawback may take the referrer's cash balance below zero.\n\nThe root user Admin (#672 Design section 11.4: `DEV_USER_ID` renamed to `ADMIN_ID`, representing info@portfonia.com, not an account) is the referrer of every Ops-generated invite and the grand-referrer when no second tier exists. Admin is never credited.\n\nDepends on #672 (PR #673) being merged: it provides the shared `send_letter` service, the daily automatic sender and the `ADMIN_ID` setting. Status: implementation-ready once PR #673 is merged; all design decisions were confirmed by the product owner on 2026-10-05.\n\n## In scope\n\n- Profile \"Refer someone\" card: email input, confirm, thank-you dialog; copy in three locales.\n- `POST /me/referrals`; `waitlist_entries.source` and `referrer_user_id`.\n- Referrer and grand-referrer recorded at signup; backfill existing users to Admin.\n- Ledger reasons `referral_bonus` and `referral_clawback`; negative cash allowed for clawback only.\n- First-subscription and recharge rewards; refund clawback and reversal.\n- Purge guard change for non-zero cash; Terms referral paragraph; Ops waitlist read fields.\n\n## Out of scope\n\n- Any referrer-visible history, reward statement or notification.\n- Grand-referrer rewards; withdrawal; dedicated anti-abuse; any ledger rows or user row for Admin.\n- Changes to #672's sender, digest or eligibility.\n\nDetail → comments: Requirements, Reasons, Exploration, Design, Contract constraints.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5460422244",
       "source": "github",
       "title": "Automate Whop bounty payout receipt evidence for zero-touch settlement",
@@ -304,6 +289,21 @@
       "expectedProfitUsd": 2,
       "profitPerHourUsd": 24,
       "eligible": true
+    },
+    {
+      "id": "github-5212047589",
+      "source": "github",
+      "title": "Add player kill cash rewards",
+      "url": "https://github.com/zakomarvic/Roblox-Game-Systems/issues/20",
+      "description": "Implement server-authoritative player kill rewards using the existing creator attribution on damaged Humanoids.\n\nRequirements:\n- Award the killer a configurable cash amount when they cause a player death.\n- Keep reward logic in the Economy system rather than weapon-specific scripts.\n- Ignore self-kills, missing/invalid creator attribution, and non-player creators.\n- Ensure each death rewards at most once.\n- Preserve existing death cash-drop behavior.\n- Use the existing CashService for the actual cash mutation.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-5555898937",
@@ -456,6 +456,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5722136238",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 9 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/235",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-06 02:50 UTC\n\n#### 1. [[Bounty Proposal] Full exercise-library picker for athlete and coach editors (#62) — USD 800](https://github.com/nick-transition/fitapp/issues/92)\n- **Project:** [nick-transition/fitapp](https://github.com/nick-transition/fitapp)\n- **Source:** GitHub Issue\n- **Reward:** USD 800\n- **Task:** Implementation and verification would use OpenAI Codex throughout, with independent automated checks and full disclosure in the PR. Please confirm that this execution model is acceptable, with the maintainer performing the human security/data-access review required by CONTRIBUTING.md.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 页面描述：I'd need the documented PayPal fallback. Please confirm the cash amount, acceptance conditions and payment within 48 hours after merge before converting this into a claimed bounty.\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-06T02:21:42Z\n\n#### 2. [Build the UseAgent mobile app for iOS and Android](https://github.com/useagenthq/useagent/issues/61)\n- **Project:** [useagenthq/useagent](https://github.com/useagenthq/useagent)\n- **Source:** GitHub Issue\n- **Reward:** $80\n- **Task:** Add before and after screenshots, or a short screen recording, to your pull request. For backend or docs work, show the result end to end (the message arriving in Discord, the webhook landing in a test receiver, the rendered docs page).\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request、Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 部分适合（需要人工试用或证据，Coding Agent 可辅助）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 9\n- **Last updated:** 2026-10-06T02:30:22Z\n\n#### 3. [US Green Card bounty #002 — AI-prepared pilot eligibility and payment](https://github.com/angeloasante/Diaspora_AI_Visa_data/issues/15)\n- **Project:** [angeloasante/Diaspora_AI_Visa_data](https://github.com/angeloasante/Diaspora_AI_Visa_data)\n- **Source:** GitHub Issue\n- **Reward:** £20\n- **Task:** An AI assistant performed the research and JSON preparation and is helping submit this inquiry on the account owner’s instructions. This is the intended working model; the account owner would handle payout administration.\n- **Deadline:** 待确认\n- **Submission:** An AI assistant performed the research and JSON preparation and is helping submit this inquiry on the account owner’s instructions. This is the intended working model; the account owner would handle payout administration.\n- **Payment method:** PayPal、Wise\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T01:50:20Z\n\n#### 4. [Desktop app: make it work perfectly on Windows and Linux](https://github.com/useagenthq/useagent/issues/56)\n- **Project:** [useagenthq/useagent](https://github.com/useagenthq/useagent)\n- **Source:** GitHub Issue\n- **Reward:** $30\n- **Task:** Add before and after screenshots, or a short screen recording, to your pull request. For backend or docs work, show the result end to end (the message arriving in Discord, the webhook landing in a test receiver, the rendered docs page).\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request、Discord\n- **Payment method:** 待确认\n- **Coding Agent fit:** 部分适合（需要人工试用或证据，Coding Agent 可辅助）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 9\n- **Last updated:** 2026-10-06T02:28:09Z\n\n#### 5. [Superjson serializer drops an own __proto__ JSON field and changes the result prototype](https://github.com/Mantitup-Org/vista/issues/168)\n- **Project:** [Mantitup-Org/vista](https://github.com/Mantitup-Org/vista)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The source has matching object-copy assignments in encodeSuperJson and decodeSuperJson in packages/vista/src/stack/server/serialization.ts. A property-definition approach could retain arbitrary own keys without invoking setters, but no patch or PR has been submitted. Following #61, I will wait for confirmation of the d\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-06T02:38:15Z\n\n#### 6. [Presence: later messages in a thread wait behind the previous turn's post-delivery verification and acceptance (up to 62 min observed)](https://github.com/razzant/ouroboros/issues/1536)\n- **Project:** [razzant/ouroboros](https://github.com/razzant/ouroboros)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Measured from durable rows on the installation (the bridge's inbox and outbox SQLite read together with its WAL, task results, tool-call and review-operation timestamps): every timestamp, delay, attempt count, outcome and panel result above. Inferred: the split of the aggregate into same-thread and cap waits (each wait\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 页面描述：Presence: later messages in a thread wait behind the previous turn's post-delivery verification and acceptance (up to 62 min observed)\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-06T02:36:10Z\n\n#### 7. [[APP] AceDataCloud — asynchronous image generation and task retrieval](https://github.com/PipedreamHQ/pipedream/issues/22155)\n- **Project:** [PipedreamHQ/pipedream](https://github.com/PipedreamHQ/pipedream)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Users can call the API with generic HTTP steps, but generation is asynchronous. POST /seedream/images with async: true returns a taskid; a later POST /seedream/tasks retrieves the result. Repeating the generation POST after an HTTP timeout can create a second paid task. A native app lets users store the API key once, m\n- **Deadline:** 待确认\n- **Submission:** Generate Image — submit a prompt and a supported public Seedream model to POST /seedream/images with async: true; return the task ID immediately.\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-05T19:58:28Z\n\n#### 8. [[BOUNTY] Suggestion #1264](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg/issues/1282)\n- **Project:** [SPLURT-Station/S.P.L.U.R.T-tg](https://github.com/SPLURT-Station/S.P.L.U.R.T-tg)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** [BOUNTY] Suggestion #1264\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Discord\n- **Payment method:** PayPal\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 有竞争：302 条评论\n- **Original Issue comments:** 302\n- **Last updated:** 2026-10-06T02:45:59Z\n\n#### 9. [Native submissions: accounts, review, badge program, claims and paid listings](https://github.com/serpcompany/best.serp.co/issues/59)\n- **Project:** [serpcompany/best.serp.co](https://github.com/serpcompany/best.serp.co)\n- **Source:** GitHub Issue\n- **Reward:** $49 USD；$49\n- **Task:** Replaces #52. This is the decision record from the 2026-10-06 grilling session. It is aligned with the shared baseline in serpcompany/serp docs/engineering/websites/features/submissions/ (site-submission-.md), with project-specific choices recorded here.\n- **Deadline:** It checks only listings submitted by other people. Admin- or owner-added listings are never checked.\n- **Submission:** GitHub Issue、电子邮件\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 21\n- **Last updated:** 2026-10-06T02:45:56Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 80,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 80,
+      "profitPerHourUsd": 960,
+      "eligible": true
+    },
+    {
       "id": "github-5715604726",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
@@ -583,20 +597,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5689849846",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 4 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/220",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-03 13:01 UTC\n\n#### 1. [Bounty #4 claim: Improve error messages doc](https://github.com/josedab/chronicle/issues/83)\n- **Project:** [josedab/chronicle](https://github.com/josedab/chronicle)\n- **Source:** GitHub Issue\n- **Reward:** $25\n- **Task:** I'd like to work on this. Will submit a documentation PR covering Chronicle error types with concrete troubleshooting steps shortly.\n- **Deadline:** 待确认\n- **Submission:** I'd like to work on this. Will submit a documentation PR covering Chronicle error types with concrete troubleshooting steps shortly.\n- **Payment method:** PayPal\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-10-03T11:38:41Z\n\n#### 2. [Question: proof of contributor payments?](https://github.com/SciML/OrdinaryDiffEq.jl/issues/4765)\n- **Project:** [SciML/OrdinaryDiffEq.jl](https://github.com/SciML/OrdinaryDiffEq.jl)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-03T12:12:23Z\n\n#### 3. [Question: proof of contributor payments?](https://github.com/browser-use/browser-harness/issues/881)\n- **Project:** [browser-use/browser-harness](https://github.com/browser-use/browser-harness)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-03T12:12:19Z\n\n#### 4. [Help us translate Hugin Messenger!](https://github.com/kryptokrona/hugin-native/issues/13)\n- **Project:** [kryptokrona/hugin-native](https://github.com/kryptokrona/hugin-native)\n- **Source:** GitHub Issue\n- **Reward:** $20\n- **Task:** Read this guide on how to properly make a fork, a new branch, add your changes and then finally submit a pull request here:\n- **Deadline:** 待确认\n- **Submission:** Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 4\n- **Competition:** 有竞争：4 个相关 open PR\n- **Original Issue comments:** 3\n- **Last updated:** 2026-10-03T11:39:28Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 25,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 25,
-      "profitPerHourUsd": 300,
-      "eligible": true
     }
   ]
 }

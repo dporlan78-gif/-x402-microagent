@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T09:36:16.726Z",
+  "generatedAt": "2026-10-06T10:35:09.930Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -456,6 +456,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5726705225",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 5 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/236",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-06 10:15 UTC\n\n#### 1. [Security report: tari-ootle rPC server leaks the per-client session count on handshake failure, permanently locking out a peer and growing the session map unbounded (GHSA-7h97-fwqj-6qpm)](https://github.com/tari-project/special_contributions/issues/80)\n- **Project:** [tari-project/special_contributions](https://github.com/tari-project/special_contributions)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The fix was implemented separately by @sdbondi in tari-project/tari-ootle#2764. No code work is required here. Details stay in the advisory until it is published.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T09:03:02Z\n\n#### 2. [Security report: tari-ootle a transaction can finalize AllAccept in its output shard group while the input shard group never accepted it — the dead `all_objects_accepted()` check was never replaced (GHSA-734p-gq7p-3pwq)](https://github.com/tari-project/special_contributions/issues/79)\n- **Project:** [tari-project/special_contributions](https://github.com/tari-project/special_contributions)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The fix was implemented separately by @sdbondi in tari-project/tari-ootle#2771. No code work is required here. Details stay in the advisory until it is published.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T08:59:25Z\n\n#### 3. [Security report: tari-ootle state sync durably commits unverified peer-supplied consensus state before the root check, with no rollback — permanent self-DoS + integrity violation (GHSA-pq7v-fwv7-jxq8)](https://github.com/tari-project/special_contributions/issues/78)\n- **Project:** [tari-project/special_contributions](https://github.com/tari-project/special_contributions)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The fix was implemented separately by @sdbondi in tari-project/tari-ootle#2765. No code work is required here. Details stay in the advisory until it is published.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T08:57:39Z\n\n#### 4. [Blocklist removal request : settlex-nine.vercel.app](https://github.com/MetaMask/eth-phishing-detect/issues/300233)\n- **Project:** [MetaMask/eth-phishing-detect](https://github.com/MetaMask/eth-phishing-detect)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The latest Payment Activity implementation was also verified against live Monad Testnet state.\n- **Deadline:** 待确认\n- **Submission:** Contributors discover active bounties and submit work.\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T05:28:03Z\n\n#### 5. [Create and publish Bihar Lok Bhavan CPR Training Workshop social-media post](https://github.com/SaurabhSaxena8158/Rep_Medanta_Project/issues/90)\n- **Project:** [SaurabhSaxena8158/Rep_Medanta_Project](https://github.com/SaurabhSaxena8158/Rep_Medanta_Project)\n- **Source:** GitHub Issue\n- **Reward:** ₹50,000\n- **Task:** Highlight the hands-on CPR Training Workshop organised by Jay Prabha Medanta Super Speciality Hospital, Patna, for over 200 staff members of Bihar Lok Bhavan and members of Mahila Imdad Samiti.\n- **Deadline:** 待确认\n- **Submission:** 电子邮件\n- **Payment method:** 待确认\n- **Coding Agent fit:** 部分适合（需要人工试用或证据，Coding Agent 可辅助）\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 有竞争：2 个 assignee\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T05:58:10Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5722136238",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 9 New Opportunities",
@@ -574,21 +589,6 @@
       "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
       "url": "https://github.com/2510034127qq-wq/BountyScout/issues/222",
       "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-03 23:46 UTC\n\n#### 1. [Question: proof of contributor payments?](https://github.com/Heliobond/contracts/issues/502)\n- **Project:** [Heliobond/contracts](https://github.com/Heliobond/contracts)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-03T23:17:42Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5691867249",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 3 New Opportunities",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/221",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-03 17:25 UTC\n\n#### 1. [Give benchmark CLI credentials one documented resolution path](https://github.com/LearningCircuit/local-deep-research/issues/7122)\n- **Project:** [LearningCircuit/local-deep-research](https://github.com/LearningCircuit/local-deep-research)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** The earlier local benchmark CLI draft concerns dropped model/provider/endpoint/strategy kwargs, a separate problem. Coordinate both changes if one focused CLI initialization fix can address them without reviving paid PR-triggered CI.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、Pull Request\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-03T13:34:40Z\n\n#### 2. [Validate successful SDK response envelopes before returning typed mappings](https://github.com/AstralDeep/LETS/issues/70)\n- **Project:** [AstralDeep/LETS](https://github.com/AstralDeep/LETS)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Validate successful SDK response envelopes before returning typed mappings\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 2\n- **Last updated:** 2026-10-03T16:14:54Z\n\n#### 3. [26/27 source-bound booking + invoice release gate for website courses](https://github.com/ironstripe/yeti-alpine-booking/issues/36)\n- **Project:** [ironstripe/yeti-alpine-booking](https://github.com/ironstripe/yeti-alpine-booking)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Initial source baseline 2d6bef8 independently inspected; containment in d3f229c, additional validation fixes merged via PR #42 as c9d8f38. This is an implementation/release epic, not a completed booking flow.\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue、电子邮件\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-03T16:58:39Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

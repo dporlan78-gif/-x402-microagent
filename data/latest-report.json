@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T00:45:21.840Z",
+  "generatedAt": "2026-10-06T01:33:01.671Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -218,6 +218,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5721471370",
+      "source": "github",
+      "title": "feat(referral): Profile referrals with first-subscription and recharge rewards, clawback and two-tier attribution",
+      "url": "https://github.com/portfonia/portfonia/issues/675",
+      "description": "## Summary\n\nLet a signed-in user refer someone from Profile. The referred email becomes a `pending` waitlist entry with source `referral` and enters the normal automatic invitation-letter flow (#672). When the referee signs up, the referrer and the referrer's own referrer (grand-referrer) are recorded on the referee's user row. The referrer earns a gift reward on the referee's first subscription and a cash-bucket reward on every Paddle recharge by the referee; a refund of that recharge claws the reward back, and the clawback may take the referrer's cash balance below zero.\n\nThe root user Admin (#672 Design section 11.4: the renamed `DEV_USER_ID`, representing info@portfonia.com, not an account) is the referrer of every Ops-generated invite and the grand-referrer when no second tier exists. Admin is never credited.\n\nDepends on #672 (PR #673) being merged: it provides the shared `send_letter` service, the daily automatic sender and the Admin ID setting. Status: design in progress; two owner decisions are open (see Design, \"Open decisions\").\n\n## In scope\n\n- Profile \"Refer someone\" card: email input, confirm, thank-you dialog; copy in three locales.\n- `POST /me/referrals`; `waitlist_entries.source` and `referrer_user_id`.\n- Referrer and grand-referrer recorded at signup; backfill existing users to Admin.\n- Ledger reasons `referral_bonus` and `referral_clawback`; negative cash allowed for clawback only.\n- First-subscription and recharge rewards; refund clawback and reversal.\n- Purge guard change for non-zero cash; Terms referral paragraph; Ops waitlist read fields.\n\n## Out of scope\n\n- Any referrer-visible history, reward statement or notification.\n- Grand-referrer rewards; withdrawal; dedicated anti-abuse; any ledger rows or user row for Admin.\n- Changes to #672's sender, digest or eligibility.\n\nDetail → comments: Requirements, Reasons, Exploration, Design, Contract constraints.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5460422244",
       "source": "github",
       "title": "Automate Whop bounty payout receipt evidence for zero-touch settlement",
@@ -289,21 +304,6 @@
       "expectedProfitUsd": 2,
       "profitPerHourUsd": 24,
       "eligible": true
-    },
-    {
-      "id": "github-5212047589",
-      "source": "github",
-      "title": "Add player kill cash rewards",
-      "url": "https://github.com/zakomarvic/Roblox-Game-Systems/issues/20",
-      "description": "Implement server-authoritative player kill rewards using the existing creator attribution on damaged Humanoids.\n\nRequirements:\n- Award the killer a configurable cash amount when they cause a player death.\n- Keep reward logic in the Economy system rather than weapon-specific scripts.\n- Ignore self-kills, missing/invalid creator attribution, and non-player creators.\n- Ensure each death rewards at most once.\n- Preserve existing death cash-drop behavior.\n- Use the existing CashService for the actual cash mutation.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-5555898937",

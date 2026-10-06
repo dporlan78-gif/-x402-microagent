@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T16:37:03.044Z",
+  "generatedAt": "2026-10-06T17:32:55.887Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 19,
+  "eligible": 20,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -456,6 +456,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5732152760",
+      "source": "github",
+      "title": "🎯 Micro Bounty Alert: 13 New Opportunities",
+      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/237",
+      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-06 16:48 UTC\n\n#### 1. [[Bounty: $70] Guarantee recordRunFailure never throws](https://github.com/SUSU-LABS/susu-indexer/issues/13)\n- **Project:** [SUSU-LABS/susu-indexer](https://github.com/SUSU-LABS/susu-indexer)\n- **Source:** GitHub Issue\n- **Reward:** $70\n- **Task:** [Bounty: $70] Guarantee recordRunFailure never throws\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T16:16:45Z\n\n#### 2. [[Bounty: $150] Stop indexing events from failed contract calls](https://github.com/SUSU-LABS/susu-indexer/issues/10)\n- **Project:** [SUSU-LABS/susu-indexer](https://github.com/SUSU-LABS/susu-indexer)\n- **Source:** GitHub Issue\n- **Reward:** $150\n- **Task:** [Bounty: $150] Stop indexing events from failed contract calls\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 页面描述：ETA: 72 hours\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T16:15:58Z\n\n#### 3. [[Bounty: $90] Include frozen fee, treasury, and frequency in the GroupCreated event](https://github.com/SUSU-LABS/susu-contracts/issues/8)\n- **Project:** [SUSU-LABS/susu-contracts](https://github.com/SUSU-LABS/susu-contracts)\n- **Source:** GitHub Issue\n- **Reward:** $90\n- **Task:** [Bounty: $90] Include frozen fee, treasury, and frequency in the GroupCreated event\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T16:15:34Z\n\n#### 4. [[Bounty: $150] Extend persistent TTL in payout/membership paths to stop archival bricking pools](https://github.com/SUSU-LABS/susu-contracts/issues/6)\n- **Project:** [SUSU-LABS/susu-contracts](https://github.com/SUSU-LABS/susu-contracts)\n- **Source:** GitHub Issue\n- **Reward:** $150\n- **Task:** contracts/group/src/lib.rs:414-415 extends Member(member) and MemberAt(position) only on join. executepayout reads the recipient at line 593 (persistent.get(&DataKey::MemberAt(round))) and contribute checks membership at line 499 without extending either key. With persistent TTL 518400 ledgers (~30 days, lib.rs:81-82),\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 页面描述：contracts/group/src/lib.rs:414-415 extends Member(member) and MemberAt(position) only on join. executepayout reads the recipient at line 593 (persistent.get(&DataKey::MemberAt(roun\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T16:14:32Z\n\n#### 5. [[Bounty: $70] Return 400 (not 500) for avatar paths that violate the DB constraint](https://github.com/SUSU-LABS/susu-api/issues/22)\n- **Project:** [SUSU-LABS/susu-api](https://github.com/SUSU-LABS/susu-api)\n- **Source:** GitHub Issue\n- **Reward:** $70\n- **Task:** [Bounty: $70] Return 400 (not 500) for avatar paths that violate the DB constraint\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T16:13:37Z\n\n#### 6. [[Bounty: $90] Replace trustProxy: true with trusted proxy CIDRs](https://github.com/SUSU-LABS/susu-api/issues/21)\n- **Project:** [SUSU-LABS/susu-api](https://github.com/SUSU-LABS/susu-api)\n- **Source:** GitHub Issue\n- **Reward:** $90\n- **Task:** [Bounty: $90] Replace trustProxy: true with trusted proxy CIDRs\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 可能适合（需人工确认交付范围）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T15:57:20Z\n\n#### 7. [[Bounty: $100] Enforce the shared password policy in Settings change-password](https://github.com/SUSU-LABS/susu-web/issues/10)\n- **Project:** [SUSU-LABS/susu-web](https://github.com/SUSU-LABS/susu-web)\n- **Source:** GitHub Issue\n- **Reward:** $100\n- **Task:** src/lib/auth/validation.ts:29-90 defines MINPASSWORDLENGTH = 8 and newPasswordSchema, which rejects passwords over 72 bytes because bcrypt silently truncates (validation.ts:43,86-90). Signup/reset use that schema, but Settings.tsx:286-323 reimplements the rule ad hoc: canSubmit = password.length >= 8 && confirmation ==\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个相关 open PR\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-06T16:16:39Z\n\n#### 8. [[Bounty: $80] Page the watch-list read so groups beyond the PostgREST cap are not dropped](https://github.com/SUSU-LABS/susu-indexer/issues/12)\n- **Project:** [SUSU-LABS/susu-indexer](https://github.com/SUSU-LABS/susu-indexer)\n- **Source:** GitHub Issue\n- **Reward:** $80\n- **Task:** [Bounty: $80] Page the watch-list read so groups beyond the PostgREST cap are not dropped\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T16:16:38Z\n\n#### 9. [[Bounty: $100] Make the indexer checkpoint advance conditional on a higher ledger](https://github.com/SUSU-LABS/susu-indexer/issues/11)\n- **Project:** [SUSU-LABS/susu-indexer](https://github.com/SUSU-LABS/susu-indexer)\n- **Source:** GitHub Issue\n- **Reward:** $100\n- **Task:** [Bounty: $100] Make the indexer checkpoint advance conditional on a higher ledger\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T16:16:22Z\n\n#### 10. [[Bounty: $120] Cap contribution_amount so pooled arithmetic cannot overflow and lock funds](https://github.com/SUSU-LABS/susu-contracts/issues/7)\n- **Project:** [SUSU-LABS/susu-contracts](https://github.com/SUSU-LABS/susu-contracts)\n- **Source:** GitHub Issue\n- **Reward:** $120\n- **Task:** The Group constructor rejects only contributionamount <= 0 (group/src/lib.rs:346); the Factory does the same (factory/src/lib.rs:196-198). contribute accumulates with pool.checkedadd(amount) (lib.rs:516-519). With no cap, a group can use amount = i128::MAX, capacity = 2: the first contribution succeeds, the second alwa\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T16:15:24Z\n\n#### 11. [[Bounty: $100] Make the MAX_LIVE_REGISTRATIONS cap atomic](https://github.com/SUSU-LABS/susu-api/issues/23)\n- **Project:** [SUSU-LABS/susu-api](https://github.com/SUSU-LABS/susu-api)\n- **Source:** GitHub Issue\n- **Reward:** $100\n- **Task:** [Bounty: $100] Make the MAXLIVEREGISTRATIONS cap atomic\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T16:13:42Z\n\n#### 12. [[Bounty: $120] Key the /transactions/prepare rate limit on the verified caller](https://github.com/SUSU-LABS/susu-api/issues/19)\n- **Project:** [SUSU-LABS/susu-api](https://github.com/SUSU-LABS/susu-api)\n- **Source:** GitHub Issue\n- **Reward:** $120\n- **Task:** [Bounty: $120] Key the /transactions/prepare rate limit on the verified caller\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 0\n- **Last updated:** 2026-10-06T15:47:43Z\n\n#### 13. [[Bounty: $90] Runtime-validate API responses with Zod instead of type assertions](https://github.com/SUSU-LABS/susu-web/issues/12)\n- **Project:** [SUSU-LABS/susu-web](https://github.com/SUSU-LABS/susu-web)\n- **Source:** GitHub Issue\n- **Reward:** $90\n- **Task:** [Bounty: $90] Runtime-validate API responses with Zod instead of type assertions\n- **Deadline:** 待确认\n- **Submission:** 待确认\n- **Payment method:** 待确认\n- **Coding Agent fit:** 是（代码、测试、文档或 Issue/PR 类任务）\n- **Estimated effort:** 推测：数小时到 1 天（需人工确认范围）\n- **Related open PRs:** 1\n- **Competition:** 有竞争：1 个 assignee；1 个相关 open PR\n- **Original Issue comments:** 5\n- **Last updated:** 2026-10-06T16:33:40Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
+      "rewardUsd": 70,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 70,
+      "profitPerHourUsd": 840,
+      "eligible": true
+    },
+    {
       "id": "github-5726705225",
       "source": "github",
       "title": "🎯 Micro Bounty Alert: 5 New Opportunities",
@@ -582,21 +596,6 @@
       "expectedProfitUsd": 25,
       "profitPerHourUsd": 300,
       "eligible": true
-    },
-    {
-      "id": "github-5694662594",
-      "source": "github",
-      "title": "🎯 Micro Bounty Alert: 1 New Opportunity",
-      "url": "https://github.com/2510034127qq-wq/BountyScout/issues/222",
-      "description": "### Active Micro Bounty Scan Results\n\n**Scan Time:** 2026-10-03 23:46 UTC\n\n#### 1. [Question: proof of contributor payments?](https://github.com/Heliobond/contracts/issues/502)\n- **Project:** [Heliobond/contracts](https://github.com/Heliobond/contracts)\n- **Source:** GitHub Issue\n- **Reward:** 金额待确认\n- **Task:** Question: proof of contributor payments?\n- **Deadline:** 待确认\n- **Submission:** GitHub Issue\n- **Payment method:** 待确认\n- **Coding Agent fit:** 待确认\n- **Estimated effort:** 待确认\n- **Related open PRs:** 0\n- **Competition:** 未发现明显竞争\n- **Original Issue comments:** 1\n- **Last updated:** 2026-10-03T23:17:42Z\n\n> Payment methods are reported only when explicitly mentioned by the source; 待确认 means manual verification is required.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     }
   ]
 }

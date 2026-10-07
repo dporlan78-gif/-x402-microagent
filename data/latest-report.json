@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T07:36:35.390Z",
+  "generatedAt": "2026-10-07T08:37:53.340Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 20,
+  "eligible": 21,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -248,11 +248,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5592184782",
+      "id": "github-5291891057",
       "source": "github",
-      "title": "Arcade: [placeholder] Risk-and-reward planning game (teaches Markov decision processes)",
-      "url": "https://github.com/diagonalcounty/heliopoly/issues/297",
-      "description": "**Status:** Placeholder. Needs design before it meets Definition of Ready.\n\n## Idea\nA short, replayable Arcade game that teaches Markov decision processes (MDPs), the math behind planning when outcomes are partly random. The player learns by playing runs, not by reading math.\n\n## Learning goals (from Stanford CS221, MDPs 1: Value Iteration)\n- Judge a strategy by its average payoff over many runs, not by one lucky or unlucky run.\n- Policy evaluation: what a fixed strategy is really worth.\n- Value iteration: finding the best move at each spot by working backward from the payoffs.\n- Discounting: a reward now beats the same reward later.\n\n## Arcade-sized concepts (pick one for the first slice)\n1. **Risky jump run:** a small star map where each jump has odds of success, delay, or damage. The player picks a move at each node, flies a batch of runs, and sees their average next to the best possible average.\n2. **Stay or cash out:** a dice-style contract (the lecture's example). Each round the player keeps flying for a steady payout with a chance the contract ends, or takes a one-time payout. Short, and it teaches expected value quickly.\n3. **Out-plan the AI pilot:** the same map, but an AI pilot fills in values on each node sweep by sweep. The player tries to set a strategy that matches or beats it before the values settle.\n\n## Fits existing Arcade patterns\n- Short runs with fresh layouts each launch (like #293 hull panels and #290 fuel connection).\n- End-of-run message through the shared clerk results card (#296), which could show \"your average vs. best possible.\"\n\n## Open questions\n- How much of the numbers to show (values on nodes, odds on edges, or hidden until the end)?\n- Difficulty ladder: bigger maps, more random outcomes, a lower discount?\n- Any carryover rewards outside the Arcade?\n\n## References\n- Lecture: https://www.youtube.com/watch?v=9g32v7bK3Co\n- Slides: https://web.stanford.edu/class/archive/cs/cs221/cs221.1196/lectures/mdp1.pdf\n\n## Acceptance criteria\nTBD once a concept is chosen.\n",
+      "title": "[OWNER-ACTION][HOLD][B64] Adscend approval + Korea rewarded-video inventory proof",
+      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/1117",
+      "description": "## 2026-10-01 CURRENT RECONCILIATION\n\nFresh repository truth:\n\n```text\nCURRENT_MAIN=3d16307a9c1c729b728081f52710ed56b1b819a9\nBUSINESS=B64\nROLE=OWNER_ACTION_LIVE_PROVIDER_PROOF\nPROVIDER=Adscend\nORIGINAL_PLANNED_ACTION_DATE=2026-08-31_PASSED\nTECHNICAL_ACCOUNT_INDEPENDENT_CODE=MERGED\nPUBLISHER_APPROVAL / KR_VIDEO_SUPPLY / ALLOWED_TRAFFIC_LIVE_GATE / POSTBACK=NOT_EVIDENCED\nLIVE_PRODUCTION_PROOF=NO\nPRODUCTION_MUTATION=0\nDISPOSITION=KEEP_OPEN_OWNER_DECISION\n```\n\nThe original 2026-08-31 owner-action date has passed. No later repository evidence proves that the required external provider/account/live Korea proof was completed.\n\nThis issue therefore remains OPEN, but it should no longer read as a scheduled action for August 31. The next owner decision is one of:\n\n```text\nPROCEED_WITH_PROVIDER\nREPLACE_PROVIDER\nCANCEL_THIS_PROVIDER_LANE\n```\n\nDo not infer approval, inventory, payout capability, funding, live callback/postback or real-user readiness from the already-merged technical contracts.\n\nIf the provider lane is abandoned or replaced, close this issue as not planned and preserve the technical contract as historical evidence.\n---\n\nParent: #1112\n\n## Owner schedule\n- Planned account creation date: **2026-08-31 (Monday, KST)**\n- Until then, CENTRAL must not attempt signup, approval, credential entry, or live-provider activation.\n- This issue remains OWNER ACTION; CENTRAL may continue account-independent product work in parallel.\n\n## Goal\nEstablish Adscend Media as the second real web AD_VIEW/reward lane, without treating generic offers or points-only traffic as cash-reward supply.\n\n## Current code authority\nThe account-independent implementation is already merged to `main` via #1127 and #1128.\nCurrent product state: `TECHNICAL_COMPLETE_OWNER_ACTIVATION_PENDING`.\nImplemented already: video category filter, `allowed_traffic=3` cash-incentive gate, web browser config with server-only API credentials, go-live readiness contract, external payout dependency.\n\n## External requirements\n- [ ] publisher account approved\n- [ ] B64 use case explicitly approved as GPT/cash or external-value reward model\n- [ ] website Offer Wall / PixelPointTV profile created\n- [ ] video-only category/path configured\n- [ ] stable opaque user identifiers configured\n- [ ] server postback configured\n- [ ] secure hash/provider-supported postback verification enabled and verified\n- [ ] API credentials stored server-side only\n- [ ] South Korea video inventory observed live\n- [ ] only offers with `allowed_traffic=3` accepted for cash/external-value reward lane\n- [ ] real conversion/postback observed and duplicate controls verified\n- [ ] external reward fulfillment live-ready before consumer activation\n\n## Acceptance\n`allowed_traffic` 0/1/2 never enters B64 cash P0. Provider approval and KR supply must be observed, not inferred. Technical integration without a user payout path is NOT live completion.\n\nNever put publisher API keys, secrets or account credentials in this issue or repository.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -263,11 +263,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5291891057",
+      "id": "github-5592184782",
       "source": "github",
-      "title": "[OWNER-ACTION][HOLD][B64] Adscend approval + Korea rewarded-video inventory proof",
-      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/1117",
-      "description": "## 2026-10-01 CURRENT RECONCILIATION\n\nFresh repository truth:\n\n```text\nCURRENT_MAIN=3d16307a9c1c729b728081f52710ed56b1b819a9\nBUSINESS=B64\nROLE=OWNER_ACTION_LIVE_PROVIDER_PROOF\nPROVIDER=Adscend\nORIGINAL_PLANNED_ACTION_DATE=2026-08-31_PASSED\nTECHNICAL_ACCOUNT_INDEPENDENT_CODE=MERGED\nPUBLISHER_APPROVAL / KR_VIDEO_SUPPLY / ALLOWED_TRAFFIC_LIVE_GATE / POSTBACK=NOT_EVIDENCED\nLIVE_PRODUCTION_PROOF=NO\nPRODUCTION_MUTATION=0\nDISPOSITION=KEEP_OPEN_OWNER_DECISION\n```\n\nThe original 2026-08-31 owner-action date has passed. No later repository evidence proves that the required external provider/account/live Korea proof was completed.\n\nThis issue therefore remains OPEN, but it should no longer read as a scheduled action for August 31. The next owner decision is one of:\n\n```text\nPROCEED_WITH_PROVIDER\nREPLACE_PROVIDER\nCANCEL_THIS_PROVIDER_LANE\n```\n\nDo not infer approval, inventory, payout capability, funding, live callback/postback or real-user readiness from the already-merged technical contracts.\n\nIf the provider lane is abandoned or replaced, close this issue as not planned and preserve the technical contract as historical evidence.\n---\n\nParent: #1112\n\n## Owner schedule\n- Planned account creation date: **2026-08-31 (Monday, KST)**\n- Until then, CENTRAL must not attempt signup, approval, credential entry, or live-provider activation.\n- This issue remains OWNER ACTION; CENTRAL may continue account-independent product work in parallel.\n\n## Goal\nEstablish Adscend Media as the second real web AD_VIEW/reward lane, without treating generic offers or points-only traffic as cash-reward supply.\n\n## Current code authority\nThe account-independent implementation is already merged to `main` via #1127 and #1128.\nCurrent product state: `TECHNICAL_COMPLETE_OWNER_ACTIVATION_PENDING`.\nImplemented already: video category filter, `allowed_traffic=3` cash-incentive gate, web browser config with server-only API credentials, go-live readiness contract, external payout dependency.\n\n## External requirements\n- [ ] publisher account approved\n- [ ] B64 use case explicitly approved as GPT/cash or external-value reward model\n- [ ] website Offer Wall / PixelPointTV profile created\n- [ ] video-only category/path configured\n- [ ] stable opaque user identifiers configured\n- [ ] server postback configured\n- [ ] secure hash/provider-supported postback verification enabled and verified\n- [ ] API credentials stored server-side only\n- [ ] South Korea video inventory observed live\n- [ ] only offers with `allowed_traffic=3` accepted for cash/external-value reward lane\n- [ ] real conversion/postback observed and duplicate controls verified\n- [ ] external reward fulfillment live-ready before consumer activation\n\n## Acceptance\n`allowed_traffic` 0/1/2 never enters B64 cash P0. Provider approval and KR supply must be observed, not inferred. Technical integration without a user payout path is NOT live completion.\n\nNever put publisher API keys, secrets or account credentials in this issue or repository.",
+      "title": "Arcade: [placeholder] Risk-and-reward planning game (teaches Markov decision processes)",
+      "url": "https://github.com/diagonalcounty/heliopoly/issues/297",
+      "description": "**Status:** Placeholder. Needs design before it meets Definition of Ready.\n\n## Idea\nA short, replayable Arcade game that teaches Markov decision processes (MDPs), the math behind planning when outcomes are partly random. The player learns by playing runs, not by reading math.\n\n## Learning goals (from Stanford CS221, MDPs 1: Value Iteration)\n- Judge a strategy by its average payoff over many runs, not by one lucky or unlucky run.\n- Policy evaluation: what a fixed strategy is really worth.\n- Value iteration: finding the best move at each spot by working backward from the payoffs.\n- Discounting: a reward now beats the same reward later.\n\n## Arcade-sized concepts (pick one for the first slice)\n1. **Risky jump run:** a small star map where each jump has odds of success, delay, or damage. The player picks a move at each node, flies a batch of runs, and sees their average next to the best possible average.\n2. **Stay or cash out:** a dice-style contract (the lecture's example). Each round the player keeps flying for a steady payout with a chance the contract ends, or takes a one-time payout. Short, and it teaches expected value quickly.\n3. **Out-plan the AI pilot:** the same map, but an AI pilot fills in values on each node sweep by sweep. The player tries to set a strategy that matches or beats it before the values settle.\n\n## Fits existing Arcade patterns\n- Short runs with fresh layouts each launch (like #293 hull panels and #290 fuel connection).\n- End-of-run message through the shared clerk results card (#296), which could show \"your average vs. best possible.\"\n\n## Open questions\n- How much of the numbers to show (values on nodes, odds on edges, or hidden until the end)?\n- Difficulty ladder: bigger maps, more random outcomes, a lower discount?\n- Any carryover rewards outside the Arcade?\n\n## References\n- Lecture: https://www.youtube.com/watch?v=9g32v7bK3Co\n- Slides: https://web.stanford.edu/class/archive/cs/cs221/cs221.1196/lectures/mdp1.pdf\n\n## Acceptance criteria\nTBD once a concept is chosen.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -292,19 +292,18 @@
       "eligible": true
     },
     {
-      "id": "github-5740607019",
+      "id": "github-5410704722",
       "source": "github",
-      "title": "S3-9 · No risk-adjusted performance metrics",
-      "url": "https://github.com/ChuaCheowHuan/gym-continuousDoubleAuction/issues/121",
-      "description": "_Filed from [doc/15 · S3-9](``https://github.com/ChuaCheowHuan/gym-continuousDoubleAuction/blob/master/doc/15_findings_and_recommendations.md#s3-9--no-risk-adjusted-performance-metrics).`` Severity: S3 — Moderate. Status in the docs: open._\n\nNAV, trade count and reward are recorded. Absent: Sharpe/Sortino, max drawdown *as a reported\nmetric*, hit rate, turnover, inventory statistics, maker/taker ratio, realised-vs-unrealised P&L\nsplit, adverse-selection mark-outs. The counters for several of these already exist and are\ndiscarded after the reward consumes them. `info[\"NAV\"]` is a **string**, round-tripped through\n`float()` by every consumer, discarding the exactness `Decimal` was chosen for.\n\n**Partly addressed:** the episode-end NAV conservation check now parses `info[\"NAV\"]` back with\n`Decimal` and compares against a `Decimal` total, so that one consumer is exact by construction;\n`float()` remains only at the metrics boundary. [16 §16.10](https://github.com/ChuaCheowHuan/gym-continuousDoubleAuction/blob/master/doc/16_verification_log.md) shows the\nround trip was harmless at the default `init_cash = 1e6`, but that **above `init_cash ≈ 1e10` the\nfloat check could not resolve its own `1e-6` tolerance** — a genuine breach read as exactly `0.0`\nand would have passed a corrupt ledger silently. It also corrects the claim that `nav_tolerance`\nwas absorbing float noise. The missing risk-adjusted metrics above, and the remaining `float()`\nconsumers of `info[\"NAV\"]`, are untouched.\n\n---\n_Generated by [Claude Code](https://claude.ai/code)_",
-      "rewardUsd": 0,
+      "title": "[TASK HUNTER] Agents for Humans — $2,000–$10,000 cash",
+      "url": "https://github.com/Inkh95/t3n-trusted-approval-agent/issues/1",
+      "description": "Status: SUBMITTED\nPlatform: Devpost / Amazon Web Services\nTask URL: https://agentsforhumans.devpost.com/\nReward: $40,000 total prize pool; $10,000 Grand Prize; $5,000/$3,000/$2,000 per track\nPayout method: Electronic payment to a winner's bank account or mailed monetary prize; SEPA not explicitly confirmed\nBulgaria eligibility: ELIGIBLE\nAI policy: AI ALLOWED\nDeadline: 2026-09-15 00:00 UTC (2026-09-15 03:00 Europe/Sofia)\nCompetition: Judged contest; no reward is guaranteed for completing/submitting\nEstimated effort: 20–40 hours\nExpected EUR/hour: Not reliably quantifiable because payout depends on winning\nEvidence: Official Devpost connector verified submissions open; Strands Agents SDK required; winner forms and possible W-8BEN/tax information required; payout may take up to 60 days.\nPayout speed: STANDARD, not instant\nEntry cost: No purchase/payment necessary, but implementation time is substantial\nKYC required: YES IF WINNER\nRecommendation: REVIEW REQUIRED\nAutomation decision: NOT AUTO-CLAIMED — fails the standing rules for guaranteed reward, confirmed SEPA/PayPal payout, instant/same-day preference, and no KYC dependency.\n\nSubmission evidence: Devpost project https://devpost.com/software/t3n-trusted-approval-agent\nSubmitted at: 2026-09-10T15:27:11.025-04:00\nVideo URL recorded by Devpost: https://www.youtube.com/watch?v=RLi-Bnrscas\nVerification: Official Devpost connector returned non-null submitted_at and the replacement video URL on 2026-09-10.",
+      "rewardUsd": 2,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 2,
+      "profitPerHourUsd": 24,
+      "eligible": true
     },
     {
       "id": "github-5734621572",
@@ -382,11 +381,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5642477210",
+      "id": "github-5578906086",
       "source": "github",
-      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
-      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
-      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
+      "title": "Paid help needed – RTL9601D VLAN/OMCI issue with Huawei MA5800",
+      "url": "https://github.com/Anime4000/RTL960x/issues/490",
+      "description": "Hello,\n\nWe are Start Bit Net, a fiber optic equipment distributor from Romania, and we are looking for someone with experience in Realtek RTL9601D firmware / OMCI / VLAN handling who can help us solve a compatibility issue.\n\nTest environment:\n\nXPON SFP ONU Stick: Realtek RTL9601D\nOLT: Huawei MA5800\nRouter: Huawei AR5710\nGPON connection\n\nProblem:\n\nWe tested two firmware versions:\n\nV1.0-230303\n\nONU registers successfully on the MA5800 and remains online.\nTraffic passes through the interface and VLANs.\nHowever, we cannot correctly see/identify the VLAN IDs being transported.\n\nV1.10-240408\n\nONU also registers successfully and remains online.\nHowever, no traffic passes through the device.\n\nWe tested several configurations together with the manufacturer's engineer without solving the problem.\n\nOn the same MA5800 OLT port and with the same configuration, a Huawei GPON Stick works correctly without any additional configuration.\n\nTherefore, we believe the problem is related to RTL9601D firmware / OMCI VLAN handling, rather than the optical link or GPON registration.\n\nWe are looking for someone who can help us:\n\ndiagnose the OMCI/VLAN configuration;\ndetermine whether the problem can be solved by RTL9601D configuration parameters;\nanalyze the existing firmware if necessary;\nmodify/build firmware if required;\nachieve correct VLAN operation with Huawei MA5800.\n\nWe can provide the firmware files, configuration information and test results, and we have access to the MA5800 for testing.\n\nThis is a paid engineering job.\n\nIf you have experience with RTL9601D/RTL960x + Huawei MA5800 + OMCI/VLAN, please contact us or reply here.\n\nThank you.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -397,11 +396,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5578906086",
+      "id": "github-5642477210",
       "source": "github",
-      "title": "Paid help needed – RTL9601D VLAN/OMCI issue with Huawei MA5800",
-      "url": "https://github.com/Anime4000/RTL960x/issues/490",
-      "description": "Hello,\n\nWe are Start Bit Net, a fiber optic equipment distributor from Romania, and we are looking for someone with experience in Realtek RTL9601D firmware / OMCI / VLAN handling who can help us solve a compatibility issue.\n\nTest environment:\n\nXPON SFP ONU Stick: Realtek RTL9601D\nOLT: Huawei MA5800\nRouter: Huawei AR5710\nGPON connection\n\nProblem:\n\nWe tested two firmware versions:\n\nV1.0-230303\n\nONU registers successfully on the MA5800 and remains online.\nTraffic passes through the interface and VLANs.\nHowever, we cannot correctly see/identify the VLAN IDs being transported.\n\nV1.10-240408\n\nONU also registers successfully and remains online.\nHowever, no traffic passes through the device.\n\nWe tested several configurations together with the manufacturer's engineer without solving the problem.\n\nOn the same MA5800 OLT port and with the same configuration, a Huawei GPON Stick works correctly without any additional configuration.\n\nTherefore, we believe the problem is related to RTL9601D firmware / OMCI VLAN handling, rather than the optical link or GPON registration.\n\nWe are looking for someone who can help us:\n\ndiagnose the OMCI/VLAN configuration;\ndetermine whether the problem can be solved by RTL9601D configuration parameters;\nanalyze the existing firmware if necessary;\nmodify/build firmware if required;\nachieve correct VLAN operation with Huawei MA5800.\n\nWe can provide the firmware files, configuration information and test results, and we have access to the MA5800 for testing.\n\nThis is a paid engineering job.\n\nIf you have experience with RTL9601D/RTL960x + Huawei MA5800 + OMCI/VLAN, please contact us or reply here.\n\nThank you.",
+      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
+      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
+      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

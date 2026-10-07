@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T23:32:31.240Z",
+  "generatedAt": "2026-10-07T00:46:28.738Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 20,
+  "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -233,6 +233,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5737373727",
+      "source": "github",
+      "title": "Cancelling an unshipped physical reward: refund accounting",
+      "url": "https://github.com/esamarathon/esa-dono-ui/issues/167",
+      "description": "Map: [Amount-first donation flow with per-category incentive pools](https://github.com/esamarathon/esa-dono-ui/issues/151)\n\n## Question\n\n[Donor wallet: showing and spending pool credit](https://github.com/esamarathon/esa-dono-ui/issues/166) decided that cancelling a single physical reward **before it ships** refunds the item value **and** the unused shipping fee to the donor's original Stripe payment method (not as credit). Only that item is refunded. The pledge's remaining category budgets shrink by the item value: unused money is used first, then live allocations and outstanding pool credit are reduced proportionally (largest-remainder rounding), and no new credit is created. Delivery details stay in Stripe.\n\nThe accounting around that card refund is not decided yet. Decide:\n- **Money total:** the item value leaves the charity, unlike a **Refund** (wallet only, money total unchanged). Does the money total drop, and how do `Donation.amount_cents`, `total_donated`, the native and Tiltify messages, and the totals metrics change?\n- **Glossary:** `CONTEXT.md` says a **Refund** \"never goes to the card\". What is this action called, and how is it distinguished from a Refund and a chargeback?\n- **Shipping:** when is shipping refundable if several physical items share one shipment, or if some have already shipped? How is the refundable part calculated?\n- **Wallet-funded part:** physical rewards are funded only with new money (cash floor). Confirm that the refund never touches the wallet-funded part.\n- **Stripe mechanics and failures:** partial refund against the Checkout payment, idempotency, what happens if the refund fails, and what an admin sees.\n- **Interaction with later reversals:** chargeback or a whole-donation Refund after a partial physical card refund.\n\n## Existing decisions (do not reopen)\n\n- [Donor wallet: showing and spending pool credit](https://github.com/esamarathon/esa-dono-ui/issues/166): card refund of item + unused shipping; proportional reduction; shipping is excluded from pledge funding, pools, `Donation.amount_cents`, total donated and money totals; credit never funds physical rewards.\n- [Reversal of pooled allocations](https://github.com/esamarathon/esa-dono-ui/issues/159): Refund and chargeback rules.\n- [Accounting model for pooled allocations](https://github.com/esamarathon/esa-dono-ui/issues/154): `Donation.amount_cents` = new money only.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5592184782",
       "source": "github",
       "title": "Arcade: [placeholder] Risk-and-reward planning game (teaches Markov decision processes)",
@@ -290,20 +305,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5410704722",
-      "source": "github",
-      "title": "[TASK HUNTER] Agents for Humans — $2,000–$10,000 cash",
-      "url": "https://github.com/Inkh95/t3n-trusted-approval-agent/issues/1",
-      "description": "Status: SUBMITTED\nPlatform: Devpost / Amazon Web Services\nTask URL: https://agentsforhumans.devpost.com/\nReward: $40,000 total prize pool; $10,000 Grand Prize; $5,000/$3,000/$2,000 per track\nPayout method: Electronic payment to a winner's bank account or mailed monetary prize; SEPA not explicitly confirmed\nBulgaria eligibility: ELIGIBLE\nAI policy: AI ALLOWED\nDeadline: 2026-09-15 00:00 UTC (2026-09-15 03:00 Europe/Sofia)\nCompetition: Judged contest; no reward is guaranteed for completing/submitting\nEstimated effort: 20–40 hours\nExpected EUR/hour: Not reliably quantifiable because payout depends on winning\nEvidence: Official Devpost connector verified submissions open; Strands Agents SDK required; winner forms and possible W-8BEN/tax information required; payout may take up to 60 days.\nPayout speed: STANDARD, not instant\nEntry cost: No purchase/payment necessary, but implementation time is substantial\nKYC required: YES IF WINNER\nRecommendation: REVIEW REQUIRED\nAutomation decision: NOT AUTO-CLAIMED — fails the standing rules for guaranteed reward, confirmed SEPA/PayPal payout, instant/same-day preference, and no KYC dependency.\n\nSubmission evidence: Devpost project https://devpost.com/software/t3n-trusted-approval-agent\nSubmitted at: 2026-09-10T15:27:11.025-04:00\nVideo URL recorded by Devpost: https://www.youtube.com/watch?v=RLi-Bnrscas\nVerification: Official Devpost connector returned non-null submitted_at and the replacement video URL on 2026-09-10.",
-      "rewardUsd": 2,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 2,
-      "profitPerHourUsd": 24,
-      "eligible": true
     },
     {
       "id": "github-5734621572",

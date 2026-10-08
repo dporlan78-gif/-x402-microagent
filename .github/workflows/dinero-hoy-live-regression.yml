@@ -27,7 +27,7 @@ jobs:
               -H "apikey: $SUPABASE_KEY" \
               -H "Authorization: Bearer $SUPABASE_KEY" \
               -H "Content-Type: application/json" \
-              --data "{\"profile\":\"$profile\"}" \
+              --data "{\"profile_name\":\"$profile\",\"data_snapshot_id\":\"23572c7a-b350-4a92-9f9d-f588416b0e65\"}" \
               | tee "/tmp/$profile.json"
             echo
           done

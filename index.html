@@ -55,7 +55,7 @@ async function go(){
       if(amount>=x.min_balance&&amount>0){rows.push({...x,amount});remaining-=amount;entityUsed.set(x.entity,used+amount);}
     }
     // Second pass uses any remaining capacity, while preserving per-entity guarantee limits.
-    if(remaining>0){for(const x of order){if(remaining<=0)break;const old=rows.find(r=>r.product_id===x.product_id);if(old)continue;const used=entityUsed.get(x.entity)||0;const cap=Math.max(0,Math.min(x.max_balance,x.coverage-used));if(cap<x.min_balance||remaining<x.min_balance)continue;const amount=Math.min(remaining,cap);if(amount>=x.min_balance&&amount>0){const existing=rows.find(r=>r.product_id===x.product_id);if(existing)existing.amount+=amount;else rows.push({...x,amount});remaining-=amount;entityUsed.set(x.entity,used+amount);}}}
+    if(remaining>0){for(const x of order){if(remaining<=0)break;const old=rows.find(r=>r.product_id===x.product_id);const used=entityUsed.get(x.entity)||0;const productRemaining=Math.max(0,x.max_balance-(old?old.amount:0));const cap=Math.max(0,Math.min(productRemaining,x.coverage-used));if(cap<x.min_balance||remaining<x.min_balance)continue;const amount=Math.min(remaining,cap);if(amount>=x.min_balance&&amount>0){const existing=rows.find(r=>r.product_id===x.product_id);if(existing)existing.amount+=amount;else rows.push({...x,amount});remaining-=amount;entityUsed.set(x.entity,used+amount);}}}
     return {rows,assigned:capital-remaining,unassigned:remaining,complete:remaining<0.005};
   }
   const lowestYield=[...candidates].sort((a,b)=>a.tae-b.tae);

@@ -43,7 +43,7 @@ async function go(){
     h+="<div class='rec'><div class='rank'>Opción 1 · Recomendada</div><h3>Mejor distribución del capital</h3><p class='meta'>Esta es la combinación prioritaria; las opciones siguientes son alternativas para comparar.</p></div>";
     j.recommendations.forEach((x,i)=>{
       const liq=x.liquidity==="FULL"?"Liquidez total":x.liquidity==="PARTIAL"?"Liquidez parcial":"Dinero bloqueado";
-      const cap=/trade\\s*republic/i.test(String(x.entity||"")+" "+String(x.product_name||""));
+      const cap=/trade\s*republic/i.test(String(x.entity||"")+" "+String(x.product_name||""));
       const note=cap&&Number(x.amount)>=50000?"En esta propuesta se asignan 50.000 € a Trade Republic: es el importe máximo considerado para obtener el 3 % TAE. El resto del capital se distribuye en otros productos compatibles.":"";
       h+="<div class='rec'><div class='rank'>Parte de la opción 1 · Tramo "+(i+1)+"</div><h3>"+x.product_name+"</h3><div class='entity'>"+x.entity+"</div><div class='rate'>"+Number(x.tae).toFixed(2).replace(".",",")+"% <small>TAE</small></div><div class='chips'><span class='chip'>"+Number(x.amount).toLocaleString("es-ES")+" €</span><span class='chip'>"+liq+"</span><span class='chip'>Cobertura "+Number(x.coverage).toLocaleString("es-ES")+" €</span></div>"+(note?"<p class='meta'>"+note+"</p>":"")+"<div class='source'>Fuente oficial · <a href='"+x.source_url+"' target='_blank' rel='noopener'>Ver oferta →</a></div></div>";
     });

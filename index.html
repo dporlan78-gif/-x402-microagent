@@ -59,12 +59,22 @@ async function go(){
     return {rows,assigned:capital-remaining,unassigned:remaining,complete:remaining<0.005};
   }
   const lowestYield=[...candidates].sort((a,b)=>a.tae-b.tae);
+  function allocateSingle(x){
+    const cap=Math.max(0,Math.min(x.max_balance,x.coverage));
+    const amount=Math.min(cap,capital);
+    if(amount<x.min_balance||amount<=0)return {rows:[],assigned:0,unassigned:capital,complete:false};
+    return {rows:[{...x,amount}],assigned:amount,unassigned:capital-amount,complete:capital-amount<0.005};
+  }
   const plans=[
     {name:"Máxima rentabilidad estimada",desc:"Prioriza las TAE más altas y respeta los límites de cada oferta.",plan:allocate(maxYield,"yield")},
     {name:"Distribución equilibrada",desc:"Limita inicialmente la concentración en la oferta con mayor TAE y reparte el resto entre alternativas compatibles.",plan:allocate(maxYield,"balanced")},
     {name:"Menor dependencia de la oferta más rentable",desc:"Prioriza primero las ofertas con menor TAE, evitando depender de la oferta de mayor remuneración.",plan:allocate(lowestYield,"yield")}
   ];
-  const seenPlans=new Set();const uniquePlans=plans.filter(o=>{const key=o.plan.rows.map(x=>(x.product_id||x.product_name)+":"+Math.round(x.amount*100)/100).sort().join("|")+"#"+Math.round(o.plan.unassigned*100)/100;if(seenPlans.has(key))return false;seenPlans.add(key);return true;});
+  const seenPlans=new Set();const uniquePlans=[];
+  const planKey=o=>o.plan.rows.map(x=>(x.product_id||x.product_name)+":"+Math.round(x.amount*100)/100).sort().join("|")+"#"+Math.round(o.plan.unassigned*100)/100;
+  for(const o of plans){const key=planKey(o);if(!seenPlans.has(key)){seenPlans.add(key);uniquePlans.push(o);}}
+  // If the same full allocation results from different strategies, add transparent single-product alternatives rather than duplicate cards.
+  for(const x of maxYield){if(uniquePlans.length>=3)break;const o={name:"Alternativa concentrada: "+x.product_name,desc:"Usa solo este producto verificado. Si sus límites no permiten colocar todo el capital, el importe restante se indica como no asignado.",plan:allocateSingle(x)};const key=planKey(o);if(!seenPlans.has(key)){seenPlans.add(key);uniquePlans.push(o);}}
   // If the available verified universe yields fewer than three mathematically distinct plans, do not invent products or allocations.
   h+="<div class='portfolio'><strong>3 opciones de cartera para comparar</strong><p class='meta'>Cada opción es una distribución del capital, no un producto aislado. La rentabilidad mostrada es una estimación bruta basada en las TAE registradas; verifica siempre las condiciones oficiales.</p></div>";
   uniquePlans.forEach((o,i)=>{

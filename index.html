@@ -38,24 +38,48 @@ async function go(){
 
   if(j.warnings.length)h+="<div class='warn'>"+j.warnings.join("<br>")+"</div>";
   const p=j.portfolio||{};
-  h+="<div class='portfolio'><strong>Mejor distribución recomendada</strong><p class='meta'>La combinación busca aprovechar el tipo aplicable y respetar los límites de cada producto.</p><div class='numbers'><span>Asignado <b>"+Number(p.assigned||0).toLocaleString("es-ES")+" €</b></span><span>Sin asignar <b>"+Number(p.unassigned||0).toLocaleString("es-ES")+" €</b></span></div></div>";
-  if(j.recommendations.length){
-    h+="<div class='rec'><div class='rank'>Opción 1 · Recomendada</div><h3>Mejor distribución del capital</h3><p class='meta'>Esta es la combinación prioritaria; las opciones siguientes son alternativas para comparar.</p></div>";
-    j.recommendations.forEach((x,i)=>{
+  const esc=v=>String(v??"").replace(/[&<>"]/g,s=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[s]));
+  const pool=[...(Array.isArray(j.alternatives)?j.alternatives:[]),...(Array.isArray(j.recommendations)?j.recommendations:[])];
+  const byId=new Map();pool.forEach(x=>{const id=x.product_id||((x.product_name||"")+"|"+(x.entity||""));if(!byId.has(id))byId.set(id,{...x,tae:Number(x.tae)||0,min_balance:Math.max(0,Number(x.min_balance)||0),max_balance:Number.isFinite(Number(x.max_balance))&&x.max_balance!==null?Number(x.max_balance):Infinity,coverage:Number.isFinite(Number(x.coverage))&&x.coverage!==null?Number(x.coverage):Infinity});});
+  const candidates=[...byId.values()].filter(x=>x.product_name&&x.entity&&x.tae>0);
+  const maxYield=[...candidates].sort((a,b)=>b.tae-a.tae);
+  function allocate(order,mode){
+    let remaining=capital;const rows=[],entityUsed=new Map();
+    for(let i=0;i<order.length&&remaining>0;i++){
+      const x=order[i],used=entityUsed.get(x.entity)||0;
+      const cap=Math.max(0,Math.min(x.max_balance,x.coverage-used));
+      if(cap<x.min_balance||remaining<x.min_balance)continue;
+      let target=remaining;
+      if(mode==="balanced"&&i===0)target=Math.min(remaining,Math.max(x.min_balance,capital*0.25));
+      const amount=Math.min(target,cap);
+      if(amount>=x.min_balance&&amount>0){rows.push({...x,amount});remaining-=amount;entityUsed.set(x.entity,used+amount);}
+    }
+    // Second pass uses any remaining capacity, while preserving per-entity guarantee limits.
+    if(remaining>0){for(const x of order){if(remaining<=0)break;const old=rows.find(r=>r.product_id===x.product_id);if(old)continue;const used=entityUsed.get(x.entity)||0;const cap=Math.max(0,Math.min(x.max_balance,x.coverage-used));if(cap<x.min_balance||remaining<x.min_balance)continue;const amount=Math.min(remaining,cap);if(amount>=x.min_balance&&amount>0){rows.push({...x,amount});remaining-=amount;entityUsed.set(x.entity,used+amount);}}}
+    return {rows,assigned:capital-remaining,unassigned:remaining,complete:remaining<0.005};
+  }
+  const lowestYield=[...candidates].sort((a,b)=>a.tae-b.tae);
+  const plans=[
+    {name:"Máxima rentabilidad estimada",desc:"Prioriza las TAE más altas y respeta los límites de cada oferta.",plan:allocate(maxYield,"yield")},
+    {name:"Distribución equilibrada",desc:"Limita inicialmente la concentración en la oferta con mayor TAE y reparte el resto entre alternativas compatibles.",plan:allocate(maxYield,"balanced")},
+    {name:"Menor dependencia de la oferta más rentable",desc:"Prioriza primero las ofertas con menor TAE, evitando depender de la oferta de mayor remuneración.",plan:allocate(lowestYield,"yield")}
+  ];
+  const seenPlans=new Set();const uniquePlans=plans.filter(o=>{const key=o.plan.rows.map(x=>(x.product_id||x.product_name)+":"+Math.round(x.amount*100)/100).sort().join("|")+"#"+Math.round(o.plan.unassigned*100)/100;if(seenPlans.has(key))return false;seenPlans.add(key);return true;});
+  // If the available verified universe yields fewer than three mathematically distinct plans, do not invent products or allocations.
+  h+="<div class='portfolio'><strong>3 opciones de cartera para comparar</strong><p class='meta'>Cada opción es una distribución del capital, no un producto aislado. La rentabilidad mostrada es una estimación bruta basada en las TAE registradas; verifica siempre las condiciones oficiales.</p></div>";
+  uniquePlans.forEach((o,i)=>{
+    const weighted=o.plan.assigned>0?o.plan.rows.reduce((s,x)=>s+x.amount*x.tae/100,0)/o.plan.assigned*100:0;
+    h+="<div class='rec'><div class='rank'>Opción "+(i+1)+(i===0?" · Mayor TAE primero":" · Alternativa de distribución")+"</div><h3>"+esc(o.name)+"</h3><p class='meta'>"+esc(o.desc)+"</p><div class='rate'>"+weighted.toFixed(2).replace(".",",")+"% <small>TAE media bruta estimada</small></div>";
+    o.plan.rows.forEach(x=>{
       const liq=x.liquidity==="FULL"?"Liquidez total":x.liquidity==="PARTIAL"?"Liquidez parcial":"Dinero bloqueado";
-      const cap=/trade\s*republic/i.test(String(x.entity||"")+" "+String(x.product_name||""));
-      const note=cap&&Number(x.amount)>=50000?"En esta propuesta se asignan 50.000 € a Trade Republic: es el importe máximo considerado para obtener el 3 % TAE. El resto del capital se distribuye en otros productos compatibles.":"";
-      h+="<div class='rec'><div class='rank'>Parte de la opción 1 · Tramo "+(i+1)+"</div><h3>"+x.product_name+"</h3><div class='entity'>"+x.entity+"</div><div class='rate'>"+Number(x.tae).toFixed(2).replace(".",",")+"% <small>TAE</small></div><div class='chips'><span class='chip'>"+Number(x.amount).toLocaleString("es-ES")+" €</span><span class='chip'>"+liq+"</span><span class='chip'>Cobertura "+Number(x.coverage).toLocaleString("es-ES")+" €</span></div>"+(note?"<p class='meta'>"+note+"</p>":"")+"<div class='source'>Fuente oficial · <a href='"+x.source_url+"' target='_blank' rel='noopener'>Ver oferta →</a></div></div>";
+      h+="<div class='rec'><h3>"+esc(x.product_name)+"</h3><div class='entity'>"+esc(x.entity)+"</div><div class='chips'><span class='chip'>"+x.amount.toLocaleString("es-ES",{maximumFractionDigits:2})+" €</span><span class='chip'>"+Number(x.tae).toFixed(2).replace(".",",")+"% TAE</span><span class='chip'>"+liq+"</span></div><div class='source'>Fuente oficial · <a href='"+esc(x.source_url)+"' target='_blank' rel='noopener'>Consultar oferta →</a></div></div>";
     });
-  }
-  const sourceAlternatives=Array.isArray(j.alternatives)?j.alternatives:[];const alternativesToShow=sourceAlternatives.filter(x=>!j.recommendations.some(r=>{if(r.product_id&&x.product_id)return r.product_id===x.product_id;const a=String(r.product_name||"").trim().toLowerCase(),b=String(x.product_name||"").trim().toLowerCase(),ae=String(r.entity||"").trim().toLowerCase(),be=String(x.entity||"").trim().toLowerCase();return !!a&&!!b&&a===b&&ae===be;})).sort((a,b)=>Number(b.tae||0)-Number(a.tae||0)).slice(0,2);
-  if(alternativesToShow.length){
-    h+="<div class='portfolio'><h2>Otras opciones para comparar</h2><p class='meta'>Estas son alternativas individuales; no sustituyen a la distribución recomendada de la opción 1.</p></div>";
-    alternativesToShow.forEach((x,i)=>{
-      h+="<div class='rec'><div class='rank'>Opción "+(i+2)+" · Alternativa</div><h3>"+x.product_name+"</h3><div class='entity'>"+x.entity+"</div><div class='rate'>"+Number(x.tae).toFixed(2).replace(".",",")+"% <small>TAE</small></div><div class='chips'><span class='chip'>"+(x.liquidity==="FULL"?"Liquidez total":x.liquidity==="PARTIAL"?"Liquidez parcial":"Dinero bloqueado")+"</span></div><p class='meta'>Oferta individual para comparar con la opción 1; no representa necesariamente la mejor distribución del total.</p><div class='source'><a href='"+x.source_url+"' target='_blank' rel='noopener'>Consultar fuente oficial →</a></div></div>";
-    });
-  }
-  if(alternativesToShow.length===0&&j.recommendations.length){h+="<div class='warn'><strong>No se ha recibido una alternativa distinta de la opción 1.</strong><br>El servidor devolvió "+(Array.isArray(j.alternatives)?j.alternatives.length:0)+" producto(s) en el ranking y "+j.recommendations.length+" tramo(s) en la distribución. No ocultamos este dato ni inventamos productos.</div>"}else if(alternativesToShow.length===1){h+="<div class='warn'>Se muestra la opción 2. No hay una tercera alternativa verificada compatible con todos los criterios actuales; no vamos a recomendar productos que incumplan la liquidez o las condiciones.</div>"}
+    h+="<div class='numbers'><span>Asignado <b>"+o.plan.assigned.toLocaleString("es-ES",{maximumFractionDigits:2})+" €</b></span><span>Sin asignar <b>"+o.plan.unassigned.toLocaleString("es-ES",{maximumFractionDigits:2})+" €</b></span></div>";
+    if(!o.plan.complete)h+="<div class='warn'><strong>Cartera incompleta.</strong> Quedan "+o.plan.unassigned.toLocaleString("es-ES",{maximumFractionDigits:2})+" € sin asignar con los productos verificados compatibles. No se recomienda forzar el resto.</div>";
+    h+="</div>";
+  });
+  if(uniquePlans.length<3)h+="<div class='warn'>Solo se han podido construir "+uniquePlans.length+" distribuciones matemáticamente distintas con el universo verificado y compatible. No se inventan productos para rellenar una tercera opción. Hay productos adicionales en revisión, pero no pueden recomendarse hasta verificar sus condiciones y fuentes oficiales.</div>";
+  if(Array.isArray(j.excluded_products)&&j.excluded_products.length){h+="<div class='rec'><h3>Por qué se descartan otros productos</h3>";j.excluded_products.slice(0,8).forEach(x=>{h+="<p class='meta'>"+esc(x.product_name||"Producto")+": "+esc(Array.isArray(x.reasons)?x.reasons.join(", "):"revisar condiciones")+"</p>";});h+="</div>";}
   out.innerHTML=h;
   out.scrollIntoView({behavior:"smooth",block:"start"});
  }catch(e){const msg=String(e&&e.message||e).replace(/[&<>]/g,s=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[s]));out.innerHTML="<div class='warn'>No se pudo completar la búsqueda: "+msg+"</div>"}finally{btn.disabled=false}

@@ -36,9 +36,9 @@ async function go(){
   let h="<div class='result-head'><div><div class='eyebrow'>Resultado</div><h2>Mejor distribución para tu dinero</h2></div><div class='verified'>Verificado</div></div><p class='meta'>Motor "+j.engine_version+" · "+new Date(j.snapshot_validated_at).toLocaleString("es-ES",{dateStyle:"medium",timeStyle:"short"})+"</p>";
   if(!j.recommendations.length){h+="<div class='warn'>El motor no ha devuelto recomendaciones para esta selección. No vamos a forzar una recomendación.</div>";if(Array.isArray(j.excluded_products)&&j.excluded_products.length){h+="<div class='rec'><strong>Motivos detectados</strong>";j.excluded_products.slice(0,6).forEach(x=>{h+="<p class='meta'>"+String(x.product_name||"Producto").replace(/[&<>]/g,s=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[s]))+": "+(Array.isArray(x.reasons)?x.reasons.join(", "):"revisar condiciones")+"</p>"});h+="</div>"}}
 
-  if(j.warnings.length)h+="<div class='warn'>"+j.warnings.join("<br>")+"</div>";
-  const p=j.portfolio||{};
-  const esc=v=>String(v??"").replace(/[&<>"]/g,s=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[s]));
+  const esc=v=>String(v??"").replace(/[&<>"']/g,s=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[s]));
+  const safeUrl=v=>{try{const u=new URL(String(v||""),location.href);return u.protocol==="https:"||u.protocol==="http:"?u.href:"#"}catch(_){return "#"}};
+  if(j.warnings.length)h+="<div class='warn'>"+j.warnings.map(esc).join("<br>")+"</div>";
   const pool=[...(Array.isArray(j.alternatives)?j.alternatives:[]),...(Array.isArray(j.recommendations)?j.recommendations:[])];
   const byId=new Map();pool.forEach(x=>{const id=x.product_id||((x.product_name||"")+"|"+(x.entity||""));if(!byId.has(id))byId.set(id,{...x,tae:Number(x.tae)||0,min_balance:Math.max(0,Number(x.min_balance)||0),max_balance:Number.isFinite(Number(x.max_balance))&&x.max_balance!==null?Number(x.max_balance):Infinity,coverage:Number.isFinite(Number(x.coverage))&&x.coverage!==null?Number(x.coverage):Infinity});});
   const candidates=[...byId.values()].filter(x=>x.product_name&&x.entity&&x.tae>0);

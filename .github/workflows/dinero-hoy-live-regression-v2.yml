@@ -1,0 +1,34 @@
+name: Dinero Hoy Live Regression V2
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run live engine regression
+        shell: bash
+        env:
+          SUPABASE_URL: https://dvhxmafeokzquewpwepu.supabase.co
+          SUPABASE_KEY: sb_publishable_6tQ2XAqso0jDQz44ZooGtA_s7E5d0fl
+          SNAPSHOT_ID: 23572c7a-b350-4a92-9f9d-f588416b0e65
+        run: |
+          set -euo pipefail
+          endpoint="$SUPABASE_URL/functions/v1/dinero-hoy-engine"
+          for profile in TEST_01 TEST_02 TEST_03 TEST_04 TEST_05 REGRESSION_MULTI_019; do
+            echo "=== $profile ==="
+            curl --fail-with-body --silent --show-error \
+              -X POST "$endpoint" \
+              -H "apikey: $SUPABASE_KEY" \
+              -H "Authorization: Bearer $SUPABASE_KEY" \
+              -H "Content-Type: application/json" \
+              --data "{\"profile_name\":\"$profile\",\"data_snapshot_id\":\"$SNAPSHOT_ID\"}" \
+              | tee "/tmp/$profile.json"
+            echo
+          done

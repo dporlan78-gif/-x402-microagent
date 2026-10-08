@@ -33,20 +33,29 @@ jobs:
             echo
           done
 
-
-      - name: Certify release via Supabase REST
+      - name: Certify release through protected release gate
         shell: bash
         env:
           SUPABASE_URL: https://dvhxmafeokzquewpwepu.supabase.co
           SUPABASE_KEY: sb_publishable_6tQ2XAqso0jDQz44ZooGtA_s7E5d0fl
         run: |
           set -euo pipefail
-          release="REL-2026-10-08-005"
-          base="$SUPABASE_URL/rest/v1"
-          headers=(-H "apikey: $SUPABASE_KEY" -H "Authorization: Bearer $SUPABASE_KEY" -H "Content-Type: application/json" -H "Prefer: resolution=merge-duplicates,return=minimal")
-          for code in TEST_01 TEST_02 TEST_03 TEST_04 TEST_05 TEST_06 TEST_07; do
-            payload=$(jq -n --arg release "$release" --arg code "$code" '{"release_id":$release,"test_code":$code,"status":"PASS","details":{"engine_version":"engine-0.1.14","certified_by":"live-regression-v2"}}')
-            curl --fail-with-body --silent --show-error --connect-timeout 10 --max-time 30 -X POST "$base/release_tests" "${headers[@]}" --data-binary "$payload"
-          done
-          manifest=$(jq -n --arg release "$release" '{"release_id":$release,"engine_version":"engine-0.1.14","data_snapshot_id":"23572c7a-b350-4a92-9f9d-f588416b0e65","test_suite_version":"tests-0.8.0","status":"APPROVED","tests_passed":7,"tests_failed":0,"source_count":5,"product_count":4,"manifest_hash":"579fae536fa8e6ad27ccce45340a85252997f984b5219cdf7ddebd185a0f7aed"}')
-          curl --fail-with-body --silent --show-error --connect-timeout 10 --max-time 30 -X POST "$base/release_manifest" "${headers[@]}" --data-binary "$manifest"
+          payload=$(jq -n \
+            --arg release "REL-2026-10-08-005" \
+            --arg engine "engine-0.1.14" \
+            --arg snapshot "23572c7a-b350-4a92-9f9d-f588416b0e65" \
+            --arg suite "tests-0.8.0" \
+            '{"p_release_id":$release,"p_engine_version":$engine,"p_snapshot_id":$snapshot,"p_test_suite_version":$suite}')
+
+          response=$(curl --fail-with-body --silent --show-error \
+            --connect-timeout 10 --max-time 30 \
+            -X POST "$SUPABASE_URL/rest/v1/rpc/certify_release" \
+            -H "apikey: $SUPABASE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_KEY" \
+            -H "Content-Type: application/json" \
+            --data-binary "$payload")
+
+          echo "$response"
+          test "$(echo "$response" | jq -r '.status')" = "APPROVED"
+          test "$(echo "$response" | jq -r '.tests_passed')" = "7"
+          test "$(echo "$response" | jq -r '.tests_failed')" = "0"

@@ -59,3 +59,25 @@ jobs:
               fi
             done
           done
+
+      - name: Smoke test the public app endpoint
+        shell: bash
+        env:
+          SUPABASE_URL: https://dvhxmafeokzquewpwepu.supabase.co
+          SUPABASE_KEY: sb_publishable_6tQ2XAqso0jDQz44ZooGtA_s7E5d0fl
+          SNAPSHOT_ID: 1f42a628-1fc3-4f2a-b15d-c75978900748
+        run: |
+          set -euo pipefail
+          response=$(curl --fail-with-body --silent --show-error --connect-timeout 10 --max-time 90 \
+            -X POST "$SUPABASE_URL/functions/v1/dinero-hoy-app" \
+            -H "apikey: $SUPABASE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_KEY" \
+            -H "Content-Type: application/json" \
+            --data '{"capital":50000,"horizon_months":12,"liquidity_requirement":"FULL","risk_level":"VERY_LOW","accepts_conditions":false,"is_new_customer":true}')
+          echo "$response" | jq .
+          test "$(echo "$response" | jq -r '.ok')" = "true"
+          test "$(echo "$response" | jq -r '.engine_version')" = "engine-0.1.24"
+          test "$(echo "$response" | jq -r '.snapshot')" = "$SNAPSHOT_ID"
+          test "$(echo "$response" | jq -r '.portfolio.complete')" = "true"
+          test "$(echo "$response" | jq -r '.recommendations[0].tae')" = "3.04"
+          test "$(echo "$response" | jq -r '.recommendations[0].amount')" = "50000"

@@ -22,6 +22,9 @@ jobs:
           response=$(curl --fail-with-body --silent --show-error -X POST "$SUPABASE_URL/rest/v1/rpc/get_latest_approved_release_status" -H "apikey: $SUPABASE_KEY" -H "Authorization: Bearer $SUPABASE_KEY" -H "Content-Type: application/json" --data '{}')
           echo "$response" | jq .
           test "$(echo "$response" | jq -r '.status')" = "APPROVED"
+          test "$(echo "$response" | jq -r '.release_id')" = "REL-2026-10-10-001"
+          test "$(echo "$response" | jq -r '.engine_version')" = "engine-0.1.24"
+          test "$(echo "$response" | jq -r '.data_snapshot_id')" = "1f42a628-1fc3-4f2a-b15d-c75978900748"
           test "$(echo "$response" | jq -r '.tests_passed')" = "7"
           test "$(echo "$response" | jq -r '.tests_failed')" = "0"
 

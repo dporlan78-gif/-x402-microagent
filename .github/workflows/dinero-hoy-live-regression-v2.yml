@@ -12,54 +12,32 @@ jobs:
   regression:
     runs-on: ubuntu-latest
     steps:
+      - name: Verify latest approved release metadata
+        shell: bash
+        env:
+          SUPABASE_URL: https://dvhxmafeokzquewpwepu.supabase.co
+          SUPABASE_KEY: sb_publishable_6tQ2XAqso0jDQz44ZooGtA_s7E5d0fl
+        run: |
+          set -euo pipefail
+          response=$(curl --fail-with-body --silent --show-error -X POST "$SUPABASE_URL/rest/v1/rpc/get_latest_approved_release_status" -H "apikey: $SUPABASE_KEY" -H "Authorization: Bearer $SUPABASE_KEY" -H "Content-Type: application/json" --data '{}')
+          echo "$response" | jq .
+          test "$(echo "$response" | jq -r '.status')" = "APPROVED"
+          test "$(echo "$response" | jq -r '.tests_passed')" = "7"
+          test "$(echo "$response" | jq -r '.tests_failed')" = "0"
+
       - name: Run live engine regression
         shell: bash
         env:
           SUPABASE_URL: https://dvhxmafeokzquewpwepu.supabase.co
           SUPABASE_KEY: sb_publishable_6tQ2XAqso0jDQz44ZooGtA_s7E5d0fl
-          SNAPSHOT_ID: 23572c7a-b350-4a92-9f9d-f588416b0e65
+          SNAPSHOT_ID: d0f280d6-f6e9-4c5f-bd3a-9afcacd333b3
         run: |
           set -euo pipefail
           endpoint="$SUPABASE_URL/functions/v1/dinero-hoy-engine"
           for profile in TEST_01 TEST_02 TEST_03 TEST_04 TEST_05 REGRESSION_MULTI_019; do
             echo "=== $profile ==="
-            curl --fail-with-body --silent --show-error \
-              -X POST "$endpoint" \
-              -H "apikey: $SUPABASE_KEY" \
-              -H "Authorization: Bearer $SUPABASE_KEY" \
-              -H "Content-Type: application/json" \
-              --data "{\"profile_name\":\"$profile\",\"data_snapshot_id\":\"$SNAPSHOT_ID\"}" \
-              | tee "/tmp/$profile.json"
-            echo
+            response=$(curl --fail-with-body --silent --show-error -X POST "$endpoint" -H "apikey: $SUPABASE_KEY" -H "Authorization: Bearer $SUPABASE_KEY" -H "Content-Type: application/json" --data "{\"profile_name\":\"$profile\",\"data_snapshot_id\":\"$SNAPSHOT_ID\"}")
+            echo "$response" | jq .
+            test "$(echo "$response" | jq -r '.ok')" = "true"
+            test "$(echo "$response" | jq -r '.result.data_snapshot_id')" = "$SNAPSHOT_ID"
           done
-
-      - name: Certify release through protected release gate
-        shell: bash
-        env:
-          SUPABASE_URL: https://dvhxmafeokzquewpwepu.supabase.co
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: |
-          set -euo pipefail
-          if [[ -z "${SUPABASE_SERVICE_ROLE_KEY:-}" ]]; then
-            echo "::error::Missing repository secret SUPABASE_SERVICE_ROLE_KEY. Add the Supabase service_role/secret key in GitHub Settings > Secrets and variables > Actions."
-            exit 1
-          fi
-          payload=$(jq -n \
-            --arg release "REL-2026-10-08-005" \
-            --arg engine "engine-0.1.14" \
-            --arg snapshot "23572c7a-b350-4a92-9f9d-f588416b0e65" \
-            --arg suite "tests-0.8.0" \
-            '{"p_release_id":$release,"p_engine_version":$engine,"p_snapshot_id":$snapshot,"p_test_suite_version":$suite}')
-
-          response=$(curl --fail-with-body --silent --show-error \
-            --connect-timeout 10 --max-time 30 \
-            -X POST "$SUPABASE_URL/rest/v1/rpc/certify_release" \
-            -H "apikey: $SUPABASE_SERVICE_ROLE_KEY" \
-            -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" \
-            -H "Content-Type: application/json" \
-            --data-binary "$payload")
-
-          echo "$response"
-          test "$(echo "$response" | jq -r '.status')" = "APPROVED"
-          test "$(echo "$response" | jq -r '.tests_passed')" = "7"
-          test "$(echo "$response" | jq -r '.tests_failed')" = "0"

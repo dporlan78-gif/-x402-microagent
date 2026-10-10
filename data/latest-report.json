@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T19:32:06.771Z",
+  "generatedAt": "2026-10-10T20:33:29.032Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -159,6 +159,21 @@
       "eligible": true
     },
     {
+      "id": "github-5794782255",
+      "source": "github",
+      "title": "Bug: Trade Republic staking rewards and their tax are not imported",
+      "url": "https://github.com/we-promise/sure/issues/4115",
+      "description": "## Before you start (required)\n\n### General checklist\n\n- [x] I have removed personal / sensitive data from screenshots and logs\n- [x] I have searched [existing issues](https://github.com/we-promise/sure/issues?q=is:issue) and [discussions](https://github.com/we-promise/sure/discussions) to ensure this is not a duplicate issue\n\n### How are you using Sure?\n\n- [ ] I was a paying Maybe customer (hosted version)\n- [ ] I use it on PikaPod, Umbrel or similar (VPS included)\n- [x] I am a self-hosted user (local only)\n\n### Self hoster checklist\n\n- Self hosted app commit SHA (find in user menu): bdb280b3b\n  - [x] I have confirmed that my app's commit is the latest version of Sure\n- Where are you hosting?\n  - [ ] Render\n  - [ ] Docker Compose\n  - [ ] Umbrel\n  - [ ] PikaPod\n  - [x] Other (please specify): TrueNAS SCALE app (Docker)\n\n---\n\n## Bug description\n\nTrade Republic pays crypto staking rewards (Solana in my case) every week, and charges the tax on each reward to the cash account. The account statement lists every tax debit, for example:\n\n```\nImposte · Staking Reward XF000SOL0012 Solana, quantity: 0.024461\n```\n\nNeither the reward nor the tax is on the Trade Republic timeline, so the sync cannot import them:\n\n- **Crypto account:** the holding is correct, because it comes from the positions snapshot. The trades, though, add up to less than the position, since the reward coins have no trade. Cost basis and the holding's history miss them.\n- **Cash account:** the current balance is correct, because it is anchored to Trade Republic's cash. The balance history, though, misses the small weekly tax debits, and drifts further from the statement each week before today.\n\nOn my account the statement has 46 weekly tax debits between November 2025 and October 2026. I read both timeline topics in full (`timelineTransactions` and `timelineActivityLog`, 61 pages). They contain no event for any reward or tax debit. Everything else on the statement reconciles line by line with what Sure imports from the timeline.\n\n### To Reproduce\n\n1. Hold a crypto asset with staking enabled at Trade Republic (for example Solana) for a few weeks.\n2. Sync the Trade Republic connection.\n3. Compare the crypto trades with the position quantity, and the cash account's history with the monthly statement.\n4. See that the reward coins and the weekly \"Staking Reward\" tax debits are missing.\n\n### Expected behavior\n\nStaking rewards import as crypto buys at no cost, and their tax as a cash debit. If Trade Republic does not expose them outside the statement, the limitation should at least be documented, so users know why the crypto trades and the cash history differ from the statement.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5647589338",
       "source": "github",
       "title": "US-28: Cash 6-month reminder",
@@ -293,21 +308,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5299665979",
-      "source": "github",
-      "title": "Bug: Crypto wallet activities don't support staking rewards and are inconsistent with other investment accounts",
-      "url": "https://github.com/we-promise/sure/issues/3294",
-      "description": "## Before you start (required)\n\n### General checklist\n\n- [x] I have removed personal / sensitive data from screenshots and logs\n- [x] I have searched [existing issues](https://github.com/we-promise/sure/issues?q=is:issue) and [discussions](https://github.com/we-promise/sure/discussions) to ensure this is not a duplicate issue\n    \n### How are you using Sure?\n\n- [ ] I was a paying Maybe customer (hosted version)\n- [ ] I use it on PikaPod, Umbrel or similar (VPS included)\n- [x] I am a self-hosted user (local only)\n\n### Self hoster checklist\n\n_Paying, hosted users should delete this entire section._\n\nIf you are a self-hosted user, please complete all of the information below. Issues with incomplete information will be marked as `Needs Info` to help our small team prioritize bug fixes.\n\n- Self hosted app commit SHA (find in user menu): deb61fe\n  - [x] I have confirmed that my app's commit is the latest version of Sure\n- Where are you hosting?\n  - [ ] Render\n  - [x] Docker Compose\n  - [ ] Umbrel\n  - [ ] PikaPod\n  - [ ] Other (please specify)\n\n---\n\n## Bug description\n\nCrypto wallets currently have several inconsistencies in how activities are represented and created.\n\nFirst, when creating a Crypto Wallet, there is a cash component. This doesn't make sense for a crypto-only wallet, since it should consist of crypto assets rather than a separate cash balance. See issue #3277 for more context; this issue doesn't aim to go into that part in detail.\n\nMore importantly, there is currently no appropriate way to record staking rewards.\n\nFor example, if I receive a 10€ equivalent Solana staking reward, there is no way to add the received SOL to the wallet. The closest workaround is to create a \"Buy\" activity, but that doesn't accurately represent what happened: I didn't purchase the crypto, I received it as a staking reward.\n\nThe \"Dividends\" and \"Interest\" activity types don't solve this either, because they add cash to the account. A staking reward should increase the amount of the underlying cryptocurrency itself, not add FIAT cash to the wallet.\n\nThere is also an inconsistency when creating buy/sell activities. When clicking \"New\" in the Activity tab of a Crypto Wallet, there is no option to create a buy/sell activity for a crypto. With other FIAT investment accounts, these activities can be created directly from the Activity tab.\n\nFor a Crypto Wallet, I have to go to Holdings → New activity to create a buy/sell transaction instead. This is inconsistent with the rest of the app.\n\n### To Reproduce\n\n#### Staking rewards\n\n1. Open or create a Crypto Wallet.\n2. Go to the Activity tab.\n3. Try to record receiving a staking reward, e.g. 10€ worth of SOL.\n4. Observe that there is no activity type for receiving the underlying cryptocurrency as a reward.\n5. \"Buy\" can be used as a workaround, but incorrectly represents the transaction.\n6. \"Dividends\" and \"Interest\" add cash rather than the rewarded cryptocurrency.\n\n#### Buy/sell activities\n\n1. Open a Crypto Wallet.\n2. Go to the Activity tab.\n3. Click \"New\".\n4. Observe that there is no option to create a buy/sell activity for a cryptocurrency.\n5. Go to Holdings → New activity.\n6. Observe that a crypto buy/sell activity can be created from there.\n\n### Expected behavior\n\n- There should be an activity type for receiving staking rewards that directly increases the quantity of the underlying cryptocurrency.\n- For example, receiving a 10€ equivalent SOL staking reward should add the corresponding amount of SOL to the wallet, rather than adding FIAT cash.\n- Staking rewards should not need to be recorded as \"Buy\" activities, since no purchase took place.\n- The Activity → New flow for Crypto Wallets should allow users to create crypto buy/sell activities directly.\n- Buy/sell activities should be accessible consistently from the Activity tab, as they are for other investment accounts.\n- Ideally, the activity model for Crypto Wallets should reflect that the wallet contains crypto assets and that rewards such as staking are received in the underlying crypto rather than as cash.\n\n### Screenshots and/or recordings\n\nNope.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5734621572",
       "source": "github",
       "title": "Paid plan: one-time purchase that unlocks paid features",
@@ -428,11 +428,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5780093052",
+      "id": "github-5644875162",
       "source": "github",
-      "title": "feat: free and paid tiers",
-      "url": "https://github.com/haim0n/mygymbot/issues/23",
-      "description": "Plain-code features (logging, Autopilot, charts, import) stay free. AI features (coach chat, form checks, check-ins, daily note) need a paid plan, with a small free allowance. Set the price from the measured cost per user (see the AI cost issue) and from current competitor prices.\n",
+      "title": "RustCore. Coinage: Paid unloads",
+      "url": "https://github.com/paritytech/trinity-user-agents/issues/1106",
+      "description": "Context in the root task: https://github.com/paritytech/trinity-user-agents/issues/1039\n\nAsk Torsten about alignment with current Coinage logic in Rust core:\n\nhttps://matrix.to/#/!cCpNQYBGbxoKhCQblR:parity.io/$_4Z9kijKc6uk5ZDczmQIBA39vYw6TbFBcbTmRIbe0eE?via=parity.io&via=matrix.org",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -443,11 +443,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5644875162",
+      "id": "github-5780093052",
       "source": "github",
-      "title": "RustCore. Coinage: Paid unloads",
-      "url": "https://github.com/paritytech/trinity-user-agents/issues/1106",
-      "description": "Context in the root task: https://github.com/paritytech/trinity-user-agents/issues/1039\n\nAsk Torsten about alignment with current Coinage logic in Rust core:\n\nhttps://matrix.to/#/!cCpNQYBGbxoKhCQblR:parity.io/$_4Z9kijKc6uk5ZDczmQIBA39vYw6TbFBcbTmRIbe0eE?via=parity.io&via=matrix.org",
+      "title": "feat: free and paid tiers",
+      "url": "https://github.com/haim0n/mygymbot/issues/23",
+      "description": "Plain-code features (logging, Autopilot, charts, import) stay free. AI features (coach chat, form checks, check-ins, daily note) need a paid plan, with a small free allowance. Set the price from the measured cost per user (see the AI cost issue) and from current competitor prices.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

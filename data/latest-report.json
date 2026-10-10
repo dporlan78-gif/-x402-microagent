@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T06:41:02.771Z",
+  "generatedAt": "2026-10-10T07:34:16.324Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -428,11 +428,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5644875162",
+      "id": "github-5780093052",
       "source": "github",
-      "title": "RustCore. Coinage: Paid unloads",
-      "url": "https://github.com/paritytech/trinity-user-agents/issues/1106",
-      "description": "Context in the root task: https://github.com/paritytech/trinity-user-agents/issues/1039\n\nAsk Torsten about alignment with current Coinage logic in Rust core:\n\nhttps://matrix.to/#/!cCpNQYBGbxoKhCQblR:parity.io/$_4Z9kijKc6uk5ZDczmQIBA39vYw6TbFBcbTmRIbe0eE?via=parity.io&via=matrix.org",
+      "title": "feat: free and paid tiers",
+      "url": "https://github.com/haim0n/mygymbot/issues/23",
+      "description": "Plain-code features (logging, Autopilot, charts, import) stay free. AI features (coach chat, form checks, check-ins, daily note) need a paid plan, with a small free allowance. Set the price from the measured cost per user (see the AI cost issue) and from current competitor prices.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -443,11 +443,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5780093052",
+      "id": "github-5644875162",
       "source": "github",
-      "title": "feat: free and paid tiers",
-      "url": "https://github.com/haim0n/mygymbot/issues/23",
-      "description": "Plain-code features (logging, Autopilot, charts, import) stay free. AI features (coach chat, form checks, check-ins, daily note) need a paid plan, with a small free allowance. Set the price from the measured cost per user (see the AI cost issue) and from current competitor prices.\n",
+      "title": "RustCore. Coinage: Paid unloads",
+      "url": "https://github.com/paritytech/trinity-user-agents/issues/1106",
+      "description": "Context in the root task: https://github.com/paritytech/trinity-user-agents/issues/1039\n\nAsk Torsten about alignment with current Coinage logic in Rust core:\n\nhttps://matrix.to/#/!cCpNQYBGbxoKhCQblR:parity.io/$_4Z9kijKc6uk5ZDczmQIBA39vYw6TbFBcbTmRIbe0eE?via=parity.io&via=matrix.org",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

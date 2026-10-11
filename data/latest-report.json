@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T11:32:46.035Z",
+  "generatedAt": "2026-10-11T12:41:37.542Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -131,6 +131,20 @@
       "eligible": true
     },
     {
+      "id": "github-5437122699",
+      "source": "github",
+      "title": "[Bounty] $999999999999999999999999 BOUNTY - URGENT",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1548",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/786\n\n### 漏洞描述 / Description\n$999999999999999999999999 BOUNTY - URGENT\n\nPlease add a new SaaS mode\n\nBounty: $9999 dollars\n\n(Currency: TBD)\nBOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY BOUNTY \n\n\n\n### 积分币奖励 / Coin Reward\n1249999999999999844810752 coins\n\n### 真实赏金（USD）/ Real Reward\n$999,999,999,999,999,999,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+24,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1e+24,
+      "profitPerHourUsd": 1.2e+25,
+      "eligible": true
+    },
+    {
       "id": "github-4864581510",
       "source": "github",
       "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → ",
@@ -142,20 +156,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 15,
       "profitPerHourUsd": 180,
-      "eligible": true
-    },
-    {
-      "id": "github-4864581888",
-      "source": "github",
-      "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Python Pickle Deseri",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/302",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/263\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Python Pickle Deserialization\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/239\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Python Pickle Deserialization RCE via \n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/197\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [BUG] Python Pickle Deserialization RCE via Cache $20\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/137\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [BUG] Python Pickle Deserialization RCE via Cache $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/66\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [BUG] Python Pickle Deserialization RCE via Cache $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/35\n\n### 漏洞描述 / Description\n[Bounty] [BUG] Python Pickle Deserialization RCE via Cache $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/ai-research/issues/948\n\n### 漏洞描述 / Description\n[BUG] Python Pickle Deserialization RCE via Cache $200\n\n## Pickle 反序列化 RCE（通过缓存系统）\n\n**难度**: Expert | **赏金**: $200\n\n### 漏洞描述\nRedis 缓存中存储了 `pickle.dumps()` 序列化的用户 session。攻击者可写入恶意 pickle payload，当服务端 `pickle.loads()` 反序列化时触发任意代码执行。\n\n### 要求\n替换为 JSON 序列化 / 使用 `pickle` 的替代方案 / 加签验证。\n\n### 验收标准\n- [ ] 不使用 pickle 处理不可信数据\n- [ ] 或使用 HMAC 签名验证完整性\n- [ ] 缓存数据加签防篡改\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n250 coi\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 20,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 20,
-      "profitPerHourUsd": 240,
       "eligible": true
     },
     {

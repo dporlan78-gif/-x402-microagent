@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T13:34:25.025Z",
+  "generatedAt": "2026-10-11T14:34:07.607Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -308,6 +308,21 @@
       "eligible": true
     },
     {
+      "id": "github-5801841657",
+      "source": "github",
+      "title": "Simulated paid checkout and paid-sales activation",
+      "url": "https://github.com/erasylurazalin/biletflow/issues/42",
+      "description": "Paid tickets with a clearly labelled simulation instead of real money (SRS 3.2, 4.5, 4.6, success criterion 2).\n\n- Activation per event: an organizer-owned checklist (payout account on the organizer profile, simulated fee of 5,000 KZT since SRS 3.3 leaves the amount open, accepted terms). Paid ticket types cannot be bought before activation.\n- Paid orders start `pending` and hold inventory for 15 minutes (the SRS gives no time; 15 minutes is our default). `POST /api/orders/:id/pay` marks it paid and issues tickets. Expired orders release their inventory and never produce tickets.\n- Every simulated payment is labelled as demonstration data in the API and never shown as a real transaction (SRS 4.6).\n- Use the next free migration number when you open the PR.\n\nDue: October 24, 2026.\n\nDone when: an organizer activates paid sales on their event, an attendee buys a paid ticket through pending and pay, an expired pending order returns its seats, and tests cover buying before activation and paying an expired order.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5734621572",
       "source": "github",
       "title": "Paid plan: one-time purchase that unlocks paid features",
@@ -338,11 +353,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5642477210",
+      "id": "github-5734624148",
       "source": "github",
-      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
-      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
-      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
+      "title": "Paid: custom rule profiles",
+      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
+      "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -353,11 +368,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5734624148",
+      "id": "github-5642477210",
       "source": "github",
-      "title": "Paid: custom rule profiles",
-      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
-      "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
+      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
+      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
+      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -433,21 +448,6 @@
       "title": "RustCore. Coinage: Paid unloads",
       "url": "https://github.com/paritytech/trinity-user-agents/issues/1106",
       "description": "Context in the root task: https://github.com/paritytech/trinity-user-agents/issues/1039\n\nAsk Torsten about alignment with current Coinage logic in Rust core:\n\nhttps://matrix.to/#/!cCpNQYBGbxoKhCQblR:parity.io/$_4Z9kijKc6uk5ZDczmQIBA39vYw6TbFBcbTmRIbe0eE?via=parity.io&via=matrix.org",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5780093052",
-      "source": "github",
-      "title": "feat: free and paid tiers",
-      "url": "https://github.com/haim0n/mygymbot/issues/23",
-      "description": "Plain-code features (logging, Autopilot, charts, import) stay free. AI features (coach chat, form checks, check-ins, daily note) need a paid plan, with a small free allowance. Set the price from the measured cost per user (see the AI cost issue) and from current competitor prices.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

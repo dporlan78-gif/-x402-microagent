@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T05:34:17.430Z",
+  "generatedAt": "2026-10-11T06:41:59.257Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 18,
+  "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -279,21 +279,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5291891057",
-      "source": "github",
-      "title": "[OWNER-ACTION][HOLD][B64] Adscend approval + Korea rewarded-video inventory proof",
-      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/1117",
-      "description": "## 2026-10-01 CURRENT RECONCILIATION\n\nFresh repository truth:\n\n```text\nCURRENT_MAIN=3d16307a9c1c729b728081f52710ed56b1b819a9\nBUSINESS=B64\nROLE=OWNER_ACTION_LIVE_PROVIDER_PROOF\nPROVIDER=Adscend\nORIGINAL_PLANNED_ACTION_DATE=2026-08-31_PASSED\nTECHNICAL_ACCOUNT_INDEPENDENT_CODE=MERGED\nPUBLISHER_APPROVAL / KR_VIDEO_SUPPLY / ALLOWED_TRAFFIC_LIVE_GATE / POSTBACK=NOT_EVIDENCED\nLIVE_PRODUCTION_PROOF=NO\nPRODUCTION_MUTATION=0\nDISPOSITION=KEEP_OPEN_OWNER_DECISION\n```\n\nThe original 2026-08-31 owner-action date has passed. No later repository evidence proves that the required external provider/account/live Korea proof was completed.\n\nThis issue therefore remains OPEN, but it should no longer read as a scheduled action for August 31. The next owner decision is one of:\n\n```text\nPROCEED_WITH_PROVIDER\nREPLACE_PROVIDER\nCANCEL_THIS_PROVIDER_LANE\n```\n\nDo not infer approval, inventory, payout capability, funding, live callback/postback or real-user readiness from the already-merged technical contracts.\n\nIf the provider lane is abandoned or replaced, close this issue as not planned and preserve the technical contract as historical evidence.\n---\n\nParent: #1112\n\n## Owner schedule\n- Planned account creation date: **2026-08-31 (Monday, KST)**\n- Until then, CENTRAL must not attempt signup, approval, credential entry, or live-provider activation.\n- This issue remains OWNER ACTION; CENTRAL may continue account-independent product work in parallel.\n\n## Goal\nEstablish Adscend Media as the second real web AD_VIEW/reward lane, without treating generic offers or points-only traffic as cash-reward supply.\n\n## Current code authority\nThe account-independent implementation is already merged to `main` via #1127 and #1128.\nCurrent product state: `TECHNICAL_COMPLETE_OWNER_ACTIVATION_PENDING`.\nImplemented already: video category filter, `allowed_traffic=3` cash-incentive gate, web browser config with server-only API credentials, go-live readiness contract, external payout dependency.\n\n## External requirements\n- [ ] publisher account approved\n- [ ] B64 use case explicitly approved as GPT/cash or external-value reward model\n- [ ] website Offer Wall / PixelPointTV profile created\n- [ ] video-only category/path configured\n- [ ] stable opaque user identifiers configured\n- [ ] server postback configured\n- [ ] secure hash/provider-supported postback verification enabled and verified\n- [ ] API credentials stored server-side only\n- [ ] South Korea video inventory observed live\n- [ ] only offers with `allowed_traffic=3` accepted for cash/external-value reward lane\n- [ ] real conversion/postback observed and duplicate controls verified\n- [ ] external reward fulfillment live-ready before consumer activation\n\n## Acceptance\n`allowed_traffic` 0/1/2 never enters B64 cash P0. Provider approval and KR supply must be observed, not inferred. Technical integration without a user payout path is NOT live completion.\n\nNever put publisher API keys, secrets or account credentials in this issue or repository.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5592184782",
       "source": "github",
       "title": "Arcade: [placeholder] Risk-and-reward planning game (teaches Markov decision processes)",
@@ -307,6 +292,20 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5160514049",
+      "source": "github",
+      "title": "Global cash promoter — authoritative payout + competition filter",
+      "url": "https://github.com/liubaining-louis/louis-os/issues/403",
+      "description": "Build and run a worldwide promotion stage after Global Opportunity Radar.\n\nDefinition of done:\n- search fresh open GitHub bounty/reward issues globally;\n- inspect authoritative provider evidence in comments (Algora/Opire or documented funded receipt);\n- extract reward amount and active attempt count where available;\n- reject saturated (>5 active attempts), stale, unsafe, KYC/spend/signature-gated, or unverifiable payout tasks;\n- favor $1–$100 bounded Python/JS/TS/Go/docs/data/research tasks;\n- maintain target shortlist of 8, max 10;\n- do not count shortlist as submission or revenue;\n- hand safe candidates to existing execution/Mission Bridge path.",
+      "rewardUsd": 1,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1,
+      "profitPerHourUsd": 12,
+      "eligible": true
     },
     {
       "id": "github-5734621572",

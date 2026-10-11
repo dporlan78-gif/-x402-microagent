@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T22:33:59.956Z",
+  "generatedAt": "2026-10-11T23:32:54.192Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 18,
+  "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -159,6 +159,20 @@
       "eligible": true
     },
     {
+      "id": "github-5806021588",
+      "source": "github",
+      "title": "🔔 New Stock Hunter offer found",
+      "url": "https://github.com/javierruss081-coder/Marcelo-free-stock-hunter-/issues/1",
+      "description": "# New Stock Hunter offers\n\n## SoFi Invest — Current investing promotion\n- Reward: Stock award / bonus varies by current promotion\n- Requirement: Promotion-specific — verify funding/eligibility\n- Official source: https://support.sofi.com/hc/en-us/articles/sofi-invest-promotions-summary\n\n## Public — Referral stock / ETF reward\n- Reward: $100 in stock or ETF\n- Requirement: Referral + at least $1,000, deposit\n- Official source: https://help.public.com/en/articles/2711925-public-referral-program\n\n## Moomoo — Welcome Bonus — free NVDA stock\n- Reward: $30–$1,000 in NVDA stock\n- Requirement: Deposit required: $500+; holding period applies\n- Official source: https://www.moomoo.com/us/support/topic4_410\n\n## E*TRADE — New brokerage account cash bonus\n- Reward: Cash bonus — verify current tier\n- Requirement: Deposit required: $1,000+; promo code required\n- Official source: https://us.etrade.com/promo/brokerage\n\n## Charles Schwab — Referred-friend brokerage bonus\n- Reward: Up to $1,000 cash bonus\n- Requirement: Referral + qualifying net deposit; $25,000+ minimum tier\n- Official source: https://www.schwab.com/referral\n",
+      "rewardUsd": 100,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 100,
+      "profitPerHourUsd": 1200,
+      "eligible": true
+    },
+    {
       "id": "github-5794782255",
       "source": "github",
       "title": "Bug: Trade Republic staking rewards and their tax are not imported",
@@ -284,21 +298,6 @@
       "title": "Automate Whop bounty payout receipt evidence for zero-touch settlement",
       "url": "https://github.com/leijnsejulian07-alt/Workflow-OS/issues/201",
       "description": "## Goal\nClose the remaining zero-touch gap between a proven Whop workforce-bounty submission and the existing received-cash settlement/reconciliation loop.\n\n## Current executable state\n- `submit_reward` can render/QC and submit through the durable Whop path.\n- Submission provenance is durable and bound to immutable parent OpenShorts render provenance.\n- Settlement can attribute an already-recorded `whop_bounties` cash receipt to exact submission provenance, reconcile received cash, and schedule bounded KEEP/SCALE work.\n- The missing machine boundary is creation of that independent cash receipt + `WhopBountyPayoutEvidence`. Current settlement intentionally refuses to infer payout from submission success.\n\n## Fresh official evidence — 2026-09-15\nWhop's official, DevRel-reviewed **Global payouts API guide** (published 2026-08-05) now documents a machine-readable withdrawal lifecycle suitable for verifying that money has actually left Whop and reached a payout destination:\n- production REST base: `https://api.whop.com/api/v1` (sandbox: `https://sandbox-api.whop.com/api/v1`);\n- least-privilege scopes shown for this flow include `payout:withdrawal:read` and `webhook_receive:withdrawals` (creating a withdrawal additionally needs `payout:withdraw_funds`);\n- a withdrawal has a durable `wdrl_...` identity;\n- Whop explicitly states creation returns `status: requested`, not completed;\n- official webhook events include **Withdrawal Created** and **Withdrawal Updated**;\n- webhook payload `event.data` contains the withdrawal and its status;\n- documented normal lifecycle is `requested -> in_transit -> completed`;\n- Whop describes `completed` as following the payment \"until it lands\" / reaching the seller;\n- webhook signatures are verified with the Whop SDK, and deliveries may repeat, so `webhook-id`/event identity must be deduplicated.\n\nSeparately, Whop's official Bounties guide (2026-02-11) says approving a bounty transfers its reward from the bounty owner's Whop balance to the creator. That is useful reward/receivable evidence, but it is **not** by itself proof that money reached Julian's external receiving account.\n\n### Important remaining binding gap\nThe official withdrawal contract removes the previous \"no machine-readable arrival signal\" blocker, but it does **not yet prove from public docs alone** that a workforce-bounty reward can be deterministically linked from the exact bounty submission/reward credit to a later creator withdrawal. A withdrawal may aggregate balance from multiple sources. Therefore `withdrawal.completed` must not be naively attributed to one bounty submission.\n\nBefore network implementation, verify on the authorized Workflow OS Whop account/API contract whether one of the following exists:\n1. a machine-readable bounty approval/reward transfer/ledger entry carrying exact submission identity and amount, plus a balance/withdrawal allocation identity; or\n2. an official ledger/transfer API that can trace the bounty reward credit into a withdrawal; or\n3. another Whop-supported immutable reference that establishes that allocation without guessing.\n\nIf exact allocation cannot be proven, keep settlement HOLD rather than assigning aggregate withdrawal cash to a specific opportunity.\n\n## Required implementation gate\n1. Verify the authorized account exposes the documented withdrawal read/webhook capability and record exact schema/API version/rate limits for the account actually used by Workflow OS.\n2. Verify a machine-readable bounty reward-credit/transfer identity that binds exact `submission_reference` to amount/currency and can be allocated to a withdrawal without ambiguity.\n3. Treat bounty approval/reward credit as receivable/balance evidence only; do not write `CASH_RECEIVED` from submission success or approval.\n4. Accept external-arrival evidence only from a verified `withdrawal.completed` record/event (or stronger authorized receiving-account evidence), bound to durable `wdrl_...` identity and immutable evidence SHA-256.\n5. Bind the withdrawal allocation to exact submission/reward/opportunity provenance. Unknown, aggregate or ambiguous allocation must HOLD.\n6. Add bounded webhook/poll reconciliation with signature verification, replay safety, hostile-input limits, strict documented origins, no UI automation and no recurring owner work.\n7. Feed only independently reconciled received cash into the existing `reconcile_and_schedule_prepared_openshorts_whop_payout` path.\n\n## Acceptance criteria\n- Zero recurring Julian/operator payout confirmation.\n- No browser/UI automation, access-control bypass, undocumented endpoint use, or KYC bypass.\n- Submission success/approval/reward credit alone can never create `CASH_RECEIVED`.\n- `withdrawal.completed` is required for Whop-native external-arrival evidence, but is insufficient if its allocation to the bounty reward is ambiguous.\n- Exact payout event, withdrawal, reward credit, submission, opportunity, and parent-render provenance remain fail-closed and idempotent.\n- Duplicate/replayed webhook deliveries cannot double-count cash or schedule duplicate scale batches.\n- Missing/conflicting/aggregate evidence produces HOLD/no scaling rather than guessed revenue.\n- Reconciled received cash remains the sole scaling truth.\n\n## Current classification\n**External capability partially verified / ADAPT candidate.** Official Whop machine-readable withdrawal-arrival evidence now exists. Network implementation remains HOLD until exact bounty-reward-credit -> withdrawal allocation is verified for the authorized Workflow OS account.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5804863067",
-      "source": "github",
-      "title": "P1: Lottery prize claim marks ticket claimed before reward delivery and ignores payout errors",
-      "url": "https://github.com/fowlerontherun/rockmundo-genesis-project/issues/3626",
-      "description": "## Finding\n`src/hooks/useLottery.ts`, `useClaimPrize`: sets `lottery_tickets.claimed=true` before reading/updating the profile balance. The subsequent profile fetch/update errors are ignored, so a ticket can be irreversibly marked claimed without cash/fame being credited; retries then reject as 'Already claimed'. Verify by forcing profile update failure and comparing ticket status/balance. Master audit #2644. Provisional source-code QA finding; log only, no fixes.\n\n**No code, database, PR or deployment changes authorized.**",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

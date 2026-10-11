@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T01:34:00.343Z",
+  "generatedAt": "2026-10-11T02:34:44.339Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 19,
+  "eligible": 18,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -189,6 +189,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5797222638",
+      "source": "github",
+      "title": "Bug: Trade Republic staking rewards and their tax are not imported",
+      "url": "https://github.com/newmancu/sure/issues/413",
+      "description": "## Before you start (required)\n\n### General checklist\n\n- [x] I have removed personal / sensitive data from screenshots and logs\n- [x] I have searched [existing issues](https://github.com/we-promise/sure/issues?q=is:issue) and [discussions](https://github.com/we-promise/sure/discussions) to ensure this is not a duplicate issue\n\n### How are you using Sure?\n\n- [ ] I was a paying Maybe customer (hosted version)\n- [ ] I use it on PikaPod, Umbrel or similar (VPS included)\n- [x] I am a self-hosted user (local only)\n\n### Self hoster checklist\n\n- Self hosted app commit SHA (find in user menu): bdb280b3b\n  - [x] I have confirmed that my app's commit is the latest version of Sure\n- Where are you hosting?\n  - [ ] Render\n  - [ ] Docker Compose\n  - [ ] Umbrel\n  - [ ] PikaPod\n  - [x] Other (please specify): TrueNAS SCALE app (Docker)\n\n---\n\n## Bug description\n\nTrade Republic pays crypto staking rewards (Solana in my case) every week, and charges the tax on each reward to the cash account. The account statement lists every tax debit, for example:\n\n```\nImposte · Staking Reward XF000SOL0012 Solana, quantity: 0.024461\n```\n\nNeither the reward nor the tax is on the Trade Republic timeline, so the sync cannot import them:\n\n- **Crypto account:** the holding is correct, because it comes from the positions snapshot. The trades, though, add up to less than the position, since the reward coins have no trade. Cost basis and the holding's history miss them.\n- **Cash account:** the current balance is correct, because it is anchored to Trade Republic's cash. The balance history, though, misses the small weekly tax debits, and drifts further from the statement each week before today.\n\nOn my account the statement has 46 weekly tax debits between November 2025 and October 2026. I read both timeline topics in full (`timelineTransactions` and `timelineActivityLog`, 61 pages). They contain no event for any reward or tax debit. Everything else on the statement reconciles line by line with what Sure imports from the timeline.\n\n### To Reproduce\n\n1. Hold a crypto asset with staking enabled at Trade Republic (for example Solana) for a few weeks.\n2. Sync the Trade Republic connection.\n3. Compare the crypto trades with the position quantity, and the cash account's history with the monthly statement.\n4. See that the reward coins and the weekly \"Staking Reward\" tax debits are missing.\n\n### Expected behavior\n\nStaking rewards import as crypto buys at no cost, and their tax as a cash debit. If Trade Republic does not expose them outside the statement, the limitation should at least be documented, so users know why the crypto trades and the cash history differ from the statement.\n---\n_Imported from we-promise/sure#4115 (originally open issue, state at 2026-10-11T02:17:28Z)._",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5704041313",
       "source": "github",
       "title": "Card benefits review — 2026-10-04",
@@ -209,6 +224,21 @@
       "title": "US-27: Finder details on cash intake",
       "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/27",
       "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want to record the finder's name and contact details when I log found cash, so we know who to reach when the six-month period is up.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven I log an item of type cash, when I save the record, then finder name and contact are required, a reward date is calculated from the date received, and the amount is excluded from any announcement draft.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5797208978",
+      "source": "github",
+      "title": "Bug: Crypto wallet activities don't support staking rewards and are inconsistent with other investment accounts",
+      "url": "https://github.com/newmancu/sure/issues/289",
+      "description": "## Before you start (required)\n\n### General checklist\n\n- [x] I have removed personal / sensitive data from screenshots and logs\n- [x] I have searched [existing issues](https://github.com/we-promise/sure/issues?q=is:issue) and [discussions](https://github.com/we-promise/sure/discussions) to ensure this is not a duplicate issue\n    \n### How are you using Sure?\n\n- [ ] I was a paying Maybe customer (hosted version)\n- [ ] I use it on PikaPod, Umbrel or similar (VPS included)\n- [x] I am a self-hosted user (local only)\n\n### Self hoster checklist\n\n_Paying, hosted users should delete this entire section._\n\nIf you are a self-hosted user, please complete all of the information below. Issues with incomplete information will be marked as `Needs Info` to help our small team prioritize bug fixes.\n\n- Self hosted app commit SHA (find in user menu): deb61fe\n  - [x] I have confirmed that my app's commit is the latest version of Sure\n- Where are you hosting?\n  - [ ] Render\n  - [x] Docker Compose\n  - [ ] Umbrel\n  - [ ] PikaPod\n  - [ ] Other (please specify)\n\n---\n\n## Bug description\n\nCrypto wallets currently have several inconsistencies in how activities are represented and created.\n\nFirst, when creating a Crypto Wallet, there is a cash component. This doesn't make sense for a crypto-only wallet, since it should consist of crypto assets rather than a separate cash balance. See issue #3277 for more context; this issue doesn't aim to go into that part in detail.\n\nMore importantly, there is currently no appropriate way to record staking rewards.\n\nFor example, if I receive a 10€ equivalent Solana staking reward, there is no way to add the received SOL to the wallet. The closest workaround is to create a \"Buy\" activity, but that doesn't accurately represent what happened: I didn't purchase the crypto, I received it as a staking reward.\n\nThe \"Dividends\" and \"Interest\" activity types don't solve this either, because they add cash to the account. A staking reward should increase the amount of the underlying cryptocurrency itself, not add FIAT cash to the wallet.\n\nThere is also an inconsistency when creating buy/sell activities. When clicking \"New\" in the Activity tab of a Crypto Wallet, there is no option to create a buy/sell activity for a crypto. With other FIAT investment accounts, these activities can be created directly from the Activity tab.\n\nFor a Crypto Wallet, I have to go to Holdings → New activity to create a buy/sell transaction instead. This is inconsistent with the rest of the app.\n\n### To Reproduce\n\n#### Staking rewards\n\n1. Open or create a Crypto Wallet.\n2. Go to the Activity tab.\n3. Try to record receiving a staking reward, e.g. 10€ worth of SOL.\n4. Observe that there is no activity type for receiving the underlying cryptocurrency as a reward.\n5. \"Buy\" can be used as a workaround, but incorrectly represents the transaction.\n6. \"Dividends\" and \"Interest\" add cash rather than the rewarded cryptocurrency.\n\n#### Buy/sell activities\n\n1. Open a Crypto Wallet.\n2. Go to the Activity tab.\n3. Click \"New\".\n4. Observe that there is no option to create a buy/sell activity for a cryptocurrency.\n5. Go to Holdings → New activity.\n6. Observe that a crypto buy/sell activity can be created from there.\n\n### Expected behavior\n\n- There should be an activity type for receiving staking rewards that directly increases the quantity of the underlying cryptocurrency.\n- For example, receiving a 10€ equivalent SOL staking reward should add the corresponding amount of SOL to the wallet, rather than adding FIAT cash.\n- Staking rewards should not need to be recorded as \"Buy\" activities, since no purchase took place.\n- The Activity → New flow for Crypto Wallets should allow users to create crypto buy/sell activities directly.\n- Buy/sell activities should be accessible consistently from the Activity tab, as they are for other investment accounts.\n- Ideally, the activity model for Crypto Wallets should reflect that the wallet contains crypto assets and that rewards such as staking are received in the underlying crypto rather than as cash.\n\n### Screenshots and/or recordings\n\nNope.\n---\n_Imported from we-promise/sure#3294 (originally open issue, state at 2026-10-11T02:14:59Z)._",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -269,35 +299,6 @@
       "title": "Arcade: [placeholder] Risk-and-reward planning game (teaches Markov decision processes)",
       "url": "https://github.com/diagonalcounty/heliopoly/issues/297",
       "description": "**Status:** Placeholder. Needs design before it meets Definition of Ready.\n\n## Idea\nA short, replayable Arcade game that teaches Markov decision processes (MDPs), the math behind planning when outcomes are partly random. The player learns by playing runs, not by reading math.\n\n## Learning goals (from Stanford CS221, MDPs 1: Value Iteration)\n- Judge a strategy by its average payoff over many runs, not by one lucky or unlucky run.\n- Policy evaluation: what a fixed strategy is really worth.\n- Value iteration: finding the best move at each spot by working backward from the payoffs.\n- Discounting: a reward now beats the same reward later.\n\n## Arcade-sized concepts (pick one for the first slice)\n1. **Risky jump run:** a small star map where each jump has odds of success, delay, or damage. The player picks a move at each node, flies a batch of runs, and sees their average next to the best possible average.\n2. **Stay or cash out:** a dice-style contract (the lecture's example). Each round the player keeps flying for a steady payout with a chance the contract ends, or takes a one-time payout. Short, and it teaches expected value quickly.\n3. **Out-plan the AI pilot:** the same map, but an AI pilot fills in values on each node sweep by sweep. The player tries to set a strategy that matches or beats it before the values settle.\n\n## Fits existing Arcade patterns\n- Short runs with fresh layouts each launch (like #293 hull panels and #290 fuel connection).\n- End-of-run message through the shared clerk results card (#296), which could show \"your average vs. best possible.\"\n\n## Open questions\n- How much of the numbers to show (values on nodes, odds on edges, or hidden until the end)?\n- Difficulty ladder: bigger maps, more random outcomes, a lower discount?\n- Any carryover rewards outside the Arcade?\n\n## References\n- Lecture: https://www.youtube.com/watch?v=9g32v7bK3Co\n- Slides: https://web.stanford.edu/class/archive/cs/cs221/cs221.1196/lectures/mdp1.pdf\n\n## Acceptance criteria\nTBD once a concept is chosen.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5160514049",
-      "source": "github",
-      "title": "Global cash promoter — authoritative payout + competition filter",
-      "url": "https://github.com/liubaining-louis/louis-os/issues/403",
-      "description": "Build and run a worldwide promotion stage after Global Opportunity Radar.\n\nDefinition of done:\n- search fresh open GitHub bounty/reward issues globally;\n- inspect authoritative provider evidence in comments (Algora/Opire or documented funded receipt);\n- extract reward amount and active attempt count where available;\n- reject saturated (>5 active attempts), stale, unsafe, KYC/spend/signature-gated, or unverifiable payout tasks;\n- favor $1–$100 bounded Python/JS/TS/Go/docs/data/research tasks;\n- maintain target shortlist of 8, max 10;\n- do not count shortlist as submission or revenue;\n- hand safe candidates to existing execution/Mission Bridge path.",
-      "rewardUsd": 1,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1,
-      "profitPerHourUsd": 12,
-      "eligible": true
-    },
-    {
-      "id": "github-5778515506",
-      "source": "github",
-      "title": "Research: do people really work for a share instead of cash?",
-      "url": "https://github.com/kamal0808/ideato-tasks/issues/17",
-      "description": "Ideato bets that people will build ideas together and earn a share (Neki) instead of cash. Before building more, we need to know what people actually do and pay for today.\n\nResearch, with a source for every claim:\n1. What founders use and pay for today to split equity fairly and handle co-founder or contributor deals (equity-split tools, cap tables, co-founder agreements, co-founder matching), with prices and adoption where findable.\n2. Past attempts to reward contributors with shares, tokens or credit (contribution ledgers, DAOs, sweat-equity marketplaces) and what happened to them, including shutdowns and why.\n3. Whether skilled people (designers, developers, researchers, accountants) accept a share instead of cash, from strangers vs from friends and their network. India-specific evidence where it exists.\n4. How often co-founder and equity-split deals fail, and why.\n5. India context: freelancing rates and behaviour, how sweat equity is treated legally, co-ops in tech.\n\nEnd with what this means for Ideato: who the first real users are, whether friends and network vs strangers matters, and what existing behaviour people already pay for. Say plainly what you couldn't find.\n\nHand in a link to the report (a doc or a markdown file others can open). Made-up sources or numbers earn nothing.\n\nIdea: @kamal0808 (1% of 8000). Work: 99% to whoever's hand-in is accepted.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

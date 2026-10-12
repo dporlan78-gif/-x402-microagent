@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T13:49:27.345Z",
+  "generatedAt": "2026-10-12T14:44:01.036Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -60,20 +60,6 @@
       "eligible": true
     },
     {
-      "id": "github-5474087864",
-      "source": "github",
-      "title": "[Bounty] bitcoin bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 99,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 99,
-      "profitPerHourUsd": 1188,
-      "eligible": true
-    },
-    {
       "id": "github-5468214351",
       "source": "github",
       "title": "[Bounty] Reverse bounty",
@@ -85,6 +71,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 500,
       "profitPerHourUsd": 6000,
+      "eligible": true
+    },
+    {
+      "id": "github-5474087864",
+      "source": "github",
+      "title": "[Bounty] bitcoin bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 99,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 99,
+      "profitPerHourUsd": 1188,
       "eligible": true
     },
     {

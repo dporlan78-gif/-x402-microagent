@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T04:39:32.982Z",
+  "generatedAt": "2026-10-12T05:37:48.235Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -60,20 +60,6 @@
       "eligible": true
     },
     {
-      "id": "github-5474087864",
-      "source": "github",
-      "title": "[Bounty] bitcoin bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 99,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 99,
-      "profitPerHourUsd": 1188,
-      "eligible": true
-    },
-    {
       "id": "github-5468214351",
       "source": "github",
       "title": "[Bounty] Reverse bounty",
@@ -85,6 +71,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 500,
       "profitPerHourUsd": 6000,
+      "eligible": true
+    },
+    {
+      "id": "github-5474087864",
+      "source": "github",
+      "title": "[Bounty] bitcoin bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 99,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 99,
+      "profitPerHourUsd": 1188,
       "eligible": true
     },
     {
@@ -102,11 +102,11 @@
       "eligible": true
     },
     {
-      "id": "github-5806450348",
+      "id": "github-5399303366",
       "source": "github",
-      "title": "Argo bounty: 19–25 Oct 2026, proposed",
-      "url": "https://github.com/LoneWonderer1976/argo/issues/5",
-      "description": "<!-- argo-bounty: 2026-10-19 -->\n**The bounty proposed for 19–25 Oct 2026.** Thomas cannot see it until you approve it.\n\n🎯 **Ride 13 miles this week, as many rides as you like**\nReward: **£3.00 extra**\n\nHis last 12 weeks would have hit it in **2**.\nDrawn from the menu: target `cycle_miles` (bar from 8 to 15), reward `cash_bonus`.\n\n**Reply with a line, or several** (one per line, or separated by ;):\n- **approve**: it goes on his page\n- **veto**: no bounty that week\n- **reroll**: draw another from the menu\n- **bar 8**: a different bar (once he can see it, only lower)\n- **reward £3 · reward x2 · reward week x1.5 · reward treat <what it is>**: a different reward; add cap £4 after a multiplier (once he can see it, only more of the same)\n- **target <key> · target <key> 10**: another line of the menu, and its bar if you name one\n- **propose**: draw one for a week that has none\n\nNothing reaches his page until you reply **approve**; if you never do, it lapses with the week. Once he can see it, it can only get easier or bigger. The menu is `data/bounty_targets.csv` and `data/bounty_rewards.csv` in the repository.\n",
+      "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
+      "url": "https://github.com/rylsherdamz-rgb/stellar-forge/issues/13",
+      "description": "Per SPEC.md §27. Landing, marketplace with filters, detail page with escrow status + claim, and create/fund form.\n\nAcceptance:\n- [ ] Browse + filter (tech, reward, asset, deadline, status)\n- [ ] Create+fund calls create_bounty (escrow on creation)\n- [ ] Detail shows on-chain status and claim button",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -117,11 +117,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5399303366",
+      "id": "github-5806450348",
       "source": "github",
-      "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
-      "url": "https://github.com/rylsherdamz-rgb/stellar-forge/issues/13",
-      "description": "Per SPEC.md §27. Landing, marketplace with filters, detail page with escrow status + claim, and create/fund form.\n\nAcceptance:\n- [ ] Browse + filter (tech, reward, asset, deadline, status)\n- [ ] Create+fund calls create_bounty (escrow on creation)\n- [ ] Detail shows on-chain status and claim button",
+      "title": "Argo bounty: 19–25 Oct 2026, proposed",
+      "url": "https://github.com/LoneWonderer1976/argo/issues/5",
+      "description": "<!-- argo-bounty: 2026-10-19 -->\n**The bounty proposed for 19–25 Oct 2026.** Thomas cannot see it until you approve it.\n\n🎯 **Ride 13 miles this week, as many rides as you like**\nReward: **£3.00 extra**\n\nHis last 12 weeks would have hit it in **2**.\nDrawn from the menu: target `cycle_miles` (bar from 8 to 15), reward `cash_bonus`.\n\n**Reply with a line, or several** (one per line, or separated by ;):\n- **approve**: it goes on his page\n- **veto**: no bounty that week\n- **reroll**: draw another from the menu\n- **bar 8**: a different bar (once he can see it, only lower)\n- **reward £3 · reward x2 · reward week x1.5 · reward treat <what it is>**: a different reward; add cap £4 after a multiplier (once he can see it, only more of the same)\n- **target <key> · target <key> 10**: another line of the menu, and its bar if you name one\n- **propose**: draw one for a week that has none\n\nNothing reaches his page until you reply **approve**; if you never do, it lapses with the week. Once he can see it, it can only get easier or bigger. The menu is `data/bounty_targets.csv` and `data/bounty_rewards.csv` in the repository.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

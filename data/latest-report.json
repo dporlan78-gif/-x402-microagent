@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T02:38:07.398Z",
+  "generatedAt": "2026-10-12T03:41:06.056Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -60,20 +60,6 @@
       "eligible": true
     },
     {
-      "id": "github-5468214351",
-      "source": "github",
-      "title": "[Bounty] Reverse bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 500,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 500,
-      "profitPerHourUsd": 6000,
-      "eligible": true
-    },
-    {
       "id": "github-5474087864",
       "source": "github",
       "title": "[Bounty] bitcoin bounty",
@@ -85,6 +71,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 99,
       "profitPerHourUsd": 1188,
+      "eligible": true
+    },
+    {
+      "id": "github-5468214351",
+      "source": "github",
+      "title": "[Bounty] Reverse bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 500,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 500,
+      "profitPerHourUsd": 6000,
       "eligible": true
     },
     {
@@ -102,11 +102,11 @@
       "eligible": true
     },
     {
-      "id": "github-5806450348",
+      "id": "github-5399303366",
       "source": "github",
-      "title": "Argo bounty: 19–25 Oct 2026, proposed",
-      "url": "https://github.com/LoneWonderer1976/argo/issues/5",
-      "description": "<!-- argo-bounty: 2026-10-19 -->\n**The bounty proposed for 19–25 Oct 2026.** Thomas cannot see it until you approve it.\n\n🎯 **Ride 13 miles this week, as many rides as you like**\nReward: **£3.00 extra**\n\nHis last 12 weeks would have hit it in **2**.\nDrawn from the menu: target `cycle_miles` (bar from 8 to 15), reward `cash_bonus`.\n\n**Reply with a line, or several** (one per line, or separated by ;):\n- **approve**: it goes on his page\n- **veto**: no bounty that week\n- **reroll**: draw another from the menu\n- **bar 8**: a different bar (once he can see it, only lower)\n- **reward £3 · reward x2 · reward week x1.5 · reward treat <what it is>**: a different reward; add cap £4 after a multiplier (once he can see it, only more of the same)\n- **target <key> · target <key> 10**: another line of the menu, and its bar if you name one\n- **propose**: draw one for a week that has none\n\nNothing reaches his page until you reply **approve**; if you never do, it lapses with the week. Once he can see it, it can only get easier or bigger. The menu is `data/bounty_targets.csv` and `data/bounty_rewards.csv` in the repository.\n",
+      "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
+      "url": "https://github.com/rylsherdamz-rgb/stellar-forge/issues/13",
+      "description": "Per SPEC.md §27. Landing, marketplace with filters, detail page with escrow status + claim, and create/fund form.\n\nAcceptance:\n- [ ] Browse + filter (tech, reward, asset, deadline, status)\n- [ ] Create+fund calls create_bounty (escrow on creation)\n- [ ] Detail shows on-chain status and claim button",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -117,11 +117,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5399303366",
+      "id": "github-5806450348",
       "source": "github",
-      "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
-      "url": "https://github.com/rylsherdamz-rgb/stellar-forge/issues/13",
-      "description": "Per SPEC.md §27. Landing, marketplace with filters, detail page with escrow status + claim, and create/fund form.\n\nAcceptance:\n- [ ] Browse + filter (tech, reward, asset, deadline, status)\n- [ ] Create+fund calls create_bounty (escrow on creation)\n- [ ] Detail shows on-chain status and claim button",
+      "title": "Argo bounty: 19–25 Oct 2026, proposed",
+      "url": "https://github.com/LoneWonderer1976/argo/issues/5",
+      "description": "<!-- argo-bounty: 2026-10-19 -->\n**The bounty proposed for 19–25 Oct 2026.** Thomas cannot see it until you approve it.\n\n🎯 **Ride 13 miles this week, as many rides as you like**\nReward: **£3.00 extra**\n\nHis last 12 weeks would have hit it in **2**.\nDrawn from the menu: target `cycle_miles` (bar from 8 to 15), reward `cash_bonus`.\n\n**Reply with a line, or several** (one per line, or separated by ;):\n- **approve**: it goes on his page\n- **veto**: no bounty that week\n- **reroll**: draw another from the menu\n- **bar 8**: a different bar (once he can see it, only lower)\n- **reward £3 · reward x2 · reward week x1.5 · reward treat <what it is>**: a different reward; add cap £4 after a multiplier (once he can see it, only more of the same)\n- **target <key> · target <key> 10**: another line of the menu, and its bar if you name one\n- **propose**: draw one for a week that has none\n\nNothing reaches his page until you reply **approve**; if you never do, it lapses with the week. Once he can see it, it can only get easier or bigger. The menu is `data/bounty_targets.csv` and `data/bounty_rewards.csv` in the repository.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -339,6 +339,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5807806339",
+      "source": "github",
+      "title": "Ship a paid order",
+      "url": "https://github.com/wrapper31/agentic-springboot-demo/issues/3",
+      "description": "Warehouse staff need to mark an order as shipped once it has been paid.\n\n**Acceptance criteria**\n- `POST /api/orders/{orderId}/ship` with body `{\"carrier\": \"UPS\", \"trackingNumber\": \"1Z999\"}` moves a `PAID` order to a new `SHIPPED` status and returns the updated order.\n- Shipping an order that is not `PAID` returns `409 Conflict`; an unknown order returns `404`.\n- `carrier` and `trackingNumber` are required (`400` if blank) and are returned on the order.\n- The change is audited in DynamoDB (visible in `GET /api/orders/{orderId}/history`) and published to `orders.events` as `ORDER_STATUS_CHANGED`.\n- README API table updated.\n\n_This issue is the end-to-end demo for the agentic AI pilot: an agent implements it following CLAUDE.md and the codebase MCP tools, and opens a PR that closes it._",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5806572710",
       "source": "github",
       "title": "Events: complete paid-event payments",
@@ -419,21 +434,6 @@
       "title": "# Issue O1 — Fee desk",
       "url": "https://github.com/keyframesfound/matchmaxhk/issues/259",
       "description": "# Issue O1 — Fee desk\n\n## Summary\nThe payer can see the invoice and the FPS details on the case. Staff only mark paid.\n\n## Desk\n- When both intro lessons are done, F1 creates the invoice. Due in 3 days.\n- The payer’s case page shows amount, case id as the FPS reference, and the company FPS name. It does not show a tutor phone.\n- The payer may upload one payment screenshot, JPEG or PNG, max 5 MB. Staff only.\n- Cashier matches the bank reference to the case id and marks paid. A reference already used on another case is rejected.\n- Marking paid writes actor and time, then F4 reveals the phone.\n- A receipt email contains case id, amount, and paid time. No file. No phone.\n\n## Hours\n- Payments are marked on working days. A screenshot after 6pm is marked the next working day.\n- One in-app reminder at due date.\n\n## Acceptance\n- A payer can pay without a staff message.\n- The same FPS reference cannot close two cases.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5807393364",
-      "source": "github",
-      "title": "[Skills] mpp-agent verifies a payment receipt by issuing another paid request",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/136890",
-      "description": "## Problem\n\nThe official optional `mpp-agent` skill turns receipt verification into a second purchase/request.\n\n**Audited source:** [`optional-skills/payments/mpp-agent/SKILL.md` at 835c3dd](https://github.com/NousResearch/hermes-agent/blob/835c3dd038d903182a66ecc45e34bf5e0de65f00/optional-skills/payments/mpp-agent/SKILL.md), sections “3. Pay the request” and “4. Verify the receipt”.\n\nThe prescribed sequence is:\n\n```sh\n# Step 3: pay\nmppx <url>\n\n# Step 4: purported receipt inspection\nmppx <url> -v\n```\n\n`-v` enables verbose output on a request; it does not look up the receipt of the previous invocation. The upstream [MPP CLI documentation](https://github.com/tempoxyz/mpp/blob/main/skills/mppx/SKILL.md#cli) describes this as a CLI for making paid requests and labels `-v` as verbose output.\n\nFor a per-request charge endpoint, following the skill can therefore incur another charge just to “verify” the first one. It also performs another application request. If the original call used the documented POST/body variant, the verification command does not even preserve that method/body.\n\nThis is not a claim that every MPP endpoint necessarily charges twice: free endpoints, session billing, or merchant-specific deduplication differ. The bug is that the skill assumes replay is read-only verification without establishing any of those guarantees.\n\n## Expected behavior\n\nInspect the receipt attached to the **original authorized response**, not a new request. The MPP client exposes receipt handling on responses; see the [client documentation](https://mpp.dev/quickstart/client).\n\nSuggested narrow change:\n\n- Enable any needed verbose/header capture on the initial authorized request and retain its response/receipt.\n- If a receipt must be retrieved later, use a documented read-only receipt/transaction lookup tied to the original identity, where supported.\n- Do not rerun a paid or state-changing request to establish that its predecessor succeeded. Treat replay as a new operation requiring its own authorization or a verified idempotency contract.\n- Keep the existing user-intent gate for paying a 402 challenge; no need to redesign the payment integration.\n\n## Verification\n\nStatic audit of the two consecutive commands and upstream CLI semantics. **No wallet was funded, no paid endpoint was called, and no real charge is claimed.** A regression check can use a stub merchant/request counter: paying once and inspecting that response should not invoke the merchant a second time.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

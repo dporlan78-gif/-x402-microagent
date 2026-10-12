@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T17:36:55.731Z",
+  "generatedAt": "2026-10-12T18:42:08.602Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -131,31 +131,31 @@
       "eligible": true
     },
     {
-      "id": "github-4864581510",
+      "id": "github-5818394347",
       "source": "github",
-      "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → ",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/286",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/279\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → Path Trav\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/224\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → Path Traversal → S\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/212\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → Path Traversal → Secret Key\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/119\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → Path Traversal → Secret Key Leak $15\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/85\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [BUG] JWT Kid Injection → Path Traversal → Secret Key Leak $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/17\n\n### 漏洞描述 / Description\n[Bounty] [BUG] JWT Kid Injection → Path Traversal → Secret Key Leak $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/ai-research/issues/966\n\n### 漏洞描述 / Description\n[BUG] JWT Kid Injection → Path Traversal → Secret Key Leak $150\n\n## JWT Kid 注入 → 路径遍历 → 密钥泄露\n\n**难度**: Hard | **赏金**: $150\n\n### 漏洞描述\nJWT verification 使用 `kid`（Key ID）从文件系统加载密钥：`fs.readFileSync(\"/keys/\" + decoded.kid)`。攻击者可设置 `kid: ../../etc/passwd` 或 `/dev/null` 绕过签名验证。\n\n### 要求\n限制 kid 只能是预定义值，不从用户输入派生路径。\n\n### 验收标准\n- [ ] kid 使用白名单枚举而非文件路径\n- [ ] 规范化/校验 kid 输入\n- [ ] 禁止路径遍历字符\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLI\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 15,
+      "title": "[Bounty] Bounty $50: recipe for RX 7900 XTX 24 GB",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1881",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/sybil-solutions/local-ai-registry/issues/219\n\n### 漏洞描述 / Description\nBounty $50: recipe for RX 7900 XTX 24 GB\n\n**Pays $50** when a PR adds a tested recipe for this card and is merged. Rules: [BOUNTIES.md](https://github.com/sybil-solutions/.github/blob/main/BOUNTIES.md).\n\n| | |\n|---|---|\n| Card | `rx-7900-xtx-24gb` |\n| Model | Qwen3.8-27B, or any model in `registry/models.json` not yet tested on this card |\n| Context | 128K or more |\n| Done when | all six checks pass: loads, answers, thinks, calls a tool, recalls at a nearly full window, 15 tok/s or more |\n\n**Why:** The biggest consumer AMD card has one recipe.\n\n### Steps\n1. Comment `/attempt` here. A maintainer marks it `claimed`; you have 7 days.\n2. On the machine, clone the [recipe kit](https://github.com/sybil-solutions/local-ai-recipe-kit), open your coding agent in it and give it [`PROMPT.md`](https://github.com/sybil-solutions/local-ai-recipe-kit/blob/main/PROMPT.md).\n3. Make the recipe: `python3 lab/lab.py try <repo>@<commit> --model <id> --engine <profile> --card rx-7900-xtx-24gb --on endpoint --endpoint <your server>`, then `make`.\n4. Open **one PR** here with `Closes #219` and the kit submission file. After merge, email sherif@sybilsolutions.ai with the PR link and how you want to be paid; never put payment details in the PR.\n\n### 积分币奖励 / Coin Reward\n62 coins\n\n### 真实赏金（USD）/ Real Reward\n$50\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 50,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 15,
-      "profitPerHourUsd": 180,
+      "expectedProfitUsd": 50,
+      "profitPerHourUsd": 600,
       "eligible": true
     },
     {
-      "id": "github-4864581888",
+      "id": "github-5818394010",
       "source": "github",
-      "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Python Pickle Deseri",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/302",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/263\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Python Pickle Deserialization\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/239\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Python Pickle Deserialization RCE via \n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/197\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [BUG] Python Pickle Deserialization RCE via Cache $20\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/137\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [BUG] Python Pickle Deserialization RCE via Cache $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/66\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [BUG] Python Pickle Deserialization RCE via Cache $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/35\n\n### 漏洞描述 / Description\n[Bounty] [BUG] Python Pickle Deserialization RCE via Cache $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/ai-research/issues/948\n\n### 漏洞描述 / Description\n[BUG] Python Pickle Deserialization RCE via Cache $200\n\n## Pickle 反序列化 RCE（通过缓存系统）\n\n**难度**: Expert | **赏金**: $200\n\n### 漏洞描述\nRedis 缓存中存储了 `pickle.dumps()` 序列化的用户 session。攻击者可写入恶意 pickle payload，当服务端 `pickle.loads()` 反序列化时触发任意代码执行。\n\n### 要求\n替换为 JSON 序列化 / 使用 `pickle` 的替代方案 / 加签验证。\n\n### 验收标准\n- [ ] 不使用 pickle 处理不可信数据\n- [ ] 或使用 HMAC 签名验证完整性\n- [ ] 缓存数据加签防篡改\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n250 coi\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 20,
+      "title": "[Bounty] Bounty $50: recipe for RTX 5060 Ti 16 GB",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1878",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/sybil-solutions/local-ai-registry/issues/222\n\n### 漏洞描述 / Description\nBounty $50: recipe for RTX 5060 Ti 16 GB\n\n**Pays $50** when a PR adds a tested recipe for this card and is merged. Rules: [BOUNTIES.md](https://github.com/sybil-solutions/.github/blob/main/BOUNTIES.md).\n\n| | |\n|---|---|\n| Card | `rtx-5060-ti-16gb` |\n| Model | Qwen3.8-27B or Gemma 4 26B A4B, or any model in `registry/models.json` not yet tested on this card |\n| Context | 128K or more |\n| Done when | all six checks pass: loads, answers, thinks, calls a tool, recalls at a nearly full window, 15 tok/s or more |\n\n**Why:** The new budget 16 GB card, two tested recipes.\n\n### Steps\n1. Comment `/attempt` here. A maintainer marks it `claimed`; you have 7 days.\n2. On the machine, clone the [recipe kit](https://github.com/sybil-solutions/local-ai-recipe-kit), open your coding agent in it and give it [`PROMPT.md`](https://github.com/sybil-solutions/local-ai-recipe-kit/blob/main/PROMPT.md).\n3. Make the recipe: `python3 lab/lab.py try <repo>@<commit> --model <id> --engine <profile> --card rtx-5060-ti-16gb --on endpoint --endpoint <your server>`, then `make`.\n4. Open **one PR** here with `Closes #222` and the kit submission file. After merge, email sherif@sybilsolutions.ai with the PR link and how you want to be paid; never put payment details in the PR.\n\n### 积分币奖励 / Coin Reward\n62 coins\n\n### 真实赏金（USD）/ Real Reward\n$50\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 50,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 20,
-      "profitPerHourUsd": 240,
+      "expectedProfitUsd": 50,
+      "profitPerHourUsd": 600,
       "eligible": true
     },
     {

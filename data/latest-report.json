@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T11:38:36.315Z",
+  "generatedAt": "2026-10-13T12:49:03.662Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -413,11 +413,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5642477210",
+      "id": "github-5696083537",
       "source": "github",
-      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
-      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
-      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
+      "title": "DECISION: Free vs paid split, and which features are paid.",
+      "url": "https://github.com/nirgeier/CodeWizard-DevOpsAgents/issues/488",
+      "description": "**Source:** [`task/14-decisions-and-open-questions.md` §14.4](https://github.com/nirgeier/CodeWizard-DevOpsAgents/blob/main/task/14-decisions-and-open-questions.md#L65) — What is the actual business model?\n\n> The permalink 404s until the `task/` backlog is committed — it is staged but not yet pushed. The file and section number are correct.\n\nPart of epic: [14 — Decisions & Open Questions](https://github.com/nirgeier/CodeWizard-DevOpsAgents/issues/22)\n\n### Task\n\nFree vs paid split, and which features are paid.\n\n---\n\n<sub>Split from the `task/` backlog. One checkbox = one issue, so each can be reviewed, assigned and closed on its own.</sub>\n\n<sub>Labels: `area:infra`, `phase:1-now`</sub>",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -428,11 +428,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5696083537",
+      "id": "github-5642477210",
       "source": "github",
-      "title": "DECISION: Free vs paid split, and which features are paid.",
-      "url": "https://github.com/nirgeier/CodeWizard-DevOpsAgents/issues/488",
-      "description": "**Source:** [`task/14-decisions-and-open-questions.md` §14.4](https://github.com/nirgeier/CodeWizard-DevOpsAgents/blob/main/task/14-decisions-and-open-questions.md#L65) — What is the actual business model?\n\n> The permalink 404s until the `task/` backlog is committed — it is staged but not yet pushed. The file and section number are correct.\n\nPart of epic: [14 — Decisions & Open Questions](https://github.com/nirgeier/CodeWizard-DevOpsAgents/issues/22)\n\n### Task\n\nFree vs paid split, and which features are paid.\n\n---\n\n<sub>Split from the `task/` backlog. One checkbox = one issue, so each can be reviewed, assigned and closed on its own.</sub>\n\n<sub>Labels: `area:infra`, `phase:1-now`</sub>",
+      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
+      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
+      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

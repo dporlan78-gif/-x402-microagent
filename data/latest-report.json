@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T13:45:02.032Z",
+  "generatedAt": "2026-10-13T14:42:48.526Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 19,
+  "eligible": 18,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -74,20 +74,6 @@
       "eligible": true
     },
     {
-      "id": "github-5474087864",
-      "source": "github",
-      "title": "[Bounty] bitcoin bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 99,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 99,
-      "profitPerHourUsd": 1188,
-      "eligible": true
-    },
-    {
       "id": "github-5468214351",
       "source": "github",
       "title": "[Bounty] Reverse bounty",
@@ -99,6 +85,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 500,
       "profitPerHourUsd": 6000,
+      "eligible": true
+    },
+    {
+      "id": "github-5474087864",
+      "source": "github",
+      "title": "[Bounty] bitcoin bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 99,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 99,
+      "profitPerHourUsd": 1188,
       "eligible": true
     },
     {
@@ -131,6 +131,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5832041798",
+      "source": "github",
+      "title": "Every bounty page shares the generic OG image — no per-bounty share card",
+      "url": "https://github.com/MergeFi/frontend/issues/696",
+      "description": "## Problem\n\n`issues/[id]/page.tsx` sets OG/Twitter title and description but inherits the site-wide `opengraph-image.tsx`. Shared bounty links show the generic MergeFi card instead of the reward, repository and status, which are the details that make a bounty link worth clicking in Discord or X.\n\n## Suggested fix\n\nAdd `issues/[id]/opengraph-image.tsx` using `ImageResponse` with the title, `org/repo`, reward and asset.\n\nRelated: #391\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-4864582055",
       "source": "github",
       "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracl",
@@ -142,20 +157,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 2,
       "profitPerHourUsd": 24,
-      "eligible": true
-    },
-    {
-      "id": "github-4864581510",
-      "source": "github",
-      "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → ",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/286",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/279\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → Path Trav\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/224\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → Path Traversal → S\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/212\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → Path Traversal → Secret Key\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/119\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [BUG] JWT Kid Injection → Path Traversal → Secret Key Leak $15\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/85\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [BUG] JWT Kid Injection → Path Traversal → Secret Key Leak $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/17\n\n### 漏洞描述 / Description\n[Bounty] [BUG] JWT Kid Injection → Path Traversal → Secret Key Leak $150\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/ai-research/issues/966\n\n### 漏洞描述 / Description\n[BUG] JWT Kid Injection → Path Traversal → Secret Key Leak $150\n\n## JWT Kid 注入 → 路径遍历 → 密钥泄露\n\n**难度**: Hard | **赏金**: $150\n\n### 漏洞描述\nJWT verification 使用 `kid`（Key ID）从文件系统加载密钥：`fs.readFileSync(\"/keys/\" + decoded.kid)`。攻击者可设置 `kid: ../../etc/passwd` 或 `/dev/null` 绕过签名验证。\n\n### 要求\n限制 kid 只能是预定义值，不从用户输入派生路径。\n\n### 验收标准\n- [ ] kid 使用白名单枚举而非文件路径\n- [ ] 规范化/校验 kid 输入\n- [ ] 禁止路径遍历字符\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLI\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 15,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 15,
-      "profitPerHourUsd": 180,
       "eligible": true
     },
     {
@@ -368,21 +369,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5822728840",
-      "source": "github",
-      "title": "Invoices: recurring schedule re-bills work already settled on paid/partly-paid invoices",
-      "url": "https://github.com/TucanoTechnology/TucanoTime/issues/248",
-      "description": "**Description:**\n\nThe recurring-scheduler invoice builder drifted from the API's invoice draft builder and **re-bills time entries and expenses that already sit on settled (`paid` / `partly_paid`) or written-off invoices** — violating invariant #8 (\"generated from a period's billable, **not-yet-invoiced** entries\").\n\n`src/api/invoicing.rs:58-60` (`build_draft`) excludes entries/exenses of every non-draft invoice:\n\n```rust\nlet issued: Vec<&Invoice> = invoices.iter().filter(|i| i.status != InvoiceStatus::Draft).collect();\n```\n\nThe near-copy in `src/recurring.rs:91-93` (`RecurMode::Time`) only excludes `Issued`:\n\n```rust\nlet issued: Vec<&Invoice> = all_invoices.iter().filter(|i| i.status == InvoiceStatus::Issued).collect();\n```\n\nBecause settling an invoice releases its entries by design (#114, `is_open() == issued | partly_paid`), a `paid` invoice's lines are **not** excluded by the recurring job: after settlement (and after write-off), every future recurring period happily re-bills the same work. This is a copy-paste divergence introduced when the recurring job duplicated the draft pipeline (#26/#136 vs #8) — exactly the regression class the dedup work (#189) set out to prevent.\n\n**Fix:** extract a single shared collector (e.g. `domain::collect_invoice_sources(store, from, to, …)`) used by `build_draft`, `preview_invoice` and `RecurringJob::build_invoice`, so the exclusion predicate exists in exactly one place.\n\n**Definition of Done:**\n- [ ] One shared exclusion predicate; no second copy in `src/recurring.rs`\n- [ ] Contract test: schedule bills period → invoice paid → next period must not re-include the settled lines (and written-off likewise)\n- [ ] `cargo test --all-targets` green\n- [ ] Documentation updated (AGENTS.md invariant note if wording changes)\n- [ ] PR reviewed and merged\n\n**Labels:** bug, invoicing, workflow, phase:4-invoicing, priority:P1\n**Complexity:** small\n**Priority:** bug fix\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5807806339",
       "source": "github",
       "title": "Ship a paid order",
@@ -448,6 +434,21 @@
       "title": "DECISION: Free vs paid split, and which features are paid.",
       "url": "https://github.com/nirgeier/CodeWizard-DevOpsAgents/issues/488",
       "description": "**Source:** [`task/14-decisions-and-open-questions.md` §14.4](https://github.com/nirgeier/CodeWizard-DevOpsAgents/blob/main/task/14-decisions-and-open-questions.md#L65) — What is the actual business model?\n\n> The permalink 404s until the `task/` backlog is committed — it is staged but not yet pushed. The file and section number are correct.\n\nPart of epic: [14 — Decisions & Open Questions](https://github.com/nirgeier/CodeWizard-DevOpsAgents/issues/22)\n\n### Task\n\nFree vs paid split, and which features are paid.\n\n---\n\n<sub>Split from the `task/` backlog. One checkbox = one issue, so each can be reviewed, assigned and closed on its own.</sub>\n\n<sub>Labels: `area:infra`, `phase:1-now`</sub>",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5578906086",
+      "source": "github",
+      "title": "Paid help needed – RTL9601D VLAN/OMCI issue with Huawei MA5800",
+      "url": "https://github.com/Anime4000/RTL960x/issues/490",
+      "description": "Hello,\n\nWe are Start Bit Net, a fiber optic equipment distributor from Romania, and we are looking for someone with experience in Realtek RTL9601D firmware / OMCI / VLAN handling who can help us solve a compatibility issue.\n\nTest environment:\n\nXPON SFP ONU Stick: Realtek RTL9601D\nOLT: Huawei MA5800\nRouter: Huawei AR5710\nGPON connection\n\nProblem:\n\nWe tested two firmware versions:\n\nV1.0-230303\n\nONU registers successfully on the MA5800 and remains online.\nTraffic passes through the interface and VLANs.\nHowever, we cannot correctly see/identify the VLAN IDs being transported.\n\nV1.10-240408\n\nONU also registers successfully and remains online.\nHowever, no traffic passes through the device.\n\nWe tested several configurations together with the manufacturer's engineer without solving the problem.\n\nOn the same MA5800 OLT port and with the same configuration, a Huawei GPON Stick works correctly without any additional configuration.\n\nTherefore, we believe the problem is related to RTL9601D firmware / OMCI VLAN handling, rather than the optical link or GPON registration.\n\nWe are looking for someone who can help us:\n\ndiagnose the OMCI/VLAN configuration;\ndetermine whether the problem can be solved by RTL9601D configuration parameters;\nanalyze the existing firmware if necessary;\nmodify/build firmware if required;\nachieve correct VLAN operation with Huawei MA5800.\n\nWe can provide the firmware files, configuration information and test results, and we have access to the MA5800 for testing.\n\nThis is a paid engineering job.\n\nIf you have experience with RTL9601D/RTL960x + Huawei MA5800 + OMCI/VLAN, please contact us or reply here.\n\nThank you.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

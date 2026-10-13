@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T15:40:40.830Z",
+  "generatedAt": "2026-10-13T16:39:59.417Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -74,20 +74,6 @@
       "eligible": true
     },
     {
-      "id": "github-5474087864",
-      "source": "github",
-      "title": "[Bounty] bitcoin bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 99,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 99,
-      "profitPerHourUsd": 1188,
-      "eligible": true
-    },
-    {
       "id": "github-5468214351",
       "source": "github",
       "title": "[Bounty] Reverse bounty",
@@ -99,6 +85,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 500,
       "profitPerHourUsd": 6000,
+      "eligible": true
+    },
+    {
+      "id": "github-5474087864",
+      "source": "github",
+      "title": "[Bounty] bitcoin bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 99,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 99,
+      "profitPerHourUsd": 1188,
       "eligible": true
     },
     {
@@ -116,11 +116,11 @@
       "eligible": true
     },
     {
-      "id": "github-5399303366",
+      "id": "github-5832041798",
       "source": "github",
-      "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
-      "url": "https://github.com/rylsherdamz-rgb/stellar-forge/issues/13",
-      "description": "Per SPEC.md §27. Landing, marketplace with filters, detail page with escrow status + claim, and create/fund form.\n\nAcceptance:\n- [ ] Browse + filter (tech, reward, asset, deadline, status)\n- [ ] Create+fund calls create_bounty (escrow on creation)\n- [ ] Detail shows on-chain status and claim button",
+      "title": "Every bounty page shares the generic OG image — no per-bounty share card",
+      "url": "https://github.com/MergeFi/frontend/issues/696",
+      "description": "## Problem\n\n`issues/[id]/page.tsx` sets OG/Twitter title and description but inherits the site-wide `opengraph-image.tsx`. Shared bounty links show the generic MergeFi card instead of the reward, repository and status, which are the details that make a bounty link worth clicking in Discord or X.\n\n## Suggested fix\n\nAdd `issues/[id]/opengraph-image.tsx` using `ImageResponse` with the title, `org/repo`, reward and asset.\n\nRelated: #391\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -131,11 +131,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5832041798",
+      "id": "github-5399303366",
       "source": "github",
-      "title": "Every bounty page shares the generic OG image — no per-bounty share card",
-      "url": "https://github.com/MergeFi/frontend/issues/696",
-      "description": "## Problem\n\n`issues/[id]/page.tsx` sets OG/Twitter title and description but inherits the site-wide `opengraph-image.tsx`. Shared bounty links show the generic MergeFi card instead of the reward, repository and status, which are the details that make a bounty link worth clicking in Discord or X.\n\n## Suggested fix\n\nAdd `issues/[id]/opengraph-image.tsx` using `ImageResponse` with the title, `org/repo`, reward and asset.\n\nRelated: #391\n",
+      "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
+      "url": "https://github.com/rylsherdamz-rgb/stellar-forge/issues/13",
+      "description": "Per SPEC.md §27. Landing, marketplace with filters, detail page with escrow status + claim, and create/fund form.\n\nAcceptance:\n- [ ] Browse + filter (tech, reward, asset, deadline, status)\n- [ ] Create+fund calls create_bounty (escrow on creation)\n- [ ] Detail shows on-chain status and claim button",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

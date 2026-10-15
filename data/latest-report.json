@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T02:51:31.500Z",
+  "generatedAt": "2026-10-15T03:52:39.910Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,8 +13,8 @@
       "micro bounty"
     ]
   },
-  "discovered": 40,
-  "eligible": 19,
+  "discovered": 39,
+  "eligible": 20,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -294,19 +294,18 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5460422244",
+      "id": "github-5859466370",
       "source": "github",
-      "title": "Automate Whop bounty payout receipt evidence for zero-touch settlement",
-      "url": "https://github.com/leijnsejulian07-alt/Workflow-OS/issues/201",
-      "description": "## Goal\nClose the remaining zero-touch gap between a proven Whop workforce-bounty submission and the existing received-cash settlement/reconciliation loop.\n\n## Current executable state\n- `submit_reward` can render/QC and submit through the durable Whop path.\n- Submission provenance is durable and bound to immutable parent OpenShorts render provenance.\n- Settlement can attribute an already-recorded `whop_bounties` cash receipt to exact submission provenance, reconcile received cash, and schedule bounded KEEP/SCALE work.\n- The missing machine boundary is creation of that independent cash receipt + `WhopBountyPayoutEvidence`. Current settlement intentionally refuses to infer payout from submission success.\n\n## Fresh official evidence — 2026-09-15\nWhop's official, DevRel-reviewed **Global payouts API guide** (published 2026-08-05) now documents a machine-readable withdrawal lifecycle suitable for verifying that money has actually left Whop and reached a payout destination:\n- production REST base: `https://api.whop.com/api/v1` (sandbox: `https://sandbox-api.whop.com/api/v1`);\n- least-privilege scopes shown for this flow include `payout:withdrawal:read` and `webhook_receive:withdrawals` (creating a withdrawal additionally needs `payout:withdraw_funds`);\n- a withdrawal has a durable `wdrl_...` identity;\n- Whop explicitly states creation returns `status: requested`, not completed;\n- official webhook events include **Withdrawal Created** and **Withdrawal Updated**;\n- webhook payload `event.data` contains the withdrawal and its status;\n- documented normal lifecycle is `requested -> in_transit -> completed`;\n- Whop describes `completed` as following the payment \"until it lands\" / reaching the seller;\n- webhook signatures are verified with the Whop SDK, and deliveries may repeat, so `webhook-id`/event identity must be deduplicated.\n\nSeparately, Whop's official Bounties guide (2026-02-11) says approving a bounty transfers its reward from the bounty owner's Whop balance to the creator. That is useful reward/receivable evidence, but it is **not** by itself proof that money reached Julian's external receiving account.\n\n### Important remaining binding gap\nThe official withdrawal contract removes the previous \"no machine-readable arrival signal\" blocker, but it does **not yet prove from public docs alone** that a workforce-bounty reward can be deterministically linked from the exact bounty submission/reward credit to a later creator withdrawal. A withdrawal may aggregate balance from multiple sources. Therefore `withdrawal.completed` must not be naively attributed to one bounty submission.\n\nBefore network implementation, verify on the authorized Workflow OS Whop account/API contract whether one of the following exists:\n1. a machine-readable bounty approval/reward transfer/ledger entry carrying exact submission identity and amount, plus a balance/withdrawal allocation identity; or\n2. an official ledger/transfer API that can trace the bounty reward credit into a withdrawal; or\n3. another Whop-supported immutable reference that establishes that allocation without guessing.\n\nIf exact allocation cannot be proven, keep settlement HOLD rather than assigning aggregate withdrawal cash to a specific opportunity.\n\n## Required implementation gate\n1. Verify the authorized account exposes the documented withdrawal read/webhook capability and record exact schema/API version/rate limits for the account actually used by Workflow OS.\n2. Verify a machine-readable bounty reward-credit/transfer identity that binds exact `submission_reference` to amount/currency and can be allocated to a withdrawal without ambiguity.\n3. Treat bounty approval/reward credit as receivable/balance evidence only; do not write `CASH_RECEIVED` from submission success or approval.\n4. Accept external-arrival evidence only from a verified `withdrawal.completed` record/event (or stronger authorized receiving-account evidence), bound to durable `wdrl_...` identity and immutable evidence SHA-256.\n5. Bind the withdrawal allocation to exact submission/reward/opportunity provenance. Unknown, aggregate or ambiguous allocation must HOLD.\n6. Add bounded webhook/poll reconciliation with signature verification, replay safety, hostile-input limits, strict documented origins, no UI automation and no recurring owner work.\n7. Feed only independently reconciled received cash into the existing `reconcile_and_schedule_prepared_openshorts_whop_payout` path.\n\n## Acceptance criteria\n- Zero recurring Julian/operator payout confirmation.\n- No browser/UI automation, access-control bypass, undocumented endpoint use, or KYC bypass.\n- Submission success/approval/reward credit alone can never create `CASH_RECEIVED`.\n- `withdrawal.completed` is required for Whop-native external-arrival evidence, but is insufficient if its allocation to the bounty reward is ambiguous.\n- Exact payout event, withdrawal, reward credit, submission, opportunity, and parent-render provenance remain fail-closed and idempotent.\n- Duplicate/replayed webhook deliveries cannot double-count cash or schedule duplicate scale batches.\n- Missing/conflicting/aggregate evidence produces HOLD/no scaling rather than guessed revenue.\n- Reconciled received cash remains the sole scaling truth.\n\n## Current classification\n**External capability partially verified / ADAPT candidate.** Official Whop machine-readable withdrawal-arrival evidence now exists. Network implementation remains HOLD until exact bounty-reward-credit -> withdrawal allocation is verified for the authorized Workflow OS account.",
-      "rewardUsd": 0,
+      "title": "Issue Title",
+      "url": "https://github.com/awarbler/distributed-coupon-system/issues/9",
+      "description": "## Goal\n\nImplement a clear financial model for coupon transactions so merchandise discounts, coupons, rewards, rebates, taxes, payments, and savings are tracked separately and calculated correctly.\n\n## Financial rules\n\nThe model must follow these rules:\n\n1. Start with the regular merchandise price.\n2. Track sale discounts separately.\n3. Track store coupons and promotions separately.\n4. Track manufacturer coupons separately.\n5. Sales tax is recorded separately from merchandise discounts.\n6. Rewards earned do not automatically reduce the item price.\n7. Rewards used reduce the amount paid at checkout.\n8. Register Rewards and Walgreens Cash are separate reward types.\n9. Cash rebates are separate from store rewards.\n10. Gift-card rebates are separate from Register Rewards and Walgreens Cash.\n11. The spreadsheet's `Store GC Rebates` column is an aggregate source field and must not automatically be classified as a gift-card rebate.\n12. Amount due at register, amount paid, and total savings must be tracked separately.\n13. A rebate or reward must not be counted twice.\n14. The known `$0.01` baseline discrepancy must not be silently changed without an explicit financial-model decision.\n\n## Required financial categories\n\nThe model should support:\n\n- Regular merchandise total\n- Sale discount total\n- Store coupon total\n- Promotion total\n- Manufacturer coupon total\n- Total after merchandise discounts\n- Sales tax\n- Rewards earned\n- Rewards used\n- Register Rewards\n- Walgreens Cash\n- Cash rebates\n- Gift-card rebates\n- Amount due at register\n- Cash paid\n- Credit-card paid\n- Total paid after rebates\n- Total savings\n- Effective price\n\n## Workbook transaction requirements\n\nUse the Phase 2 workbook transaction as a regression example.\n\nThe transaction includes:\n\n- Neutrogena SKU `07050111090`\n- Neutrogena quantity `2`\n- Neutrogena regular total `$15.58`\n- Lysol travel wipes SKU `01920099717`\n- Lysol quantity `2`\n- Lysol total `$6.58`\n- Sales tax `$1.04`\n- Register Reward used `$2.00`\n- Walgreens Cash used `$10.00`\n- Amount due at register `$3.60`\n- Paid cash `$3.60`\n- Paid credit card `$0.00`\n- Cash rebates `$0.00`\n\n## Implementation tasks\n\n- [ ] Review the current financial classes and identify which categories already exist.\n- [ ] Add or update domain objects for the required financial categories.\n- [ ] Separate rewards earned from rewards used.\n- [ ] Separate Register Rewards from Walgreens Cash.\n- [ ] Represent cash rebates separately from store rewards.\n- [ ] Update the transaction calculation logic.\n- [ ] Prevent duplicate counting of discounts, rewards, and rebates.\n- [ ] Add unit tests for each financial calculation.\n- [ ] Update the workbook transaction regression test.\n- [ ] Preserve the existing application behavior unless the financial-model change explicitly changes it.\n- [ ] Run the complete Maven test suite.\n\n## Acceptance criteria\n\n- [ ] Regular merchandise totals are calculated separately from discounts.\n- [ ] Sale discounts, store coupons, promotions, and manufacturer coupons are distinguishable.\n- [ ] Sales tax is calculated and stored separately.\n- [ ] Rewards earned do not reduce the original item price.\n- [ ] Rewards used reduce the amount paid at checkout.\n- [ ] Register Rewards and Walgreens Cash are tracked separately.\n- [ ] Cash rebates are tracked separately and remain `$0.00` for the Phase 2 transaction.\n- [ ] Gift-card rebates are not inferred solely from the `Store GC Rebates` spreadsheet column.\n- [ ] Total savings is calculated without double counting.\n- [ ] The Phase 2 workbook regression test still passes.\n- [ ] All Maven tests pass.\n- [ ] No unrelated features are added.\n\n<!-- Edit the body of your new issue then click the ✓ \"Create Issue\" button in the top right of the editor. The first line will be the issue title. Assignees and Labels follow after a blank line. Leave an empty line before beginning the body of the issue. -->",
+      "rewardUsd": 0.01,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 0.01,
+      "profitPerHourUsd": 0.12,
+      "eligible": true
     },
     {
       "id": "github-5801841657",
@@ -433,21 +432,6 @@
       "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
       "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
       "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5696083537",
-      "source": "github",
-      "title": "DECISION: Free vs paid split, and which features are paid.",
-      "url": "https://github.com/nirgeier/CodeWizard-DevOpsAgents/issues/488",
-      "description": "**Source:** [`task/14-decisions-and-open-questions.md` §14.4](https://github.com/nirgeier/CodeWizard-DevOpsAgents/blob/main/task/14-decisions-and-open-questions.md#L65) — What is the actual business model?\n\n> The permalink 404s until the `task/` backlog is committed — it is staged but not yet pushed. The file and section number are correct.\n\nPart of epic: [14 — Decisions & Open Questions](https://github.com/nirgeier/CodeWizard-DevOpsAgents/issues/22)\n\n### Task\n\nFree vs paid split, and which features are paid.\n\n---\n\n<sub>Split from the `task/` backlog. One checkbox = one issue, so each can be reviewed, assigned and closed on its own.</sub>\n\n<sub>Labels: `area:infra`, `phase:1-now`</sub>",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

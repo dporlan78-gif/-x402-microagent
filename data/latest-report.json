@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T14:52:25.297Z",
+  "generatedAt": "2026-10-15T15:53:14.413Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 20,
+  "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -324,20 +324,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5859466370",
-      "source": "github",
-      "title": "Issue Title",
-      "url": "https://github.com/awarbler/distributed-coupon-system/issues/9",
-      "description": "## Goal\n\nImplement a clear financial model for coupon transactions so merchandise discounts, coupons, rewards, rebates, taxes, payments, and savings are tracked separately and calculated correctly.\n\n## Financial rules\n\nThe model must follow these rules:\n\n1. Start with the regular merchandise price.\n2. Track sale discounts separately.\n3. Track store coupons and promotions separately.\n4. Track manufacturer coupons separately.\n5. Sales tax is recorded separately from merchandise discounts.\n6. Rewards earned do not automatically reduce the item price.\n7. Rewards used reduce the amount paid at checkout.\n8. Register Rewards and Walgreens Cash are separate reward types.\n9. Cash rebates are separate from store rewards.\n10. Gift-card rebates are separate from Register Rewards and Walgreens Cash.\n11. The spreadsheet's `Store GC Rebates` column is an aggregate source field and must not automatically be classified as a gift-card rebate.\n12. Amount due at register, amount paid, and total savings must be tracked separately.\n13. A rebate or reward must not be counted twice.\n14. The known `$0.01` baseline discrepancy must not be silently changed without an explicit financial-model decision.\n\n## Required financial categories\n\nThe model should support:\n\n- Regular merchandise total\n- Sale discount total\n- Store coupon total\n- Promotion total\n- Manufacturer coupon total\n- Total after merchandise discounts\n- Sales tax\n- Rewards earned\n- Rewards used\n- Register Rewards\n- Walgreens Cash\n- Cash rebates\n- Gift-card rebates\n- Amount due at register\n- Cash paid\n- Credit-card paid\n- Total paid after rebates\n- Total savings\n- Effective price\n\n## Workbook transaction requirements\n\nUse the Phase 2 workbook transaction as a regression example.\n\nThe transaction includes:\n\n- Neutrogena SKU `07050111090`\n- Neutrogena quantity `2`\n- Neutrogena regular total `$15.58`\n- Lysol travel wipes SKU `01920099717`\n- Lysol quantity `2`\n- Lysol total `$6.58`\n- Sales tax `$1.04`\n- Register Reward used `$2.00`\n- Walgreens Cash used `$10.00`\n- Amount due at register `$3.60`\n- Paid cash `$3.60`\n- Paid credit card `$0.00`\n- Cash rebates `$0.00`\n\n## Implementation tasks\n\n- [ ] Review the current financial classes and identify which categories already exist.\n- [ ] Add or update domain objects for the required financial categories.\n- [ ] Separate rewards earned from rewards used.\n- [ ] Separate Register Rewards from Walgreens Cash.\n- [ ] Represent cash rebates separately from store rewards.\n- [ ] Update the transaction calculation logic.\n- [ ] Prevent duplicate counting of discounts, rewards, and rebates.\n- [ ] Add unit tests for each financial calculation.\n- [ ] Update the workbook transaction regression test.\n- [ ] Preserve the existing application behavior unless the financial-model change explicitly changes it.\n- [ ] Run the complete Maven test suite.\n\n## Acceptance criteria\n\n- [x] Regular merchandise totals are calculated separately from discounts.\n- [x] Sale discounts, store coupons, promotions, and manufacturer coupons are distinguishable.\n- [x] Sales tax is calculated and stored separately.\n- [x] Rewards earned do not reduce the original item price.\n- [x] Rewards used reduce the amount paid at checkout.\n- [x] Register Rewards and Walgreens Cash are tracked separately.\n- [x] Cash rebates are tracked separately and remain `$0.00` for the Phase 2 transaction.\n- [x] Gift-card rebates are not inferred solely from the `Store GC Rebates` spreadsheet column.\n- [x] Total savings is calculated without double counting.\n- [x] The Phase 2 workbook regression test still passes.\n- [ ] All Maven tests pass.\n- [ ] No unrelated features are added.\n\n<!-- Edit the body of your new issue then click the ✓ \"Create Issue\" button in the top right of the editor. The first line will be the issue title. Assignees and Labels follow after a blank line. Leave an empty line before beginning the body of the issue. -->",
-      "rewardUsd": 0.01,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0.01,
-      "profitPerHourUsd": 0.12,
-      "eligible": true
-    },
-    {
       "id": "github-5734621572",
       "source": "github",
       "title": "Paid plan: one-time purchase that unlocks paid features",
@@ -432,6 +418,21 @@
       "title": "Events: complete paid-event payments",
       "url": "https://github.com/the-monkeys/the_monkeys/issues/753",
       "description": "﻿### 🐛 Describe the Bug\n\nPaid events are only partly working. Razorpay checkout, the webhook, refunds and the fee split exist, but the create form cannot set a price, abandoned checkouts hold seats forever, refunds are not retried, hosts have no payout flow, and nobody gets receipts or invoices. This is a tracking issue; the work is in the sub-issues.\n\n### 🔃 Steps to Reproduce\n\n1. Try to create a paid event at https://monkeys.com.co/events/new. The ticket is saved at ₹0.\n2. See the sub-issues for the other failure cases.\n\n### 📃 Expected Behavior\n\nSub-issues:\n- the-monkeys/the_monkeys#752 paid tickets in the create form, fee preview and host earnings\r\n- the-monkeys/monkeys_brain#420 expire abandoned pending_payment seats\r\n- the-monkeys/monkeys_brain#421 reliable refunds, refund policy and webhooks\r\n- the-monkeys/monkeys_brain#422 host payout details and payout status\r\n- the-monkeys/monkeys_brain#423 receipts and fee invoices\r\n\nOut of scope: international payments. event_payments is restricted to INR (CHECK (currency = 'INR')), so multi-currency would need its own issue.\n\n### 📸 Screenshots or Videos\n\nN/A.\n\n### ✅ Verification (is it fixed?)\n\n- [ ] All sub-issues closed.\n- [ ] End to end: a host sets a price, a guest pays and gets a receipt, an abandoned checkout releases its seat, a cancellation refunds per the policy, and the host sees earnings and a payout.\r\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5642477210",
+      "source": "github",
+      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
+      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
+      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

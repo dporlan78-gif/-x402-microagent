@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T11:51:01.456Z",
+  "generatedAt": "2026-10-15T13:05:41.370Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,7 +13,7 @@
       "micro bounty"
     ]
   },
-  "discovered": 39,
+  "discovered": 40,
   "eligible": 20,
   "realMoneySpentUsd": 0,
   "opportunities": [
@@ -174,6 +174,21 @@
       "eligible": true
     },
     {
+      "id": "github-5866357925",
+      "source": "github",
+      "title": "[WF-6] Nym API (rewarder) uses the on-chain ticket-based work factor in reward calculations",
+      "url": "https://github.com/nymtech/nym/issues/7270",
+      "description": "Decentralisation roadmap item `WF-6`.\n\nSection: Work Factor Calculation Changes\n\nDirect blockers and the issues that this one blocks:\n\n```mermaid\nflowchart LR\n  classDef done fill:#d4edda,stroke:#2e7d32,color:#000\n  classDef progress fill:#fff3cd,stroke:#b8860b,color:#000\n  classDef investigating fill:#d6e4ff,stroke:#1f4fa3,color:#000\n  classDef todo fill:#f6f8fa,stroke:#57606a,color:#000\n  WF_5[\"WF-5: Changes to e-cash contract to get the epoch's share of deposits\"]\n  WF_4[\"WF-4: Work factor is on chain (ticket-based)\"]\n  WF_6[\"WF-6: Nym API (rewarder) uses the on-chain ticket-based work factor in reward calculations\"]\n  WF_7[\"WF-7: Nym API work factor calculation changes\"]\n  WF_4 --> WF_6\n  WF_5 --> WF_6\n  WF_6 --> WF_7\n  class WF_4,WF_5,WF_6,WF_7 todo\n  style WF_6 stroke-width:4px\n```",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5794782255",
       "source": "github",
       "title": "Bug: Trade Republic staking rewards and their tax are not imported",
@@ -249,6 +264,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5866323826",
+      "source": "github",
+      "title": "[WF-5] Changes to e-cash contract to get the epoch's share of deposits",
+      "url": "https://github.com/nymtech/nym/issues/7243",
+      "description": "Decentralisation roadmap item `WF-5`.\n\nSection: Work Factor Calculation Changes\n\nDirect blockers and the issues that this one blocks:\n\n```mermaid\nflowchart LR\n  classDef done fill:#d4edda,stroke:#2e7d32,color:#000\n  classDef progress fill:#fff3cd,stroke:#b8860b,color:#000\n  classDef investigating fill:#d6e4ff,stroke:#1f4fa3,color:#000\n  classDef todo fill:#f6f8fa,stroke:#57606a,color:#000\n  WF_5[\"WF-5: Changes to e-cash contract to get the epoch's share of deposits\"]\n  WF_6[\"WF-6: Nym API (rewarder) uses the on-chain ticket-based work factor in reward calculations\"]\n  EPOCH_6[\"EPOCH-6: On-chain work factor calculation changes\"]\n  WF_5 --> WF_6\n  WF_5 --> EPOCH_6\n  class EPOCH_6,WF_5,WF_6 todo\n  style WF_5 stroke-width:4px\n```",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5836630355",
       "source": "github",
       "title": "[QUESTION] Current cash payouts for informational documentation work",
@@ -279,11 +309,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5781381094",
+      "id": "github-5801841657",
       "source": "github",
-      "title": "Every dividend subtype is read as a dividend, and a staking reward carries no cash",
-      "url": "https://github.com/ProfessorBagholder/Bagholder/issues/473",
-      "description": "`wealthsimple/src/mapping.rs:197` (every DIVIDEND subtype becomes `Kind::Dividend`), `:212`.\n\n**Findings:** gap2-6 (brief 15).\n**Severity:** medium.\n**The standard:** CRA and the category's tax reports keep return of capital, reinvested distributions and staking income apart (Sharesight, Koinly).\n**The test that will hold the fix:** Mapping cases: each subtype maps to its own form, carried to the cash flow.\n\nChecked against `master` at 4d102be9.",
+      "title": "Simulated paid checkout and paid-sales activation",
+      "url": "https://github.com/erasylurazalin/biletflow/issues/42",
+      "description": "Paid tickets with a clearly labelled simulation instead of real money (SRS 3.2, 4.5, 4.6, success criterion 2).\n\n- Activation per event: an organizer-owned checklist (payout account on the organizer profile, simulated fee of 5,000 KZT since SRS 3.3 leaves the amount open, accepted terms). Paid ticket types cannot be bought before activation.\n- Paid orders start `pending` and hold inventory for 15 minutes (the SRS gives no time; 15 minutes is our default). `POST /api/orders/:id/pay` marks it paid and issues tickets. Expired orders release their inventory and never produce tickets.\n- Every simulated payment is labelled as demonstration data in the API and never shown as a real transaction (SRS 4.6).\n- Use the next free migration number when you open the PR.\n\nDue: October 24, 2026.\n\nDone when: an organizer activates paid sales on their event, an attendee buys a paid ticket through pending and pay, an expired pending order returns its seats, and tests cover buying before activation and paying an expired order.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -306,21 +336,6 @@
       "expectedProfitUsd": 0.01,
       "profitPerHourUsd": 0.12,
       "eligible": true
-    },
-    {
-      "id": "github-5801841657",
-      "source": "github",
-      "title": "Simulated paid checkout and paid-sales activation",
-      "url": "https://github.com/erasylurazalin/biletflow/issues/42",
-      "description": "Paid tickets with a clearly labelled simulation instead of real money (SRS 3.2, 4.5, 4.6, success criterion 2).\n\n- Activation per event: an organizer-owned checklist (payout account on the organizer profile, simulated fee of 5,000 KZT since SRS 3.3 leaves the amount open, accepted terms). Paid ticket types cannot be bought before activation.\n- Paid orders start `pending` and hold inventory for 15 minutes (the SRS gives no time; 15 minutes is our default). `POST /api/orders/:id/pay` marks it paid and issues tickets. Expired orders release their inventory and never produce tickets.\n- Every simulated payment is labelled as demonstration data in the API and never shown as a real transaction (SRS 4.6).\n- Use the next free migration number when you open the PR.\n\nDue: October 24, 2026.\n\nDone when: an organizer activates paid sales on their event, an attendee buys a paid ticket through pending and pay, an expired pending order returns its seats, and tests cover buying before activation and paying an expired order.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-5734621572",
@@ -357,7 +372,7 @@
       "source": "github",
       "title": "[HYDRA] Paid work lead watch",
       "url": "https://github.com/p1ngtoohigh/Jarvus-Pub/issues/1",
-      "description": "HYDRA lead watch. Public candidate links only; no automatic proposals, purchases, or contracts.\n\n- [[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1) — updated 2026-10-14T23:06:44Z\n- [[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2) — updated 2026-10-14T23:04:46Z\n- [[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5) — updated 2026-10-14T23:01:02Z\n- [[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4) — updated 2026-10-14T22:56:18Z\n- [[Bounty $1,000] FP32 ttnn.cumsum returns NaN after infinity or overflow](https://github.com/tenstorrent/tt-metal/issues/58986) — updated 2026-10-14T22:49:26Z\n\n**Unverified leads, not contracts.** Confirm funding, eligibility, and AI-use rules. No proposal was submitted.\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/58986 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/218 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/223 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/222 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/221 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/330 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1377 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1373 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1375 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1361 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/476 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1892 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/277 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/8621 -->\n<!-- seen:https://github.com/aLexzzz430/Cognitive-OS/issues/5 -->",
+      "description": "HYDRA lead watch. Public candidate links only; no automatic proposals, purchases, or contracts.\n\n- [[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1) — updated 2026-10-14T23:06:44Z\n- [[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2) — updated 2026-10-14T23:04:46Z\n- [[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5) — updated 2026-10-14T23:01:02Z\n- [[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4) — updated 2026-10-14T22:56:18Z\n- [[Bounty $1,000] FP32 ttnn.cumsum returns NaN after infinity or overflow](https://github.com/tenstorrent/tt-metal/issues/58986) — updated 2026-10-14T22:49:26Z\n\n**Unverified leads, not contracts.** Confirm funding, eligibility, and AI-use rules. No proposal was submitted.\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/58986 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/218 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/223 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/222 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/221 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/330 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1377 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1373 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1375 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1361 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/476 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1892 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/277 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/8621 -->\n<!-- seen:https://github.com/aLexzzz430/Cognitive-OS/issues/5 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1350 -->\n<!-- seen:https://github.com/verdikta/verdikta-applications/issues/76 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1368 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/77 -->\n<!-- seen:https://github.com/weilixiong/TentOfTrials/issues/5 -->",
       "rewardUsd": 50,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

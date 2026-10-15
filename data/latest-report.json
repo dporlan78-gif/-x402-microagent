@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T09:51:45.541Z",
+  "generatedAt": "2026-10-15T10:52:38.847Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 39,
-  "eligible": 21,
+  "eligible": 20,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -145,18 +145,19 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-4864582055",
+      "id": "github-5832041798",
       "source": "github",
-      "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracl",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/309",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/257\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracle in RSA-\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/246\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracle in RSA-OAEP Decr\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/186\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracle in RSA-OAEP Decryption $2\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/147\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracle in RSA-OAEP Decryption $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/57\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [BUG] Bleichenbacher Oracle in RSA-OAEP Decryption $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/43\n\n### 漏洞描述 / Description\n[Bounty] [BUG] Bleichenbacher Oracle in RSA-OAEP Decryption $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/ai-research/issues/940\n\n### 漏洞描述 / Description\n[BUG] Bleichenbacher Oracle in RSA-OAEP Decryption $200\n\n## Bleichenbacher Oracle RSA-OAEP 解密\n\n**难度**: Expert | **赏金**: $200\n\n### 漏洞描述\nRSA-OAEP 解密实现存在 padding oracle：当 ciphertext 解密失败时，服务器返回的报错信息会根据失败类型（padding 无效 / MAC 不匹配）有所区别，形成可被利用的 oracle。\n\n### 要求\n实现 constant-time 错误返回，消除 side-channel oracle。\n\n### 验收标准\n- [ ] 所有解密失败返回统一错误消息\n- [ ] constant-time 比较操作\n- [ ] 通过 Bleichenbacher 测试向量\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 2,
+      "title": "Every bounty page shares the generic OG image — no per-bounty share card",
+      "url": "https://github.com/MergeFi/frontend/issues/696",
+      "description": "## Problem\n\n`issues/[id]/page.tsx` sets OG/Twitter title and description but inherits the site-wide `opengraph-image.tsx`. Shared bounty links show the generic MergeFi card instead of the reward, repository and status, which are the details that make a bounty link worth clicking in Discord or X.\n\n## Suggested fix\n\nAdd `issues/[id]/opengraph-image.tsx` using `ImageResponse` with the title, `org/repo`, reward and asset.\n\nRelated: #391\n",
+      "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 2,
-      "profitPerHourUsd": 24,
-      "eligible": true
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-5806021588",

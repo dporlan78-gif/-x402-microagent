@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T20:51:08.084Z",
+  "generatedAt": "2026-10-15T21:49:38.982Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -313,7 +313,7 @@
       "source": "github",
       "title": "Simulated paid checkout and paid-sales activation",
       "url": "https://github.com/erasylurazalin/biletflow/issues/42",
-      "description": "Paid tickets with a clearly labelled simulation instead of real money (SRS 3.2, 4.5, 4.6, success criterion 2).\n\n- Activation per event: an organizer-owned checklist (payout account on the organizer profile, simulated fee of 5,000 KZT since SRS 3.3 leaves the amount open, accepted terms). Paid ticket types cannot be bought before activation.\n- Paid orders start `pending` and hold inventory for 15 minutes (the SRS gives no time; 15 minutes is our default). `POST /api/orders/:id/pay` marks it paid and issues tickets. Expired orders release their inventory and never produce tickets.\n- Every simulated payment is labelled as demonstration data in the API and never shown as a real transaction (SRS 4.6).\n- Use the next free migration number when you open the PR.\n\nDue: October 24, 2026.\n\nDone when: an organizer activates paid sales on their event, an attendee buys a paid ticket through pending and pay, an expired pending order returns its seats, and tests cover buying before activation and paying an expired order.\n",
+      "description": "Paid tickets with a clearly labelled simulation instead of real money (SRS 3.2, 4.5, 4.6, success criterion 2).\n\n- Activation per event: an organizer-owned checklist (payout account on the organizer profile, simulated fee of 5,000 KZT since SRS 3.3 leaves the amount open, accepted terms). Paid ticket types cannot be bought before activation.\n- Paid orders start `pending` and hold inventory for 15 minutes (the SRS gives no time; 15 minutes is our default). `POST /api/orders/:id/pay` marks it paid and issues tickets. Expired orders release their inventory and never produce tickets.\n- Every simulated payment is labelled as demonstration data in the API and never shown as a real transaction (SRS 4.6).\n- Use the next free migration number when you open the PR.\n\n- Web: the organizer's activation checklist page under `web/src/app/organizer/`, showing each step and whether it is done.\n\nDue: October 22, 2026.\n\nDone when: an organizer activates paid sales on their event, an attendee buys a paid ticket through pending and pay, an expired pending order returns its seats, and tests cover buying before activation and paying an expired order. The checklist page shows each step as it completes.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

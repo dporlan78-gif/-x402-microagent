@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T13:57:55.191Z",
+  "generatedAt": "2026-10-15T14:52:25.297Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -88,20 +88,6 @@
       "eligible": true
     },
     {
-      "id": "github-5468214351",
-      "source": "github",
-      "title": "[Bounty] Reverse bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 500,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 500,
-      "profitPerHourUsd": 6000,
-      "eligible": true
-    },
-    {
       "id": "github-5474087864",
       "source": "github",
       "title": "[Bounty] bitcoin bounty",
@@ -113,6 +99,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 99,
       "profitPerHourUsd": 1188,
+      "eligible": true
+    },
+    {
+      "id": "github-5468214351",
+      "source": "github",
+      "title": "[Bounty] Reverse bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 500,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 500,
+      "profitPerHourUsd": 6000,
       "eligible": true
     },
     {
@@ -328,7 +328,7 @@
       "source": "github",
       "title": "Issue Title",
       "url": "https://github.com/awarbler/distributed-coupon-system/issues/9",
-      "description": "## Goal\n\nImplement a clear financial model for coupon transactions so merchandise discounts, coupons, rewards, rebates, taxes, payments, and savings are tracked separately and calculated correctly.\n\n## Financial rules\n\nThe model must follow these rules:\n\n1. Start with the regular merchandise price.\n2. Track sale discounts separately.\n3. Track store coupons and promotions separately.\n4. Track manufacturer coupons separately.\n5. Sales tax is recorded separately from merchandise discounts.\n6. Rewards earned do not automatically reduce the item price.\n7. Rewards used reduce the amount paid at checkout.\n8. Register Rewards and Walgreens Cash are separate reward types.\n9. Cash rebates are separate from store rewards.\n10. Gift-card rebates are separate from Register Rewards and Walgreens Cash.\n11. The spreadsheet's `Store GC Rebates` column is an aggregate source field and must not automatically be classified as a gift-card rebate.\n12. Amount due at register, amount paid, and total savings must be tracked separately.\n13. A rebate or reward must not be counted twice.\n14. The known `$0.01` baseline discrepancy must not be silently changed without an explicit financial-model decision.\n\n## Required financial categories\n\nThe model should support:\n\n- Regular merchandise total\n- Sale discount total\n- Store coupon total\n- Promotion total\n- Manufacturer coupon total\n- Total after merchandise discounts\n- Sales tax\n- Rewards earned\n- Rewards used\n- Register Rewards\n- Walgreens Cash\n- Cash rebates\n- Gift-card rebates\n- Amount due at register\n- Cash paid\n- Credit-card paid\n- Total paid after rebates\n- Total savings\n- Effective price\n\n## Workbook transaction requirements\n\nUse the Phase 2 workbook transaction as a regression example.\n\nThe transaction includes:\n\n- Neutrogena SKU `07050111090`\n- Neutrogena quantity `2`\n- Neutrogena regular total `$15.58`\n- Lysol travel wipes SKU `01920099717`\n- Lysol quantity `2`\n- Lysol total `$6.58`\n- Sales tax `$1.04`\n- Register Reward used `$2.00`\n- Walgreens Cash used `$10.00`\n- Amount due at register `$3.60`\n- Paid cash `$3.60`\n- Paid credit card `$0.00`\n- Cash rebates `$0.00`\n\n## Implementation tasks\n\n- [ ] Review the current financial classes and identify which categories already exist.\n- [ ] Add or update domain objects for the required financial categories.\n- [ ] Separate rewards earned from rewards used.\n- [ ] Separate Register Rewards from Walgreens Cash.\n- [ ] Represent cash rebates separately from store rewards.\n- [ ] Update the transaction calculation logic.\n- [ ] Prevent duplicate counting of discounts, rewards, and rebates.\n- [ ] Add unit tests for each financial calculation.\n- [ ] Update the workbook transaction regression test.\n- [ ] Preserve the existing application behavior unless the financial-model change explicitly changes it.\n- [ ] Run the complete Maven test suite.\n\n## Acceptance criteria\n\n- [ ] Regular merchandise totals are calculated separately from discounts.\n- [ ] Sale discounts, store coupons, promotions, and manufacturer coupons are distinguishable.\n- [ ] Sales tax is calculated and stored separately.\n- [ ] Rewards earned do not reduce the original item price.\n- [ ] Rewards used reduce the amount paid at checkout.\n- [ ] Register Rewards and Walgreens Cash are tracked separately.\n- [ ] Cash rebates are tracked separately and remain `$0.00` for the Phase 2 transaction.\n- [ ] Gift-card rebates are not inferred solely from the `Store GC Rebates` spreadsheet column.\n- [ ] Total savings is calculated without double counting.\n- [ ] The Phase 2 workbook regression test still passes.\n- [ ] All Maven tests pass.\n- [ ] No unrelated features are added.\n\n<!-- Edit the body of your new issue then click the ✓ \"Create Issue\" button in the top right of the editor. The first line will be the issue title. Assignees and Labels follow after a blank line. Leave an empty line before beginning the body of the issue. -->",
+      "description": "## Goal\n\nImplement a clear financial model for coupon transactions so merchandise discounts, coupons, rewards, rebates, taxes, payments, and savings are tracked separately and calculated correctly.\n\n## Financial rules\n\nThe model must follow these rules:\n\n1. Start with the regular merchandise price.\n2. Track sale discounts separately.\n3. Track store coupons and promotions separately.\n4. Track manufacturer coupons separately.\n5. Sales tax is recorded separately from merchandise discounts.\n6. Rewards earned do not automatically reduce the item price.\n7. Rewards used reduce the amount paid at checkout.\n8. Register Rewards and Walgreens Cash are separate reward types.\n9. Cash rebates are separate from store rewards.\n10. Gift-card rebates are separate from Register Rewards and Walgreens Cash.\n11. The spreadsheet's `Store GC Rebates` column is an aggregate source field and must not automatically be classified as a gift-card rebate.\n12. Amount due at register, amount paid, and total savings must be tracked separately.\n13. A rebate or reward must not be counted twice.\n14. The known `$0.01` baseline discrepancy must not be silently changed without an explicit financial-model decision.\n\n## Required financial categories\n\nThe model should support:\n\n- Regular merchandise total\n- Sale discount total\n- Store coupon total\n- Promotion total\n- Manufacturer coupon total\n- Total after merchandise discounts\n- Sales tax\n- Rewards earned\n- Rewards used\n- Register Rewards\n- Walgreens Cash\n- Cash rebates\n- Gift-card rebates\n- Amount due at register\n- Cash paid\n- Credit-card paid\n- Total paid after rebates\n- Total savings\n- Effective price\n\n## Workbook transaction requirements\n\nUse the Phase 2 workbook transaction as a regression example.\n\nThe transaction includes:\n\n- Neutrogena SKU `07050111090`\n- Neutrogena quantity `2`\n- Neutrogena regular total `$15.58`\n- Lysol travel wipes SKU `01920099717`\n- Lysol quantity `2`\n- Lysol total `$6.58`\n- Sales tax `$1.04`\n- Register Reward used `$2.00`\n- Walgreens Cash used `$10.00`\n- Amount due at register `$3.60`\n- Paid cash `$3.60`\n- Paid credit card `$0.00`\n- Cash rebates `$0.00`\n\n## Implementation tasks\n\n- [ ] Review the current financial classes and identify which categories already exist.\n- [ ] Add or update domain objects for the required financial categories.\n- [ ] Separate rewards earned from rewards used.\n- [ ] Separate Register Rewards from Walgreens Cash.\n- [ ] Represent cash rebates separately from store rewards.\n- [ ] Update the transaction calculation logic.\n- [ ] Prevent duplicate counting of discounts, rewards, and rebates.\n- [ ] Add unit tests for each financial calculation.\n- [ ] Update the workbook transaction regression test.\n- [ ] Preserve the existing application behavior unless the financial-model change explicitly changes it.\n- [ ] Run the complete Maven test suite.\n\n## Acceptance criteria\n\n- [x] Regular merchandise totals are calculated separately from discounts.\n- [x] Sale discounts, store coupons, promotions, and manufacturer coupons are distinguishable.\n- [x] Sales tax is calculated and stored separately.\n- [x] Rewards earned do not reduce the original item price.\n- [x] Rewards used reduce the amount paid at checkout.\n- [x] Register Rewards and Walgreens Cash are tracked separately.\n- [x] Cash rebates are tracked separately and remain `$0.00` for the Phase 2 transaction.\n- [x] Gift-card rebates are not inferred solely from the `Store GC Rebates` spreadsheet column.\n- [x] Total savings is calculated without double counting.\n- [x] The Phase 2 workbook regression test still passes.\n- [ ] All Maven tests pass.\n- [ ] No unrelated features are added.\n\n<!-- Edit the body of your new issue then click the ✓ \"Create Issue\" button in the top right of the editor. The first line will be the issue title. Assignees and Labels follow after a blank line. Leave an empty line before beginning the body of the issue. -->",
       "rewardUsd": 0.01,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -442,11 +442,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5642477210",
+      "id": "github-5734624148",
       "source": "github",
-      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
-      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
-      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
+      "title": "Paid: custom rule profiles",
+      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
+      "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T10:52:38.847Z",
+  "generatedAt": "2026-10-15T11:51:01.456Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -88,20 +88,6 @@
       "eligible": true
     },
     {
-      "id": "github-5468214351",
-      "source": "github",
-      "title": "[Bounty] Reverse bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 500,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 500,
-      "profitPerHourUsd": 6000,
-      "eligible": true
-    },
-    {
       "id": "github-5474087864",
       "source": "github",
       "title": "[Bounty] bitcoin bounty",
@@ -113,6 +99,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 99,
       "profitPerHourUsd": 1188,
+      "eligible": true
+    },
+    {
+      "id": "github-5468214351",
+      "source": "github",
+      "title": "[Bounty] Reverse bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 500,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 500,
+      "profitPerHourUsd": 6000,
       "eligible": true
     },
     {
@@ -397,6 +397,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5865483722",
+      "source": "github",
+      "title": "Add paid resource comparison view",
+      "url": "https://github.com/LumenRoute/lumenbazaar-frontend/issues/38",
+      "description": "## Description\n\nDevelopers need a safe way to compare payment terms, schemas, freshness, and seller evidence across similar paid resources.\n\n## Scope\n\n**In scope:** Allow selecting a bounded number of resources and compare network, asset contract, atomic amount, recipient, schemas, seller verification, and freshness.\n\n**Out of scope:** Do not rank security or quality using an unexplained aggregate score.\n\n## Relevant files\n\nsrc/components/explore; src/components/resources; src/services/catalog.ts\n\n## Acceptance criteria\n\n- Comparison uses live API records outside demo mode\n- Missing fields remain visibly unknown\n- Asset contract and network differences are prominent\n- Tests cover partial data, incompatible schemas, and mobile layout\n\n## Validation requirements\n\n- Run `pnpm check`\n- Add focused Vitest or Playwright coverage\n- Verify desktop and mobile behavior for visible changes\n\n## Security and protocol constraints\n\n- Use synthetic or explicitly public testnet data only.\n- Never commit secrets, seed phrases, private keys, signed private payloads, or production records.\n- Keep unsupported network and payment capabilities fail closed and accurately labeled.\n\n## Drips complexity\n\nMedium\n\n## Suggested branch\n\n```\nfrontend/add-paid-resource-comparison-view\n```\n\n## PR requirements\n\n- Keep the pull request scoped to this issue.\n- Include exact validation evidence and update affected documentation.\n- Use `Closes #[issue number]` in the pull request description.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5806572710",
       "source": "github",
       "title": "Events: complete paid-event payments",
@@ -417,21 +432,6 @@
       "title": "Paid: custom rule profiles",
       "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
       "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5642477210",
-      "source": "github",
-      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
-      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
-      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

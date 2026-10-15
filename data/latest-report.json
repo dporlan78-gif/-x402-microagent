@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T21:49:38.982Z",
+  "generatedAt": "2026-10-15T22:46:58.318Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 19,
+  "eligible": 21,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -116,6 +116,20 @@
       "eligible": true
     },
     {
+      "id": "github-5874535183",
+      "source": "github",
+      "title": "[Bounty] [Bounty: $45] Validate input to bytes32ToStellarAddress",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1897",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/Parabola-org/parabola/issues/19\n\n### 漏洞描述 / Description\n[Bounty: $45] Validate input to bytes32ToStellarAddress\n\n**Context**\n`bytes32ToStellarAddress` in `src/utils/encoding.ts:28-32` does `Buffer.from(hex, \"hex\")` with no validation and passes the result straight to `StrKey.encodeEd25519PublicKey`. `Buffer.from` silently truncates at the first non-hex character and accepts odd-length strings by dropping the leading nibble, so garbage input produces a garbage-but-plausible `G...` address instead of an error. Its sibling `stellarAddressToBytes32` (lines 12-25) validates both directions of the strkey round trip; this inverse got missed. It's exported from the package via the encoding utilities consumers import.\n\n**Proposed Change**\nMirror the validation discipline of `evmAddressToBytes32` (lines 120-131): require an `0x`-prefixed, even-length, pure-hex string of exactly 64 hex chars (32 bytes) before decoding, and throw a descriptive error otherwise.\n\n**Acceptance Criteria**\n\n- 32-byte valid hex input round-trips: `bytes32ToStellarAddress(stellarAddressToBytes32(g)) === g` for sample G-addresses.\n- Non-hex characters, odd lengths, wrong byte lengths, and missing `0x` prefix each throw with a clear message.\n- Contract (C...) round-trip behavior is documented — either supported explicitly or rejected explicitly; not silently mangled.\n- Tests added in `tests/encoding.test.ts`.\n- Verified by the `typecheck-test-build` job in `.github/workflows/ci.yml`.\n\n**Suggested Label**: bug\n**Bounty:** $45\n**ETA:** 24 hours\n\n### 积分币奖励 / Coin Reward\n56 coins\n\n### 真实赏金（USD）/ Real Reward\n$45\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 45,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 45,
+      "profitPerHourUsd": 540,
+      "eligible": true
+    },
+    {
       "id": "github-5497945092",
       "source": "github",
       "title": "[Bounty] $239398281948585883* bounty",
@@ -130,34 +144,18 @@
       "eligible": true
     },
     {
-      "id": "github-5399303366",
+      "id": "github-5874536691",
       "source": "github",
-      "title": "Bounty marketplace UI (/, /bounties, /bounties/[id], /create)",
-      "url": "https://github.com/rylsherdamz-rgb/stellar-forge/issues/13",
-      "description": "Per SPEC.md §27. Landing, marketplace with filters, detail page with escrow status + claim, and create/fund form.\n\nAcceptance:\n- [ ] Browse + filter (tech, reward, asset, deadline, status)\n- [ ] Create+fund calls create_bounty (escrow on creation)\n- [ ] Detail shows on-chain status and claim button",
-      "rewardUsd": 0,
+      "title": "[Bounty] [Bounty: $125] Add structured progress callbacks to transfer()",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1910",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/Parabola-org/parabola/issues/6\n\n### 漏洞描述 / Description\n[Bounty: $125] Add structured progress callbacks to transfer()\n\n**Context**\n`transfer()` in `src/transfer.ts:43-139` runs up to four distinct stages — recipient readiness check, approve, burn (+ confirmation), attestation polling, mint — with no way for a caller to observe progress except by parsing thrown errors after the fact. The README positions transfer observability as where this project is headed. Today a long standard transfer is a silent gap of up to `pollTimeout` (default 300s, `src/constants.ts:80`). Services and the demo app cannot show stage-level status, and operators cannot metric per-stage durations even though `durationMs` in `TransferResult` already proves timing is interesting.\n\n**Proposed Change**\nAdd an optional `options.onProgress?: (event: TransferProgressEvent) => void` where `TransferProgressEvent` is a discriminated union with a `stage` field (`\"recipient-check\" | \"approve\" | \"burn-submitted\" | \"burn-confirmed\" | \"attestation\" | \"mint-submitted\" | \"mint-confirmed\"`) plus relevant payloads (tx hashes as they become available, timestamps). Emit events at the existing stage boundaries in `transfer()`; do not change any control flow. Callback exceptions must not break the transfer (swallow or defer to `console.error`-free handling — pick one and document it).\n\n**Acceptance Criteria**\n\n- `TransferProgressEvent` is exported from `src/index.ts` with documented stage payloads.\n- A mocked full transfer emits the expected stage sequence in order, with `burnTxHash` present from `burn-submitted` onward.\n- Throwing from `onProgress` does not alter the transfer's result or error behavior.\n- No behavior change when `onProgress` is omitted (existing tests untouched and green).\n- Verified by the `typecheck-test-build` job in `.github/workflows/ci.yml`.\n\n**Suggested Label**: feature\n**Bounty:** $125\n**ETA:** 72 hours\n\n### 积分币奖励 / Coin Reward\n156 coins\n\n### 真实赏金（USD）/ Real Reward\n$125\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 125,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5832041798",
-      "source": "github",
-      "title": "Every bounty page shares the generic OG image — no per-bounty share card",
-      "url": "https://github.com/MergeFi/frontend/issues/696",
-      "description": "## Problem\n\n`issues/[id]/page.tsx` sets OG/Twitter title and description but inherits the site-wide `opengraph-image.tsx`. Shared bounty links show the generic MergeFi card instead of the reward, repository and status, which are the details that make a bounty link worth clicking in Discord or X.\n\n## Suggested fix\n\nAdd `issues/[id]/opengraph-image.tsx` using `ImageResponse` with the title, `org/repo`, reward and asset.\n\nRelated: #391\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 125,
+      "profitPerHourUsd": 1500,
+      "eligible": true
     },
     {
       "id": "github-5806021588",
@@ -428,11 +426,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5642477210",
+      "id": "github-5734624148",
       "source": "github",
-      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
-      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
-      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
+      "title": "Paid: custom rule profiles",
+      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
+      "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -443,11 +441,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5734624148",
+      "id": "github-5642477210",
       "source": "github",
-      "title": "Paid: custom rule profiles",
-      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
-      "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
+      "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
+      "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
+      "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T07:55:14.483Z",
+  "generatedAt": "2026-10-15T08:54:53.778Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 39,
-  "eligible": 20,
+  "eligible": 21,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -32,20 +32,6 @@
       "eligible": true
     },
     {
-      "id": "github-5839548473",
-      "source": "github",
-      "title": "[Bounty] 📋 2 open bounties right now",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1891",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/habibdxb01/bounty-watcher/issues/5\n\n### 漏洞描述 / Description\n📋 2 open bounties right now\n\nBounties that were already open when the watcher started. From now on, each new one gets its own issue.\n\n- 🔴 **$150** · [📱 Epic: BAWES Universe Mobile App (Android + iOS)](https://github.com/BAWES-Universe/workadventure-universe/issues/1)\n- 🔴 **$50** · [BOUNTY: integrate AWS Comprehend as a utility to redact data](https://github.com/arakoodev/EdgeChains/issues/290)\n\ncc @habibdxb01\n<!-- algora:gh-4455330769 -->\n<!-- algora:gh-4166244335 -->\n<!-- algora:gh-4043764365 -->\n<!-- algora:gh-2873015698 -->\n<!-- algora:gh-2843240829 -->\n<!-- algora:gh-2843218346 -->\n<!-- algora:gh-2567881942 -->\n<!-- algora:gh-2022440514 -->\n<!-- algora:gh-2018290060 -->\n<!-- algora:gh-2011168530 -->\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 150,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 150,
-      "profitPerHourUsd": 1800,
-      "eligible": true
-    },
-    {
       "id": "github-5465070719",
       "source": "github",
       "title": "[Bounty] bounty",
@@ -57,6 +43,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 1e+82,
       "profitPerHourUsd": 1.2e+83,
+      "eligible": true
+    },
+    {
+      "id": "github-5839548473",
+      "source": "github",
+      "title": "[Bounty] 📋 2 open bounties right now",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1891",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/habibdxb01/bounty-watcher/issues/5\n\n### 漏洞描述 / Description\n📋 2 open bounties right now\n\nBounties that were already open when the watcher started. From now on, each new one gets its own issue.\n\n- 🔴 **$150** · [📱 Epic: BAWES Universe Mobile App (Android + iOS)](https://github.com/BAWES-Universe/workadventure-universe/issues/1)\n- 🔴 **$50** · [BOUNTY: integrate AWS Comprehend as a utility to redact data](https://github.com/arakoodev/EdgeChains/issues/290)\n\ncc @habibdxb01\n<!-- algora:gh-4455330769 -->\n<!-- algora:gh-4166244335 -->\n<!-- algora:gh-4043764365 -->\n<!-- algora:gh-2873015698 -->\n<!-- algora:gh-2843240829 -->\n<!-- algora:gh-2843218346 -->\n<!-- algora:gh-2567881942 -->\n<!-- algora:gh-2022440514 -->\n<!-- algora:gh-2018290060 -->\n<!-- algora:gh-2011168530 -->\n\n### 积分币奖励 / Coin Reward\n187 coins\n\n### 真实赏金（USD）/ Real Reward\n$150\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 150,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 150,
+      "profitPerHourUsd": 1800,
       "eligible": true
     },
     {
@@ -88,20 +88,6 @@
       "eligible": true
     },
     {
-      "id": "github-5474087864",
-      "source": "github",
-      "title": "[Bounty] bitcoin bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 99,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 99,
-      "profitPerHourUsd": 1188,
-      "eligible": true
-    },
-    {
       "id": "github-5468214351",
       "source": "github",
       "title": "[Bounty] Reverse bounty",
@@ -113,6 +99,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 500,
       "profitPerHourUsd": 6000,
+      "eligible": true
+    },
+    {
+      "id": "github-5474087864",
+      "source": "github",
+      "title": "[Bounty] bitcoin bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 99,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 99,
+      "profitPerHourUsd": 1188,
       "eligible": true
     },
     {
@@ -145,19 +145,18 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5832041798",
+      "id": "github-4864582055",
       "source": "github",
-      "title": "Every bounty page shares the generic OG image — no per-bounty share card",
-      "url": "https://github.com/MergeFi/frontend/issues/696",
-      "description": "## Problem\n\n`issues/[id]/page.tsx` sets OG/Twitter title and description but inherits the site-wide `opengraph-image.tsx`. Shared bounty links show the generic MergeFi card instead of the reward, repository and status, which are the details that make a bounty link worth clicking in Discord or X.\n\n## Suggested fix\n\nAdd `issues/[id]/opengraph-image.tsx` using `ImageResponse` with the title, `org/repo`, reward and asset.\n\nRelated: #391\n",
-      "rewardUsd": 0,
+      "title": "[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracl",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/309",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/257\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracle in RSA-\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/246\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracle in RSA-OAEP Decr\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/186\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracle in RSA-OAEP Decryption $2\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/147\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [Bounty] [BUG] Bleichenbacher Oracle in RSA-OAEP Decryption $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/57\n\n### 漏洞描述 / Description\n[Bounty] [Bounty] [BUG] Bleichenbacher Oracle in RSA-OAEP Decryption $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/43\n\n### 漏洞描述 / Description\n[Bounty] [BUG] Bleichenbacher Oracle in RSA-OAEP Decryption $200\n\n### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/zhangjiayang6835-cyber/ai-research/issues/940\n\n### 漏洞描述 / Description\n[BUG] Bleichenbacher Oracle in RSA-OAEP Decryption $200\n\n## Bleichenbacher Oracle RSA-OAEP 解密\n\n**难度**: Expert | **赏金**: $200\n\n### 漏洞描述\nRSA-OAEP 解密实现存在 padding oracle：当 ciphertext 解密失败时，服务器返回的报错信息会根据失败类型（padding 无效 / MAC 不匹配）有所区别，形成可被利用的 oracle。\n\n### 要求\n实现 constant-time 错误返回，消除 side-channel oracle。\n\n### 验收标准\n- [ ] 所有解密失败返回统一错误消息\n- [ ] constant-time 比较操作\n- [ ] 通过 Bleichenbacher 测试向量\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n\n### 积分币奖励 / Coin Reward\n250 coins\n\n### 真实赏金（USD）/ Real Reward\n$200\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 2,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 2,
+      "profitPerHourUsd": 24,
+      "eligible": true
     },
     {
       "id": "github-5806021588",

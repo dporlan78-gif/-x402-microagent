@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T20:49:50.794Z",
+  "generatedAt": "2026-10-16T21:48:21.529Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 21,
+  "eligible": 20,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -88,20 +88,6 @@
       "eligible": true
     },
     {
-      "id": "github-5474087864",
-      "source": "github",
-      "title": "[Bounty] bitcoin bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 99,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 99,
-      "profitPerHourUsd": 1188,
-      "eligible": true
-    },
-    {
       "id": "github-5468214351",
       "source": "github",
       "title": "[Bounty] Reverse bounty",
@@ -113,6 +99,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 500,
       "profitPerHourUsd": 6000,
+      "eligible": true
+    },
+    {
+      "id": "github-5474087864",
+      "source": "github",
+      "title": "[Bounty] bitcoin bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 99,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 99,
+      "profitPerHourUsd": 1188,
       "eligible": true
     },
     {
@@ -130,6 +130,21 @@
       "eligible": true
     },
     {
+      "id": "github-5891366731",
+      "source": "github",
+      "title": "Implement Keeper Bounty Accrual and Reward Distribution",
+      "url": "https://github.com/Zenith-options/backend/issues/245",
+      "description": "**Description:**\nTrack settlement, oracle-submission and liquidation work performed by keepers, accrue a bounty for each completed job, and distribute rewards via on-chain transfers, while exposing an accounting surface so keeper operators are paid fairly and cannot double-claim.\n\n**Problem Statement & Context:**\nThe keeper service (#11) and liquidation engine (#15) depend on external keepers to keep the protocol solvent, but nothing currently compensates them. Without a bounty model there is no incentive to run keepers and settlement stalls under load. This is distinct from protocol fee accrual / treasury sweep (#48), which handles protocol revenue, not keeper compensation.\n\n**Scope & Acceptance Criteria:**\n- Configurable bounty schedule per job type (expiry settlement, oracle submission, liquidation).\n- Idempotent accrual keyed to a job/transaction id so replayed jobs do not double-credit a keeper.\n- On-chain reward distribution (batched where possible) and an operator/keeper-facing accounting endpoint.\n- Bounty ledger persists and is checked by the on-chain <-> off-chain reconciliation job (#12).\n- Out of scope: protocol fee accrual to treasury (#48) and gas-cost attribution reporting (#64).\n\n**Implementation Guidelines:**\n1. Key Files/Modules: keeper/settlement worker modules under `src/chain/`, a new bounty ledger table under `migrations/`, `src/auth.rs` for keeper identity, `sdk/` query methods.\n2. Design/Architecture: accrual is written in the same transaction that records job completion, so a crash cannot lose or duplicate a bounty; payouts are a separate batched step with their own idempotency key.\n3. Edge Cases/Constraints: partial/lost job completion, keepers that submit duplicate transactions, bounty tied to an on-chain payout that later fails (must retry without re-accruing), dust amounts below a payout threshold.\n4. Testing: unit tests for idempotent accrual; integration test replaying the same job twice; proptest that total accrued equals sum of distinct completed jobs.\n\n**Definition of \"Done\":**\n- Code written, tested, and documented.\n- All acceptance criteria met.\n- PR submitted with a clear description, passing CI, relevant test output.\n- Code reviewed and approved.\n\n**Complexity:** Medium (100 points)",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5497945092",
       "source": "github",
       "title": "[Bounty] $239398281948585883* bounty",
@@ -141,20 +156,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 239398281948585900,
       "profitPerHourUsd": 2872779383383030300,
-      "eligible": true
-    },
-    {
-      "id": "github-5874536691",
-      "source": "github",
-      "title": "[Bounty] [Bounty: $125] Add structured progress callbacks to transfer()",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1910",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/Parabola-org/parabola/issues/6\n\n### 漏洞描述 / Description\n[Bounty: $125] Add structured progress callbacks to transfer()\n\n**Context**\n`transfer()` in `src/transfer.ts:43-139` runs up to four distinct stages — recipient readiness check, approve, burn (+ confirmation), attestation polling, mint — with no way for a caller to observe progress except by parsing thrown errors after the fact. The README positions transfer observability as where this project is headed. Today a long standard transfer is a silent gap of up to `pollTimeout` (default 300s, `src/constants.ts:80`). Services and the demo app cannot show stage-level status, and operators cannot metric per-stage durations even though `durationMs` in `TransferResult` already proves timing is interesting.\n\n**Proposed Change**\nAdd an optional `options.onProgress?: (event: TransferProgressEvent) => void` where `TransferProgressEvent` is a discriminated union with a `stage` field (`\"recipient-check\" | \"approve\" | \"burn-submitted\" | \"burn-confirmed\" | \"attestation\" | \"mint-submitted\" | \"mint-confirmed\"`) plus relevant payloads (tx hashes as they become available, timestamps). Emit events at the existing stage boundaries in `transfer()`; do not change any control flow. Callback exceptions must not break the transfer (swallow or defer to `console.error`-free handling — pick one and document it).\n\n**Acceptance Criteria**\n\n- `TransferProgressEvent` is exported from `src/index.ts` with documented stage payloads.\n- A mocked full transfer emits the expected stage sequence in order, with `burnTxHash` present from `burn-submitted` onward.\n- Throwing from `onProgress` does not alter the transfer's result or error behavior.\n- No behavior change when `onProgress` is omitted (existing tests untouched and green).\n- Verified by the `typecheck-test-build` job in `.github/workflows/ci.yml`.\n\n**Suggested Label**: feature\n**Bounty:** $125\n**ETA:** 72 hours\n\n### 积分币奖励 / Coin Reward\n156 coins\n\n### 真实赏金（USD）/ Real Reward\n$125\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 125,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 125,
-      "profitPerHourUsd": 1500,
       "eligible": true
     },
     {
@@ -341,7 +342,7 @@
       "source": "github",
       "title": "[HYDRA] Paid work lead watch",
       "url": "https://github.com/p1ngtoohigh/Jarvus-Pub/issues/1",
-      "description": "HYDRA lead watch. Public candidate links only; no automatic proposals, purchases, or contracts.\n\n- [[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1) — updated 2026-10-14T23:06:44Z\n- [[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2) — updated 2026-10-14T23:04:46Z\n- [[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5) — updated 2026-10-14T23:01:02Z\n- [[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4) — updated 2026-10-14T22:56:18Z\n- [[Bounty $1,000] FP32 ttnn.cumsum returns NaN after infinity or overflow](https://github.com/tenstorrent/tt-metal/issues/58986) — updated 2026-10-14T22:49:26Z\n\n**Unverified leads, not contracts.** Confirm funding, eligibility, and AI-use rules. No proposal was submitted.\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/58986 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/218 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/223 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/222 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/221 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/330 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1377 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1373 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1375 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1361 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/476 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1892 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/277 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/8621 -->\n<!-- seen:https://github.com/aLexzzz430/Cognitive-OS/issues/5 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1350 -->\n<!-- seen:https://github.com/verdikta/verdikta-applications/issues/76 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1368 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/77 -->\n<!-- seen:https://github.com/weilixiong/TentOfTrials/issues/5 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1364 -->\n<!-- seen:https://github.com/uvsmtid/protoprimer/issues/143 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/68 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/82 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/81 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2054 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2943 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2047 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2046 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2942 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/16 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/2 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/3 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/4 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2944 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/99 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/18 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/10 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/5 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/1 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/20 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/19 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/9 -->\n<!-- seen:https://github.com/Uuriko/project-room/issues/3709 -->\n<!-- seen:https://github.com/Uuriko/project-room/issues/3704 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/8 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1904 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1900 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1896 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/217 -->\n<!-- seen:https://github.com/SecureBananaLabs/bug-bounty/issues/76 -->\n<!-- seen:https://github.com/SecureBananaLabs/bug-bounty/issues/80 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1891 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1903 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/51655 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1905 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1911 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1912 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1913 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1914 -->",
+      "description": "HYDRA lead watch. Public candidate links only; no automatic proposals, purchases, or contracts.\n\n- [[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1) — updated 2026-10-14T23:06:44Z\n- [[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2) — updated 2026-10-14T23:04:46Z\n- [[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5) — updated 2026-10-14T23:01:02Z\n- [[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4) — updated 2026-10-14T22:56:18Z\n- [[Bounty $1,000] FP32 ttnn.cumsum returns NaN after infinity or overflow](https://github.com/tenstorrent/tt-metal/issues/58986) — updated 2026-10-14T22:49:26Z\n\n**Unverified leads, not contracts.** Confirm funding, eligibility, and AI-use rules. No proposal was submitted.\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/58986 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/218 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/223 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/222 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/221 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/330 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1377 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1373 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1375 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1361 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/476 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1892 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/277 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/8621 -->\n<!-- seen:https://github.com/aLexzzz430/Cognitive-OS/issues/5 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1350 -->\n<!-- seen:https://github.com/verdikta/verdikta-applications/issues/76 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1368 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/77 -->\n<!-- seen:https://github.com/weilixiong/TentOfTrials/issues/5 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1364 -->\n<!-- seen:https://github.com/uvsmtid/protoprimer/issues/143 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/68 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/82 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/81 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2054 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2943 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2047 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2046 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2942 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/16 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/2 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/3 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/4 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2944 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/99 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/18 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/10 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/5 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/1 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/20 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/19 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/9 -->\n<!-- seen:https://github.com/Uuriko/project-room/issues/3709 -->\n<!-- seen:https://github.com/Uuriko/project-room/issues/3704 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/8 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1904 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1900 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1896 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/217 -->\n<!-- seen:https://github.com/SecureBananaLabs/bug-bounty/issues/76 -->\n<!-- seen:https://github.com/SecureBananaLabs/bug-bounty/issues/80 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1891 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1903 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/51655 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1905 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1911 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1912 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1913 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1914 -->\n<!-- seen:https://github.com/kryptokrona/hugin-native/issues/13 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1915 -->\n<!-- seen:https://github.com/paraloom-labs/paraloom-core/issues/969 -->\n<!-- seen:https://github.com/paraloom-labs/paraloom-wallet/issues/89 -->\n<!-- seen:https://github.com/oll4com/spaceapp/issues/65 -->",
       "rewardUsd": 50,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -396,21 +397,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5806572710",
-      "source": "github",
-      "title": "Events: complete paid-event payments",
-      "url": "https://github.com/the-monkeys/the_monkeys/issues/753",
-      "description": "﻿### 🐛 Describe the Bug\n\nPaid events are only partly working. Razorpay checkout, the webhook, refunds and the fee split exist, but the create form cannot set a price, abandoned checkouts hold seats forever, refunds are not retried, hosts have no payout flow, and nobody gets receipts or invoices. This is a tracking issue; the work is in the sub-issues.\n\n### 🔃 Steps to Reproduce\n\n1. Try to create a paid event at https://monkeys.com.co/events/new. The ticket is saved at ₹0.\n2. See the sub-issues for the other failure cases.\n\n### 📃 Expected Behavior\n\nSub-issues:\n- the-monkeys/the_monkeys#752 paid tickets in the create form, fee preview and host earnings\r\n- the-monkeys/monkeys_brain#420 expire abandoned pending_payment seats\r\n- the-monkeys/monkeys_brain#421 reliable refunds, refund policy and webhooks\r\n- the-monkeys/monkeys_brain#422 host payout details and payout status\r\n- the-monkeys/monkeys_brain#423 receipts and fee invoices\r\n\nOut of scope: international payments. event_payments is restricted to INR (CHECK (currency = 'INR')), so multi-currency would need its own issue.\n\n### 📸 Screenshots or Videos\n\nN/A.\n\n### ✅ Verification (is it fixed?)\n\n- [ ] All sub-issues closed.\n- [ ] End to end: a host sets a price, a guest pays and gets a receipt, an abandoned checkout releases its seat, a cancellation refunds per the policy, and the host sees earnings and a payout.\r\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5865483722",
       "source": "github",
       "title": "Add paid resource comparison view",
@@ -426,11 +412,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5734624148",
+      "id": "github-5806572710",
       "source": "github",
-      "title": "Paid: custom rule profiles",
-      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
-      "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
+      "title": "Events: complete paid-event payments",
+      "url": "https://github.com/the-monkeys/the_monkeys/issues/753",
+      "description": "﻿### 🐛 Describe the Bug\n\nPaid events are only partly working. Razorpay checkout, the webhook, refunds and the fee split exist, but the create form cannot set a price, abandoned checkouts hold seats forever, refunds are not retried, hosts have no payout flow, and nobody gets receipts or invoices. This is a tracking issue; the work is in the sub-issues.\n\n### 🔃 Steps to Reproduce\n\n1. Try to create a paid event at https://monkeys.com.co/events/new. The ticket is saved at ₹0.\n2. See the sub-issues for the other failure cases.\n\n### 📃 Expected Behavior\n\nSub-issues:\n- the-monkeys/the_monkeys#752 paid tickets in the create form, fee preview and host earnings\r\n- the-monkeys/monkeys_brain#420 expire abandoned pending_payment seats\r\n- the-monkeys/monkeys_brain#421 reliable refunds, refund policy and webhooks\r\n- the-monkeys/monkeys_brain#422 host payout details and payout status\r\n- the-monkeys/monkeys_brain#423 receipts and fee invoices\r\n\nOut of scope: international payments. event_payments is restricted to INR (CHECK (currency = 'INR')), so multi-currency would need its own issue.\n\n### 📸 Screenshots or Videos\n\nN/A.\n\n### ✅ Verification (is it fixed?)\n\n- [ ] All sub-issues closed.\n- [ ] End to end: a host sets a price, a guest pays and gets a receipt, an abandoned checkout releases its seat, a cancellation refunds per the policy, and the host sees earnings and a payout.\r\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -446,6 +432,21 @@
       "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
       "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
       "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5734624148",
+      "source": "github",
+      "title": "Paid: custom rule profiles",
+      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
+      "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

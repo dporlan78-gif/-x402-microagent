@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T11:50:21.231Z",
+  "generatedAt": "2026-10-16T13:04:31.376Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -396,21 +396,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5806572710",
-      "source": "github",
-      "title": "Events: complete paid-event payments",
-      "url": "https://github.com/the-monkeys/the_monkeys/issues/753",
-      "description": "﻿### 🐛 Describe the Bug\n\nPaid events are only partly working. Razorpay checkout, the webhook, refunds and the fee split exist, but the create form cannot set a price, abandoned checkouts hold seats forever, refunds are not retried, hosts have no payout flow, and nobody gets receipts or invoices. This is a tracking issue; the work is in the sub-issues.\n\n### 🔃 Steps to Reproduce\n\n1. Try to create a paid event at https://monkeys.com.co/events/new. The ticket is saved at ₹0.\n2. See the sub-issues for the other failure cases.\n\n### 📃 Expected Behavior\n\nSub-issues:\n- the-monkeys/the_monkeys#752 paid tickets in the create form, fee preview and host earnings\r\n- the-monkeys/monkeys_brain#420 expire abandoned pending_payment seats\r\n- the-monkeys/monkeys_brain#421 reliable refunds, refund policy and webhooks\r\n- the-monkeys/monkeys_brain#422 host payout details and payout status\r\n- the-monkeys/monkeys_brain#423 receipts and fee invoices\r\n\nOut of scope: international payments. event_payments is restricted to INR (CHECK (currency = 'INR')), so multi-currency would need its own issue.\n\n### 📸 Screenshots or Videos\n\nN/A.\n\n### ✅ Verification (is it fixed?)\n\n- [ ] All sub-issues closed.\n- [ ] End to end: a host sets a price, a guest pays and gets a receipt, an abandoned checkout releases its seat, a cancellation refunds per the policy, and the host sees earnings and a payout.\r\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5865483722",
       "source": "github",
       "title": "Add paid resource comparison view",
@@ -426,11 +411,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5734624148",
+      "id": "github-5806572710",
       "source": "github",
-      "title": "Paid: custom rule profiles",
-      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
-      "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
+      "title": "Events: complete paid-event payments",
+      "url": "https://github.com/the-monkeys/the_monkeys/issues/753",
+      "description": "﻿### 🐛 Describe the Bug\n\nPaid events are only partly working. Razorpay checkout, the webhook, refunds and the fee split exist, but the create form cannot set a price, abandoned checkouts hold seats forever, refunds are not retried, hosts have no payout flow, and nobody gets receipts or invoices. This is a tracking issue; the work is in the sub-issues.\n\n### 🔃 Steps to Reproduce\n\n1. Try to create a paid event at https://monkeys.com.co/events/new. The ticket is saved at ₹0.\n2. See the sub-issues for the other failure cases.\n\n### 📃 Expected Behavior\n\nSub-issues:\n- the-monkeys/the_monkeys#752 paid tickets in the create form, fee preview and host earnings\r\n- the-monkeys/monkeys_brain#420 expire abandoned pending_payment seats\r\n- the-monkeys/monkeys_brain#421 reliable refunds, refund policy and webhooks\r\n- the-monkeys/monkeys_brain#422 host payout details and payout status\r\n- the-monkeys/monkeys_brain#423 receipts and fee invoices\r\n\nOut of scope: international payments. event_payments is restricted to INR (CHECK (currency = 'INR')), so multi-currency would need its own issue.\n\n### 📸 Screenshots or Videos\n\nN/A.\n\n### ✅ Verification (is it fixed?)\n\n- [ ] All sub-issues closed.\n- [ ] End to end: a host sets a price, a guest pays and gets a receipt, an abandoned checkout releases its seat, a cancellation refunds per the policy, and the host sees earnings and a payout.\r\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -446,6 +431,21 @@
       "title": "[FR-05.07] Compute payment status Due / Partially Paid / Paid",
       "url": "https://github.com/Shashankb30/Hostel-Management-System/issues/73",
       "description": "**User story:** The **system** shall recompute the payment status (Due, Partially Paid, Paid) after every payment.\n\n**Acceptance criteria**\n- [ ] Status recalculated on every payment\n\n**Traceability**\n- Requirement: FR-05 (R5)\n- Use case: UC-05\n- Test Plan cases: UT_14, UT_15\n\n**Definition of Done**\n- [ ] Code reviewed and merged via PR containing `Fixes #<this issue number>`\n- [ ] Related Test Plan cases executed and Actual/Test Result recorded\n- [ ] Board shows the card in Done",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5734624148",
+      "source": "github",
+      "title": "Paid: custom rule profiles",
+      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
+      "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

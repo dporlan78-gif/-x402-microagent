@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T09:51:19.395Z",
+  "generatedAt": "2026-10-16T10:51:54.741Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -32,20 +32,6 @@
       "eligible": true
     },
     {
-      "id": "github-5465070719",
-      "source": "github",
-      "title": "[Bounty] bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1556",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/Boxy-gh/issues/140\n\n### 漏洞描述 / Description\nbounty\n\nbounty for $10000000000000000000000000000000000000000000000000000000000000000000000000000000000 in bitcoin if you fix evil thing\n\n### 积分币奖励 / Coin Reward\n12499999999999998700086623690150724180439707562228501190939691599890968092440788992 coins\n\n### 真实赏金（USD）/ Real Reward\n$10,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 1e+82,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1e+82,
-      "profitPerHourUsd": 1.2e+83,
-      "eligible": true
-    },
-    {
       "id": "github-5839548473",
       "source": "github",
       "title": "[Bounty] 📋 2 open bounties right now",
@@ -57,6 +43,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 150,
       "profitPerHourUsd": 1800,
+      "eligible": true
+    },
+    {
+      "id": "github-5465070719",
+      "source": "github",
+      "title": "[Bounty] bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1556",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/Boxy-gh/issues/140\n\n### 漏洞描述 / Description\nbounty\n\nbounty for $10000000000000000000000000000000000000000000000000000000000000000000000000000000000 in bitcoin if you fix evil thing\n\n### 积分币奖励 / Coin Reward\n12499999999999998700086623690150724180439707562228501190939691599890968092440788992 coins\n\n### 真实赏金（USD）/ Real Reward\n$10,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1e+82,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1e+82,
+      "profitPerHourUsd": 1.2e+83,
       "eligible": true
     },
     {
@@ -88,20 +88,6 @@
       "eligible": true
     },
     {
-      "id": "github-5468214351",
-      "source": "github",
-      "title": "[Bounty] Reverse bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 500,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 500,
-      "profitPerHourUsd": 6000,
-      "eligible": true
-    },
-    {
       "id": "github-5474087864",
       "source": "github",
       "title": "[Bounty] bitcoin bounty",
@@ -113,6 +99,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 99,
       "profitPerHourUsd": 1188,
+      "eligible": true
+    },
+    {
+      "id": "github-5468214351",
+      "source": "github",
+      "title": "[Bounty] Reverse bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 500,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 500,
+      "profitPerHourUsd": 6000,
       "eligible": true
     },
     {
@@ -341,7 +341,7 @@
       "source": "github",
       "title": "[HYDRA] Paid work lead watch",
       "url": "https://github.com/p1ngtoohigh/Jarvus-Pub/issues/1",
-      "description": "HYDRA lead watch. Public candidate links only; no automatic proposals, purchases, or contracts.\n\n- [[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1) — updated 2026-10-14T23:06:44Z\n- [[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2) — updated 2026-10-14T23:04:46Z\n- [[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5) — updated 2026-10-14T23:01:02Z\n- [[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4) — updated 2026-10-14T22:56:18Z\n- [[Bounty $1,000] FP32 ttnn.cumsum returns NaN after infinity or overflow](https://github.com/tenstorrent/tt-metal/issues/58986) — updated 2026-10-14T22:49:26Z\n\n**Unverified leads, not contracts.** Confirm funding, eligibility, and AI-use rules. No proposal was submitted.\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/58986 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/218 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/223 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/222 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/221 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/330 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1377 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1373 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1375 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1361 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/476 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1892 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/277 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/8621 -->\n<!-- seen:https://github.com/aLexzzz430/Cognitive-OS/issues/5 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1350 -->\n<!-- seen:https://github.com/verdikta/verdikta-applications/issues/76 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1368 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/77 -->\n<!-- seen:https://github.com/weilixiong/TentOfTrials/issues/5 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1364 -->\n<!-- seen:https://github.com/uvsmtid/protoprimer/issues/143 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/68 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/82 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/81 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2054 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2943 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2047 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2046 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2942 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/16 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/2 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/3 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/4 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2944 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/99 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/18 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/10 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/5 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/1 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/20 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/19 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/9 -->\n<!-- seen:https://github.com/Uuriko/project-room/issues/3709 -->\n<!-- seen:https://github.com/Uuriko/project-room/issues/3704 -->",
+      "description": "HYDRA lead watch. Public candidate links only; no automatic proposals, purchases, or contracts.\n\n- [[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1) — updated 2026-10-14T23:06:44Z\n- [[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2) — updated 2026-10-14T23:04:46Z\n- [[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5) — updated 2026-10-14T23:01:02Z\n- [[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment](https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4) — updated 2026-10-14T22:56:18Z\n- [[Bounty $1,000] FP32 ttnn.cumsum returns NaN after infinity or overflow](https://github.com/tenstorrent/tt-metal/issues/58986) — updated 2026-10-14T22:49:26Z\n\n**Unverified leads, not contracts.** Confirm funding, eligibility, and AI-use rules. No proposal was submitted.\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/58986 -->\n<!-- seen:https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/218 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/223 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/222 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/221 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/330 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1377 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1373 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1375 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1361 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/476 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1892 -->\n<!-- seen:https://github.com/auscaster/frantic-board/issues/277 -->\n<!-- seen:https://github.com/tenstorrent/tt-metal/issues/8621 -->\n<!-- seen:https://github.com/aLexzzz430/Cognitive-OS/issues/5 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1350 -->\n<!-- seen:https://github.com/verdikta/verdikta-applications/issues/76 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1368 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/77 -->\n<!-- seen:https://github.com/weilixiong/TentOfTrials/issues/5 -->\n<!-- seen:https://github.com/OphirPay/OphirPay/issues/1364 -->\n<!-- seen:https://github.com/uvsmtid/protoprimer/issues/143 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/68 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/82 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/81 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2054 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2943 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2047 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2046 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2942 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/16 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/2 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/3 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/4 -->\n<!-- seen:https://github.com/ditto-assistant/ditto-subnet/issues/2944 -->\n<!-- seen:https://github.com/Spectral-Finance/lux/issues/99 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/18 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/10 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/5 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/1 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/20 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/19 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/9 -->\n<!-- seen:https://github.com/Uuriko/project-room/issues/3709 -->\n<!-- seen:https://github.com/Uuriko/project-room/issues/3704 -->\n<!-- seen:https://github.com/Parabola-org/parabola/issues/8 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1904 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1900 -->\n<!-- seen:https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1896 -->\n<!-- seen:https://github.com/sybil-solutions/local-ai-registry/issues/217 -->",
       "rewardUsd": 50,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -371,6 +371,21 @@
       "title": "Ship a paid order",
       "url": "https://github.com/wrapper31/agentic-springboot-demo/issues/3",
       "description": "Warehouse staff need to mark an order as shipped once it has been paid.\n\n**Acceptance criteria**\n- `POST /api/orders/{orderId}/ship` with body `{\"carrier\": \"UPS\", \"trackingNumber\": \"1Z999\"}` moves a `PAID` order to a new `SHIPPED` status and returns the updated order.\n- Shipping an order that is not `PAID` returns `409 Conflict`; an unknown order returns `404`.\n- `carrier` and `trackingNumber` are required (`400` if blank) and are returned on the order.\n- The change is audited in DynamoDB (visible in `GET /api/orders/{orderId}/history`) and published to `orders.events` as `ORDER_STATUS_CHANGED`.\n- README API table updated.\n\n_This issue is the end-to-end demo for the agentic AI pilot: an agent implements it following CLAUDE.md and the codebase MCP tools, and opens a PR that closes it._",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5882276905",
+      "source": "github",
+      "title": "[Bug]: Paid by MetaMask - Malicious Transactions are eligible to be Paid by MetaMask",
+      "url": "https://github.com/MetaMask/metamask-mobile/issues/37665",
+      "description": "### Describe the bug\n\nMalicious Transactions are eligible to be Paid by MetaMask\n\nSame as in Extension: https://github.com/MetaMask/metamask-extension/issues/47137\n\n### Expected behavior\n\nFlagged malicious transactions should not be eligible to be Paid by MetaMask\n\n\n\n### Screenshots/Recordings\n\nhttps://github.com/user-attachments/assets/40bece8f-9dce-4ce2-9685-4dbe4d4f13a2\n\n### Steps to reproduce\n\n1. Select Monad\n2. Go to test dapp\n3. Connect\n4. Trigger a malicious send\n5. See Paid by MEtaMask\n\n### Error messages or log output\n\n```shell\n\n```\n\n### Where was this bug found?\n\nLive version (from official store)\n\n### Version\n\n8.14.0 and previous \n\n### Build number\n\n7197\n\n### Build type\n\nNone\n\n### Device\n\n7197\n\n### Operating system\n\niOS\n\n### Additional context\n\n_No response_\n\n### Severity\n\n_No response_",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -431,21 +446,6 @@
       "title": "Paid: custom rule profiles",
       "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/16",
       "description": "Let agencies and teams tune the checks to their own standards.\n\n## Scope\n- **Profiles:** sets of rule settings the user can create and switch between (e.g. per client or per site type).\n- **Per rule:** turn it off, change its severity (error, warning, note), or require extra properties on a type (e.g. \"every Product must have `gtin`\", \"every Article must have `author` as a Person entity\").\n- Ignore specific issues on a specific URL or `@id` (a \"won't fix\" list).\n- Import and export profiles as JSON so a team can share them.\n- Stored locally, which needs the `storage` permission.\n\n## Done when\n- Switching profiles changes the Issues tab immediately, and an exported profile imported on another machine gives identical results.\n\nDepends on #9.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5578906086",
-      "source": "github",
-      "title": "Paid help needed – RTL9601D VLAN/OMCI issue with Huawei MA5800",
-      "url": "https://github.com/Anime4000/RTL960x/issues/490",
-      "description": "Hello,\n\nWe are Start Bit Net, a fiber optic equipment distributor from Romania, and we are looking for someone with experience in Realtek RTL9601D firmware / OMCI / VLAN handling who can help us solve a compatibility issue.\n\nTest environment:\n\nXPON SFP ONU Stick: Realtek RTL9601D\nOLT: Huawei MA5800\nRouter: Huawei AR5710\nGPON connection\n\nProblem:\n\nWe tested two firmware versions:\n\nV1.0-230303\n\nONU registers successfully on the MA5800 and remains online.\nTraffic passes through the interface and VLANs.\nHowever, we cannot correctly see/identify the VLAN IDs being transported.\n\nV1.10-240408\n\nONU also registers successfully and remains online.\nHowever, no traffic passes through the device.\n\nWe tested several configurations together with the manufacturer's engineer without solving the problem.\n\nOn the same MA5800 OLT port and with the same configuration, a Huawei GPON Stick works correctly without any additional configuration.\n\nTherefore, we believe the problem is related to RTL9601D firmware / OMCI VLAN handling, rather than the optical link or GPON registration.\n\nWe are looking for someone who can help us:\n\ndiagnose the OMCI/VLAN configuration;\ndetermine whether the problem can be solved by RTL9601D configuration parameters;\nanalyze the existing firmware if necessary;\nmodify/build firmware if required;\nachieve correct VLAN operation with Huawei MA5800.\n\nWe can provide the firmware files, configuration information and test results, and we have access to the MA5800 for testing.\n\nThis is a paid engineering job.\n\nIf you have experience with RTL9601D/RTL960x + Huawei MA5800 + OMCI/VLAN, please contact us or reply here.\n\nThank you.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

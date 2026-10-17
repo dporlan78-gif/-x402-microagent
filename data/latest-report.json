@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T11:43:55.323Z",
+  "generatedAt": "2026-10-17T12:54:40.624Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -88,20 +88,6 @@
       "eligible": true
     },
     {
-      "id": "github-5474087864",
-      "source": "github",
-      "title": "[Bounty] bitcoin bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 99,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 99,
-      "profitPerHourUsd": 1188,
-      "eligible": true
-    },
-    {
       "id": "github-5468214351",
       "source": "github",
       "title": "[Bounty] Reverse bounty",
@@ -113,6 +99,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 500,
       "profitPerHourUsd": 6000,
+      "eligible": true
+    },
+    {
+      "id": "github-5474087864",
+      "source": "github",
+      "title": "[Bounty] bitcoin bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 99,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 99,
+      "profitPerHourUsd": 1188,
       "eligible": true
     },
     {
@@ -278,11 +278,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5836630355",
+      "id": "github-5866323826",
       "source": "github",
-      "title": "[QUESTION] Current cash payouts for informational documentation work",
-      "url": "https://github.com/rroland10/dex223-bug-bounty/issues/22",
-      "description": "## Question\n\nRunproof Studio / Pururin-ux here. Before undertaking an informational documentation contribution, could you clarify the current payment terms?\n\n1. Is payment in BTC mainnet or USDT (TRON) currently available for accepted informational/documentation work by an operator based in Belarus? If Nano (XNO mainnet) is also supported, that would be convenient. Required owner verification would be handled truthfully at payout.\n2. What USD amount or conversion rule applies to the 1M D223 informational tier when the reward is paid in another cryptocurrency, and when is that amount fixed? Are there any required deposits, fees, or verification steps before doing the work?\n3. Are distinct documentation corrections still eligible? Would reconciling the published payout descriptions, with source links and a proposed precise correction, qualify, and who confirms acceptance?\n\n## Context\n\nThe official August 19, 2025 announcement describes rewards paid in D223: https://blog.dex223.io/en/40b40033-2a37-450d-96c0-ca90d30f6866?slug=bug-bounty-2025 . REWARDS.md also lists Bitcoin, Ethereum, USDC and USDT for international researchers: https://github.com/rroland10/dex223-bug-bounty/blob/main/REWARDS.md .\n\nNo testing, transaction, key generation, or new report has been started. This is a payment/scope question, not a claim of a vulnerability or an earned award.\n\nRunproof Studio",
+      "title": "[WF-5] Changes to e-cash contract to get the epoch's share of deposits",
+      "url": "https://github.com/nymtech/nym/issues/7243",
+      "description": "Decentralisation roadmap item `WF-5`.\n\nSection: Work Factor Calculation Changes\n\nDirect blockers and the issues that this one blocks:\n\n```mermaid\nflowchart LR\n  classDef done fill:#d4edda,stroke:#2e7d32,color:#000\n  classDef progress fill:#fff3cd,stroke:#b8860b,color:#000\n  classDef investigating fill:#d6e4ff,stroke:#1f4fa3,color:#000\n  classDef todo fill:#f6f8fa,stroke:#57606a,color:#000\n  WF_5[\"WF-5: Changes to e-cash contract to get the epoch's share of deposits\"]\n  WF_6[\"WF-6: Nym API (rewarder) uses the on-chain ticket-based work factor in reward calculations\"]\n  EPOCH_6[\"EPOCH-6: On-chain work factor calculation changes\"]\n  WF_5 --> WF_6\n  WF_5 --> EPOCH_6\n  class EPOCH_6,WF_5,WF_6 todo\n  style WF_5 stroke-width:4px\n```",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -293,11 +293,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5866323826",
+      "id": "github-5836630355",
       "source": "github",
-      "title": "[WF-5] Changes to e-cash contract to get the epoch's share of deposits",
-      "url": "https://github.com/nymtech/nym/issues/7243",
-      "description": "Decentralisation roadmap item `WF-5`.\n\nSection: Work Factor Calculation Changes\n\nDirect blockers and the issues that this one blocks:\n\n```mermaid\nflowchart LR\n  classDef done fill:#d4edda,stroke:#2e7d32,color:#000\n  classDef progress fill:#fff3cd,stroke:#b8860b,color:#000\n  classDef investigating fill:#d6e4ff,stroke:#1f4fa3,color:#000\n  classDef todo fill:#f6f8fa,stroke:#57606a,color:#000\n  WF_5[\"WF-5: Changes to e-cash contract to get the epoch's share of deposits\"]\n  WF_6[\"WF-6: Nym API (rewarder) uses the on-chain ticket-based work factor in reward calculations\"]\n  EPOCH_6[\"EPOCH-6: On-chain work factor calculation changes\"]\n  WF_5 --> WF_6\n  WF_5 --> EPOCH_6\n  class EPOCH_6,WF_5,WF_6 todo\n  style WF_5 stroke-width:4px\n```",
+      "title": "[QUESTION] Current cash payouts for informational documentation work",
+      "url": "https://github.com/rroland10/dex223-bug-bounty/issues/22",
+      "description": "## Question\n\nRunproof Studio / Pururin-ux here. Before undertaking an informational documentation contribution, could you clarify the current payment terms?\n\n1. Is payment in BTC mainnet or USDT (TRON) currently available for accepted informational/documentation work by an operator based in Belarus? If Nano (XNO mainnet) is also supported, that would be convenient. Required owner verification would be handled truthfully at payout.\n2. What USD amount or conversion rule applies to the 1M D223 informational tier when the reward is paid in another cryptocurrency, and when is that amount fixed? Are there any required deposits, fees, or verification steps before doing the work?\n3. Are distinct documentation corrections still eligible? Would reconciling the published payout descriptions, with source links and a proposed precise correction, qualify, and who confirms acceptance?\n\n## Context\n\nThe official August 19, 2025 announcement describes rewards paid in D223: https://blog.dex223.io/en/40b40033-2a37-450d-96c0-ca90d30f6866?slug=bug-bounty-2025 . REWARDS.md also lists Bitcoin, Ethereum, USDC and USDT for international researchers: https://github.com/rroland10/dex223-bug-bounty/blob/main/REWARDS.md .\n\nNo testing, transaction, key generation, or new report has been started. This is a payment/scope question, not a claim of a vulnerability or an earned award.\n\nRunproof Studio",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

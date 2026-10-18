@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T19:41:08.548Z",
+  "generatedAt": "2026-10-18T20:44:50.324Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -441,11 +441,11 @@
       "eligible": true
     },
     {
-      "id": "github-5807806339",
+      "id": "github-5909960460",
       "source": "github",
-      "title": "Ship a paid order",
-      "url": "https://github.com/wrapper31/agentic-springboot-demo/issues/3",
-      "description": "Warehouse staff need to mark an order as shipped once it has been paid.\n\n**Acceptance criteria**\n- `POST /api/orders/{orderId}/ship` with body `{\"carrier\": \"UPS\", \"trackingNumber\": \"1Z999\"}` moves a `PAID` order to a new `SHIPPED` status and returns the updated order.\n- Shipping an order that is not `PAID` returns `409 Conflict`; an unknown order returns `404`.\n- `carrier` and `trackingNumber` are required (`400` if blank) and are returned on the order.\n- The change is audited in DynamoDB (visible in `GET /api/orders/{orderId}/history`) and published to `orders.events` as `ORDER_STATUS_CHANGED`.\n- README API table updated.\n\n_This issue is the end-to-end demo for the agentic AI pilot: an agent implements it following CLAUDE.md and the codebase MCP tools, and opens a PR that closes it._",
+      "title": "Paid \"Project Story\" blog submission",
+      "url": "https://github.com/samieazubike/stellar-wave-hub/issues/465",
+      "description": "## Summary\nOwners pay to submit a long-form story about their project. An admin reviews it and publishes it on `/blogs` as \"Sponsored story\".\n\n## Tasks\n- [ ] Table `story_submissions` (project_id, title, body_md, status, tx_hash)\n- [ ] Submit form on the project page (owner only) + pay\n- [ ] Admin approve publishes it to the blog list with a Sponsored label\n\n## Acceptance criteria\n- [ ] Paid submissions land in an admin review list\n- [ ] Published stories render on /blogs\n\n## Payment flow\nUse `payWithFreighter()` from `web/src/lib/payments-client.ts` on the client (#444) and `verifyStellarPayment()` from `web/src/lib/payments.ts` on the server (#442). Record the redemption in the `payments` table with `product = \"project_story\"`. The unique `tx_hash` means a payment can only be redeemed once. Never trust an amount sent by the client; always verify on Horizon.\n\nPrice comes from `NEXT_PUBLIC_PRICE_PROJECT_STORY_XLM` (default **60 XLM**). If #451 (`lib/pricing.ts`) has merged, add the price there instead.\n\n## Migration\nAdd it as `web/data/supabase/YYYYMMDDHHMM_<description>.sql` (timestamp prefix, so parallel PRs don't collide) and register any new table in the collection map in `web/src/lib/firebase.ts`.\n\n## Files\n- `web/src/app/api/stories/route.ts`\n- `web/src/lib/blogs.ts`\n\n## Depends on\n- Blocked by #442\n- Blocked by #444\n\n> This repo uses Next.js 16. Read the relevant guide in `web/node_modules/next/dist/docs/` before writing route/page code (e.g. middleware is `web/src/proxy.ts`).",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

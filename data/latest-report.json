@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T12:54:13.713Z",
+  "generatedAt": "2026-10-18T13:44:53.946Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -88,20 +88,6 @@
       "eligible": true
     },
     {
-      "id": "github-5468214351",
-      "source": "github",
-      "title": "[Bounty] Reverse bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 500,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 500,
-      "profitPerHourUsd": 6000,
-      "eligible": true
-    },
-    {
       "id": "github-5474087864",
       "source": "github",
       "title": "[Bounty] bitcoin bounty",
@@ -113,6 +99,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 99,
       "profitPerHourUsd": 1188,
+      "eligible": true
+    },
+    {
+      "id": "github-5468214351",
+      "source": "github",
+      "title": "[Bounty] Reverse bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 500,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 500,
+      "profitPerHourUsd": 6000,
       "eligible": true
     },
     {
@@ -233,6 +233,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5909783941",
+      "source": "github",
+      "title": "Card benefits review — 2026-10-18",
+      "url": "https://github.com/CreditOdds/creditodds/issues/2299",
+      "description": "Weekly review queue from the local `card-rewards-benefits-local` routine. Two kinds of items show up here: (a) **stale rotating-category periods** — quarterly cards (Discover It, Freedom Flex, etc.) whose `current_period` doesn't match this quarter, and (b) **borderline benefits** the checker spotted on apply pages but couldn't auto-PR (generic travel insurance, secondary CDW, purchase protection, and similar). Triage each manually.\n\n\n## AAA Daily Advantage Visa Signature\n**Apply link:** https://northeast.aaa.com/financial/more-products/aaa-visa-credit-card.html\n\n### New reward category proposed (needs human routing)\n- `car_rentals`: 2% — Hertz purchases\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `aaa-daily-advantage-visa-signature`) so it stops coming back every week.</sub>\n\n## AAA Travel Advantage Visa Signature\n**Apply link:** https://northeast.aaa.com/financial/more-products/aaa-visa-credit-card.html\n\n### New reward category proposed (needs human routing)\n- `car_rentals`: 4% — Hertz purchases\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `aaa-travel-advantage-visa-signature`) so it stops coming back every week.</sub>\n\n## Amazon Prime Rewards Visa Signature\n**Apply link:** https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards\n\n### New reward category proposed (needs human routing)\n- `groceries`: 5% — Whole Foods Market with an eligible Prime membership (3% without)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `amazon-prime-rewards-visa-signature-card`) so it stops coming back every week.</sub>\n\n## Chase Freedom Flex\n**Apply link:** https://creditcards.chase.com/cash-back-credit-cards/freedom/flex\n\n### New reward category proposed (needs human routing)\n- `transit`: 2% — Qualifying Lyft products and services purchased through the Lyft app through September 30, 2027 (limited-time promo)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-freedom-flex`) so it stops coming back every week.</sub>\n\n## Ink Business Cash\n**Apply link:** https://creditcards.chase.com/business-credit-cards/ink/cash\n\n### Reward category present in YAML but not on apply page\n- `tv_internet_streaming`: 5% (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-ink-business-cash`) so it stops coming back every week.</sub>\n\n## Ink Business Preferred\n**Apply link:** https://creditcards.chase.com/business-credit-cards/ink/business-preferred\n\n### Reward category present in YAML but not on apply page\n- `tv_internet_streaming`: 3x (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-ink-business-preferred`) so it stops coming back every week.</sub>\n\n## Citi AAdvantage Business World Elite Mastercard\n**Apply link:** https://www.citi.com/credit-cards/citi-aadvantage-business-credit-card\n\n### New reward category proposed (needs human routing)\n- `tv_internet_streaming`: 2x — Cable and satellite providers\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `citibusiness-aadvantage-platinum-select-maste`) so it stops coming back every week.</sub>",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5647589338",
       "source": "github",
       "title": "US-28: Cash 6-month reminder",
@@ -283,21 +298,6 @@
       "title": "US-27: Finder details on cash intake",
       "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/27",
       "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want to record the finder's name and contact details when I log found cash, so we know who to reach when the six-month period is up.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven I log an item of type cash, when I save the record, then finder name and contact are required, a reward date is calculated from the date received, and the amount is excluded from any announcement draft.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5836630355",
-      "source": "github",
-      "title": "[QUESTION] Current cash payouts for informational documentation work",
-      "url": "https://github.com/rroland10/dex223-bug-bounty/issues/22",
-      "description": "## Question\n\nRunproof Studio / Pururin-ux here. Before undertaking an informational documentation contribution, could you clarify the current payment terms?\n\n1. Is payment in BTC mainnet or USDT (TRON) currently available for accepted informational/documentation work by an operator based in Belarus? If Nano (XNO mainnet) is also supported, that would be convenient. Required owner verification would be handled truthfully at payout.\n2. What USD amount or conversion rule applies to the 1M D223 informational tier when the reward is paid in another cryptocurrency, and when is that amount fixed? Are there any required deposits, fees, or verification steps before doing the work?\n3. Are distinct documentation corrections still eligible? Would reconciling the published payout descriptions, with source links and a proposed precise correction, qualify, and who confirms acceptance?\n\n## Context\n\nThe official August 19, 2025 announcement describes rewards paid in D223: https://blog.dex223.io/en/40b40033-2a37-450d-96c0-ca90d30f6866?slug=bug-bounty-2025 . REWARDS.md also lists Bitcoin, Ethereum, USDC and USDT for international researchers: https://github.com/rroland10/dex223-bug-bounty/blob/main/REWARDS.md .\n\nNo testing, transaction, key generation, or new report has been started. This is a payment/scope question, not a claim of a vulnerability or an earned award.\n\nRunproof Studio",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -441,11 +441,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5882276905",
+      "id": "github-5909960460",
       "source": "github",
-      "title": "[Bug]: Paid by MetaMask - Malicious Transactions are eligible to be Paid by MetaMask",
-      "url": "https://github.com/MetaMask/metamask-mobile/issues/37665",
-      "description": "### Describe the bug\n\nMalicious Transactions are eligible to be Paid by MetaMask\n\nSame as in Extension: https://github.com/MetaMask/metamask-extension/issues/47137\n\n### Expected behavior\n\nFlagged malicious transactions should not be eligible to be Paid by MetaMask\n\n\n\n### Screenshots/Recordings\n\nhttps://github.com/user-attachments/assets/40bece8f-9dce-4ce2-9685-4dbe4d4f13a2\n\n### Steps to reproduce\n\n1. Select Monad\n2. Go to test dapp\n3. Connect\n4. Trigger a malicious send\n5. See Paid by MEtaMask\n\n### Error messages or log output\n\n```shell\n\n```\n\n### Where was this bug found?\n\nLive version (from official store)\n\n### Version\n\n8.14.0 and previous \n\n### Build number\n\n7197\n\n### Build type\n\nNone\n\n### Device\n\n7197\n\n### Operating system\n\niOS\n\n### Additional context\n\n_No response_\n\n### Severity\n\n_No response_",
+      "title": "Paid \"Project Story\" blog submission",
+      "url": "https://github.com/samieazubike/stellar-wave-hub/issues/465",
+      "description": "## Summary\nOwners pay to submit a long-form story about their project. An admin reviews it and publishes it on `/blogs` as \"Sponsored story\".\n\n## Tasks\n- [ ] Table `story_submissions` (project_id, title, body_md, status, tx_hash)\n- [ ] Submit form on the project page (owner only) + pay\n- [ ] Admin approve publishes it to the blog list with a Sponsored label\n\n## Acceptance criteria\n- [ ] Paid submissions land in an admin review list\n- [ ] Published stories render on /blogs\n\n## Payment flow\nUse `payWithFreighter()` from `web/src/lib/payments-client.ts` on the client (#444) and `verifyStellarPayment()` from `web/src/lib/payments.ts` on the server (#442). Record the redemption in the `payments` table with `product = \"project_story\"`. The unique `tx_hash` means a payment can only be redeemed once. Never trust an amount sent by the client; always verify on Horizon.\n\nPrice comes from `NEXT_PUBLIC_PRICE_PROJECT_STORY_XLM` (default **60 XLM**). If #451 (`lib/pricing.ts`) has merged, add the price there instead.\n\n## Migration\nAdd it as `web/data/supabase/YYYYMMDDHHMM_<description>.sql` (timestamp prefix, so parallel PRs don't collide) and register any new table in the collection map in `web/src/lib/firebase.ts`.\n\n## Files\n- `web/src/app/api/stories/route.ts`\n- `web/src/lib/blogs.ts`\n\n## Depends on\n- Blocked by #442\n- Blocked by #444\n\n> This repo uses Next.js 16. Read the relevant guide in `web/node_modules/next/dist/docs/` before writing route/page code (e.g. middleware is `web/src/proxy.ts`).",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T02:51:13.033Z",
+  "generatedAt": "2026-10-19T03:55:17.004Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 21,
+  "eligible": 20,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -88,20 +88,6 @@
       "eligible": true
     },
     {
-      "id": "github-5468214351",
-      "source": "github",
-      "title": "[Bounty] Reverse bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 500,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 500,
-      "profitPerHourUsd": 6000,
-      "eligible": true
-    },
-    {
       "id": "github-5474087864",
       "source": "github",
       "title": "[Bounty] bitcoin bounty",
@@ -113,6 +99,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 99,
       "profitPerHourUsd": 1188,
+      "eligible": true
+    },
+    {
+      "id": "github-5468214351",
+      "source": "github",
+      "title": "[Bounty] Reverse bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 500,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 500,
+      "profitPerHourUsd": 6000,
       "eligible": true
     },
     {
@@ -442,18 +442,19 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5899454287",
+      "id": "github-5917188038",
       "source": "github",
-      "title": "billing issue",
-      "url": "https://github.com/HacxGPT-Official/HacxGPT-CLI/issues/57",
-      "description": "I am reporting a billing issue  involving HacxGPT and its NOWPayments cryptocurrency payment integration.\n\nA Bitcoin payment was completed to purchase $100 in HacxGPT credits. Although the transaction was confirmed on the Bitcoin blockchain, the payment gateway marked it as \"Partially Paid\", and no credits were added to the HacxGPT account.\n\n1. Payment verification\n\nThe following information has been verified:\n\nPayment method: Bitcoin (BTC)\nPayment processor: NOWPayments\nPurchase amount: $100 USD\nBlockchain transaction: Confirmed\nPayment address: Successfully received the transferred BTC\nNOWPayments status: Partially Paid\nHacxGPT account balance: $0.00\n\nThe blockchain explorer displayed a USD valuation exceeding the purchase amount when checked. However, the exchange rate and fees applied by NOWPayments at the time of invoicing have not been verified.\n\n2. Discrepancy in payment records\n\nAn additional inconsistency was identified in the HacxGPT account activity logs.\n\nThe internal PAYMENT.CREATED event references a different NOWPayments payment ID from the one displayed on the actual payment confirmation page.\n\nBoth records reference the same internal order identifier.\n\nThis raises concerns about a possible payment reconciliation or integration issue.\n\nFor privacy reasons, transaction hashes, wallet addresses, account details, and payment identifiers are intentionally excluded from this public report.\n\n3. Expected behavior\n\nOnce a cryptocurrency payment has been confirmed, the system should:\n\nCorrectly identify and reconcile the corresponding NOWPayments transaction.\nApply the purchased credits if the payment meets the required amount.\nClearly identify any payment shortfall, including the applicable exchange rate and fees.\nProvide an appropriate resolution for confirmed payments that cannot be credited.\n4. Actual behavior\n\nThe Bitcoin transfer was confirmed, but:\n\nNOWPayments marked the transaction as partially paid.\nHacxGPT did not credit the account.\nThe account balance remains at $0.00.\nDifferent payment identifiers appear in the payment gateway and HacxGPT's internal records.\nNo explanation of the exact payment shortfall has been provided.\n5. Requested investigation\n\nI would appreciate clarification from the HacxGPT development or billing team regarding:\n\nWhether the discrepancy between NOWPayments payment identifiers could be responsible for the failed credit allocation.\nWhether the payment reconciliation system correctly processes partially paid cryptocurrency transactions.\nWhether the confirmed payment can be manually credited.\nWhether a refund is available if the payment cannot be reconciled.\nWhat specific corrective measures are available to prevent users from losing access to funds sent through the payment gateway.\n6. Privacy and supporting evidence\n\nI have retained the relevant blockchain confirmations, NOWPayments payment records, and HacxGPT activity logs.\n\nThese records can be provided privately to verified HacxGPT support personnel.\n\nI am deliberately excluding all personally identifiable information and transaction identifiers from this public issue.\n\n7. Conclusion\n\nThis report is intended to document a potentially reproducible billing issue and obtain an appropriate resolution.\n\nAt present, the available evidence does not establish whether the problem originates from NOWPayments, HacxGPT's integration, or an insufficient BTC amount calculated at the time of payment.\n\nThe confirmed funds have not resulted in the purchased credits being applied to the account.\n\nI request that the HacxGPT team investigate and provide a transparent resolution.",
-      "rewardUsd": 100,
+      "title": "UC — Issue an Official CFDI Tax Invoice for an Eligible Paid Order",
+      "url": "https://github.com/CarlosOmarBarajasBarragan/The-Flying-Tapatios/issues/148",
+      "description": "# Issue an Official CFDI Tax Invoice for an Eligible Paid Order\n\n**Description:**\nThe system routes paid transaction details and the customer’s tax parameters through the university invoicing process so an official Mexican CFDI tax invoice can be issued for an eligible order.\n\n**Primary Actor:**\nUniversity invoicing process\n\n**Supporting Actors:**\nCustomer; Cafe ITESO system\n\n**Benefit:**\nAn eligible customer can obtain an official CFDI tax invoice for a paid order.\n\n**Trigger:**\nA paid transaction and associated tax parameters are ready for invoicing.\n\n**Preconditions:**\n- The order’s payment is confirmed.\n- The customer and transaction are eligible for CFDI invoicing.\n- The customer’s required tax parameters are available.\n\n**Primary Flow:**\n1. The Cafe ITESO system identifies a paid transaction eligible for CFDI invoicing.\n2. The system routes the transaction details and associated customer tax parameters to the university invoicing process.\n3. The university invoicing process uses the routed details to issue an official CFDI tax invoice.\n4. The system associates the invoice with the transaction.\n\n**Postconditions:**\nAn official CFDI tax invoice has been issued for the eligible paid order and associated with its transaction.\n\n**Alternate Flows:**\n- **A1 — The customer is not eligible:** The system does not route the transaction for CFDI issuance. Whether another receipt is provided is unspecified.\n\n**Exception Flows:**\n- **E1 — Required transaction or tax details cannot be routed:** The invoicing process does not confirm issuance of the CFDI.\n- **E2 — The university invoicing process is unavailable or rejects the submission:** The CFDI is not confirmed as issued.\n\n**Open Questions:**\n- What determines customer eligibility for CFDI invoicing?\n- Is invoice issuance automatic after an eligible payment, or must the customer request it?\n- Which tax parameters are required, and how are they collected, reviewed, or corrected?\n- How does the customer access or receive the issued CFDI?\n- Which university system or organization issues the official CFDI, and what information or format does it require?\n- What should happen when the invoicing process is unavailable, rejects a submission, or issues an invoice with incorrect information?\n- How should an issued CFDI be handled if the order is later canceled, refunded, or partially refunded?\n- Is the CFDI separate from the downloadable PDF receipt in Functional Idea #77 and Use Case #128, or does it replace that receipt?",
+      "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 100,
-      "profitPerHourUsd": 1200,
-      "eligible": true
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-5771697935",

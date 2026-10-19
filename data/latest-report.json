@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T15:51:39.476Z",
+  "generatedAt": "2026-10-19T16:54:22.192Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -88,20 +88,6 @@
       "eligible": true
     },
     {
-      "id": "github-5468214351",
-      "source": "github",
-      "title": "[Bounty] Reverse bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 500,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 500,
-      "profitPerHourUsd": 6000,
-      "eligible": true
-    },
-    {
       "id": "github-5474087864",
       "source": "github",
       "title": "[Bounty] bitcoin bounty",
@@ -113,6 +99,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 99,
       "profitPerHourUsd": 1188,
+      "eligible": true
+    },
+    {
+      "id": "github-5468214351",
+      "source": "github",
+      "title": "[Bounty] Reverse bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 500,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 500,
+      "profitPerHourUsd": 6000,
       "eligible": true
     },
     {
@@ -203,11 +203,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5858386638",
+      "id": "github-5794782255",
       "source": "github",
-      "title": "[backend, frontend] Agent collateral, cash-in and cash-out (MVP step 2)",
-      "url": "https://github.com/ExcelDsigN-tech/DukaPay/issues/776",
-      "description": "**Description**: `agent_vault` has `deposit_collateral`, `withdraw_collateral`, `mint_float` and `burn_float`, with the solvency rule `float ≤ collateral × haircut` checked on-chain. Nothing off-chain calls them. Collateral and `burn_float` (cash-out) are signed by the agent; `mint_float` (cash-in credit) is operator-only. Mint and burn move no tokens: they change the agent's recorded float.\n\n**Impact**: Agents can't do the core thing DukaPay exists for.\n\n**Suggested Fix**:\n- Backend: builders for the four calls, following the pool deposit/withdraw pattern (`buildDepositTx`, `/api/pool/build-deposit`, `/api/pool/submit`).\n- Agent screen (extend `/agent/dashboard`): collateral, float, max float (`max_float`), remaining headroom, and actions for deposit/withdraw collateral and cash-out.\n- Operator screen: record a cash-in for an agent (`mint_float`), signed with the admin wallet.\n- Show the contract's `SolvencyViolated` / `InsufficientFloat` errors as clear messages; don't pre-check in the frontend only.\n- Amounts are stroops end to end; use the helpers in `backend/src/money/decimal.ts` and `frontend/lib/money/format.ts`.\n\n**Points**: 200\n**Type**: feature\n**Severity**: medium\n\n**Depends on**: #757, #774, #775\n\n**Definition of Done**\n- [ ] An agent can deposit and withdraw collateral and cash out, end to end on testnet\n- [ ] An operator can record a cash-in; a cash-in above the solvency bound is rejected with a clear message\n- [ ] The agent screen matches the indexed `agent_vaults` row after each action\n- [ ] Backend tests for each builder and route; frontend tests for the actions\n- [ ] All required CI checks pass\n\n---\n\n📋 Before working on this issue, please read our [Contributing Guidelines](https://github.com/ExcelDsigN-tech/dukapay/blob/main/CONTRIBUTING.md). It covers branching, commits, PR standards, testing and style guides. Comment on the issue and wait to be assigned before you start.\nAll official decisions, reviews and coordination happen right here on GitHub.\n",
+      "title": "Bug: Trade Republic staking rewards and their tax are not imported",
+      "url": "https://github.com/we-promise/sure/issues/4115",
+      "description": "## Before you start (required)\n\n### General checklist\n\n- [x] I have removed personal / sensitive data from screenshots and logs\n- [x] I have searched [existing issues](https://github.com/we-promise/sure/issues?q=is:issue) and [discussions](https://github.com/we-promise/sure/discussions) to ensure this is not a duplicate issue\n\n### How are you using Sure?\n\n- [ ] I was a paying Maybe customer (hosted version)\n- [ ] I use it on PikaPod, Umbrel or similar (VPS included)\n- [x] I am a self-hosted user (local only)\n\n### Self hoster checklist\n\n- Self hosted app commit SHA (find in user menu): bdb280b3b\n  - [x] I have confirmed that my app's commit is the latest version of Sure\n- Where are you hosting?\n  - [ ] Render\n  - [ ] Docker Compose\n  - [ ] Umbrel\n  - [ ] PikaPod\n  - [x] Other (please specify): TrueNAS SCALE app (Docker)\n\n---\n\n## Bug description\n\nTrade Republic pays crypto staking rewards (Solana in my case) every week, and charges the tax on each reward to the cash account. The account statement lists every tax debit, for example:\n\n```\nImposte · Staking Reward XF000SOL0012 Solana, quantity: 0.024461\n```\n\nNeither the reward nor the tax is on the Trade Republic timeline, so the sync cannot import them:\n\n- **Crypto account:** the holding is correct, because it comes from the positions snapshot. The trades, though, add up to less than the position, since the reward coins have no trade. Cost basis and the holding's history miss them.\n- **Cash account:** the current balance is correct, because it is anchored to Trade Republic's cash. The balance history, though, misses the small weekly tax debits, and drifts further from the statement each week before today.\n\nOn my account the statement has 46 weekly tax debits between November 2025 and October 2026. I read both timeline topics in full (`timelineTransactions` and `timelineActivityLog`, 61 pages). They contain no event for any reward or tax debit. Everything else on the statement reconciles line by line with what Sure imports from the timeline.\n\n### To Reproduce\n\n1. Hold a crypto asset with staking enabled at Trade Republic (for example Solana) for a few weeks.\n2. Sync the Trade Republic connection.\n3. Compare the crypto trades with the position quantity, and the cash account's history with the monthly statement.\n4. See that the reward coins and the weekly \"Staking Reward\" tax debits are missing.\n\n### Expected behavior\n\nStaking rewards import as crypto buys at no cost, and their tax as a cash debit. If Trade Republic does not expose them outside the statement, the limitation should at least be documented, so users know why the crypto trades and the cash history differ from the statement.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -218,11 +218,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5794782255",
+      "id": "github-5858386638",
       "source": "github",
-      "title": "Bug: Trade Republic staking rewards and their tax are not imported",
-      "url": "https://github.com/we-promise/sure/issues/4115",
-      "description": "## Before you start (required)\n\n### General checklist\n\n- [x] I have removed personal / sensitive data from screenshots and logs\n- [x] I have searched [existing issues](https://github.com/we-promise/sure/issues?q=is:issue) and [discussions](https://github.com/we-promise/sure/discussions) to ensure this is not a duplicate issue\n\n### How are you using Sure?\n\n- [ ] I was a paying Maybe customer (hosted version)\n- [ ] I use it on PikaPod, Umbrel or similar (VPS included)\n- [x] I am a self-hosted user (local only)\n\n### Self hoster checklist\n\n- Self hosted app commit SHA (find in user menu): bdb280b3b\n  - [x] I have confirmed that my app's commit is the latest version of Sure\n- Where are you hosting?\n  - [ ] Render\n  - [ ] Docker Compose\n  - [ ] Umbrel\n  - [ ] PikaPod\n  - [x] Other (please specify): TrueNAS SCALE app (Docker)\n\n---\n\n## Bug description\n\nTrade Republic pays crypto staking rewards (Solana in my case) every week, and charges the tax on each reward to the cash account. The account statement lists every tax debit, for example:\n\n```\nImposte · Staking Reward XF000SOL0012 Solana, quantity: 0.024461\n```\n\nNeither the reward nor the tax is on the Trade Republic timeline, so the sync cannot import them:\n\n- **Crypto account:** the holding is correct, because it comes from the positions snapshot. The trades, though, add up to less than the position, since the reward coins have no trade. Cost basis and the holding's history miss them.\n- **Cash account:** the current balance is correct, because it is anchored to Trade Republic's cash. The balance history, though, misses the small weekly tax debits, and drifts further from the statement each week before today.\n\nOn my account the statement has 46 weekly tax debits between November 2025 and October 2026. I read both timeline topics in full (`timelineTransactions` and `timelineActivityLog`, 61 pages). They contain no event for any reward or tax debit. Everything else on the statement reconciles line by line with what Sure imports from the timeline.\n\n### To Reproduce\n\n1. Hold a crypto asset with staking enabled at Trade Republic (for example Solana) for a few weeks.\n2. Sync the Trade Republic connection.\n3. Compare the crypto trades with the position quantity, and the cash account's history with the monthly statement.\n4. See that the reward coins and the weekly \"Staking Reward\" tax debits are missing.\n\n### Expected behavior\n\nStaking rewards import as crypto buys at no cost, and their tax as a cash debit. If Trade Republic does not expose them outside the statement, the limitation should at least be documented, so users know why the crypto trades and the cash history differ from the statement.\n",
+      "title": "[backend, frontend] Agent collateral, cash-in and cash-out (MVP step 2)",
+      "url": "https://github.com/ExcelDsigN-tech/DukaPay/issues/776",
+      "description": "**Description**: `agent_vault` has `deposit_collateral`, `withdraw_collateral`, `mint_float` and `burn_float`, with the solvency rule `float ≤ collateral × haircut` checked on-chain. Nothing off-chain calls them. Collateral and `burn_float` (cash-out) are signed by the agent; `mint_float` (cash-in credit) is operator-only. Mint and burn move no tokens: they change the agent's recorded float.\n\n**Impact**: Agents can't do the core thing DukaPay exists for.\n\n**Suggested Fix**:\n- Backend: builders for the four calls, following the pool deposit/withdraw pattern (`buildDepositTx`, `/api/pool/build-deposit`, `/api/pool/submit`).\n- Agent screen (extend `/agent/dashboard`): collateral, float, max float (`max_float`), remaining headroom, and actions for deposit/withdraw collateral and cash-out.\n- Operator screen: record a cash-in for an agent (`mint_float`), signed with the admin wallet.\n- Show the contract's `SolvencyViolated` / `InsufficientFloat` errors as clear messages; don't pre-check in the frontend only.\n- Amounts are stroops end to end; use the helpers in `backend/src/money/decimal.ts` and `frontend/lib/money/format.ts`.\n\n**Points**: 200\n**Type**: feature\n**Severity**: medium\n\n**Depends on**: #757, #774, #775\n\n**Definition of Done**\n- [ ] An agent can deposit and withdraw collateral and cash out, end to end on testnet\n- [ ] An operator can record a cash-in; a cash-in above the solvency bound is rejected with a clear message\n- [ ] The agent screen matches the indexed `agent_vaults` row after each action\n- [ ] Backend tests for each builder and route; frontend tests for the actions\n- [ ] All required CI checks pass\n\n---\n\n📋 Before working on this issue, please read our [Contributing Guidelines](https://github.com/ExcelDsigN-tech/dukapay/blob/main/CONTRIBUTING.md). It covers branching, commits, PR standards, testing and style guides. Comment on the issue and wait to be assigned before you start.\nAll official decisions, reviews and coordination happen right here on GitHub.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

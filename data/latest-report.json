@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T21:50:33.720Z",
+  "generatedAt": "2026-10-20T22:48:51.417Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 20,
+  "eligible": 21,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -29,6 +29,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 100,
       "profitPerHourUsd": 1200,
+      "eligible": true
+    },
+    {
+      "id": "github-5950653348",
+      "source": "github",
+      "title": "[Bounty] [TEST BOUNTY] Fix typo in README",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4061",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/jomaaabbe78-spec/bookningsapp/issues/1\n\n### 漏洞描述 / Description\n[TEST BOUNTY] Fix typo in README\n\n**Bounty: $50**\n\nThere is a typo in README.md: \"Welcom\" should be \"Welcome\".\n\n**Reward:** $50 via PayPal/Crypto\n\n**Contact:** DM for payment details\n\n### 积分币奖励 / Coin Reward\n62 coins\n\n### 真实赏金（USD）/ Real Reward\n$50\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 50,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 50,
+      "profitPerHourUsd": 600,
       "eligible": true
     },
     {
@@ -143,21 +157,6 @@
       "expectedProfitUsd": 45,
       "profitPerHourUsd": 540,
       "eligible": true
-    },
-    {
-      "id": "github-5891366731",
-      "source": "github",
-      "title": "Implement Keeper Bounty Accrual and Reward Distribution",
-      "url": "https://github.com/Zenith-options/backend/issues/245",
-      "description": "**Description:**\nTrack settlement, oracle-submission and liquidation work performed by keepers, accrue a bounty for each completed job, and distribute rewards via on-chain transfers, while exposing an accounting surface so keeper operators are paid fairly and cannot double-claim.\n\n**Problem Statement & Context:**\nThe keeper service (#11) and liquidation engine (#15) depend on external keepers to keep the protocol solvent, but nothing currently compensates them. Without a bounty model there is no incentive to run keepers and settlement stalls under load. This is distinct from protocol fee accrual / treasury sweep (#48), which handles protocol revenue, not keeper compensation.\n\n**Scope & Acceptance Criteria:**\n- Configurable bounty schedule per job type (expiry settlement, oracle submission, liquidation).\n- Idempotent accrual keyed to a job/transaction id so replayed jobs do not double-credit a keeper.\n- On-chain reward distribution (batched where possible) and an operator/keeper-facing accounting endpoint.\n- Bounty ledger persists and is checked by the on-chain <-> off-chain reconciliation job (#12).\n- Out of scope: protocol fee accrual to treasury (#48) and gas-cost attribution reporting (#64).\n\n**Implementation Guidelines:**\n1. Key Files/Modules: keeper/settlement worker modules under `src/chain/`, a new bounty ledger table under `migrations/`, `src/auth.rs` for keeper identity, `sdk/` query methods.\n2. Design/Architecture: accrual is written in the same transaction that records job completion, so a crash cannot lose or duplicate a bounty; payouts are a separate batched step with their own idempotency key.\n3. Edge Cases/Constraints: partial/lost job completion, keepers that submit duplicate transactions, bounty tied to an on-chain payout that later fails (must retry without re-accruing), dust amounts below a payout threshold.\n4. Testing: unit tests for idempotent accrual; integration test replaying the same job twice; proptest that total accrued equals sum of distinct completed jobs.\n\n**Definition of \"Done\":**\n- Code written, tested, and documented.\n- All acceptance criteria met.\n- PR submitted with a clear description, passing CI, relevant test output.\n- Code reviewed and approved.\n\n**Complexity:** Medium (100 points)",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-5908680476",
@@ -442,11 +441,11 @@
       "eligible": true
     },
     {
-      "id": "github-5807806339",
+      "id": "github-5909960460",
       "source": "github",
-      "title": "Ship a paid order",
-      "url": "https://github.com/wrapper31/agentic-springboot-demo/issues/3",
-      "description": "Warehouse staff need to mark an order as shipped once it has been paid.\n\n**Acceptance criteria**\n- `POST /api/orders/{orderId}/ship` with body `{\"carrier\": \"UPS\", \"trackingNumber\": \"1Z999\"}` moves a `PAID` order to a new `SHIPPED` status and returns the updated order.\n- Shipping an order that is not `PAID` returns `409 Conflict`; an unknown order returns `404`.\n- `carrier` and `trackingNumber` are required (`400` if blank) and are returned on the order.\n- The change is audited in DynamoDB (visible in `GET /api/orders/{orderId}/history`) and published to `orders.events` as `ORDER_STATUS_CHANGED`.\n- README API table updated.\n\n_This issue is the end-to-end demo for the agentic AI pilot: an agent implements it following CLAUDE.md and the codebase MCP tools, and opens a PR that closes it._",
+      "title": "Paid \"Project Story\" blog submission",
+      "url": "https://github.com/samieazubike/stellar-wave-hub/issues/465",
+      "description": "## Summary\nOwners pay to submit a long-form story about their project. An admin reviews it and publishes it on `/blogs` as \"Sponsored story\".\n\n## Tasks\n- [ ] Table `story_submissions` (project_id, title, body_md, status, tx_hash)\n- [ ] Submit form on the project page (owner only) + pay\n- [ ] Admin approve publishes it to the blog list with a Sponsored label\n\n## Acceptance criteria\n- [ ] Paid submissions land in an admin review list\n- [ ] Published stories render on /blogs\n\n## Payment flow\nUse `payWithFreighter()` from `web/src/lib/payments-client.ts` on the client (#444) and `verifyStellarPayment()` from `web/src/lib/payments.ts` on the server (#442). Record the redemption in the `payments` table with `product = \"project_story\"`. The unique `tx_hash` means a payment can only be redeemed once. Never trust an amount sent by the client; always verify on Horizon.\n\nPrice comes from `NEXT_PUBLIC_PRICE_PROJECT_STORY_XLM` (default **60 XLM**). If #451 (`lib/pricing.ts`) has merged, add the price there instead.\n\n## Migration\nAdd it as `web/data/supabase/YYYYMMDDHHMM_<description>.sql` (timestamp prefix, so parallel PRs don't collide) and register any new table in the collection map in `web/src/lib/firebase.ts`.\n\n## Files\n- `web/src/app/api/stories/route.ts`\n- `web/src/lib/blogs.ts`\n\n## Depends on\n- Blocked by #442\n- Blocked by #444\n\n> This repo uses Next.js 16. Read the relevant guide in `web/node_modules/next/dist/docs/` before writing route/page code (e.g. middleware is `web/src/proxy.ts`).",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

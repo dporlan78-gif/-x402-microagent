@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T17:47:31.538Z",
+  "generatedAt": "2026-10-20T18:59:37.173Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 21,
+  "eligible": 20,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -30,6 +30,21 @@
       "expectedProfitUsd": 100,
       "profitPerHourUsd": 1200,
       "eligible": true
+    },
+    {
+      "id": "github-5946694884",
+      "source": "github",
+      "title": "Bug bounty programme",
+      "url": "https://github.com/0xjevons/monkeytrading/issues/72",
+      "description": "**Capability:** researchers are rewarded for reporting vulnerabilities, under a published scope and reward table.\n\n**Readiness:** blocked on the owner's choice of platform and rewards.\n\n### Acceptance criteria\n- [ ] A bug bounty with published scope and rewards is live before public launch — source: #43.\n- [ ] `SECURITY.md` links to it and drops its \"will be announced\" line — source: #63.\n\n### Promotion\n- Bounty funding.\n\nSplit from #43, whose security policy shipped in #63.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-5839548473",
@@ -88,20 +103,6 @@
       "eligible": true
     },
     {
-      "id": "github-5474087864",
-      "source": "github",
-      "title": "[Bounty] bitcoin bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 99,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 99,
-      "profitPerHourUsd": 1188,
-      "eligible": true
-    },
-    {
       "id": "github-5468214351",
       "source": "github",
       "title": "[Bounty] Reverse bounty",
@@ -113,6 +114,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 500,
       "profitPerHourUsd": 6000,
+      "eligible": true
+    },
+    {
+      "id": "github-5474087864",
+      "source": "github",
+      "title": "[Bounty] bitcoin bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1570",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/6\n\n### 漏洞描述 / Description\nbitcoin bounty\n\nYou will get 99999999 btc if you add a saas to boxy 💰💰💰💰💰\n\n### 积分币奖励 / Coin Reward\n124999998 coins\n\n### 真实赏金（USD）/ Real Reward\n$99,999,999\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 99,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 99,
+      "profitPerHourUsd": 1188,
       "eligible": true
     },
     {
@@ -143,20 +158,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5497945092",
-      "source": "github",
-      "title": "[Bounty] $239398281948585883* bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1593",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/bountyfarmer/issues/31\n\n### 漏洞描述 / Description\n$239398281948585883* bounty\n\nI will pay you **up to $239398281948585883** if you follow my GitHuub account and do a backflip\n\n*terms and conditions apply. Currency not decided yet. We said \"up to\" so even if we paid no money then we would still be right. Bounty Expiry is 30 minutes within the issue's creation\n\n\n_bounty_\n\nAlso IDK how to do small text so pretend the footnote is in small text\n\n### 积分币奖励 / Coin Reward\n299247852435732352 coins\n\n### 真实赏金（USD）/ Real Reward\n$239,398,281,948,585,883\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 239398281948585900,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 239398281948585900,
-      "profitPerHourUsd": 2872779383383030300,
-      "eligible": true
     },
     {
       "id": "github-5908680476",
@@ -203,21 +204,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5794782255",
-      "source": "github",
-      "title": "Bug: Trade Republic staking rewards and their tax are not imported",
-      "url": "https://github.com/we-promise/sure/issues/4115",
-      "description": "## Before you start (required)\n\n### General checklist\n\n- [x] I have removed personal / sensitive data from screenshots and logs\n- [x] I have searched [existing issues](https://github.com/we-promise/sure/issues?q=is:issue) and [discussions](https://github.com/we-promise/sure/discussions) to ensure this is not a duplicate issue\n\n### How are you using Sure?\n\n- [ ] I was a paying Maybe customer (hosted version)\n- [ ] I use it on PikaPod, Umbrel or similar (VPS included)\n- [x] I am a self-hosted user (local only)\n\n### Self hoster checklist\n\n- Self hosted app commit SHA (find in user menu): bdb280b3b\n  - [x] I have confirmed that my app's commit is the latest version of Sure\n- Where are you hosting?\n  - [ ] Render\n  - [ ] Docker Compose\n  - [ ] Umbrel\n  - [ ] PikaPod\n  - [x] Other (please specify): TrueNAS SCALE app (Docker)\n\n---\n\n## Bug description\n\nTrade Republic pays crypto staking rewards (Solana in my case) every week, and charges the tax on each reward to the cash account. The account statement lists every tax debit, for example:\n\n```\nImposte · Staking Reward XF000SOL0012 Solana, quantity: 0.024461\n```\n\nNeither the reward nor the tax is on the Trade Republic timeline, so the sync cannot import them:\n\n- **Crypto account:** the holding is correct, because it comes from the positions snapshot. The trades, though, add up to less than the position, since the reward coins have no trade. Cost basis and the holding's history miss them.\n- **Cash account:** the current balance is correct, because it is anchored to Trade Republic's cash. The balance history, though, misses the small weekly tax debits, and drifts further from the statement each week before today.\n\nOn my account the statement has 46 weekly tax debits between November 2025 and October 2026. I read both timeline topics in full (`timelineTransactions` and `timelineActivityLog`, 61 pages). They contain no event for any reward or tax debit. Everything else on the statement reconciles line by line with what Sure imports from the timeline.\n\n### To Reproduce\n\n1. Hold a crypto asset with staking enabled at Trade Republic (for example Solana) for a few weeks.\n2. Sync the Trade Republic connection.\n3. Compare the crypto trades with the position quantity, and the cash account's history with the monthly statement.\n4. See that the reward coins and the weekly \"Staking Reward\" tax debits are missing.\n\n### Expected behavior\n\nStaking rewards import as crypto buys at no cost, and their tax as a cash debit. If Trade Republic does not expose them outside the statement, the limitation should at least be documented, so users know why the crypto trades and the cash history differ from the statement.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5858386638",
       "source": "github",
       "title": "[backend, frontend] Agent collateral, cash-in and cash-out (MVP step 2)",
@@ -233,11 +219,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5909783941",
+      "id": "github-5794782255",
       "source": "github",
-      "title": "Card benefits review — 2026-10-18",
-      "url": "https://github.com/CreditOdds/creditodds/issues/2299",
-      "description": "Weekly review queue from the local `card-rewards-benefits-local` routine. Two kinds of items show up here: (a) **stale rotating-category periods** — quarterly cards (Discover It, Freedom Flex, etc.) whose `current_period` doesn't match this quarter, and (b) **borderline benefits** the checker spotted on apply pages but couldn't auto-PR (generic travel insurance, secondary CDW, purchase protection, and similar). Triage each manually.\n\n\n## AAA Daily Advantage Visa Signature\n**Apply link:** https://northeast.aaa.com/financial/more-products/aaa-visa-credit-card.html\n\n### New reward category proposed (needs human routing)\n- `car_rentals`: 2% — Hertz purchases\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `aaa-daily-advantage-visa-signature`) so it stops coming back every week.</sub>\n\n## AAA Travel Advantage Visa Signature\n**Apply link:** https://northeast.aaa.com/financial/more-products/aaa-visa-credit-card.html\n\n### New reward category proposed (needs human routing)\n- `car_rentals`: 4% — Hertz purchases\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `aaa-travel-advantage-visa-signature`) so it stops coming back every week.</sub>\n\n## Amazon Prime Rewards Visa Signature\n**Apply link:** https://creditcards.chase.com/cash-back-credit-cards/amazon-prime-rewards\n\n### New reward category proposed (needs human routing)\n- `groceries`: 5% — Whole Foods Market with an eligible Prime membership (3% without)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `amazon-prime-rewards-visa-signature-card`) so it stops coming back every week.</sub>\n\n## Chase Freedom Flex\n**Apply link:** https://creditcards.chase.com/cash-back-credit-cards/freedom/flex\n\n### New reward category proposed (needs human routing)\n- `transit`: 2% — Qualifying Lyft products and services purchased through the Lyft app through September 30, 2027 (limited-time promo)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-freedom-flex`) so it stops coming back every week.</sub>\n\n## Ink Business Cash\n**Apply link:** https://creditcards.chase.com/business-credit-cards/ink/cash\n\n### Reward category present in YAML but not on apply page\n- `tv_internet_streaming`: 5% (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-ink-business-cash`) so it stops coming back every week.</sub>\n\n## Ink Business Preferred\n**Apply link:** https://creditcards.chase.com/business-credit-cards/ink/business-preferred\n\n### Reward category present in YAML but not on apply page\n- `tv_internet_streaming`: 3x (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-ink-business-preferred`) so it stops coming back every week.</sub>\n\n## Citi AAdvantage Business World Elite Mastercard\n**Apply link:** https://www.citi.com/credit-cards/citi-aadvantage-business-credit-card\n\n### New reward category proposed (needs human routing)\n- `tv_internet_streaming`: 2x — Cable and satellite providers\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `citibusiness-aadvantage-platinum-select-maste`) so it stops coming back every week.</sub>",
+      "title": "Bug: Trade Republic staking rewards and their tax are not imported",
+      "url": "https://github.com/we-promise/sure/issues/4115",
+      "description": "## Before you start (required)\n\n### General checklist\n\n- [x] I have removed personal / sensitive data from screenshots and logs\n- [x] I have searched [existing issues](https://github.com/we-promise/sure/issues?q=is:issue) and [discussions](https://github.com/we-promise/sure/discussions) to ensure this is not a duplicate issue\n\n### How are you using Sure?\n\n- [ ] I was a paying Maybe customer (hosted version)\n- [ ] I use it on PikaPod, Umbrel or similar (VPS included)\n- [x] I am a self-hosted user (local only)\n\n### Self hoster checklist\n\n- Self hosted app commit SHA (find in user menu): bdb280b3b\n  - [x] I have confirmed that my app's commit is the latest version of Sure\n- Where are you hosting?\n  - [ ] Render\n  - [ ] Docker Compose\n  - [ ] Umbrel\n  - [ ] PikaPod\n  - [x] Other (please specify): TrueNAS SCALE app (Docker)\n\n---\n\n## Bug description\n\nTrade Republic pays crypto staking rewards (Solana in my case) every week, and charges the tax on each reward to the cash account. The account statement lists every tax debit, for example:\n\n```\nImposte · Staking Reward XF000SOL0012 Solana, quantity: 0.024461\n```\n\nNeither the reward nor the tax is on the Trade Republic timeline, so the sync cannot import them:\n\n- **Crypto account:** the holding is correct, because it comes from the positions snapshot. The trades, though, add up to less than the position, since the reward coins have no trade. Cost basis and the holding's history miss them.\n- **Cash account:** the current balance is correct, because it is anchored to Trade Republic's cash. The balance history, though, misses the small weekly tax debits, and drifts further from the statement each week before today.\n\nOn my account the statement has 46 weekly tax debits between November 2025 and October 2026. I read both timeline topics in full (`timelineTransactions` and `timelineActivityLog`, 61 pages). They contain no event for any reward or tax debit. Everything else on the statement reconciles line by line with what Sure imports from the timeline.\n\n### To Reproduce\n\n1. Hold a crypto asset with staking enabled at Trade Republic (for example Solana) for a few weeks.\n2. Sync the Trade Republic connection.\n3. Compare the crypto trades with the position quantity, and the cash account's history with the monthly statement.\n4. See that the reward coins and the weekly \"Staking Reward\" tax debits are missing.\n\n### Expected behavior\n\nStaking rewards import as crypto buys at no cost, and their tax as a cash debit. If Trade Republic does not expose them outside the statement, the limitation should at least be documented, so users know why the crypto trades and the cash history differ from the statement.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -278,11 +264,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5704041313",
+      "id": "github-5926020022",
       "source": "github",
-      "title": "Card benefits review — 2026-10-04",
-      "url": "https://github.com/CreditOdds/creditodds/issues/2262",
-      "description": "Weekly review queue from the local `card-rewards-benefits-local` routine. Two kinds of items show up here: (a) **stale rotating-category periods** — quarterly cards (Discover It, Freedom Flex, etc.) whose `current_period` doesn't match this quarter, and (b) **borderline benefits** the checker spotted on apply pages but couldn't auto-PR (generic travel insurance, secondary CDW, purchase protection, and similar). Triage each manually.\n\n\n## Bank of America Cash Rewards Secured\n**Apply link:** https://www.bankofamerica.com/credit-cards/products/cash-back-secured-credit-card/\n\n### Reward category present in YAML but not on apply page\n- `wholesale_clubs`: 2% (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `bank-of-america-cash-rewards-secured`) so it stops coming back every week.</sub>\n\n## Bilt Palladium\n**Apply link:** https://www.biltrewards.com/card/apply\n\n### New reward category proposed (needs human routing)\n- `dining`: 5x — Up to 5X at Bilt partner restaurants (20,000+ U.S. restaurants)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `bilt-palladium`) so it stops coming back every week.</sub>\n\n## Chase Freedom Flex\n**Apply link:** https://creditcards.chase.com/cash-back-credit-cards/freedom/flex\n\n### New reward category proposed (needs human routing)\n- `transit`: 2% — Qualifying Lyft purchases through the Lyft app through September 30, 2027 (limited-time promo)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-freedom-flex`) so it stops coming back every week.</sub>\n\n## Ink Business Cash\n**Apply link:** https://creditcards.chase.com/business-credit-cards/ink/cash\n\n### Reward category present in YAML but not on apply page\n- `tv_internet_streaming`: 5% (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-ink-business-cash`) so it stops coming back every week.</sub>\n\n## Ink Business Preferred\n**Apply link:** https://creditcards.chase.com/business-credit-cards/ink/business-preferred\n\n### Reward category present in YAML but not on apply page\n- `tv_internet_streaming`: 3x (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `chase-ink-business-preferred`) so it stops coming back every week.</sub>\n\n## IHG One Rewards Premier\n**Apply link:** https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier\n\n### New reward category proposed (needs human routing)\n- `airlines`: 5x — Flights booked directly with the airline\n- `car_rentals`: 5x\n- `groceries`: 5x\n### Reward category present in YAML but not on apply page\n- `travel`: 5x (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `ihg-rewards-club-premier-credit-card`) so it stops coming back every week.</sub>\n\n## IHG Rewards Club Traveler\n**Apply link:** https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/traveler\n\n### New reward category proposed (needs human routing)\n- `groceries`: 3x\n### Reward category present in YAML but not on apply page\n- `phone`: 3x (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `ihg-rewards-club-traveler-credit-card`) so it stops coming back every week.</sub>\n\n## IHG One Rewards Premier Business\n**Apply link:** https://creditcards.chase.com/business-credit-cards/IHG/business-premier\n\n### New reward category proposed (needs human routing)\n- `airlines`: 5x — Airline tickets purchased directly with the airline\n- `car_rentals`: 5x — Car rental agencies\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `ihg-rewards-premier-business`) so it stops coming back every week.</sub>\n\n## PenFed Power Cash Rewards Visa Signature\n**Apply link:** https://www.penfed.org/credit-cards/power-cash-rewards-visa\n\n### Base-rate decrease proposed — verify against the live page before applying\n- `everything_else`: 2% → 1.5% (the extractor frequently misreads flat base rates as 1 — confirm the cut is real)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `penfed-power-cash-rewards`) so it stops coming back every week.</sub>\n\n## Venmo Credit Card\n**Apply link:** https://venmo.com/about/creditcard\n\n### Reward category present in YAML but not on apply page\n- `streaming`: 3% (verify before removing)\n\n<sub>Declined an item? Add it to `data/review-declined.yaml` (slug `venmo-credit-card`) so it stops coming back every week.</sub>",
+      "title": "Vitest WASM cash_out_early simulation",
+      "url": "https://github.com/TevaLabs/Xelma-Blockchain/issues/729",
+      "description": "## Context\nStellar Wave contributor issue.\n\n## Problem / Goal\nNo WASM cashout test.\n\n## How to implement\nbindings.vitest + CI.\n\n## Acceptance criteria\n- [ ] Matches described contract/doc behavior\n- [ ] Tests or docs updated\n- [ ] cargo test / npm bindings checks for touched areas pass\n\n## Files\n`bindings/tests/bindings.vitest.test.ts`\n\n## Difficulty\nMedium",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -293,11 +279,26 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5926020022",
+      "id": "github-5647588840",
       "source": "github",
-      "title": "Vitest WASM cash_out_early simulation",
-      "url": "https://github.com/TevaLabs/Xelma-Blockchain/issues/729",
-      "description": "## Context\nStellar Wave contributor issue.\n\n## Problem / Goal\nNo WASM cashout test.\n\n## How to implement\nbindings.vitest + CI.\n\n## Acceptance criteria\n- [ ] Matches described contract/doc behavior\n- [ ] Tests or docs updated\n- [ ] cargo test / npm bindings checks for touched areas pass\n\n## Files\n`bindings/tests/bindings.vitest.test.ts`\n\n## Difficulty\nMedium",
+      "title": "US-27: Finder details on cash intake",
+      "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/27",
+      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want to record the finder's name and contact details when I log found cash, so we know who to reach when the six-month period is up.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven I log an item of type cash, when I save the record, then finder name and contact are required, a reward date is calculated from the date received, and the amount is excluded from any announcement draft.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5836630355",
+      "source": "github",
+      "title": "[QUESTION] Current cash payouts for informational documentation work",
+      "url": "https://github.com/rroland10/dex223-bug-bounty/issues/22",
+      "description": "## Question\n\nRunproof Studio / Pururin-ux here. Before undertaking an informational documentation contribution, could you clarify the current payment terms?\n\n1. Is payment in BTC mainnet or USDT (TRON) currently available for accepted informational/documentation work by an operator based in Belarus? If Nano (XNO mainnet) is also supported, that would be convenient. Required owner verification would be handled truthfully at payout.\n2. What USD amount or conversion rule applies to the 1M D223 informational tier when the reward is paid in another cryptocurrency, and when is that amount fixed? Are there any required deposits, fees, or verification steps before doing the work?\n3. Are distinct documentation corrections still eligible? Would reconciling the published payout descriptions, with source links and a proposed precise correction, qualify, and who confirms acceptance?\n\n## Context\n\nThe official August 19, 2025 announcement describes rewards paid in D223: https://blog.dex223.io/en/40b40033-2a37-450d-96c0-ca90d30f6866?slug=bug-bounty-2025 . REWARDS.md also lists Bitcoin, Ethereum, USDC and USDT for international researchers: https://github.com/rroland10/dex223-bug-bounty/blob/main/REWARDS.md .\n\nNo testing, transaction, key generation, or new report has been started. This is a payment/scope question, not a claim of a vulnerability or an earned award.\n\nRunproof Studio",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

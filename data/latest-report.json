@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T01:52:03.335Z",
+  "generatedAt": "2026-10-21T02:51:32.840Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -263,11 +263,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5647588840",
+      "id": "github-5926020022",
       "source": "github",
-      "title": "US-27: Finder details on cash intake",
-      "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/27",
-      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want to record the finder's name and contact details when I log found cash, so we know who to reach when the six-month period is up.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven I log an item of type cash, when I save the record, then finder name and contact are required, a reward date is calculated from the date received, and the amount is excluded from any announcement draft.",
+      "title": "Vitest WASM cash_out_early simulation",
+      "url": "https://github.com/TevaLabs/Xelma-Blockchain/issues/729",
+      "description": "## Context\nStellar Wave contributor issue.\n\n## Problem / Goal\nNo WASM cashout test.\n\n## How to implement\nbindings.vitest + CI.\n\n## Acceptance criteria\n- [ ] Matches described contract/doc behavior\n- [ ] Tests or docs updated\n- [ ] cargo test / npm bindings checks for touched areas pass\n\n## Files\n`bindings/tests/bindings.vitest.test.ts`\n\n## Difficulty\nMedium",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -278,11 +278,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5926020022",
+      "id": "github-5647588840",
       "source": "github",
-      "title": "Vitest WASM cash_out_early simulation",
-      "url": "https://github.com/TevaLabs/Xelma-Blockchain/issues/729",
-      "description": "## Context\nStellar Wave contributor issue.\n\n## Problem / Goal\nNo WASM cashout test.\n\n## How to implement\nbindings.vitest + CI.\n\n## Acceptance criteria\n- [ ] Matches described contract/doc behavior\n- [ ] Tests or docs updated\n- [ ] cargo test / npm bindings checks for touched areas pass\n\n## Files\n`bindings/tests/bindings.vitest.test.ts`\n\n## Difficulty\nMedium",
+      "title": "US-27: Finder details on cash intake",
+      "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/27",
+      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want to record the finder's name and contact details when I log found cash, so we know who to reach when the six-month period is up.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven I log an item of type cash, when I save the record, then finder name and contact are required, a reward date is calculated from the date received, and the amount is excluded from any announcement draft.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

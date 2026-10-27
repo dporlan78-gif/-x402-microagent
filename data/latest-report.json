@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T00:32:55.196Z",
+  "generatedAt": "2026-10-27T06:23:11.713Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -88,6 +88,20 @@
       "eligible": true
     },
     {
+      "id": "github-5468214351",
+      "source": "github",
+      "title": "[Bounty] Reverse bounty",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 500,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 500,
+      "profitPerHourUsd": 6000,
+      "eligible": true
+    },
+    {
       "id": "github-5946694884",
       "source": "github",
       "title": "Bug bounty programme",
@@ -101,20 +115,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5468214351",
-      "source": "github",
-      "title": "[Bounty] Reverse bounty",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1558",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/OmniBlocks/monorepo/issues/795\n\n### 漏洞描述 / Description\nReverse bounty\n\nHello! I am looking to pay a bounty of great magnitude* to whoever can complete the following tasks by April 1st, 2027:\n* Write a blog post detailing how you were fooled into accepting a silly bounty, publish it on your website, and leave a link here.\n* Pay me $500 in Solana, Bitcoin, Ethereum, or Monero.\n* Pledge to stop spamming random projects looking for bounties.\n\n_<sup>*The bounty is negative.</sup>_\n\n### 积分币奖励 / Coin Reward\n625 coins\n\n### 真实赏金（USD）/ Real Reward\n$500\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 500,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 500,
-      "profitPerHourUsd": 6000,
-      "eligible": true
     },
     {
       "id": "github-5465070719",
@@ -261,11 +261,11 @@
       "eligible": true
     },
     {
-      "id": "github-5647589338",
+      "id": "github-5967654306",
       "source": "github",
-      "title": "US-28: Cash 6-month reminder",
-      "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/28",
-      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want a reminder when lost cash is approaching the 6-month mark, so I know when it's time to release it to the finder under existing policy.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven a logged item marked as cash, when it approaches 6 months held, then staff receive a reminder to process the finder's reward per current practice.",
+      "title": "Prevent hosting cash rewards from replaying on reload or retry",
+      "url": "https://github.com/Trawis/T5B1/issues/497",
+      "description": "## Summary\n\nMore Hosting Deals can pay cash from retryable Enabled handling. Its already-paid flag resets on load, and completion is marked only after the payment loop.\n\n## Steps to Reproduce\n\n1. Enable More Hosting Deals with active ServerDeal items and receive the noon payout.\n2. Save and reload during noon with the setting enabled.\n3. Trace cold-start Enabled handling reaching payout again.\n4. Exercise a failure after one credit but before the payment loop finishes.\n\nReplay paths are verified in source. A Unity cash-balance reproduction has not been performed.\n\n## Expected Behavior\n\nA defined scheduled reward is not paid again merely because a save reloads or a catch-up handler is retried.\n\n## Actual Behavior\n\nThe resettable Boolean permits a noon reload payout. A partially successful loop can repeat earlier transactions on another attempt.\n\n## Environment\n\n- Trainer: 5.6.0, develop 8064eb8f22ece9451561c4bff3aa10e534944691.\n- Game target: current vendored Software Inc. Beta 1.8.42 assemblies.\n- Deployment: Workshop source compilation and the DLL build.\n- Review: source and decompiled native assembly; full Unity reproduction is identified separately below.\n\n## Additional Context\n\nPriority recommendation: P2.\n\nEvidence: [payment](https://github.com/Trawis/T5B1/blob/8064eb8f22ece9451561c4bff3aa10e534944691/Trainer_v5/Trainer.Source/Features/MarketFeatures.cs#L35), [timing](https://github.com/Trawis/T5B1/blob/8064eb8f22ece9451561c4bff3aa10e534944691/Trainer_v5/Trainer.Source/Features/MarketFeatures.cs#L117), ResetGameState and Enabled/Hour registry entries. This contradicts the documented repeatability requirement of Enabled actions.\n\nSuggested approach: separate deal catch-up from payout. The smallest option pays cash only through the scheduled hourly path; explicitly decide whether immediate noon-on-enable payment must remain. If preserving that catch-up, define saved cycle/payment identity, eligibility changes, migration for old saves and partial-failure semantics before coding. Do not assume one saved Boolean establishes exactly-once payment.\n\nAcceptance conditions:\n- Cover save before/after payout, noon reload, repeated reload, enable/disable at noon and the next normal noon.\n- A partial attempt cannot repeat already-applied credits through retry.\n- Preserve reward amounts and eligible deal types.\n- Keep financial side effects out of retryable catch-up unless made demonstrably safe.\n- Do not add a general transaction framework.\n- Report focused tests and actual in-game validation separately.\n\nRelated: #266, #336, PR #418, #344. #246 concerned completed deal-type detection and is not this bug.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -276,11 +276,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5967654306",
+      "id": "github-5647589338",
       "source": "github",
-      "title": "Prevent hosting cash rewards from replaying on reload or retry",
-      "url": "https://github.com/Trawis/T5B1/issues/497",
-      "description": "## Summary\n\nMore Hosting Deals can pay cash from retryable Enabled handling. Its already-paid flag resets on load, and completion is marked only after the payment loop.\n\n## Steps to Reproduce\n\n1. Enable More Hosting Deals with active ServerDeal items and receive the noon payout.\n2. Save and reload during noon with the setting enabled.\n3. Trace cold-start Enabled handling reaching payout again.\n4. Exercise a failure after one credit but before the payment loop finishes.\n\nReplay paths are verified in source. A Unity cash-balance reproduction has not been performed.\n\n## Expected Behavior\n\nA defined scheduled reward is not paid again merely because a save reloads or a catch-up handler is retried.\n\n## Actual Behavior\n\nThe resettable Boolean permits a noon reload payout. A partially successful loop can repeat earlier transactions on another attempt.\n\n## Environment\n\n- Trainer: 5.6.0, develop 8064eb8f22ece9451561c4bff3aa10e534944691.\n- Game target: current vendored Software Inc. Beta 1.8.42 assemblies.\n- Deployment: Workshop source compilation and the DLL build.\n- Review: source and decompiled native assembly; full Unity reproduction is identified separately below.\n\n## Additional Context\n\nPriority recommendation: P2.\n\nEvidence: [payment](https://github.com/Trawis/T5B1/blob/8064eb8f22ece9451561c4bff3aa10e534944691/Trainer_v5/Trainer.Source/Features/MarketFeatures.cs#L35), [timing](https://github.com/Trawis/T5B1/blob/8064eb8f22ece9451561c4bff3aa10e534944691/Trainer_v5/Trainer.Source/Features/MarketFeatures.cs#L117), ResetGameState and Enabled/Hour registry entries. This contradicts the documented repeatability requirement of Enabled actions.\n\nSuggested approach: separate deal catch-up from payout. The smallest option pays cash only through the scheduled hourly path; explicitly decide whether immediate noon-on-enable payment must remain. If preserving that catch-up, define saved cycle/payment identity, eligibility changes, migration for old saves and partial-failure semantics before coding. Do not assume one saved Boolean establishes exactly-once payment.\n\nAcceptance conditions:\n- Cover save before/after payout, noon reload, repeated reload, enable/disable at noon and the next normal noon.\n- A partial attempt cannot repeat already-applied credits through retry.\n- Preserve reward amounts and eligible deal types.\n- Keep financial side effects out of retryable catch-up unless made demonstrably safe.\n- Do not add a general transaction framework.\n- Report focused tests and actual in-game validation separately.\n\nRelated: #266, #336, PR #418, #344. #246 concerned completed deal-type detection and is not this bug.\n",
+      "title": "US-28: Cash 6-month reminder",
+      "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/28",
+      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want a reminder when lost cash is approaching the 6-month mark, so I know when it's time to release it to the finder under existing policy.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven a logged item marked as cash, when it approaches 6 months held, then staff receive a reminder to process the finder's reward per current practice.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -366,11 +366,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6031983186",
+      "id": "github-6051880072",
       "source": "github",
       "title": "[Maintenance] OpenCode maintenance issues detected",
-      "url": "https://github.com/dianlight/opencode-modelselect-action/issues/108",
-      "description": "# OpenCode Maintenance Report\n\n> Automatically detected by the `opencode-maintenance` workflow.\n> Run date: 2026-10-26\n\n> Score research and the coverage-fix PR are opened automatically by this run — no action needed here. The issue stays open until the PR merges.\n\n## 📋 Model Coverage Issues\n\n### Models Missing Score Data\n\nThe following OpenCode models have **no score data** from LiveBench or the static fallback. Consider adding them to `config/model-scores.yaml`.\n\n| Model | Tier |\n|-------|------|\n| beam-free | Free |\n| deepseek-v4.1-flash | Go (Paid) |\n| deepseek-v4.1-flash-free | Free |\n| flint-40b-free | Free |\n| gemini-4-argon | Go (Paid) |\n| gpt-6-luna | Go (Paid) |\n| grok-4.6 | Go (Paid) |\n| grok-4.7 | Go (Paid) |\n| iceman-contributor-free | Go (Paid) |\n| kimi-k3 | Go (Paid) |\n| kimi-k3.1-pro | Go (Paid) |\n| mimo-v2.6-pro | Go (Paid) |\n| muse-spark-1.2-contributor | Go (Paid) |\n| muse-spark-1.3-contributor | Go (Paid) |\n| qwen3.8-flash | Go (Paid) |\n| qwen3.8-max | Go (Paid) |\n| step-5-preview | Go (Paid) |\n\n---\n*Generated by `opencode-maintenance` workflow.*\n",
+      "url": "https://github.com/dianlight/opencode-modelselect-action/issues/112",
+      "description": "# OpenCode Maintenance Report\n\n> Automatically detected by the `opencode-maintenance` workflow.\n> Run date: 2026-10-27\n\n> Score research and the coverage-fix PR are opened automatically by this run — no action needed here. The issue stays open until the PR merges.\n\n## 📋 Model Coverage Issues\n\n### Models Missing Score Data\n\nThe following OpenCode models have **no score data** from LiveBench or the static fallback. Consider adding them to `config/model-scores.yaml`.\n\n| Model | Tier |\n|-------|------|\n| beam-free | Free |\n| deepseek-v4.1-flash | Go (Paid) |\n| deepseek-v4.1-flash-free | Free |\n| flint-40b-free | Free |\n| gemini-4-argon | Go (Paid) |\n| gpt-6-luna | Go (Paid) |\n| grok-4.6 | Go (Paid) |\n| grok-4.7 | Go (Paid) |\n| iceman-contributor-free | Go (Paid) |\n| kimi-k3 | Go (Paid) |\n| kimi-k3.1-pro | Go (Paid) |\n| mimo-v2.6-pro | Go (Paid) |\n| muse-spark-1.2-contributor | Go (Paid) |\n| muse-spark-1.3-contributor | Go (Paid) |\n| qwen3.8-flash | Go (Paid) |\n| qwen3.8-max | Go (Paid) |\n| step-5-preview | Go (Paid) |\n\n---\n*Generated by `opencode-maintenance` workflow.*\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

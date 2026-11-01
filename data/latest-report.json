@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T14:20:09.103Z",
+  "generatedAt": "2026-11-01T19:45:11.217Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,10 +13,24 @@
       "micro bounty"
     ]
   },
-  "discovered": 39,
-  "eligible": 17,
+  "discovered": 38,
+  "eligible": 16,
   "realMoneySpentUsd": 0,
   "opportunities": [
+    {
+      "id": "github-6148017193",
+      "source": "github",
+      "title": "[Bounty] 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4198",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/74\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro \n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro \n- **Monto:** $$750\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4197)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n937 coins\n\n### 真实赏金（USD）/ Real Reward\n$750\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 750,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 750,
+      "profitPerHourUsd": 9000,
+      "eligible": true
+    },
     {
       "id": "github-6144409872",
       "source": "github",
@@ -144,20 +158,6 @@
       "eligible": true
     },
     {
-      "id": "github-6074432983",
-      "source": "github",
-      "title": "[Bounty] 💰 Bounty Seguro ($$250): [Bounty] Preserve RFC 7239 `Forwarded` host author",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4152",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/53\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$250): [Bounty] Preserve RFC 7239 `Forwarded` host author\n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** [Bounty] Preserve RFC 7239 `Forwarded` host authority in sub-mounted ASGI `Request.scope_\n- **Monto:** $$250\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4143)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n312 coins\n\n### 真实赏金（USD）/ Real Reward\n$250\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 250,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 250,
-      "profitPerHourUsd": 3000,
-      "eligible": true
-    },
-    {
       "id": "github-5908680476",
       "source": "github",
       "title": "[Risk/Reward] Reward Outcome: Cash Out or Continue",
@@ -208,6 +208,21 @@
       "title": "Human-QC seed: verify 17 additional cards before opening full reward filters",
       "url": "https://github.com/Null0722/AnCard/issues/18",
       "description": "## Objective\nSeed AnCard with 15–20 source-checked human-approved cards so fact-based reward/spending/fee filters and the in-memory comparison are useful. Existing approved Aer Lingus card counts toward this target; the candidates below are *not* approved yet.\n\n## Proposed owner-review queue (17 additional candidates)\n- [x] amex-gold — American Express Gold\n- [x] amex-platinum — American Express Platinum\n- [ ] amex-blue-cash-everyday — Blue Cash Everyday\n- [ ] amex-blue-cash-preferred — Blue Cash Preferred\n- [ ] chase-freedom-unlimited — Chase Freedom Unlimited\n- [ ] chase-freedom-flex — Chase Freedom Flex\n- [ ] chase-sapphire-preferred — Chase Sapphire Preferred\n- [ ] chase-sapphire-reserve — Chase Sapphire Reserve\n- [ ] cap-quicksilver — Capital One Quicksilver Rewards\n- [ ] cap-savor — Capital One Savor Rewards\n- [ ] cap-venture — Capital One Venture Rewards\n- [ ] cap-venture-x — Capital One Venture X Rewards\n- [ ] boa-customized-cash — Bank of America Customized Cash Rewards\n- [ ] citi-double-cash — Citi Double Cash\n- [ ] wells-active-cash — Wells Fargo Active Cash\n- [ ] wells-autograph — Wells Fargo Autograph\n- [ ] cap-discover-it — Discover it Cash Back\n\n## Required QC for every card\n- Open the current *official issuer* product and pricing pages; confirm issuer, card name, offer terms and the actual agreement's effective date.\n- Check annual and monthly fees, APR, qualifying categories, caps, earning rates, bonus eligibility/deadlines, redemption restrictions and disclosed protections; do not assume omitted fields are zero.\n- Compare every proposed candidate field with official disclosures. Correct stale offers, marketing exceptions and source URLs before setting humanVerified true.\n- Document reviewer, source links and review date in the Git-backed process. Mark true only with authorized human approval. Leave pending if uncertain.\n- Run npm test and inspect the rendered card and factual comparison against its official source before publishing.\n\n## Release sequencing\n- v1.1: Merge fact-first reviewed-first UX only after PR #17 CI and desktop/mobile/print visual QA.\n- v1.5: Improve the existing in-memory three-card comparison into a clearly accessible 2–4 card workbench, with neutral side-by-side terms and no recommendation score.\n- v2.0: Structured issuer-text / plain-English diffs, provenance and moderated community source submissions (issue templates and a reviewer-only publish gate).\n\nDo not auto-approve the 17 queued cards. This issue is a research checklist, not a verification certificate.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5901196280",
+      "source": "github",
+      "title": "Training-reward integrity: six ways the reward curve your optimizer climbs diverges from real capability",
+      "url": "https://github.com/thinking-machines-lab/tinker-cookbook/issues/975",
+      "description": "During RL training the number to watch is `test/reward/total` on the dashboard, and `evaluator_builders` scores steer checkpoint selection. This issue collects six verified defects in the pipeline behind that number, each measured against the real code at commit `df2aff6`, with the honest number alongside. They share one shape: an event the policy can influence (a crash, a truncation, a retry, an extra rollout) changes which rewards enter the mean, or what the metric claims to measure, without leaving a trace in the headline number.\n\nThe rollout-crash companion piece (retried failures vanishing from training data entirely, and stream workers hanging the run) is being filed as a PR with tests, since the fix is local to `rl/train.py` and the rollout strategy. Everything below is the part that needs a design decision rather than a patch.\n\n## 1. Crashed groups leave the `reward/total` denominator\n\n`_collect_eval_metrics` filters failed groups before averaging (`tinker_cookbook/rl/metric_util.py:323`), and the headline metric is `np.mean` over survivors only (`metric_util.py:123-124`). A group becomes `None` through `AllTrajectoriesFailedError` or a caught group-level error, which is the normal path under `RetryOnFailure` and `MinViableGroup`, and `MinViableGroup` is the default strategy for thinkingmachines/Inkling models. Partial groups have the same effect at trajectory granularity: once the viability floor is met, crashed members' rewards vanish from the mean while the group stays in (`rollout_strategy.py:303-306`).\n\nMeasured with the real `_collect_eval_metrics`, 16 test problems, model crashes 8:\n\n```\nreported test/reward/total = 0.500   (mean over the 8 survivors)\nhonest  score               = 0.250   (crashes counted as 0)\n```\n\nThe only trace is a side key, `test/rollout_errors/groups_skipped = 8.0`, which no dashboard surfaces. The typed `last_result.score` already handles this correctly by counting errors as 0 (`metric_util.py:361-364`), so the gap is specific to the metric that reaches `ml_log`.\n\nThis is model-reachable. Outputs that crash `env.step` (unparsable actions, tool misuse, sandbox failures in code envs) burn the retry budget, and hard problems are exactly the ones a weak policy crashes on.\n\nSuggested fix: count skipped groups as 0 in `reward/total`, or emit `reward/total_with_errors` alongside it, mirroring `last_result.score`.\n\n## 2. `last_result.score` is `any(r > 0)`: pass@n presented as raw accuracy\n\n`metric_util.py:358-360`:\n\n```python\nnum_groups_correct = sum(\n    1 for tg in trajectory_groups_P if any(r > 0 for r in tg.get_total_rewards())\n)\n```\n\n`BenchmarkResult.score` is documented as \"raw accuracy\" (`_types.py:521-522, 540-542`). With an eval dataset of group size n, this score is pass@n, and nothing in the result flags the n. The forecasting recipe evaluates with `validation_group_size=8` (`recipes/forecasting/env.py:319`). Its reported `score` is pass@8.\n\nMeasured: 10 problems x 8 rollouts, exactly 1 of 8 correct per problem.\n\n```\nper-rollout mean (reward/total) = 0.125   <- pass@1 = 12.5%\nlast_result.score               = 1.000   <- any(r>0) = pass@8 = 100%\n```\n\nA model solving each problem once in eight tries reports 100% \"accuracy\". No production consumer reads `last_result` today, so this is latent, but it is a public API returning a number the docs define differently.\n\nSuggested fix: rename or add a `pass_at` field carrying the group size, or document `score` as best-of-n when group rollouts are used.\n\n## 3. pass@k silently drops examples with n < k samples\n\n`_runner.py:300-314`: when an example has fewer samples than k, it is skipped out of that k's mean, and the skip logs at DEBUG, invisible at the INFO level the runner otherwise uses. Errors do not cause this. Both error paths coerce to reward 0.0 at `_runner.py:624/645`, which is correct. What does: `make_envs` returning a different example set across sample rounds, whether through shuffle plus `max_examples` or a benchmark whose env count varies run to run. Related: `_get_example_id` falls back to positional `str(idx)` for envs without `example_id` (`_runner.py:62-82`), which makes per-example tracking unstable across shuffles.\n\nMeasured: 11 examples, one with 3 samples instead of 4.\n\n```\npass@1 reported = 0.2583 (over 11 examples)\npass@4 reported = 1.0000 (over 10 examples — 'short' dropped, DEBUG-only note)\n```\n\nThe dropped example's history, favorable or not, silently leaves the larger-k means, so the suggested fix is to bump the skip to WARNING with counts and key examples stably (dataset id, not position).\n\n## 4. Budget-truncated rollouts keep full reward under the default config\n\nFor every non-Inkling model the default is `termination=None` (`rollout_presets.py:169-184`). A trajectory cut off by the turn or token budget is therefore graded as if it had terminated, and under `zero_reward_on_limit=False` it keeps whatever reward the grader assigned. Measured with the real pipeline: a `max_turns`-cut trajectory with the answer stuffed into turn 1 scores reward 1.000 / advantage +0.500 under the default config, identical to a genuine completion. With `agentic().termination` it scores 0 / -0.250.\n\nIn benchmarks graded on final state this means no episode-end verifier ever fires for budget-cut rollouts. In RL it means a policy can stop spending tokens once the graded event has happened and farm the remainder of the budget risk-free.\n\nSuggested fix: default `termination` to the stop-condition-aware variant for agentic envs, or at minimum warn when a graded trajectory was budget-cut.\n\n## 5. Tool results enter training context and grader input with no untrusted-content treatment\n\n`AgentToolMessageEnv._handle_tool_calls` appends tool-result messages to `env.history` verbatim (`tinker_cookbook/tool_use/agent_tool_message_env.py:125-129`). That history (a) becomes the conditioning context of the training datum: `trajectory_to_data` places the tokens at mask=0/adv=0 (`rl/data_processing.py:164-193`) directly before the advantage-carrying action tokens, and (b) reaches `reward_fn` (`_grade`, `agent_tool_message_env.py:274-302`, and `pass_all_messages_to_grader=False` still includes tool results in the completion suffix). No layer filters, delimits, or size-caps observation content.\n\nConsequence 1 (external attacker): a poisoned retrieved document behind `recipes/search_tool` that steers a susceptible policy gets its payload tokens shipped inside the training sequence, and when the steered answer matches gold (public datasets like `nq_hotpotqa_train` make gold known), the trajectory earns full reward and positive advantage. RL reinforces injection-following.\n\nConsequence 2 (no attacker required): a policy can write a file during the episode and `cat` it back through the bash tool, planting instructions in its own observation channel and shortcutting the task for identical reward. The write action itself carries the positive advantage.\n\nOffline PoC driving the production pipeline (`run_rollout` through `trajectory_to_data`, real `TextAnswerReward`, scripted policy, canonical qwen3_instruct token encoding) observed:\n\n- reward 1.000 for injection-following, equal to the honest-compute baseline\n- payload tokens in the datum: 64 tokens at mask=0/adv=0, sitting 31 tokens before the reinforced action span (`Answer: 1091`, mask=1, advantage +0.5)\n- self-injection datum: the policy's note appears twice — as its own sampled action (mask=1, advantage +0.5) and as the cat'd observation (mask=0)\n\nThe training loop is single-pass on-policy, so per-trajectory damage is one sequence, but the poisoned source and the updated policy both persist across iterations, and group-centered advantages tilt every sibling's gradient in affected groups.\n\nSuggested fix (any subset): untrusted-content delimiting for tool results, grader input restricted to task + final answer, a masking seam for injection-flagged trajectories (precedent: `PARSE_ERROR_MASKED_METRIC_KEY` zeroes mask/advantage for flagged transitions), retrieval-corpus revision pinning, and an injection-canary eval metric.\n\n## 6. True-Thinking Score is gameable by the CoT it measures\n\nThe TTS recipe (`recipes/true_thinking_score/tts.py`) replicates the \"Can Aha Moments Be Fake?\" metric, whose point is detecting fake reasoning steps. Its perturbation makes it fakeable in both directions: numeric steps are perturbed by offsetting numbers, but non-numeric steps are perturbed by deletion (`tts.py:364-367`).\n\nTo hide causal reasoning as decorative. Duplicate load-bearing non-numeric content across two adjacent steps. Deleting either one alone leaves the duplicate carrying it, so both steps score TTS near 0 and land in `fraction_decorative` (`tts.py:235-239`). Redundancy launders causal steps as noise.\n\nTo fake an aha moment. Put a unique load-bearing restatement inside a step that matches `SELF_VERIFICATION_PATTERN` (\"Wait, let me recheck...\"). Deleting it tanks the perturbed confidence, so the step scores high TTS and is classified as self-verification — the exact artifact the metric exists to detect, manufactured on demand.\n\nAlso worth renaming: `model_correct = step_scores[-1].s1_c1 > 0.5` (`tts.py:465`). This is the model's own confidence in the gold answer, not correctness.\n\nSuggested fix: perturb non-numeric steps by corruption (word-order shuffle, synonym substitution) rather than deletion, which makes redundancy detectable, or measure both deletion-perturbation and corruption-perturbation and flag steps whose scores diverge.\n\n## Verification\n\nEvery number above is real output from the repo's own code (fake only for the model and the Tinker API), run at commit `df2aff6`. Scripts are self-contained and available on request.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -281,21 +296,6 @@
       "title": "Bug: Trade Republic staking rewards and their tax are not imported",
       "url": "https://github.com/we-promise/sure/issues/4115",
       "description": "## Before you start (required)\n\n### General checklist\n\n- [x] I have removed personal / sensitive data from screenshots and logs\n- [x] I have searched [existing issues](https://github.com/we-promise/sure/issues?q=is:issue) and [discussions](https://github.com/we-promise/sure/discussions) to ensure this is not a duplicate issue\n\n### How are you using Sure?\n\n- [ ] I was a paying Maybe customer (hosted version)\n- [ ] I use it on PikaPod, Umbrel or similar (VPS included)\n- [x] I am a self-hosted user (local only)\n\n### Self hoster checklist\n\n- Self hosted app commit SHA (find in user menu): bdb280b3b\n  - [x] I have confirmed that my app's commit is the latest version of Sure\n- Where are you hosting?\n  - [ ] Render\n  - [ ] Docker Compose\n  - [ ] Umbrel\n  - [ ] PikaPod\n  - [x] Other (please specify): TrueNAS SCALE app (Docker)\n\n---\n\n## Bug description\n\nTrade Republic pays crypto staking rewards (Solana in my case) every week, and charges the tax on each reward to the cash account. The account statement lists every tax debit, for example:\n\n```\nImposte · Staking Reward XF000SOL0012 Solana, quantity: 0.024461\n```\n\nNeither the reward nor the tax is on the Trade Republic timeline, so the sync cannot import them:\n\n- **Crypto account:** the holding is correct, because it comes from the positions snapshot. The trades, though, add up to less than the position, since the reward coins have no trade. Cost basis and the holding's history miss them.\n- **Cash account:** the current balance is correct, because it is anchored to Trade Republic's cash. The balance history, though, misses the small weekly tax debits, and drifts further from the statement each week before today.\n\nOn my account the statement has 46 weekly tax debits between November 2025 and October 2026. I read both timeline topics in full (`timelineTransactions` and `timelineActivityLog`, 61 pages). They contain no event for any reward or tax debit. Everything else on the statement reconciles line by line with what Sure imports from the timeline.\n\n### To Reproduce\n\n1. Hold a crypto asset with staking enabled at Trade Republic (for example Solana) for a few weeks.\n2. Sync the Trade Republic connection.\n3. Compare the crypto trades with the position quantity, and the cash account's history with the monthly statement.\n4. See that the reward coins and the weekly \"Staking Reward\" tax debits are missing.\n\n### Expected behavior\n\nStaking rewards import as crypto buys at no cost, and their tax as a cash debit. If Trade Republic does not expose them outside the statement, the limitation should at least be documented, so users know why the crypto trades and the cash history differ from the statement.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5647589338",
-      "source": "github",
-      "title": "US-28: Cash 6-month reminder",
-      "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/28",
-      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want a reminder when lost cash is approaching the 6-month mark, so I know when it's time to release it to the finder under existing policy.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven a logged item marked as cash, when it approaches 6 months held, then staff receive a reminder to process the finder's reward per current practice.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -514,6 +514,20 @@
       "eligible": true
     },
     {
+      "id": "github-5404801820",
+      "source": "github",
+      "title": "[Bounty] [Bounty: $1,100] High: Slippage Rounding Error in Flash Loan Fee Calculation",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1303",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/Senthemodder/evm-vault-audit/issues/2\n\n### 漏洞描述 / Description\n[Bounty: $1,100] High: Slippage Rounding Error in Flash Loan Fee Calculation\n\n### Severity: High\n### Reward: ,100 USDC (Escrow Locked)\n\n### Description\nThe flash loan fee calculation in contracts/FlashBorrower.sol rounds fee shares in favor of the borrower instead of the vault reserves, allowing micro-drainage over repeated flash loan iterations.\n\n### Requirements\n- Refactor fee division using Math.mulDiv(..., Rounding.Up).\n- Ensure zero-fee exploit prevention.\n\n**Bounty Settlement:** Release upon PR verification.\n\n### 积分币奖励 / Coin Reward\n1375 coins\n\n### 真实赏金（USD）/ Real Reward\n$1,100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 1,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 1,
+      "profitPerHourUsd": 12,
+      "eligible": true
+    },
+    {
       "id": "github-6017657589",
       "source": "github",
       "title": "A Nano (XNO) settlement rail — feeless, no gas floor, block is the receipt",
@@ -544,20 +558,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5404801820",
-      "source": "github",
-      "title": "[Bounty] [Bounty: $1,100] High: Slippage Rounding Error in Flash Loan Fee Calculation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1303",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/Senthemodder/evm-vault-audit/issues/2\n\n### 漏洞描述 / Description\n[Bounty: $1,100] High: Slippage Rounding Error in Flash Loan Fee Calculation\n\n### Severity: High\n### Reward: ,100 USDC (Escrow Locked)\n\n### Description\nThe flash loan fee calculation in contracts/FlashBorrower.sol rounds fee shares in favor of the borrower instead of the vault reserves, allowing micro-drainage over repeated flash loan iterations.\n\n### Requirements\n- Refactor fee division using Math.mulDiv(..., Rounding.Up).\n- Ensure zero-fee exploit prevention.\n\n**Bounty Settlement:** Release upon PR verification.\n\n### 积分币奖励 / Coin Reward\n1375 coins\n\n### 真实赏金（USD）/ Real Reward\n$1,100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 1,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 1,
-      "profitPerHourUsd": 12,
-      "eligible": true
-    },
-    {
       "id": "github-5736231531",
       "source": "github",
       "title": "🎯 Bounty Alert: 5 New Opportunityies found",
@@ -569,20 +569,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 150,
       "profitPerHourUsd": 1800,
-      "eligible": true
-    },
-    {
-      "id": "github-5727841388",
-      "source": "github",
-      "title": "🎯 Bounty Alert: 15 New Opportunityies found",
-      "url": "https://github.com/freedom-winds/BountyScout/issues/1202",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-10-06 11:48 UTC\n\n#### 1. [[Bounty: $80] Add a top-level error boundary so one malformed value cannot blank the app](https://github.com/SUSU-LABS/susu-web/issues/8)\n- **Repository:** [SUSU-LABS/susu-web](https://github.com/SUSU-LABS/susu-web)\n- **Comments:** 0\n- **Last Updated:** 2026-10-06T11:46:51Z\n\n#### 2. [Decisions for the ticket bounty epic: where tickets live, feature rewards, the amounts, Lab backfill (D540)](https://github.com/AxalNetwork/StudioOS/issues/1102)\n- **Repository:** [AxalNetwork/StudioOS](https://github.com/AxalNetwork/StudioOS)\n- **Comments:** 5\n- **Last Updated:** 2026-10-06T11:43:04Z\n\n#### 3. [[Intake] 【本仓缺陷 · tests/dsh 是一套永远跑不了、也没有 CI 跑的死测试】 症状：node --test 'tests/dsh/**/*.test.js'](https://github.com/Ikalus1988/MisakaNet/issues/2917)\n- **Repository:** [Ikalus1988/MisakaNet](https://github.com/Ikalus1988/MisakaNet)\n- **Comments:** 2\n- **Last Updated:** 2026-10-06T11:42:32Z\n\n#### 4. [Mod store: persistent, per-mod data for NPC scripts and Lua hooks](https://github.com/Flux159/ragnarokoffline.app/issues/440)\n- **Repository:** [Flux159/ragnarokoffline.app](https://github.com/Flux159/ragnarokoffline.app)\n- **Comments:** 6\n- **Last Updated:** 2026-10-06T11:32:22Z\n\n#### 5. [[100,000 sats] Odyssey Book 11: complete translation, lexicon, and exhaustive research index](https://github.com/mazebench-temp/GreekIndexBounty/issues/62)\n- **Repository:** [mazebench-temp/GreekIndexBounty](https://github.com/mazebench-temp/GreekIndexBounty)\n- **Comments:** 1\n- **Last Updated:** 2026-10-06T11:32:01Z\n\n#### 6. [docs: README local setup, scripts, and how to run tests/e2e](https://github.com/Deen-Bridge/dnb-frontend/issues/541)\n- **Repository:** [Deen-Bridge/dnb-frontend](https://github.com/Deen-Bridge/dnb-frontend)\n- **Comments:** 1\n- **Last Updated:** 2026-10-06T11:31:53Z\n\n#### 7. [Bug: NaN sensitivityThreshold silently disables anomaly alerts](https://github.com/Stellar-split/split-sdk/issues/1008)\n- **Repository:** [Stellar-split/split-sdk](https://github.com/Stellar-split/split-sdk)\n- **Comments:** 3\n- **Last Updated:** 2026-10-06T11:27:40Z\n\n#### 8. [docs: document the admin route map (wired vs mock)](https://github.com/Deen-Bridge/dnb-frontend/issues/543)\n- **Repository:** [Deen-Bridge/dnb-frontend](https://github.com/Deen-Bridge/dnb-frontend)\n- **Comments:** 1\n- **Last Updated:** 2026-10-06T11:24:53Z\n\n#### 9. [Accepting a bounty gives no clear sign it went into the Quest Log (player feedback)](https://github.com/faizal97/realm-of-loner/issues/135)\n- **Repository:** [faizal97/realm-of-loner](https://github.com/faizal97/realm-of-loner)\n- **Comments:** 0\n- **Last Updated:** 2026-10-06T11:21:09Z\n\n#### 10. [🎯 Micro Bounty Alert: 5 New Opportunities](https://github.com/2510034127qq-wq/BountyScout/issues/236)\n- **Repository:** [2510034127qq-wq/BountyScout](https://github.com/2510034127qq-wq/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-10-06T10:15:17Z\n\n#### 11. [🎯 Micro Bounty Alert: 4 New Opportunities](https://github.com/2510034127qq-wq/BountyScout/issues/234)\n- **Repository:** [2510034127qq-wq/BountyScout](https://github.com/2510034127qq-wq/BountyScout)\n- **Comments:** 1\n- **Last Updated:** 2026-10-06T08:33:08Z\n\n#### 12. [【实战解密】我用 AI 智能体扫荡 GitHub 开源悬赏：48 小时合并 6 个 PR 斩获  美金全流程](https://github.com/gewenbo888/ai-for-money/issues/1)\n- **Repository:** [gewenbo888/ai-for-money](https://github.com/gewenbo888/ai-for-money)\n- **Comments:** 1\n- **Last Updated:** 2026-10-06T08:08:55Z\n\n#### 13. [fix(api): prevent caller payload from overriding server-generated user id](https://github.com/SecureBananaLabs/bug-bounty/issues/13038)\n- **Repository:** [SecureBananaLabs/bug-bounty](https://github.com/SecureBananaLabs/bug-bounty)\n- **Comments:** 1\n- **Last Updated:** 2026-10-06T07:47:28Z\n\n#### 14. [🎯 Bounty Alert: 16 New Opportunityies found](https://github.com/uknwplayer/BountyScout/issues/48)\n- **Repository:** [uknwplayer/BountyScout](https://github.com/uknwplayer/BountyScout)\n- **Comments:** 1\n- **Last Updated:** 2026-10-06T07:25:05Z\n\n#### 15. [🎯 Bounty Alert: 18 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1544)\n- **Repository:** [dev-kp-eloper/BountyScout](https://github.com/dev-kp-eloper/BountyScout)\n- **Comments:** 1\n- **Last Updated:** 2026-10-06T07:20:52Z\n\n",
-      "rewardUsd": 80,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 80,
-      "profitPerHourUsd": 960,
       "eligible": true
     }
   ]

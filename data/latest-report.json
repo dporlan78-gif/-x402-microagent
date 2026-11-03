@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T15:17:23.641Z",
+  "generatedAt": "2026-11-03T21:49:40.357Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -426,6 +426,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6176439420",
+      "source": "github",
+      "title": "StrainChain $49 passport: close paid-order → issuer CoA intake → signed fulfillment gap",
+      "url": "https://github.com/undone0603/authichain-unified/issues/2307",
+      "description": "## Observed gap (2026-11-02)\n\nThe live Stripe Payment Link `plink_1UI6mgGqTruSqV8TQPQgeLpM` is **active** and its single line item is the exact `$49` one-time `strainchain_passport` price `price_1UHjCZGqTruSqV8T35M6AmoJ`. This establishes a payable price, not a fulfilled customer sale. In the live account's charge list, there is no successful $49 payment.\n\nRepository `workers/stripe-webhook/src/grant-map.ts` deliberately sets `humanHold: true`, `generations: 0`, with the comment \"payment is recorded, no generations, no certificate.\" The canonical webhook's `provisionPurchase` handles generic catalog identity/credits but cannot by itself turn a buyer's CoAs into an authorized genetics passport. Paid state must NOT be conflated with issued/delivered state.\n\n## Acceptance criteria\n\n- [ ] Prove a buyer-intake surface or asynchronous secure upload path after payment for source CoAs, issuer authorization and cultivar namespace. Handle missing/invalid identity; no payment-status claims from browser input.\n- [ ] Persist a session-keyed, idempotent purchase/fulfillment case with status `PAID_REVIEW_REQUIRED` (or equivalent) from a Stripe-signed, positive-amount paid event; exactly one case per session. Do not store raw state tracking numbers or sensitive CoAs in an exposed public schema.\n- [ ] Notify authorized buyer with missing-input checklist and proof of receipt. Preserve opt-outs, rate limits and private source data; manual review acceptable as initial state.\n- [ ] Require a human/authorized issuer approval and reviewed source CoAs before any public passport/seal; require verifiable issuer signature and evidence links.\n- [ ] Record delivery/verification outcome and first value with an auditable timestamp separate from payment. Failed delivery must be visible, retryable, and never silently marked done.\n- [ ] Test unpaid/zero-dollar/demo/founder/self-purchase, duplicate webhook/replay, wrong price, absence of CoAs, unknown issuer and negative verifier paths.\n- [ ] Run exact-head CI or independently authorized isolated runner; obtain review; do not bypass Vercel/CircleCI/branch protection.\n- [ ] Verify a real non-founder positive paid Stripe event end-to-end before declaring a customer sale or autonomous revenue.\n\n## Dependencies\n\n- Packaging-evidence redacted intake and honest purchase-copy PR #2305.\n- Existing price catalogue `src/lib/plans.ts`, Stripe grant map and `docs/execution/REVENUE_LOOP.md`.\n- Keep `humanHold` and `production_send=false` until actual proofs justify changing the appropriate gate; do not introduce a second billing system.\n\n**Definition of done:** independent customer has paid; signed webhook is deduped; buyer gets secure source-intake access; authorized CoAs are reviewed; a signed passport is published and independently verified; fulfillment state matches Stripe and customer-visible access.",
+      "rewardUsd": 49,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 49,
+      "profitPerHourUsd": 588,
+      "eligible": true
+    },
+    {
       "id": "github-5990649377",
       "source": "github",
       "title": "Peering: Lightning invoices for paid peering — issue, settle, renew, lapse",
@@ -439,20 +453,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6176439420",
-      "source": "github",
-      "title": "StrainChain $49 passport: close paid-order → issuer CoA intake → signed fulfillment gap",
-      "url": "https://github.com/undone0603/authichain-unified/issues/2307",
-      "description": "## Observed gap (2026-11-02)\n\nThe live Stripe Payment Link `plink_1UI6mgGqTruSqV8TQPQgeLpM` is **active** and its single line item is the exact `$49` one-time `strainchain_passport` price `price_1UHjCZGqTruSqV8T35M6AmoJ`. This establishes a payable price, not a fulfilled customer sale. In the live account's charge list, there is no successful $49 payment.\n\nRepository `workers/stripe-webhook/src/grant-map.ts` deliberately sets `humanHold: true`, `generations: 0`, with the comment \"payment is recorded, no generations, no certificate.\" The canonical webhook's `provisionPurchase` handles generic catalog identity/credits but cannot by itself turn a buyer's CoAs into an authorized genetics passport. Paid state must NOT be conflated with issued/delivered state.\n\n## Acceptance criteria\n\n- [ ] Prove a buyer-intake surface or asynchronous secure upload path after payment for source CoAs, issuer authorization and cultivar namespace. Handle missing/invalid identity; no payment-status claims from browser input.\n- [ ] Persist a session-keyed, idempotent purchase/fulfillment case with status `PAID_REVIEW_REQUIRED` (or equivalent) from a Stripe-signed, positive-amount paid event; exactly one case per session. Do not store raw state tracking numbers or sensitive CoAs in an exposed public schema.\n- [ ] Notify authorized buyer with missing-input checklist and proof of receipt. Preserve opt-outs, rate limits and private source data; manual review acceptable as initial state.\n- [ ] Require a human/authorized issuer approval and reviewed source CoAs before any public passport/seal; require verifiable issuer signature and evidence links.\n- [ ] Record delivery/verification outcome and first value with an auditable timestamp separate from payment. Failed delivery must be visible, retryable, and never silently marked done.\n- [ ] Test unpaid/zero-dollar/demo/founder/self-purchase, duplicate webhook/replay, wrong price, absence of CoAs, unknown issuer and negative verifier paths.\n- [ ] Run exact-head CI or independently authorized isolated runner; obtain review; do not bypass Vercel/CircleCI/branch protection.\n- [ ] Verify a real non-founder positive paid Stripe event end-to-end before declaring a customer sale or autonomous revenue.\n\n## Dependencies\n\n- Packaging-evidence redacted intake and honest purchase-copy PR #2305.\n- Existing price catalogue `src/lib/plans.ts`, Stripe grant map and `docs/execution/REVENUE_LOOP.md`.\n- Keep `humanHold` and `production_send=false` until actual proofs justify changing the appropriate gate; do not introduce a second billing system.\n\n**Definition of done:** independent customer has paid; signed webhook is deduped; buyer gets secure source-intake access; authorized CoAs are reviewed; a signed passport is published and independently verified; fulfillment state matches Stripe and customer-visible access.",
-      "rewardUsd": 49,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 49,
-      "profitPerHourUsd": 588,
-      "eligible": true
     },
     {
       "id": "github-5950653348",

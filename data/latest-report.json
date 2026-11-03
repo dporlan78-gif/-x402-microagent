@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T06:57:12.188Z",
+  "generatedAt": "2026-11-03T15:17:23.641Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -188,6 +188,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6184195586",
+      "source": "github",
+      "title": "practice score: drawdown points reward sitting 70% in cash",
+      "url": "https://github.com/iamsaquib8/stockwise/issues/119",
+      "description": "## What\nThe score's doc comment says sitting in cash through a crash \"is not a trading decision worth points\", and a run that is 0% invested scores 0. But the drawdown part compares your drawdown with the benchmark's full drawdown, and participation is full from 30% average exposure. So the same picks held at 30% exposure earn drawdown points that they can't earn at 100%.\n\nTake a replay where the benchmark falls 38% (the COVID crash) and a player holds a basket that tracks it:\n- 100% invested: drawdown ≈ 38%, `1 − 38/38 = 0`, so 0 of 20 points;\n- 30% invested, 70% cash: drawdown ≈ 11.4%, `1 − 11.4/38 = 0.7`, so 14 of 20 points.\n\nThe risk-adjusted part is the same for both, since scaling exposure doesn't change the Sharpe or Sortino ratio. Same decisions, 14 more points for cash drag. In a calm market (benchmark drawdown floored at 10%) the gap is still about 10 points.\n\n## Where\n- [score.rs#L27](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L27) — `FULL_PARTICIPATION = 30.0`.\n- [score.rs#L169-L172](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L169-L172) — `participation` and the drawdown ratio.\n- [score.rs#L191](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L191) — drawdown points.\n- [score.rs#L431](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L431) — the cash test covers 0% exposure only.\n\n## Suggested fix\nCompare like with like: scale the benchmark's drawdown by the run's average exposure, for example `drawdown = 1 − dd / (bench_dd × exposure).max(floor)`. Then cutting losses at the same exposure is what earns the points. Keep the existing rule for 0% exposure.\n\n## Done when\n- Holding the benchmark at 30% and at 100% exposure earns the same drawdown points.\n- A run with a smaller drawdown at the same exposure still earns more.\n- Tests in `score.rs` cover both; docs/simulator.md describes the rule.\n\n<sub>Found in a code audit of master at e2998d1.</sub>",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6011061645",
       "source": "github",
       "title": "Reward system",
@@ -291,21 +306,6 @@
       "eligible": true
     },
     {
-      "id": "github-5866357925",
-      "source": "github",
-      "title": "[WF-6] Nym API (rewarder) uses the on-chain ticket-based work factor in reward calculations",
-      "url": "https://github.com/nymtech/nym/issues/7270",
-      "description": "Decentralisation roadmap item `WF-6`.\n\nSection: Work Factor Calculation Changes\n\nDirect blockers and the issues that this one blocks:\n\n```mermaid\nflowchart LR\n  classDef done fill:#d4edda,stroke:#2e7d32,color:#000\n  classDef progress fill:#fff3cd,stroke:#b8860b,color:#000\n  classDef investigating fill:#d6e4ff,stroke:#1f4fa3,color:#000\n  classDef todo fill:#f6f8fa,stroke:#57606a,color:#000\n  WF_5[\"WF-5: Changes to e-cash contract to get the epoch's share of deposits\"]\n  WF_4[\"WF-4: Work factor is on chain (ticket-based)\"]\n  WF_6[\"WF-6: Nym API (rewarder) uses the on-chain ticket-based work factor in reward calculations\"]\n  WF_7[\"WF-7: Nym API work factor calculation changes\"]\n  WF_4 --> WF_6\n  WF_5 --> WF_6\n  WF_6 --> WF_7\n  class WF_4,WF_5,WF_6,WF_7 todo\n  style WF_6 stroke-width:4px\n```",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6142074308",
       "source": "github",
       "title": "A refund already paid gets paid again",
@@ -356,6 +356,21 @@
       "title": "Fully paid draft invoices should remain drafts (paid != completed)",
       "url": "https://github.com/InvoiceShelf/InvoiceShelf/issues/956",
       "description": "### Issue filing prerequisites\n\n- [x] I've checked the [documentation](https://docs.invoiceshelf.com/).\n- [x] I've looked for similar issues both Open and Closed.\n- [x] I've tried clearing both cache and cookies in my browser or tried opening the app in the Incognito/InPrivate window.\n\n### Describe the bug\n\nRecording a payment that fully covers a draft invoice changes its status from DRAFT to COMPLETED, although the invoice has never been sent. It is no longer identifiable as a draft, and the completed status suggests that the invoice is finalized and, depending on the editing settings, no longer editable. There is no longer a draft status to indicate that work such as sending the invoice is still pending.\n\nReducing or deleting that payment can then change the same invoice back to DRAFT and make it editable again, depending on the configured editing restrictions. A payment correction can therefore reopen an invoice that appeared to be finalized, without any explicit action to reopen it.\n\n### Steps to Reproduce the issue\n\n1. Set retrospective edits to be disabled after sending an invoice.\n2. Create a draft invoice with a positive total and leave it unsent.\n3. Record a payment covering the full invoice amount.\n4. Open the invoice and check its status and edit permission.\n5. Reduce or delete the payment, then check the invoice status and edit permission again.\n\n### Expected behaviour\n\nThe invoice remains DRAFT, its paid_status becomes PAID, and the recorded payment remains associated with it. Its draft status continues to indicate that it has not yet been sent. Later payment corrections update the payment status without implicitly finalizing or reopening the draft.\n\nEditing follows the configured retrospective edit setting: a restriction based on sending should not lock an unsent draft, while payment-based restrictions should still apply.\n\n### Actual behaviour\n\nThe invoice becomes COMPLETED solely because it was fully paid. With editing disabled after sending, it can no longer be edited despite never having been sent. Its status hides the fact that it is still an unsent draft and gives the impression that no further action is needed.\n\nReducing or deleting the payment changes it back to DRAFT; with the same setting, it becomes editable again.\n\n### Docker\n\n- [x] App running in Docker Container.\n- [x] Docker container running behind Reverse proxy.\n\n### InvoiceShelf version\n\n2.4.7\n\n### PHP version\n\n8.4.27\n\n### Database type\n\nMariaDB\n\n### Database version\n\n10.11.18\n\n### Web Browser\n\nany\n\n### Server OS\n\nLinux\n\n### Reverse-proxy logs\n\n```irc logs\nnot relevant\n```\n\n### Laravel/PHP logs\n\n```irc logs\nnot relevant\n```",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6180859524",
+      "source": "github",
+      "title": "Validate paid Teams collaboration",
+      "url": "https://github.com/dmytro-omelian/savenest/issues/22",
+      "description": "Part of #13.\n\n## Context\n\nTeams is a separate future offering; personal Cloud must remain simple.\n\n## Acceptance criteria\n\n- [ ] Identify repeatable shared-library workflows and willingness to pay\n- [ ] Validate shared collections, invitations, permissions and billing needs before choosing seat pricing or promising delivery\n- [ ] Current local sharing remains free.\n\n## Dependencies\n\nLater Teams discovery; no implementation or customer outreach authorized by this issue alone.\n\n## Verification\n\nRecord real workflow evidence and paid-pilot interest separately from assumptions. Produce a go/no-go recommendation and, only if supported, a scoped product spec.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -440,21 +455,6 @@
       "eligible": true
     },
     {
-      "id": "github-6048634742",
-      "source": "github",
-      "title": "[Catch-all] Implementation issues",
-      "url": "https://github.com/HHS/simpler-grants-protocol/issues/1352",
-      "description": "### Summary\n\nImplementation issues posted through the paid contributor program.\n\n### Acceptance criteria\n\n- [ ] Each implementation issue in this epic is completed and paid, or moved to the next quad's catch-all\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5950653348",
       "source": "github",
       "title": "[Bounty] [TEST BOUNTY] Fix typo in README",
@@ -467,6 +467,21 @@
       "expectedProfitUsd": 50,
       "profitPerHourUsd": 600,
       "eligible": true
+    },
+    {
+      "id": "github-5790605429",
+      "source": "github",
+      "title": "Open bounty: build one reusable AI/automation micro-tool — revenue-share proposals welcome",
+      "url": "https://github.com/Hirokimm/ai-tool-lab/issues/6",
+      "description": "## Zero-cash builder / operator call\n\nWe are looking for independent builders, automation specialists, and small software teams who can turn a repeatable business workflow into a reusable micro-tool, template, integration, or lightweight SaaS.\n\nThis is **not an hourly-job posting**. The goal is to identify arrangements that can scale beyond one customer's implementation: revenue share, referral economics, resale, licensing, white-label supply, or another performance-linked structure that requires no upfront cash from this project.\n\n### What to propose\nReply publicly with:\n- the repetitive business problem you would productize\n- what you can already build / supply\n- demo, repository, or public product URL if available\n- proposed commercial model (revenue share / referral / resale / licensing / white-label / other)\n- who the likely buyer is\n- what can be delivered without upfront payment\n- what remains manual vs. automated\n\n### Selection bias\nPreference goes to proposals with:\n1. repeat purchases or recurring revenue potential;\n2. low marginal delivery cost;\n3. an existing distribution path or clearly identifiable buyers;\n4. implementation that can later be delegated or automated;\n5. measurable customer value.\n\nNo exclusivity is implied. No payment, revenue, or selection is guaranteed; commercial terms would be agreed separately before any paid transaction.\n\n### Safety / confidentiality\nDo not post confidential employer, customer, vessel/operations, personal, credential, or proprietary information. Only submit material you have the right to share and commercialize.\n\nThis public thread is intended to create a reusable external builder/supplier relationship rather than a one-off labor engagement.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-4985689679",
@@ -495,21 +510,6 @@
       "expectedProfitUsd": 50,
       "profitPerHourUsd": 600,
       "eligible": true
-    },
-    {
-      "id": "github-5790605429",
-      "source": "github",
-      "title": "Open bounty: build one reusable AI/automation micro-tool — revenue-share proposals welcome",
-      "url": "https://github.com/Hirokimm/ai-tool-lab/issues/6",
-      "description": "## Zero-cash builder / operator call\n\nWe are looking for independent builders, automation specialists, and small software teams who can turn a repeatable business workflow into a reusable micro-tool, template, integration, or lightweight SaaS.\n\nThis is **not an hourly-job posting**. The goal is to identify arrangements that can scale beyond one customer's implementation: revenue share, referral economics, resale, licensing, white-label supply, or another performance-linked structure that requires no upfront cash from this project.\n\n### What to propose\nReply publicly with:\n- the repetitive business problem you would productize\n- what you can already build / supply\n- demo, repository, or public product URL if available\n- proposed commercial model (revenue share / referral / resale / licensing / white-label / other)\n- who the likely buyer is\n- what can be delivered without upfront payment\n- what remains manual vs. automated\n\n### Selection bias\nPreference goes to proposals with:\n1. repeat purchases or recurring revenue potential;\n2. low marginal delivery cost;\n3. an existing distribution path or clearly identifiable buyers;\n4. implementation that can later be delegated or automated;\n5. measurable customer value.\n\nNo exclusivity is implied. No payment, revenue, or selection is guaranteed; commercial terms would be agreed separately before any paid transaction.\n\n### Safety / confidentiality\nDo not post confidential employer, customer, vessel/operations, personal, credential, or proprietary information. Only submit material you have the right to share and commercialize.\n\nThis public thread is intended to create a reusable external builder/supplier relationship rather than a one-off labor engagement.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     }
   ]
 }

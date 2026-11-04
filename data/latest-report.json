@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T11:07:19.588Z",
+  "generatedAt": "2026-11-04T18:40:40.196Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 31,
-  "eligible": 14,
+  "eligible": 13,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -366,6 +366,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6207314855",
+      "source": "github",
+      "title": "Roadmap: K5b: Getting paid",
+      "url": "https://github.com/akkiverse/karyahub/issues/78",
+      "description": "Payments (cash, UPI, card, bank; part payments), a UPI QR on every bill, payment reminders and the daily AMC renewals list with one-tap sending, bill-wise profit.\n\nThe stories are not written yet. The Business Analyst writes them (and the issues for them) before the build; see [ROADMAP.md](https://github.com/akkiverse/karyahub/blob/main/docs/plan/ROADMAP.md).",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6180859524",
       "source": "github",
       "title": "Validate paid Teams collaboration",
@@ -411,11 +426,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5734621572",
+      "id": "github-5898280324",
       "source": "github",
-      "title": "Paid plan: one-time purchase that unlocks paid features",
-      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/9",
-      "description": "A one-time purchase that unlocks the paid features in the extension. The platform will be a separate subscription; this license only covers the extension.\n\n## Scope\n- Buy once and unlock forever on that browser profile, with a way to restore the purchase on another browser or after reinstalling.\n- `isPaid()` in `src/lib/plan.ts` is the single check every paid feature uses. It returns `false` today; this issue makes it real.\n- A small \"Upgrade\" entry point in the panel and a clear list of what the paid plan includes.\n- Works in both Chrome and Firefox builds.\n\n## To decide (design spec before building)\n- **Payment provider:** ExtensionPay (Stripe-backed, made for extensions, supports one-time payments) vs. Stripe Checkout plus a small license-check endpoint vs. license keys from Lemon Squeezy or Gumroad.\n- **Offline behaviour:** cache the unlocked state so paid features keep working offline.\n- **Price.**\n- **Store rules:** the listing has to disclose paid features, and the Chrome Web Store's payment policies apply.\n\n## Done when\n- A test purchase unlocks paid features in both browsers, and restoring the purchase works on a second profile.\n- Every paid feature issue checks `isPaid()`.\n",
+      "title": "Issue and verify receipts when a payout is paid",
+      "url": "https://github.com/qomiralabs/ujira/issues/120",
+      "description": "## Why\n\nA receipt is issued once, when the payout reaches paid, and must match the chain exactly. Corrections are new revisions, never edits.\n\n## Scope\n\n- A `receipt:issue` job triggered when a payout reaches `paid`: builds the document from the payout, attempt, legs and the adapter's chain receipt, verifies it with `adapter.verifyReceipt`, stores it as revision 1.\n- A correction (for example a later leg refund) issues a new revision that references the previous one.\n- Idempotent per payout and revision.\n\n## Acceptance criteria\n\n- [ ] One receipt per paid payout. Proof: test `issue.test.ts > a repeated paid event issues one receipt` passes.\n- [ ] A receipt that does not match the chain is not issued. Proof: test `issue.test.ts > verifyReceipt mismatch blocks issue and alerts` passes.\n- [ ] Corrections are revisions. Proof: test `issue.test.ts > a refund issues revision 2 and keeps revision 1` passes.\n- [ ] The gate is clean. Proof: `pnpm typecheck && pnpm lint && pnpm test` exit 0.\n\n## Test plan\n\n1. Unit tests against the fake adapter.\n\n## Dependencies\n\nBlocked by #119, #99\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -426,25 +441,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6176439420",
+      "id": "github-5734621572",
       "source": "github",
-      "title": "StrainChain $49 passport: close paid-order → issuer CoA intake → signed fulfillment gap",
-      "url": "https://github.com/undone0603/authichain-unified/issues/2307",
-      "description": "## Observed gap (2026-11-02)\n\nThe live Stripe Payment Link `plink_1UI6mgGqTruSqV8TQPQgeLpM` is **active** and its single line item is the exact `$49` one-time `strainchain_passport` price `price_1UHjCZGqTruSqV8T35M6AmoJ`. This establishes a payable price, not a fulfilled customer sale. In the live account's charge list, there is no successful $49 payment.\n\nRepository `workers/stripe-webhook/src/grant-map.ts` deliberately sets `humanHold: true`, `generations: 0`, with the comment \"payment is recorded, no generations, no certificate.\" The canonical webhook's `provisionPurchase` handles generic catalog identity/credits but cannot by itself turn a buyer's CoAs into an authorized genetics passport. Paid state must NOT be conflated with issued/delivered state.\n\n## Acceptance criteria\n\n- [ ] Prove a buyer-intake surface or asynchronous secure upload path after payment for source CoAs, issuer authorization and cultivar namespace. Handle missing/invalid identity; no payment-status claims from browser input.\n- [ ] Persist a session-keyed, idempotent purchase/fulfillment case with status `PAID_REVIEW_REQUIRED` (or equivalent) from a Stripe-signed, positive-amount paid event; exactly one case per session. Do not store raw state tracking numbers or sensitive CoAs in an exposed public schema.\n- [ ] Notify authorized buyer with missing-input checklist and proof of receipt. Preserve opt-outs, rate limits and private source data; manual review acceptable as initial state.\n- [ ] Require a human/authorized issuer approval and reviewed source CoAs before any public passport/seal; require verifiable issuer signature and evidence links.\n- [ ] Record delivery/verification outcome and first value with an auditable timestamp separate from payment. Failed delivery must be visible, retryable, and never silently marked done.\n- [ ] Test unpaid/zero-dollar/demo/founder/self-purchase, duplicate webhook/replay, wrong price, absence of CoAs, unknown issuer and negative verifier paths.\n- [ ] Run exact-head CI or independently authorized isolated runner; obtain review; do not bypass Vercel/CircleCI/branch protection.\n- [ ] Verify a real non-founder positive paid Stripe event end-to-end before declaring a customer sale or autonomous revenue.\n\n## Dependencies\n\n- Packaging-evidence redacted intake and honest purchase-copy PR #2305.\n- Existing price catalogue `src/lib/plans.ts`, Stripe grant map and `docs/execution/REVENUE_LOOP.md`.\n- Keep `humanHold` and `production_send=false` until actual proofs justify changing the appropriate gate; do not introduce a second billing system.\n\n**Definition of done:** independent customer has paid; signed webhook is deduped; buyer gets secure source-intake access; authorized CoAs are reviewed; a signed passport is published and independently verified; fulfillment state matches Stripe and customer-visible access.",
-      "rewardUsd": 49,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 49,
-      "profitPerHourUsd": 588,
-      "eligible": true
-    },
-    {
-      "id": "github-5990649377",
-      "source": "github",
-      "title": "Peering: Lightning invoices for paid peering — issue, settle, renew, lapse",
-      "url": "https://github.com/cameri/nostream/issues/937",
-      "description": "Part of the relay peering work in #931.\n\n## Scope\n\nThe source (selling) side of paid peering, using nostream's existing payments processors — the same machinery as admission fees:\n\n- When a configured peer with paid terms authenticates, the source relay issues a BOLT11 invoice for the amount/period from its advertised terms.\n- Settlement is detected via the existing processor callbacks; on settlement the peer's feed access activates until the end of the paid period.\n- Before expiry, the source offers a renewal invoice.\n- If the period lapses unpaid, the feed is suspended — stored data and sync state are kept, so resuming is a payment, not a re-sync from zero.\n\n## Acceptance\n\n- A paid peering relationship completes end-to-end: authenticate → invoice → settlement → feed active for exactly the paid period.\n- An unpaid lapse suspends the feed; paying the renewal resumes it without re-reconciliation.\n- Invoice/settlement state per peer is recorded for the admin console.\n",
+      "title": "Paid plan: one-time purchase that unlocks paid features",
+      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/9",
+      "description": "A one-time purchase that unlocks the paid features in the extension. The platform will be a separate subscription; this license only covers the extension.\n\n## Scope\n- Buy once and unlock forever on that browser profile, with a way to restore the purchase on another browser or after reinstalling.\n- `isPaid()` in `src/lib/plan.ts` is the single check every paid feature uses. It returns `false` today; this issue makes it real.\n- A small \"Upgrade\" entry point in the panel and a clear list of what the paid plan includes.\n- Works in both Chrome and Firefox builds.\n\n## To decide (design spec before building)\n- **Payment provider:** ExtensionPay (Stripe-backed, made for extensions, supports one-time payments) vs. Stripe Checkout plus a small license-check endpoint vs. license keys from Lemon Squeezy or Gumroad.\n- **Offline behaviour:** cache the unlocked state so paid features keep working offline.\n- **Price.**\n- **Store rules:** the listing has to disclose paid features, and the Chrome Web Store's payment policies apply.\n\n## Done when\n- A test purchase unlocks paid features in both browsers, and restoring the purchase works on a second profile.\n- Every paid feature issue checks `isPaid()`.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

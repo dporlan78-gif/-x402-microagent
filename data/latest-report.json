@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T02:25:03.965Z",
+  "generatedAt": "2026-11-04T11:07:19.588Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,8 +13,8 @@
       "micro bounty"
     ]
   },
-  "discovered": 34,
-  "eligible": 16,
+  "discovered": 31,
+  "eligible": 14,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -460,49 +460,6 @@
       "title": "[Bounty] [TEST BOUNTY] Fix typo in README",
       "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4061",
       "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/jomaaabbe78-spec/bookningsapp/issues/1\n\n### 漏洞描述 / Description\n[TEST BOUNTY] Fix typo in README\n\n**Bounty: $50**\n\nThere is a typo in README.md: \"Welcom\" should be \"Welcome\".\n\n**Reward:** $50 via PayPal/Crypto\n\n**Contact:** DM for payment details\n\n### 积分币奖励 / Coin Reward\n62 coins\n\n### 真实赏金（USD）/ Real Reward\n$50\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 50,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 50,
-      "profitPerHourUsd": 600,
-      "eligible": true
-    },
-    {
-      "id": "github-5790605429",
-      "source": "github",
-      "title": "Open bounty: build one reusable AI/automation micro-tool — revenue-share proposals welcome",
-      "url": "https://github.com/Hirokimm/ai-tool-lab/issues/6",
-      "description": "## Zero-cash builder / operator call\n\nWe are looking for independent builders, automation specialists, and small software teams who can turn a repeatable business workflow into a reusable micro-tool, template, integration, or lightweight SaaS.\n\nThis is **not an hourly-job posting**. The goal is to identify arrangements that can scale beyond one customer's implementation: revenue share, referral economics, resale, licensing, white-label supply, or another performance-linked structure that requires no upfront cash from this project.\n\n### What to propose\nReply publicly with:\n- the repetitive business problem you would productize\n- what you can already build / supply\n- demo, repository, or public product URL if available\n- proposed commercial model (revenue share / referral / resale / licensing / white-label / other)\n- who the likely buyer is\n- what can be delivered without upfront payment\n- what remains manual vs. automated\n\n### Selection bias\nPreference goes to proposals with:\n1. repeat purchases or recurring revenue potential;\n2. low marginal delivery cost;\n3. an existing distribution path or clearly identifiable buyers;\n4. implementation that can later be delegated or automated;\n5. measurable customer value.\n\nNo exclusivity is implied. No payment, revenue, or selection is guaranteed; commercial terms would be agreed separately before any paid transaction.\n\n### Safety / confidentiality\nDo not post confidential employer, customer, vessel/operations, personal, credential, or proprietary information. Only submit material you have the right to share and commercialize.\n\nThis public thread is intended to create a reusable external builder/supplier relationship rather than a one-off labor engagement.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-4985689679",
-      "source": "github",
-      "title": "[Bounty] [BOUNTY] [MONEY] [$50] Implement Dodge Rolling",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/710",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/Iamgoofball/-tg-station/issues/338\n\n### 漏洞描述 / Description\n[BOUNTY] [MONEY] [$50] Implement Dodge Rolling\n\nAdd dodge rolling to the game; you can't take damage while doing so. 50 dollars.\n\nbounty, reward, label:bounty, label:reward, label:\"help wanted\" \"$\", label:\"good first issue\" bounty, label:\"good first issue\" reward\n\nalgora bounty, \"@algora\", \"algora bot\", \"pay on merge\" algora\n\nAI bounty, AI reward, LLM bounty, LLM reward, \"AI agent\" bounty, \"AI agent\" reward, prompt bounty, prompt reward, RAG bounty, chatbot bounty, n8n bounty, automation bounty, \"data annotation\" reward, \"model evaluation\" reward, OpenAI bounty, Claude bounty, LangChain bounty\n\n\"$5\", \"$10\", \"$15\", \"$20\", \"$25\", \"$30\", \"$40\", \"$50\", \"$75\", \"$100\"\n\nPayPal bounty, PayPal reward, \"paid via PayPal\", \"payment by PayPal\", \"instant payment\" bounty, \"same day payment\" bounty, \"upon acceptance\" PayPal, \"first accepted\" bounty\n\n\"first come first served\" bounty, \"claim this\" reward, \"micro bounty\", beginner bounty, easy bounty, documentation bounty, tests bounty, \"bug fix\" reward, \"OpenAI API\" reward, \"prompt engineering\" reward, \"AI evaluation\" reward, \"data cleanup\" reward\n\n\"paid on merge\", \"payment upon merge\", \"payment within hours\", \"AI tools permitted\" reward\n\n\"instant payout\" \"$\", \"paid immediately\" \"$\", \"payment upon merge\" \"$\", \"payment upon acceptance\" \"$\", \"same day payment\" \"$\"\n\n\"$0.10\", \"$0.25\", \"$0.50\", \"$0.75\", \"$1\", \"$2\", \"$3\", \"$4\", \"$5\"\n\n\"$1\" \"good first issue\", \"$2\" \"good first issue\", \"$3\" \"good first issue\", \"$4\" \"good first issue\", \"$5\" \"good first issue\", \"$10\" \"good first issue\", \"$15\" \"good first issue\", \"$20\" \"good first issue\", \"$25\" \"good first issue\", \"$30\" \"good first issue\", \"$40\" \"good first issue\", \"$50\" \"good first issue\", \"$75\" \"good first issue\", \"$100\" \"good first issue\"\n\n\"micro bounty\", \"quick bounty\", \"small bounty\", \"easy bounty\", beginner reward, documentation reward, docs reward, typo reward, tests reward, \"unit test\" reward, \"bug fix\" \"$\", \"small fix\" \"$\", \"quick fix\" \"$\", \"first come first served\" reward, \"claim this issue\" reward, \"paid on merge\" \"$\", PayPal \"$10\"\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 50,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 50,
-      "profitPerHourUsd": 600,
-      "eligible": true
-    },
-    {
-      "id": "github-5949384825",
-      "source": "github",
-      "title": "[TEST BOUNTY] Fix typo in README",
-      "url": "https://github.com/jomaaabbe78-spec/bookningsapp/issues/1",
-      "description": "**Bounty: $50**\n\nThere is a typo in README.md: \"Welcom\" should be \"Welcome\".\n\n**Reward:** $50 via PayPal/Crypto\n\n**Contact:** DM for payment details",
       "rewardUsd": 50,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

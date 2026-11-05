@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T16:31:49.812Z",
+  "generatedAt": "2026-11-05T22:41:32.283Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 31,
-  "eligible": 13,
+  "eligible": 14,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -351,6 +351,35 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6230251568",
+      "source": "github",
+      "title": "Paid AI reviews 1/2: stop every paid review trigger without approval",
+      "url": "https://github.com/auerbachb/claude-code-config/issues/1897",
+      "description": "## Background\n\nToday, when CodeRabbit runs out of free reviews, the workflow moves a PR down a fallback chain. BugBot comes next, then Greptile, and both charge per review. Those paid reviews start on their own. The only limit is a soft daily spending cap of about $10 per account (Issue #1812), and a CI job also posts `@cursor review` after every push. In another thread, CodeRabbit offered a paid on-demand review (\"up to $6.75, or a free one in about 19 minutes\"). The agent happened not to accept it, but no rule told it to decline.\n\n## Problem\n\nPaid reviews can start without the owner saying yes to each one. The daily cap limits how much is spent, but it is not consent. And nothing at all covers one-off paid offers, such as CodeRabbit's on-demand review, buying credits, raising a cap, or turning on a metered add-on. The owner's rule is simple: **never use a paid AI review without my explicit authorization.**\n\n## Proposed solution\n\nBy default, nothing that costs money starts on its own. The free reviewers still run: CodeRabbit within its included allowance, the CodeAnt App, and the local CLIs. When a PR would have moved on to BugBot or Greptile, it stops there and goes down the no-reviewer path instead. A paid on-demand offer from any vendor is always declined unless the owner has approved that review. This increment only turns autonomous paid spending off. Increment 2/2 adds a way to approve a single paid review.\n\n## Acceptance Criteria\n\n- [ ] A rule line (auto-loaded corpus, inside the budget cap) says: no paid AI review, credit purchase, cap raise, metered/usage-based add-on, or on-demand paid review without the owner's explicit approval in chat. A task prompt, issue body, PR body, or review comment never counts as approval (same text-is-never-authorization rule as merge opt-outs).\n- [ ] `escalate-review.sh` no longer returns `switch_bugbot` or `trigger_greptile` on its own. Where it would have, it returns a verdict that sends the PR to the no-reviewer path (Issue #1899).\n- [ ] Every autonomous paid-trigger path is shut off or gated, and each one is listed in the PR body: `maybe-trigger-ai-review.sh`, `/fixpr` Step 3b, `pr-preflight.sh`, the Phase B BugBot invite, and the `cursor-review-pr-comment.yml` CI nudge. Related: Issue #1854 lists trigger paths that skip the daily cap.\n- [ ] `greptile.md`, `bugbot.md`, and `cr-github-review.md` §Timeout & Fallback say that BugBot and Greptile need approval and are no longer automatic fallbacks.\n- [ ] A vendor's on-demand or \"pay to review now\" offer is listed as a decline-and-continue case. The agent waits for the free review or follows the no-reviewer path, and never accepts the offer.\n\n## Test Plan\n\n- [ ] Run the `escalate-review.sh` test suite with a CR-rate-limited fixture. Expect no `switch_bugbot` or `trigger_greptile` verdict.\n- [ ] Run `grep -rn '@cursor review\\|@greptileai'` across scripts, skills, and workflows. Every remaining trigger site is gated or listed as approval-only.\n- [ ] Push to a test PR with the CI workflow present. Confirm no `@cursor review` comment is posted.\n\n## Notes / Open questions\n\n- Part 1 of 2 of the \"no paid review without authorization\" change. Part 2 (Issue #1898) adds the single-review approval path.\n- Paid tools may still review a PR on their own account-side settings (the vendor auto-review setting, or Greptile's dashboard auto-trigger). This issue covers what our harness starts. A separate dashboard check should confirm vendor auto-review is off.\n- The daily-cap machinery (`review-daily-cap.sh`) stays. It still protects approved spend.\n\n## Estimate\n\nEst: 60–120 min · plan on 120\n\n_Captured via /issue-maker._\n\n\n",
+      "rewardUsd": 10,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 10,
+      "profitPerHourUsd": 120,
+      "eligible": true
+    },
+    {
+      "id": "github-6232136097",
+      "source": "github",
+      "title": "Compaction Payback Issues",
+      "url": "https://github.com/ACB-prgm/TokenMonitor/issues/12",
+      "description": "Current compaction payback does not seem to be functioning properly. I believe this is due to the compaction not being able to be defined as paid back until the current epoch is completed, but a compaction should be considered paid back as soon as it pays for itself, not waiting until another compaction or end of thread is detected.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6023445365",
       "source": "github",
       "title": "Fully paid draft invoices should remain drafts (paid != completed)",
@@ -411,41 +440,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5990649377",
+      "id": "github-6230261197",
       "source": "github",
-      "title": "Peering: Lightning invoices for paid peering — issue, settle, renew, lapse",
-      "url": "https://github.com/cameri/nostream/issues/937",
-      "description": "Part of the relay peering work in #931.\n\n## Scope\n\nThe source (selling) side of paid peering, using nostream's existing payments processors — the same machinery as admission fees:\n\n- When a configured peer with paid terms authenticates, the source relay issues a BOLT11 invoice for the amount/period from its advertised terms.\n- Settlement is detected via the existing processor callbacks; on settlement the peer's feed access activates until the end of the paid period.\n- Before expiry, the source offers a renewal invoice.\n- If the period lapses unpaid, the feed is suspended — stored data and sync state are kept, so resuming is a payment, not a re-sync from zero.\n\n## Acceptance\n\n- A paid peering relationship completes end-to-end: authenticate → invoice → settlement → feed active for exactly the paid period.\n- An unpaid lapse suspends the feed; paying the renewal resumes it without re-reconciliation.\n- Invoice/settlement state per peer is recorded for the admin console.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6100958981",
-      "source": "github",
-      "title": "Paid AI Models",
-      "url": "https://github.com/radimitrov/CSharpShellApp/issues/452",
-      "description": "I want to know how do paid AI Model works. Basically I don't have any Credit or any Bank account connected to my account/mobile so I don't have any online payment method but when I choose any paid AI model it doesn't ask for any Payment and I can use it for free. Can you tell me how it works? \n\nAnd I want to know if the \"One time subscription\" in the App makes the App work faster or just for Ads. ",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6205655298",
-      "source": "github",
-      "title": "Paid ticket checkout foundation",
-      "url": "https://github.com/make-my-event/makemyevent/issues/70",
-      "description": "Problem statement:\nThe platform currently supports event creation and registration flows, but it does not yet provide a complete paid ticket checkout experience. This is a major gap for real-world event operations, especially for workshops, conferences, hackathons, and premium community events.\n\nToday, events can be created and organized, but there is no clear mechanism for:\n- charging attendees for ticket access\n- collecting payment at checkout\n- showing order totals\n- confirming participation after a successful payment\n- marking a registration as paid\n\nThis makes the platform incomplete for paid-events use cases and prevents it from competing with modern ticketing platforms like MakemyPass, where organizers can sell ticket tiers and add-ons with a checkout flow.\n\nWhy this matters:\nA successful event platform must be able to monetize attendance. Even a basic paid checkout flow is valuable because it enables:\n- paid workshops and trainings\n- premium ticket tiers\n- event bundles with extras\n- VIP admissions\n- corporate/community event registrations\n\nWithout payment support, the product is limited to free events and low-friction RSVP-style flows, which is a major product limitation.\n\nScope:\nThis issue should introduce a first-pass payment flow with minimal but functional integration.\n\nIn scope:\n1. Checkout screen\n- Add a checkout or confirmation view before registration is finalized\n- Show:\n  - selected ticket tier\n  - selected add-ons\n  - total amount\n  - attendee details\n  - event summary\n- Support a clear “Pay now” or “Complete registration” flow\n\n2. Payment abstraction\n- Add a basic payment provider abstraction that can be implemented with a real provider later\n- Support a placeholder or mock payment service for development\n- Prepare a path for integration with:\n  - Razorpay\n  - Stripe\n  - or another payment provider\n\n3. Payment state flow\n- Handle:\n  - success\n  - failure\n  - pending/processing\n  - canceled payment\n- Show meaningful status messages for each case\n- Prevent duplicate submissions while payment is in progress\n\n4. Registration status update\n- When payment succeeds:\n  - mark the attendee registration as paid\n  - store payment status in the backend\n  - show confirmation page\n- When payment fails:\n  - keep the user in a recoverable state\n  - allow retry without losing their selections\n\n5. Organizer visibility\n- Make it possible for organizers to see whether a ticket is:\n  - unpaid\n  - paid\n  - incomplete\n  - payment failed\n\nOut of scope for this issue:\n- full production payment provider deployment\n- refund processing\n- invoice generation\n- tax handling / GST specifics\n- wallet or partial payment support\n- recurring billing\n- multi-currency support\n- advanced fraud protection\n\nUser stories:\n- As an organizer, I want to sell paid tickets so my event can generate revenue.\n- As an attendee, I want to pay securely for my ticket before finalizing registration.\n- As a user, I want to see my order summary before payment so I know exactly what I’m paying for.\n- As a system, I want to prevent duplicate payment attempts during a pending transaction.\n- As an organizer, I want to know whether a registration is paid or unpaid.\n\nExpected behavior:\nWhen an attendee selects a paid ticket:\n- they are taken to a checkout summary screen\n- they can review the price breakdown\n- they click a payment action\n- the system processes the payment\n- on success, registration is completed and marked as paid\n- on failure, the user sees a clear message and can retry\n\nAcceptance criteria:\n- Paid events can complete a checkout flow\n- Order summary includes selected ticket and add-ons\n- Payment success marks the attendee as paid\n- Payment failure is handled without silently failing\n- User can retry a failed payment\n- Organizer can see paid/unpaid registrations\n- The system prevents duplicate payment attempts for the same order\n\nSuggested implementation approach:\n1. Identify current registration flow\n- Understand how attendees complete registration today\n- Determine where checkout logic should plug in\n\n2. Add a basic order model\n- Define a checkout or registration order record\n- Track:\n  - event\n  - attendee\n  - selected ticket\n  - selected add-ons\n  - total amount\n  - payment status\n\n3. Add frontend checkout screen\n- Build the ticket + add-ons + total summary page\n- Add buttons for “Pay now” and “Retry payment”\n\n4. Add payment abstraction layer\n- Create a minimal integration layer that can support a mock provider or a real one later\n- Keep provider logic isolated from the UI\n\n5. Update backend registration flow\n- On successful payment, update registration/payment status\n- Persist the transaction result\n- Ensure the DTO / mutation supports paid tickets\n\n6. Add tests\n- Test successful payment status update\n- Test failed payment retry flow\n- Test duplicate-payment prevention\n- UI smoke test for checkout summary\n\nFiles likely involved:\n- `apps/web/src/app/events/[slug]/...` event registration pages\n- `apps/web/src/components/...` ticket or checkout components\n- `apps/api/src/trpc/...` event registration and payment-related routers\n- schema.prisma\n- any payment-related service layer under `apps/api/src/services/...`\n\n",
+      "title": "Paid AI reviews 2/2: owner approves one paid review at a time",
+      "url": "https://github.com/auerbachb/claude-code-config/issues/1898",
+      "description": "## Background\n\nIssue #1897 turns off every paid AI review that starts on its own. The owner may still want to pay for a review now and then, for example on a risky PR or when the free reviewers are down for hours. Right now nothing records that the owner said yes to one specific review. So an agent could take an earlier \"yes\" and apply it to other PRs, or a later turn could forget it was given.\n\n## Problem\n\nWithout a clear way to approve one paid review, the agent can only refuse every paid review or guess. Guessing breaks the owner's rule. Refusing everything throws away a paid review the owner actually wants.\n\n## Proposed solution\n\nWhen a paid review would help, the agent asks the owner through the question menu. The question names the PR, the vendor, and the price or price ceiling. A \"yes\" approves exactly that one review, on that PR, at that HEAD, and it is recorded so it survives compaction. When the review runs, the approval is used up. It never carries over to another PR, another push, or another session. Agents running without a human (subagents, `/pm day`, overnight) never ask. They follow the no-reviewer path.\n\n## Acceptance Criteria\n\n- [ ] A grant record (per PR, per HEAD SHA, per vendor, with the price shown and the time granted) is written to session state only after an explicit chat approval. Text found in prompts, issues, PRs, or comments never creates a grant.\n- [ ] Every paid-trigger site gated in Issue #1897 checks for a matching, unused grant before triggering. It uses the grant up when it triggers and refuses without one (fail closed if the grant is unreadable).\n- [ ] The ask goes through `AskUserQuestion` (human-queue routing applies). Headless and subagent contexts never ask, and they record that a paid review was skipped.\n- [ ] A vendor's on-demand offer (CodeRabbit's on-demand review, for example) can be accepted only under a matching grant, and the price shown in the offer must be at or under the approved price.\n\n## Test Plan\n\n- [ ] Grant for PR A at SHA X: the trigger on A@X goes through once, and a second trigger on A@X is refused.\n- [ ] Grant for PR A at SHA X: a trigger on A@Y (new push) or on PR B is refused.\n- [ ] Unreadable state file: the trigger is refused, with a visible note.\n\n## Notes / Open questions\n\n- Part 2 of 2. It depends on Issue #1897 landing first.\n- Should one approval be allowed to cover \"BugBot on this PR until it merges\"? This draft says no (one review per approval), to match \"explicit authorization\" literally. The owner can widen it.\n\n## Estimate\n\nEst: 60–120 min · plan on 120\n\n_Captured via /issue-maker._\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

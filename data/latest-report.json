@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T18:40:40.196Z",
+  "generatedAt": "2026-11-05T00:24:38.145Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -426,11 +426,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5898280324",
+      "id": "github-6210480778",
       "source": "github",
-      "title": "Issue and verify receipts when a payout is paid",
-      "url": "https://github.com/qomiralabs/ujira/issues/120",
-      "description": "## Why\n\nA receipt is issued once, when the payout reaches paid, and must match the chain exactly. Corrections are new revisions, never edits.\n\n## Scope\n\n- A `receipt:issue` job triggered when a payout reaches `paid`: builds the document from the payout, attempt, legs and the adapter's chain receipt, verifies it with `adapter.verifyReceipt`, stores it as revision 1.\n- A correction (for example a later leg refund) issues a new revision that references the previous one.\n- Idempotent per payout and revision.\n\n## Acceptance criteria\n\n- [ ] One receipt per paid payout. Proof: test `issue.test.ts > a repeated paid event issues one receipt` passes.\n- [ ] A receipt that does not match the chain is not issued. Proof: test `issue.test.ts > verifyReceipt mismatch blocks issue and alerts` passes.\n- [ ] Corrections are revisions. Proof: test `issue.test.ts > a refund issues revision 2 and keeps revision 1` passes.\n- [ ] The gate is clean. Proof: `pnpm typecheck && pnpm lint && pnpm test` exit 0.\n\n## Test plan\n\n1. Unit tests against the fake adapter.\n\n## Dependencies\n\nBlocked by #119, #99\n",
+      "title": "SLA for paid plans",
+      "url": "https://github.com/alexwohlbruck/parchment/issues/880",
+      "description": "`LICENSING.md` mentions SLAs but none exists.\n\n- [ ] Uptime target per plan, the maintenance window it excludes, and service credits\n- [ ] Only after monitoring and backups are in place",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -441,11 +441,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5734621572",
+      "id": "github-5898280324",
       "source": "github",
-      "title": "Paid plan: one-time purchase that unlocks paid features",
-      "url": "https://github.com/jaredcaraway/schema-breeze-extension/issues/9",
-      "description": "A one-time purchase that unlocks the paid features in the extension. The platform will be a separate subscription; this license only covers the extension.\n\n## Scope\n- Buy once and unlock forever on that browser profile, with a way to restore the purchase on another browser or after reinstalling.\n- `isPaid()` in `src/lib/plan.ts` is the single check every paid feature uses. It returns `false` today; this issue makes it real.\n- A small \"Upgrade\" entry point in the panel and a clear list of what the paid plan includes.\n- Works in both Chrome and Firefox builds.\n\n## To decide (design spec before building)\n- **Payment provider:** ExtensionPay (Stripe-backed, made for extensions, supports one-time payments) vs. Stripe Checkout plus a small license-check endpoint vs. license keys from Lemon Squeezy or Gumroad.\n- **Offline behaviour:** cache the unlocked state so paid features keep working offline.\n- **Price.**\n- **Store rules:** the listing has to disclose paid features, and the Chrome Web Store's payment policies apply.\n\n## Done when\n- A test purchase unlocks paid features in both browsers, and restoring the purchase works on a second profile.\n- Every paid feature issue checks `isPaid()`.\n",
+      "title": "Issue and verify receipts when a payout is paid",
+      "url": "https://github.com/qomiralabs/ujira/issues/120",
+      "description": "## Why\n\nA receipt is issued once, when the payout reaches paid, and must match the chain exactly. Corrections are new revisions, never edits.\n\n## Scope\n\n- A `receipt:issue` job triggered when a payout reaches `paid`: builds the document from the payout, attempt, legs and the adapter's chain receipt, verifies it with `adapter.verifyReceipt`, stores it as revision 1.\n- A correction (for example a later leg refund) issues a new revision that references the previous one.\n- Idempotent per payout and revision.\n\n## Acceptance criteria\n\n- [ ] One receipt per paid payout. Proof: test `issue.test.ts > a repeated paid event issues one receipt` passes.\n- [ ] A receipt that does not match the chain is not issued. Proof: test `issue.test.ts > verifyReceipt mismatch blocks issue and alerts` passes.\n- [ ] Corrections are revisions. Proof: test `issue.test.ts > a refund issues revision 2 and keeps revision 1` passes.\n- [ ] The gate is clean. Proof: `pnpm typecheck && pnpm lint && pnpm test` exit 0.\n\n## Test plan\n\n1. Unit tests against the fake adapter.\n\n## Dependencies\n\nBlocked by #119, #99\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

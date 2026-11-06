@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T03:27:55.079Z",
+  "generatedAt": "2026-11-06T12:12:53.606Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 31,
-  "eligible": 14,
+  "eligible": 13,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -292,18 +292,19 @@
       "eligible": true
     },
     {
-      "id": "github-5806021588",
+      "id": "github-6237613900",
       "source": "github",
-      "title": "🔔 New Stock Hunter offer found",
-      "url": "https://github.com/javierruss081-coder/Marcelo-free-stock-hunter-/issues/1",
-      "description": "# New Stock Hunter offers\n\n## SoFi Invest — Current investing promotion\n- Reward: Stock award / bonus varies by current promotion\n- Requirement: Promotion-specific — verify funding/eligibility\n- Official source: https://support.sofi.com/hc/en-us/articles/sofi-invest-promotions-summary\n\n## Public — Referral stock / ETF reward\n- Reward: $100 in stock or ETF\n- Requirement: Referral + at least $1,000, deposit\n- Official source: https://help.public.com/en/articles/2711925-public-referral-program\n\n## Moomoo — Welcome Bonus — free NVDA stock\n- Reward: $30–$1,000 in NVDA stock\n- Requirement: Deposit required: $500+; holding period applies\n- Official source: https://www.moomoo.com/us/support/topic4_410\n\n## E*TRADE — New brokerage account cash bonus\n- Reward: Cash bonus — verify current tier\n- Requirement: Deposit required: $1,000+; promo code required\n- Official source: https://us.etrade.com/promo/brokerage\n\n## Charles Schwab — Referred-friend brokerage bonus\n- Reward: Up to $1,000 cash bonus\n- Requirement: Referral + qualifying net deposit; $25,000+ minimum tier\n- Official source: https://www.schwab.com/referral\n",
-      "rewardUsd": 100,
+      "title": "feat(be): 보상 규칙·캐시 수동 조정·서비스 설정·작업 기록 API",
+      "url": "https://github.com/bukkeu/MY-HOME/issues/38",
+      "description": "## 설명\n\n활동별 보상 규칙과 서비스 설정을 관리하고, 캐시 수동 지급·회수와 관리자 작업 기록을 남긴다.\n\n## 관련 요구사항\n\nADM-29, ADM-30, NFR-13, NFR-14\n\n## 할 일\n\n- [ ] GET /api/v1/admin/reward-rules, PUT .../{ruleId}\n- [ ] POST /api/v1/admin/members/{memberId}/cash-adjustments (사유 필수)\n- [ ] GET /api/v1/admin/settings, PUT .../{key}\n- [ ] AdminLogService, GET /api/v1/admin/admin-logs\n\n## 완료 조건\n\n- 중요 작업이 누가·언제로 기록된다.\n- 빌드·테스트 통과, API·DB가 바뀌면 명세서 문서도 같은 PR에서 수정\n\n## 브랜치\n\n`feat/be-38-admin-reward-setting-log`\n\n```bash\ngit switch dev && git pull\ngit switch -c feat/be-38-admin-reward-setting-log\n```\n",
+      "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 100,
-      "profitPerHourUsd": 1200,
-      "eligible": true
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-6142074308",
@@ -365,21 +366,6 @@
       "eligible": true
     },
     {
-      "id": "github-6232136097",
-      "source": "github",
-      "title": "Compaction Payback Issues",
-      "url": "https://github.com/ACB-prgm/TokenMonitor/issues/12",
-      "description": "Current compaction payback does not seem to be functioning properly. I believe this is due to the compaction not being able to be defined as paid back until the current epoch is completed, but a compaction should be considered paid back as soon as it pays for itself, not waiting until another compaction or end of thread is detected.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6023445365",
       "source": "github",
       "title": "Fully paid draft invoices should remain drafts (paid != completed)",
@@ -430,6 +416,21 @@
       "title": "Paid AI reviews 2/2: owner approves one paid review at a time",
       "url": "https://github.com/auerbachb/claude-code-config/issues/1898",
       "description": "## Background\n\nIssue #1897 turns off every paid AI review that starts on its own. The owner may still want to pay for a review now and then, for example on a risky PR or when the free reviewers are down for hours. Right now nothing records that the owner said yes to one specific review. So an agent could take an earlier \"yes\" and apply it to other PRs, or a later turn could forget it was given.\n\n## Problem\n\nWithout a clear way to approve one paid review, the agent can only refuse every paid review or guess. Guessing breaks the owner's rule. Refusing everything throws away a paid review the owner actually wants.\n\n## Proposed solution\n\nWhen a paid review would help, the agent asks the owner through the question menu. The question names the PR, the vendor, and the price or price ceiling. A \"yes\" approves exactly that one review, on that PR, at that HEAD, and it is recorded so it survives compaction. When the review runs, the approval is used up. It never carries over to another PR, another push, or another session. Agents running without a human (subagents, `/pm day`, overnight) never ask. They follow the no-reviewer path.\n\n## Acceptance Criteria\n\n- [ ] A grant record (per PR, per HEAD SHA, per vendor, with the price shown and the time granted) is written to session state only after an explicit chat approval. Text found in prompts, issues, PRs, or comments never creates a grant.\n- [ ] Every paid-trigger site gated in Issue #1897 checks for a matching, unused grant before triggering. It uses the grant up when it triggers and refuses without one (fail closed if the grant is unreadable).\n- [ ] The ask goes through `AskUserQuestion` (human-queue routing applies). Headless and subagent contexts never ask, and they record that a paid review was skipped.\n- [ ] A vendor's on-demand offer (CodeRabbit's on-demand review, for example) can be accepted only under a matching grant, and the price shown in the offer must be at or under the approved price.\n\n## Test Plan\n\n- [ ] Grant for PR A at SHA X: the trigger on A@X goes through once, and a second trigger on A@X is refused.\n- [ ] Grant for PR A at SHA X: a trigger on A@Y (new push) or on PR B is refused.\n- [ ] Unreadable state file: the trigger is refused, with a visible note.\n\n## Notes / Open questions\n\n- Part 2 of 2. It depends on Issue #1897 landing first.\n- Should one approval be allowed to cover \"BugBot on this PR until it merges\"? This draft says no (one review per approval), to match \"explicit authorization\" literally. The owner can widen it.\n\n## Estimate\n\nEst: 60–120 min · plan on 120\n\n_Captured via /issue-maker._\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6236271809",
+      "source": "github",
+      "title": "feat(events): paid ticket offers and the paid-pass lifecycle (#559 part 1)",
+      "url": "https://github.com/Extra-Chill/extrachill/issues/1146",
+      "description": "## Goal\nAdd the Events side of first-party paid tickets: a paid ticket offer on an event and the pass lifecycle for paid tickets (issue, look up, revoke). A paid ticket is an RSVP pass with a payment reference attached. Shop (separate issue) handles Stripe checkout and calls these abilities after payment. Spec and decisions: #559.\n\n## Decisions (from Chris)\n- **The venue or promoter is the seller of record.** Extra Chill never takes the sale and never owes the tax. Prices are tax-inclusive, and the seller is responsible for tax.\n- Fees are split between the buyer and the venue. Shop owns the fee math.\n- **Refunds are allowed until check-in.** A redeemed pass blocks the refund.\n- Pilot venue: Lo-Fi Brewing.\n\n## What already exists. Build on it.\n- `plugins/extrachill-events/inc/Core/RsvpPassesTable.php`: the pass table, `issue_anonymous()` (capacity-capped issuance), `redeem_by_code()`, `revoke_by_code()`, statuses `active`/`redeemed`/`revoked`, and `count_for_event()`.\n- `inc/core/rsvp-guest-service.php`: `extrachill_events_issue_guest_list_pass()`, `extrachill_events_guest_list_pass_link()`, and `extrachill_events_send_guest_list_pass_email()`. Paid passes get the same QR pass page, door list entry, and email.\n- `inc/Abilities/EventPerkAbilities.php`: `extrachill/set-event-perk` and `extrachill/get-event-perk`.\n- `inc/core/guest-list-management.php`: the host panel, which saves through `set-event-perk`.\n- `inc/core/event-management-authority.php`: `extrachill_events_user_can_manage_event()`.\n- `inc/Abilities/CommerceSellerAbilities.php`: `extrachill/get-commerce-seller`, which returns `{type: venue|promoter, id, can_manage_finances}`.\n- Cross-site service authority pattern, which Shop already uses to call an Events ability after payment:\n  - `inc/core/priority-boost-service-authority.php` together with `inc/Abilities/PriorityEventAbilities.php` (`extrachill/grant-event-priority-boost`).\n  - Mirror this pattern for the new service-only abilities, with a new service id `extrachill.events.tickets` and scope `extrachill/events:tickets`.\n\n## Target state\n1. **Ticket offer fields on the perk.**\n   - `set-event-perk` and `get-event-perk` gain these fields:\n     - `tickets_enabled` (bool)\n     - `ticket_price_minor` (int, cents, > 0 when enabled)\n     - `ticket_currency` (default `usd`)\n     - `ticket_quantity` (int, 0 = uses the existing perk capacity)\n     - `ticket_seller` (`{type: venue|promoter, id}`)\n   - Setting `ticket_seller` requires the caller to manage the event and to have `can_manage_finances` for that seller, using the existing seller check.\n   - Free and password guest-list tiers keep working unchanged.\n   - The host panel gets the fields: price, quantity, a seller picker limited to sellers the user can manage finances for, and the enabled toggle.\n2. **Pass rows carry payment references.**\n   - Add nullable columns to the pass table through its existing `create_table`/dbDelta migration path:\n     - `order_reference` (the Stripe Checkout Session id)\n     - `payment_reference`\n     - `idempotency_key`, indexed\n3. **Abilities.** All take `event` as a slug or numeric ID.\n   - **`extrachill/get-event-ticket-offer`** (public, read-only)\n     - Returns `{event_id, title, url, enabled, price_minor, currency, remaining (int|null), sale_open (bool: enabled, upcoming, has room), seller {type,id}}`.\n   - **`extrachill/issue-ticket-passes`** (service-only, through the service authority)\n     - Input: `{event, quantity (1–10), name, email, idempotency_key, order_reference, payment_reference}`.\n     - Issues `quantity` passes under the existing per-event capacity lock, emails the pass links to `email`, and returns `{status: \"issued\", passes: [{code, url}]}`.\n     - **Idempotent on `idempotency_key`:** a replay returns the same passes and issues nothing new.\n     - When capacity is exhausted it issues nothing and returns `{status: \"sold_out\", passes: []}` instead of an error, so Shop can auto-refund.\n   - **`extrachill/get-ticket-order-status`** (service-only)\n     - Input: `{order_reference}`.\n     - Returns `{event_id, passes: [{code, status}], any_redeemed, refundable}`. `refundable` is true only when no pass is redeemed.\n   - **`extrachill/revoke-ticket-passes`** (service-only)\n     - Input: `{order_reference, reason}`.\n     - Revokes every active pass for the order and returns `{revoked: n}`.\n     - If any pass is redeemed, it revokes none and returns WP_Error `ticket_already_redeemed` (409).\n     - Idempotent: revoking an already-revoked order returns `{revoked: 0}`.\n4. **Door list** shows paid passes labeled as tickets (e.g. \"Ticket · <name>\") so door staff can tell them apart from comps.\n\n## Done when\n- Unit tests cover offer fields and authorization, idempotent issuance, sold-out behavior at the capacity edge, order status, revoke with the redeemed guard, and service-only authorization rejecting normal users.\n- Tests use the plugin's existing phpunit setup and the existing test patterns for `PriorityEventAbilities` and `CommerceSellerAbilities`.\n- A committed change with tests beats a write-up. If something is truly blocked, ship the tested part and describe the rest in the PR body.\n\n## Contract note\nThe Shop issue cooks in parallel against exactly these ability names, inputs, and outputs. Keep them as written. If you must deviate, say so prominently in the PR body.\n\nCHANGELOG and version strings are release-owned and stay as they are. Use conventional commits.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

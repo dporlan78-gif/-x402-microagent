@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T12:12:53.606Z",
+  "generatedAt": "2026-11-06T19:31:05.220Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 31,
-  "eligible": 13,
+  "eligible": 12,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -173,6 +173,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6248274918",
+      "source": "github",
+      "title": "Intake creates item entries for coins, cash-equivalent treasure and cash quest rewards",
+      "url": "https://github.com/dgrimesii/Chronicle-MagersCampaign/issues/122",
+      "description": "## Problem\nSession 6 Delta Review proposed a NEW `inventory_and_loot` item for every stated amount in one treasure hoard: \"New Item — 1,400 cp\", \"— 1,300 sp\", \"— 70 gp\", \"— Art and Gems (9…)\". Campaign Manager is not an inventory system: only distinct things of significance become items.\n\n## Cause\n- `NARRATIVE_EXTRACT_SYSTEM` rule 6 in `shared/chronicle-ai.js` tells the AI to include coins and to use \"one entry per denomination\", with `\"1400 cp\"` as its example.\n- The mixed-page schema in `fillRoundsFromText()` describes items as `\"<item or coin name>\"`.\n- `_processNarrativeResult()` in `admin/delta-review.html` turns every `result.items` entry into a NEW item.\n- The redesign pipeline has the same gap: the step 2 \"thing\" definition in `shared/chronicle-entities.js` is \"a notable object or treasure\", and step 4 loot facts in `shared/chronicle-facts.js` have no rule.\n- `docs/intake-redesign.md` lists \"coins found\" as an example of a Thing.\n\n## Rule\n- **Cash or cash equivalent, never an item:** coins, currency, payments, and any gem, art object or treasure with a stated cash value (\"emerald worth 100 GP\", \"2 smoky quartz, 25 GP each\", \"art and gems\").\n  - **As a quest reward:** a narrative note on the quest, written as the notes state it (\"Rewarded 200 GP and an emerald worth 30 GP\"), with `reward_received.value_gp` set to the total stated value (230). No item entry, no `item_refs`.\n  - **Found any other way:** narrative in the session (`session_notes` / passages).\n- **Possible item:** a gem or object described by something other than its price, with no value given (\"oddly warm gem\", \"shimmering diamond\"). Proposed for the DM to confirm.\n- **Always an item:** named or magic items (Immovable Rod, +1 Moon Sickle) and quest objects (maps, letters, keys).\n\n## Approach\n- Rewrite rule 6 and the mixed-page items schema to the rule above; route treasure into `session_notes` and quest rewards into the quest.\n- Apply the same rule to step 2 \"thing\" mentions and step 4 loot facts.\n- Client-side guard in `_processNarrativeResult()` that drops currency-only or priced-pile names the AI still returns, and adds them to the page summary as narrative so nothing is lost.\n- Fix the \"coins found\" example in `docs/intake-redesign.md`.\n- Tests: guard cases (cp/sp/gp amounts, \"Art and Gems (…)\", priced gems) vs kept items (Silver Dagger, Golden Idol, Potion of Healing ×2, oddly warm gem); prompt text for all four paths.\n\n## Done when\n- Re-interpreting the session 6 hoard page proposes no coin, priced-gem or pile items, and the treasure appears as narrative.\n- A quest page with a cash reward adds a narrative note and `value_gp` on the quest, and no item.\n- Named items and unpriced distinctive objects still come through.\n\n## Related data cleanup (done directly, not by this issue)\n- Remove `item_009` \"Trade Commission\" and its refs (session_004 `items_found`, qst_004 `reward_received.item_refs`).\n- Remove `item_010` \"Unrefined Emerald\" and its refs (session_005 `items_found` and `key_moments[1].ref`, qst_005 `reward_received.item_refs`). Item says Helen paid it, qst_005 says Krustie Gnome — confirm which before removing.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6063692800",
       "source": "github",
       "title": "Reward Issue",
@@ -292,21 +307,6 @@
       "eligible": true
     },
     {
-      "id": "github-6237613900",
-      "source": "github",
-      "title": "feat(be): 보상 규칙·캐시 수동 조정·서비스 설정·작업 기록 API",
-      "url": "https://github.com/bukkeu/MY-HOME/issues/38",
-      "description": "## 설명\n\n활동별 보상 규칙과 서비스 설정을 관리하고, 캐시 수동 지급·회수와 관리자 작업 기록을 남긴다.\n\n## 관련 요구사항\n\nADM-29, ADM-30, NFR-13, NFR-14\n\n## 할 일\n\n- [ ] GET /api/v1/admin/reward-rules, PUT .../{ruleId}\n- [ ] POST /api/v1/admin/members/{memberId}/cash-adjustments (사유 필수)\n- [ ] GET /api/v1/admin/settings, PUT .../{key}\n- [ ] AdminLogService, GET /api/v1/admin/admin-logs\n\n## 완료 조건\n\n- 중요 작업이 누가·언제로 기록된다.\n- 빌드·테스트 통과, API·DB가 바뀌면 명세서 문서도 같은 PR에서 수정\n\n## 브랜치\n\n`feat/be-38-admin-reward-setting-log`\n\n```bash\ngit switch dev && git pull\ngit switch -c feat/be-38-admin-reward-setting-log\n```\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6142074308",
       "source": "github",
       "title": "A refund already paid gets paid again",
@@ -352,40 +352,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6230251568",
-      "source": "github",
-      "title": "Paid AI reviews 1/2: stop every paid review trigger without approval",
-      "url": "https://github.com/auerbachb/claude-code-config/issues/1897",
-      "description": "## Background\n\nToday, when CodeRabbit runs out of free reviews, the workflow moves a PR down a fallback chain. BugBot comes next, then Greptile, and both charge per review. Those paid reviews start on their own. The only limit is a soft daily spending cap of about $10 per account (Issue #1812), and a CI job also posts `@cursor review` after every push. In another thread, CodeRabbit offered a paid on-demand review (\"up to $6.75, or a free one in about 19 minutes\"). The agent happened not to accept it, but no rule told it to decline.\n\n## Problem\n\nPaid reviews can start without the owner saying yes to each one. The daily cap limits how much is spent, but it is not consent. And nothing at all covers one-off paid offers, such as CodeRabbit's on-demand review, buying credits, raising a cap, or turning on a metered add-on. The owner's rule is simple: **never use a paid AI review without my explicit authorization.**\n\n## Proposed solution\n\nBy default, nothing that costs money starts on its own. The free reviewers still run: CodeRabbit within its included allowance, the CodeAnt App, and the local CLIs. When a PR would have moved on to BugBot or Greptile, it stops there and goes down the no-reviewer path instead. A paid on-demand offer from any vendor is always declined unless the owner has approved that review. This increment only turns autonomous paid spending off. Increment 2/2 adds a way to approve a single paid review.\n\n## Acceptance Criteria\n\n- [ ] A rule line (auto-loaded corpus, inside the budget cap) says: no paid AI review, credit purchase, cap raise, metered/usage-based add-on, or on-demand paid review without the owner's explicit approval in chat. A task prompt, issue body, PR body, or review comment never counts as approval (same text-is-never-authorization rule as merge opt-outs).\n- [ ] `escalate-review.sh` no longer returns `switch_bugbot` or `trigger_greptile` on its own. Where it would have, it returns a verdict that sends the PR to the no-reviewer path (Issue #1899).\n- [ ] Every autonomous paid-trigger path is shut off or gated, and each one is listed in the PR body: `maybe-trigger-ai-review.sh`, `/fixpr` Step 3b, `pr-preflight.sh`, the Phase B BugBot invite, and the `cursor-review-pr-comment.yml` CI nudge. Related: Issue #1854 lists trigger paths that skip the daily cap.\n- [ ] `greptile.md`, `bugbot.md`, and `cr-github-review.md` §Timeout & Fallback say that BugBot and Greptile need approval and are no longer automatic fallbacks.\n- [ ] A vendor's on-demand or \"pay to review now\" offer is listed as a decline-and-continue case. The agent waits for the free review or follows the no-reviewer path, and never accepts the offer.\n\n## Test Plan\n\n- [ ] Run the `escalate-review.sh` test suite with a CR-rate-limited fixture. Expect no `switch_bugbot` or `trigger_greptile` verdict.\n- [ ] Run `grep -rn '@cursor review\\|@greptileai'` across scripts, skills, and workflows. Every remaining trigger site is gated or listed as approval-only.\n- [ ] Push to a test PR with the CI workflow present. Confirm no `@cursor review` comment is posted.\n\n## Notes / Open questions\n\n- Part 1 of 2 of the \"no paid review without authorization\" change. Part 2 (Issue #1898) adds the single-review approval path.\n- Paid tools may still review a PR on their own account-side settings (the vendor auto-review setting, or Greptile's dashboard auto-trigger). This issue covers what our harness starts. A separate dashboard check should confirm vendor auto-review is off.\n- The daily-cap machinery (`review-daily-cap.sh`) stays. It still protects approved spend.\n\n## Estimate\n\nEst: 60–120 min · plan on 120\n\n_Captured via /issue-maker._\n\n\n",
-      "rewardUsd": 10,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 10,
-      "profitPerHourUsd": 120,
-      "eligible": true
-    },
-    {
       "id": "github-6023445365",
       "source": "github",
       "title": "Fully paid draft invoices should remain drafts (paid != completed)",
       "url": "https://github.com/InvoiceShelf/InvoiceShelf/issues/956",
       "description": "### Issue filing prerequisites\n\n- [x] I've checked the [documentation](https://docs.invoiceshelf.com/).\n- [x] I've looked for similar issues both Open and Closed.\n- [x] I've tried clearing both cache and cookies in my browser or tried opening the app in the Incognito/InPrivate window.\n\n### Describe the bug\n\nRecording a payment that fully covers a draft invoice changes its status from DRAFT to COMPLETED, although the invoice has never been sent. It is no longer identifiable as a draft, and the completed status suggests that the invoice is finalized and, depending on the editing settings, no longer editable. There is no longer a draft status to indicate that work such as sending the invoice is still pending.\n\nReducing or deleting that payment can then change the same invoice back to DRAFT and make it editable again, depending on the configured editing restrictions. A payment correction can therefore reopen an invoice that appeared to be finalized, without any explicit action to reopen it.\n\n### Steps to Reproduce the issue\n\n1. Set retrospective edits to be disabled after sending an invoice.\n2. Create a draft invoice with a positive total and leave it unsent.\n3. Record a payment covering the full invoice amount.\n4. Open the invoice and check its status and edit permission.\n5. Reduce or delete the payment, then check the invoice status and edit permission again.\n\n### Expected behaviour\n\nThe invoice remains DRAFT, its paid_status becomes PAID, and the recorded payment remains associated with it. Its draft status continues to indicate that it has not yet been sent. Later payment corrections update the payment status without implicitly finalizing or reopening the draft.\n\nEditing follows the configured retrospective edit setting: a restriction based on sending should not lock an unsent draft, while payment-based restrictions should still apply.\n\n### Actual behaviour\n\nThe invoice becomes COMPLETED solely because it was fully paid. With editing disabled after sending, it can no longer be edited despite never having been sent. Its status hides the fact that it is still an unsent draft and gives the impression that no further action is needed.\n\nReducing or deleting the payment changes it back to DRAFT; with the same setting, it becomes editable again.\n\n### Docker\n\n- [x] App running in Docker Container.\n- [x] Docker container running behind Reverse proxy.\n\n### InvoiceShelf version\n\n2.4.7\n\n### PHP version\n\n8.4.27\n\n### Database type\n\nMariaDB\n\n### Database version\n\n10.11.18\n\n### Web Browser\n\nany\n\n### Server OS\n\nLinux\n\n### Reverse-proxy logs\n\n```irc logs\nnot relevant\n```\n\n### Laravel/PHP logs\n\n```irc logs\nnot relevant\n```",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6207314855",
-      "source": "github",
-      "title": "Roadmap: K5b: Getting paid",
-      "url": "https://github.com/akkiverse/karyahub/issues/78",
-      "description": "Payments (cash, UPI, card, bank; part payments), a UPI QR on every bill, payment reminders and the daily AMC renewals list with one-tap sending, bill-wise profit.\n\nThe stories are not written yet. The Business Analyst writes them (and the issues for them) before the build; see [ROADMAP.md](https://github.com/akkiverse/karyahub/blob/main/docs/plan/ROADMAP.md).",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -411,26 +382,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6230261197",
+      "id": "github-6207314855",
       "source": "github",
-      "title": "Paid AI reviews 2/2: owner approves one paid review at a time",
-      "url": "https://github.com/auerbachb/claude-code-config/issues/1898",
-      "description": "## Background\n\nIssue #1897 turns off every paid AI review that starts on its own. The owner may still want to pay for a review now and then, for example on a risky PR or when the free reviewers are down for hours. Right now nothing records that the owner said yes to one specific review. So an agent could take an earlier \"yes\" and apply it to other PRs, or a later turn could forget it was given.\n\n## Problem\n\nWithout a clear way to approve one paid review, the agent can only refuse every paid review or guess. Guessing breaks the owner's rule. Refusing everything throws away a paid review the owner actually wants.\n\n## Proposed solution\n\nWhen a paid review would help, the agent asks the owner through the question menu. The question names the PR, the vendor, and the price or price ceiling. A \"yes\" approves exactly that one review, on that PR, at that HEAD, and it is recorded so it survives compaction. When the review runs, the approval is used up. It never carries over to another PR, another push, or another session. Agents running without a human (subagents, `/pm day`, overnight) never ask. They follow the no-reviewer path.\n\n## Acceptance Criteria\n\n- [ ] A grant record (per PR, per HEAD SHA, per vendor, with the price shown and the time granted) is written to session state only after an explicit chat approval. Text found in prompts, issues, PRs, or comments never creates a grant.\n- [ ] Every paid-trigger site gated in Issue #1897 checks for a matching, unused grant before triggering. It uses the grant up when it triggers and refuses without one (fail closed if the grant is unreadable).\n- [ ] The ask goes through `AskUserQuestion` (human-queue routing applies). Headless and subagent contexts never ask, and they record that a paid review was skipped.\n- [ ] A vendor's on-demand offer (CodeRabbit's on-demand review, for example) can be accepted only under a matching grant, and the price shown in the offer must be at or under the approved price.\n\n## Test Plan\n\n- [ ] Grant for PR A at SHA X: the trigger on A@X goes through once, and a second trigger on A@X is refused.\n- [ ] Grant for PR A at SHA X: a trigger on A@Y (new push) or on PR B is refused.\n- [ ] Unreadable state file: the trigger is refused, with a visible note.\n\n## Notes / Open questions\n\n- Part 2 of 2. It depends on Issue #1897 landing first.\n- Should one approval be allowed to cover \"BugBot on this PR until it merges\"? This draft says no (one review per approval), to match \"explicit authorization\" literally. The owner can widen it.\n\n## Estimate\n\nEst: 60–120 min · plan on 120\n\n_Captured via /issue-maker._\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6236271809",
-      "source": "github",
-      "title": "feat(events): paid ticket offers and the paid-pass lifecycle (#559 part 1)",
-      "url": "https://github.com/Extra-Chill/extrachill/issues/1146",
-      "description": "## Goal\nAdd the Events side of first-party paid tickets: a paid ticket offer on an event and the pass lifecycle for paid tickets (issue, look up, revoke). A paid ticket is an RSVP pass with a payment reference attached. Shop (separate issue) handles Stripe checkout and calls these abilities after payment. Spec and decisions: #559.\n\n## Decisions (from Chris)\n- **The venue or promoter is the seller of record.** Extra Chill never takes the sale and never owes the tax. Prices are tax-inclusive, and the seller is responsible for tax.\n- Fees are split between the buyer and the venue. Shop owns the fee math.\n- **Refunds are allowed until check-in.** A redeemed pass blocks the refund.\n- Pilot venue: Lo-Fi Brewing.\n\n## What already exists. Build on it.\n- `plugins/extrachill-events/inc/Core/RsvpPassesTable.php`: the pass table, `issue_anonymous()` (capacity-capped issuance), `redeem_by_code()`, `revoke_by_code()`, statuses `active`/`redeemed`/`revoked`, and `count_for_event()`.\n- `inc/core/rsvp-guest-service.php`: `extrachill_events_issue_guest_list_pass()`, `extrachill_events_guest_list_pass_link()`, and `extrachill_events_send_guest_list_pass_email()`. Paid passes get the same QR pass page, door list entry, and email.\n- `inc/Abilities/EventPerkAbilities.php`: `extrachill/set-event-perk` and `extrachill/get-event-perk`.\n- `inc/core/guest-list-management.php`: the host panel, which saves through `set-event-perk`.\n- `inc/core/event-management-authority.php`: `extrachill_events_user_can_manage_event()`.\n- `inc/Abilities/CommerceSellerAbilities.php`: `extrachill/get-commerce-seller`, which returns `{type: venue|promoter, id, can_manage_finances}`.\n- Cross-site service authority pattern, which Shop already uses to call an Events ability after payment:\n  - `inc/core/priority-boost-service-authority.php` together with `inc/Abilities/PriorityEventAbilities.php` (`extrachill/grant-event-priority-boost`).\n  - Mirror this pattern for the new service-only abilities, with a new service id `extrachill.events.tickets` and scope `extrachill/events:tickets`.\n\n## Target state\n1. **Ticket offer fields on the perk.**\n   - `set-event-perk` and `get-event-perk` gain these fields:\n     - `tickets_enabled` (bool)\n     - `ticket_price_minor` (int, cents, > 0 when enabled)\n     - `ticket_currency` (default `usd`)\n     - `ticket_quantity` (int, 0 = uses the existing perk capacity)\n     - `ticket_seller` (`{type: venue|promoter, id}`)\n   - Setting `ticket_seller` requires the caller to manage the event and to have `can_manage_finances` for that seller, using the existing seller check.\n   - Free and password guest-list tiers keep working unchanged.\n   - The host panel gets the fields: price, quantity, a seller picker limited to sellers the user can manage finances for, and the enabled toggle.\n2. **Pass rows carry payment references.**\n   - Add nullable columns to the pass table through its existing `create_table`/dbDelta migration path:\n     - `order_reference` (the Stripe Checkout Session id)\n     - `payment_reference`\n     - `idempotency_key`, indexed\n3. **Abilities.** All take `event` as a slug or numeric ID.\n   - **`extrachill/get-event-ticket-offer`** (public, read-only)\n     - Returns `{event_id, title, url, enabled, price_minor, currency, remaining (int|null), sale_open (bool: enabled, upcoming, has room), seller {type,id}}`.\n   - **`extrachill/issue-ticket-passes`** (service-only, through the service authority)\n     - Input: `{event, quantity (1–10), name, email, idempotency_key, order_reference, payment_reference}`.\n     - Issues `quantity` passes under the existing per-event capacity lock, emails the pass links to `email`, and returns `{status: \"issued\", passes: [{code, url}]}`.\n     - **Idempotent on `idempotency_key`:** a replay returns the same passes and issues nothing new.\n     - When capacity is exhausted it issues nothing and returns `{status: \"sold_out\", passes: []}` instead of an error, so Shop can auto-refund.\n   - **`extrachill/get-ticket-order-status`** (service-only)\n     - Input: `{order_reference}`.\n     - Returns `{event_id, passes: [{code, status}], any_redeemed, refundable}`. `refundable` is true only when no pass is redeemed.\n   - **`extrachill/revoke-ticket-passes`** (service-only)\n     - Input: `{order_reference, reason}`.\n     - Revokes every active pass for the order and returns `{revoked: n}`.\n     - If any pass is redeemed, it revokes none and returns WP_Error `ticket_already_redeemed` (409).\n     - Idempotent: revoking an already-revoked order returns `{revoked: 0}`.\n4. **Door list** shows paid passes labeled as tickets (e.g. \"Ticket · <name>\") so door staff can tell them apart from comps.\n\n## Done when\n- Unit tests cover offer fields and authorization, idempotent issuance, sold-out behavior at the capacity edge, order status, revoke with the redeemed guard, and service-only authorization rejecting normal users.\n- Tests use the plugin's existing phpunit setup and the existing test patterns for `PriorityEventAbilities` and `CommerceSellerAbilities`.\n- A committed change with tests beats a write-up. If something is truly blocked, ship the tested part and describe the rest in the PR body.\n\n## Contract note\nThe Shop issue cooks in parallel against exactly these ability names, inputs, and outputs. Keep them as written. If you must deviate, say so prominently in the PR body.\n\nCHANGELOG and version strings are release-owned and stay as they are. Use conventional commits.\n",
+      "title": "Roadmap: K5b: Getting paid",
+      "url": "https://github.com/akkiverse/karyahub/issues/78",
+      "description": "Payments (cash, UPI, card, bank; part payments), a UPI QR on every bill, payment reminders and the daily AMC renewals list with one-tap sending, bill-wise profit.\n\nThe stories are not written yet. The Business Analyst writes them (and the issues for them) before the build; see [ROADMAP.md](https://github.com/akkiverse/karyahub/blob/main/docs/plan/ROADMAP.md).",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -446,6 +402,51 @@
       "title": "Peering: Lightning invoices for paid peering — issue, settle, renew, lapse",
       "url": "https://github.com/cameri/nostream/issues/937",
       "description": "Part of the relay peering work in #931.\n\n## Scope\n\nThe source (selling) side of paid peering, using nostream's existing payments processors — the same machinery as admission fees:\n\n- When a configured peer with paid terms authenticates, the source relay issues a BOLT11 invoice for the amount/period from its advertised terms.\n- Settlement is detected via the existing processor callbacks; on settlement the peer's feed access activates until the end of the paid period.\n- Before expiry, the source offers a renewal invoice.\n- If the period lapses unpaid, the feed is suspended — stored data and sync state are kept, so resuming is a payment, not a re-sync from zero.\n\n## Acceptance\n\n- A paid peering relationship completes end-to-end: authenticate → invoice → settlement → feed active for exactly the paid period.\n- An unpaid lapse suspends the feed; paying the renewal resumes it without re-reconciliation.\n- Invoice/settlement state per peer is recorded for the admin console.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6100958981",
+      "source": "github",
+      "title": "Paid AI Models",
+      "url": "https://github.com/radimitrov/CSharpShellApp/issues/452",
+      "description": "I want to know how do paid AI Model works. Basically I don't have any Credit or any Bank account connected to my account/mobile so I don't have any online payment method but when I choose any paid AI model it doesn't ask for any Payment and I can use it for free. Can you tell me how it works? \n\nAnd I want to know if the \"One time subscription\" in the App makes the App work faster or just for Ads. ",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6205655298",
+      "source": "github",
+      "title": "Paid ticket checkout foundation",
+      "url": "https://github.com/make-my-event/makemyevent/issues/70",
+      "description": "Problem statement:\nThe platform currently supports event creation and registration flows, but it does not yet provide a complete paid ticket checkout experience. This is a major gap for real-world event operations, especially for workshops, conferences, hackathons, and premium community events.\n\nToday, events can be created and organized, but there is no clear mechanism for:\n- charging attendees for ticket access\n- collecting payment at checkout\n- showing order totals\n- confirming participation after a successful payment\n- marking a registration as paid\n\nThis makes the platform incomplete for paid-events use cases and prevents it from competing with modern ticketing platforms like MakemyPass, where organizers can sell ticket tiers and add-ons with a checkout flow.\n\nWhy this matters:\nA successful event platform must be able to monetize attendance. Even a basic paid checkout flow is valuable because it enables:\n- paid workshops and trainings\n- premium ticket tiers\n- event bundles with extras\n- VIP admissions\n- corporate/community event registrations\n\nWithout payment support, the product is limited to free events and low-friction RSVP-style flows, which is a major product limitation.\n\nScope:\nThis issue should introduce a first-pass payment flow with minimal but functional integration.\n\nIn scope:\n1. Checkout screen\n- Add a checkout or confirmation view before registration is finalized\n- Show:\n  - selected ticket tier\n  - selected add-ons\n  - total amount\n  - attendee details\n  - event summary\n- Support a clear “Pay now” or “Complete registration” flow\n\n2. Payment abstraction\n- Add a basic payment provider abstraction that can be implemented with a real provider later\n- Support a placeholder or mock payment service for development\n- Prepare a path for integration with:\n  - Razorpay\n  - Stripe\n  - or another payment provider\n\n3. Payment state flow\n- Handle:\n  - success\n  - failure\n  - pending/processing\n  - canceled payment\n- Show meaningful status messages for each case\n- Prevent duplicate submissions while payment is in progress\n\n4. Registration status update\n- When payment succeeds:\n  - mark the attendee registration as paid\n  - store payment status in the backend\n  - show confirmation page\n- When payment fails:\n  - keep the user in a recoverable state\n  - allow retry without losing their selections\n\n5. Organizer visibility\n- Make it possible for organizers to see whether a ticket is:\n  - unpaid\n  - paid\n  - incomplete\n  - payment failed\n\nOut of scope for this issue:\n- full production payment provider deployment\n- refund processing\n- invoice generation\n- tax handling / GST specifics\n- wallet or partial payment support\n- recurring billing\n- multi-currency support\n- advanced fraud protection\n\nUser stories:\n- As an organizer, I want to sell paid tickets so my event can generate revenue.\n- As an attendee, I want to pay securely for my ticket before finalizing registration.\n- As a user, I want to see my order summary before payment so I know exactly what I’m paying for.\n- As a system, I want to prevent duplicate payment attempts during a pending transaction.\n- As an organizer, I want to know whether a registration is paid or unpaid.\n\nExpected behavior:\nWhen an attendee selects a paid ticket:\n- they are taken to a checkout summary screen\n- they can review the price breakdown\n- they click a payment action\n- the system processes the payment\n- on success, registration is completed and marked as paid\n- on failure, the user sees a clear message and can retry\n\nAcceptance criteria:\n- Paid events can complete a checkout flow\n- Order summary includes selected ticket and add-ons\n- Payment success marks the attendee as paid\n- Payment failure is handled without silently failing\n- User can retry a failed payment\n- Organizer can see paid/unpaid registrations\n- The system prevents duplicate payment attempts for the same order\n\nSuggested implementation approach:\n1. Identify current registration flow\n- Understand how attendees complete registration today\n- Determine where checkout logic should plug in\n\n2. Add a basic order model\n- Define a checkout or registration order record\n- Track:\n  - event\n  - attendee\n  - selected ticket\n  - selected add-ons\n  - total amount\n  - payment status\n\n3. Add frontend checkout screen\n- Build the ticket + add-ons + total summary page\n- Add buttons for “Pay now” and “Retry payment”\n\n4. Add payment abstraction layer\n- Create a minimal integration layer that can support a mock provider or a real one later\n- Keep provider logic isolated from the UI\n\n5. Update backend registration flow\n- On successful payment, update registration/payment status\n- Persist the transaction result\n- Ensure the DTO / mutation supports paid tickets\n\n6. Add tests\n- Test successful payment status update\n- Test failed payment retry flow\n- Test duplicate-payment prevention\n- UI smoke test for checkout summary\n\nFiles likely involved:\n- `apps/web/src/app/events/[slug]/...` event registration pages\n- `apps/web/src/components/...` ticket or checkout components\n- `apps/api/src/trpc/...` event registration and payment-related routers\n- schema.prisma\n- any payment-related service layer under `apps/api/src/services/...`\n\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5899875330",
+      "source": "github",
+      "title": "[AGT-014] Smoke-test paid Worker Issue-comment dispatch",
+      "url": "https://github.com/uichat-mira/mira-desktop/issues/376",
+      "description": "## Goal\n\nProduce a harmless documentation-only Draft PR through the **newly registered Mira paid `/worker run` Issue-comment entrypoint** as live end-to-end verification for [AGT-013](https://github.com/uichat-mira/mira-desktop/issues/373). This work item is a bounded infrastructure smoke test, not a product feature.\n\n## Context\n\n- The approved paid caller exists on the GitHub default branch `prod` from [registration PR #375](https://github.com/uichat-mira/mira-desktop/pull/375); its engineering delivery base is **`dev`**.\n- Existing engine pin `621bc797562ee2ba92e77e215deb68833113231e`, paid model `opencode-go/deepseek-v4.1-flash` and secret mapping must remain unchanged.\n- The normal GitHub maintainer directive is one entire Issue comment exactly equal to `/worker run`. Comment API response does not establish Actions or PR success.\n- This test was authorized as part of maintainer's unified Worker dispatch registration/acceptance; no action from the Worker grants merge, acceptance or release authority.\n\n## Scope\n\n- Only **add** `docs/engineering/worker-comment-dispatch-smoke-2026-10-17.md`; do not edit other files.\n- Include heading `# Paid Worker Comment Dispatch Smoke`, a link to this Issue, and a brief statement that the run uses the paid OpenCode Go / DeepSeek route, tests GitHub Issue-comment `/worker run` dispatch, and has no runtime/product effect.\n- Preserve all current product/runtime, workflows, CI, policies, model routing, and release mechanisms.\n- Deliver an isolated `feat/worker-*` branch and a **Draft PR targeting `dev`**.\n\n## Non-goals\n\nNo app/UI/backend changes, no workflow/policy mutation, no model fallback, no new secrets, no direct `prod` updates, no merge, acceptance, Issue closure, deployment, packaging or release.\n\n## Acceptance criteria\n\n- [ ] Exact authorized human `/worker run` comment on this open ordinary Issue produces a new `issue_comment` Actions run on the `prod` default branch.\n- [ ] Enrollment validates event actor, current maintainer permission, unchanged comment and live Issue; pinned paid Worker runs with correct engine/model.\n- [ ] Paid Worker creates exactly the requested doc addition, runs existing trusted verification and produces a Draft PR to `dev`. No other files changed.\n- [ ] Report actual Run URL, job evidence, verification result, Draft PR URL and correct base. Negative paths remain covered by reviewed gate/fixtures; no claim of success based solely on comment creation.\n\n## Verification / evidence\n\nVerify current caller and GitHub maintenance authority before dispatch; inspect Actions event/enrollment/execution/verification/delivery; confirm PR draft/base/changed paths; retain bounded evidence. If the GitHub connector cannot submit the exact trigger or no authorized runner can proceed, report a **blocked smoke test** without using the user's machine, impersonating an identity, or silently bypassing gates.\n\n## Dependencies / risks\n\nThe GitHub Issue-comment write was blocked by the connector's safety gate during the sibling Sanchuang smoke attempt. Do **not** fake an event or self-dispatch via an unapproved alternative path. The documentation-only smoke can be executed when the authorized comment mechanism permits it.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T22:41:32.283Z",
+  "generatedAt": "2026-11-06T03:27:55.079Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -74,20 +74,6 @@
       "eligible": true
     },
     {
-      "id": "github-6138471754",
-      "source": "github",
-      "title": "[Bounty] 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4191",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/71\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro \n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro \n- **Monto:** $$750\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4190)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n937 coins\n\n### 真实赏金（USD）/ Real Reward\n$750\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 750,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 750,
-      "profitPerHourUsd": 9000,
-      "eligible": true
-    },
-    {
       "id": "github-6091672069",
       "source": "github",
       "title": "[Bounty] 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ",
@@ -102,20 +88,6 @@
       "eligible": true
     },
     {
-      "id": "github-6136033448",
-      "source": "github",
-      "title": "[Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4190",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/70\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro \n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): [Bounty] [Bounty\n- **Monto:** $$750\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/alfrexo95/bounty-bot/issues/69)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n937 coins\n\n### 真实赏金（USD）/ Real Reward\n$750\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 750,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 750,
-      "profitPerHourUsd": 9000,
-      "eligible": true
-    },
-    {
       "id": "github-6089460910",
       "source": "github",
       "title": "[Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ",
@@ -127,6 +99,34 @@
       "risk": 0.15,
       "expectedProfitUsd": 250,
       "profitPerHourUsd": 3000,
+      "eligible": true
+    },
+    {
+      "id": "github-6138471754",
+      "source": "github",
+      "title": "[Bounty] 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4191",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/71\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro \n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro \n- **Monto:** $$750\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4190)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n937 coins\n\n### 真实赏金（USD）/ Real Reward\n$750\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 750,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 750,
+      "profitPerHourUsd": 9000,
+      "eligible": true
+    },
+    {
+      "id": "github-6136033448",
+      "source": "github",
+      "title": "[Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4190",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/70\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro \n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): [Bounty] [Bounty\n- **Monto:** $$750\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/alfrexo95/bounty-bot/issues/69)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n937 coins\n\n### 真实赏金（USD）/ Real Reward\n$750\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 750,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 750,
+      "profitPerHourUsd": 9000,
       "eligible": true
     },
     {
@@ -395,21 +395,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6180859524",
-      "source": "github",
-      "title": "Validate paid Teams collaboration",
-      "url": "https://github.com/dmytro-omelian/savenest/issues/22",
-      "description": "Part of #13.\n\n## Context\n\nTeams is a separate future offering; personal Cloud must remain simple.\n\n## Acceptance criteria\n\n- [ ] Identify repeatable shared-library workflows and willingness to pay\n- [ ] Validate shared collections, invitations, permissions and billing needs before choosing seat pricing or promising delivery\n- [ ] Current local sharing remains free.\n\n## Dependencies\n\nLater Teams discovery; no implementation or customer outreach authorized by this issue alone.\n\n## Verification\n\nRecord real workflow evidence and paid-pilot interest separately from assumptions. Produce a go/no-go recommendation and, only if supported, a scoped product spec.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6207314855",
       "source": "github",
       "title": "Roadmap: K5b: Getting paid",
@@ -425,11 +410,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6221350432",
+      "id": "github-6180859524",
       "source": "github",
-      "title": "Mollie webhook misses paid orders, PayPal marks declined captures paid",
-      "url": "https://github.com/duncanmcclean/simple-commerce/issues/1312",
-      "description": "### Description\n\nTwo webhook cases where a paid order stays unpaid, or an unpaid one is marked paid. Found reading v8.1.1 (the same files are in v7.8.11) and reproduced with the Mollie and PayPal fakes from your test suite, not on a live shop.\n\n**Mollie.** Each render of `{{ sc:checkout }}` creates a new Mollie payment and overwrites `mollie.id` on the cart ([CheckoutTags.php](https://github.com/duncanmcclean/simple-commerce/blob/15cd84311552bf563219d79497afbe2975513f3a/src/Tags/CheckoutTags.php#L42-L50)). The webhook finds the order only by that id or by gateway data ([MollieGateway.php](https://github.com/duncanmcclean/simple-commerce/blob/15cd84311552bf563219d79497afbe2975513f3a/src/Gateways/Builtin/MollieGateway.php#L193-L199)), so once the page has rendered again, the webhook for the payment the customer actually paid throws `OrderNotFound`. Mollie gives up after 26 hours and the order stays unpaid. Bank transfer is the usual trigger: on return the payment is still open, the callback redirects to `error_redirect`, which defaults to the checkout page, and that render creates the next payment. #1261 fixed this for expired payments (#1193), the paid case still has it. The payment already carries `metadata.order_id`.\n\n**PayPal.** Since #1298 the webhook checks that the PayPal order is `COMPLETED`, but a completed order can still hold a `PENDING` or `DECLINED` [capture](https://developer.paypal.com/api/orders/v2/definitions/capture_status). The capture's own status isn't read ([PayPalGateway.php](https://github.com/duncanmcclean/simple-commerce/blob/15cd84311552bf563219d79497afbe2975513f3a/src/Gateways/Builtin/PayPalGateway.php#L181-L190)), so the order is placed and marked paid, stock goes down and the confirmation is sent.\n\nAlso noticed:\n\n- `markOrderAsPaid()` has no already-paid check, so a duplicate Stripe `payment_intent.succeeded` runs the checkout pipeline again (stock, `PostCheckout`). Each run also redeems the coupon twice: in the `RedeemCoupon` pipe and again in [BaseGateway.php](https://github.com/duncanmcclean/simple-commerce/blob/15cd84311552bf563219d79497afbe2975513f3a/src/Gateways/BaseGateway.php#L142-L144).\n- If the PayPal capture response is lost (say, a timeout), the webhook returns 500 and every retry fails with `ORDER_ALREADY_CAPTURED`, so the order is never marked paid.\n\nWant these as a separate issue, or a PR?\n\n### Steps to reproduce\n\n**Mollie**\n\n1. Check out with Mollie and pick bank transfer.\n2. Come back while the payment is still open. The callback redirects to the checkout page, and that render creates a new payment.\n3. Pay the first payment. Its webhook throws `OrderNotFound` and the order stays unpaid.\n\n**PayPal**\n\n1. Check out with PayPal where the order is `COMPLETED` but its capture is `PENDING` or `DECLINED`.\n2. The webhook marks the order paid.\n\nThe PR I'm opening adds both as test cases with your fakes.\n\n### Environment\n\nSimple Commerce v8.1.1, the same gateway files are in v7.8.11. Found in the source and the test suite, not on a live site, so there is no `support:details` output.",
+      "title": "Validate paid Teams collaboration",
+      "url": "https://github.com/dmytro-omelian/savenest/issues/22",
+      "description": "Part of #13.\n\n## Context\n\nTeams is a separate future offering; personal Cloud must remain simple.\n\n## Acceptance criteria\n\n- [ ] Identify repeatable shared-library workflows and willingness to pay\n- [ ] Validate shared collections, invitations, permissions and billing needs before choosing seat pricing or promising delivery\n- [ ] Current local sharing remains free.\n\n## Dependencies\n\nLater Teams discovery; no implementation or customer outreach authorized by this issue alone.\n\n## Verification\n\nRecord real workflow evidence and paid-pilot interest separately from assumptions. Produce a go/no-go recommendation and, only if supported, a scoped product spec.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -445,6 +430,21 @@
       "title": "Paid AI reviews 2/2: owner approves one paid review at a time",
       "url": "https://github.com/auerbachb/claude-code-config/issues/1898",
       "description": "## Background\n\nIssue #1897 turns off every paid AI review that starts on its own. The owner may still want to pay for a review now and then, for example on a risky PR or when the free reviewers are down for hours. Right now nothing records that the owner said yes to one specific review. So an agent could take an earlier \"yes\" and apply it to other PRs, or a later turn could forget it was given.\n\n## Problem\n\nWithout a clear way to approve one paid review, the agent can only refuse every paid review or guess. Guessing breaks the owner's rule. Refusing everything throws away a paid review the owner actually wants.\n\n## Proposed solution\n\nWhen a paid review would help, the agent asks the owner through the question menu. The question names the PR, the vendor, and the price or price ceiling. A \"yes\" approves exactly that one review, on that PR, at that HEAD, and it is recorded so it survives compaction. When the review runs, the approval is used up. It never carries over to another PR, another push, or another session. Agents running without a human (subagents, `/pm day`, overnight) never ask. They follow the no-reviewer path.\n\n## Acceptance Criteria\n\n- [ ] A grant record (per PR, per HEAD SHA, per vendor, with the price shown and the time granted) is written to session state only after an explicit chat approval. Text found in prompts, issues, PRs, or comments never creates a grant.\n- [ ] Every paid-trigger site gated in Issue #1897 checks for a matching, unused grant before triggering. It uses the grant up when it triggers and refuses without one (fail closed if the grant is unreadable).\n- [ ] The ask goes through `AskUserQuestion` (human-queue routing applies). Headless and subagent contexts never ask, and they record that a paid review was skipped.\n- [ ] A vendor's on-demand offer (CodeRabbit's on-demand review, for example) can be accepted only under a matching grant, and the price shown in the offer must be at or under the approved price.\n\n## Test Plan\n\n- [ ] Grant for PR A at SHA X: the trigger on A@X goes through once, and a second trigger on A@X is refused.\n- [ ] Grant for PR A at SHA X: a trigger on A@Y (new push) or on PR B is refused.\n- [ ] Unreadable state file: the trigger is refused, with a visible note.\n\n## Notes / Open questions\n\n- Part 2 of 2. It depends on Issue #1897 landing first.\n- Should one approval be allowed to cover \"BugBot on this PR until it merges\"? This draft says no (one review per approval), to match \"explicit authorization\" literally. The owner can widen it.\n\n## Estimate\n\nEst: 60–120 min · plan on 120\n\n_Captured via /issue-maker._\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-5990649377",
+      "source": "github",
+      "title": "Peering: Lightning invoices for paid peering — issue, settle, renew, lapse",
+      "url": "https://github.com/cameri/nostream/issues/937",
+      "description": "Part of the relay peering work in #931.\n\n## Scope\n\nThe source (selling) side of paid peering, using nostream's existing payments processors — the same machinery as admission fees:\n\n- When a configured peer with paid terms authenticates, the source relay issues a BOLT11 invoice for the amount/period from its advertised terms.\n- Settlement is detected via the existing processor callbacks; on settlement the peer's feed access activates until the end of the paid period.\n- Before expiry, the source offers a renewal invoice.\n- If the period lapses unpaid, the feed is suspended — stored data and sync state are kept, so resuming is a payment, not a re-sync from zero.\n\n## Acceptance\n\n- A paid peering relationship completes end-to-end: authenticate → invoice → settlement → feed active for exactly the paid period.\n- An unpaid lapse suspends the feed; paying the renewal resumes it without re-reconciliation.\n- Invoice/settlement state per peer is recorded for the admin console.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

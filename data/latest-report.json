@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T00:08:28.636Z",
+  "generatedAt": "2026-11-07T06:09:53.191Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -207,7 +207,7 @@
       "source": "github",
       "title": "practice score: drawdown points reward sitting 70% in cash",
       "url": "https://github.com/iamsaquib8/stockwise/issues/119",
-      "description": "## What\nThe score's doc comment says sitting in cash through a crash \"is not a trading decision worth points\", and a run that is 0% invested scores 0. But the drawdown part compares your drawdown with the benchmark's full drawdown, and participation is full from 30% average exposure. So the same picks held at 30% exposure earn drawdown points that they can't earn at 100%.\n\nTake a replay where the benchmark falls 38% (the COVID crash) and a player holds a basket that tracks it:\n- 100% invested: drawdown ≈ 38%, `1 − 38/38 = 0`, so 0 of 20 points;\n- 30% invested, 70% cash: drawdown ≈ 11.4%, `1 − 11.4/38 = 0.7`, so 14 of 20 points.\n\nThe risk-adjusted part is the same for both, since scaling exposure doesn't change the Sharpe or Sortino ratio. Same decisions, 14 more points for cash drag. In a calm market (benchmark drawdown floored at 10%) the gap is still about 10 points.\n\n## Where\n- [score.rs#L27](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L27) — `FULL_PARTICIPATION = 30.0`.\n- [score.rs#L169-L172](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L169-L172) — `participation` and the drawdown ratio.\n- [score.rs#L191](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L191) — drawdown points.\n- [score.rs#L431](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L431) — the cash test covers 0% exposure only.\n\n## Suggested fix\nCompare like with like: scale the benchmark's drawdown by the run's average exposure, for example `drawdown = 1 − dd / (bench_dd × exposure).max(floor)`. Then cutting losses at the same exposure is what earns the points. Keep the existing rule for 0% exposure.\n\n## Done when\n- Holding the benchmark at 30% and at 100% exposure earns the same drawdown points.\n- A run with a smaller drawdown at the same exposure still earns more.\n- Tests in `score.rs` cover both; docs/simulator.md describes the rule.\n\n<sub>Found in a code audit of master at e2998d1.</sub>",
+      "description": "## What\nThe score's doc comment says sitting in cash through a crash \"is not a trading decision worth points\", and a run that is 0% invested scores 0. But the drawdown part compares your drawdown with the benchmark's full drawdown, and participation is full from 30% average exposure. So the same picks held at 30% exposure earn drawdown points that they can't earn at 100%.\n\nTake a replay where the benchmark falls 38% (the COVID crash) and a player holds a basket that tracks it:\n- 100% invested: drawdown ≈ 38%, `1 − 38/38 = 0`, so 0 of 20 points;\n- 30% invested, 70% cash: drawdown ≈ 11.4%, `1 − 11.4/38 = 0.7`, so 14 of 20 points.\n\nThe risk-adjusted part is the same for both, since scaling exposure doesn't change the Sharpe or Sortino ratio. Same decisions, 14 more points for cash drag. In a calm market (benchmark drawdown floored at 10%) the gap is still about 10 points.\n\n## Where\n- [score.rs#L27](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L27) — `FULL_PARTICIPATION = 30.0`.\n- [score.rs#L169-L172](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L169-L172) — `participation` and the drawdown ratio.\n- [score.rs#L191](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L191) — drawdown points.\n- [score.rs#L431](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L431) — the cash test covers 0% exposure only.\n\n## Suggested fix\nCompare like with like: scale the benchmark's drawdown by the run's average exposure, for example `drawdown = 1 − dd / (bench_dd × exposure).max(floor)`. Then cutting losses at the same exposure is what earns the points. Keep the existing rule for 0% exposure.\n\n## Done when\n- Holding the benchmark at 30% and at 100% exposure earns the same drawdown points.\n- A run with a smaller drawdown at the same exposure still earns more.\n- Tests in `score.rs` cover both; docs/simulator.md describes the rule.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -263,6 +263,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6253909247",
+      "source": "github",
+      "title": "FK-135: Weekly challenge: a rotating goal each week with a cash reward",
+      "url": "https://github.com/jaredbahr/foolskitchen/issues/326",
+      "description": "**Phase:** 3\n**Depends on:** none\n\n## Goal\nEvery 7 days a new weekly challenge appears in the Goals panel (\"Serve 40 guests in one day\", \"Finish the week with no guest leaving angry\"). Meeting it before the week ends pays a cash reward. DESIGN 4.5 lists \"rotating weekly challenges\" as late-game content; this gives every stage of the game a short-term target.\n\n## Context\n- `AGENTS.md` (all rules), `docs/DESIGN.md` 4.5 (career milestones, \"No running out of things to do\").\n- Milestones already exist and are the model to follow: `src/sim/progression/milestone.gd`, `milestone_day.gd`, `milestone_set.gd`, `milestone_settlement.gd`, `milestone_tracker.gd`, and the Goals panel `src/ui/goals_panel.gd`. Reuse the day summary that milestones read (`milestone_day.gd`) rather than inventing new counters.\n- Money in: `src/sim/economy/ledger.gd`. Evening report: `src/sim/day_report.gd`, `src/ui/evening_report.gd`.\n\n## Do\n- **Challenges.** A data file `data/balance/weekly_challenges.tres` holds a pool of about 10 challenge definitions, each with an id, a short player text with a number in it, a kind, a target and a reward. Kinds to support (only ones that `MilestoneDay` can already measure, or that need one small new field):\n  - serve N guests in one day;\n  - earn $N operating profit over the week;\n  - no guest leaves angry on N days;\n  - get N good reviews over the week;\n  - sell N of one dish (the dish picked from the current menu when the challenge is drawn).\n- **Rotation.** On day 1 and every 7th morning after, pick one challenge from `GameState.rng(&\"weekly\")`, never the same one twice in a row. Targets scale with owner level (a `per_level` step in data) so a level 1 shop gets a reachable goal.\n- **Progress.** The Goals panel shows the weekly challenge at the top in its own box: text, progress (\"27 / 40\"), days left, reward.\n- **Reward.** When met, the reward is paid once at that evening's close and shows as \"Weekly challenge: +$60\" in the evening report and ledger. An unmet challenge just ends; no penalty.\n- **Saving.** The current challenge and its progress go in the morning save.\n\n## Don't\n- Don't change the existing milestones or their rewards.\n- No XP reward (cash only), no streaks, no notifications beyond the Goals panel and the report line.\n- No new CI job.\n\n## Done when\n- [ ] Tests: rotation every 7 days and never a repeat in a row; level scaling; each kind's progress counts correctly from day summaries; the reward pays exactly once; an unmet challenge expires; save and load mid-week.\n- [ ] Balance probe on default settings: report the cash difference over the probe run in the PR (a change is expected; it should be modest).\n- [ ] `bash tools/check.sh` passes.\n- [ ] Screenshot of the Goals panel box attached to the PR.\n- [ ] A `CHANGELOG.md` line under `## Unreleased` → Players.\n\n## Report back (in the PR body)\nFiles changed, how it was tested, the probe numbers, open questions. `Closes #<this issue>`.\n\n## Always (every Codex issue)\n- Read `AGENTS.md` first and follow it (branch name, claim comment, one PR, rules 1–11).\n- `bash tools/get_godot.sh` once, then `bash tools/check.sh` must pass before you mark the PR ready.\n- Add a `CHANGELOG.md` line under `## Unreleased` in the right group, ending `(#<PR number>)`.\n- PR body: `Closes #<this issue>`, files changed, how you tested it, a ticked **Done when** checklist with evidence, open questions.\n\n\n---\n_Generated by [Claude Code](https://claude.ai/code)_",
+      "rewardUsd": 60,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 60,
+      "profitPerHourUsd": 720,
+      "eligible": true
+    },
+    {
       "id": "github-5901196280",
       "source": "github",
       "title": "Training-reward integrity: six ways the reward curve your optimizer climbs diverges from real capability",
@@ -291,20 +305,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-5986376948",
-      "source": "github",
-      "title": "P7.11 — Award the ROC trophy cash and real Prime exactly once",
-      "url": "https://github.com/nicolas-found42/car-game/issues/84",
-      "description": "## Parent\n\nPart of #9 — consolidated mechanical restoration and racing career roadmap.\n\n## What to build\n\nFinish ROC and receive the trophy, $50,000 and an actual complete Prime DLH500 that can be inspected, driven and saved.\n\n**Boundary:** Prize content and reward extension to existing Assembly/Powertrain/Economy; no alternate special-prize vehicle solver.\n\n**Spec ownership:** F19, F09, F01, F03. User stories: 63.\n\nUse the shared production application/command seam and preserve the parent compatibility, identity, transaction and evidence contracts.\n\n## Acceptance criteria\n\n- [ ] Provide genuine or explicitly authored/approved prize vehicle/part/visual/operating assets with provenance; an existing add-on car is not an undisclosed substitute.\n- [ ] Prepare reward/title/rank/heat effects in the same outcome transaction and persist applied result/reward IDs atomically.\n- [ ] Demonstrate inspect/start/drive/save of the awarded car and once-only trophy/cash/title on repeated completion/result-before-settlement reload.\n- [ ] Do not mint extra reward vehicles on active selection, scene entry or failed transaction replay.\n- [ ] Run the applicable parent repository/phase checks and retain real scenario evidence; missing assets, skipped assertions or unavailable required captures cannot count as a pass.\n\n<!-- roadmap-spec-9-ticket:P7.11 -->\n",
-      "rewardUsd": 50,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 50,
-      "profitPerHourUsd": 600,
-      "eligible": true
     },
     {
       "id": "github-6249755336",

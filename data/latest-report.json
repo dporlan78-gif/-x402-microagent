@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T06:09:53.191Z",
+  "generatedAt": "2026-11-07T13:14:43.633Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 31,
-  "eligible": 12,
+  "eligible": 14,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -203,21 +203,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6184195586",
-      "source": "github",
-      "title": "practice score: drawdown points reward sitting 70% in cash",
-      "url": "https://github.com/iamsaquib8/stockwise/issues/119",
-      "description": "## What\nThe score's doc comment says sitting in cash through a crash \"is not a trading decision worth points\", and a run that is 0% invested scores 0. But the drawdown part compares your drawdown with the benchmark's full drawdown, and participation is full from 30% average exposure. So the same picks held at 30% exposure earn drawdown points that they can't earn at 100%.\n\nTake a replay where the benchmark falls 38% (the COVID crash) and a player holds a basket that tracks it:\n- 100% invested: drawdown ≈ 38%, `1 − 38/38 = 0`, so 0 of 20 points;\n- 30% invested, 70% cash: drawdown ≈ 11.4%, `1 − 11.4/38 = 0.7`, so 14 of 20 points.\n\nThe risk-adjusted part is the same for both, since scaling exposure doesn't change the Sharpe or Sortino ratio. Same decisions, 14 more points for cash drag. In a calm market (benchmark drawdown floored at 10%) the gap is still about 10 points.\n\n## Where\n- [score.rs#L27](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L27) — `FULL_PARTICIPATION = 30.0`.\n- [score.rs#L169-L172](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L169-L172) — `participation` and the drawdown ratio.\n- [score.rs#L191](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L191) — drawdown points.\n- [score.rs#L431](https://github.com/iamsaquib8/stockwise/blob/e2998d1f4c3528acbb78f8d9106cb9239122c4aa/src/practice/score.rs#L431) — the cash test covers 0% exposure only.\n\n## Suggested fix\nCompare like with like: scale the benchmark's drawdown by the run's average exposure, for example `drawdown = 1 − dd / (bench_dd × exposure).max(floor)`. Then cutting losses at the same exposure is what earns the points. Keep the existing rule for 0% exposure.\n\n## Done when\n- Holding the benchmark at 30% and at 100% exposure earns the same drawdown points.\n- A run with a smaller drawdown at the same exposure still earns more.\n- Tests in `score.rs` cover both; docs/simulator.md describes the rule.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6011061645",
       "source": "github",
       "title": "Reward system",
@@ -307,6 +292,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5986376948",
+      "source": "github",
+      "title": "P7.11 — Award the ROC trophy cash and real Prime exactly once",
+      "url": "https://github.com/nicolas-found42/car-game/issues/84",
+      "description": "## Parent\n\nPart of #9 — consolidated mechanical restoration and racing career roadmap.\n\n## What to build\n\nFinish ROC and receive the trophy, $50,000 and an actual complete Prime DLH500 that can be inspected, driven and saved.\n\n**Boundary:** Prize content and reward extension to existing Assembly/Powertrain/Economy; no alternate special-prize vehicle solver.\n\n**Spec ownership:** F19, F09, F01, F03. User stories: 63.\n\nUse the shared production application/command seam and preserve the parent compatibility, identity, transaction and evidence contracts.\n\n## Acceptance criteria\n\n- [ ] Provide genuine or explicitly authored/approved prize vehicle/part/visual/operating assets with provenance; an existing add-on car is not an undisclosed substitute.\n- [ ] Prepare reward/title/rank/heat effects in the same outcome transaction and persist applied result/reward IDs atomically.\n- [ ] Demonstrate inspect/start/drive/save of the awarded car and once-only trophy/cash/title on repeated completion/result-before-settlement reload.\n- [ ] Do not mint extra reward vehicles on active selection, scene entry or failed transaction replay.\n- [ ] Run the applicable parent repository/phase checks and retain real scenario evidence; missing assets, skipped assertions or unavailable required captures cannot count as a pass.\n\n<!-- roadmap-spec-9-ticket:P7.11 -->\n",
+      "rewardUsd": 50,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 50,
+      "profitPerHourUsd": 600,
+      "eligible": true
+    },
+    {
       "id": "github-6249755336",
       "source": "github",
       "title": "Issue 8-44: Reject new Checkout sessions for paid reservations",
@@ -335,6 +334,20 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6259292958",
+      "source": "github",
+      "title": "Upgrade cf workers plan to paid for resolve e2e issues",
+      "url": "https://github.com/kveperedo/website/issues/164",
+      "description": " Upgrade the account to Workers Paid ($5/mo). Default CPU goes to 30 s per invocation and 1102 disappears. This is the decisive fix. If you're already on Paid, check for a limits.cpu_ms setting — 1102 on Paid means the limit was lowered.",
+      "rewardUsd": 5,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 5,
+      "profitPerHourUsd": 60,
+      "eligible": true
     },
     {
       "id": "github-5910709033",
@@ -432,21 +445,6 @@
       "title": "Paid AI Models",
       "url": "https://github.com/radimitrov/CSharpShellApp/issues/452",
       "description": "I want to know how do paid AI Model works. Basically I don't have any Credit or any Bank account connected to my account/mobile so I don't have any online payment method but when I choose any paid AI model it doesn't ask for any Payment and I can use it for free. Can you tell me how it works? \n\nAnd I want to know if the \"One time subscription\" in the App makes the App work faster or just for Ads. ",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6205655298",
-      "source": "github",
-      "title": "Paid ticket checkout foundation",
-      "url": "https://github.com/make-my-event/makemyevent/issues/70",
-      "description": "Problem statement:\nThe platform currently supports event creation and registration flows, but it does not yet provide a complete paid ticket checkout experience. This is a major gap for real-world event operations, especially for workshops, conferences, hackathons, and premium community events.\n\nToday, events can be created and organized, but there is no clear mechanism for:\n- charging attendees for ticket access\n- collecting payment at checkout\n- showing order totals\n- confirming participation after a successful payment\n- marking a registration as paid\n\nThis makes the platform incomplete for paid-events use cases and prevents it from competing with modern ticketing platforms like MakemyPass, where organizers can sell ticket tiers and add-ons with a checkout flow.\n\nWhy this matters:\nA successful event platform must be able to monetize attendance. Even a basic paid checkout flow is valuable because it enables:\n- paid workshops and trainings\n- premium ticket tiers\n- event bundles with extras\n- VIP admissions\n- corporate/community event registrations\n\nWithout payment support, the product is limited to free events and low-friction RSVP-style flows, which is a major product limitation.\n\nScope:\nThis issue should introduce a first-pass payment flow with minimal but functional integration.\n\nIn scope:\n1. Checkout screen\n- Add a checkout or confirmation view before registration is finalized\n- Show:\n  - selected ticket tier\n  - selected add-ons\n  - total amount\n  - attendee details\n  - event summary\n- Support a clear “Pay now” or “Complete registration” flow\n\n2. Payment abstraction\n- Add a basic payment provider abstraction that can be implemented with a real provider later\n- Support a placeholder or mock payment service for development\n- Prepare a path for integration with:\n  - Razorpay\n  - Stripe\n  - or another payment provider\n\n3. Payment state flow\n- Handle:\n  - success\n  - failure\n  - pending/processing\n  - canceled payment\n- Show meaningful status messages for each case\n- Prevent duplicate submissions while payment is in progress\n\n4. Registration status update\n- When payment succeeds:\n  - mark the attendee registration as paid\n  - store payment status in the backend\n  - show confirmation page\n- When payment fails:\n  - keep the user in a recoverable state\n  - allow retry without losing their selections\n\n5. Organizer visibility\n- Make it possible for organizers to see whether a ticket is:\n  - unpaid\n  - paid\n  - incomplete\n  - payment failed\n\nOut of scope for this issue:\n- full production payment provider deployment\n- refund processing\n- invoice generation\n- tax handling / GST specifics\n- wallet or partial payment support\n- recurring billing\n- multi-currency support\n- advanced fraud protection\n\nUser stories:\n- As an organizer, I want to sell paid tickets so my event can generate revenue.\n- As an attendee, I want to pay securely for my ticket before finalizing registration.\n- As a user, I want to see my order summary before payment so I know exactly what I’m paying for.\n- As a system, I want to prevent duplicate payment attempts during a pending transaction.\n- As an organizer, I want to know whether a registration is paid or unpaid.\n\nExpected behavior:\nWhen an attendee selects a paid ticket:\n- they are taken to a checkout summary screen\n- they can review the price breakdown\n- they click a payment action\n- the system processes the payment\n- on success, registration is completed and marked as paid\n- on failure, the user sees a clear message and can retry\n\nAcceptance criteria:\n- Paid events can complete a checkout flow\n- Order summary includes selected ticket and add-ons\n- Payment success marks the attendee as paid\n- Payment failure is handled without silently failing\n- User can retry a failed payment\n- Organizer can see paid/unpaid registrations\n- The system prevents duplicate payment attempts for the same order\n\nSuggested implementation approach:\n1. Identify current registration flow\n- Understand how attendees complete registration today\n- Determine where checkout logic should plug in\n\n2. Add a basic order model\n- Define a checkout or registration order record\n- Track:\n  - event\n  - attendee\n  - selected ticket\n  - selected add-ons\n  - total amount\n  - payment status\n\n3. Add frontend checkout screen\n- Build the ticket + add-ons + total summary page\n- Add buttons for “Pay now” and “Retry payment”\n\n4. Add payment abstraction layer\n- Create a minimal integration layer that can support a mock provider or a real one later\n- Keep provider logic isolated from the UI\n\n5. Update backend registration flow\n- On successful payment, update registration/payment status\n- Persist the transaction result\n- Ensure the DTO / mutation supports paid tickets\n\n6. Add tests\n- Test successful payment status update\n- Test failed payment retry flow\n- Test duplicate-payment prevention\n- UI smoke test for checkout summary\n\nFiles likely involved:\n- `apps/web/src/app/events/[slug]/...` event registration pages\n- `apps/web/src/components/...` ticket or checkout components\n- `apps/api/src/trpc/...` event registration and payment-related routers\n- schema.prisma\n- any payment-related service layer under `apps/api/src/services/...`\n\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

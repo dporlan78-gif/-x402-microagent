@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T00:58:40.734Z",
+  "generatedAt": "2026-11-09T08:05:08.829Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -352,6 +352,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6278953402",
+      "source": "github",
+      "title": "Paid content bugs / improvements",
+      "url": "https://github.com/bitcoinbrisbane/lbry-desktop/issues/224",
+      "description": "> Copied from `https://github.com/lbryio/lbry-desktop/issues/4123`. Opened by `tzarebczan` on 2020-05-04.\n\n- [ ] Need to check purchase list to see if something has been bought before if it's not in your file list (i.e. delete file or on lbry.tv). Otherwise it will prompt to pay, but it actually won't charge you. \r\n\r\n- [ ] max purchase price silent error:  `https://github.com/lbryio/lbry-desktop/issues/2294`\r\n\r\n- [ ] file views are counted for each download.  May need API changes to in order to track once? ",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6259292958",
       "source": "github",
       "title": "Upgrade cf workers plan to paid for resolve e2e issues",
@@ -366,11 +381,11 @@
       "eligible": true
     },
     {
-      "id": "github-6271857885",
+      "id": "github-5910709033",
       "source": "github",
-      "title": "Epic: Creator earnings in GEN credits (tips, paid subscriptions, paid articles)",
-      "url": "https://github.com/genfeedai/genfeed.ai/issues/9714",
-      "description": "## Goal\n\nReaders can pay creators in GEN credits, and creators spend what they earn on generation inside Genfeed. This completes the creator publishing loop started in #9666: write, publish, email subscribers (#9665), get paid.\n\nDocument only. The week of 11-09 is a coding lock, so no code is scheduled.\n\n## Today (verified in code at master `e0d9b108`)\n\n- `CreditBalance` and `CreditTransaction` belong to an organization or billing account, never to a user (`packages/prisma/prisma/schema.prisma`).\n- Transaction categories are `add`, `deduct`, `expire`, `reset`, `rollover`, `refund`, `byok-usage` (`packages/contracts/src/enums/credit.enum.ts`). There is **no transfer between accounts**, no tip, no paid subscription to a creator.\n- Stripe is used only for Genfeed's own plans (`Subscription`, `UserSubscription`). No Stripe Connect and no payout code.\n- `Article` and `Newsletter` have no price or access fields. Every published article is public.\n\n## Scope\n\nEarn-and-spend only: earned credits are spent on generation inside Genfeed and are not withdrawable. This avoids payouts, KYC and tax handling. Cash-out is a separate decision (see the last issue).\n\n## Order\n\n1. Credit transfer ledger (everything else builds on it).\n2. Tips.\n3. Paid subscriptions to a creator.\n4. Paid articles and newsletter issues.\n5. Creator earnings view.\n6. Decision: cash-out.\n\n## Decisions needed before building\n\n- Platform fee on each payment (percentage, or none at first).\n- Whether earned credits expire like purchased ones, or never expire.\n- Whether earned credits count toward plan limits and the low-credits banner.\n- Who can pay: signed-in Genfeed users only, or a guest checkout that creates an account.\n\n## Done when\n\nA reader with credits tips a creator, subscribes to them, and unlocks a paid article. The creator's balance rises by the amount minus the fee, and the creator spends it on a generation. Each sub-issue carries its own finish condition and evidence.",
+      "title": "Issue invoices for paid sessions and bundles",
+      "url": "https://github.com/vbendas/Somove/issues/3",
+      "description": "Clients have no invoice or receipt for what they pay, while the seeded marketing copy says \"EU-compliant invoices provided\".\n\n**Current state**\n- `web/src/` contains no invoice code.\n- Checkout sessions are created in `web/src/app/actions/booking.ts` and in `createStripeCheckout` (`web/src/app/actions/stripe.ts`), without `invoice_creation`.\n- `web/supabase/migrations/00028_seed_homepage_sections.sql` and `00030_neutral_branding.sql` contain the \"Invoice provided\" claim.\n- `web/src/app/(client)/my-sessions/[id]/page.tsx` shows the amount only.\n\n**Scope**\n- Enable Stripe Checkout invoice creation on both checkout paths, with the therapist's name and the line-item description.\n- Store the invoice id and hosted URL on `payments` from the `checkout.session.completed` webhook (new migration).\n- Add a \"Download invoice\" link on the client session page and on therapist earnings rows.\n- Show the refund state next to the invoice when a payment is refunded.\n\n**Acceptance criteria**\n- [ ] A paid single session and a paid bundle each produce an invoice\n- [ ] The invoice link is visible only to that client and that therapist\n- [ ] Free and credit-paid sessions show no invoice link\n- [ ] Webhook test covers storing the invoice reference\n\n_Roadmap: Payments: invoices, refunds and multi-currency support ([ROADMAP.md](../blob/main/ROADMAP.md))_\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -381,11 +396,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5910709033",
+      "id": "github-6271857885",
       "source": "github",
-      "title": "Issue invoices for paid sessions and bundles",
-      "url": "https://github.com/vbendas/Somove/issues/3",
-      "description": "Clients have no invoice or receipt for what they pay, while the seeded marketing copy says \"EU-compliant invoices provided\".\n\n**Current state**\n- `web/src/` contains no invoice code.\n- Checkout sessions are created in `web/src/app/actions/booking.ts` and in `createStripeCheckout` (`web/src/app/actions/stripe.ts`), without `invoice_creation`.\n- `web/supabase/migrations/00028_seed_homepage_sections.sql` and `00030_neutral_branding.sql` contain the \"Invoice provided\" claim.\n- `web/src/app/(client)/my-sessions/[id]/page.tsx` shows the amount only.\n\n**Scope**\n- Enable Stripe Checkout invoice creation on both checkout paths, with the therapist's name and the line-item description.\n- Store the invoice id and hosted URL on `payments` from the `checkout.session.completed` webhook (new migration).\n- Add a \"Download invoice\" link on the client session page and on therapist earnings rows.\n- Show the refund state next to the invoice when a payment is refunded.\n\n**Acceptance criteria**\n- [ ] A paid single session and a paid bundle each produce an invoice\n- [ ] The invoice link is visible only to that client and that therapist\n- [ ] Free and credit-paid sessions show no invoice link\n- [ ] Webhook test covers storing the invoice reference\n\n_Roadmap: Payments: invoices, refunds and multi-currency support ([ROADMAP.md](../blob/main/ROADMAP.md))_\n",
+      "title": "Epic: Creator earnings in GEN credits (tips, paid subscriptions, paid articles)",
+      "url": "https://github.com/genfeedai/genfeed.ai/issues/9714",
+      "description": "## Goal\n\nReaders can pay creators in GEN credits, and creators spend what they earn on generation inside Genfeed. This completes the creator publishing loop started in #9666: write, publish, email subscribers (#9665), get paid.\n\nDocument only. The week of 11-09 is a coding lock, so no code is scheduled.\n\n## Today (verified in code at master `e0d9b108`)\n\n- `CreditBalance` and `CreditTransaction` belong to an organization or billing account, never to a user (`packages/prisma/prisma/schema.prisma`).\n- Transaction categories are `add`, `deduct`, `expire`, `reset`, `rollover`, `refund`, `byok-usage` (`packages/contracts/src/enums/credit.enum.ts`). There is **no transfer between accounts**, no tip, no paid subscription to a creator.\n- Stripe is used only for Genfeed's own plans (`Subscription`, `UserSubscription`). No Stripe Connect and no payout code.\n- `Article` and `Newsletter` have no price or access fields. Every published article is public.\n\n## Scope\n\nEarn-and-spend only: earned credits are spent on generation inside Genfeed and are not withdrawable. This avoids payouts, KYC and tax handling. Cash-out is a separate decision (see the last issue).\n\n## Order\n\n1. Credit transfer ledger (everything else builds on it).\n2. Tips.\n3. Paid subscriptions to a creator.\n4. Paid articles and newsletter issues.\n5. Creator earnings view.\n6. Decision: cash-out.\n\n## Decisions needed before building\n\n- Platform fee on each payment (percentage, or none at first).\n- Whether earned credits expire like purchased ones, or never expire.\n- Whether earned credits count toward plan limits and the low-credits banner.\n- Who can pay: signed-in Genfeed users only, or a guest checkout that creates an account.\n\n## Done when\n\nA reader with credits tips a creator, subscribes to them, and unlocks a paid article. The creator's balance rises by the amount minus the fee, and the creator spends it on a generation. Each sub-issue carries its own finish condition and evidence.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -411,41 +426,26 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6278808923",
+      "source": "github",
+      "title": "Purchase receipts / paid content",
+      "url": "https://github.com/bitcoinbrisbane/lbry-desktop/issues/120",
+      "description": "> Copied from `https://github.com/lbryio/lbry-desktop/issues/3183`. Opened by `tzarebczan` on 2019-11-05.\n\nFigure out where / how we want to deal with paid content. Can discuss on next standup\r\n \r\n- [x] Where's the data for My Library coming from? \r\n\r\n- [ ] Need to fill in transaction list details based on the claim id (there's no claim name in purchase info on transaction list - we can have the SDK resolve them by passing a param) \r\n\r\n- [ ] Make file page aware of purchased content (i.e. I should be able to re-download it after removing without being prompted)",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6023445365",
       "source": "github",
       "title": "Fully paid draft invoices should remain drafts (paid != completed)",
       "url": "https://github.com/InvoiceShelf/InvoiceShelf/issues/956",
       "description": "### Issue filing prerequisites\n\n- [x] I've checked the [documentation](https://docs.invoiceshelf.com/).\n- [x] I've looked for similar issues both Open and Closed.\n- [x] I've tried clearing both cache and cookies in my browser or tried opening the app in the Incognito/InPrivate window.\n\n### Describe the bug\n\nRecording a payment that fully covers a draft invoice changes its status from DRAFT to COMPLETED, although the invoice has never been sent. It is no longer identifiable as a draft, and the completed status suggests that the invoice is finalized and, depending on the editing settings, no longer editable. There is no longer a draft status to indicate that work such as sending the invoice is still pending.\n\nReducing or deleting that payment can then change the same invoice back to DRAFT and make it editable again, depending on the configured editing restrictions. A payment correction can therefore reopen an invoice that appeared to be finalized, without any explicit action to reopen it.\n\n### Steps to Reproduce the issue\n\n1. Set retrospective edits to be disabled after sending an invoice.\n2. Create a draft invoice with a positive total and leave it unsent.\n3. Record a payment covering the full invoice amount.\n4. Open the invoice and check its status and edit permission.\n5. Reduce or delete the payment, then check the invoice status and edit permission again.\n\n### Expected behaviour\n\nThe invoice remains DRAFT, its paid_status becomes PAID, and the recorded payment remains associated with it. Its draft status continues to indicate that it has not yet been sent. Later payment corrections update the payment status without implicitly finalizing or reopening the draft.\n\nEditing follows the configured retrospective edit setting: a restriction based on sending should not lock an unsent draft, while payment-based restrictions should still apply.\n\n### Actual behaviour\n\nThe invoice becomes COMPLETED solely because it was fully paid. With editing disabled after sending, it can no longer be edited despite never having been sent. Its status hides the fact that it is still an unsent draft and gives the impression that no further action is needed.\n\nReducing or deleting the payment changes it back to DRAFT; with the same setting, it becomes editable again.\n\n### Docker\n\n- [x] App running in Docker Container.\n- [x] Docker container running behind Reverse proxy.\n\n### InvoiceShelf version\n\n2.4.7\n\n### PHP version\n\n8.4.27\n\n### Database type\n\nMariaDB\n\n### Database version\n\n10.11.18\n\n### Web Browser\n\nany\n\n### Server OS\n\nLinux\n\n### Reverse-proxy logs\n\n```irc logs\nnot relevant\n```\n\n### Laravel/PHP logs\n\n```irc logs\nnot relevant\n```",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6180859524",
-      "source": "github",
-      "title": "Validate paid Teams collaboration",
-      "url": "https://github.com/dmytro-omelian/savenest/issues/22",
-      "description": "Part of #13.\n\n## Context\n\nTeams is a separate future offering; personal Cloud must remain simple.\n\n## Acceptance criteria\n\n- [ ] Identify repeatable shared-library workflows and willingness to pay\n- [ ] Validate shared collections, invitations, permissions and billing needs before choosing seat pricing or promising delivery\n- [ ] Current local sharing remains free.\n\n## Dependencies\n\nLater Teams discovery; no implementation or customer outreach authorized by this issue alone.\n\n## Verification\n\nRecord real workflow evidence and paid-pilot interest separately from assumptions. Produce a go/no-go recommendation and, only if supported, a scoped product spec.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6207314855",
-      "source": "github",
-      "title": "Roadmap: K5b: Getting paid",
-      "url": "https://github.com/akkiverse/karyahub/issues/78",
-      "description": "Payments (cash, UPI, card, bank; part payments), a UPI QR on every bill, payment reminders and the daily AMC renewals list with one-tap sending, bill-wise profit.\n\nThe stories are not written yet. The Business Analyst writes them (and the issues for them) before the build; see [ROADMAP.md](https://github.com/akkiverse/karyahub/blob/main/docs/plan/ROADMAP.md).",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T08:05:08.829Z",
+  "generatedAt": "2026-11-09T18:53:53.192Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -278,6 +278,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5647589338",
+      "source": "github",
+      "title": "US-28: Cash 6-month reminder",
+      "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/28",
+      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want a reminder when lost cash is approaching the 6-month mark, so I know when it's time to release it to the finder under existing policy.\n\n**Acceptance Criteria (Given-When-Then):**\nGiven a logged item marked as cash, when it approaches 6 months held, then staff receive a reminder to process the finder's reward per current practice.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5986376948",
       "source": "github",
       "title": "P7.11 — Award the ROC trophy cash and real Prime exactly once",
@@ -290,21 +305,6 @@
       "expectedProfitUsd": 50,
       "profitPerHourUsd": 600,
       "eligible": true
-    },
-    {
-      "id": "github-6237613900",
-      "source": "github",
-      "title": "feat(be): 보상 규칙·캐시 수동 조정·서비스 설정·작업 기록 API",
-      "url": "https://github.com/bukkeu/MY-HOME/issues/38",
-      "description": "## 설명\n\n활동별 보상 규칙과 서비스 설정을 관리하고, 캐시 수동 지급·회수와 관리자 작업 기록을 남긴다.\n\n## 관련 요구사항\n\nADM-29, ADM-30, NFR-13, NFR-14\n\n## 할 일\n\n- [ ] GET /api/v1/admin/reward-rules, PUT .../{ruleId}\n- [ ] POST /api/v1/admin/members/{memberId}/cash-adjustments (사유 필수)\n- [ ] GET /api/v1/admin/settings, PUT .../{key}\n- [ ] AdminLogService, GET /api/v1/admin/admin-logs\n\n## 완료 조건\n\n- 중요 작업이 누가·언제로 기록된다.\n- 빌드·테스트 통과, API·DB가 바뀌면 명세서 문서도 같은 PR에서 수정\n\n## 브랜치\n\n`feat/be-38-admin-reward-setting-log`\n\n```bash\ngit switch dev && git pull\ngit switch -c feat/be-38-admin-reward-setting-log\n```\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-6272399927",

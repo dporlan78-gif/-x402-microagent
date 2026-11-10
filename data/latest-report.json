@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T02:14:24.942Z",
+  "generatedAt": "2026-11-10T10:01:33.271Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 31,
-  "eligible": 13,
+  "eligible": 12,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -203,6 +203,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6300394316",
+      "source": "github",
+      "title": "P0 · Commercial E2E: first approved offerwall → funded conversion → paid user reward",
+      "url": "https://github.com/Noetfield-Systems/Earnloop/issues/1",
+      "description": "## Mission (revenue-first)\nTurn the deployed founding beta into a revenue-producing rewards platform. Do not substitute XP for cash or fabricated partner inventory.\n\n**Verified release:** Railway `earnloop-web` from `Noetfield-Systems/Earnloop@a8f4dc502649f48a931c34845d6cdf9379f1bb08` with retained PostgreSQL and public domain https://earnloop-web-production.up.railway.app/. Independent HTTP smoke **PASS**: https://github.com/Noetfield-Systems/Earnloop/actions/runs/42756970996. Current members=0, early access=0, partner funding unverified.\n\n### Acceptance gates\n- [ ] Publisher account approved by Torox / ayeT / equivalent, with genuine available Canadian inventory and signed contract (Founder/operator approval required)\n- [ ] Implement exact partner authenticated postback spec, unique conversion IDs, replay protection, tracking, reversal and dispute handling; never trust client-reported spend\n- [ ] Real booked advertiser payable and independently verified cash settlement with evidence\n- [ ] Reward ledger records funded user liability separately from community XP, and supports reversal/chargebacks\n- [ ] Legal/payment provider integration, identity recovery, user eligibility, KYC where applicable and permitted cash-out/gift-card fulfilment\n- [ ] First real, consented user completes partner action and receives real funded reward; attach partner statement, payout receipt, IDs, timestamp, independent verification and contribution margin\n- [ ] Company OS captures verified evidence, net contribution and next acquisition action in product WorkPackets; Sina Founder OS gets portfolio summary only\n\n**Do not claim launch revenue until funds are actually settled. No paid offers/cashouts are activated without approved partners and funded settlement.**",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6011061645",
       "source": "github",
       "title": "Reward system",
@@ -293,20 +308,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5986376948",
-      "source": "github",
-      "title": "P7.11 — Award the ROC trophy cash and real Prime exactly once",
-      "url": "https://github.com/nicolas-found42/car-game/issues/84",
-      "description": "## Parent\n\nPart of #9 — consolidated mechanical restoration and racing career roadmap.\n\n## What to build\n\nFinish ROC and receive the trophy, $50,000 and an actual complete Prime DLH500 that can be inspected, driven and saved.\n\n**Boundary:** Prize content and reward extension to existing Assembly/Powertrain/Economy; no alternate special-prize vehicle solver.\n\n**Spec ownership:** F19, F09, F01, F03. User stories: 63.\n\nUse the shared production application/command seam and preserve the parent compatibility, identity, transaction and evidence contracts.\n\n## Acceptance criteria\n\n- [ ] Provide genuine or explicitly authored/approved prize vehicle/part/visual/operating assets with provenance; an existing add-on car is not an undisclosed substitute.\n- [ ] Prepare reward/title/rank/heat effects in the same outcome transaction and persist applied result/reward IDs atomically.\n- [ ] Demonstrate inspect/start/drive/save of the awarded car and once-only trophy/cash/title on repeated completion/result-before-settlement reload.\n- [ ] Do not mint extra reward vehicles on active selection, scene entry or failed transaction replay.\n- [ ] Run the applicable parent repository/phase checks and retain real scenario evidence; missing assets, skipped assertions or unavailable required captures cannot count as a pass.\n\n<!-- roadmap-spec-9-ticket:P7.11 -->\n",
-      "rewardUsd": 50,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 50,
-      "profitPerHourUsd": 600,
-      "eligible": true
-    },
-    {
       "id": "github-6272399927",
       "source": "github",
       "title": "Epic: Newsletter module (subscribers, delivery, tracking, analytics, paid issues)",
@@ -381,6 +382,21 @@
       "eligible": true
     },
     {
+      "id": "github-6302231895",
+      "source": "github",
+      "title": "feat(verification): pilot Paid-managed verification of Paid user journeys",
+      "url": "https://github.com/viamin/paid/issues/4982",
+      "description": "## Problem\n\nPaid can provision a browser sidecar and Playwright MCP for an issue implementation run, derive a start command, and record interactive verification. The agent still has to rediscover how to exercise each Paid feature. Paid's own `.paid/screenshots.yml` already defines auth, seed data, and routes, but it is oriented toward screenshot capture rather than repeatable changed-feature journeys.\n\n## Goal\n\nUse Paid to verify changes to Paid itself. In an isolated development/test run where the Paid repository is the managed project, a Paid `create_pr` agent should be able to start a seeded Paid instance, sign in, exercise a relevant Paid user journey, inspect the observed result, and attach that evidence to its existing run result.\n\n## Scope\n\n- Pilot one representative Paid web journey first (for example, sign-in → Projects → project detail), then exercise a real changed feature through a Paid-managed implementation run.\n- Add a repository-owned, concise journey guide and only the helper commands needed to make setup, data reset, navigation, observation, and cleanup repeatable. Reuse `.paid/screenshots.yml` for existing routes/auth/seed configuration; do not create a competing copy.\n- Teach `AgentRuns::VerificationPrompt` to discover the guide at a conventional path and select the journey relevant to the changed surface. Reuse the existing Playwright MCP sidecar, runtime plan, app diagnostics, and `VerificationResultRecorder`.\n- Keep all test data and application execution in the isolated run environment. No production Paid data or credentials.\n\n## Acceptance criteria\n\n- [ ] An agent can follow the documented commands from a clean Paid checkout to start a seeded Paid instance, obtain a test identity, complete the selected journey through Playwright MCP, inspect the expected result, and clean up resources created by the run.\n- [ ] A Paid-managed `create_pr` run against the Paid repository performs the journey for a real changed feature and stores the actual steps, observed result, relevant log/trace/screenshot references, and reviewed commit in the existing verification result. A screenshot or agent claim alone is not treated as proof of the criterion.\n- [ ] The journey and its commands have a focused, executable maintenance check so a stale route, login step, or startup instruction fails visibly.\n- [ ] Missing setup, authentication failure, unavailable browser, or failed assertion yields explicit failed/skipped/not-run evidence; it cannot be reported as a successful journey.\n- [ ] The pilot reports setup time, run time, failure modes, and operator effort before proposing wider rollout.\n\n## Boundaries and related work\n\n`bootstrap_readiness` has a narrow write allowlist. Journey guides or behavior-bearing helper scripts must use a normal reviewed PR or a separately designed write boundary; this issue does not widen bootstrap authority. Preserve current project verification opt-in and merge policy. Follow Full LID through the owning HLD/LLD/EARS, failing-first tests, and code.\n\nRelevant foundations: `docs/intent/live-web-app-preview/`, `docs/intent/project-readiness/`, `app/services/agent_runs/verification_prompt.rb`, and `.paid/screenshots.yml`.\n\nInspired by Lauren Tan's [verification-skill article](https://x.com/poteto/article/2094457600259842065).",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-5910709033",
       "source": "github",
       "title": "Issue invoices for paid sessions and bundles",
@@ -431,21 +447,6 @@
       "title": "Purchase receipts / paid content",
       "url": "https://github.com/bitcoinbrisbane/lbry-desktop/issues/120",
       "description": "> Copied from `https://github.com/lbryio/lbry-desktop/issues/3183`. Opened by `tzarebczan` on 2019-11-05.\n\nFigure out where / how we want to deal with paid content. Can discuss on next standup\r\n \r\n- [x] Where's the data for My Library coming from? \r\n\r\n- [ ] Need to fill in transaction list details based on the claim id (there's no claim name in purchase info on transaction list - we can have the SDK resolve them by passing a param) \r\n\r\n- [ ] Make file page aware of purchased content (i.e. I should be able to re-download it after removing without being prompted)",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6295558560",
-      "source": "github",
-      "title": "[Program] Review open paid contributions",
-      "url": "https://github.com/HHS/simpler-grants-protocol/issues/1405",
-      "description": "### Summary\n\nReview pull requests on funded issues that are ready for review this sprint, if any come in. Right now that's #1403 for #355 (claimed by ahcrm-core, due Nov 17).\n\n### Acceptance criteria\n\n- [ ] Each pull request on a funded issue that's marked ready for review this sprint is reviewed against that issue's acceptance criteria\n- [ ] #355 has a comment checking in with the contributor and reminding them to email commongrants-contributors@agile6.com so we can reach them about payment\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

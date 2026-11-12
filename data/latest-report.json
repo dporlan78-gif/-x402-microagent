@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T22:45:50.162Z",
+  "generatedAt": "2026-11-12T03:52:55.559Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -46,11 +46,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316304863",
+      "id": "github-6316304995",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4299",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/9\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4300",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/8\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -60,11 +60,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316304995",
+      "id": "github-6316305429",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4300",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/8\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4303",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/5\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -88,11 +88,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316305429",
+      "id": "github-6316304863",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4303",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/5\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4299",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/9\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

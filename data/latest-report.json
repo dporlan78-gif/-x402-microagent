@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T23:39:35.176Z",
+  "generatedAt": "2026-11-14T06:39:38.198Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,8 +13,8 @@
       "micro bounty"
     ]
   },
-  "discovered": 31,
-  "eligible": 12,
+  "discovered": 32,
+  "eligible": 13,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -23,20 +23,6 @@
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
       "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4302",
       "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/6\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 100,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 100,
-      "profitPerHourUsd": 1200,
-      "eligible": true
-    },
-    {
-      "id": "github-6316304995",
-      "source": "github",
-      "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4300",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/8\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -74,11 +60,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316305429",
+      "id": "github-6316304995",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4303",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/5\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4300",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/8\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -93,6 +79,20 @@
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
       "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4304",
       "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/3\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 100,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 100,
+      "profitPerHourUsd": 1200,
+      "eligible": true
+    },
+    {
+      "id": "github-6316305429",
+      "source": "github",
+      "title": "[Bounty] 🪙 Bounty: Improve project documentation",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4303",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/5\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -455,6 +455,20 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6383676587",
+      "source": "github",
+      "title": "🎯 Bounty Alert: 7 New Opportunityies found",
+      "url": "https://github.com/Rohank143/BountyScout/issues/103",
+      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-14 02:04 UTC\n\n#### 1. [🎯 Bounty Alert: 9 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1761)\n- **Repository:** [dev-kp-eloper/BountyScout](https://github.com/dev-kp-eloper/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-11-14T02:01:34Z\n\n#### 2. [Bug bounties on the awareness dashboard — programs + disclosed reports tab](https://github.com/AlexKollar/Apex/issues/190)\n- **Repository:** [AlexKollar/Apex](https://github.com/AlexKollar/Apex)\n- **Comments:** 1\n- **Last Updated:** 2026-11-14T01:54:07Z\n\n#### 3. [[Track 2 pre-notice] Bounded transfer fan-out: throwaway wallets, concurrent micro-XE sends on ldn.core.test.network — ≤5 tx/s, ≤60 s](https://github.com/xeprotocol/xe/issues/549)\n- **Repository:** [xeprotocol/xe](https://github.com/xeprotocol/xe)\n- **Comments:** 1\n- **Last Updated:** 2026-11-14T01:54:02Z\n\n#### 4. [Railway 赏金：有 4 条值得抢](https://github.com/HCTDIP/corps-jobs/issues/190)\n- **Repository:** [HCTDIP/corps-jobs](https://github.com/HCTDIP/corps-jobs)\n- **Comments:** 0\n- **Last Updated:** 2026-11-14T01:48:22Z\n\n#### 5. [[Escrowed $450 USDC] Fix signature-base line wrapping ceiling and align `@signature-params` witness (`canonicalize_http_sig_frames`)](https://github.com/IES-BoilerRoom/rfc9421-http-signature-gateway/issues/1)\n- **Repository:** [IES-BoilerRoom/rfc9421-http-signature-gateway](https://github.com/IES-BoilerRoom/rfc9421-http-signature-gateway)\n- **Comments:** 1\n- **Last Updated:** 2026-11-13T22:55:44Z\n\n#### 6. [[Escrowed $450 USDC] Fix BGP attribute chunk boundary and resolve 4-AS preference matrix trace invariant (`normalize_bgp_update_frames`)](https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/1)\n- **Repository:** [IES-BoilerRoom/bgp-med-oscillation-verifier](https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier)\n- **Comments:** 3\n- **Last Updated:** 2026-11-13T22:55:44Z\n\n#### 7. [[Escrowed $600 USDC] Eliminate persistent route-reflector MED cycle across confederation peers (`bgp-med-oscillation-verifier`)](https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/2)\n- **Repository:** [IES-BoilerRoom/bgp-med-oscillation-verifier](https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier)\n- **Comments:** 1\n- **Last Updated:** 2026-11-13T22:55:43Z\n\n",
+      "rewardUsd": 450,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 450,
+      "profitPerHourUsd": 5400,
+      "eligible": true
     },
     {
       "id": "github-5950653348",

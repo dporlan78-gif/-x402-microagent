@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T06:39:38.198Z",
+  "generatedAt": "2026-11-14T14:15:29.983Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -46,20 +46,6 @@
       "eligible": true
     },
     {
-      "id": "github-6316304863",
-      "source": "github",
-      "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4299",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/9\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 100,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 100,
-      "profitPerHourUsd": 1200,
-      "eligible": true
-    },
-    {
       "id": "github-6316304995",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
@@ -74,11 +60,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316305562",
+      "id": "github-6316304863",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4304",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/3\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4299",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/9\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -102,11 +88,39 @@
       "eligible": true
     },
     {
+      "id": "github-6316305562",
+      "source": "github",
+      "title": "[Bounty] 🪙 Bounty: Improve project documentation",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4304",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/3\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 100,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 100,
+      "profitPerHourUsd": 1200,
+      "eligible": true
+    },
+    {
       "id": "github-6091672069",
       "source": "github",
       "title": "[Bounty] 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ",
       "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4171",
       "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/58\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro \n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** [Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro \n- **Monto:** $$250\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4168)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n312 coins\n\n### 真实赏金（USD）/ Real Reward\n$250\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "rewardUsd": 250,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 250,
+      "profitPerHourUsd": 3000,
+      "eligible": true
+    },
+    {
+      "id": "github-6089460910",
+      "source": "github",
+      "title": "[Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4168",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/56\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro \n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): [Bounty] Preserv\n- **Monto:** $$250\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/alfrexo95/bounty-bot/issues/54)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n312 coins\n\n### 真实赏金（USD）/ Real Reward\n$250\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 250,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -127,20 +141,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 750,
       "profitPerHourUsd": 9000,
-      "eligible": true
-    },
-    {
-      "id": "github-6089460910",
-      "source": "github",
-      "title": "[Bounty] 💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4168",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/56\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$250): 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro \n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** 💰 Bounty Seguro ($$250): [Bounty] 💰 Bounty Seguro ($$250): [Bounty] Preserv\n- **Monto:** $$250\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/alfrexo95/bounty-bot/issues/54)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n312 coins\n\n### 真实赏金（USD）/ Real Reward\n$250\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 250,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 250,
-      "profitPerHourUsd": 3000,
       "eligible": true
     },
     {

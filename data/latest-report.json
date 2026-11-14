@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T19:16:17.163Z",
+  "generatedAt": "2026-11-14T23:08:46.476Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -32,11 +32,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316305119",
+      "id": "github-6316304995",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4301",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/7\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4300",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/8\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -46,11 +46,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316304995",
+      "id": "github-6316305119",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4300",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/8\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4301",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/7\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -156,21 +156,6 @@
       "expectedProfitUsd": 750,
       "profitPerHourUsd": 9000,
       "eligible": true
-    },
-    {
-      "id": "github-5908680476",
-      "source": "github",
-      "title": "[Risk/Reward] Reward Outcome: Cash Out or Continue",
-      "url": "https://github.com/etk005/cse110-team-23/issues/17",
-      "description": "### User Story\nAs a user, I want to earn chips when I reveal a reward card and choose whether to cash out or continue playing so I can decide how much risk to take.\n\n**Priority:** Must Have\n\n### Tasks & Estimates\n- [ ] Detect when a reward card is revealed and add 2 chips to the temporary balance (0.5 hrs)\n- [ ] Update the chip counter and display a reward message (0.5 hrs)\n- [ ] Display Cash Out and Continue buttons after a reward (0.5 hrs)\n- [ ] Implement Cash Out functionality to transfer earned chips to the total balance and end the minigame (1 hr)\n- [ ] Implement Continue functionality to start the next round using the remaining deck while preserving temporary chips (0.5 hrs)\n- [ ] Reset probability and expected value inputs and require correct calculations before another flip (0.5 hrs)\n- [ ] Add navigation back to the lobby after cashing out (0.5 hrs)\n- [ ] Write tests for rewards, cashing out, continuing, and chip tracking (1 hr)\n- [ ] Run tests, debug failures, and verify functionality (0.5 hrs)\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-6363775643",
@@ -298,6 +283,21 @@
       "title": "Reward system",
       "url": "https://github.com/axehigh/questlog/issues/1",
       "description": "Act as an expert full-stack developer and UI/UX designer. I am building a mobile-first web app (HTML/Tailwind CSS/JS) for 14-year-old boys to track household chores using a gaming-inspired theme (Valorant, Minecraft, Roblox aesthetic). \n\nImplement a Loss-Aversion Point Engine and Reward System using the following architecture:\n\n1. DUAL-CURRENCY SYSTEM:\n- XP (Experience Points): Earned ONLY through task completion. Permanent, cumulative, and never lost or docked. Drives overall level and gamer ranks (Unranked -> Iron -> Bronze -> Silver -> Gold -> Platinum -> Diamond -> Ascendant -> Radiant).\n- Coins: Earnable spending currency used in the Rewards Shop.\n\n2. LOSS-AVERSION & PENALTY MECHANICS:\n- Missed / Failed Daily Tasks: Deduct Coins from the available balance (or forfeit the daily Coin multiplier) to leverage psychological loss aversion without touching permanent XP.\n- Guardrail: Implement a minimum Coin threshold (e.g., balance cannot drop below zero) and clear penalty limits per task so kids don't feel a \"sunk-cost demotivation\" trap.\n- Streak System: Track consecutive active days (🔥 Streak). Missing mandatory daily tasks resets or reduces the streak bonus multiplier.\n\n3. REWARDS SHOP LIST (Structured Tiers):\nImplement a customizable Rewards Shop with the following pre-loaded catalog:\n- Tier 1 (Micro / Low Cost):\n  * +30 Min Gaming Extension\n  * One-Time Minor Chore Pass (Skip a task)\n  * +30 Min Weekend Bedtime Buffer\n- Tier 2 (Mid-Tier / Moderate Cost):\n  * Choose Friday Night Dinner / Takeout\n  * In-Game Currency / Cosmetic Allowance (Robux, V-Bucks, Valorant Points)\n  * Uninterrupted Gaming Session / Sleepover with Friends\n- Tier 3 (Boss-Level / High Cost):\n  * Gaming Gear Upgrade (Headset, Mouse, Keyboard Cap)\n  * Funded Outing with Friends (Movies, Arcade, Bowling)\n  * Cash-Out Point Conversion\n\n4. PARENT CONTROL OVERRIDES:\n- PIN-protected parent mode to approve completed high-value tasks, issue direct bonus/penalty Coin adjustments, and process reward redemptions.\n\nPlease generate or update the application code to fully integrate this logic, store state in local storage, and present a sleek, high-contrast dark mode UI optimized for smartphone web browsers.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6176368234",
+      "source": "github",
+      "title": "Display Cash Out and Continue buttons after a reward (0.5 hrs)",
+      "url": "https://github.com/etk005/cse110-team-23/issues/135",
+      "description": "",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

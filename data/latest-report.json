@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T02:47:05.317Z",
+  "generatedAt": "2026-11-15T11:09:45.128Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -46,11 +46,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316305119",
+      "id": "github-6316304995",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4301",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/7\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4300",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/8\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -60,11 +60,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316304995",
+      "id": "github-6316305119",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4300",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/8\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4301",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/7\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -233,21 +233,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6348252783",
-      "source": "github",
-      "title": "Present non-cash reward rows and Present-added sound in stage-won ledger",
-      "url": "https://github.com/trebizondoculpepper/poker_blocks/issues/650",
-      "description": "Depends on #648 documentation and mixed reward foundation #649. Canonical design: doc/presents.md, especially Mixed reward ledger and sound; lifecycle context: doc/game-events.md.\n\nPresent registered non-cash reward entries alongside cash rows. Stage-three reward includes one **Present added** row after existing cash rows, with no change to the displayed cash sum. Each registered entry presentation handler supplies its display value and configured SFX; no Present/source/kind switch in generic menus. The row reveals in the normal ledger sequence, and the next action appears after every row finishes. Reuse current result-menu work #531 rather than a parallel menu.\n\nRegister reward.present with an appropriate placeholder and family/description; play it when the row is revealed and refresh sfx:usage. It must not unwrap or reveal payload, create cards, advance RNG or pay again. Preserve coin row sounds/totals. Include screenshots or a recording and review URL showing stage-one/two cash ledgers and stage-three mixed ledger; verify Continue, re-entry and cancellation with no repeated model awards. Run required checks. Production synth/sample content can follow independently.\n\n\n## Design reference and gate\n\nCanonical contract: [presents.md#mixed-reward-ledger-and-sound](https://github.com/trebizondoculpepper/poker_blocks/blob/main/doc/presents.md#mixed-reward-ledger-and-sound). Documentation prerequisite: #648. If that documentation ticket is still open, wait for its merge; a link to an unmerged design is not implementation approval. Follow the native prerequisites for shared implementation work too. This current contract supersedes earlier conflicting provisional/historical notes; no new owner decision is required for its documented defaults.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6300394316",
       "source": "github",
       "title": "P0 · Commercial E2E: first approved offerwall → funded conversion → paid user reward",
@@ -298,6 +283,21 @@
       "title": "Display Cash Out and Continue buttons after a reward (0.5 hrs)",
       "url": "https://github.com/etk005/cse110-team-23/issues/135",
       "description": "",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6090607952",
+      "source": "github",
+      "title": "Human-QC seed: verify 17 additional cards before opening full reward filters",
+      "url": "https://github.com/Null0722/AnCard/issues/18",
+      "description": "## Objective\nSeed AnCard with 15–20 source-checked human-approved cards so fact-based reward/spending/fee filters and the in-memory comparison are useful. Existing approved Aer Lingus card counts toward this target; the candidates below are *not* approved yet.\n\n## Proposed owner-review queue (17 additional candidates)\n- [x] amex-gold — American Express Gold\n- [x] amex-platinum — American Express Platinum\n- [ ] amex-blue-cash-everyday — Blue Cash Everyday\n- [ ] amex-blue-cash-preferred — Blue Cash Preferred\n- [ ] chase-freedom-unlimited — Chase Freedom Unlimited\n- [ ] chase-freedom-flex — Chase Freedom Flex\n- [ ] chase-sapphire-preferred — Chase Sapphire Preferred\n- [ ] chase-sapphire-reserve — Chase Sapphire Reserve\n- [ ] cap-quicksilver — Capital One Quicksilver Rewards\n- [ ] cap-savor — Capital One Savor Rewards\n- [ ] cap-venture — Capital One Venture Rewards\n- [ ] cap-venture-x — Capital One Venture X Rewards\n- [ ] boa-customized-cash — Bank of America Customized Cash Rewards\n- [ ] citi-double-cash — Citi Double Cash\n- [ ] wells-active-cash — Wells Fargo Active Cash\n- [ ] wells-autograph — Wells Fargo Autograph\n- [ ] cap-discover-it — Discover it Cash Back\n\n## Required QC for every card\n- Open the current *official issuer* product and pricing pages; confirm issuer, card name, offer terms and the actual agreement's effective date.\n- Check annual and monthly fees, APR, qualifying categories, caps, earning rates, bonus eligibility/deadlines, redemption restrictions and disclosed protections; do not assume omitted fields are zero.\n- Compare every proposed candidate field with official disclosures. Correct stale offers, marketing exceptions and source URLs before setting humanVerified true.\n- Document reviewer, source links and review date in the Git-backed process. Mark true only with authorized human approval. Leave pending if uncertain.\n- Run npm test and inspect the rendered card and factual comparison against its official source before publishing.\n\n## Release sequencing\n- v1.1: Merge fact-first reviewed-first UX only after PR #17 CI and desktop/mobile/print visual QA.\n- v1.5: Improve the existing in-memory three-card comparison into a clearly accessible 2–4 card workbench, with neutral side-by-side terms and no recommendation score.\n- v2.0: Structured issuer-text / plain-English diffs, provenance and moderated community source submissions (issue templates and a reviewer-only publish gate).\n\nDo not auto-approve the 17 queued cards. This issue is a research checklist, not a verification certificate.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

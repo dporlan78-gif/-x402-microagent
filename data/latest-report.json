@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T11:09:45.128Z",
+  "generatedAt": "2026-11-15T17:48:40.673Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,8 +13,8 @@
       "micro bounty"
     ]
   },
-  "discovered": 32,
-  "eligible": 13,
+  "discovered": 33,
+  "eligible": 14,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -46,11 +46,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316304995",
+      "id": "github-6316305119",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4300",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/8\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4301",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/7\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -60,11 +60,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316305119",
+      "id": "github-6316304995",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4301",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/7\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4300",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/8\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -308,6 +308,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6405273551",
+      "source": "github",
+      "title": "Highlight paid videos",
+      "url": "https://github.com/Ivorisnoob/Koda/issues/379",
+      "description": "### Before suggesting\n\n- [x] I searched the existing issues\n- [x] I checked ROADMAP.md and this is not already planned there\n\n### What is the problem\n\nPlease highlight paid videos that can not be viewed and make a toggle to filter them just like \"Youtube SHORTS\" videos.\nPipePipe has that feature:\n\n<img width=\"720\" height=\"320\" alt=\"Screenshot_20261115_153315_PipePipe\" src=\"https://github.com/user-attachments/assets/a3360a7a-9057-4524-a1af-00526e730ad0\" />\n\nGreat work!!!\n\n### What should Koda do\n\n.\n\n### Which area\n\nSearch\n\n### Would this work without a YouTube account\n\nYes, it works entirely on-device or signed out\n\n### Anything else\n\n_No response_",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6272399927",
       "source": "github",
       "title": "Epic: Newsletter module (subscribers, delivery, tracking, analytics, paid issues)",
@@ -442,19 +457,18 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6023445365",
+      "id": "github-6404649675",
       "source": "github",
-      "title": "Fully paid draft invoices should remain drafts (paid != completed)",
-      "url": "https://github.com/InvoiceShelf/InvoiceShelf/issues/956",
-      "description": "### Issue filing prerequisites\n\n- [x] I've checked the [documentation](https://docs.invoiceshelf.com/).\n- [x] I've looked for similar issues both Open and Closed.\n- [x] I've tried clearing both cache and cookies in my browser or tried opening the app in the Incognito/InPrivate window.\n\n### Describe the bug\n\nRecording a payment that fully covers a draft invoice changes its status from DRAFT to COMPLETED, although the invoice has never been sent. It is no longer identifiable as a draft, and the completed status suggests that the invoice is finalized and, depending on the editing settings, no longer editable. There is no longer a draft status to indicate that work such as sending the invoice is still pending.\n\nReducing or deleting that payment can then change the same invoice back to DRAFT and make it editable again, depending on the configured editing restrictions. A payment correction can therefore reopen an invoice that appeared to be finalized, without any explicit action to reopen it.\n\n### Steps to Reproduce the issue\n\n1. Set retrospective edits to be disabled after sending an invoice.\n2. Create a draft invoice with a positive total and leave it unsent.\n3. Record a payment covering the full invoice amount.\n4. Open the invoice and check its status and edit permission.\n5. Reduce or delete the payment, then check the invoice status and edit permission again.\n\n### Expected behaviour\n\nThe invoice remains DRAFT, its paid_status becomes PAID, and the recorded payment remains associated with it. Its draft status continues to indicate that it has not yet been sent. Later payment corrections update the payment status without implicitly finalizing or reopening the draft.\n\nEditing follows the configured retrospective edit setting: a restriction based on sending should not lock an unsent draft, while payment-based restrictions should still apply.\n\n### Actual behaviour\n\nThe invoice becomes COMPLETED solely because it was fully paid. With editing disabled after sending, it can no longer be edited despite never having been sent. Its status hides the fact that it is still an unsent draft and gives the impression that no further action is needed.\n\nReducing or deleting the payment changes it back to DRAFT; with the same setting, it becomes editable again.\n\n### Docker\n\n- [x] App running in Docker Container.\n- [x] Docker container running behind Reverse proxy.\n\n### InvoiceShelf version\n\n2.4.7\n\n### PHP version\n\n8.4.27\n\n### Database type\n\nMariaDB\n\n### Database version\n\n10.11.18\n\n### Web Browser\n\nany\n\n### Server OS\n\nLinux\n\n### Reverse-proxy logs\n\n```irc logs\nnot relevant\n```\n\n### Laravel/PHP logs\n\n```irc logs\nnot relevant\n```",
-      "rewardUsd": 0,
+      "title": "[bounty] base64 stdlib tutorial: availability and payment",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/77",
+      "description": "### Component\n\nLanguage Syntax\n\n### Problem or motivation\n\nI’d like to claim the $25 micro-bounty for a tutorial on `stdlib/base64.ltl`, including runnable examples and RFC 4648 test vectors.\n\n### Proposed solution\n\nBefore starting, please confirm that the bounty is active and funded, the submission and contributor eligibility requirements, and whether payment through PayPal or bank transfer is possible.\n\n### Code examples\n\n```lateralus\n\n```\n\n### Alternatives considered\n\n_No response_\n\n### Is this a breaking change?\n\nNo",
+      "rewardUsd": 25,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
     },
     {
       "id": "github-6383676587",

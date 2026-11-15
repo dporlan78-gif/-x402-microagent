@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:48:40.673Z",
+  "generatedAt": "2026-11-15T22:56:23.833Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,8 +13,8 @@
       "micro bounty"
     ]
   },
-  "discovered": 33,
-  "eligible": 14,
+  "discovered": 34,
+  "eligible": 15,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -74,11 +74,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316305429",
+      "id": "github-6316305562",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4303",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/5\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4304",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/3\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -88,11 +88,11 @@
       "eligible": true
     },
     {
-      "id": "github-6316305562",
+      "id": "github-6316305429",
       "source": "github",
       "title": "[Bounty] 🪙 Bounty: Improve project documentation",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4304",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/3\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
+      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4303",
+      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/the3kingleo-cmyk/ruth/issues/5\n\n### 漏洞描述 / Description\n🪙 Bounty: Improve project documentation\n\n**Reward:** 💰 $100 USD\\n\\n**Description:** Provide a comprehensive README, usage examples, contribution guidelines, and a FAQ section.\\n\\n---\\n*Automated bounty created by Antigravity.*\n\n### 积分币奖励 / Coin Reward\n125 coins\n\n### 真实赏金（USD）/ Real Reward\n$100\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 100,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -308,6 +308,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6409092192",
+      "source": "github",
+      "title": "Complete #3714 native bug-issue paid-label guard acceptance",
+      "url": "https://github.com/WingedGuardian/GENesis-AGI/issues/4773",
+      "description": "## Remaining acceptance\n\nPR #3714 declares a post-merge work-issue trial and a repeat with a `bug` issue and Verification answers. Its original receipt explicitly skipped applying `devin-ready`, because that label can start a paid session.\n\nRead-only recovery now establishes the ordinary work and bug missing-label roundtrips on closed scratch issues #3730 and #3731. GitHub Actions added `premises-missing`, removed it after the corresponding answers were supplied, and the owner closed both issues. The bug label was retained.\n\nFive natural issues (#3729, #3732, #3751, #3752 and #3753) also have actual owner additions and bot removals of `devin-ready`, paired with bot comments whose first line is `(aside)` and that name the six missing premises. Their complete label-event histories contain no `bug` label. The scratch bug issue #3731 has no `devin-ready` event. This establishes real guard effects, but not the exact native bug-with-Verification repeat. It does not establish that this branch has never worked or that the guard is defective.\n\nCurrent verification passed 225 cases across the complete Actions-gate, shared-reader and plan-hook modules plus the changed importer-parity test. Another 314 independent original/current observations include actual script processes using an owned `gh` executable, verified-bug and opposite cases, fresh-state reads, failure propagation and first-write ordering. These are controlled mechanism evidence, not the missing native receipt.\n\n## Acceptance\n\n- Prefer recovering retained, attributable GitHub Actions evidence for the bug case during ordinary authorized work. If a new trial is necessary, an operator must first have explicit authorization for its label, possible paid-session and spending effects. This issue itself authorizes no paid launch or new application of `devin-ready`.\n- For a `bug` issue with five complete Verification answers but missing the six premise answers, confirm the real workflow removes `devin-ready` and posts the missing-six comment with `(aside)` on its first line. Confirm `premises-missing` follows the bug's Verification section independently of that paid-label decision.\n- Retain an opposite case showing that complete premise answers allow the paid label to remain, while the bug's own missing-label status still follows Verification. Recover existing evidence where possible; close any authorized scratch issues after the trial.\n- Record the actual workflow/code revision, issue, relevant run/job or label-event identifiers and comment links. Do not infer a run head from a bot comment. Add the evidence to #3714's verification obligation and read back its result.\n\nThe owner already accepted that the external integration can start before the guard removes the label. Preserve that stated limit. This task does not request a preventive hook, an atomic-startup guarantee, or a new guard design. #4045 is a separate native plan-approval acceptance task; #4182's token-created issue-label fix and #4158's later test failures do not supply this receipt.\n\n## Premise checks\n\n1. The missing requirement comes from #3714's exact E2E declaration and its explicit post-merge receipt. Actual retained label events and bot comments establish the completed effects; no assumed external API result is treated as a new measurement.\n2. Searched issues in all states for #3714, premise-gate and devin-ready acceptance, and read the related tasks. The two scratch issues are closed, #4045 concerns native plan approval, and no existing task found owns this native bug-guard repeat.\n3. Keep this verification only. Reuse the existing workflow, parser and evidence record; do not redesign the accepted post-label control or relax its six-premise requirement.\n4. The consumer is the repository's issue-triggered premise-gate workflow. An operator authorized for the possible paid integration effect can recover evidence or qualify a suitable ordinary event. The original post-merge obligation remains open until that acceptance is established or the owner explicitly accepts an equivalent.\n5. Counts are fresh retained populations: 225 current test cases, 314 independent observations, two scratch label roundtrips and five natural guard removals. They are not failure rates or a full repository-event census.\n6. A bounded acceptance task and sanitized receipt are expected, with no production-code PR. Any defect discovered while collecting evidence follows a separate normal change process; no running checkout, service, live data or spending authority is changed by filing this issue.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6405273551",
       "source": "github",
       "title": "Highlight paid videos",
@@ -442,19 +457,32 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6295558560",
+      "id": "github-6408464906",
       "source": "github",
-      "title": "[Program] Review open paid contributions",
-      "url": "https://github.com/HHS/simpler-grants-protocol/issues/1405",
-      "description": "### Summary\n\nReview pull requests on funded issues that are ready for review this sprint, if any come in. Right now that's #1403 for #355 (claimed by ahcrm-core, due Nov 17).\n\n### Acceptance criteria\n\n- [ ] Each pull request on a funded issue that's marked ready for review this sprint is reviewed against that issue's acceptance criteria\n- [ ] #355 has a comment checking in with the contributor and reminding them to email commongrants-contributors@agile6.com so we can reach them about payment\n",
-      "rewardUsd": 0,
+      "title": "[bounty] stdlib uuid module tutorial",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/95",
+      "description": "Hi maintainers,\n\nI would like to claim the recurring $25 micro-bounty for authoring a comprehensive tutorial and test suite for the `stdlib/uuid` module (UUIDv4 and UUIDv7 generation, parsing, validation, and serialization per RFC 4122 & RFC 9562).\n\n### Scope & Deliverables\n- **Tutorial Article:** `docs/blog/uuid-tutorial.ltlml` detailing UUID generation, timestamp extraction from UUIDv7, RFC 4122 version/variant bit verification, and error handling.\n- **Test Suite:** `tests/test_stdlib_uuid.py` validating 100% test vectors across all targets (Python, JS, C).\n- **Compliance:** 100% original work, MIT licensed, signed-off commit (`git commit -s`), and passing tests.\n\nPull request is ready and will be linked to this issue.\n\n### Payout Details\n- **PayPal:** `askgsm@live.fr` / https://paypal.me/asskoure\n- **EVM (Base / Ethereum):** `0xC10373008eFb38192C87C375ac63aB12E27C684C`\n- **Ko-Fi:** https://ko-fi.com/asskoure\n",
+      "rewardUsd": 25,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
+    },
+    {
+      "id": "github-6409374588",
+      "source": "github",
+      "title": "[bounty] stdlib.csv tutorial — availability and reservation request",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/100",
+      "description": "Hi maintainers,\n\nI would like to request reservation of the $25 recurring micro-bounty for a tutorial on `stdlib.csv`, as described in `BOUNTIES.md`.\n\nProposed deliverable:\n- A focused tutorial covering parsing rows and headers and generating CSV.\n- A runnable example using synthetic data, with a pinned expected-output fixture.\n- Verification against an agreed repository commit and documentation of the module's actual supported behavior.\n\nBefore starting, could you confirm:\n1. That this tutorial is available and can be reserved for me.\n2. The $25 reward, acceptance criteria and intended location for the tutorial.\n3. A payment route available to an Argentina-based contributor and which payment schedule applies: the micro-bounty section mentions weekly payment, while the general rules say within 14 days of merge.\n\nI use AI-assisted development with review and testing. Once assignment, scope and payment arrangements are confirmed, I can propose delivery timing.\n\nThe email published in the policy returned a permanent 550 5.1.1 delivery failure, so I am using the issue channel specified there. This is a reservation inquiry; work has not started.\n\nThank you,\nAlvaro Ruggeri\n",
+      "rewardUsd": 25,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
     },
     {
       "id": "github-6404649675",
@@ -482,20 +510,6 @@
       "risk": 0.15,
       "expectedProfitUsd": 450,
       "profitPerHourUsd": 5400,
-      "eligible": true
-    },
-    {
-      "id": "github-5950653348",
-      "source": "github",
-      "title": "[Bounty] [TEST BOUNTY] Fix typo in README",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4061",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/jomaaabbe78-spec/bookningsapp/issues/1\n\n### 漏洞描述 / Description\n[TEST BOUNTY] Fix typo in README\n\n**Bounty: $50**\n\nThere is a typo in README.md: \"Welcom\" should be \"Welcome\".\n\n**Reward:** $50 via PayPal/Crypto\n\n**Contact:** DM for payment details\n\n### 积分币奖励 / Coin Reward\n62 coins\n\n### 真实赏金（USD）/ Real Reward\n$50\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 50,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 50,
-      "profitPerHourUsd": 600,
       "eligible": true
     }
   ]

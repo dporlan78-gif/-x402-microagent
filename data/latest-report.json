@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T04:38:29.335Z",
+  "generatedAt": "2026-11-17T14:36:17.516Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,8 +13,8 @@
       "micro bounty"
     ]
   },
-  "discovered": 34,
-  "eligible": 15,
+  "discovered": 36,
+  "eligible": 17,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -233,6 +233,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6437994389",
+      "source": "github",
+      "title": "[Feature Request] Let parents cash in a reward for a child from Deduct",
+      "url": "https://github.com/Highfivery/Pointsy/issues/189",
+      "description": "Hi! As a parent, I'd sometimes like to hand out a reward right away, without asking my kid to open the app and request it first. For example, they ask for ice cream and have enough points, so I just want to say \"sure\" and take care of it in the app myself.\n\n## Idea\n\nWhen I give points with **Award**, I can pick one of the chores. It would be nice if **Deduct** worked the same way, with a list of rewards to pick from:\n\n- Picking a reward fills in its name and cost, just like picking a chore does for Award.\n- The points come off immediately and it's recorded as that reward, so the kid's history shows \"Ice cream\" instead of an anonymous deduction. Since I'm handing it over right then, it doesn't need to go through approval or \"Awaiting delivery\".\n- The usual rules for redeeming still apply, e.g. it can't be used if the kid doesn't have enough points available. \n- Typing a custom amount and reason would still work as it does now.\n\nRight now I can switch to my kid's profile, request the reward there and then approve it from my own profile, or just deduct the points by hand. Both work, but this would make it a one-step thing and keep the history neat.\n\n---\n\nAnd thanks for the quick replies to my last two requests! The lifetime-points milestones are great, and thanks for pointing me to custom categories. I'd completely missed that they already existed, so the new \"New category\" button in the chore editor is a nice touch.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6300394316",
       "source": "github",
       "title": "P0 · Commercial E2E: first approved offerwall → funded conversion → paid user reward",
@@ -293,21 +308,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6176368234",
-      "source": "github",
-      "title": "Display Cash Out and Continue buttons after a reward (0.5 hrs)",
-      "url": "https://github.com/etk005/cse110-team-23/issues/135",
-      "description": "",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6409092192",
       "source": "github",
       "title": "Complete #3714 native bug-issue paid-label guard acceptance",
@@ -358,6 +358,21 @@
       "title": "Define the optional paid edition",
       "url": "https://github.com/Yang-128/my-ai-agent/issues/77",
       "description": "## Phase\n\nPhase 4 — Product Experience & Personalization\n\n## Parent issue\n\n#23 — Phase 4 — Product Experience & Personalization\n\n## Objective\n\nSpecify optional paid features and their value, keeping the core free experience useful and making pricing and feature differences transparent.\n\n## Definition of done\n\n- The functionality is implemented and integrated into My AI Agent.\n- Expected behavior and important failure cases are tested.\n- Security, permissions, compatibility, and error handling are addressed where relevant.\n- User-facing behavior and configuration are documented.\n- The parent phase issue is updated to reflect completion.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6444208626",
+      "source": "github",
+      "title": "Replace Overview paid-bills summary with shared family paid-bills history",
+      "url": "https://github.com/111chap/FBT-PWA/issues/12",
+      "description": "## Problem\nThe paid-bills summary in Overview takes space away from current obligations. Family members need a dedicated place to review past paid bills and their payment records.\n\nThe current Overview card shows a **paid-bill count**, rather than a peso total. Remove that paid-bills summary card (and any paid-total equivalent) from Overview as requested.\n\n## Requested behavior\nAdd a dedicated **Paid bills history** view that every signed-in family member can access. One family shares the history; it must not be restricted to the administrator or only the person who recorded a payment.\n\n## Acceptance criteria\n- [ ] Remove the paid-bills summary card from Overview and rebalance the remaining layout on desktop and phones.\n- [ ] Provide a clearly discoverable Paid bills history entry available to administrators and ordinary family members.\n- [ ] List fully paid bills with title/type or category, original bill amount, total recorded payments, due date, and date fully paid.\n- [ ] Allow opening a bill to review its individual payment amounts/dates and who recorded each payment.\n- [ ] Clearly distinguish the bill’s primary payer from the member who recorded a payment; do not imply the recorder actually transferred the money.\n- [ ] Default to shared family history, with an optional primary-payer/member filter for reviewing each member’s assigned bills. Offer a separately labelled Recorded by filter if payment-recorder filtering is included.\n- [ ] Include completed loan installments, with a link or clear reference to their parent loan.\n- [ ] Keep partially paid bills in the active/unpaid views until their balance reaches zero; retain their existing payment details.\n- [ ] Define and label Date fully paid consistently. With the current amount/date records, use the latest payment date among payments settling that bill; distinguish payment date from entry/audit timestamp.\n- [ ] Provide search, inclusive date-range filters, amount sorting, a clear/reset control, and a useful empty state. Filter changes update results automatically without Apply or confirmation.\n- [ ] Preserve primary-payer and payment-recorder references through account renaming/deactivation, without rewriting payment attribution.\n- [ ] Paid history is read-only: viewing, searching, and filtering must not modify balances or create business-change audit events. Existing administrator-only audit access remains separate.\n- [ ] Support reviewing history from an opted-in, timestamped offline snapshot; changes made by other members appear after reconnection and refresh. Do not introduce offline writes.\n- [ ] Use pagination or another appropriate approach if the history becomes large; keep the view usable on phones and with keyboard/screen-reader navigation.\n\n## Verification\nCover administrator and ordinary-member access to the same family history; fully paid versus partial bills; multiple payments; completed loan installments; primary payer versus recorder filters; date/amount boundaries and ties; renamed/deactivated accounts; offline/reconnect behavior; and confirmation that history browsing creates no financial writes.\n\nCoordinate with #2 (live filters), #8 (primary payer and account history), and #11 (Loan / Utilities entry). Preserve the transaction/audit protections in #9 and #10.\n\n## Scope\nThis issue requests a history-view improvement. Do not delete paid bills, payments, or audit records when removing the Overview summary.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -442,19 +457,18 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6433430755",
+      "id": "github-6441036930",
       "source": "github",
-      "title": "Mark bill occurrences as paid",
-      "url": "https://github.com/sapan-khadka/familyflow/issues/5",
-      "description": "## User story\nAs a parent, I want to mark a bill occurrence as paid so it is not counted twice in future projections.\n\n## Acceptance criteria\n- [ ] Track paid state per occurrence rather than the entire series\n- [ ] use a documented balance convention to avoid double deductions\n- [ ] test paid and unpaid occurrences.\n\n## Planning\nPriority follows initial backlog order; revise after feedback.\nProposed allocation: Later.\nInitial status: Backlog. This issue does not claim implementation is complete.\n\n## Definition of Done\nWorks locally without network dependencies; relevant automated tests pass; changes are reviewed and committed; limitations are documented.\n",
-      "rewardUsd": 0,
+      "title": "[bounty] benchmark-ingest",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/156",
+      "description": "Claiming `[bounty] benchmark-ingest` ($250) per `BOUNTIES.md`.\n\nPlan:\n- Extend `benchmarks/run_benchmarks.py` with a `stdlib` group that assembles one combined source from `stdlib/xxhash.ltl`, `stdlib/lz4.ltl`, `std/crypto/chacha20.ltl` and `stdlib/aho_corasick.ltl`, plus the radix sort from `stdlib/algorithms.ltl`.\n- Five micro-benchmarks, same inputs across backends: xxhash64 over 2 MB, lz4 compress+decompress round-trip of 4 MB, chacha20 over 1 MB, aho-corasick with 1,000 patterns over 1 MB, radix_sort_u32 on 100,000 keys.\n- Matching reference implementations in `benchmarks/reference/bench.py` and `bench.js` so the Python and Node numbers come from the same harness, not from a separate script.\n- Commit `benchmarks/results/stdlib_results.md` with the table produced by the harness, plus a note on the machine and iteration count.\n\nWorking with signed-off commits (`git commit -s`), ASCII only per CONTRIBUTING. Payout preference: Ko-Fi. Will link the PR here once the numbers are reproducible.\n\nNote for transparency: I use AI assistance while writing code, with the harness run locally and every result in the table reproduced before I post it.\n",
+      "rewardUsd": 250,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 250,
+      "profitPerHourUsd": 3000,
+      "eligible": true
     },
     {
       "id": "github-6408464906",
@@ -490,6 +504,20 @@
       "title": "[bounty] base64 stdlib tutorial: availability and payment",
       "url": "https://github.com/bad-antics/lateralus-lang/issues/77",
       "description": "### Component\n\nLanguage Syntax\n\n### Problem or motivation\n\nI’d like to claim the $25 micro-bounty for a tutorial on `stdlib/base64.ltl`, including runnable examples and RFC 4648 test vectors.\n\n### Proposed solution\n\nBefore starting, please confirm that the bounty is active and funded, the submission and contributor eligibility requirements, and whether payment through PayPal or bank transfer is possible.\n\n### Code examples\n\n```lateralus\n\n```\n\n### Alternatives considered\n\n_No response_\n\n### Is this a breaking change?\n\nNo",
+      "rewardUsd": 25,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
+    },
+    {
+      "id": "github-6445476653",
+      "source": "github",
+      "title": "[bounty] stdlib.xxhash tutorial",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/173",
+      "description": "I propose the recurring tutorial micro-bounty for `stdlib/xxhash.ltl`: **XXH64 in practice: comparing content and detecting changes**.\n\nBefore a submission, could a maintainer confirm:\n- that this specific tutorial topic is available;\n- that sponsor funding is available and the advertised $25 applies to an accepted tutorial;\n- that an AI-assisted contribution from `n1ozzy` is eligible, including the one-bounty-per-person-per-quarter rule and how the applicable quarter is determined?\n\nScope: the actual `hash64(buf, seed)` implementation; byte inputs and unsigned 64-bit output; seeds; deterministic content comparisons; collisions; why XXH64 is unsuitable for passwords, signatures, MACs or protection against malicious modification. No unmeasured performance claims.\n\nPlanned artifacts: `docs/blog/xxhash-tutorial.ltlml` in the repository's format, `examples/xxhash_demo.ltl`, pinned independent XXH64 vectors, a test running the Lateralus example, reproduction instructions, and `BOUNTIES-LOG.md` if required. Validation covers empty input, ASCII a and hello, lengths 31/32/33/64, seeds 0/1, repeatability and selected data changes. The independent oracle will be canonical Cyan4973/xxHash with its version recorded. Import/backend limitations and discrepancies will be reported explicitly; production code changes are outside this proposal.\n\n**AI disclosure:** Research, writing and local verification will use AI assistance. This issue does not assert assignment, human review, acceptance or payment. I did not find a separate AI contribution policy in the current repository; please point me to any applicable requirements.\n\nI understand the first-come/first-merged rules and one-bounty-per-person-per-quarter limit. The advertised $25 is not an awarded payment. Before confirmation I will spend at most 45 minutes on local feasibility and a first draft; silence will not be treated as consent. A tutorial PR will wait for confirmation of the topic and conditions. Signed-off commits require the account owner's separate approval; no DCO, CLA or authorship declaration is signed here. No payout details are included.\n",
       "rewardUsd": 25,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

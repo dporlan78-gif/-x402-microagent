@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T22:16:34.584Z",
+  "generatedAt": "2026-11-17T04:38:29.335Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -442,11 +442,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6026677812",
+      "id": "github-6433430755",
       "source": "github",
-      "title": "Paid membership",
-      "url": "https://github.com/Joeychez23/Chess/issues/89",
-      "description": "**Score:** 45 · **Area:** Platform\n\nA paid plan that unlocks extra features.\n\n### Why it's a 45\nStripe checkout, webhooks, and locking features behind it.\n\n### Sub-issues\nSplit into the sub-issues below.",
+      "title": "Mark bill occurrences as paid",
+      "url": "https://github.com/sapan-khadka/familyflow/issues/5",
+      "description": "## User story\nAs a parent, I want to mark a bill occurrence as paid so it is not counted twice in future projections.\n\n## Acceptance criteria\n- [ ] Track paid state per occurrence rather than the entire series\n- [ ] use a documented balance convention to avoid double deductions\n- [ ] test paid and unpaid occurrences.\n\n## Planning\nPriority follows initial backlog order; revise after feedback.\nProposed allocation: Later.\nInitial status: Backlog. This issue does not claim implementation is complete.\n\n## Definition of Done\nWorks locally without network dependencies; relevant automated tests pass; changes are reviewed and committed; limitations are documented.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -499,17 +499,17 @@
       "eligible": true
     },
     {
-      "id": "github-6383676587",
+      "id": "github-6436994632",
       "source": "github",
-      "title": "🎯 Bounty Alert: 7 New Opportunityies found",
-      "url": "https://github.com/Rohank143/BountyScout/issues/103",
-      "description": "### Active Bounty Scan Results\n\n**Scan Time:** 2026-11-14 02:04 UTC\n\n#### 1. [🎯 Bounty Alert: 9 New Opportunityies found](https://github.com/dev-kp-eloper/BountyScout/issues/1761)\n- **Repository:** [dev-kp-eloper/BountyScout](https://github.com/dev-kp-eloper/BountyScout)\n- **Comments:** 0\n- **Last Updated:** 2026-11-14T02:01:34Z\n\n#### 2. [Bug bounties on the awareness dashboard — programs + disclosed reports tab](https://github.com/AlexKollar/Apex/issues/190)\n- **Repository:** [AlexKollar/Apex](https://github.com/AlexKollar/Apex)\n- **Comments:** 1\n- **Last Updated:** 2026-11-14T01:54:07Z\n\n#### 3. [[Track 2 pre-notice] Bounded transfer fan-out: throwaway wallets, concurrent micro-XE sends on ldn.core.test.network — ≤5 tx/s, ≤60 s](https://github.com/xeprotocol/xe/issues/549)\n- **Repository:** [xeprotocol/xe](https://github.com/xeprotocol/xe)\n- **Comments:** 1\n- **Last Updated:** 2026-11-14T01:54:02Z\n\n#### 4. [Railway 赏金：有 4 条值得抢](https://github.com/HCTDIP/corps-jobs/issues/190)\n- **Repository:** [HCTDIP/corps-jobs](https://github.com/HCTDIP/corps-jobs)\n- **Comments:** 0\n- **Last Updated:** 2026-11-14T01:48:22Z\n\n#### 5. [[Escrowed $450 USDC] Fix signature-base line wrapping ceiling and align `@signature-params` witness (`canonicalize_http_sig_frames`)](https://github.com/IES-BoilerRoom/rfc9421-http-signature-gateway/issues/1)\n- **Repository:** [IES-BoilerRoom/rfc9421-http-signature-gateway](https://github.com/IES-BoilerRoom/rfc9421-http-signature-gateway)\n- **Comments:** 1\n- **Last Updated:** 2026-11-13T22:55:44Z\n\n#### 6. [[Escrowed $450 USDC] Fix BGP attribute chunk boundary and resolve 4-AS preference matrix trace invariant (`normalize_bgp_update_frames`)](https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/1)\n- **Repository:** [IES-BoilerRoom/bgp-med-oscillation-verifier](https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier)\n- **Comments:** 3\n- **Last Updated:** 2026-11-13T22:55:44Z\n\n#### 7. [[Escrowed $600 USDC] Eliminate persistent route-reflector MED cycle across confederation peers (`bgp-med-oscillation-verifier`)](https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier/issues/2)\n- **Repository:** [IES-BoilerRoom/bgp-med-oscillation-verifier](https://github.com/IES-BoilerRoom/bgp-med-oscillation-verifier)\n- **Comments:** 1\n- **Last Updated:** 2026-11-13T22:55:43Z\n\n",
-      "rewardUsd": 450,
+      "title": "[bounty] stdlib.hash tutorial",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/141",
+      "description": "Claiming the published $25 recurring stdlib tutorial bounty (BOUNTIES.md, \"Recurring micro-bounties\") for `stdlib/hash.ltl`, before starting work, so it can be marked taken. I found no open claim or tutorial PR for this module.\n\nWhat I will submit:\n\n- A blog-post tutorial at `docs/blog/hash-tutorial.md` covering the module's string hashes (FNV-1a 32/64, DJB2, SDBM), its checksums (checksum8, Fletcher-16, Adler-32), and `bucket`.\n- A runnable example at `examples/hash_tutorial.ltl` with pinned test vectors, a combined-source runner at `scripts/run_hash_tutorial.py`, and a pytest at `tests/test_hash_tutorial.py` asserting the exact output. The runner uses the same approach as the recent levenshtein/ringbuf tutorial claims: the Python backend does not yet resolve stdlib imports, so it runs the unchanged module source combined with the example.\n- An entry in `BOUNTIES-LOG.md`.\n\nVerification already done against the checked-out module (lateralus-lang 3.2.0, main commit `cdcec06`): 21 candidate vectors checked against canonical references (published FNV-1a values, RFC 1950's Adler-32 of \"Wikipedia\" = 300286872, Fletcher-16 of \"abcde\" = 51440, published DJB2/SDBM values) — all match. Two deviations will be documented honestly in the tutorial rather than hidden:\n\n- `fnv1a_64` never masks to 64 bits, so it matches the published spec only for the empty string.\n- `combine` (and therefore `hash_list`) currently fails on the Python backend: it divides with `/` (float division) and feeds the result to `xor`.\n\nThe module itself will not be modified. The example defines the two backend helpers the module expects (`xor`, `char_code`) in the combined source, the same compatibility approach used by other recent tutorial claims.\n\nThis is AI-assisted work, and it is my one bounty under the one-per-person-per-quarter rule. No assignment, acceptance, or payment is assumed — all at the maintainer's discretion under BOUNTIES.md. If the topic is already taken or the bounty is paused, please say so here and I will stop.\n",
+      "rewardUsd": 25,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 450,
-      "profitPerHourUsd": 5400,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
       "eligible": true
     }
   ]

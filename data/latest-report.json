@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T14:36:17.516Z",
+  "generatedAt": "2026-11-17T22:58:07.146Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,8 +13,8 @@
       "micro bounty"
     ]
   },
-  "discovered": 36,
-  "eligible": 17,
+  "discovered": 37,
+  "eligible": 18,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -293,11 +293,26 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5967654306",
+      "id": "github-6447880907",
       "source": "github",
-      "title": "Prevent hosting cash rewards from replaying on reload or retry",
-      "url": "https://github.com/Trawis/T5B1/issues/497",
-      "description": "## Summary\n\n**More Hosting Deals** can pay the same cash reward again after a noon reload or a failed retry.\n\n## Steps to Reproduce\n\n1. Enable the feature and receive its noon payout.\n2. Reload a save during noon, or retry after a partial payment failure.\n3. Check whether an earlier reward is paid again.\n\n## Expected Behavior\n\nEach eligible scheduled reward is paid once, without replaying previous credits.\n\n## Actual Behavior\n\nThe payout flag resets on load and is marked complete only after the payment loop. Replay is source-verified; in-game reproduction is pending.\n\n## Environment\n\nIdentified against the current vendored game target.\n\n## Additional Context\n\n- Separate safe deal catch-up from cash payment, or use verified persistent payment tracking.\n- Decide whether enabling at noon should grant the immediate payout.\n- Preserve amounts and eligible deal types.\n- Test repeated reloads, enable/disable at noon, the next noon and partial failures.",
+      "title": "A taken call completes when its officer fines the suspect at the site, and pays once",
+      "url": "https://github.com/Life-Framework/Life-Framework/issues/2478",
+      "description": "<!-- slice-card v1 -->\n**Slice** of #234. Template and rules: `docs/process/slice-card.md`. Brief: `tools\\cli slice brief <this issue>`.\n\n## Card\n- key: M2\n- parent: #234\n- type: system\n- tier: T2\n- model: opus\n- machines: test\n- budget: 45 min / 60 calls\n- owns: `addons/LifeFramework/Scripts/Game/Feature/Police/LF_PoliceCallPay.c`, `addons/LifeFramework/Scripts/Game/Feature/Police/LF_FineTicketRole.c`, `addons/LifeFramework/Scripts/Game/Feature/Police/LF_PoliceEvents.c`, `addons/LifeFramework/Configs/Police/LF_Police.conf`, `addons/LifeFramework/Scripts/Game/Tests/LF_Test_PoliceCallPay.c`\n- depends: #2477\n- acceptance: test LF_Test_PoliceCallPay\n- risk: money\n- release-blocker: no\n\n## Capability\nWhen the officer holding a call writes a fine ticket to the call's suspect within the call's radius of its\nsite, the call completes and the officer is paid the call reward in cash, exactly once.\n\n## Acceptance\nLF_Test_PoliceCallPay (WORLD): a taken call; a fine by another officer does nothing; a fine by the holder\noutside the radius does nothing; a fine by the holder inside it completes the call and pays the reward; a\nsecond fine pays nothing. Red before the hook exists.\n\n## Notes\n- Publish a new `LF_OnFineIssued` (uids and the officer's position) appended to `LF_PoliceEvents.c`, from\n  `LF_FineTicketRole.c:125` after `LF_FineTickets.Issue` succeeds; `LF_PoliceCallPay` subscribes.\n- Pay cash the way `LF_DutyPay.PayAtClockOut` does (MoneyStack, not virtual cash). Reward and radius are new\n  police config fields in the owner schema (defaults 150 cash, 50 m).\n- An independent reviewer (interrogate) reads the diff.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6450377752",
+      "source": "github",
+      "title": "Paid subscriptions",
+      "url": "https://github.com/cultron/open-newsletter/issues/34",
+      "description": "## User story\n\nAs a writer, I want to charge for a paid tier through my own Stripe account, so that I keep the revenue minus Stripe's fees.\n\n## Acceptance criteria\n\n- [ ] The owner connects their own Stripe account, and the project adds no fee of its own\n- [ ] Readers pay through Stripe Checkout on a monthly or yearly price\n- [ ] A Stripe webhook sets the subscriber's tier and paid-through date, and handles cancellations, refunds and failed payments\n- [ ] A post can be marked paid-only. The web page shows a preview with a paywall, and the email goes to paying readers only\n- [ ] Paying readers sign in on the web with an emailed link to read paid posts\n- [ ] The preference center links to Stripe's customer portal\n- [ ] Tests replay Stripe's webhook events for each case\n\n## Who does the work\n\n- **Apso generates:** the tier fields and storage for plans and payments.\n- **Stripe provides:** checkout, billing and the customer portal.\n- **Hand-written:** the Stripe webhook, the paywall, reader sign-in and the paying-reader segment.\n\n## Estimate\n\n**Size L.** It adds a second kind of user, a payment provider and gated content.\n\nThe README defines the sizes. They are estimates, since nothing here has been built.\n\n## Notes and sources\n\n- Substack's page says \"Writers keep 90% of their revenue minus credit card fees.\" Beehiiv and Ghost say they take no cut of paid subscriptions, per [docs/reference-products.md](../blob/main/docs/reference-products.md).\n- No paid service is set up until the owner asks for this issue.\n\n## Depends on\n\n#14, #17, #19\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -368,21 +383,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6444208626",
-      "source": "github",
-      "title": "Replace Overview paid-bills summary with shared family paid-bills history",
-      "url": "https://github.com/111chap/FBT-PWA/issues/12",
-      "description": "## Problem\nThe paid-bills summary in Overview takes space away from current obligations. Family members need a dedicated place to review past paid bills and their payment records.\n\nThe current Overview card shows a **paid-bill count**, rather than a peso total. Remove that paid-bills summary card (and any paid-total equivalent) from Overview as requested.\n\n## Requested behavior\nAdd a dedicated **Paid bills history** view that every signed-in family member can access. One family shares the history; it must not be restricted to the administrator or only the person who recorded a payment.\n\n## Acceptance criteria\n- [ ] Remove the paid-bills summary card from Overview and rebalance the remaining layout on desktop and phones.\n- [ ] Provide a clearly discoverable Paid bills history entry available to administrators and ordinary family members.\n- [ ] List fully paid bills with title/type or category, original bill amount, total recorded payments, due date, and date fully paid.\n- [ ] Allow opening a bill to review its individual payment amounts/dates and who recorded each payment.\n- [ ] Clearly distinguish the bill’s primary payer from the member who recorded a payment; do not imply the recorder actually transferred the money.\n- [ ] Default to shared family history, with an optional primary-payer/member filter for reviewing each member’s assigned bills. Offer a separately labelled Recorded by filter if payment-recorder filtering is included.\n- [ ] Include completed loan installments, with a link or clear reference to their parent loan.\n- [ ] Keep partially paid bills in the active/unpaid views until their balance reaches zero; retain their existing payment details.\n- [ ] Define and label Date fully paid consistently. With the current amount/date records, use the latest payment date among payments settling that bill; distinguish payment date from entry/audit timestamp.\n- [ ] Provide search, inclusive date-range filters, amount sorting, a clear/reset control, and a useful empty state. Filter changes update results automatically without Apply or confirmation.\n- [ ] Preserve primary-payer and payment-recorder references through account renaming/deactivation, without rewriting payment attribution.\n- [ ] Paid history is read-only: viewing, searching, and filtering must not modify balances or create business-change audit events. Existing administrator-only audit access remains separate.\n- [ ] Support reviewing history from an opted-in, timestamped offline snapshot; changes made by other members appear after reconnection and refresh. Do not introduce offline writes.\n- [ ] Use pagination or another appropriate approach if the history becomes large; keep the view usable on phones and with keyboard/screen-reader navigation.\n\n## Verification\nCover administrator and ordinary-member access to the same family history; fully paid versus partial bills; multiple payments; completed loan installments; primary payer versus recorder filters; date/amount boundaries and ties; renamed/deactivated accounts; offline/reconnect behavior; and confirmation that history browsing creates no financial writes.\n\nCoordinate with #2 (live filters), #8 (primary payer and account history), and #11 (Loan / Utilities entry). Preserve the transaction/audit protections in #9 and #10.\n\n## Scope\nThis issue requests a history-view improvement. Do not delete paid bills, payments, or audit records when removing the Overview summary.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6259292958",
       "source": "github",
       "title": "Upgrade cf workers plan to paid for resolve e2e issues",
@@ -412,11 +412,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6271857885",
+      "id": "github-5910709033",
       "source": "github",
-      "title": "Epic: Creator earnings in GEN credits (tips, paid subscriptions, paid articles)",
-      "url": "https://github.com/genfeedai/genfeed.ai/issues/9714",
-      "description": "## Goal\n\nReaders can pay creators in GEN credits, and creators spend what they earn on generation inside Genfeed. This completes the creator publishing loop started in #9666: write, publish, email subscribers (#9665), get paid.\n\nDocument only. The week of 11-09 is a coding lock, so no code is scheduled.\n\n## Today (verified in code at master `e0d9b108`)\n\n- `CreditBalance` and `CreditTransaction` belong to an organization or billing account, never to a user (`packages/prisma/prisma/schema.prisma`).\n- Transaction categories are `add`, `deduct`, `expire`, `reset`, `rollover`, `refund`, `byok-usage` (`packages/contracts/src/enums/credit.enum.ts`). There is **no transfer between accounts**, no tip, no paid subscription to a creator.\n- Stripe is used only for Genfeed's own plans (`Subscription`, `UserSubscription`). No Stripe Connect and no payout code.\n- `Article` and `Newsletter` have no price or access fields. Every published article is public.\n\n## Scope\n\nEarn-and-spend only: earned credits are spent on generation inside Genfeed and are not withdrawable. This avoids payouts, KYC and tax handling. Cash-out is a separate decision (see the last issue).\n\n## Order\n\n1. Credit transfer ledger (everything else builds on it).\n2. Tips.\n3. Paid subscriptions to a creator.\n4. Paid articles and newsletter issues.\n5. Creator earnings view.\n6. Decision: cash-out.\n\n## Decisions needed before building\n\n- Platform fee on each payment (percentage, or none at first).\n- Whether earned credits expire like purchased ones, or never expire.\n- Whether earned credits count toward plan limits and the low-credits banner.\n- Who can pay: signed-in Genfeed users only, or a guest checkout that creates an account.\n\n## Done when\n\nA reader with credits tips a creator, subscribes to them, and unlocks a paid article. The creator's balance rises by the amount minus the fee, and the creator spends it on a generation. Each sub-issue carries its own finish condition and evidence.",
+      "title": "Issue invoices for paid sessions and bundles",
+      "url": "https://github.com/vbendas/Somove/issues/3",
+      "description": "Clients have no invoice or receipt for what they pay, while the seeded marketing copy says \"EU-compliant invoices provided\".\n\n**Current state**\n- `web/src/` contains no invoice code.\n- Checkout sessions are created in `web/src/app/actions/booking.ts` and in `createStripeCheckout` (`web/src/app/actions/stripe.ts`), without `invoice_creation`.\n- `web/supabase/migrations/00028_seed_homepage_sections.sql` and `00030_neutral_branding.sql` contain the \"Invoice provided\" claim.\n- `web/src/app/(client)/my-sessions/[id]/page.tsx` shows the amount only.\n\n**Scope**\n- Enable Stripe Checkout invoice creation on both checkout paths, with the therapist's name and the line-item description.\n- Store the invoice id and hosted URL on `payments` from the `checkout.session.completed` webhook (new migration).\n- Add a \"Download invoice\" link on the client session page and on therapist earnings rows.\n- Show the refund state next to the invoice when a payment is refunded.\n\n**Acceptance criteria**\n- [ ] A paid single session and a paid bundle each produce an invoice\n- [ ] The invoice link is visible only to that client and that therapist\n- [ ] Free and credit-paid sessions show no invoice link\n- [ ] Webhook test covers storing the invoice reference\n\n_Roadmap: Payments: invoices, refunds and multi-currency support ([ROADMAP.md](../blob/main/ROADMAP.md))_\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -427,11 +427,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5910709033",
+      "id": "github-6271857885",
       "source": "github",
-      "title": "Issue invoices for paid sessions and bundles",
-      "url": "https://github.com/vbendas/Somove/issues/3",
-      "description": "Clients have no invoice or receipt for what they pay, while the seeded marketing copy says \"EU-compliant invoices provided\".\n\n**Current state**\n- `web/src/` contains no invoice code.\n- Checkout sessions are created in `web/src/app/actions/booking.ts` and in `createStripeCheckout` (`web/src/app/actions/stripe.ts`), without `invoice_creation`.\n- `web/supabase/migrations/00028_seed_homepage_sections.sql` and `00030_neutral_branding.sql` contain the \"Invoice provided\" claim.\n- `web/src/app/(client)/my-sessions/[id]/page.tsx` shows the amount only.\n\n**Scope**\n- Enable Stripe Checkout invoice creation on both checkout paths, with the therapist's name and the line-item description.\n- Store the invoice id and hosted URL on `payments` from the `checkout.session.completed` webhook (new migration).\n- Add a \"Download invoice\" link on the client session page and on therapist earnings rows.\n- Show the refund state next to the invoice when a payment is refunded.\n\n**Acceptance criteria**\n- [ ] A paid single session and a paid bundle each produce an invoice\n- [ ] The invoice link is visible only to that client and that therapist\n- [ ] Free and credit-paid sessions show no invoice link\n- [ ] Webhook test covers storing the invoice reference\n\n_Roadmap: Payments: invoices, refunds and multi-currency support ([ROADMAP.md](../blob/main/ROADMAP.md))_\n",
+      "title": "Epic: Creator earnings in GEN credits (tips, paid subscriptions, paid articles)",
+      "url": "https://github.com/genfeedai/genfeed.ai/issues/9714",
+      "description": "## Goal\n\nReaders can pay creators in GEN credits, and creators spend what they earn on generation inside Genfeed. This completes the creator publishing loop started in #9666: write, publish, email subscribers (#9665), get paid.\n\nDocument only. The week of 11-09 is a coding lock, so no code is scheduled.\n\n## Today (verified in code at master `e0d9b108`)\n\n- `CreditBalance` and `CreditTransaction` belong to an organization or billing account, never to a user (`packages/prisma/prisma/schema.prisma`).\n- Transaction categories are `add`, `deduct`, `expire`, `reset`, `rollover`, `refund`, `byok-usage` (`packages/contracts/src/enums/credit.enum.ts`). There is **no transfer between accounts**, no tip, no paid subscription to a creator.\n- Stripe is used only for Genfeed's own plans (`Subscription`, `UserSubscription`). No Stripe Connect and no payout code.\n- `Article` and `Newsletter` have no price or access fields. Every published article is public.\n\n## Scope\n\nEarn-and-spend only: earned credits are spent on generation inside Genfeed and are not withdrawable. This avoids payouts, KYC and tax handling. Cash-out is a separate decision (see the last issue).\n\n## Order\n\n1. Credit transfer ledger (everything else builds on it).\n2. Tips.\n3. Paid subscriptions to a creator.\n4. Paid articles and newsletter issues.\n5. Creator earnings view.\n6. Decision: cash-out.\n\n## Decisions needed before building\n\n- Platform fee on each payment (percentage, or none at first).\n- Whether earned credits expire like purchased ones, or never expire.\n- Whether earned credits count toward plan limits and the low-credits banner.\n- Who can pay: signed-in Genfeed users only, or a guest checkout that creates an account.\n\n## Done when\n\nA reader with credits tips a creator, subscribes to them, and unlocks a paid article. The creator's balance rises by the amount minus the fee, and the creator spends it on a generation. Each sub-issue carries its own finish condition and evidence.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -455,6 +455,20 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6454108563",
+      "source": "github",
+      "title": "[bounty] stdlib.algorithms tutorial",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/177",
+      "description": "Claiming the recurring $25 tutorial micro-bounty for `stdlib/algorithms.ltl`.\n\nPlanned scope: the search/sort helpers in practice — `binary_search`, `quick_sort`/`sort`, `fisher_yates_shuffle` — with correct usage, edge cases (empty/single-element input), and why binary search requires sorted input. No unmeasured performance claims.\n\nPlanned artifacts: `docs/blog/algorithms-tutorial.ltlml` in the repo blog format, `examples/algorithms_demo.ltl` runnable example (`import algorithms`, verified via `lateralus run`), a `@test` block with pinned outputs computed by actually running the module, and reproduction instructions.",
+      "rewardUsd": 25,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
     },
     {
       "id": "github-6441036930",

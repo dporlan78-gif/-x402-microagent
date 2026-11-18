@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T04:30:30.065Z",
+  "generatedAt": "2026-11-18T14:12:27.518Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,9 +14,24 @@
     ]
   },
   "discovered": 37,
-  "eligible": 18,
+  "eligible": 17,
   "realMoneySpentUsd": 0,
   "opportunities": [
+    {
+      "id": "github-6464739005",
+      "source": "github",
+      "title": "Bounty claim and quest reward integration",
+      "url": "https://github.com/PHASE-STELLAR/Phase/issues/705",
+      "description": "\n**Category:** New Integration · **Labels:** `integration`, `quests`, `rewards` · **Effort:** 3–5 w · **Risk:** High · **Flag:** `phase-254`\n\n**Context:** `app/api/claim-bounty`, `lib/quest-registry.ts`, and `lib/quest-snapshot.ts` exist, but bounty claims need to be bound to a quest snapshot, idempotent, and resistant to double-credit.\n\n**Scope:** bind each claim to a versioned quest snapshot and the signed session wallet; enforce one claim per wallet per bounty in a version-guarded store; verify eligibility from the snapshot, not client input; add closed counters and EN/ES copy.\n\n**Acceptance criteria:** a second claim is rejected; a stale snapshot is rejected; concurrent claims yield one winner and ordered 409s; flag off = claim route 404.\n\n**Rollback:** unset flag — claim route 404; snapshot rows inert.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
     {
       "id": "github-6316305119",
       "source": "github",
@@ -135,20 +150,6 @@
       "title": "[Bounty] 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ",
       "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4201",
       "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/77\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro \n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** [Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro \n- **Monto:** $$750\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4199)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n937 coins\n\n### 真实赏金（USD）/ Real Reward\n$750\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
-      "rewardUsd": 750,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 750,
-      "profitPerHourUsd": 9000,
-      "eligible": true
-    },
-    {
-      "id": "github-6154738932",
-      "source": "github",
-      "title": "[Bounty] 💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ",
-      "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4199",
-      "description": "### 赏金平台 / Platform\nGitHub\n\n### 原始链接 / Source URL\nhttps://github.com/alfrexo95/bounty-bot/issues/76\n\n### 漏洞描述 / Description\n💰 Bounty Seguro ($$750): 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro \n\n🤖 **Bounty con Pago Garantizado (Escrow)**\n\n- **Título:** 💰 Bounty Seguro ($$750): [Bounty] 💰 Bounty Seguro ($$750): [Bounty] 💰 Bount\n- **Monto:** $$750\n- **Plataforma:** GitHub Issue\n- **Enlace:** [Ir al Issue](https://github.com/alfrexo95/bounty-bot/issues/75)\n\n---\n\n### 💰 Payment Details\n- BTC: bc1qt3rukpe7qp737zj5j5xpxxmcqv90cfefhg5e00\n- ETH: 0xA5E6eB31868A85127B1ED82b8C760193356206ED\n- LTC: ltc1qdyyg99l8ehp9aj4ehzvmefglmpl9750226k7ne\n- Lightning: chieftrait089@walletofsatoshi.com\n\n**Note:** I am a developer from Cuba. Due to the economic blockade, traditional payment methods are often blocked. Cryptocurrency is the most stable and free way for me to receive payments. I would appreciate it if the bounty could be paid in crypto. Thank you!\n\n\n---\n*Este issue fue creado automáticamente por tu bot. Verifica que el escrow esté activo antes de trabajar.*\n\n\n### 积分币奖励 / Coin Reward\n937 coins\n\n### 真实赏金（USD）/ Real Reward\n$750\n\n### 难度 / Difficulty\nMedium\n\n### 认领方式\n评论 `/claim` 锁定任务 24h\n\n### 兑换说明\n> 查看 [REWARD_POLICY.md](REWARD_POLICY.md) 了解兑换规则\n",
       "rewardUsd": 750,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -278,11 +279,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6447880907",
+      "id": "github-6176368234",
       "source": "github",
-      "title": "A taken call completes when its officer fines the suspect at the site, and pays once",
-      "url": "https://github.com/Life-Framework/Life-Framework/issues/2478",
-      "description": "<!-- slice-card v1 -->\n**Slice** of #234. Template and rules: `docs/process/slice-card.md`. Brief: `tools\\cli slice brief <this issue>`.\n\n## Card\n- key: M2\n- parent: #234\n- type: system\n- tier: T2\n- model: opus\n- machines: test\n- budget: 45 min / 60 calls\n- owns: `addons/LifeFramework/Scripts/Game/Feature/Police/LF_PoliceCallPay.c`, `addons/LifeFramework/Scripts/Game/Feature/Police/LF_FineTicketRole.c`, `addons/LifeFramework/Scripts/Game/Feature/Police/LF_PoliceEvents.c`, `addons/LifeFramework/Configs/Police/LF_Police.conf`, `addons/LifeFramework/Scripts/Game/Tests/LF_Test_PoliceCallPay.c`\n- depends: #2477\n- acceptance: test LF_Test_PoliceCallPay\n- risk: money\n- release-blocker: no\n\n## Capability\nWhen the officer holding a call writes a fine ticket to the call's suspect within the call's radius of its\nsite, the call completes and the officer is paid the call reward in cash, exactly once.\n\n## Acceptance\nLF_Test_PoliceCallPay (WORLD): a taken call; a fine by another officer does nothing; a fine by the holder\noutside the radius does nothing; a fine by the holder inside it completes the call and pays the reward; a\nsecond fine pays nothing. Red before the hook exists.\n\n## Notes\n- Publish a new `LF_OnFineIssued` (uids and the officer's position) appended to `LF_PoliceEvents.c`, from\n  `LF_FineTicketRole.c:125` after `LF_FineTickets.Issue` succeeds; `LF_PoliceCallPay` subscribes.\n- Pay cash the way `LF_DutyPay.PayAtClockOut` does (MoneyStack, not virtual cash). Reward and radius are new\n  police config fields in the owner schema (defaults 150 cash, 50 m).\n- An independent reviewer (interrogate) reads the diff.\n",
+      "title": "Display Cash Out and Continue buttons after a reward (0.5 hrs)",
+      "url": "https://github.com/etk005/cse110-team-23/issues/135",
+      "description": "",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -293,11 +294,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6176368234",
+      "id": "github-6090607952",
       "source": "github",
-      "title": "Display Cash Out and Continue buttons after a reward (0.5 hrs)",
-      "url": "https://github.com/etk005/cse110-team-23/issues/135",
-      "description": "",
+      "title": "Human-QC seed: verify 17 additional cards before opening full reward filters",
+      "url": "https://github.com/Null0722/AnCard/issues/18",
+      "description": "## Objective\nSeed AnCard with 15–20 source-checked human-approved cards so fact-based reward/spending/fee filters and the in-memory comparison are useful. Existing approved Aer Lingus card counts toward this target; the candidates below are *not* approved yet.\n\n## Proposed owner-review queue (17 additional candidates)\n- [x] amex-gold — American Express Gold\n- [x] amex-platinum — American Express Platinum\n- [ ] amex-blue-cash-everyday — Blue Cash Everyday\n- [ ] amex-blue-cash-preferred — Blue Cash Preferred\n- [ ] chase-freedom-unlimited — Chase Freedom Unlimited\n- [ ] chase-freedom-flex — Chase Freedom Flex\n- [ ] chase-sapphire-preferred — Chase Sapphire Preferred\n- [ ] chase-sapphire-reserve — Chase Sapphire Reserve\n- [ ] cap-quicksilver — Capital One Quicksilver Rewards\n- [ ] cap-savor — Capital One Savor Rewards\n- [ ] cap-venture — Capital One Venture Rewards\n- [ ] cap-venture-x — Capital One Venture X Rewards\n- [ ] boa-customized-cash — Bank of America Customized Cash Rewards\n- [ ] citi-double-cash — Citi Double Cash\n- [ ] wells-active-cash — Wells Fargo Active Cash\n- [ ] wells-autograph — Wells Fargo Autograph\n- [ ] cap-discover-it — Discover it Cash Back\n\n## Required QC for every card\n- Open the current *official issuer* product and pricing pages; confirm issuer, card name, offer terms and the actual agreement's effective date.\n- Check annual and monthly fees, APR, qualifying categories, caps, earning rates, bonus eligibility/deadlines, redemption restrictions and disclosed protections; do not assume omitted fields are zero.\n- Compare every proposed candidate field with official disclosures. Correct stale offers, marketing exceptions and source URLs before setting humanVerified true.\n- Document reviewer, source links and review date in the Git-backed process. Mark true only with authorized human approval. Leave pending if uncertain.\n- Run npm test and inspect the rendered card and factual comparison against its official source before publishing.\n\n## Release sequencing\n- v1.1: Merge fact-first reviewed-first UX only after PR #17 CI and desktop/mobile/print visual QA.\n- v1.5: Improve the existing in-memory three-card comparison into a clearly accessible 2–4 card workbench, with neutral side-by-side terms and no recommendation score.\n- v2.0: Structured issuer-text / plain-English diffs, provenance and moderated community source submissions (issue templates and a reviewer-only publish gate).\n\nDo not auto-approve the 17 queued cards. This issue is a research checklist, not a verification certificate.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

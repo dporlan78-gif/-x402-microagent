@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T14:12:27.518Z",
+  "generatedAt": "2026-11-18T22:05:19.034Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -309,6 +309,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6473737066",
+      "source": "github",
+      "title": "[ISSUE-42] Verified Paid Membership Subscription Workflow",
+      "url": "https://github.com/AnishT16/fastora-grocery-delivery/issues/42",
+      "description": "- **Module:** `apps.memberships` (Views / Services)\r\n- **User Story:** As a business owner, I want customer membership activation to require a verified payment transaction, eliminating free subscription loopholes.\r\n- **Scope & Description:** Refactor `SubscribeMembershipView`. Require payment intent creation for plan price. Activate `CustomerMembership` only upon verified payment confirmation with transaction reference.\r\n- **Dependencies:** None (Independent)\r\n- **Files Touched:**\r\n  - `backend/apps/memberships/views.py`\r\n  - `backend/apps/memberships/services.py`\r\n- **Acceptance Criteria:** Calling subscribe without payment does not activate membership; verified payment activates 30-day `CustomerMembership(status='ACTIVE')`.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6450377752",
       "source": "github",
       "title": "Paid subscriptions",
@@ -344,6 +359,21 @@
       "title": "Highlight paid videos",
       "url": "https://github.com/Ivorisnoob/Koda/issues/379",
       "description": "### Before suggesting\n\n- [x] I searched the existing issues\n- [x] I checked ROADMAP.md and this is not already planned there\n\n### What is the problem\n\nPlease highlight paid videos that can not be viewed and make a toggle to filter them just like \"Youtube SHORTS\" videos.\nPipePipe has that feature:\n\n<img width=\"720\" height=\"320\" alt=\"Screenshot_20261115_153315_PipePipe\" src=\"https://github.com/user-attachments/assets/a3360a7a-9057-4524-a1af-00526e730ad0\" />\n\nGreat work!!!\n\n### What should Koda do\n\n.\n\n### Which area\n\nSearch\n\n### Would this work without a YouTube account\n\nYes, it works entirely on-device or signed out\n\n### Anything else\n\n_No response_",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6471257965",
+      "source": "github",
+      "title": "WT-005 · Pilot paid Copilot Issue assignment without prompt forwarding",
+      "url": "https://github.com/connorturansky-svg/crystal-forge/issues/39",
+      "description": "## Purpose\n**Safe one-off pilot for [WT-004 automatic dispatch setup](https://github.com/connorturansky-svg/crystal-forge/issues/38).** Verify that the newly invited GitHub collaborator **@J-Turansky** can use **their own paid GitHub Copilot account** to assign a repository Issue to Copilot cloud agent and receive a draft PR. This is not an ongoing coding assignment until @J-Turansky explicitly chooses to initiate it; no subscription charges should be incurred without their action.\n\n## Narrow implementation task\n\nCreate exactly one **new** Markdown document:\n`docs/COPILOT_DISPATCH_PILOT.md`\n\nThe document should:\n1. Explain briefly how a contributor reads `AGENTS.md`, `docs/AI_HANDOVER.md` and the `planning/prompts` task context before coding.\n2. Describe the safe branch/PR process, including linking an Issue and approved immutable SHA for normal production tasks.\n3. State that main is protected, there must be no automatic merges/deployments, and CI/physical fabrication claims need evidence.\n4. Include how to run `npm run test:static` from the repository root, **without falsely claiming the command has passed** unless actually run.\n\n**Do not change** any existing files, source, workflows, version strings, CHANGELOG, UI, geometry, tests, data, security settings, production or unrelated tasks. Do not try to work on already-claimed [WT-002 / PR #35](https://github.com/connorturansky-svg/crystal-forge/pull/35) or [WT-003 / PR #37](https://github.com/connorturansky-svg/crystal-forge/pull/37).\n\n## Pilot procedure — external contributor only\n\n1. Sign in to GitHub as `J-Turansky`, verify Copilot cloud agent is enabled at `https://github.com/settings/copilot/features` and their subscription/usage limits.\n2. Open this Issue, choose **Assignees → Copilot** (the agent, **not** yourself). Inspect any prompt/options, choose this repository as target and `main` as the starting branch, then click **Assign**. This action is initiated by the **paid collaborator**; the owner's GitHub connection does not carry their Copilot entitlement.\n3. Check that Copilot creates a new draft PR, and verify it changes **only** `docs/COPILOT_DISPATCH_PILOT.md`. Do not merge the pilot automatically. If Copilot doesn't appear, report what the Assignees picker shows instead of guessing.\n4. Report the resulting agent session/PR and whether the contributor's paid plan was billed, any errors, and whether one approval is required by the main ruleset.\n5. **Important release gate:** The existing app enforces an app-version/CHANGELOG/What's New bump for *every* PR to main, even documentation-only changes. This narrow pilot intentionally does not alter release metadata. A failure of the static release check is therefore expected and is **not** authority to modify the app to silence it. Keep the PR in draft/unmerged and report that as a future workflow improvement.\n\n## Pass conditions\n- The paid collaborator personally sees and can assign the Issue to Copilot.\n- Copilot opens a PR from an agent branch without any external chat copy-paste.\n- Only the single pilot Markdown file is changed.\n- The protected `main` is unchanged, and no secret or personal access token is shared.\n- An explicit handover/report on this Issue links the resulting PR and confirms the actual outcome.\n\n**Do not reassign to a second agent; do not retry a completed pilot automatically.** This is a one-time controlled proof of the path before implementing automatic dispatch on WT-004.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -398,21 +428,6 @@
       "eligible": true
     },
     {
-      "id": "github-6278953402",
-      "source": "github",
-      "title": "Paid content bugs / improvements",
-      "url": "https://github.com/bitcoinbrisbane/lbry-desktop/issues/224",
-      "description": "> Copied from `https://github.com/lbryio/lbry-desktop/issues/4123`. Opened by `tzarebczan` on 2020-05-04.\n\n- [ ] Need to check purchase list to see if something has been bought before if it's not in your file list (i.e. delete file or on lbry.tv). Otherwise it will prompt to pay, but it actually won't charge you. \r\n\r\n- [ ] max purchase price silent error:  `https://github.com/lbryio/lbry-desktop/issues/2294`\r\n\r\n- [ ] file views are counted for each download.  May need API changes to in order to track once? ",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-5910709033",
       "source": "github",
       "title": "Issue invoices for paid sessions and bundles",
@@ -428,26 +443,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6271857885",
+      "id": "github-6278953402",
       "source": "github",
-      "title": "Epic: Creator earnings in GEN credits (tips, paid subscriptions, paid articles)",
-      "url": "https://github.com/genfeedai/genfeed.ai/issues/9714",
-      "description": "## Goal\n\nReaders can pay creators in GEN credits, and creators spend what they earn on generation inside Genfeed. This completes the creator publishing loop started in #9666: write, publish, email subscribers (#9665), get paid.\n\nDocument only. The week of 11-09 is a coding lock, so no code is scheduled.\n\n## Today (verified in code at master `e0d9b108`)\n\n- `CreditBalance` and `CreditTransaction` belong to an organization or billing account, never to a user (`packages/prisma/prisma/schema.prisma`).\n- Transaction categories are `add`, `deduct`, `expire`, `reset`, `rollover`, `refund`, `byok-usage` (`packages/contracts/src/enums/credit.enum.ts`). There is **no transfer between accounts**, no tip, no paid subscription to a creator.\n- Stripe is used only for Genfeed's own plans (`Subscription`, `UserSubscription`). No Stripe Connect and no payout code.\n- `Article` and `Newsletter` have no price or access fields. Every published article is public.\n\n## Scope\n\nEarn-and-spend only: earned credits are spent on generation inside Genfeed and are not withdrawable. This avoids payouts, KYC and tax handling. Cash-out is a separate decision (see the last issue).\n\n## Order\n\n1. Credit transfer ledger (everything else builds on it).\n2. Tips.\n3. Paid subscriptions to a creator.\n4. Paid articles and newsletter issues.\n5. Creator earnings view.\n6. Decision: cash-out.\n\n## Decisions needed before building\n\n- Platform fee on each payment (percentage, or none at first).\n- Whether earned credits expire like purchased ones, or never expire.\n- Whether earned credits count toward plan limits and the low-credits banner.\n- Who can pay: signed-in Genfeed users only, or a guest checkout that creates an account.\n\n## Done when\n\nA reader with credits tips a creator, subscribes to them, and unlocks a paid article. The creator's balance rises by the amount minus the fee, and the creator spends it on a generation. Each sub-issue carries its own finish condition and evidence.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6302231895",
-      "source": "github",
-      "title": "feat(verification): pilot Paid-managed verification of Paid user journeys",
-      "url": "https://github.com/viamin/paid/issues/4982",
-      "description": "## Problem\n\nPaid can provision a browser sidecar and Playwright MCP for an issue implementation run, derive a start command, and record interactive verification. The agent still has to rediscover how to exercise each Paid feature. Paid's own `.paid/screenshots.yml` already defines auth, seed data, and routes, but it is oriented toward screenshot capture rather than repeatable changed-feature journeys.\n\n## Goal\n\nUse Paid to verify changes to Paid itself. In an isolated development/test run where the Paid repository is the managed project, a Paid `create_pr` agent should be able to start a seeded Paid instance, sign in, exercise a relevant Paid user journey, inspect the observed result, and attach that evidence to its existing run result.\n\n## Scope\n\n- Pilot one representative Paid web journey first (for example, sign-in → Projects → project detail), then exercise a real changed feature through a Paid-managed implementation run.\n- Add a repository-owned, concise journey guide and only the helper commands needed to make setup, data reset, navigation, observation, and cleanup repeatable. Reuse `.paid/screenshots.yml` for existing routes/auth/seed configuration; do not create a competing copy.\n- Teach `AgentRuns::VerificationPrompt` to discover the guide at a conventional path and select the journey relevant to the changed surface. Reuse the existing Playwright MCP sidecar, runtime plan, app diagnostics, and `VerificationResultRecorder`.\n- Keep all test data and application execution in the isolated run environment. No production Paid data or credentials.\n\n## Acceptance criteria\n\n- [ ] An agent can follow the documented commands from a clean Paid checkout to start a seeded Paid instance, obtain a test identity, complete the selected journey through Playwright MCP, inspect the expected result, and clean up resources created by the run.\n- [ ] A Paid-managed `create_pr` run against the Paid repository performs the journey for a real changed feature and stores the actual steps, observed result, relevant log/trace/screenshot references, and reviewed commit in the existing verification result. A screenshot or agent claim alone is not treated as proof of the criterion.\n- [ ] The journey and its commands have a focused, executable maintenance check so a stale route, login step, or startup instruction fails visibly.\n- [ ] Missing setup, authentication failure, unavailable browser, or failed assertion yields explicit failed/skipped/not-run evidence; it cannot be reported as a successful journey.\n- [ ] The pilot reports setup time, run time, failure modes, and operator effort before proposing wider rollout.\n\n## Boundaries and related work\n\n`bootstrap_readiness` has a narrow write allowlist. Journey guides or behavior-bearing helper scripts must use a normal reviewed PR or a separately designed write boundary; this issue does not widen bootstrap authority. Preserve current project verification opt-in and merge policy. Follow Full LID through the owning HLD/LLD/EARS, failing-first tests, and code.\n\nRelevant foundations: `docs/intent/live-web-app-preview/`, `docs/intent/project-readiness/`, `app/services/agent_runs/verification_prompt.rb`, and `.paid/screenshots.yml`.\n\nInspired by Lauren Tan's [verification-skill article](https://x.com/poteto/article/2094457600259842065).",
+      "title": "Paid content bugs / improvements",
+      "url": "https://github.com/bitcoinbrisbane/lbry-desktop/issues/224",
+      "description": "> Copied from `https://github.com/lbryio/lbry-desktop/issues/4123`. Opened by `tzarebczan` on 2020-05-04.\n\n- [ ] Need to check purchase list to see if something has been bought before if it's not in your file list (i.e. delete file or on lbry.tv). Otherwise it will prompt to pay, but it actually won't charge you. \r\n\r\n- [ ] max purchase price silent error:  `https://github.com/lbryio/lbry-desktop/issues/2294`\r\n\r\n- [ ] file views are counted for each download.  May need API changes to in order to track once? ",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T22:58:07.146Z",
+  "generatedAt": "2026-11-18T04:30:30.065Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -263,21 +263,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6356800006",
-      "source": "github",
-      "title": "Offer a cash-payment discount at the till",
-      "url": "https://github.com/menuza-io/menuza/issues/375",
-      "description": "## Why\nWhere the law allows it, a restaurant may reward cash payments. This is the other side of #264 (card surcharge). US-only; hidden where not permitted.\n\n## What it does\n- A location setting for a cash discount percentage.\n- Applied at the till when the cashier takes cash, shown as its own line.\n- Reported separately.\n\n## Rules and edge cases\n- Hidden in regions where it is not allowed.\n- Never stacks with a card surcharge on the same order.\n\n## Where we are today\nNothing found for a cash discount.\n\n## Acceptance criteria\n- [ ] Taking cash applies the configured percentage and prints a separate line.\n- [ ] Reports show cash discounts as their own figure.\n- [ ] The setting is not shown for KSA organizations.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6011061645",
       "source": "github",
       "title": "Reward system",
@@ -298,6 +283,21 @@
       "title": "A taken call completes when its officer fines the suspect at the site, and pays once",
       "url": "https://github.com/Life-Framework/Life-Framework/issues/2478",
       "description": "<!-- slice-card v1 -->\n**Slice** of #234. Template and rules: `docs/process/slice-card.md`. Brief: `tools\\cli slice brief <this issue>`.\n\n## Card\n- key: M2\n- parent: #234\n- type: system\n- tier: T2\n- model: opus\n- machines: test\n- budget: 45 min / 60 calls\n- owns: `addons/LifeFramework/Scripts/Game/Feature/Police/LF_PoliceCallPay.c`, `addons/LifeFramework/Scripts/Game/Feature/Police/LF_FineTicketRole.c`, `addons/LifeFramework/Scripts/Game/Feature/Police/LF_PoliceEvents.c`, `addons/LifeFramework/Configs/Police/LF_Police.conf`, `addons/LifeFramework/Scripts/Game/Tests/LF_Test_PoliceCallPay.c`\n- depends: #2477\n- acceptance: test LF_Test_PoliceCallPay\n- risk: money\n- release-blocker: no\n\n## Capability\nWhen the officer holding a call writes a fine ticket to the call's suspect within the call's radius of its\nsite, the call completes and the officer is paid the call reward in cash, exactly once.\n\n## Acceptance\nLF_Test_PoliceCallPay (WORLD): a taken call; a fine by another officer does nothing; a fine by the holder\noutside the radius does nothing; a fine by the holder inside it completes the call and pays the reward; a\nsecond fine pays nothing. Red before the hook exists.\n\n## Notes\n- Publish a new `LF_OnFineIssued` (uids and the officer's position) appended to `LF_PoliceEvents.c`, from\n  `LF_FineTicketRole.c:125` after `LF_FineTickets.Issue` succeeds; `LF_PoliceCallPay` subscribes.\n- Pay cash the way `LF_DutyPay.PayAtClockOut` does (MoneyStack, not virtual cash). Reward and radius are new\n  police config fields in the owner schema (defaults 150 cash, 50 m).\n- An independent reviewer (interrogate) reads the diff.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6176368234",
+      "source": "github",
+      "title": "Display Cash Out and Continue buttons after a reward (0.5 hrs)",
+      "url": "https://github.com/etk005/cse110-team-23/issues/135",
+      "description": "",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

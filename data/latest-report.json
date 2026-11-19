@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T13:26:01.152Z",
+  "generatedAt": "2026-11-19T22:14:59.533Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 37,
-  "eligible": 17,
+  "eligible": 18,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -219,6 +219,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6493226535",
+      "source": "github",
+      "title": "feat(tools): Referral Reward Tier & ROI Designer (/tools/referral-reward-calculator)",
+      "url": "https://github.com/FALAK097/waitlyze/issues/243",
+      "description": "Part of #235.\n\n## Problem\n\nFounders building a referral waitlist often guess their milestone tiers (e.g., \"Refer 3 friends for free swag, 10 for a lifetime deal\") without modeling fulfillment unit economics, effective CAC per referred subscriber, or the fraud risk of high-cost rewards.\n\n## Proposed Solution\n\n1. **Interactive Milestone & Unit-Economics Model (`/tools/referral-reward-calculator`)**:\n   - Inputs:\n     - Product price / estimated LTV and target gross margin\n     - Expected total waitlist size and referral share rate scenario\n     - Up to 4 customizable milestone tiers (referrals required, reward type: *Priority Queue Jump*, *Extended Trial / Credits*, *Discount %*, *Digital Asset / Guide*, *Physical Swag / Hardware*, *Lifetime Deal*, and unit marginal cost)\n   - Outputs:\n     - Projected earner distribution across Tiers 1–4 at conservative ($P_{25}$), baseline ($P_{50}$), and breakout ($P_{90}$) viral curves.\n     - Total reward budget exposure and **Effective Cost per Verified Referral** at each tier.\n     - Fraud-risk rating per tier (e.g., physical swag or cash equivalents at low referral thresholds trigger a high-risk warning).\n     - Ready-to-copy tier title and reward description microcopy.\n2. **Conversion Bridge**:\n   - Primary CTA: **\"Apply these reward tiers in Waitlyze\"** → generates a `ToolBlueprint` containing the milestone thresholds, reward labels, strict double opt-in verification requirement, and disposable-email blocking rules.\n\n## Acceptance Criteria\n\n- [ ] `/tools/referral-reward-calculator` models 3–4 milestone tiers, earner distribution, budget exposure, and effective cost per verified referral deterministically.\n- [ ] Flags high fraud-risk reward thresholds and recommends matching Waitlyze verification and anti-abuse settings.\n- [ ] Supports ungated CSV/PNG export of the reward tier table and budget model.\n- [ ] Primary CTA saves the reward tiers and referral rules into a `ToolBlueprint` for campaign creation.\n- [ ] Passes `oxlint`, `oxfmt --check`, and `pnpm build`.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6338080613",
       "source": "github",
       "title": "Opponent suggests giving a mechanics-related book instead of cash reward",
@@ -294,19 +309,18 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6090607952",
+      "id": "github-6498230500",
       "source": "github",
-      "title": "Human-QC seed: verify 17 additional cards before opening full reward filters",
-      "url": "https://github.com/Null0722/AnCard/issues/18",
-      "description": "## Objective\nSeed AnCard with 15–20 source-checked human-approved cards so fact-based reward/spending/fee filters and the in-memory comparison are useful. Existing approved Aer Lingus card counts toward this target; the candidates below are *not* approved yet.\n\n## Proposed owner-review queue (17 additional candidates)\n- [x] amex-gold — American Express Gold\n- [x] amex-platinum — American Express Platinum\n- [ ] amex-blue-cash-everyday — Blue Cash Everyday\n- [ ] amex-blue-cash-preferred — Blue Cash Preferred\n- [ ] chase-freedom-unlimited — Chase Freedom Unlimited\n- [ ] chase-freedom-flex — Chase Freedom Flex\n- [ ] chase-sapphire-preferred — Chase Sapphire Preferred\n- [ ] chase-sapphire-reserve — Chase Sapphire Reserve\n- [ ] cap-quicksilver — Capital One Quicksilver Rewards\n- [ ] cap-savor — Capital One Savor Rewards\n- [ ] cap-venture — Capital One Venture Rewards\n- [ ] cap-venture-x — Capital One Venture X Rewards\n- [ ] boa-customized-cash — Bank of America Customized Cash Rewards\n- [ ] citi-double-cash — Citi Double Cash\n- [ ] wells-active-cash — Wells Fargo Active Cash\n- [ ] wells-autograph — Wells Fargo Autograph\n- [ ] cap-discover-it — Discover it Cash Back\n\n## Required QC for every card\n- Open the current *official issuer* product and pricing pages; confirm issuer, card name, offer terms and the actual agreement's effective date.\n- Check annual and monthly fees, APR, qualifying categories, caps, earning rates, bonus eligibility/deadlines, redemption restrictions and disclosed protections; do not assume omitted fields are zero.\n- Compare every proposed candidate field with official disclosures. Correct stale offers, marketing exceptions and source URLs before setting humanVerified true.\n- Document reviewer, source links and review date in the Git-backed process. Mark true only with authorized human approval. Leave pending if uncertain.\n- Run npm test and inspect the rendered card and factual comparison against its official source before publishing.\n\n## Release sequencing\n- v1.1: Merge fact-first reviewed-first UX only after PR #17 CI and desktop/mobile/print visual QA.\n- v1.5: Improve the existing in-memory three-card comparison into a clearly accessible 2–4 card workbench, with neutral side-by-side terms and no recommendation score.\n- v2.0: Structured issuer-text / plain-English diffs, provenance and moderated community source submissions (issue templates and a reviewer-only publish gate).\n\nDo not auto-approve the 17 queued cards. This issue is a research checklist, not a verification certificate.",
-      "rewardUsd": 0,
+      "title": "Issue Refunds immediately, for the amount paid",
+      "url": "https://github.com/Kerr1st/cohort-005-project/issues/3",
+      "description": "Blocked by: #2\n\n## Problem\n- An eligible request only stores a `refunds` row with status `requested` (`app/routes/courses.$slug.refund.ts:216-223`).\n- Nothing ever approves it, returns money, or ends the Enrollment.\n- The amount uses the list price unless the Purchase was discounted (`app/routes/courses.$slug.refund.ts:206`, `app/routes/courses.$slug.tsx:492`). The email calls that \"the amount you paid\", while Settings shows `amountPaid`.\n\n## Scenario\nLiam paid $79, and the Instructor later reprices the course to $99. His email promises \"$99, the amount you paid\".\n\n## Expected behavior\nA Refund takes effect immediately. The Learner gets back exactly the amount they paid, and their Enrollment ends.\n\n## Acceptance criteria\n- [ ] The Refund is recorded with the amount equal to `amountPaid` and a timestamp.\n- [ ] The Enrollment ends, and the Learner can no longer open the course's lessons.\n- [ ] The confirmation email states the amount paid. It's still only logged, because no mail transport exists.\n- [ ] No more `requested` or \"pending\" state. The schema is simplified with a migration and the seed updated.\n- [ ] The Learner lands on a page showing what was refunded.\n- [ ] Tests cover the repricing scenario.\n\n## Out of scope\nA real payment provider (none exists), and refunds for Team Purchases (#12).\n\n---\n**Context:** terms follow `GLOSSARY.md`. The PR that fixes this should include `Closes #<this issue>`.",
+      "rewardUsd": 79,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 79,
+      "profitPerHourUsd": 948,
+      "eligible": true
     },
     {
       "id": "github-6473737066",
@@ -359,6 +373,21 @@
       "title": "feat(paid): paid read gate over a recorded exclusion view",
       "url": "https://github.com/nerdmachines/scitadel-hub/issues/60",
       "description": "## Context\n\nD-010 (filter now, purge on rebuild) requires that a recorded opt-out withdrawal applies at once on every paid read path, held providers and sessions included. The rule and its probe are in §1.2 of the tessera-boundary document; the code does not exist. The paid tier is not part of the stage-0 build, so this issue has no milestone until a hosted-tier milestone exists.\n\n## Proposal\n\n- Implement `PaidTier` as the only holder of paid scopes and `PaidServing` as the paid service's only input: filtered batches, leaf `GuardedExec` providers, streams, sessions without DDL and guarded crops.\n- Implement the exclusion view: source and item verdicts, cycle completions and per-generation admissions in one hash-chained log with its head in keep; `admitted(generation)` and `not withdrawn(now)` per scan and per batch.\n- Add one conformance case per paid read path, as listed in §5.\n\n## Acceptance\n\n- [ ] **TEST-151** (DES-057), as specified in the design's verification table: 0 rows of a withdrawn source (recorded `OptedOut`, cycle complete or not), a reserved item or an item with no verdict on any path after the withdrawal, held providers, sessions, streams, crops and derived rows included; 0 rows of a source allowed, or allowed again, after the generation's admission until its rebuild, on every path; a withdrawal between an admission and a refresh filtered; only batches inside `exclusion_max_age` may still carry one, and they are counted; every compile-fail case fails with its pinned code.\n- [ ] **TEST-152** (DES-058), as specified in the design's verification table: every fault is `Integrity` before any row is served; a generation without an admission is `Refused`; a missing verdict excludes its rows; a scan created after a withdrawal never serves it; no batch after `max_age` serves it.\n- [ ] Every node under **Delivers** keeps its `delivered_by` edge to this issue in `docs/traceability/edges.json`.\n\n**Delivers:** DES-057, DES-058, TEST-151, TEST-152.\n\nDesign: [docs/architecture/tessera-boundary.md](https://github.com/nerdmachines/scitadel-hub/blob/dev/docs/architecture/tessera-boundary.md) §1.2 — DES-057, DES-058 ([traceability](https://github.com/nerdmachines/scitadel-hub/blob/dev/docs/traceability/README.md)).\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6493924119",
+      "source": "github",
+      "title": "ManhwaShot hide paid chapter",
+      "url": "https://github.com/keiyoushi/extensions-source/issues/21239",
+      "description": "### Source name\n\nManhwaShot 1.6.1\n\n### Source language\n\nSpanish\n\n### Describe your suggested feature\n\nSince this source has paid chapters, it would be really helpful to have an option to hide them, just like the other sources do.\n\n### Other details\n\n_No response_\n\n### Acknowledgements\n\n- [x] I have searched [existing issues](https://github.com/keiyoushi/extensions-source/issues) both open & closed, and confirm that this is a new unreported issue.\n- [x] I have written a short but informative title.\n- [x] If this is an issue with the app itself, I should be opening an issue in the [app repository](https://github.com/mihonapp/mihon/issues/).\n- [x] I have updated the app to version **[0.20.1](https://github.com/mihonapp/mihon/releases/latest)**.\n- [x] I will correctly fill out all of the requested information in this form.\n\n### <!-- footer -->\n\n---\n\nAdd a :+1: [reaction] to [issues you find important].\n\n[reaction]: https://github.blog/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/\n[issues you find important]: https://github.com/keiyoushi/extensions-source/issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -426,36 +455,6 @@
       "expectedProfitUsd": 5,
       "profitPerHourUsd": 60,
       "eligible": true
-    },
-    {
-      "id": "github-5910709033",
-      "source": "github",
-      "title": "Issue invoices for paid sessions and bundles",
-      "url": "https://github.com/vbendas/Somove/issues/3",
-      "description": "Clients have no invoice or receipt for what they pay, while the seeded marketing copy says \"EU-compliant invoices provided\".\n\n**Current state**\n- `web/src/` contains no invoice code.\n- Checkout sessions are created in `web/src/app/actions/booking.ts` and in `createStripeCheckout` (`web/src/app/actions/stripe.ts`), without `invoice_creation`.\n- `web/supabase/migrations/00028_seed_homepage_sections.sql` and `00030_neutral_branding.sql` contain the \"Invoice provided\" claim.\n- `web/src/app/(client)/my-sessions/[id]/page.tsx` shows the amount only.\n\n**Scope**\n- Enable Stripe Checkout invoice creation on both checkout paths, with the therapist's name and the line-item description.\n- Store the invoice id and hosted URL on `payments` from the `checkout.session.completed` webhook (new migration).\n- Add a \"Download invoice\" link on the client session page and on therapist earnings rows.\n- Show the refund state next to the invoice when a payment is refunded.\n\n**Acceptance criteria**\n- [ ] A paid single session and a paid bundle each produce an invoice\n- [ ] The invoice link is visible only to that client and that therapist\n- [ ] Free and credit-paid sessions show no invoice link\n- [ ] Webhook test covers storing the invoice reference\n\n_Roadmap: Payments: invoices, refunds and multi-currency support ([ROADMAP.md](../blob/main/ROADMAP.md))_\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6278953402",
-      "source": "github",
-      "title": "Paid content bugs / improvements",
-      "url": "https://github.com/bitcoinbrisbane/lbry-desktop/issues/224",
-      "description": "> Copied from `https://github.com/lbryio/lbry-desktop/issues/4123`. Opened by `tzarebczan` on 2020-05-04.\n\n- [ ] Need to check purchase list to see if something has been bought before if it's not in your file list (i.e. delete file or on lbry.tv). Otherwise it will prompt to pay, but it actually won't charge you. \r\n\r\n- [ ] max purchase price silent error:  `https://github.com/lbryio/lbry-desktop/issues/2294`\r\n\r\n- [ ] file views are counted for each download.  May need API changes to in order to track once? ",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-6454108563",

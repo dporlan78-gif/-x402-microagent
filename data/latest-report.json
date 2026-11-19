@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T03:38:34.199Z",
+  "generatedAt": "2026-11-19T13:26:01.152Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -369,36 +369,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6405273551",
-      "source": "github",
-      "title": "Highlight paid videos",
-      "url": "https://github.com/Ivorisnoob/Koda/issues/379",
-      "description": "### Before suggesting\n\n- [x] I searched the existing issues\n- [x] I checked ROADMAP.md and this is not already planned there\n\n### What is the problem\n\nPlease highlight paid videos that can not be viewed and make a toggle to filter them just like \"Youtube SHORTS\" videos.\nPipePipe has that feature:\n\n<img width=\"720\" height=\"320\" alt=\"Screenshot_20261115_153315_PipePipe\" src=\"https://github.com/user-attachments/assets/a3360a7a-9057-4524-a1af-00526e730ad0\" />\n\nGreat work!!!\n\n### What should Koda do\n\n.\n\n### Which area\n\nSearch\n\n### Would this work without a YouTube account\n\nYes, it works entirely on-device or signed out\n\n### Anything else\n\n_No response_",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6471257965",
-      "source": "github",
-      "title": "WT-005 · Pilot paid Copilot Issue assignment without prompt forwarding",
-      "url": "https://github.com/connorturansky-svg/crystal-forge/issues/39",
-      "description": "## Purpose\n**Safe one-off pilot for [WT-004 automatic dispatch setup](https://github.com/connorturansky-svg/crystal-forge/issues/38).** Verify that the newly invited GitHub collaborator **@J-Turansky** can use **their own paid GitHub Copilot account** to assign a repository Issue to Copilot cloud agent and receive a draft PR. This is not an ongoing coding assignment until @J-Turansky explicitly chooses to initiate it; no subscription charges should be incurred without their action.\n\n## Narrow implementation task\n\nCreate exactly one **new** Markdown document:\n`docs/COPILOT_DISPATCH_PILOT.md`\n\nThe document should:\n1. Explain briefly how a contributor reads `AGENTS.md`, `docs/AI_HANDOVER.md` and the `planning/prompts` task context before coding.\n2. Describe the safe branch/PR process, including linking an Issue and approved immutable SHA for normal production tasks.\n3. State that main is protected, there must be no automatic merges/deployments, and CI/physical fabrication claims need evidence.\n4. Include how to run `npm run test:static` from the repository root, **without falsely claiming the command has passed** unless actually run.\n\n**Do not change** any existing files, source, workflows, version strings, CHANGELOG, UI, geometry, tests, data, security settings, production or unrelated tasks. Do not try to work on already-claimed [WT-002 / PR #35](https://github.com/connorturansky-svg/crystal-forge/pull/35) or [WT-003 / PR #37](https://github.com/connorturansky-svg/crystal-forge/pull/37).\n\n## Pilot procedure — external contributor only\n\n1. Sign in to GitHub as `J-Turansky`, verify Copilot cloud agent is enabled at `https://github.com/settings/copilot/features` and their subscription/usage limits.\n2. Open this Issue, choose **Assignees → Copilot** (the agent, **not** yourself). Inspect any prompt/options, choose this repository as target and `main` as the starting branch, then click **Assign**. This action is initiated by the **paid collaborator**; the owner's GitHub connection does not carry their Copilot entitlement.\n3. Check that Copilot creates a new draft PR, and verify it changes **only** `docs/COPILOT_DISPATCH_PILOT.md`. Do not merge the pilot automatically. If Copilot doesn't appear, report what the Assignees picker shows instead of guessing.\n4. Report the resulting agent session/PR and whether the contributor's paid plan was billed, any errors, and whether one approval is required by the main ruleset.\n5. **Important release gate:** The existing app enforces an app-version/CHANGELOG/What's New bump for *every* PR to main, even documentation-only changes. This narrow pilot intentionally does not alter release metadata. A failure of the static release check is therefore expected and is **not** authority to modify the app to silence it. Keep the PR in draft/unmerged and report that as a future workflow improvement.\n\n## Pass conditions\n- The paid collaborator personally sees and can assign the Issue to Copilot.\n- Copilot opens a PR from an agent branch without any external chat copy-paste.\n- Only the single pilot Markdown file is changed.\n- The protected `main` is unchanged, and no secret or personal access token is shared.\n- An explicit handover/report on this Issue links the resulting PR and confirms the actual outcome.\n\n**Do not reassign to a second agent; do not retry a completed pilot automatically.** This is a one-time controlled proof of the path before implementing automatic dispatch on WT-004.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6272399927",
       "source": "github",
       "title": "Epic: Newsletter module (subscribers, delivery, tracking, analytics, paid issues)",
@@ -429,6 +399,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6482064543",
+      "source": "github",
+      "title": "M7: Design session - paid packs",
+      "url": "https://github.com/508-dev/ratamatap/issues/39",
+      "description": "Topics: the backend, accounts, the payment provider, sales tax, copy protection (or none), Google Play, the network permission, and F-Droid anti-features.\n\nProduces DECISIONS.md entries and the M7 issues.\n\nBlocked by: #37\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6259292958",
       "source": "github",
       "title": "Upgrade cf workers plan to paid for resolve e2e issues",
@@ -441,6 +426,21 @@
       "expectedProfitUsd": 5,
       "profitPerHourUsd": 60,
       "eligible": true
+    },
+    {
+      "id": "github-5910709033",
+      "source": "github",
+      "title": "Issue invoices for paid sessions and bundles",
+      "url": "https://github.com/vbendas/Somove/issues/3",
+      "description": "Clients have no invoice or receipt for what they pay, while the seeded marketing copy says \"EU-compliant invoices provided\".\n\n**Current state**\n- `web/src/` contains no invoice code.\n- Checkout sessions are created in `web/src/app/actions/booking.ts` and in `createStripeCheckout` (`web/src/app/actions/stripe.ts`), without `invoice_creation`.\n- `web/supabase/migrations/00028_seed_homepage_sections.sql` and `00030_neutral_branding.sql` contain the \"Invoice provided\" claim.\n- `web/src/app/(client)/my-sessions/[id]/page.tsx` shows the amount only.\n\n**Scope**\n- Enable Stripe Checkout invoice creation on both checkout paths, with the therapist's name and the line-item description.\n- Store the invoice id and hosted URL on `payments` from the `checkout.session.completed` webhook (new migration).\n- Add a \"Download invoice\" link on the client session page and on therapist earnings rows.\n- Show the refund state next to the invoice when a payment is refunded.\n\n**Acceptance criteria**\n- [ ] A paid single session and a paid bundle each produce an invoice\n- [ ] The invoice link is visible only to that client and that therapist\n- [ ] Free and credit-paid sessions show no invoice link\n- [ ] Webhook test covers storing the invoice reference\n\n_Roadmap: Payments: invoices, refunds and multi-currency support ([ROADMAP.md](../blob/main/ROADMAP.md))_\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-6278953402",

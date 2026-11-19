@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T22:05:19.034Z",
+  "generatedAt": "2026-11-19T03:38:34.199Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -354,6 +354,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6480358567",
+      "source": "github",
+      "title": "feat(paid): paid read gate over a recorded exclusion view",
+      "url": "https://github.com/nerdmachines/scitadel-hub/issues/60",
+      "description": "## Context\n\nD-010 (filter now, purge on rebuild) requires that a recorded opt-out withdrawal applies at once on every paid read path, held providers and sessions included. The rule and its probe are in §1.2 of the tessera-boundary document; the code does not exist. The paid tier is not part of the stage-0 build, so this issue has no milestone until a hosted-tier milestone exists.\n\n## Proposal\n\n- Implement `PaidTier` as the only holder of paid scopes and `PaidServing` as the paid service's only input: filtered batches, leaf `GuardedExec` providers, streams, sessions without DDL and guarded crops.\n- Implement the exclusion view: source and item verdicts, cycle completions and per-generation admissions in one hash-chained log with its head in keep; `admitted(generation)` and `not withdrawn(now)` per scan and per batch.\n- Add one conformance case per paid read path, as listed in §5.\n\n## Acceptance\n\n- [ ] **TEST-151** (DES-057), as specified in the design's verification table: 0 rows of a withdrawn source (recorded `OptedOut`, cycle complete or not), a reserved item or an item with no verdict on any path after the withdrawal, held providers, sessions, streams, crops and derived rows included; 0 rows of a source allowed, or allowed again, after the generation's admission until its rebuild, on every path; a withdrawal between an admission and a refresh filtered; only batches inside `exclusion_max_age` may still carry one, and they are counted; every compile-fail case fails with its pinned code.\n- [ ] **TEST-152** (DES-058), as specified in the design's verification table: every fault is `Integrity` before any row is served; a generation without an admission is `Refused`; a missing verdict excludes its rows; a scan created after a withdrawal never serves it; no batch after `max_age` serves it.\n- [ ] Every node under **Delivers** keeps its `delivered_by` edge to this issue in `docs/traceability/edges.json`.\n\n**Delivers:** DES-057, DES-058, TEST-151, TEST-152.\n\nDesign: [docs/architecture/tessera-boundary.md](https://github.com/nerdmachines/scitadel-hub/blob/dev/docs/architecture/tessera-boundary.md) §1.2 — DES-057, DES-058 ([traceability](https://github.com/nerdmachines/scitadel-hub/blob/dev/docs/traceability/README.md)).\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6405273551",
       "source": "github",
       "title": "Highlight paid videos",
@@ -426,21 +441,6 @@
       "expectedProfitUsd": 5,
       "profitPerHourUsd": 60,
       "eligible": true
-    },
-    {
-      "id": "github-5910709033",
-      "source": "github",
-      "title": "Issue invoices for paid sessions and bundles",
-      "url": "https://github.com/vbendas/Somove/issues/3",
-      "description": "Clients have no invoice or receipt for what they pay, while the seeded marketing copy says \"EU-compliant invoices provided\".\n\n**Current state**\n- `web/src/` contains no invoice code.\n- Checkout sessions are created in `web/src/app/actions/booking.ts` and in `createStripeCheckout` (`web/src/app/actions/stripe.ts`), without `invoice_creation`.\n- `web/supabase/migrations/00028_seed_homepage_sections.sql` and `00030_neutral_branding.sql` contain the \"Invoice provided\" claim.\n- `web/src/app/(client)/my-sessions/[id]/page.tsx` shows the amount only.\n\n**Scope**\n- Enable Stripe Checkout invoice creation on both checkout paths, with the therapist's name and the line-item description.\n- Store the invoice id and hosted URL on `payments` from the `checkout.session.completed` webhook (new migration).\n- Add a \"Download invoice\" link on the client session page and on therapist earnings rows.\n- Show the refund state next to the invoice when a payment is refunded.\n\n**Acceptance criteria**\n- [ ] A paid single session and a paid bundle each produce an invoice\n- [ ] The invoice link is visible only to that client and that therapist\n- [ ] Free and credit-paid sessions show no invoice link\n- [ ] Webhook test covers storing the invoice reference\n\n_Roadmap: Payments: invoices, refunds and multi-currency support ([ROADMAP.md](../blob/main/ROADMAP.md))_\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-6278953402",

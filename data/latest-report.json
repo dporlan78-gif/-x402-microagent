@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T13:06:35.768Z",
+  "generatedAt": "2026-11-20T21:15:02.276Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 37,
-  "eligible": 18,
+  "eligible": 17,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -264,6 +264,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6515267341",
+      "source": "github",
+      "title": "CryptoEnv.reset() retains accumulated reward from the previous episode",
+      "url": "https://github.com/AI4Finance-Foundation/FinRL/issues/1489",
+      "description": "`CryptoEnv.reset()` restores cash, holdings and total assets but leaves `gamma_return` and `episode_return` unchanged. `step()` continues accumulating into the old `gamma_return` and returns that accumulator at termination. Later episodes therefore receive reward from earlier episodes.\n\nReproduced at `5df023ed3faab4cb529bc7e2837a7fb331067cf2` with synthetic data and no market-data requests:\n\n```python\nimport numpy as np\nfrom finrl.meta.env_cryptocurrency_trading.env_multiple_crypto import CryptoEnv\n\nprices = np.array([[100.0], [100.0], [110.0], [120.0], [100.0]])\nenv = CryptoEnv(\n    {\"price_array\": prices, \"tech_array\": np.zeros_like(prices)},\n    initial_capital=1000.0, buy_cost_pct=0.0, sell_cost_pct=0.0,\n)\nenv.reset()\nfor action in (0.01, 0.0, 0.0):\n    _, reward, done, _ = env.step(np.array([action]))\nprint(reward)  # 0.00030364990234375\n\nenv.reset()\nfor _ in range(env.max_step):\n    _, reward, done, _ = env.step(np.array([0.0]))\nprint(env.total_asset, reward)  # 1000.0, 0.00029463119659423824\n```\n\nExpected: the second episode's reward is zero because it holds only cash throughout. Resetting during an unfinished episode also retains its accumulated reward.\n\nProposed fix: reset `gamma_return` and `episode_return` to their constructor values in `reset()`. I have a focused patch with regression tests for gains, losses, different discount factors, repeated identical episodes and mid-episode resets.\n\nAI assistance was used to investigate the bug, prepare the patch and run the regression tests.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6300394316",
       "source": "github",
       "title": "P0 · Commercial E2E: first approved offerwall → funded conversion → paid user reward",
@@ -284,21 +299,6 @@
       "title": "Reward system",
       "url": "https://github.com/axehigh/questlog/issues/1",
       "description": "Act as an expert full-stack developer and UI/UX designer. I am building a mobile-first web app (HTML/Tailwind CSS/JS) for 14-year-old boys to track household chores using a gaming-inspired theme (Valorant, Minecraft, Roblox aesthetic). \n\nImplement a Loss-Aversion Point Engine and Reward System using the following architecture:\n\n1. DUAL-CURRENCY SYSTEM:\n- XP (Experience Points): Earned ONLY through task completion. Permanent, cumulative, and never lost or docked. Drives overall level and gamer ranks (Unranked -> Iron -> Bronze -> Silver -> Gold -> Platinum -> Diamond -> Ascendant -> Radiant).\n- Coins: Earnable spending currency used in the Rewards Shop.\n\n2. LOSS-AVERSION & PENALTY MECHANICS:\n- Missed / Failed Daily Tasks: Deduct Coins from the available balance (or forfeit the daily Coin multiplier) to leverage psychological loss aversion without touching permanent XP.\n- Guardrail: Implement a minimum Coin threshold (e.g., balance cannot drop below zero) and clear penalty limits per task so kids don't feel a \"sunk-cost demotivation\" trap.\n- Streak System: Track consecutive active days (🔥 Streak). Missing mandatory daily tasks resets or reduces the streak bonus multiplier.\n\n3. REWARDS SHOP LIST (Structured Tiers):\nImplement a customizable Rewards Shop with the following pre-loaded catalog:\n- Tier 1 (Micro / Low Cost):\n  * +30 Min Gaming Extension\n  * One-Time Minor Chore Pass (Skip a task)\n  * +30 Min Weekend Bedtime Buffer\n- Tier 2 (Mid-Tier / Moderate Cost):\n  * Choose Friday Night Dinner / Takeout\n  * In-Game Currency / Cosmetic Allowance (Robux, V-Bucks, Valorant Points)\n  * Uninterrupted Gaming Session / Sleepover with Friends\n- Tier 3 (Boss-Level / High Cost):\n  * Gaming Gear Upgrade (Headset, Mouse, Keyboard Cap)\n  * Funded Outing with Friends (Movies, Arcade, Bowling)\n  * Cash-Out Point Conversion\n\n4. PARENT CONTROL OVERRIDES:\n- PIN-protected parent mode to approve completed high-value tasks, issue direct bonus/penalty Coin adjustments, and process reward redemptions.\n\nPlease generate or update the application code to fully integrate this logic, store state in local storage, and present a sleek, high-contrast dark mode UI optimized for smartphone web browsers.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6176368234",
-      "source": "github",
-      "title": "Display Cash Out and Continue buttons after a reward (0.5 hrs)",
-      "url": "https://github.com/etk005/cse110-team-23/issues/135",
-      "description": "",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -413,6 +413,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6515741199",
+      "source": "github",
+      "title": "Paid Sponsorships for modpacks",
+      "url": "https://github.com/modrinth/code/issues/8406",
+      "description": "### Please confirm the following.\n\n- [x] I checked the [existing issues](https://github.com/modrinth/code/issues?q=is%3Aissue) for duplicate feature requests\n\n### What parts of Modrinth is your feature request related too?\n\nModrinth App\n\n### Is your suggested feature related to a problem? Please describe.\n\nhey! I was wondering if you guys woud be opened to having a sponsored modpack program. The modpack creators could pay a monthly fee to be sponsored atop of the list of the modpacks page alongside when a keyword is searched in the browsing list (example if you search zombies in modpacks and yours has that in the title) then it could show up at the top\n\nI personally would certainly be interested in paying a good amount per month to get a modpack sponsored on your platform and I think other creators as well who have interest in exposing their modpacks!\n\n\n\n\n### Describe the solution you'd like\n\n_No response_\n\n### Describe alternatives you've considered\n\n_No response_\n\n### Additional context\n\n<img width=\"1253\" height=\"977\" alt=\"image\" src=\"https://github.com/user-attachments/assets/75f146e7-0c36-4233-bb3e-9260ff69076b\" />\nCould also have a sponsored tag to let the users know that it's sponsored.\n\nIf this does become a possibility and is planned in the future I would love to discuss with your team a possibility to be one of the first sponsors\nHere is my discord and email!\ndiscord: brownie_minecraft\nemail: brownniieemc@gmail.com",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6417118758",
       "source": "github",
       "title": "Define the optional paid edition",
@@ -441,20 +456,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6259292958",
-      "source": "github",
-      "title": "Upgrade cf workers plan to paid for resolve e2e issues",
-      "url": "https://github.com/kveperedo/website/issues/164",
-      "description": " Upgrade the account to Workers Paid ($5/mo). Default CPU goes to 30 s per invocation and 1102 disappears. This is the decisive fix. If you're already on Paid, check for a limits.cpu_ms setting — 1102 on Paid means the limit was lowered.",
-      "rewardUsd": 5,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 5,
-      "profitPerHourUsd": 60,
-      "eligible": true
     },
     {
       "id": "github-6454108563",

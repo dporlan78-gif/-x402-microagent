@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T21:15:02.276Z",
+  "generatedAt": "2026-11-21T02:31:27.349Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 37,
-  "eligible": 17,
+  "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -204,6 +204,20 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6520823710",
+      "source": "github",
+      "title": "Referral reward: give a month, get a month",
+      "url": "https://github.com/discology/storybook-generator-3000/issues/5",
+      "description": "**Why:** at $20/mo and about $14 gross margin, a free month for a successful referral costs about $5.80 in AI spend (we're not paying cash, just serving chapters). That's far cheaper than a paid-ad CAC, so rewards should be generous and simple.\n\n**Proposed mechanic (confirm before building)**\n- Referrer: **1 free month** for every referred family that subscribes (cap 6 months).\n- Referred: **first month free** (or 50% off). Pick one for the test; don't run both.\n- Credit applied through Stripe (customer balance / coupon). No cash, no points.\n- Reward fires on the referred family's first paid invoice, not on signup. This prevents abuse where people sign up just to get previews.\n\n**Abuse guards:** one reward per phone number, self-referral blocked (same device/phone), cap per referrer.\n\n**Depends on:** billing, referral attribution.\n\n**Acceptance:** a test referral from family A subscribing credits family A's next invoice.",
+      "rewardUsd": 20,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 20,
+      "profitPerHourUsd": 240,
+      "eligible": true
+    },
+    {
       "id": "github-6320016185",
       "source": "github",
       "title": "Competitions: award cash, reputation and honours exactly once",
@@ -284,21 +298,6 @@
       "title": "P0 · Commercial E2E: first approved offerwall → funded conversion → paid user reward",
       "url": "https://github.com/Noetfield-Systems/Earnloop/issues/1",
       "description": "## Mission (revenue-first)\nTurn the deployed founding beta into a revenue-producing rewards platform. Do not substitute XP for cash or fabricated partner inventory.\n\n**Verified release:** Railway `earnloop-web` from `Noetfield-Systems/Earnloop@a8f4dc502649f48a931c34845d6cdf9379f1bb08` with retained PostgreSQL and public domain https://earnloop-web-production.up.railway.app/. Independent HTTP smoke **PASS**: https://github.com/Noetfield-Systems/Earnloop/actions/runs/42756970996. Current members=0, early access=0, partner funding unverified.\n\n### Acceptance gates\n- [ ] Publisher account approved by Torox / ayeT / equivalent, with genuine available Canadian inventory and signed contract (Founder/operator approval required)\n- [ ] Implement exact partner authenticated postback spec, unique conversion IDs, replay protection, tracking, reversal and dispute handling; never trust client-reported spend\n- [ ] Real booked advertiser payable and independently verified cash settlement with evidence\n- [ ] Reward ledger records funded user liability separately from community XP, and supports reversal/chargebacks\n- [ ] Legal/payment provider integration, identity recovery, user eligibility, KYC where applicable and permitted cash-out/gift-card fulfilment\n- [ ] First real, consented user completes partner action and receives real funded reward; attach partner statement, payout receipt, IDs, timestamp, independent verification and contribution margin\n- [ ] Company OS captures verified evidence, net contribution and next acquisition action in product WorkPackets; Sina Founder OS gets portfolio summary only\n\n**Do not claim launch revenue until funds are actually settled. No paid offers/cashouts are activated without approved partners and funded settlement.**",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6011061645",
-      "source": "github",
-      "title": "Reward system",
-      "url": "https://github.com/axehigh/questlog/issues/1",
-      "description": "Act as an expert full-stack developer and UI/UX designer. I am building a mobile-first web app (HTML/Tailwind CSS/JS) for 14-year-old boys to track household chores using a gaming-inspired theme (Valorant, Minecraft, Roblox aesthetic). \n\nImplement a Loss-Aversion Point Engine and Reward System using the following architecture:\n\n1. DUAL-CURRENCY SYSTEM:\n- XP (Experience Points): Earned ONLY through task completion. Permanent, cumulative, and never lost or docked. Drives overall level and gamer ranks (Unranked -> Iron -> Bronze -> Silver -> Gold -> Platinum -> Diamond -> Ascendant -> Radiant).\n- Coins: Earnable spending currency used in the Rewards Shop.\n\n2. LOSS-AVERSION & PENALTY MECHANICS:\n- Missed / Failed Daily Tasks: Deduct Coins from the available balance (or forfeit the daily Coin multiplier) to leverage psychological loss aversion without touching permanent XP.\n- Guardrail: Implement a minimum Coin threshold (e.g., balance cannot drop below zero) and clear penalty limits per task so kids don't feel a \"sunk-cost demotivation\" trap.\n- Streak System: Track consecutive active days (🔥 Streak). Missing mandatory daily tasks resets or reduces the streak bonus multiplier.\n\n3. REWARDS SHOP LIST (Structured Tiers):\nImplement a customizable Rewards Shop with the following pre-loaded catalog:\n- Tier 1 (Micro / Low Cost):\n  * +30 Min Gaming Extension\n  * One-Time Minor Chore Pass (Skip a task)\n  * +30 Min Weekend Bedtime Buffer\n- Tier 2 (Mid-Tier / Moderate Cost):\n  * Choose Friday Night Dinner / Takeout\n  * In-Game Currency / Cosmetic Allowance (Robux, V-Bucks, Valorant Points)\n  * Uninterrupted Gaming Session / Sleepover with Friends\n- Tier 3 (Boss-Level / High Cost):\n  * Gaming Gear Upgrade (Headset, Mouse, Keyboard Cap)\n  * Funded Outing with Friends (Movies, Arcade, Bowling)\n  * Cash-Out Point Conversion\n\n4. PARENT CONTROL OVERRIDES:\n- PIN-protected parent mode to approve completed high-value tasks, issue direct bonus/penalty Coin adjustments, and process reward redemptions.\n\nPlease generate or update the application code to fully integrate this logic, store state in local storage, and present a sleek, high-contrast dark mode UI optimized for smartphone web browsers.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -443,19 +442,18 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6482064543",
+      "id": "github-6259292958",
       "source": "github",
-      "title": "M7: Design session - paid packs",
-      "url": "https://github.com/508-dev/ratamatap/issues/39",
-      "description": "Topics: the backend, accounts, the payment provider, sales tax, copy protection (or none), Google Play, the network permission, and F-Droid anti-features.\n\nProduces DECISIONS.md entries and the M7 issues.\n\nBlocked by: #37\n",
-      "rewardUsd": 0,
+      "title": "Upgrade cf workers plan to paid for resolve e2e issues",
+      "url": "https://github.com/kveperedo/website/issues/164",
+      "description": " Upgrade the account to Workers Paid ($5/mo). Default CPU goes to 30 s per invocation and 1102 disappears. This is the decisive fix. If you're already on Paid, check for a limits.cpu_ms setting — 1102 on Paid means the limit was lowered.",
+      "rewardUsd": 5,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 5,
+      "profitPerHourUsd": 60,
+      "eligible": true
     },
     {
       "id": "github-6454108563",

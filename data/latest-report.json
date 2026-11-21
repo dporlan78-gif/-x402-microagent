@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T02:31:27.349Z",
+  "generatedAt": "2026-11-21T11:20:45.470Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,7 +13,7 @@
       "micro bounty"
     ]
   },
-  "discovered": 37,
+  "discovered": 38,
   "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
@@ -427,6 +427,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6302231895",
+      "source": "github",
+      "title": "feat(verification): pilot Paid-managed verification of Paid user journeys",
+      "url": "https://github.com/viamin/paid/issues/4982",
+      "description": "## Problem\n\nPaid can provision a browser sidecar and Playwright MCP for an issue implementation run, derive a start command, and record interactive verification. The agent still has to rediscover how to exercise each Paid feature. Paid's own `.paid/screenshots.yml` already defines auth, seed data, and routes, but it is oriented toward screenshot capture rather than repeatable changed-feature journeys.\n\n## Goal\n\nUse Paid to verify changes to Paid itself. In an isolated development/test run where the Paid repository is the managed project, a Paid `create_pr` agent should be able to start a seeded Paid instance, sign in, exercise a relevant Paid user journey, inspect the observed result, and attach that evidence to its existing run result.\n\n## Scope\n\n- Pilot one representative Paid web journey first (for example, sign-in → Projects → project detail), then exercise a real changed feature through a Paid-managed implementation run.\n- Add a repository-owned, concise journey guide and only the helper commands needed to make setup, data reset, navigation, observation, and cleanup repeatable. Reuse `.paid/screenshots.yml` for existing routes/auth/seed configuration; do not create a competing copy.\n- Teach `AgentRuns::VerificationPrompt` to discover the guide at a conventional path and select the journey relevant to the changed surface. Reuse the existing Playwright MCP sidecar, runtime plan, app diagnostics, and `VerificationResultRecorder`.\n- Keep all test data and application execution in the isolated run environment. No production Paid data or credentials.\n\n## Acceptance criteria\n\n- [ ] An agent can follow the documented commands from a clean Paid checkout to start a seeded Paid instance, obtain a test identity, complete the selected journey through Playwright MCP, inspect the expected result, and clean up resources created by the run.\n- [ ] A Paid-managed `create_pr` run against the Paid repository performs the journey for a real changed feature and stores the actual steps, observed result, relevant log/trace/screenshot references, and reviewed commit in the existing verification result. A screenshot or agent claim alone is not treated as proof of the criterion.\n- [ ] The journey and its commands have a focused, executable maintenance check so a stale route, login step, or startup instruction fails visibly.\n- [ ] Missing setup, authentication failure, unavailable browser, or failed assertion yields explicit failed/skipped/not-run evidence; it cannot be reported as a successful journey.\n- [ ] The pilot reports setup time, run time, failure modes, and operator effort before proposing wider rollout.\n\n## Boundaries and related work\n\n`bootstrap_readiness` has a narrow write allowlist. Journey guides or behavior-bearing helper scripts must use a normal reviewed PR or a separately designed write boundary; this issue does not widen bootstrap authority. Preserve current project verification opt-in and merge policy. Follow Full LID through the owning HLD/LLD/EARS, failing-first tests, and code.\n\nRelevant foundations: `docs/intent/live-web-app-preview/`, `docs/intent/project-readiness/`, `app/services/agent_runs/verification_prompt.rb`, and `.paid/screenshots.yml`.\n\nInspired by Lauren Tan's [verification-skill article](https://x.com/poteto/article/2094457600259842065).",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6417118758",
       "source": "github",
       "title": "Define the optional paid edition",
@@ -440,20 +455,6 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6259292958",
-      "source": "github",
-      "title": "Upgrade cf workers plan to paid for resolve e2e issues",
-      "url": "https://github.com/kveperedo/website/issues/164",
-      "description": " Upgrade the account to Workers Paid ($5/mo). Default CPU goes to 30 s per invocation and 1102 disappears. This is the decisive fix. If you're already on Paid, check for a limits.cpu_ms setting — 1102 on Paid means the limit was lowered.",
-      "rewardUsd": 5,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 5,
-      "profitPerHourUsd": 60,
-      "eligible": true
     },
     {
       "id": "github-6454108563",
@@ -481,6 +482,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 250,
       "profitPerHourUsd": 3000,
+      "eligible": true
+    },
+    {
+      "id": "github-6524203711",
+      "source": "github",
+      "title": "[bounty] math module tour",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/265",
+      "description": "Hi! I'd like to claim the **$25 recurring micro-bounty: \"write a blog post tutorial for any single stdlib module\"** for `stdlib/math.ltl`.\n\n## Deliverables\n\n- `docs/blog/math-module-tour.ltlml` — tutorial\n- `examples/math_tour.ltl` — runnable companion program with 26 pinned test vectors\n\n## What the tutorial covers\n\n- The import form that actually works (`from stdlib.math import ...`, not `import math`)\n- 26 exact pinned vectors in a table, each asserted by the companion program\n- Four traps: `floor`/`ceil` rounding toward ±infinity (`floor(-2.5) == -3`), `clamp` returning `float`, `sign(0) == 0`, and `log` being the natural log\n- Float-pinning rules: exact literals for `sqrt`/`log`/`exp`, but `sin(PI / 6.0) == 0.49999999999999994`, so trig should not be pinned at non-trivial angles\n- The callable-surface finding: 12 of `math.ltl`'s 24 declared functions bind on the Python backend, `log`/`exp` are undeclared yet callable, and `ln`/`log2`/`log10` are declared yet unbound — the tutorial pins what actually works instead of documenting the declaration list\n\n## Verification\n\n```bash\npython3 -m lateralus_lang run examples/math_tour.ltl\n#   26 passed, 0 failed  (26 vectors)\n\npython3 -m lateralus_lang check examples/math_tour.ltl\n#   OK\n```\n\nBoth were run from the repo root on `main` (lateralus-lang 3.2.0, Python 3.14).\n\nPR: #266 (`xilin2020:bounty/math-module-tour`, signed-off commit). Happy to split or reword anything; `stdlib/math.ltl` is otherwise left untouched.",
+      "rewardUsd": 25,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
       "eligible": true
     },
     {

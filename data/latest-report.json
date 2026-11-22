@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T08:05:50.333Z",
+  "generatedAt": "2026-11-22T16:22:36.027Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,8 +13,8 @@
       "micro bounty"
     ]
   },
-  "discovered": 38,
-  "eligible": 20,
+  "discovered": 40,
+  "eligible": 16,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -232,21 +232,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6493226535",
-      "source": "github",
-      "title": "feat(tools): Referral Reward Tier & ROI Designer (/tools/referral-reward-calculator)",
-      "url": "https://github.com/FALAK097/waitlyze/issues/243",
-      "description": "Part of #235.\n\n## Problem\n\nFounders building a referral waitlist often guess their milestone tiers (e.g., \"Refer 3 friends for free swag, 10 for a lifetime deal\") without modeling fulfillment unit economics, effective CAC per referred subscriber, or the fraud risk of high-cost rewards.\n\n## Proposed Solution\n\n1. **Interactive Milestone & Unit-Economics Model (`/tools/referral-reward-calculator`)**:\n   - Inputs:\n     - Product price / estimated LTV and target gross margin\n     - Expected total waitlist size and referral share rate scenario\n     - Up to 4 customizable milestone tiers (referrals required, reward type: *Priority Queue Jump*, *Extended Trial / Credits*, *Discount %*, *Digital Asset / Guide*, *Physical Swag / Hardware*, *Lifetime Deal*, and unit marginal cost)\n   - Outputs:\n     - Projected earner distribution across Tiers 1–4 at conservative ($P_{25}$), baseline ($P_{50}$), and breakout ($P_{90}$) viral curves.\n     - Total reward budget exposure and **Effective Cost per Verified Referral** at each tier.\n     - Fraud-risk rating per tier (e.g., physical swag or cash equivalents at low referral thresholds trigger a high-risk warning).\n     - Ready-to-copy tier title and reward description microcopy.\n2. **Conversion Bridge**:\n   - Primary CTA: **\"Apply these reward tiers in Waitlyze\"** → generates a `ToolBlueprint` containing the milestone thresholds, reward labels, strict double opt-in verification requirement, and disposable-email blocking rules.\n\n## Acceptance Criteria\n\n- [ ] `/tools/referral-reward-calculator` models 3–4 milestone tiers, earner distribution, budget exposure, and effective cost per verified referral deterministically.\n- [ ] Flags high fraud-risk reward thresholds and recommends matching Waitlyze verification and anti-abuse settings.\n- [ ] Supports ungated CSV/PNG export of the reward tier table and budget model.\n- [ ] Primary CTA saves the reward tiers and referral rules into a `ToolBlueprint` for campaign creation.\n- [ ] Passes `oxlint`, `oxfmt --check`, and `pnpm build`.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6338080613",
       "source": "github",
       "title": "Opponent suggests giving a mechanics-related book instead of cash reward",
@@ -297,6 +282,21 @@
       "title": "P0 · Commercial E2E: first approved offerwall → funded conversion → paid user reward",
       "url": "https://github.com/Noetfield-Systems/Earnloop/issues/1",
       "description": "## Mission (revenue-first)\nTurn the deployed founding beta into a revenue-producing rewards platform. Do not substitute XP for cash or fabricated partner inventory.\n\n**Verified release:** Railway `earnloop-web` from `Noetfield-Systems/Earnloop@a8f4dc502649f48a931c34845d6cdf9379f1bb08` with retained PostgreSQL and public domain https://earnloop-web-production.up.railway.app/. Independent HTTP smoke **PASS**: https://github.com/Noetfield-Systems/Earnloop/actions/runs/42756970996. Current members=0, early access=0, partner funding unverified.\n\n### Acceptance gates\n- [ ] Publisher account approved by Torox / ayeT / equivalent, with genuine available Canadian inventory and signed contract (Founder/operator approval required)\n- [ ] Implement exact partner authenticated postback spec, unique conversion IDs, replay protection, tracking, reversal and dispute handling; never trust client-reported spend\n- [ ] Real booked advertiser payable and independently verified cash settlement with evidence\n- [ ] Reward ledger records funded user liability separately from community XP, and supports reversal/chargebacks\n- [ ] Legal/payment provider integration, identity recovery, user eligibility, KYC where applicable and permitted cash-out/gift-card fulfilment\n- [ ] First real, consented user completes partner action and receives real funded reward; attach partner statement, payout receipt, IDs, timestamp, independent verification and contribution margin\n- [ ] Company OS captures verified evidence, net contribution and next acquisition action in product WorkPackets; Sina Founder OS gets portfolio summary only\n\n**Do not claim launch revenue until funds are actually settled. No paid offers/cashouts are activated without approved partners and funded settlement.**",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6011061645",
+      "source": "github",
+      "title": "Reward system",
+      "url": "https://github.com/axehigh/questlog/issues/1",
+      "description": "Act as an expert full-stack developer and UI/UX designer. I am building a mobile-first web app (HTML/Tailwind CSS/JS) for 14-year-old boys to track household chores using a gaming-inspired theme (Valorant, Minecraft, Roblox aesthetic). \n\nImplement a Loss-Aversion Point Engine and Reward System using the following architecture:\n\n1. DUAL-CURRENCY SYSTEM:\n- XP (Experience Points): Earned ONLY through task completion. Permanent, cumulative, and never lost or docked. Drives overall level and gamer ranks (Unranked -> Iron -> Bronze -> Silver -> Gold -> Platinum -> Diamond -> Ascendant -> Radiant).\n- Coins: Earnable spending currency used in the Rewards Shop.\n\n2. LOSS-AVERSION & PENALTY MECHANICS:\n- Missed / Failed Daily Tasks: Deduct Coins from the available balance (or forfeit the daily Coin multiplier) to leverage psychological loss aversion without touching permanent XP.\n- Guardrail: Implement a minimum Coin threshold (e.g., balance cannot drop below zero) and clear penalty limits per task so kids don't feel a \"sunk-cost demotivation\" trap.\n- Streak System: Track consecutive active days (🔥 Streak). Missing mandatory daily tasks resets or reduces the streak bonus multiplier.\n\n3. REWARDS SHOP LIST (Structured Tiers):\nImplement a customizable Rewards Shop with the following pre-loaded catalog:\n- Tier 1 (Micro / Low Cost):\n  * +30 Min Gaming Extension\n  * One-Time Minor Chore Pass (Skip a task)\n  * +30 Min Weekend Bedtime Buffer\n- Tier 2 (Mid-Tier / Moderate Cost):\n  * Choose Friday Night Dinner / Takeout\n  * In-Game Currency / Cosmetic Allowance (Robux, V-Bucks, Valorant Points)\n  * Uninterrupted Gaming Session / Sleepover with Friends\n- Tier 3 (Boss-Level / High Cost):\n  * Gaming Gear Upgrade (Headset, Mouse, Keyboard Cap)\n  * Funded Outing with Friends (Movies, Arcade, Bowling)\n  * Cash-Out Point Conversion\n\n4. PARENT CONTROL OVERRIDES:\n- PIN-protected parent mode to approve completed high-value tasks, issue direct bonus/penalty Coin adjustments, and process reward redemptions.\n\nPlease generate or update the application code to fully integrate this logic, store state in local storage, and present a sleek, high-contrast dark mode UI optimized for smartphone web browsers.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -512,60 +512,94 @@
       "eligible": true
     },
     {
-      "id": "github-6409374588",
+      "id": "github-6541201297",
       "source": "github",
-      "title": "[bounty] stdlib.csv tutorial — availability and reservation request",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/100",
-      "description": "Hi maintainers,\n\nI would like to request reservation of the $25 recurring micro-bounty for a tutorial on `stdlib.csv`, as described in `BOUNTIES.md`.\n\nProposed deliverable:\n- A focused tutorial covering parsing rows and headers and generating CSV.\n- A runnable example using synthetic data, with a pinned expected-output fixture.\n- Verification against an agreed repository commit and documentation of the module's actual supported behavior.\n\nBefore starting, could you confirm:\n1. That this tutorial is available and can be reserved for me.\n2. The $25 reward, acceptance criteria and intended location for the tutorial.\n3. A payment route available to an Argentina-based contributor and which payment schedule applies: the micro-bounty section mentions weekly payment, while the general rules say within 14 days of merge.\n\nI use AI-assisted development with review and testing. Once assignment, scope and payment arrangements are confirmed, I can propose delivery timing.\n\nThe email published in the policy returned a permanent 550 5.1.1 delivery failure, so I am using the issue channel specified there. This is a reservation inquiry; work has not started.\n\nThank you,\nAlvaro Ruggeri\n",
-      "rewardUsd": 25,
+      "title": "[bounty] stdlib.metrics tutorial: Prometheus text exposition, counters, gauges, and histograms",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/506",
+      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/metrics.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-metrics-tutorial.md\\ (Prometheus text exposition format, dimensional labels, metric family lifecycle, and cumulative histogram bucket theory).\n  2. \\examples/metrics_tutorial.ltl\\ (Runnable HTTP server observability demo tracking request rates, concurrent connections, and latency distributions).\n  3. \\\tests/stdlib_metrics_tutorial.ltl\\ (Pinned test vectors verifying counter increments, gauge updates, histogram cumulative sums/counts, and Prometheus exposition formatting).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
+      "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 25,
-      "profitPerHourUsd": 300,
-      "eligible": true
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6404649675",
+      "id": "github-6541288891",
       "source": "github",
-      "title": "[bounty] base64 stdlib tutorial: availability and payment",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/77",
-      "description": "### Component\n\nLanguage Syntax\n\n### Problem or motivation\n\nI’d like to claim the $25 micro-bounty for a tutorial on `stdlib/base64.ltl`, including runnable examples and RFC 4648 test vectors.\n\n### Proposed solution\n\nBefore starting, please confirm that the bounty is active and funded, the submission and contributor eligibility requirements, and whether payment through PayPal or bank transfer is possible.\n\n### Code examples\n\n```lateralus\n\n```\n\n### Alternatives considered\n\n_No response_\n\n### Is this a breaking change?\n\nNo",
-      "rewardUsd": 25,
+      "title": "[bounty] stdlib.yaml tutorial: YAML 1.2 block mapping, sequence parsing, and indentation trees",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/512",
+      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/yaml.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-yaml-tutorial.md\\ (YAML 1.2 indentation block parsing, sequence vs mapping transitions, quote-aware comment stripping, and scalar coercion).\n  2. \\examples/yaml_tutorial.ltl\\ (Runnable cloud-native Kubernetes Deployment manifest parser and container specification inspector).\n  3. \\\tests/stdlib_yaml_tutorial.ltl\\ (Pinned test vectors verifying nested maps, block sequences, null/~ representations, and inline comment preservation).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
+      "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 25,
-      "profitPerHourUsd": 300,
-      "eligible": true
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6445476653",
+      "id": "github-6541229516",
       "source": "github",
-      "title": "[bounty] stdlib.xxhash tutorial",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/173",
-      "description": "I propose the recurring tutorial micro-bounty for `stdlib/xxhash.ltl`: **XXH64 in practice: comparing content and detecting changes**.\n\nBefore a submission, could a maintainer confirm:\n- that this specific tutorial topic is available;\n- that sponsor funding is available and the advertised $25 applies to an accepted tutorial;\n- that an AI-assisted contribution from `n1ozzy` is eligible, including the one-bounty-per-person-per-quarter rule and how the applicable quarter is determined?\n\nScope: the actual `hash64(buf, seed)` implementation; byte inputs and unsigned 64-bit output; seeds; deterministic content comparisons; collisions; why XXH64 is unsuitable for passwords, signatures, MACs or protection against malicious modification. No unmeasured performance claims.\n\nPlanned artifacts: `docs/blog/xxhash-tutorial.ltlml` in the repository's format, `examples/xxhash_demo.ltl`, pinned independent XXH64 vectors, a test running the Lateralus example, reproduction instructions, and `BOUNTIES-LOG.md` if required. Validation covers empty input, ASCII a and hello, lengths 31/32/33/64, seeds 0/1, repeatability and selected data changes. The independent oracle will be canonical Cyan4973/xxHash with its version recorded. Import/backend limitations and discrepancies will be reported explicitly; production code changes are outside this proposal.\n\n**AI disclosure:** Research, writing and local verification will use AI assistance. This issue does not assert assignment, human review, acceptance or payment. I did not find a separate AI contribution policy in the current repository; please point me to any applicable requirements.\n\nI understand the first-come/first-merged rules and one-bounty-per-person-per-quarter limit. The advertised $25 is not an awarded payment. Before confirmation I will spend at most 45 minutes on local feasibility and a first draft; silence will not be treated as consent. A tutorial PR will wait for confirmation of the topic and conditions. Signed-off commits require the account owner's separate approval; no DCO, CLA or authorship declaration is signed here. No payout details are included.\n",
-      "rewardUsd": 25,
+      "title": "[bounty] stdlib.tracing tutorial: W3C traceparent propagation, OpenTelemetry spans, and distributed contexts",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/508",
+      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/tracing.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-tracing-tutorial.md\\ (W3C traceparent specification, OpenTelemetry span lifecycle, parent-child context inheritance, and distributed exporter architecture).\n  2. \\examples/tracing_tutorial.ltl\\ (Runnable cross-service RPC tracing demo passing traceparent headers across Gateway and Payment components).\n  3. \\\tests/stdlib_tracing_tutorial.ltl\\ (Pinned test vectors verifying W3C header parsing/formatting, span duration calculations, and sampling policy evaluation).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
+      "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 25,
-      "profitPerHourUsd": 300,
-      "eligible": true
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6436994632",
+      "id": "github-6541126937",
       "source": "github",
-      "title": "[bounty] stdlib.hash tutorial",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/141",
-      "description": "Claiming the published $25 recurring stdlib tutorial bounty (BOUNTIES.md, \"Recurring micro-bounties\") for `stdlib/hash.ltl`, before starting work, so it can be marked taken. I found no open claim or tutorial PR for this module.\n\nWhat I will submit:\n\n- A blog-post tutorial at `docs/blog/hash-tutorial.md` covering the module's string hashes (FNV-1a 32/64, DJB2, SDBM), its checksums (checksum8, Fletcher-16, Adler-32), and `bucket`.\n- A runnable example at `examples/hash_tutorial.ltl` with pinned test vectors, a combined-source runner at `scripts/run_hash_tutorial.py`, and a pytest at `tests/test_hash_tutorial.py` asserting the exact output. The runner uses the same approach as the recent levenshtein/ringbuf tutorial claims: the Python backend does not yet resolve stdlib imports, so it runs the unchanged module source combined with the example.\n- An entry in `BOUNTIES-LOG.md`.\n\nVerification already done against the checked-out module (lateralus-lang 3.2.0, main commit `cdcec06`): 21 candidate vectors checked against canonical references (published FNV-1a values, RFC 1950's Adler-32 of \"Wikipedia\" = 300286872, Fletcher-16 of \"abcde\" = 51440, published DJB2/SDBM values) — all match. Two deviations will be documented honestly in the tutorial rather than hidden:\n\n- `fnv1a_64` never masks to 64 bits, so it matches the published spec only for the empty string.\n- `combine` (and therefore `hash_list`) currently fails on the Python backend: it divides with `/` (float division) and feeds the result to `xor`.\n\nThe module itself will not be modified. The example defines the two backend helpers the module expects (`xor`, `char_code`) in the combined source, the same compatibility approach used by other recent tutorial claims.\n\nThis is AI-assisted work, and it is my one bounty under the one-per-person-per-quarter rule. No assignment, acceptance, or payment is assumed — all at the maintainer's discretion under BOUNTIES.md. If the topic is already taken or the bounty is paused, please say so here and I will stop.\n",
-      "rewardUsd": 25,
+      "title": "[bounty] stdlib.toml tutorial: TOML 1.0 parsing, table structures, and array-of-tables",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/500",
+      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/toml.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-toml-tutorial.md\\ (TOML 1.0 configuration semantics, key path splitting, table nesting, and array-of-tables \\[[]]\\ structures).\n  2. \\examples/toml_tutorial.ltl\\ (Runnable package manifest parsing, dependency extraction, and configuration lookup).\n  3. \\\tests/stdlib_toml_tutorial.ltl\\ (Pinned test vectors verifying strings, integers, booleans, nested tables, comment stripping, and array-of-tables).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
+      "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 25,
-      "profitPerHourUsd": 300,
-      "eligible": true
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6541103926",
+      "source": "github",
+      "title": "[bounty] stdlib.msgpack tutorial: MessagePack binary serialization, wire tags, and test vectors",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/498",
+      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/msgpack.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-msgpack-tutorial.md\\ (MessagePack binary wire specification, format tags, variable-length integer encoding, and compression efficiency vs JSON).\n  2. \\examples/msgpack_tutorial.ltl\\ (Runnable binary RPC payload serialization, structured data packing, and stream unpacking).\n  3. \\\tests/stdlib_msgpack_tutorial.ltl\\ (Pinned test vectors verifying wire tag bytes for nil, booleans, fixint, fixstr, fixarray, and fixmap).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6541080770",
+      "source": "github",
+      "title": "[bounty] stdlib.jwt tutorial: RFC 7519 tokens, HMAC security, and claim validation",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/495",
+      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/jwt.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-jwt-tutorial.md\\ (RFC 7519 JWS compact serialization, constant-time signature verification, mitigation of \\\u0007lg: none\\ attacks, and time-drift leeway handling).\n  2. \\examples/jwt_tutorial.ltl\\ (Runnable token issuance, authentication middleware verification, claims extraction, and tamper detection).\n  3. \\\tests/stdlib_jwt_tutorial.ltl\\ (Pinned test vectors verifying HMAC-SHA256 signature integrity, expiration boundaries, and audience/issuer filtering).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T16:22:36.027Z",
+  "generatedAt": "2026-11-22T22:31:02.497Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -411,6 +411,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6545166491",
+      "source": "github",
+      "title": "I-30: Paid tier",
+      "url": "https://github.com/KaelSensei/MagicAIBuilder/issues/1686",
+      "description": "The owner knows what is free, what is paid, at what price and after which written legal answers, and no player's model calls can cost more than the plan that pays for them.\n\n- **Horizon:** Next · **State:** Next\n- **Spec:** https://github.com/KaelSensei/MagicAIBuilder/blob/dev/docs/product/specs/i30-business-model-and-paid-tier.md\n- **Depends on:** hard waits on I-38, I-70; I-30 billing: waits on I-38's legal pages and a deletion that holds; I-70's report before a model change; slice tables name: I-70 slices 10 and 11, I-71 slice 12\n- **First slice that can start now (glance of 2026-11-20):** — (slice 1 in flight)\n\n**Slices** (0 done, 13 open; the open ones are sub-issues):\n\n- [ ] 0: Decision gate: written lawyer and accountant answers to 7.2; owner…\n- [ ] 1: Metered model client: one module for both routes, `AiUsage`, outcomes…\n- [ ] 2: Monthly allowance for every user in PostgreSQL, remaining allowance in…\n- [ ] 3: Model per task: build and suggest on Haiku 5.5 behind I-70's…\n- [ ] 4: Entitlement layer with the free plan only, `GET /api/me/entitlements`…\n- [ ] 5: Public AI-use disclosure page\n- [ ] 6: Public \"free and paid\" page\n- [ ] 7: Billing in test mode: checkout, webhooks, `Subscription`…\n- [ ] 8: Consumer-law flows: withdrawal function and chosen flow, renewal…\n- [ ] 9: First paid entitlements: larger AI allowance and early access\n- [ ] 10: Owner metrics page (8.1)\n- [ ] 11: Further paid entitlements, each when its feature ships: I-59 alerts…\n- [ ] 12: Fallback if slice 0 says no: supporter page, sponsor disclosure…\n\n<!-- roadmap-sync: I-30 -->",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6515741199",
       "source": "github",
       "title": "Paid Sponsorships for modpacks",
@@ -431,21 +446,6 @@
       "title": "feat(verification): pilot Paid-managed verification of Paid user journeys",
       "url": "https://github.com/viamin/paid/issues/4982",
       "description": "## Problem\n\nPaid can provision a browser sidecar and Playwright MCP for an issue implementation run, derive a start command, and record interactive verification. The agent still has to rediscover how to exercise each Paid feature. Paid's own `.paid/screenshots.yml` already defines auth, seed data, and routes, but it is oriented toward screenshot capture rather than repeatable changed-feature journeys.\n\n## Goal\n\nUse Paid to verify changes to Paid itself. In an isolated development/test run where the Paid repository is the managed project, a Paid `create_pr` agent should be able to start a seeded Paid instance, sign in, exercise a relevant Paid user journey, inspect the observed result, and attach that evidence to its existing run result.\n\n## Scope\n\n- Pilot one representative Paid web journey first (for example, sign-in → Projects → project detail), then exercise a real changed feature through a Paid-managed implementation run.\n- Add a repository-owned, concise journey guide and only the helper commands needed to make setup, data reset, navigation, observation, and cleanup repeatable. Reuse `.paid/screenshots.yml` for existing routes/auth/seed configuration; do not create a competing copy.\n- Teach `AgentRuns::VerificationPrompt` to discover the guide at a conventional path and select the journey relevant to the changed surface. Reuse the existing Playwright MCP sidecar, runtime plan, app diagnostics, and `VerificationResultRecorder`.\n- Keep all test data and application execution in the isolated run environment. No production Paid data or credentials.\n\n## Acceptance criteria\n\n- [ ] An agent can follow the documented commands from a clean Paid checkout to start a seeded Paid instance, obtain a test identity, complete the selected journey through Playwright MCP, inspect the expected result, and clean up resources created by the run.\n- [ ] A Paid-managed `create_pr` run against the Paid repository performs the journey for a real changed feature and stores the actual steps, observed result, relevant log/trace/screenshot references, and reviewed commit in the existing verification result. A screenshot or agent claim alone is not treated as proof of the criterion.\n- [ ] The journey and its commands have a focused, executable maintenance check so a stale route, login step, or startup instruction fails visibly.\n- [ ] Missing setup, authentication failure, unavailable browser, or failed assertion yields explicit failed/skipped/not-run evidence; it cannot be reported as a successful journey.\n- [ ] The pilot reports setup time, run time, failure modes, and operator effort before proposing wider rollout.\n\n## Boundaries and related work\n\n`bootstrap_readiness` has a narrow write allowlist. Journey guides or behavior-bearing helper scripts must use a normal reviewed PR or a separately designed write boundary; this issue does not widen bootstrap authority. Preserve current project verification opt-in and merge policy. Follow Full LID through the owning HLD/LLD/EARS, failing-first tests, and code.\n\nRelevant foundations: `docs/intent/live-web-app-preview/`, `docs/intent/project-readiness/`, `app/services/agent_runs/verification_prompt.rb`, and `.paid/screenshots.yml`.\n\nInspired by Lauren Tan's [verification-skill article](https://x.com/poteto/article/2094457600259842065).",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6417118758",
-      "source": "github",
-      "title": "Define the optional paid edition",
-      "url": "https://github.com/Yang-128/my-ai-agent/issues/77",
-      "description": "## Phase\n\nPhase 4 — Product Experience & Personalization\n\n## Parent issue\n\n#23 — Phase 4 — Product Experience & Personalization\n\n## Objective\n\nSpecify optional paid features and their value, keeping the core free experience useful and making pricing and feature differences transparent.\n\n## Definition of done\n\n- The functionality is implemented and integrated into My AI Agent.\n- Expected behavior and important failure cases are tested.\n- Security, permissions, compatibility, and error handling are addressed where relevant.\n- User-facing behavior and configuration are documented.\n- The parent phase issue is updated to reflect completion.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

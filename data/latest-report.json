@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T03:45:42.986Z",
+  "generatedAt": "2026-11-23T14:51:58.420Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 17,
+  "eligible": 18,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -336,21 +336,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6507650456",
-      "source": "github",
-      "title": "Paid or refunded issues keep their \"bounty: …\" label",
-      "url": "https://github.com/Soroban-escrow/escrow-app/issues/178",
-      "description": "`refreshBountyCard` only sets the label for `OPEN` and `DISPUTED`. When a bounty is released, refunded or resolved, the old `bounty: 50 USDC` label stays on the issue and still advertises money.\n\n**Where:** `apps/api/src/github/sync.ts`, `apps/api/src/github/client.ts`\n\n**Acceptance criteria**\n- Add a `clearBountyLabel` call to the client.\n- Call it for the closed statuses.\n- Add a test per status.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6450377752",
       "source": "github",
       "title": "Paid subscriptions",
@@ -371,6 +356,21 @@
       "title": "Web Checkout: the paid screen reads Paid $0.00 after the customer paid on the pay page",
       "url": "https://github.com/wcpos/monorepo/issues/3755",
       "description": "Mac mini: found by the docs run on 2.0.3 (web) in a local wp-env, not the demo.\n\n**Seen.** A customer pays an order through Web Checkout (they chose Cash on delivery on the pay page), then the cashier presses Charge. The paid screen says \"Paid $0.00\". The order panel's ledger says \"No payments yet\", Paid $0.00, Remaining $45.00. The receipt in the same screen shows the order as PROCESSING with \"Cash on delivery $45.00\".\n\n**Expected.** Paid equals the amount the store recorded, and Remaining is $0.00.\n\n**Steps**\n1. Ring up one product, press Checkout, open the Store checkout tab and choose Web Checkout.\n2. Open the order's \"Pay for this order\" link in a second browser and pay with Cash on delivery. The store shows Order received, and the order is processing.\n3. Press Charge on the till.\n\n**Versions.** App 2.0.3 (web, 1024x768). woocommerce-pos-pro 2.0.5 (active, unlicensed). woocommerce-pos-web-checkout-gateway 0.0.1. WooCommerce 10.4.3. WordPress 7.1.5.\n\n**Scope.** Money display on the paid screen and the ledger. The order and the receipt are right. This issue covers the app side only.\n\nA second observation from the same run is tracked separately: after an unpaid Charge, the till moves to the receipt on its own once the customer pays.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6272399927",
+      "source": "github",
+      "title": "Epic: Newsletter module (subscribers, delivery, tracking, analytics, paid issues)",
+      "url": "https://github.com/genfeedai/genfeed.ai/issues/9722",
+      "description": "## Goal\n\nA creator, and Genfeed itself, runs a full newsletter from app.genfeed.ai: write or generate an issue, send it to subscribers in the brand's own look, see who opened and clicked, and charge for it in GEN credits. One module, one place in the app, no outside newsletter tool.\n\nDocument only. The week of 11-09 is a coding lock; nothing here starts until Vincent gives the go.\n\n## Today (verified in code at master `e39a197c`)\n\n- Authoring exists: `Newsletter` model with generation, approval, schedule (`packages/prisma/prisma/schema.prisma`), API at `collections/newsletters`, editor under `apps/web/app/(protected)/[orgSlug]/[brandSlug]/edit/newsletter`.\n- Delivery today is only to a connected third-party publication (`long-form-deliveries.service.ts`). Genfeed never emails an issue itself.\n- `renderNewsletterHtml` turns Markdown into sanitized HTML. There is **no email layout**: no brand logo, banner, colors, footer or plain-text part.\n- Resend sends our own mail one message at a time (`apps/server/notifications/src/services/resend/resend.service.ts`). No batch, no audience.\n- Delivery analytics exist for system mail: `EmailMessage` (accepted, delivered, opened, clicked, bounced, complained), first-party `EmailClick`, signed Resend webhook, suppression list (`email-performance.service.ts`). They are tied to a registered `userId`, so they cannot yet cover outside subscribers.\n- No subscriber model, no subscribe endpoint, no CSV import. The marketing footer's newsletter block links to a third-party sign-up page.\n- Brand has colors, font, watermark logo ids and an end card; `BANNER` exists as an asset category (`asset.enum.ts`). No dedicated newsletter header fields.\n\n## Recommendation\n\nYes, make it a module. The pieces share one subscriber table, one send pipeline and one analytics store, and splitting them across the article, profile and credits work would duplicate all three. The module is one app section (Issues, Subscribers, Analytics, Settings) over three API modules: subscribers, sends, analytics.\n\n## Scope and existing issues\n\n| Area | Issue |\n| --- | --- |\n| Creator profile URLs and showcase | #9662, #9661 (under #9666) |\n| Public subscribe, subscriber model, double opt-in, first send | #9665 (under #9666) |\n| Credits ledger, tips, paid subscriptions, paid issues, earnings, cash-out decision | #9715 to #9720 (under #9714) |\n| App section and module boundaries | new, linked below |\n| Subscriber management: add by email, CSV import and export | new |\n| Email template and brand identity | new |\n| Bulk delivery engine | new (carves the engine out of #9665) |\n| Tracking and analytics | new |\n| Genfeed's own newsletter: homepage, footer, archive | new |\n| Remove third-party newsletter platform references | new |\n\n## Order\n\n1. Decisions below.\n2. #9662 URLs, then subscriber model and subscribe flow (#9665 first half).\n3. Subscriber management in the app (add, CSV).\n4. Email template and brand identity.\n5. Bulk delivery engine, then tracking and analytics.\n6. Genfeed's own newsletter on the homepage, then the reference cleanup (needs a working sign-up before the old link goes).\n7. Credits: #9715, #9716, #9717, #9718, #9719. #9720 is a decision, not a build.\n\n## Decisions needed before building\n\n- Sending domain: shared Genfeed domain first, or each brand verifies its own.\n- Plan limits: subscribers and sends per month per plan (Cloud runtime gate).\n- Platform fee on paid issues (from #9714).\n- Whether the existing connected-publication delivery stays as an optional target.\n- Whether CSV import needs a per-import consent confirmation (recommended: yes).\n\n## Done when\n\nA visitor subscribes on Genfeed's homepage, confirms by email, and receives the next issue in Genfeed's look; the owner imports a CSV in the app; the issue shows opens and clicks; a paid issue is unlocked with credits. Each sub-issue has its own finish condition and evidence.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -411,11 +411,26 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6272399927",
+      "id": "github-6561201541",
       "source": "github",
-      "title": "Epic: Newsletter module (subscribers, delivery, tracking, analytics, paid issues)",
-      "url": "https://github.com/genfeedai/genfeed.ai/issues/9722",
-      "description": "## Goal\n\nA creator, and Genfeed itself, runs a full newsletter from app.genfeed.ai: write or generate an issue, send it to subscribers in the brand's own look, see who opened and clicked, and charge for it in GEN credits. One module, one place in the app, no outside newsletter tool.\n\nDocument only. The week of 11-09 is a coding lock; nothing here starts until Vincent gives the go.\n\n## Today (verified in code at master `e39a197c`)\n\n- Authoring exists: `Newsletter` model with generation, approval, schedule (`packages/prisma/prisma/schema.prisma`), API at `collections/newsletters`, editor under `apps/web/app/(protected)/[orgSlug]/[brandSlug]/edit/newsletter`.\n- Delivery today is only to a connected third-party publication (`long-form-deliveries.service.ts`). Genfeed never emails an issue itself.\n- `renderNewsletterHtml` turns Markdown into sanitized HTML. There is **no email layout**: no brand logo, banner, colors, footer or plain-text part.\n- Resend sends our own mail one message at a time (`apps/server/notifications/src/services/resend/resend.service.ts`). No batch, no audience.\n- Delivery analytics exist for system mail: `EmailMessage` (accepted, delivered, opened, clicked, bounced, complained), first-party `EmailClick`, signed Resend webhook, suppression list (`email-performance.service.ts`). They are tied to a registered `userId`, so they cannot yet cover outside subscribers.\n- No subscriber model, no subscribe endpoint, no CSV import. The marketing footer's newsletter block links to a third-party sign-up page.\n- Brand has colors, font, watermark logo ids and an end card; `BANNER` exists as an asset category (`asset.enum.ts`). No dedicated newsletter header fields.\n\n## Recommendation\n\nYes, make it a module. The pieces share one subscriber table, one send pipeline and one analytics store, and splitting them across the article, profile and credits work would duplicate all three. The module is one app section (Issues, Subscribers, Analytics, Settings) over three API modules: subscribers, sends, analytics.\n\n## Scope and existing issues\n\n| Area | Issue |\n| --- | --- |\n| Creator profile URLs and showcase | #9662, #9661 (under #9666) |\n| Public subscribe, subscriber model, double opt-in, first send | #9665 (under #9666) |\n| Credits ledger, tips, paid subscriptions, paid issues, earnings, cash-out decision | #9715 to #9720 (under #9714) |\n| App section and module boundaries | new, linked below |\n| Subscriber management: add by email, CSV import and export | new |\n| Email template and brand identity | new |\n| Bulk delivery engine | new (carves the engine out of #9665) |\n| Tracking and analytics | new |\n| Genfeed's own newsletter: homepage, footer, archive | new |\n| Remove third-party newsletter platform references | new |\n\n## Order\n\n1. Decisions below.\n2. #9662 URLs, then subscriber model and subscribe flow (#9665 first half).\n3. Subscriber management in the app (add, CSV).\n4. Email template and brand identity.\n5. Bulk delivery engine, then tracking and analytics.\n6. Genfeed's own newsletter on the homepage, then the reference cleanup (needs a working sign-up before the old link goes).\n7. Credits: #9715, #9716, #9717, #9718, #9719. #9720 is a decision, not a build.\n\n## Decisions needed before building\n\n- Sending domain: shared Genfeed domain first, or each brand verifies its own.\n- Plan limits: subscribers and sends per month per plan (Cloud runtime gate).\n- Platform fee on paid issues (from #9714).\n- Whether the existing connected-publication delivery stays as an optional target.\n- Whether CSV import needs a per-import consent confirmation (recommended: yes).\n\n## Done when\n\nA visitor subscribes on Genfeed's homepage, confirms by email, and receives the next issue in Genfeed's look; the owner imports a CSV in the app; the issue shows opens and clicks; a paid issue is unlocked with credits. Each sub-issue has its own finish condition and evidence.",
+      "title": "INV-1 Issue the фактура from Stripe's paid invoice (replaces Odoo)",
+      "url": "https://github.com/alethialabs-io/alethialabs/issues/7368",
+      "description": "On invoice.paid: take the next number (INV-S), build the snapshot from the Stripe invoice + the EA-S invoice snapshot columns, compute the EUR equivalent for a non-EUR currency at the ECB reference rate of the chargeable date (reuse EA-5's rate fetch), render the PDF in Bulgarian with @react-pdf/renderer (add a Cyrillic-capable TTF; seller ЕИК 208913663; 'чл. 113, ал. 9 ЗДДС' while unregistered), store it via lib/storage/invoice-pdf.ts, set invoice.number/pdf_key and factura status, attach it to the receipt email. Replace apps/console/lib/billing/odoo-invoice.ts and remove all Odoo config (ODOO_INVOICE_* env, .env.production.example comment). Keep EA-7's fail-visibly behaviour. Golden-render test of an EUR and a USD фактура, plus the 10-digit gap-free test under concurrent issue.\n\nSpec: management repo `spec/features/beta-2027-01-31/invoicing-minimal.md` (option A, re-scoped by the 2026-11-23 ruling in `decisions-2026-11-23-early-access.md` §4: a thin фактура layer on Stripe, Odoo dropped, multi-currency kept).\n\nblocked-by: #7367\nscope: apps/console/lib/billing/factura/** apps/console/lib/billing/odoo-invoice.ts apps/console/lib/billing/invoices.ts apps/console/lib/email/billing-email.ts apps/console/tests/lib/billing/factura/** apps/console/tests/lib/billing/odoo-invoice* apps/console/tests/lib/billing/invoices* apps/console/package.json deploy/prod/.env.production.example",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6271857885",
+      "source": "github",
+      "title": "Epic: Creator earnings in GEN credits (tips, paid subscriptions, paid articles)",
+      "url": "https://github.com/genfeedai/genfeed.ai/issues/9714",
+      "description": "## Goal\n\nReaders can pay creators in GEN credits, and creators spend what they earn on generation inside Genfeed. This completes the creator publishing loop started in #9666: write, publish, email subscribers (#9665), get paid.\n\nDocument only. The week of 11-09 is a coding lock, so no code is scheduled.\n\n## Today (verified in code at master `e0d9b108`)\n\n- `CreditBalance` and `CreditTransaction` belong to an organization or billing account, never to a user (`packages/prisma/prisma/schema.prisma`).\n- Transaction categories are `add`, `deduct`, `expire`, `reset`, `rollover`, `refund`, `byok-usage` (`packages/contracts/src/enums/credit.enum.ts`). There is **no transfer between accounts**, no tip, no paid subscription to a creator.\n- Stripe is used only for Genfeed's own plans (`Subscription`, `UserSubscription`). No Stripe Connect and no payout code.\n- `Article` and `Newsletter` have no price or access fields. Every published article is public.\n\n## Scope\n\nEarn-and-spend only: earned credits are spent on generation inside Genfeed and are not withdrawable. This avoids payouts, KYC and tax handling. Cash-out is a separate decision (see the last issue).\n\n## Order\n\n1. Credit transfer ledger (everything else builds on it).\n2. Tips.\n3. Paid subscriptions to a creator.\n4. Paid articles and newsletter issues.\n5. Creator earnings view.\n6. Decision: cash-out.\n\n## Decisions needed before building\n\n- Platform fee on each payment (percentage, or none at first).\n- Whether earned credits expire like purchased ones, or never expire.\n- Whether earned credits count toward plan limits and the low-credits banner.\n- Who can pay: signed-in Genfeed users only, or a guest checkout that creates an account.\n\n## Done when\n\nA reader with credits tips a creator, subscribes to them, and unlocks a paid article. The creator's balance rises by the amount minus the fee, and the creator spends it on a generation. Each sub-issue carries its own finish condition and evidence.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -431,21 +446,6 @@
       "title": "I-30: Paid tier",
       "url": "https://github.com/KaelSensei/MagicAIBuilder/issues/1686",
       "description": "The owner knows what is free, what is paid, at what price and after which written legal answers, and no player's model calls can cost more than the plan that pays for them.\n\n- **Horizon:** Next · **State:** Next\n- **Spec:** https://github.com/KaelSensei/MagicAIBuilder/blob/dev/docs/product/specs/i30-business-model-and-paid-tier.md\n- **Depends on:** hard waits on I-38, I-70; I-30 billing: waits on I-38's legal pages and a deletion that holds; I-70's report before a model change; slice tables name: I-70 slices 10 and 11, I-71 slice 12\n- **First slice that can start now (glance of 2026-11-20):** — (slice 1 in flight)\n\n**Slices** (0 done, 13 open; the open ones are sub-issues):\n\n- [ ] 0: Decision gate: written lawyer and accountant answers to 7.2; owner…\n- [ ] 1: Metered model client: one module for both routes, `AiUsage`, outcomes…\n- [ ] 2: Monthly allowance for every user in PostgreSQL, remaining allowance in…\n- [ ] 3: Model per task: build and suggest on Haiku 5.5 behind I-70's…\n- [ ] 4: Entitlement layer with the free plan only, `GET /api/me/entitlements`…\n- [ ] 5: Public AI-use disclosure page\n- [ ] 6: Public \"free and paid\" page\n- [ ] 7: Billing in test mode: checkout, webhooks, `Subscription`…\n- [ ] 8: Consumer-law flows: withdrawal function and chosen flow, renewal…\n- [ ] 9: First paid entitlements: larger AI allowance and early access\n- [ ] 10: Owner metrics page (8.1)\n- [ ] 11: Further paid entitlements, each when its feature ships: I-59 alerts…\n- [ ] 12: Fallback if slice 0 says no: supporter page, sponsor disclosure…\n\n<!-- roadmap-sync: I-30 -->",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6515741199",
-      "source": "github",
-      "title": "Paid Sponsorships for modpacks",
-      "url": "https://github.com/modrinth/code/issues/8406",
-      "description": "### Please confirm the following.\n\n- [x] I checked the [existing issues](https://github.com/modrinth/code/issues?q=is%3Aissue) for duplicate feature requests\n\n### What parts of Modrinth is your feature request related too?\n\nModrinth App\n\n### Is your suggested feature related to a problem? Please describe.\n\nhey! I was wondering if you guys woud be opened to having a sponsored modpack program. The modpack creators could pay a monthly fee to be sponsored atop of the list of the modpacks page alongside when a keyword is searched in the browsing list (example if you search zombies in modpacks and yours has that in the title) then it could show up at the top\n\nI personally would certainly be interested in paying a good amount per month to get a modpack sponsored on your platform and I think other creators as well who have interest in exposing their modpacks!\n\n\n\n\n### Describe the solution you'd like\n\n_No response_\n\n### Describe alternatives you've considered\n\n_No response_\n\n### Additional context\n\n<img width=\"1253\" height=\"977\" alt=\"image\" src=\"https://github.com/user-attachments/assets/75f146e7-0c36-4233-bb3e-9260ff69076b\" />\nCould also have a sponsored tag to let the users know that it's sponsored.\n\nIf this does become a possibility and is planned in the future I would love to discuss with your team a possibility to be one of the first sponsors\nHere is my discord and email!\ndiscord: brownie_minecraft\nemail: brownniieemc@gmail.com",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -509,6 +509,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 25,
       "profitPerHourUsd": 300,
+      "eligible": true
+    },
+    {
+      "id": "github-6561862690",
+      "source": "github",
+      "title": "[bounty] benchmark-ingest — stdlib micro-benchmarks (xxhash64 / lz4 / chacha20 / aho_corasick / radix_sort)",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/865",
+      "description": "Claiming the recurring `[bounty] benchmark-ingest` ($250).\n\nWorking state (verifiable now):\n\n**Reference implementations done** — `benchmarks/reference/stdlib_bench.py` and\n`stdlib_bench.js` implement all five workloads with identical input generators\n(XorShift32, same seeds) and identical algorithms:\n\n| # | workload | size |\n|---|---|---|\n| 1 | xxhash64 | 2 MB |\n| 2 | lz4 compress + decompress round-trip | 4 MB |\n| 3 | chacha20 keystream | 1 MB |\n| 4 | aho_corasick, 1,000 patterns | 1 MB text |\n| 5 | radix_sort_u32 | 100,000 keys |\n\nBoth print one digest line per workload; `diff` between the two outputs is empty:\n\n```\nxxhash 1673070f3eb5acc9\nlz4 ok:4194304:45d451f4:4210753\nchacha20 32aa25005fe5f3a9:b1bffb37\naho_corasick 751\nradix_sort_u32 000017df:ffffe0a8:5301c95d\n```\n\nCorrectness is pinned to published vectors, not just cross-language agreement:\nxxh64(\"\") = `ef46db3751d8e999`, xxh64(\"abc\") = `44bc2cf5ad770999`,\nxxh64(\"Nobody inspects the spammish repetition\") = `fbcea83c8a378bf1`,\nadler32(\"Wikipedia\") = `11e60398`, and the ChaCha20 block matches RFC 8439\n§2.4.2 (asserted at startup in both languages, not just documented).\n\nTwo real bugs were found and fixed while pinning this: the Python LZ4 bucket\nhash wasn't wrapping to 32 bits (so it disagreed with the JS crawler), and the\nChaCha20 state had the nonce in the wrong words.\n\nNext: inline `stdlib/{xxhash,lz4,aho_corasick,radix_sort}` + `std/crypto/chacha20`\ninto one self-contained `.ltl` source with a driver, run the Lateralus side, and\ncommit `benchmarks/results/stdlib_results.md` with all three languages.\n\nOpening the PR once the Lateralus numbers are in. — automated agent, working on\nbehalf of @78th8mysf9-a11y\n",
+      "rewardUsd": 250,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 250,
+      "profitPerHourUsd": 3000,
       "eligible": true
     },
     {
@@ -576,21 +590,6 @@
       "title": "[bounty] stdlib.toml tutorial: TOML 1.0 parsing, table structures, and array-of-tables",
       "url": "https://github.com/bad-antics/lateralus-lang/issues/500",
       "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/toml.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-toml-tutorial.md\\ (TOML 1.0 configuration semantics, key path splitting, table nesting, and array-of-tables \\[[]]\\ structures).\n  2. \\examples/toml_tutorial.ltl\\ (Runnable package manifest parsing, dependency extraction, and configuration lookup).\n  3. \\\tests/stdlib_toml_tutorial.ltl\\ (Pinned test vectors verifying strings, integers, booleans, nested tables, comment stripping, and array-of-tables).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6541103926",
-      "source": "github",
-      "title": "[bounty] stdlib.msgpack tutorial: MessagePack binary serialization, wire tags, and test vectors",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/498",
-      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/msgpack.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-msgpack-tutorial.md\\ (MessagePack binary wire specification, format tags, variable-length integer encoding, and compression efficiency vs JSON).\n  2. \\examples/msgpack_tutorial.ltl\\ (Runnable binary RPC payload serialization, structured data packing, and stream unpacking).\n  3. \\\tests/stdlib_msgpack_tutorial.ltl\\ (Pinned test vectors verifying wire tag bytes for nil, booleans, fixint, fixstr, fixarray, and fixmap).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

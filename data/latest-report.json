@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T22:31:02.497Z",
+  "generatedAt": "2026-11-23T03:45:42.986Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 16,
+  "eligible": 17,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -247,21 +247,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6437994389",
-      "source": "github",
-      "title": "[Feature Request] Let parents cash in a reward for a child from Deduct",
-      "url": "https://github.com/Highfivery/Pointsy/issues/189",
-      "description": "Hi! As a parent, I'd sometimes like to hand out a reward right away, without asking my kid to open the app and request it first. For example, they ask for ice cream and have enough points, so I just want to say \"sure\" and take care of it in the app myself.\n\n## Idea\n\nWhen I give points with **Award**, I can pick one of the chores. It would be nice if **Deduct** worked the same way, with a list of rewards to pick from:\n\n- Picking a reward fills in its name and cost, just like picking a chore does for Award.\n- The points come off immediately and it's recorded as that reward, so the kid's history shows \"Ice cream\" instead of an anonymous deduction. Since I'm handing it over right then, it doesn't need to go through approval or \"Awaiting delivery\".\n- The usual rules for redeeming still apply, e.g. it can't be used if the kid doesn't have enough points available. \n- Typing a custom amount and reason would still work as it does now.\n\nRight now I can switch to my kid's profile, request the reward there and then approve it from my own profile, or just deduct the points by hand. Both work, but this would make it a one-step thing and keep the history neat.\n\n---\n\nAnd thanks for the quick replies to my last two requests! The lifetime-points milestones are great, and thanks for pointing me to custom categories. I'd completely missed that they already existed, so the new \"New category\" button in the chore editor is a nice touch.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6515267341",
       "source": "github",
       "title": "CryptoEnv.reset() retains accumulated reward from the previous episode",
@@ -297,6 +282,21 @@
       "title": "Reward system",
       "url": "https://github.com/axehigh/questlog/issues/1",
       "description": "Act as an expert full-stack developer and UI/UX designer. I am building a mobile-first web app (HTML/Tailwind CSS/JS) for 14-year-old boys to track household chores using a gaming-inspired theme (Valorant, Minecraft, Roblox aesthetic). \n\nImplement a Loss-Aversion Point Engine and Reward System using the following architecture:\n\n1. DUAL-CURRENCY SYSTEM:\n- XP (Experience Points): Earned ONLY through task completion. Permanent, cumulative, and never lost or docked. Drives overall level and gamer ranks (Unranked -> Iron -> Bronze -> Silver -> Gold -> Platinum -> Diamond -> Ascendant -> Radiant).\n- Coins: Earnable spending currency used in the Rewards Shop.\n\n2. LOSS-AVERSION & PENALTY MECHANICS:\n- Missed / Failed Daily Tasks: Deduct Coins from the available balance (or forfeit the daily Coin multiplier) to leverage psychological loss aversion without touching permanent XP.\n- Guardrail: Implement a minimum Coin threshold (e.g., balance cannot drop below zero) and clear penalty limits per task so kids don't feel a \"sunk-cost demotivation\" trap.\n- Streak System: Track consecutive active days (🔥 Streak). Missing mandatory daily tasks resets or reduces the streak bonus multiplier.\n\n3. REWARDS SHOP LIST (Structured Tiers):\nImplement a customizable Rewards Shop with the following pre-loaded catalog:\n- Tier 1 (Micro / Low Cost):\n  * +30 Min Gaming Extension\n  * One-Time Minor Chore Pass (Skip a task)\n  * +30 Min Weekend Bedtime Buffer\n- Tier 2 (Mid-Tier / Moderate Cost):\n  * Choose Friday Night Dinner / Takeout\n  * In-Game Currency / Cosmetic Allowance (Robux, V-Bucks, Valorant Points)\n  * Uninterrupted Gaming Session / Sleepover with Friends\n- Tier 3 (Boss-Level / High Cost):\n  * Gaming Gear Upgrade (Headset, Mouse, Keyboard Cap)\n  * Funded Outing with Friends (Movies, Arcade, Bowling)\n  * Cash-Out Point Conversion\n\n4. PARENT CONTROL OVERRIDES:\n- PIN-protected parent mode to approve completed high-value tasks, issue direct bonus/penalty Coin adjustments, and process reward redemptions.\n\nPlease generate or update the application code to fully integrate this logic, store state in local storage, and present a sleek, high-contrast dark mode UI optimized for smartphone web browsers.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6176368234",
+      "source": "github",
+      "title": "Display Cash Out and Continue buttons after a reward (0.5 hrs)",
+      "url": "https://github.com/etk005/cse110-team-23/issues/135",
+      "description": "",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -356,6 +356,21 @@
       "title": "Paid subscriptions",
       "url": "https://github.com/cultron/open-newsletter/issues/34",
       "description": "## User story\n\nAs a writer, I want to charge for a paid tier through my own Stripe account, so that I keep the revenue minus Stripe's fees.\n\n## Acceptance criteria\n\n- [ ] The owner connects their own Stripe account, and the project adds no fee of its own\n- [ ] Readers pay through Stripe Checkout on a monthly or yearly price\n- [ ] A Stripe webhook sets the subscriber's tier and paid-through date, and handles cancellations, refunds and failed payments\n- [ ] A post can be marked paid-only. The web page shows a preview with a paywall, and the email goes to paying readers only\n- [ ] Paying readers sign in on the web with an emailed link to read paid posts\n- [ ] The preference center links to Stripe's customer portal\n- [ ] Tests replay Stripe's webhook events for each case\n\n## Who does the work\n\n- **Apso generates:** the tier fields and storage for plans and payments.\n- **Stripe provides:** checkout, billing and the customer portal.\n- **Hand-written:** the Stripe webhook, the paywall, reader sign-in and the paying-reader segment.\n\n## Estimate\n\n**Size L.** It adds a second kind of user, a payment provider and gated content.\n\nThe README defines the sizes. They are estimates, since nothing here has been built.\n\n## Notes and sources\n\n- Substack's page says \"Writers keep 90% of their revenue minus credit card fees.\" Beehiiv and Ghost say they take no cut of paid subscriptions, per [docs/reference-products.md](../blob/main/docs/reference-products.md).\n- No paid service is set up until the owner asks for this issue.\n\n## Depends on\n\n#14, #17, #19\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6551774312",
+      "source": "github",
+      "title": "Web Checkout: the paid screen reads Paid $0.00 after the customer paid on the pay page",
+      "url": "https://github.com/wcpos/monorepo/issues/3755",
+      "description": "Mac mini: found by the docs run on 2.0.3 (web) in a local wp-env, not the demo.\n\n**Seen.** A customer pays an order through Web Checkout (they chose Cash on delivery on the pay page), then the cashier presses Charge. The paid screen says \"Paid $0.00\". The order panel's ledger says \"No payments yet\", Paid $0.00, Remaining $45.00. The receipt in the same screen shows the order as PROCESSING with \"Cash on delivery $45.00\".\n\n**Expected.** Paid equals the amount the store recorded, and Remaining is $0.00.\n\n**Steps**\n1. Ring up one product, press Checkout, open the Store checkout tab and choose Web Checkout.\n2. Open the order's \"Pay for this order\" link in a second browser and pay with Cash on delivery. The store shows Order received, and the order is processing.\n3. Press Charge on the till.\n\n**Versions.** App 2.0.3 (web, 1024x768). woocommerce-pos-pro 2.0.5 (active, unlicensed). woocommerce-pos-web-checkout-gateway 0.0.1. WooCommerce 10.4.3. WordPress 7.1.5.\n\n**Scope.** Money display on the paid screen and the ledger. The order and the receipt are right. This issue covers the app side only.\n\nA second observation from the same run is tracked separately: after an unpaid Charge, the till moves to the receipt on its own once the customer pays.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -441,19 +456,18 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6302231895",
+      "id": "github-6549436667",
       "source": "github",
-      "title": "feat(verification): pilot Paid-managed verification of Paid user journeys",
-      "url": "https://github.com/viamin/paid/issues/4982",
-      "description": "## Problem\n\nPaid can provision a browser sidecar and Playwright MCP for an issue implementation run, derive a start command, and record interactive verification. The agent still has to rediscover how to exercise each Paid feature. Paid's own `.paid/screenshots.yml` already defines auth, seed data, and routes, but it is oriented toward screenshot capture rather than repeatable changed-feature journeys.\n\n## Goal\n\nUse Paid to verify changes to Paid itself. In an isolated development/test run where the Paid repository is the managed project, a Paid `create_pr` agent should be able to start a seeded Paid instance, sign in, exercise a relevant Paid user journey, inspect the observed result, and attach that evidence to its existing run result.\n\n## Scope\n\n- Pilot one representative Paid web journey first (for example, sign-in → Projects → project detail), then exercise a real changed feature through a Paid-managed implementation run.\n- Add a repository-owned, concise journey guide and only the helper commands needed to make setup, data reset, navigation, observation, and cleanup repeatable. Reuse `.paid/screenshots.yml` for existing routes/auth/seed configuration; do not create a competing copy.\n- Teach `AgentRuns::VerificationPrompt` to discover the guide at a conventional path and select the journey relevant to the changed surface. Reuse the existing Playwright MCP sidecar, runtime plan, app diagnostics, and `VerificationResultRecorder`.\n- Keep all test data and application execution in the isolated run environment. No production Paid data or credentials.\n\n## Acceptance criteria\n\n- [ ] An agent can follow the documented commands from a clean Paid checkout to start a seeded Paid instance, obtain a test identity, complete the selected journey through Playwright MCP, inspect the expected result, and clean up resources created by the run.\n- [ ] A Paid-managed `create_pr` run against the Paid repository performs the journey for a real changed feature and stores the actual steps, observed result, relevant log/trace/screenshot references, and reviewed commit in the existing verification result. A screenshot or agent claim alone is not treated as proof of the criterion.\n- [ ] The journey and its commands have a focused, executable maintenance check so a stale route, login step, or startup instruction fails visibly.\n- [ ] Missing setup, authentication failure, unavailable browser, or failed assertion yields explicit failed/skipped/not-run evidence; it cannot be reported as a successful journey.\n- [ ] The pilot reports setup time, run time, failure modes, and operator effort before proposing wider rollout.\n\n## Boundaries and related work\n\n`bootstrap_readiness` has a narrow write allowlist. Journey guides or behavior-bearing helper scripts must use a normal reviewed PR or a separately designed write boundary; this issue does not widen bootstrap authority. Preserve current project verification opt-in and merge policy. Follow Full LID through the owning HLD/LLD/EARS, failing-first tests, and code.\n\nRelevant foundations: `docs/intent/live-web-app-preview/`, `docs/intent/project-readiness/`, `app/services/agent_runs/verification_prompt.rb`, and `.paid/screenshots.yml`.\n\nInspired by Lauren Tan's [verification-skill article](https://x.com/poteto/article/2094457600259842065).",
-      "rewardUsd": 0,
+      "title": "[bounty] prime-count-port",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/814",
+      "description": "Claiming the $25 port micro-bounty: I ported an idiomatic 50-line Python program (trial-division prime counting, `examples/prime_count/prime_count.py`) to Lateralus (`examples/prime_count/prime_count.ltl`).\n\nVerification: both programs print 78,498 primes below 1,000,000. The port compiles with `lateralus c` + `gcc -O2`, and the benchmark (median of 5 runs) is Python 5.31s vs Lateralus 0.253s — 21.0x faster on wall time. Details in `examples/prime_count/README.md`.\n\nPayment: BTC/LN `pencil@coinos.io`\n\nPR: https://github.com/bad-antics/lateralus-lang/pull/815",
+      "rewardUsd": 25,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
     },
     {
       "id": "github-6454108563",
@@ -577,21 +591,6 @@
       "title": "[bounty] stdlib.msgpack tutorial: MessagePack binary serialization, wire tags, and test vectors",
       "url": "https://github.com/bad-antics/lateralus-lang/issues/498",
       "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/msgpack.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-msgpack-tutorial.md\\ (MessagePack binary wire specification, format tags, variable-length integer encoding, and compression efficiency vs JSON).\n  2. \\examples/msgpack_tutorial.ltl\\ (Runnable binary RPC payload serialization, structured data packing, and stream unpacking).\n  3. \\\tests/stdlib_msgpack_tutorial.ltl\\ (Pinned test vectors verifying wire tag bytes for nil, booleans, fixint, fixstr, fixarray, and fixmap).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6541080770",
-      "source": "github",
-      "title": "[bounty] stdlib.jwt tutorial: RFC 7519 tokens, HMAC security, and claim validation",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/495",
-      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/jwt.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-jwt-tutorial.md\\ (RFC 7519 JWS compact serialization, constant-time signature verification, mitigation of \\\u0007lg: none\\ attacks, and time-drift leeway handling).\n  2. \\examples/jwt_tutorial.ltl\\ (Runnable token issuance, authentication middleware verification, claims extraction, and tamper detection).\n  3. \\\tests/stdlib_jwt_tutorial.ltl\\ (Pinned test vectors verifying HMAC-SHA256 signature integrity, expiration boundaries, and audience/issuer filtering).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

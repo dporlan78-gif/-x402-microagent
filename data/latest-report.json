@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T14:51:58.420Z",
+  "generatedAt": "2026-11-24T02:18:04.582Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -247,6 +247,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6562025459",
+      "source": "github",
+      "title": "Bug: Kraken staking rewards display $0.00 despite received crypto value",
+      "url": "https://github.com/we-promise/sure/issues/5712",
+      "description": "## Before you start (required)\n\n### General checklist\n\n- [x] I have removed personal / sensitive data from screenshots and logs\n- [x] I have searched [existing issues](https://github.com/we-promise/sure/issues?q=is:issue) and [discussions](https://github.com/we-promise/sure/discussions) for this symptom and found no exact duplicate\n\n### How are you using Sure?\n\n- [ ] I was a paying Maybe customer (hosted version)\n- [ ] I use it on PikaPod, Umbrel or similar (VPS included)\n- [x] I am a self-hosted user (local only)\n\n### Self hoster checklist\n\n_Paying, hosted users should delete this entire section._\n\n- Self hosted app commit SHA (find in user menu): **Not supplied yet — using the `stable` Docker image; will update from user menu**\n  - [ ] I have confirmed that my app's commit is the latest version of Sure\n- Where are you hosting?\n  - [ ] Render\n  - [x] Docker Compose\n  - [ ] Umbrel\n  - [ ] PikaPod\n  - [ ] Other (please specify)\n\n---\n\n## Bug description\n\nKraken staking rewards are imported as `Trade` entries with a positive crypto quantity, a historical unit price, an activity label of `Dividend` (or `Interest` for Earn), and **zero cash movement**. That last part is correct for balance accounting, but the transaction list and trade detail header render the zero cash movement as **$0.00**, which misleadingly makes the reward appear worthless even when crypto was received.\n\nThe real value of the received units is `quantity × recorded unit price` in the trade's currency (historical at the date of receipt), if pricing data is available.\n\nThe importer intentionally sets `Entry#amount = 0` in `KrakenAccount::LedgerProcessor#create_crypto_trade` to avoid phantom cash. The problem is in **presentation**: `app/views/trades/_trade.html.erb` and `app/views/trades/_header.html.erb` always display `entry.amount_money`, rather than a separately labelled non-cash reward valuation.\n\nThis is distinct from #2450 (importing Kraken ledger events) and #3875 (preventing phantom cash in Kraken crypto movements). Neither should be undone.\n\n### To Reproduce\n\n1. Connect a Kraken account with ledger-reading permission and sync it in Sure.\n2. Receive an ETH staking reward (or other crypto reward).\n3. Go to the connected Kraken account's transaction history.\n4. Find `Staking reward <quantity> ETH`, marked `Dividend`.\n5. Observe `$0.00` at the right of the transaction row, and again in the trade detail header, despite a positive received quantity and available price.\n\n### Expected behavior\n\nShow the historical **estimated value received** (recorded `trade.qty × trade.price`, in `trade.currency`) for Kraken crypto staking/Earn rewards, visibly marked as a **non-cash value**. Preserve `entry.amount = 0` and existing holdings/balance calculations. Do not invent a fiat cash deposit.\n\nIf the imported price is unavailable or flagged as missing, show an unavailable value rather than a misleading `$0.00` or an unreliable spot-price fallback. Ordinary buys, sells, transfers and manually entered cash dividends should continue to display their actual monetary amounts.\n\n### Screenshots and/or recordings\n\nA screenshot of the connected Kraken transaction list shows positive ETH reward quantities, a `Dividend` label and `$0.00` values. It is not attached here to avoid exposing personal financial data; a redacted screenshot can be added if needed.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6515267341",
       "source": "github",
       "title": "CryptoEnv.reset() retains accumulated reward from the previous episode",
@@ -292,21 +307,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6176368234",
-      "source": "github",
-      "title": "Display Cash Out and Continue buttons after a reward (0.5 hrs)",
-      "url": "https://github.com/etk005/cse110-team-23/issues/135",
-      "description": "",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6498230500",
       "source": "github",
       "title": "Issue Refunds immediately, for the amount paid",
@@ -341,21 +341,6 @@
       "title": "Paid subscriptions",
       "url": "https://github.com/cultron/open-newsletter/issues/34",
       "description": "## User story\n\nAs a writer, I want to charge for a paid tier through my own Stripe account, so that I keep the revenue minus Stripe's fees.\n\n## Acceptance criteria\n\n- [ ] The owner connects their own Stripe account, and the project adds no fee of its own\n- [ ] Readers pay through Stripe Checkout on a monthly or yearly price\n- [ ] A Stripe webhook sets the subscriber's tier and paid-through date, and handles cancellations, refunds and failed payments\n- [ ] A post can be marked paid-only. The web page shows a preview with a paywall, and the email goes to paying readers only\n- [ ] Paying readers sign in on the web with an emailed link to read paid posts\n- [ ] The preference center links to Stripe's customer portal\n- [ ] Tests replay Stripe's webhook events for each case\n\n## Who does the work\n\n- **Apso generates:** the tier fields and storage for plans and payments.\n- **Stripe provides:** checkout, billing and the customer portal.\n- **Hand-written:** the Stripe webhook, the paywall, reader sign-in and the paying-reader segment.\n\n## Estimate\n\n**Size L.** It adds a second kind of user, a payment provider and gated content.\n\nThe README defines the sizes. They are estimates, since nothing here has been built.\n\n## Notes and sources\n\n- Substack's page says \"Writers keep 90% of their revenue minus credit card fees.\" Beehiiv and Ghost say they take no cut of paid subscriptions, per [docs/reference-products.md](../blob/main/docs/reference-products.md).\n- No paid service is set up until the owner asks for this issue.\n\n## Depends on\n\n#14, #17, #19\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6551774312",
-      "source": "github",
-      "title": "Web Checkout: the paid screen reads Paid $0.00 after the customer paid on the pay page",
-      "url": "https://github.com/wcpos/monorepo/issues/3755",
-      "description": "Mac mini: found by the docs run on 2.0.3 (web) in a local wp-env, not the demo.\n\n**Seen.** A customer pays an order through Web Checkout (they chose Cash on delivery on the pay page), then the cashier presses Charge. The paid screen says \"Paid $0.00\". The order panel's ledger says \"No payments yet\", Paid $0.00, Remaining $45.00. The receipt in the same screen shows the order as PROCESSING with \"Cash on delivery $45.00\".\n\n**Expected.** Paid equals the amount the store recorded, and Remaining is $0.00.\n\n**Steps**\n1. Ring up one product, press Checkout, open the Store checkout tab and choose Web Checkout.\n2. Open the order's \"Pay for this order\" link in a second browser and pay with Cash on delivery. The store shows Order received, and the order is processing.\n3. Press Charge on the till.\n\n**Versions.** App 2.0.3 (web, 1024x768). woocommerce-pos-pro 2.0.5 (active, unlicensed). woocommerce-pos-web-checkout-gateway 0.0.1. WooCommerce 10.4.3. WordPress 7.1.5.\n\n**Scope.** Money display on the paid screen and the ledger. The order and the receipt are right. This issue covers the app side only.\n\nA second observation from the same run is tracked separately: after an unpaid Charge, the till moves to the receipt on its own once the customer pays.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -411,21 +396,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6561201541",
-      "source": "github",
-      "title": "INV-1 Issue the фактура from Stripe's paid invoice (replaces Odoo)",
-      "url": "https://github.com/alethialabs-io/alethialabs/issues/7368",
-      "description": "On invoice.paid: take the next number (INV-S), build the snapshot from the Stripe invoice + the EA-S invoice snapshot columns, compute the EUR equivalent for a non-EUR currency at the ECB reference rate of the chargeable date (reuse EA-5's rate fetch), render the PDF in Bulgarian with @react-pdf/renderer (add a Cyrillic-capable TTF; seller ЕИК 208913663; 'чл. 113, ал. 9 ЗДДС' while unregistered), store it via lib/storage/invoice-pdf.ts, set invoice.number/pdf_key and factura status, attach it to the receipt email. Replace apps/console/lib/billing/odoo-invoice.ts and remove all Odoo config (ODOO_INVOICE_* env, .env.production.example comment). Keep EA-7's fail-visibly behaviour. Golden-render test of an EUR and a USD фактура, plus the 10-digit gap-free test under concurrent issue.\n\nSpec: management repo `spec/features/beta-2027-01-31/invoicing-minimal.md` (option A, re-scoped by the 2026-11-23 ruling in `decisions-2026-11-23-early-access.md` §4: a thin фактура layer on Stripe, Odoo dropped, multi-currency kept).\n\nblocked-by: #7367\nscope: apps/console/lib/billing/factura/** apps/console/lib/billing/odoo-invoice.ts apps/console/lib/billing/invoices.ts apps/console/lib/email/billing-email.ts apps/console/tests/lib/billing/factura/** apps/console/tests/lib/billing/odoo-invoice* apps/console/tests/lib/billing/invoices* apps/console/package.json deploy/prod/.env.production.example",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6271857885",
       "source": "github",
       "title": "Epic: Creator earnings in GEN credits (tips, paid subscriptions, paid articles)",
@@ -446,6 +416,36 @@
       "title": "I-30: Paid tier",
       "url": "https://github.com/KaelSensei/MagicAIBuilder/issues/1686",
       "description": "The owner knows what is free, what is paid, at what price and after which written legal answers, and no player's model calls can cost more than the plan that pays for them.\n\n- **Horizon:** Next · **State:** Next\n- **Spec:** https://github.com/KaelSensei/MagicAIBuilder/blob/dev/docs/product/specs/i30-business-model-and-paid-tier.md\n- **Depends on:** hard waits on I-38, I-70; I-30 billing: waits on I-38's legal pages and a deletion that holds; I-70's report before a model change; slice tables name: I-70 slices 10 and 11, I-71 slice 12\n- **First slice that can start now (glance of 2026-11-20):** — (slice 1 in flight)\n\n**Slices** (0 done, 13 open; the open ones are sub-issues):\n\n- [ ] 0: Decision gate: written lawyer and accountant answers to 7.2; owner…\n- [ ] 1: Metered model client: one module for both routes, `AiUsage`, outcomes…\n- [ ] 2: Monthly allowance for every user in PostgreSQL, remaining allowance in…\n- [ ] 3: Model per task: build and suggest on Haiku 5.5 behind I-70's…\n- [ ] 4: Entitlement layer with the free plan only, `GET /api/me/entitlements`…\n- [ ] 5: Public AI-use disclosure page\n- [ ] 6: Public \"free and paid\" page\n- [ ] 7: Billing in test mode: checkout, webhooks, `Subscription`…\n- [ ] 8: Consumer-law flows: withdrawal function and chosen flow, renewal…\n- [ ] 9: First paid entitlements: larger AI allowance and early access\n- [ ] 10: Owner metrics page (8.1)\n- [ ] 11: Further paid entitlements, each when its feature ships: I-59 alerts…\n- [ ] 12: Fallback if slice 0 says no: supporter page, sponsor disclosure…\n\n<!-- roadmap-sync: I-30 -->",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6515741199",
+      "source": "github",
+      "title": "Paid Sponsorships for modpacks",
+      "url": "https://github.com/modrinth/code/issues/8406",
+      "description": "### Please confirm the following.\n\n- [x] I checked the [existing issues](https://github.com/modrinth/code/issues?q=is%3Aissue) for duplicate feature requests\n\n### What parts of Modrinth is your feature request related too?\n\nModrinth App\n\n### Is your suggested feature related to a problem? Please describe.\n\nhey! I was wondering if you guys woud be opened to having a sponsored modpack program. The modpack creators could pay a monthly fee to be sponsored atop of the list of the modpacks page alongside when a keyword is searched in the browsing list (example if you search zombies in modpacks and yours has that in the title) then it could show up at the top\n\nI personally would certainly be interested in paying a good amount per month to get a modpack sponsored on your platform and I think other creators as well who have interest in exposing their modpacks!\n\n\n\n\n### Describe the solution you'd like\n\n_No response_\n\n### Describe alternatives you've considered\n\n_No response_\n\n### Additional context\n\n<img width=\"1253\" height=\"977\" alt=\"image\" src=\"https://github.com/user-attachments/assets/75f146e7-0c36-4233-bb3e-9260ff69076b\" />\nCould also have a sponsored tag to let the users know that it's sponsored.\n\nIf this does become a possibility and is planned in the future I would love to discuss with your team a possibility to be one of the first sponsors\nHere is my discord and email!\ndiscord: brownie_minecraft\nemail: brownniieemc@gmail.com",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6302231895",
+      "source": "github",
+      "title": "feat(verification): pilot Paid-managed verification of Paid user journeys",
+      "url": "https://github.com/viamin/paid/issues/4982",
+      "description": "## Problem\n\nPaid can provision a browser sidecar and Playwright MCP for an issue implementation run, derive a start command, and record interactive verification. The agent still has to rediscover how to exercise each Paid feature. Paid's own `.paid/screenshots.yml` already defines auth, seed data, and routes, but it is oriented toward screenshot capture rather than repeatable changed-feature journeys.\n\n## Goal\n\nUse Paid to verify changes to Paid itself. In an isolated development/test run where the Paid repository is the managed project, a Paid `create_pr` agent should be able to start a seeded Paid instance, sign in, exercise a relevant Paid user journey, inspect the observed result, and attach that evidence to its existing run result.\n\n## Scope\n\n- Pilot one representative Paid web journey first (for example, sign-in → Projects → project detail), then exercise a real changed feature through a Paid-managed implementation run.\n- Add a repository-owned, concise journey guide and only the helper commands needed to make setup, data reset, navigation, observation, and cleanup repeatable. Reuse `.paid/screenshots.yml` for existing routes/auth/seed configuration; do not create a competing copy.\n- Teach `AgentRuns::VerificationPrompt` to discover the guide at a conventional path and select the journey relevant to the changed surface. Reuse the existing Playwright MCP sidecar, runtime plan, app diagnostics, and `VerificationResultRecorder`.\n- Keep all test data and application execution in the isolated run environment. No production Paid data or credentials.\n\n## Acceptance criteria\n\n- [ ] An agent can follow the documented commands from a clean Paid checkout to start a seeded Paid instance, obtain a test identity, complete the selected journey through Playwright MCP, inspect the expected result, and clean up resources created by the run.\n- [ ] A Paid-managed `create_pr` run against the Paid repository performs the journey for a real changed feature and stores the actual steps, observed result, relevant log/trace/screenshot references, and reviewed commit in the existing verification result. A screenshot or agent claim alone is not treated as proof of the criterion.\n- [ ] The journey and its commands have a focused, executable maintenance check so a stale route, login step, or startup instruction fails visibly.\n- [ ] Missing setup, authentication failure, unavailable browser, or failed assertion yields explicit failed/skipped/not-run evidence; it cannot be reported as a successful journey.\n- [ ] The pilot reports setup time, run time, failure modes, and operator effort before proposing wider rollout.\n\n## Boundaries and related work\n\n`bootstrap_readiness` has a narrow write allowlist. Journey guides or behavior-bearing helper scripts must use a normal reviewed PR or a separately designed write boundary; this issue does not widen bootstrap authority. Preserve current project verification opt-in and merge policy. Follow Full LID through the owning HLD/LLD/EARS, failing-first tests, and code.\n\nRelevant foundations: `docs/intent/live-web-app-preview/`, `docs/intent/project-readiness/`, `app/services/agent_runs/verification_prompt.rb`, and `.paid/screenshots.yml`.\n\nInspired by Lauren Tan's [verification-skill article](https://x.com/poteto/article/2094457600259842065).",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

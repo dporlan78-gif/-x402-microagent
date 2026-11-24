@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T13:54:35.151Z",
+  "generatedAt": "2026-11-24T23:30:18.321Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -13,7 +13,7 @@
       "micro bounty"
     ]
   },
-  "discovered": 39,
+  "discovered": 40,
   "eligible": 19,
   "realMoneySpentUsd": 0,
   "opportunities": [
@@ -336,6 +336,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6591275854",
+      "source": "github",
+      "title": "B-10: Seed: paid history + demo_paid recovery checkpoint",
+      "url": "https://github.com/omrynskyi/forte/issues/23",
+      "description": "**Track:** B · Platform: auth, company, people, time, seed (API) · **Priority:** P0 · **Size:** S · **Due:** Day 5-6 · Demo complete (Nov 29-30)\n**Depends on:** #22 (B-09 Seed: demo scene (Larkspur Bakery, people, periods, hours)) · #5 (A-05 Mock payments + signed webhook: approved → processing → paid) · #12 (A-13 Paystub PDF storage at PAID + presigned download (MinIO/S3))\n**Unblocks:** #45 (D-09 Demo runbook, preflight script, two full rehearsals)\n**Human review:** not required (CI green is enough), but ask if unsure.\n\n## Goal\nThe `demo` scene gets a PAID previous run (with stored PDFs) so corrections and history work; `demo_paid` also pays the current run, as the on-stage recovery point.\n\n## Read first\n- `CLAUDE.md` (rules + workflow)\n- `docs/DECISIONS.md`\n- DEMO.md (Acts 7-9, Recovery)\n- A-05 `apply_payout_event`, A-13 `store_pdfs_for_run`\n\n## You own (edit only these, plus new files you create)\n- `api/app/seed/history.py` (new)\n- `api/app/seed/scenes.py` (wire the new steps in)\n- `api/tests/test_seed.py` (extend)\n\n## Acceptance criteria\n- [ ] Previous period: build (A-03) -> submit as Ana -> approve as Isabel -> deliver a paid event through the real handler -> PDFs stored (MinIO when up, memory in tests).\n- [ ] Tomas's previous stub is 6.5 h short (fewer approved hours) so Act 7 is realistic.\n- [ ] `demo_paid` = `demo` + current run paid. Each scene < 10 s.\n\n## Tests\n- [ ] Scene builds; paystubs have `pdf_object_key`; totals == sums.\n- [ ] `make check` passes\n\n---\nWorkflow: `git switch -c b-10-seed-paid-history-demo-paid` → PR titled `B-10: Seed: paid history + demo_paid recovery checkpoint` with `Closes #<this issue>` in the body. If a dependency isn't merged yet, its endpoints return 501 with a task id: build against the contract (generated types, factories) and note it in the PR.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6450377752",
       "source": "github",
       "title": "Paid subscriptions",
@@ -371,21 +386,6 @@
       "title": "Complete #3714 native bug-issue paid-label guard acceptance",
       "url": "https://github.com/WingedGuardian/GENesis-AGI/issues/4773",
       "description": "## Remaining acceptance\n\nPR #3714 declares a post-merge work-issue trial and a repeat with a `bug` issue and Verification answers. Its original receipt explicitly skipped applying `devin-ready`, because that label can start a paid session.\n\nRead-only recovery now establishes the ordinary work and bug missing-label roundtrips on closed scratch issues #3730 and #3731. GitHub Actions added `premises-missing`, removed it after the corresponding answers were supplied, and the owner closed both issues. The bug label was retained.\n\nFive natural issues (#3729, #3732, #3751, #3752 and #3753) also have actual owner additions and bot removals of `devin-ready`, paired with bot comments whose first line is `(aside)` and that name the six missing premises. Their complete label-event histories contain no `bug` label. The scratch bug issue #3731 has no `devin-ready` event. This establishes real guard effects, but not the exact native bug-with-Verification repeat. It does not establish that this branch has never worked or that the guard is defective.\n\nCurrent verification passed 225 cases across the complete Actions-gate, shared-reader and plan-hook modules plus the changed importer-parity test. Another 314 independent original/current observations include actual script processes using an owned `gh` executable, verified-bug and opposite cases, fresh-state reads, failure propagation and first-write ordering. These are controlled mechanism evidence, not the missing native receipt.\n\n## Acceptance\n\n- Prefer recovering retained, attributable GitHub Actions evidence for the bug case during ordinary authorized work. If a new trial is necessary, an operator must first have explicit authorization for its label, possible paid-session and spending effects. This issue itself authorizes no paid launch or new application of `devin-ready`.\n- For a `bug` issue with five complete Verification answers but missing the six premise answers, confirm the real workflow removes `devin-ready` and posts the missing-six comment with `(aside)` on its first line. Confirm `premises-missing` follows the bug's Verification section independently of that paid-label decision.\n- Retain an opposite case showing that complete premise answers allow the paid label to remain, while the bug's own missing-label status still follows Verification. Recover existing evidence where possible; close any authorized scratch issues after the trial.\n- Record the actual workflow/code revision, issue, relevant run/job or label-event identifiers and comment links. Do not infer a run head from a bot comment. Add the evidence to #3714's verification obligation and read back its result.\n\nThe owner already accepted that the external integration can start before the guard removes the label. Preserve that stated limit. This task does not request a preventive hook, an atomic-startup guarantee, or a new guard design. #4045 is a separate native plan-approval acceptance task; #4182's token-created issue-label fix and #4158's later test failures do not supply this receipt.\n\n## Premise checks\n\n1. The missing requirement comes from #3714's exact E2E declaration and its explicit post-merge receipt. Actual retained label events and bot comments establish the completed effects; no assumed external API result is treated as a new measurement.\n2. Searched issues in all states for #3714, premise-gate and devin-ready acceptance, and read the related tasks. The two scratch issues are closed, #4045 concerns native plan approval, and no existing task found owns this native bug-guard repeat.\n3. Keep this verification only. Reuse the existing workflow, parser and evidence record; do not redesign the accepted post-label control or relax its six-premise requirement.\n4. The consumer is the repository's issue-triggered premise-gate workflow. An operator authorized for the possible paid integration effect can recover evidence or qualify a suitable ordinary event. The original post-merge obligation remains open until that acceptance is established or the owner explicitly accepts an equivalent.\n5. Counts are fresh retained populations: 225 current test cases, 314 independent observations, two scratch label roundtrips and five natural guard removals. They are not failure rates or a full repository-event census.\n6. A bounded acceptance task and sanitized receipt are expected, with no production-code PR. Any defect discovered while collecting evidence follows a separate normal change process; no running checkout, service, live data or spending authority is changed by filing this issue.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6581901461",
-      "source": "github",
-      "title": "[Maintenance] OpenCode maintenance issues detected",
-      "url": "https://github.com/dianlight/opencode-modelselect-action/issues/172",
-      "description": "# OpenCode Maintenance Report\n\n> Automatically detected by the `opencode-maintenance` workflow.\n> Run date: 2026-11-24\n\n> Score research and the coverage-fix PR are opened automatically by this run — no action needed here. The issue stays open until the PR merges.\n\n## 📋 Model Coverage Issues\n\n### Models Missing Score Data\n\nThe following OpenCode models have **no score data** from LiveBench or the static fallback. Consider adding them to `config/model-scores.yaml`.\n\n| Model | Tier |\n|-------|------|\n| gemini-decision-1 | Free |\n| gemini-embedding-2 | Go (Paid) |\n| hungerg-free | Go (Paid) |\n| jev-1.14 | Free |\n| qwen3-embedding-8b | Go (Paid) |\n| text-embedding-3-small | Go (Paid) |\n| tidepool-alpha-free | Free |\n\n---\n*Generated by `opencode-maintenance` workflow.*\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -574,6 +574,21 @@
       "title": "[bounty] stdlib.yaml tutorial: YAML 1.2 block mapping, sequence parsing, and indentation trees",
       "url": "https://github.com/bad-antics/lateralus-lang/issues/512",
       "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/yaml.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-yaml-tutorial.md\\ (YAML 1.2 indentation block parsing, sequence vs mapping transitions, quote-aware comment stripping, and scalar coercion).\n  2. \\examples/yaml_tutorial.ltl\\ (Runnable cloud-native Kubernetes Deployment manifest parser and container specification inspector).\n  3. \\\tests/stdlib_yaml_tutorial.ltl\\ (Pinned test vectors verifying nested maps, block sequences, null/~ representations, and inline comment preservation).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6541229516",
+      "source": "github",
+      "title": "[bounty] stdlib.tracing tutorial: W3C traceparent propagation, OpenTelemetry spans, and distributed contexts",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/508",
+      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/tracing.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-tracing-tutorial.md\\ (W3C traceparent specification, OpenTelemetry span lifecycle, parent-child context inheritance, and distributed exporter architecture).\n  2. \\examples/tracing_tutorial.ltl\\ (Runnable cross-service RPC tracing demo passing traceparent headers across Gateway and Payment components).\n  3. \\\tests/stdlib_tracing_tutorial.ltl\\ (Pinned test vectors verifying W3C header parsing/formatting, span duration calculations, and sampling policy evaluation).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

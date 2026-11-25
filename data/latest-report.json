@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T23:30:18.321Z",
+  "generatedAt": "2026-11-25T08:47:43.686Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -203,18 +203,19 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6520823710",
+      "id": "github-6599252983",
       "source": "github",
-      "title": "Referral reward: give a month, get a month",
-      "url": "https://github.com/discology/storybook-generator-3000/issues/5",
-      "description": "**Why:** at $20/mo and about $14 gross margin, a free month for a successful referral costs about $5.80 in AI spend (we're not paying cash, just serving chapters). That's far cheaper than a paid-ad CAC, so rewards should be generous and simple.\n\n**Proposed mechanic (confirm before building)**\n- Referrer: **1 free month** for every referred family that subscribes (cap 6 months).\n- Referred: **first month free** (or 50% off). Pick one for the test; don't run both.\n- Credit applied through Stripe (customer balance / coupon). No cash, no points.\n- Reward fires on the referred family's first paid invoice, not on signup. This prevents abuse where people sign up just to get previews.\n\n**Abuse guards:** one reward per phone number, self-referral blocked (same device/phone), cap per referrer.\n\n**Depends on:** billing, referral attribution.\n\n**Acceptance:** a test referral from family A subscribing credits family A's next invoice.",
-      "rewardUsd": 20,
+      "title": "Progression: reward-only native integration prerequisites",
+      "url": "https://github.com/HmoobGod/BL4/issues/7",
+      "description": "Target: independent earned character XP, specialization XP, cash and Eridium controls, 1–10x in 0.1 increments; 1x restores vanilla reward processing. Preserve R5 main and experimental R10 PR #6 (300 mock tests). No new runtime admission yet. The public BetterRewards release (https://www.nexusmods.com/borderlands4/mods/381) demonstrates fixed solo Hard/UVH reward bonuses, but requires permission for reuse and does not expose the requested independent adjustable reward-only interface. Need author-approved maintainable reward-only source or independently licensed supported reward consumer evidence; exact supported game/SDK build, local ownership, purchase exclusion, one award only, transition/disable cleanup, and no level-cap changes or save conversion. Eridium needs its own evidence. Do not publish restricted third-party source, templates, binaries or private records. No unrelated build, no direct grants or save edits.",
+      "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 20,
-      "profitPerHourUsd": 240,
-      "eligible": true
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
     },
     {
       "id": "github-6320016185",
@@ -230,6 +231,20 @@
       "profitPerHourUsd": 0,
       "eligible": false,
       "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6520823710",
+      "source": "github",
+      "title": "Referral reward: give a month, get a month",
+      "url": "https://github.com/discology/storybook-generator-3000/issues/5",
+      "description": "**Why:** at $20/mo and about $14 gross margin, a free month for a successful referral costs about $5.80 in AI spend (we're not paying cash, just serving chapters). That's far cheaper than a paid-ad CAC, so rewards should be generous and simple.\n\n**Proposed mechanic (confirm before building)**\n- Referrer: **1 free month** for every referred family that subscribes (cap 6 months).\n- Referred: **first month free** (or 50% off). Pick one for the test; don't run both.\n- Credit applied through Stripe (customer balance / coupon). No cash, no points.\n- Reward fires on the referred family's first paid invoice, not on signup. This prevents abuse where people sign up just to get previews.\n\n**Abuse guards:** one reward per phone number, self-referral blocked (same device/phone), cap per referrer.\n\n**Depends on:** billing, referral attribution.\n\n**Acceptance:** a test referral from family A subscribing credits family A's next invoice.",
+      "rewardUsd": 20,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 20,
+      "profitPerHourUsd": 240,
+      "eligible": true
     },
     {
       "id": "github-6338080613",
@@ -262,21 +277,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6575746841",
-      "source": "github",
-      "title": "[T4.4] Reward pool settlement (monthly), creator earnings",
-      "url": "https://github.com/raghavkhandelwal11/Siliconia/issues/34",
-      "description": "**Milestone:** M4 Reviews, creators, promoters and discovery\n**Milestone is done when:** buyers review and vote, creators apply, get demos, post reviews and cash out (simulated), promoters promote products, and the home page shows products of the week and recommendations.\n\n### Task\nReward pool settlement (monthly), creator earnings\n\n### Details\n- Priority: P0 · Size: M\n- **Needs a client decision:** Q-02 pool size (TRS section 15.2). Build with the documented default and keep it configurable until answered.\n- Free services and simulators only (`docs/free-services.md`). Nothing from `paid-later/`.\n\n### References\n- Plan and order of work: `docs/development-plan.md`\n- Design: `docs/lld.md`, `docs/product-catalogue-and-ui-features.md`, `docs/Technical_Requirements.docx`\n- Working rules: `docs/dev-workflow.md`\n\n### Definition of done\n- [ ] Code, tests and docs in one pull request (one branch per task)\n- [ ] `ci-success` is green\n- [ ] Reviewed and merged; prototype checks pass after deploy\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6575496923",
       "source": "github",
       "title": "MP-V8 · Product validation: Buy crypto with cash: code first, then cash",
@@ -292,11 +292,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6515267341",
+      "id": "github-6575746841",
       "source": "github",
-      "title": "CryptoEnv.reset() retains accumulated reward from the previous episode",
-      "url": "https://github.com/AI4Finance-Foundation/FinRL/issues/1489",
-      "description": "`CryptoEnv.reset()` restores cash, holdings and total assets but leaves `gamma_return` and `episode_return` unchanged. `step()` continues accumulating into the old `gamma_return` and returns that accumulator at termination. Later episodes therefore receive reward from earlier episodes.\n\nReproduced at `5df023ed3faab4cb529bc7e2837a7fb331067cf2` with synthetic data and no market-data requests:\n\n```python\nimport numpy as np\nfrom finrl.meta.env_cryptocurrency_trading.env_multiple_crypto import CryptoEnv\n\nprices = np.array([[100.0], [100.0], [110.0], [120.0], [100.0]])\nenv = CryptoEnv(\n    {\"price_array\": prices, \"tech_array\": np.zeros_like(prices)},\n    initial_capital=1000.0, buy_cost_pct=0.0, sell_cost_pct=0.0,\n)\nenv.reset()\nfor action in (0.01, 0.0, 0.0):\n    _, reward, done, _ = env.step(np.array([action]))\nprint(reward)  # 0.00030364990234375\n\nenv.reset()\nfor _ in range(env.max_step):\n    _, reward, done, _ = env.step(np.array([0.0]))\nprint(env.total_asset, reward)  # 1000.0, 0.00029463119659423824\n```\n\nExpected: the second episode's reward is zero because it holds only cash throughout. Resetting during an unfinished episode also retains its accumulated reward.\n\nProposed fix: reset `gamma_return` and `episode_return` to their constructor values in `reset()`. I have a focused patch with regression tests for gains, losses, different discount factors, repeated identical episodes and mid-episode resets.\n\nAI assistance was used to investigate the bug, prepare the patch and run the regression tests.",
+      "title": "[T4.4] Reward pool settlement (monthly), creator earnings",
+      "url": "https://github.com/raghavkhandelwal11/Siliconia/issues/34",
+      "description": "**Milestone:** M4 Reviews, creators, promoters and discovery\n**Milestone is done when:** buyers review and vote, creators apply, get demos, post reviews and cash out (simulated), promoters promote products, and the home page shows products of the week and recommendations.\n\n### Task\nReward pool settlement (monthly), creator earnings\n\n### Details\n- Priority: P0 · Size: M\n- **Needs a client decision:** Q-02 pool size (TRS section 15.2). Build with the documented default and keep it configurable until answered.\n- Free services and simulators only (`docs/free-services.md`). Nothing from `paid-later/`.\n\n### References\n- Plan and order of work: `docs/development-plan.md`\n- Design: `docs/lld.md`, `docs/product-catalogue-and-ui-features.md`, `docs/Technical_Requirements.docx`\n- Working rules: `docs/dev-workflow.md`\n\n### Definition of done\n- [ ] Code, tests and docs in one pull request (one branch per task)\n- [ ] `ci-success` is green\n- [ ] Reviewed and merged; prototype checks pass after deploy\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -381,6 +381,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-6598187704",
+      "source": "github",
+      "title": "[Maintenance] OpenCode maintenance issues detected",
+      "url": "https://github.com/dianlight/opencode-modelselect-action/issues/175",
+      "description": "# OpenCode Maintenance Report\n\n> Automatically detected by the `opencode-maintenance` workflow.\n> Run date: 2026-11-25\n\n> Score research and the coverage-fix PR are opened automatically by this run — no action needed here. The issue stays open until the PR merges.\n\n## 📋 Model Coverage Issues\n\n### Models Missing Score Data\n\nThe following OpenCode models have **no score data** from LiveBench or the static fallback. Consider adding them to `config/model-scores.yaml`.\n\n| Model | Tier |\n|-------|------|\n| gemini-embedding-2 | Go (Paid) |\n| hungerg-free | Go (Paid) |\n| qwen3-embedding-8b | Go (Paid) |\n| text-embedding-3-small | Go (Paid) |\n| tidepool-alpha-free | Free |\n\n---\n*Generated by `opencode-maintenance` workflow.*\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6409092192",
       "source": "github",
       "title": "Complete #3714 native bug-issue paid-label guard acceptance",
@@ -431,21 +446,6 @@
       "title": "Epic: Creator earnings in GEN credits (tips, paid subscriptions, paid articles)",
       "url": "https://github.com/genfeedai/genfeed.ai/issues/9714",
       "description": "## Goal\n\nReaders can pay creators in GEN credits, and creators spend what they earn on generation inside Genfeed. This completes the creator publishing loop started in #9666: write, publish, email subscribers (#9665), get paid.\n\nDocument only. The week of 11-09 is a coding lock, so no code is scheduled.\n\n## Today (verified in code at master `e0d9b108`)\n\n- `CreditBalance` and `CreditTransaction` belong to an organization or billing account, never to a user (`packages/prisma/prisma/schema.prisma`).\n- Transaction categories are `add`, `deduct`, `expire`, `reset`, `rollover`, `refund`, `byok-usage` (`packages/contracts/src/enums/credit.enum.ts`). There is **no transfer between accounts**, no tip, no paid subscription to a creator.\n- Stripe is used only for Genfeed's own plans (`Subscription`, `UserSubscription`). No Stripe Connect and no payout code.\n- `Article` and `Newsletter` have no price or access fields. Every published article is public.\n\n## Scope\n\nEarn-and-spend only: earned credits are spent on generation inside Genfeed and are not withdrawable. This avoids payouts, KYC and tax handling. Cash-out is a separate decision (see the last issue).\n\n## Order\n\n1. Credit transfer ledger (everything else builds on it).\n2. Tips.\n3. Paid subscriptions to a creator.\n4. Paid articles and newsletter issues.\n5. Creator earnings view.\n6. Decision: cash-out.\n\n## Decisions needed before building\n\n- Platform fee on each payment (percentage, or none at first).\n- Whether earned credits expire like purchased ones, or never expire.\n- Whether earned credits count toward plan limits and the low-credits banner.\n- Who can pay: signed-in Genfeed users only, or a guest checkout that creates an account.\n\n## Done when\n\nA reader with credits tips a creator, subscribes to them, and unlocks a paid article. The creator's balance rises by the amount minus the fee, and the creator spends it on a generation. Each sub-issue carries its own finish condition and evidence.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6545166491",
-      "source": "github",
-      "title": "I-30: Paid tier",
-      "url": "https://github.com/KaelSensei/MagicAIBuilder/issues/1686",
-      "description": "The owner knows what is free, what is paid, at what price and after which written legal answers, and no player's model calls can cost more than the plan that pays for them.\n\n- **Horizon:** Next · **State:** Next\n- **Spec:** https://github.com/KaelSensei/MagicAIBuilder/blob/dev/docs/product/specs/i30-business-model-and-paid-tier.md\n- **Depends on:** hard waits on I-38, I-70; I-30 billing: waits on I-38's legal pages and a deletion that holds; I-70's report before a model change; slice tables name: I-70 slices 10 and 11, I-71 slice 12\n- **First slice that can start now (glance of 2026-11-20):** — (slice 1 in flight)\n\n**Slices** (0 done, 13 open; the open ones are sub-issues):\n\n- [ ] 0: Decision gate: written lawyer and accountant answers to 7.2; owner…\n- [ ] 1: Metered model client: one module for both routes, `AiUsage`, outcomes…\n- [ ] 2: Monthly allowance for every user in PostgreSQL, remaining allowance in…\n- [ ] 3: Model per task: build and suggest on Haiku 5.5 behind I-70's…\n- [ ] 4: Entitlement layer with the free plan only, `GET /api/me/entitlements`…\n- [ ] 5: Public AI-use disclosure page\n- [ ] 6: Public \"free and paid\" page\n- [ ] 7: Billing in test mode: checkout, webhooks, `Subscription`…\n- [ ] 8: Consumer-law flows: withdrawal function and chosen flow, renewal…\n- [ ] 9: First paid entitlements: larger AI allowance and early access\n- [ ] 10: Owner metrics page (8.1)\n- [ ] 11: Further paid entitlements, each when its feature ships: I-59 alerts…\n- [ ] 12: Fallback if slice 0 says no: supporter page, sponsor disclosure…\n\n<!-- roadmap-sync: I-30 -->",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

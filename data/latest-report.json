@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T12:48:58.765Z",
+  "generatedAt": "2026-11-26T22:24:43.700Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 21,
+  "eligible": 22,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -582,19 +582,18 @@
       "eligible": true
     },
     {
-      "id": "github-6541201297",
+      "id": "github-6630818063",
       "source": "github",
-      "title": "[bounty] stdlib.metrics tutorial: Prometheus text exposition, counters, gauges, and histograms",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/506",
-      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/metrics.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-metrics-tutorial.md\\ (Prometheus text exposition format, dimensional labels, metric family lifecycle, and cumulative histogram bucket theory).\n  2. \\examples/metrics_tutorial.ltl\\ (Runnable HTTP server observability demo tracking request rates, concurrent connections, and latency distributions).\n  3. \\\tests/stdlib_metrics_tutorial.ltl\\ (Pinned test vectors verifying counter increments, gauge updates, histogram cumulative sums/counts, and Prometheus exposition formatting).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
-      "rewardUsd": 0,
+      "title": "[bounty] stdlib.fmt tutorial for fixed-width output",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/1040",
+      "description": "I'd like to claim the $25 recurring micro-bounty in BOUNTIES.md for an original tutorial on `stdlib.fmt`. The tutorial will show how to build a fixed-width inventory line using `pad_left` and `pad_right`, with a runnable example and an exact expected-output test vector. I plan to contribute the source and tutorial under MIT with a signed-off commit.\n\nI will use AI assistance and disclose it in the pull request. Could you confirm this topic is available and the documented Bitcoin Lightning payout is still offered after merge? I'll start implementation after you confirm the claim.\n",
+      "rewardUsd": 25,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
     }
   ]
 }

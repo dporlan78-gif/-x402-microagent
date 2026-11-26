@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T02:54:03.375Z",
+  "generatedAt": "2026-11-26T12:48:58.765Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -14,7 +14,7 @@
     ]
   },
   "discovered": 40,
-  "eligible": 19,
+  "eligible": 21,
   "realMoneySpentUsd": 0,
   "opportunities": [
     {
@@ -173,21 +173,6 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6599252983",
-      "source": "github",
-      "title": "Progression: reward-only native integration prerequisites",
-      "url": "https://github.com/HmoobGod/BL4/issues/7",
-      "description": "Target: independent earned character XP, specialization XP, cash and Eridium controls, 1–10x in 0.1 increments; 1x restores vanilla reward processing. Preserve R5 main and experimental R10 PR #6 (300 mock tests). No new runtime admission yet. The public BetterRewards release (https://www.nexusmods.com/borderlands4/mods/381) demonstrates fixed solo Hard/UVH reward bonuses, but requires permission for reuse and does not expose the requested independent adjustable reward-only interface. Need author-approved maintainable reward-only source or independently licensed supported reward consumer evidence; exact supported game/SDK build, local ownership, purchase exclusion, one award only, transition/disable cleanup, and no level-cap changes or save conversion. Eridium needs its own evidence. Do not publish restricted third-party source, templates, binaries or private records. No unrelated build, no direct grants or save edits.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
       "id": "github-6063692800",
       "source": "github",
       "title": "Reward Issue",
@@ -208,6 +193,21 @@
       "title": "Intake creates item entries for coins, cash-equivalent treasure and cash quest rewards",
       "url": "https://github.com/dgrimesii/Chronicle-MagersCampaign/issues/122",
       "description": "## Problem\nSession 6 Delta Review proposed a NEW `inventory_and_loot` item for every stated amount in one treasure hoard: \"New Item — 1,400 cp\", \"— 1,300 sp\", \"— 70 gp\", \"— Art and Gems (9…)\". Campaign Manager is not an inventory system: only distinct things of significance become items.\n\n## Cause\n- `NARRATIVE_EXTRACT_SYSTEM` rule 6 in `shared/chronicle-ai.js` tells the AI to include coins and to use \"one entry per denomination\", with `\"1400 cp\"` as its example.\n- The mixed-page schema in `fillRoundsFromText()` describes items as `\"<item or coin name>\"`.\n- `_processNarrativeResult()` in `admin/delta-review.html` turns every `result.items` entry into a NEW item.\n- The redesign pipeline has the same gap: the step 2 \"thing\" definition in `shared/chronicle-entities.js` is \"a notable object or treasure\", and step 4 loot facts in `shared/chronicle-facts.js` have no rule.\n- `docs/intake-redesign.md` lists \"coins found\" as an example of a Thing.\n\n## Rule\n- **Cash or cash equivalent, never an item:** coins, currency, payments, and any gem, art object or treasure with a stated cash value (\"emerald worth 100 GP\", \"2 smoky quartz, 25 GP each\", \"art and gems\").\n  - **As a quest reward:** a narrative note on the quest, written as the notes state it (\"Rewarded 200 GP and an emerald worth 30 GP\"), with `reward_received.value_gp` set to the total stated value (230). No item entry, no `item_refs`.\n  - **Found any other way:** narrative in the session (`session_notes` / passages).\n- **Possible item:** a gem or object described by something other than its price, with no value given (\"oddly warm gem\", \"shimmering diamond\"). Proposed for the DM to confirm.\n- **Always an item:** named or magic items (Immovable Rod, +1 Moon Sickle) and quest objects (maps, letters, keys).\n\n## Approach\n- Rewrite rule 6 and the mixed-page items schema to the rule above; route treasure into `session_notes` and quest rewards into the quest.\n- Apply the same rule to step 2 \"thing\" mentions and step 4 loot facts.\n- Client-side guard in `_processNarrativeResult()` that drops currency-only or priced-pile names the AI still returns, and adds them to the page summary as narrative so nothing is lost.\n- Fix the \"coins found\" example in `docs/intake-redesign.md`.\n- Tests: guard cases (cp/sp/gp amounts, \"Art and Gems (…)\", priced gems) vs kept items (Silver Dagger, Golden Idol, Potion of Healing ×2, oddly warm gem); prompt text for all four paths.\n\n## Done when\n- Re-interpreting the session 6 hoard page proposes no coin, priced-gem or pile items, and the treasure appears as narrative.\n- A quest page with a cash reward adds a narrative note and `value_gp` on the quest, and no item.\n- Named items and unpriced distinctive objects still come through.\n\n## Related data cleanup (done directly, not by this issue)\n- Remove `item_009` \"Trade Commission\" and its refs (session_004 `items_found`, qst_004 `reward_received.item_refs`).\n- Remove `item_010` \"Unrefined Emerald\" and its refs (session_005 `items_found` and `key_moments[1].ref`, qst_005 `reward_received.item_refs`). Item says Helen paid it, qst_005 says Krustie Gnome — confirm which before removing.",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
+      "id": "github-6599252983",
+      "source": "github",
+      "title": "Progression: reward-only native integration prerequisites",
+      "url": "https://github.com/HmoobGod/BL4/issues/7",
+      "description": "Target: independent earned character XP, specialization XP, cash and Eridium controls, 1–10x in 0.1 increments; 1x restores vanilla reward processing. Preserve R5 main and experimental R10 PR #6 (300 mock tests). No new runtime admission yet. The public BetterRewards release (https://www.nexusmods.com/borderlands4/mods/381) demonstrates fixed solo Hard/UVH reward bonuses, but requires permission for reuse and does not expose the requested independent adjustable reward-only interface. Need author-approved maintainable reward-only source or independently licensed supported reward consumer evidence; exact supported game/SDK build, local ownership, purchase exclusion, one award only, transition/disable cleanup, and no level-cap changes or save conversion. Eridium needs its own evidence. Do not publish restricted third-party source, templates, binaries or private records. No unrelated build, no direct grants or save edits.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -441,11 +441,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6583048160",
+      "id": "github-6607409710",
       "source": "github",
-      "title": "[P3][L04] Paid plan feasibility",
-      "url": "https://github.com/ShriramSundaram/legendary-octo-flutter/issues/15",
-      "description": "Priority: P3. Dependencies: [M08](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/10), [M09](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/11); [L01](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/12)/[L02](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/13) cost evidence if included. Effort: 5 to 8 days after a business decision.\n\nLearner benefit: a sustainable optional upgrade with clear limits. Gap: no purchase, entitlement or support flow. Keep core reminders and starter review usable while validating willingness to pay.\n\nFirebase fit: Auth, Firestore entitlements and Functions purchase validation; integrate Google Play Billing through a compatible in_app_purchase package. RevenueCat is an alternative integration with separate commercial terms, not a Firebase service.\n\nAcceptance criteria:\n- Compare store fees, refunds, tax, support and paid AI usage against a proposed price using current terms.\n- Specify purchase restore, cancellation, grace period, server validation and entitlement reconciliation.\n- Complete a sandbox purchase and refund matrix on a physical device before launch.\n- Do not offer unlimited cloud speech until real usage distribution and margins support it.\n\nPlan and cost assumptions: https://github.com/ShriramSundaram/legendary-octo-flutter/issues/2\n\nScope: this issue records authorized planning work. Feature implementation is a later task. Preserve the separate GitHub Actions work; no emulator use.",
+      "title": "Payouts: statements, CSV, mark paid",
+      "url": "https://github.com/Sasy2/readerops/issues/102",
+      "description": "**Parent:** #91 · **Area:** `ui` · **Phase:** 4 · **Assignee:** Sasy (@Sasy2)\n**Requirements:** A-48 to A-51\n\n<!-- deps -->\n## Depends on\n**Depends on** (these must be closed before you start):\n- [ ] #87 Admin dashboard shell layout\n\n**Uses API from** (not required to start: build with mock data until these are merged, following Swagger at `/docs/api`):\n- [ ] #51 Monthly commission statements\n- [ ] #52 Payout CSV export and mark as paid\n\n## Goal\nPay distributors.\n\n## Tasks\n- [ ] Monthly statements; download the CSV; mark as paid with a reference\n\n## Done when\n- [ ] Works end to end\n- [ ] PR says `Closes #<this issue>`, is documented (what, why, how to test), and CI is green\n\n## Scope\nClient only (`client/`, docs). Do not change `server/`. Anything outside this ticket gets its own issue.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -470,11 +470,39 @@
       "eligible": true
     },
     {
+      "id": "github-6625937958",
+      "source": "github",
+      "title": "[bounty] stdlib.poly1305 tutorial",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/1019",
+      "description": "[bounty] stdlib.poly1305 tutorial\n\nI would like to claim the $25 recurring micro-bounty for a stdlib module tutorial.\n\nModule: stdlib/poly1305.ltl\nDeliverable: docs/blog/poly1305-one-time-mac.ltlml\n\nThe post covers the two halves of the 32-byte key (r || s), the clamping step from RFC 8439 section 2.5.1, the accumulator update modulo 2^130-5, the one-time-key rule, and the constant-time comparison in verify(). It includes a runnable example using the RFC 8439 section 2.5.2 test vector (key 85d6be78...f51b, message \"Cryptographic Forum Research Group\", tag a8061dc1...27a9).\n\nI verified the vector against the module compiled to the Python backend: mac() returns the expected 16-byte tag and verify() accepts it and rejects a tag with one bit flipped.\n\nOriginal work, MIT licensed, signed-off commit. Branch pushed to yanshiyu123/lateralus-lang as bounty/poly1305-tutorial. PR follows.\n\nThanks,",
+      "rewardUsd": 25,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
+    },
+    {
       "id": "github-6454108563",
       "source": "github",
       "title": "[bounty] stdlib.algorithms tutorial",
       "url": "https://github.com/bad-antics/lateralus-lang/issues/177",
       "description": "Claiming the recurring $25 tutorial micro-bounty for `stdlib/algorithms.ltl`.\n\nPlanned scope: the search/sort helpers in practice — `binary_search`, `quick_sort`/`sort`, `fisher_yates_shuffle` — with correct usage, edge cases (empty/single-element input), and why binary search requires sorted input. No unmeasured performance claims.\n\nPlanned artifacts: `docs/blog/algorithms-tutorial.ltlml` in the repo blog format, `examples/algorithms_demo.ltl` runnable example (`import algorithms`, verified via `lateralus run`), a `@test` block with pinned outputs computed by actually running the module, and reproduction instructions.",
+      "rewardUsd": 25,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
+      "eligible": true
+    },
+    {
+      "id": "github-6619840232",
+      "source": "github",
+      "title": "[bounty] Port Amicable Numbers sum to Lateralus",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/1001",
+      "description": "Claiming the $25 recurring Python-to-Lateralus port micro-bounty (`BOUNTIES.md`) to port an idiomatic single-pass Amicable Numbers pair counter and sum (`upper = 200000`) to Lateralus C99, including parity tests and a reproducible 3-run median benchmark vs CPython 3.13.\n\nImplemented and verified in PR #1002.\n",
       "rewardUsd": 25,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -559,36 +587,6 @@
       "title": "[bounty] stdlib.metrics tutorial: Prometheus text exposition, counters, gauges, and histograms",
       "url": "https://github.com/bad-antics/lateralus-lang/issues/506",
       "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/metrics.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-metrics-tutorial.md\\ (Prometheus text exposition format, dimensional labels, metric family lifecycle, and cumulative histogram bucket theory).\n  2. \\examples/metrics_tutorial.ltl\\ (Runnable HTTP server observability demo tracking request rates, concurrent connections, and latency distributions).\n  3. \\\tests/stdlib_metrics_tutorial.ltl\\ (Pinned test vectors verifying counter increments, gauge updates, histogram cumulative sums/counts, and Prometheus exposition formatting).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6541288891",
-      "source": "github",
-      "title": "[bounty] stdlib.yaml tutorial: YAML 1.2 block mapping, sequence parsing, and indentation trees",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/512",
-      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/yaml.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-yaml-tutorial.md\\ (YAML 1.2 indentation block parsing, sequence vs mapping transitions, quote-aware comment stripping, and scalar coercion).\n  2. \\examples/yaml_tutorial.ltl\\ (Runnable cloud-native Kubernetes Deployment manifest parser and container specification inspector).\n  3. \\\tests/stdlib_yaml_tutorial.ltl\\ (Pinned test vectors verifying nested maps, block sequences, null/~ representations, and inline comment preservation).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6541229516",
-      "source": "github",
-      "title": "[bounty] stdlib.tracing tutorial: W3C traceparent propagation, OpenTelemetry spans, and distributed contexts",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/508",
-      "description": "### Micro-bounty Claim\n\n- **Module**: \\stdlib/tracing.ltl\\\n- **Bounty**: Recurring \\ stdlib module blog post tutorial from \\BOUNTIES.md\\\n- **Deliverables**:\n  1. \\docs/blog/stdlib-tracing-tutorial.md\\ (W3C traceparent specification, OpenTelemetry span lifecycle, parent-child context inheritance, and distributed exporter architecture).\n  2. \\examples/tracing_tutorial.ltl\\ (Runnable cross-service RPC tracing demo passing traceparent headers across Gateway and Payment components).\n  3. \\\tests/stdlib_tracing_tutorial.ltl\\ (Pinned test vectors verifying W3C header parsing/formatting, span duration calculations, and sampling policy evaluation).\n\nOpening this issue to claim the micro-bounty slot before submitting the pull request.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T19:24:05.387Z",
+  "generatedAt": "2026-11-26T02:54:03.375Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -426,11 +426,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6583048160",
+      "id": "github-6614297813",
       "source": "github",
-      "title": "[P3][L04] Paid plan feasibility",
-      "url": "https://github.com/ShriramSundaram/legendary-octo-flutter/issues/15",
-      "description": "Priority: P3. Dependencies: [M08](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/10), [M09](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/11); [L01](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/12)/[L02](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/13) cost evidence if included. Effort: 5 to 8 days after a business decision.\n\nLearner benefit: a sustainable optional upgrade with clear limits. Gap: no purchase, entitlement or support flow. Keep core reminders and starter review usable while validating willingness to pay.\n\nFirebase fit: Auth, Firestore entitlements and Functions purchase validation; integrate Google Play Billing through a compatible in_app_purchase package. RevenueCat is an alternative integration with separate commercial terms, not a Firebase service.\n\nAcceptance criteria:\n- Compare store fees, refunds, tax, support and paid AI usage against a proposed price using current terms.\n- Specify purchase restore, cancellation, grace period, server validation and entitlement reconciliation.\n- Complete a sandbox purchase and refund matrix on a physical device before launch.\n- Do not offer unlimited cloud speech until real usage distribution and margins support it.\n\nPlan and cost assumptions: https://github.com/ShriramSundaram/legendary-octo-flutter/issues/2\n\nScope: this issue records authorized planning work. Feature implementation is a later task. Preserve the separate GitHub Actions work; no emulator use.",
+      "title": "[Program] Review open paid contributions",
+      "url": "https://github.com/HHS/simpler-grants-protocol/issues/1440",
+      "description": "### Summary\n\nReview pull requests on funded issues that are ready for review this sprint, if any come in. Follows #1405 from Sprint 7.6. Open right now:\n\n- #1403 for #355 (screen reader fixes, ahcrm-core), marked ready for review and waiting on a maintainer review\n- common-grants/cg-api-template-hono#4 for #1228 (startup settings, robbzzilla), changes requested by Bryan\n- #1431 for #1369 (California Grants Portal plugin, lvantiff), still a draft\n\n### Acceptance criteria\n\n- [ ] Each pull request on a funded issue that's marked ready for review this sprint is reviewed against that issue's acceptance criteria\n- [ ] Contributors who are waiting on us get a response within the sprint\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -441,11 +441,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6607409710",
+      "id": "github-6583048160",
       "source": "github",
-      "title": "Payouts: statements, CSV, mark paid",
-      "url": "https://github.com/Sasy2/readerops/issues/102",
-      "description": "**Parent:** #91 · **Area:** `ui` · **Phase:** 4 · **Assignee:** Sasy (@Sasy2)\n**Requirements:** A-48 to A-51\n\n<!-- deps -->\n## Depends on\n**Depends on** (these must be closed before you start):\n- [ ] #87 Admin dashboard shell layout\n\n**Uses API from** (not required to start: build with mock data until these are merged, following Swagger at `/docs/api`):\n- [ ] #51 Monthly commission statements\n- [ ] #52 Payout CSV export and mark as paid\n\n## Goal\nPay distributors.\n\n## Tasks\n- [ ] Monthly statements; download the CSV; mark as paid with a reference\n\n## Done when\n- [ ] Works end to end\n- [ ] PR says `Closes #<this issue>`, is documented (what, why, how to test), and CI is green\n\n## Scope\nClient only (`client/`, docs). Do not change `server/`. Anything outside this ticket gets its own issue.",
+      "title": "[P3][L04] Paid plan feasibility",
+      "url": "https://github.com/ShriramSundaram/legendary-octo-flutter/issues/15",
+      "description": "Priority: P3. Dependencies: [M08](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/10), [M09](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/11); [L01](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/12)/[L02](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/13) cost evidence if included. Effort: 5 to 8 days after a business decision.\n\nLearner benefit: a sustainable optional upgrade with clear limits. Gap: no purchase, entitlement or support flow. Keep core reminders and starter review usable while validating willingness to pay.\n\nFirebase fit: Auth, Firestore entitlements and Functions purchase validation; integrate Google Play Billing through a compatible in_app_purchase package. RevenueCat is an alternative integration with separate commercial terms, not a Firebase service.\n\nAcceptance criteria:\n- Compare store fees, refunds, tax, support and paid AI usage against a proposed price using current terms.\n- Specify purchase restore, cancellation, grace period, server validation and entitlement reconciliation.\n- Complete a sandbox purchase and refund matrix on a physical device before launch.\n- Do not offer unlimited cloud speech until real usage distribution and margins support it.\n\nPlan and cost assumptions: https://github.com/ShriramSundaram/legendary-octo-flutter/issues/2\n\nScope: this issue records authorized planning work. Feature implementation is a later task. Preserve the separate GitHub Actions work; no emulator use.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

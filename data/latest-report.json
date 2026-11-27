@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T22:24:43.700Z",
+  "generatedAt": "2026-11-27T05:07:09.095Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -162,7 +162,7 @@
       "source": "github",
       "title": "US-34: Release cash reward to finder",
       "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/103",
-      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want to record when unclaimed cash is handed to its finder after six months, so the item leaves my held list and the payout is on record.\n\n**Acceptance Criteria (Given-When-Then):**\n- Given a held cash item past its reward date, when I confirm the finder's identity and record the payout, then the item is marked as paid to the finder, separately from \"released to owner\", along with who received it, the ID they showed, the staff member and the time.\n- Given a cash item whose reward date hasn't arrived, when I try to record a finder payout, then it is refused.\n- Given the payout is recorded, then the item drops out of the staff reminders and the held-items list, and stays out of public search.\n- Given another office holds the item, when I try to record the payout, then it is refused.\n",
+      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want to record when unclaimed cash is handed to its finder after six months, so the item leaves my held list and the payout is on record.\n\n**Rules (decided):**\n- The six months count from `date_received` (same `reward_date` as US-28, #28).\n- Per Civil Code Art. 719, the finder receives the full amount. No share is kept by the office and no costs are deducted.\n- Any staff member of the office holding the item can record the payout. No second approver; the record keeps who did it.\n- Only the last 4 digits of the finder's ID number are stored, never the full number.\n- Finder contact is always required (US-27, #27). If the finder never returns, the cash stays held and stays due.\n- Per Civil Code Art. 720, if the owner appears after the reward date but before the payout, the cash goes to the owner, the pending payout is cancelled, and the owner gives the finder a reward of one-tenth of the amount.\n\n**Acceptance Criteria (Given-When-Then):**\n- Given a held cash item past its reward date, when I confirm the finder's identity and record the payout, then the item is marked as paid to the finder, separately from \"released to owner\", along with the finder's name, the ID type, the last 4 digits of the ID number, the receipt number, the amount (the full held amount), the staff member and the time.\n- Given I try to record a payout without the ID type, the last 4 ID digits or a receipt number, then it is refused and the missing field is named.\n- Given a full ID number is entered, then it is refused; only 4 digits are accepted.\n- Given a cash item whose reward date hasn't arrived, when I try to record a finder payout, then it is refused.\n- Given the payout is recorded, then the item drops out of the staff reminders and the held-items list, and stays out of public search.\n- Given another office holds the item, when I try to record the payout, then it is refused.\n- Given a cash item past its reward date with no payout recorded, then it stays in the staff reminders and the held-items list until it is paid out or claimed by the owner.\n- Given a cash item past its reward date and not yet paid out, when the owner claims it, then the pending payout is cancelled with the staff member, time and reason recorded, the item is released to the owner, the one-tenth finder reward (amount and receipt number) is recorded, and the item drops out of the staff reminders.\n- Given the payout was already recorded, when I try to release the item to the owner or record a second payout, then it is refused.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -262,6 +262,21 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
+      "id": "github-5647589338",
+      "source": "github",
+      "title": "US-28: Cash 6-month reminder",
+      "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/28",
+      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want a reminder when lost cash is approaching the 6-month mark, so I know when it's time to release it to the finder under existing policy.\n\n**Rules (decided):**\n- `reward_date` is `date_received` + 6 months (same rule as US-34, #103).\n- A cash item is \"approaching\" from 14 days before its `reward_date`, and \"due\" from its `reward_date` onward.\n- The payout itself is recorded through US-34 (#103): full amount to the finder per Civil Code Art. 719.\n- Depends on US-27 (#27, finder contact required).\n\n**Acceptance Criteria (Given-When-Then):**\n- Given a held cash item 14 days or fewer before its `reward_date`, when I open the staff reminders, then it is listed as approaching, with its reward date, the finder's name and contact, and a link to record the payout (US-34, #103).\n- Given a held cash item on or past its `reward_date`, when I open the staff reminders, then it is listed as due, with the same details.\n- Given an item due today, then it is listed exactly once, as due, not as both approaching and due.\n- Given a due item whose finder never returns, then it stays listed as due until the payout is recorded or the owner claims it.\n- Given the finder payout is recorded (US-34, #103), then the item drops out of the reminders.\n- Given the owner claims a due item before the payout, then the item drops out of the reminders after release, and the release notes that the owner gives the finder one-tenth of the amount per Civil Code Art. 720.\n- Given staff correct an item's `date_received`, then its `reward_date` is recalculated, and the reminder moves with it.\n- Given another office holds the item, then it does not appear in my reminders.\n- Given a non-cash item, then it never appears in the reminders.\n\n**Technical notes:**\n- Move `staff_reminders_view` into a migration.\n",
+      "rewardUsd": 0,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 0,
+      "profitPerHourUsd": 0,
+      "eligible": false,
+      "rejectionReason": "expected profit below threshold"
+    },
+    {
       "id": "github-6562025459",
       "source": "github",
       "title": "Bug: Kraken staking rewards display $0.00 despite received crypto value",
@@ -282,21 +297,6 @@
       "title": "MP-V8 · Product validation: Buy crypto with cash: code first, then cash",
       "url": "https://github.com/Micopay/micopay-protocol/issues/500",
       "description": "> **How to submit:** apply through the Drips bot. Once **assigned**, copy [`docs/validation/TEMPLATE.md`](https://github.com/Micopay/micopay-protocol/blob/main/docs/validation/TEMPLATE.md) to `docs/validation/responses/MP-V8.md`, fill it in and open a **PR that only adds that file**. Rules: [`docs/validation/README.md`](https://github.com/Micopay/micopay-protocol/blob/main/docs/validation/README.md).\n\n**Drips research task** · `complexity: low` · **one assignee**.\n\n### What we want to learn\n\nWhether the **deposit** flow (you hand over cash, you receive crypto) is clear, including \"**code first, then cash**\" and the \"**I paid and they didn’t confirm**\" button. And whether you see **potential for MicoPay in your country**.\n\nThis is a **short test on testnet**, not a full trade: no real money moves and there are no cash agents online yet. When a step needs another person, stop there and tell us what you understood.\n\n### What you need\n\n- The app: **https://app.micopay.com.mx**\n- A browser on a computer or a phone.\n- The **Varial** wallet on **testnet**. It is the only wallet the web app supports today.\n\n### Your task\n\n1. Write step 1 of the template before signing in.\n2. Sign in with **Varial on testnet** and start a **deposit** (buy crypto with cash).\n3. Go as far as the app lets you. When it needs an agent on the other side, **stop** and read the screen you are on.\n4. Fill in the rest of the template.\n\n### Questions for this issue\n\n- Is it clear when you should hand over the cash, and when you should not yet?\n- What do you think happens if you press \"I paid and they didn’t confirm\"? Does it give you confidence?\n- What would worry you about handing cash to a stranger, and what would calm you down?\n\nSection **5. Your country** of the template is the same for every issue. Please answer it too.\n\n### Privacy first\n\n> ⚠️ No real names, phone numbers, addresses, wallet addresses, recovery phrases, private keys, transaction hashes or financial details. **No amounts of money**, not even ranges; a fee percentage is fine. General country or region only, and **your own** experience. English or Spanish. **Never share your recovery phrase with anyone, including us.**\n\n### Done when\n\nYour first-person, privacy-safe `docs/validation/responses/MP-V8.md` is merged. Answers must point at concrete parts of the app (a screen, a button, a sentence); generic text gets changes requested.\n",
-      "rewardUsd": 0,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 0,
-      "profitPerHourUsd": 0,
-      "eligible": false,
-      "rejectionReason": "expected profit below threshold"
-    },
-    {
-      "id": "github-6515267341",
-      "source": "github",
-      "title": "CryptoEnv.reset() retains accumulated reward from the previous episode",
-      "url": "https://github.com/AI4Finance-Foundation/FinRL/issues/1489",
-      "description": "`CryptoEnv.reset()` restores cash, holdings and total assets but leaves `gamma_return` and `episode_return` unchanged. `step()` continues accumulating into the old `gamma_return` and returns that accumulator at termination. Later episodes therefore receive reward from earlier episodes.\n\nReproduced at `5df023ed3faab4cb529bc7e2837a7fb331067cf2` with synthetic data and no market-data requests:\n\n```python\nimport numpy as np\nfrom finrl.meta.env_cryptocurrency_trading.env_multiple_crypto import CryptoEnv\n\nprices = np.array([[100.0], [100.0], [110.0], [120.0], [100.0]])\nenv = CryptoEnv(\n    {\"price_array\": prices, \"tech_array\": np.zeros_like(prices)},\n    initial_capital=1000.0, buy_cost_pct=0.0, sell_cost_pct=0.0,\n)\nenv.reset()\nfor action in (0.01, 0.0, 0.0):\n    _, reward, done, _ = env.step(np.array([action]))\nprint(reward)  # 0.00030364990234375\n\nenv.reset()\nfor _ in range(env.max_step):\n    _, reward, done, _ = env.step(np.array([0.0]))\nprint(env.total_asset, reward)  # 1000.0, 0.00029463119659423824\n```\n\nExpected: the second episode's reward is zero because it holds only cash throughout. Resetting during an unfinished episode also retains its accumulated reward.\n\nProposed fix: reset `gamma_return` and `episode_return` to their constructor values in `reset()`. I have a focused patch with regression tests for gains, losses, different discount factors, repeated identical episodes and mid-episode resets.\n\nAI assistance was used to investigate the bug, prepare the patch and run the regression tests.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -441,11 +441,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6607409710",
+      "id": "github-6583048160",
       "source": "github",
-      "title": "Payouts: statements, CSV, mark paid",
-      "url": "https://github.com/Sasy2/readerops/issues/102",
-      "description": "**Parent:** #91 · **Area:** `ui` · **Phase:** 4 · **Assignee:** Sasy (@Sasy2)\n**Requirements:** A-48 to A-51\n\n<!-- deps -->\n## Depends on\n**Depends on** (these must be closed before you start):\n- [ ] #87 Admin dashboard shell layout\n\n**Uses API from** (not required to start: build with mock data until these are merged, following Swagger at `/docs/api`):\n- [ ] #51 Monthly commission statements\n- [ ] #52 Payout CSV export and mark as paid\n\n## Goal\nPay distributors.\n\n## Tasks\n- [ ] Monthly statements; download the CSV; mark as paid with a reference\n\n## Done when\n- [ ] Works end to end\n- [ ] PR says `Closes #<this issue>`, is documented (what, why, how to test), and CI is green\n\n## Scope\nClient only (`client/`, docs). Do not change `server/`. Anything outside this ticket gets its own issue.",
+      "title": "[P3][L04] Paid plan feasibility",
+      "url": "https://github.com/ShriramSundaram/legendary-octo-flutter/issues/15",
+      "description": "Priority: P3. Dependencies: [M08](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/10), [M09](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/11); [L01](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/12)/[L02](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/13) cost evidence if included. Effort: 5 to 8 days after a business decision.\n\nLearner benefit: a sustainable optional upgrade with clear limits. Gap: no purchase, entitlement or support flow. Keep core reminders and starter review usable while validating willingness to pay.\n\nFirebase fit: Auth, Firestore entitlements and Functions purchase validation; integrate Google Play Billing through a compatible in_app_purchase package. RevenueCat is an alternative integration with separate commercial terms, not a Firebase service.\n\nAcceptance criteria:\n- Compare store fees, refunds, tax, support and paid AI usage against a proposed price using current terms.\n- Specify purchase restore, cancellation, grace period, server validation and entitlement reconciliation.\n- Complete a sandbox purchase and refund matrix on a physical device before launch.\n- Do not offer unlimited cloud speech until real usage distribution and margins support it.\n\nPlan and cost assumptions: https://github.com/ShriramSundaram/legendary-octo-flutter/issues/2\n\nScope: this issue records authorized planning work. Feature implementation is a later task. Preserve the separate GitHub Actions work; no emulator use.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -540,20 +540,6 @@
       "eligible": true
     },
     {
-      "id": "github-6524203711",
-      "source": "github",
-      "title": "[bounty] math module tour",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/265",
-      "description": "Hi! I'd like to claim the **$25 recurring micro-bounty: \"write a blog post tutorial for any single stdlib module\"** for `stdlib/math.ltl`.\n\n## Deliverables\n\n- `docs/blog/math-module-tour.ltlml` — tutorial\n- `examples/math_tour.ltl` — runnable companion program with 26 pinned test vectors\n\n## What the tutorial covers\n\n- The import form that actually works (`from stdlib.math import ...`, not `import math`)\n- 26 exact pinned vectors in a table, each asserted by the companion program\n- Four traps: `floor`/`ceil` rounding toward ±infinity (`floor(-2.5) == -3`), `clamp` returning `float`, `sign(0) == 0`, and `log` being the natural log\n- Float-pinning rules: exact literals for `sqrt`/`log`/`exp`, but `sin(PI / 6.0) == 0.49999999999999994`, so trig should not be pinned at non-trivial angles\n- The callable-surface finding: 12 of `math.ltl`'s 24 declared functions bind on the Python backend, `log`/`exp` are undeclared yet callable, and `ln`/`log2`/`log10` are declared yet unbound — the tutorial pins what actually works instead of documenting the declaration list\n\n## Verification\n\n```bash\npython3 -m lateralus_lang run examples/math_tour.ltl\n#   26 passed, 0 failed  (26 vectors)\n\npython3 -m lateralus_lang check examples/math_tour.ltl\n#   OK\n```\n\nBoth were run from the repo root on `main` (lateralus-lang 3.2.0, Python 3.14).\n\nPR: #266 (`xilin2020:bounty/math-module-tour`, signed-off commit). Happy to split or reword anything; `stdlib/math.ltl` is otherwise left untouched.",
-      "rewardUsd": 25,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 25,
-      "profitPerHourUsd": 300,
-      "eligible": true
-    },
-    {
       "id": "github-6561862690",
       "source": "github",
       "title": "[bounty] benchmark-ingest — stdlib micro-benchmarks (xxhash64 / lz4 / chacha20 / aho_corasick / radix_sort)",
@@ -565,6 +551,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 250,
       "profitPerHourUsd": 3000,
+      "eligible": true
+    },
+    {
+      "id": "github-6524203711",
+      "source": "github",
+      "title": "[bounty] math module tour",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/265",
+      "description": "Hi! I'd like to claim the **$25 recurring micro-bounty: \"write a blog post tutorial for any single stdlib module\"** for `stdlib/math.ltl`.\n\n## Deliverables\n\n- `docs/blog/math-module-tour.ltlml` — tutorial\n- `examples/math_tour.ltl` — runnable companion program with 26 pinned test vectors\n\n## What the tutorial covers\n\n- The import form that actually works (`from stdlib.math import ...`, not `import math`)\n- 26 exact pinned vectors in a table, each asserted by the companion program\n- Four traps: `floor`/`ceil` rounding toward ±infinity (`floor(-2.5) == -3`), `clamp` returning `float`, `sign(0) == 0`, and `log` being the natural log\n- Float-pinning rules: exact literals for `sqrt`/`log`/`exp`, but `sin(PI / 6.0) == 0.49999999999999994`, so trig should not be pinned at non-trivial angles\n- The callable-surface finding: 12 of `math.ltl`'s 24 declared functions bind on the Python backend, `log`/`exp` are undeclared yet callable, and `ln`/`log2`/`log10` are declared yet unbound — the tutorial pins what actually works instead of documenting the declaration list\n\n## Verification\n\n```bash\npython3 -m lateralus_lang run examples/math_tour.ltl\n#   26 passed, 0 failed  (26 vectors)\n\npython3 -m lateralus_lang check examples/math_tour.ltl\n#   OK\n```\n\nBoth were run from the repo root on `main` (lateralus-lang 3.2.0, Python 3.14).\n\nPR: #266 (`xilin2020:bounty/math-module-tour`, signed-off commit). Happy to split or reword anything; `stdlib/math.ltl` is otherwise left untouched.",
+      "rewardUsd": 25,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
       "eligible": true
     },
     {
@@ -582,11 +582,11 @@
       "eligible": true
     },
     {
-      "id": "github-6630818063",
+      "id": "github-6404649675",
       "source": "github",
-      "title": "[bounty] stdlib.fmt tutorial for fixed-width output",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/1040",
-      "description": "I'd like to claim the $25 recurring micro-bounty in BOUNTIES.md for an original tutorial on `stdlib.fmt`. The tutorial will show how to build a fixed-width inventory line using `pad_left` and `pad_right`, with a runnable example and an exact expected-output test vector. I plan to contribute the source and tutorial under MIT with a signed-off commit.\n\nI will use AI assistance and disclose it in the pull request. Could you confirm this topic is available and the documented Bitcoin Lightning payout is still offered after merge? I'll start implementation after you confirm the claim.\n",
+      "title": "[bounty] base64 stdlib tutorial: availability and payment",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/77",
+      "description": "### Component\n\nLanguage Syntax\n\n### Problem or motivation\n\nI’d like to claim the $25 micro-bounty for a tutorial on `stdlib/base64.ltl`, including runnable examples and RFC 4648 test vectors.\n\n### Proposed solution\n\nBefore starting, please confirm that the bounty is active and funded, the submission and contributor eligibility requirements, and whether payment through PayPal or bank transfer is possible.\n\n### Code examples\n\n```lateralus\n\n```\n\n### Alternatives considered\n\n_No response_\n\n### Is this a breaking change?\n\nNo",
       "rewardUsd": 25,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T05:07:09.095Z",
+  "generatedAt": "2026-11-27T15:13:29.730Z",
   "policy": {
     "dryRun": true,
     "maxSpendPerTaskUsd": 0,
@@ -247,11 +247,11 @@
       "eligible": true
     },
     {
-      "id": "github-6338080613",
+      "id": "github-5647589338",
       "source": "github",
-      "title": "Opponent suggests giving a mechanics-related book instead of cash reward",
-      "url": "https://github.com/StreetRod3/StreetRod3/issues/122",
-      "description": "Once per a while the opponent can suggest that they can give you a book about mechanics, for example about some specific engine types. If user has this book in their inventory, then cars equipped with it are having few additional horsepower (if it's about enignes) or grip (if it's suspension) for cars equipped with this particular gear.",
+      "title": "US-28: Cash 6-month reminder",
+      "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/28",
+      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want a reminder when lost cash is approaching the 6-month mark, so I know when it's time to release it to the finder under existing policy.\n\n**Rules (decided):**\n- `reward_date` is `date_received` + 6 months (same rule as US-34, #103).\n- A cash item is \"approaching\" from 14 days before its `reward_date`, and \"due\" from its `reward_date` onward.\n- The payout itself is recorded through US-34 (#103): full amount to the finder per Civil Code Art. 719.\n- Depends on US-27 (#27, finder contact required).\n\n**Acceptance Criteria (Given-When-Then):**\n- Given a held cash item 14 days or fewer before its `reward_date`, when I open the staff reminders, then it is listed as approaching, with its reward date, the finder's name and contact, and a link to record the payout (US-34, #103).\n- Given a held cash item on or past its `reward_date`, when I open the staff reminders, then it is listed as due, with the same details.\n- Given an item due today, then it is listed exactly once, as due, not as both approaching and due.\n- Given a due item whose finder never returns, then it stays listed as due until the payout is recorded or the owner claims it.\n- Given the finder payout is recorded (US-34, #103), then the item drops out of the reminders.\n- Given the owner claims a due item before the payout, then the item drops out of the reminders after release, and the release notes that the owner gives the finder one-tenth of the amount per Civil Code Art. 720.\n- Given staff correct an item's `date_received`, then its `reward_date` is recalculated, and the reminder moves with it.\n- Given another office holds the item, then it does not appear in my reminders.\n- Given a non-cash item, then it never appears in the reminders.\n\n**Technical notes:**\n- Move `staff_reminders_view` into a migration.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -262,11 +262,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-5647589338",
+      "id": "github-6338080613",
       "source": "github",
-      "title": "US-28: Cash 6-month reminder",
-      "url": "https://github.com/DavidDgxd/BIRUK-SUBLI/issues/28",
-      "description": "### Epic: E8 | Track: Staff | Story Points: 3\n\n**User Story:**\nAs office staff, I want a reminder when lost cash is approaching the 6-month mark, so I know when it's time to release it to the finder under existing policy.\n\n**Rules (decided):**\n- `reward_date` is `date_received` + 6 months (same rule as US-34, #103).\n- A cash item is \"approaching\" from 14 days before its `reward_date`, and \"due\" from its `reward_date` onward.\n- The payout itself is recorded through US-34 (#103): full amount to the finder per Civil Code Art. 719.\n- Depends on US-27 (#27, finder contact required).\n\n**Acceptance Criteria (Given-When-Then):**\n- Given a held cash item 14 days or fewer before its `reward_date`, when I open the staff reminders, then it is listed as approaching, with its reward date, the finder's name and contact, and a link to record the payout (US-34, #103).\n- Given a held cash item on or past its `reward_date`, when I open the staff reminders, then it is listed as due, with the same details.\n- Given an item due today, then it is listed exactly once, as due, not as both approaching and due.\n- Given a due item whose finder never returns, then it stays listed as due until the payout is recorded or the owner claims it.\n- Given the finder payout is recorded (US-34, #103), then the item drops out of the reminders.\n- Given the owner claims a due item before the payout, then the item drops out of the reminders after release, and the release notes that the owner gives the finder one-tenth of the amount per Civil Code Art. 720.\n- Given staff correct an item's `date_received`, then its `reward_date` is recalculated, and the reminder moves with it.\n- Given another office holds the item, then it does not appear in my reminders.\n- Given a non-cash item, then it never appears in the reminders.\n\n**Technical notes:**\n- Move `staff_reminders_view` into a migration.\n",
+      "title": "Opponent suggests giving a mechanics-related book instead of cash reward",
+      "url": "https://github.com/StreetRod3/StreetRod3/issues/122",
+      "description": "Once per a while the opponent can suggest that they can give you a book about mechanics, for example about some specific engine types. If user has this book in their inventory, then cars equipped with it are having few additional horsepower (if it's about enignes) or grip (if it's suspension) for cars equipped with this particular gear.",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -441,11 +441,11 @@
       "rejectionReason": "expected profit below threshold"
     },
     {
-      "id": "github-6583048160",
+      "id": "github-6648824441",
       "source": "github",
-      "title": "[P3][L04] Paid plan feasibility",
-      "url": "https://github.com/ShriramSundaram/legendary-octo-flutter/issues/15",
-      "description": "Priority: P3. Dependencies: [M08](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/10), [M09](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/11); [L01](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/12)/[L02](https://github.com/ShriramSundaram/legendary-octo-flutter/issues/13) cost evidence if included. Effort: 5 to 8 days after a business decision.\n\nLearner benefit: a sustainable optional upgrade with clear limits. Gap: no purchase, entitlement or support flow. Keep core reminders and starter review usable while validating willingness to pay.\n\nFirebase fit: Auth, Firestore entitlements and Functions purchase validation; integrate Google Play Billing through a compatible in_app_purchase package. RevenueCat is an alternative integration with separate commercial terms, not a Firebase service.\n\nAcceptance criteria:\n- Compare store fees, refunds, tax, support and paid AI usage against a proposed price using current terms.\n- Specify purchase restore, cancellation, grace period, server validation and entitlement reconciliation.\n- Complete a sandbox purchase and refund matrix on a physical device before launch.\n- Do not offer unlimited cloud speech until real usage distribution and margins support it.\n\nPlan and cost assumptions: https://github.com/ShriramSundaram/legendary-octo-flutter/issues/2\n\nScope: this issue records authorized planning work. Feature implementation is a later task. Preserve the separate GitHub Actions work; no emulator use.",
+      "title": "Shield mode: paid business closed groups (evolve Super Secure, owner-paid seat plans)",
+      "url": "https://github.com/TKshadow018/dost/issues/73",
+      "description": "Part of epic #70. Builds on #67 / PR #68 (Super Secure MVP, `SUPER_SECURE_MVP.md`).\n\n## Goal\n**Shield** (renaming today's \"Super Secure\") is the **paid, business-level** mode: closed organisations where managers admit specific members, with group and 1:1 chat. Shield data is kept separate from AI and People, is **never used for AI, analytics, product improvement or testing**, and can be exported or moved to the customer's own server.\n\n## Scope\n- Rename the UI and docs \"Super Secure\" → \"Shield\". Firestore paths (`secureOrgs/...`) can keep their names; just document the mapping.\n- Show Shield in Settings → Modes, behind `DOST_SUPER_SECURE_ENABLED` and `secureOrgConfig/superSecure`.\n- **Billing model: the organisation owner pays.** Members join for free. The plan sets the seat cap:\n  - **Shield Team**: up to 10 active members.\n  - **Shield Business**: up to 25 active members (today's MVP maximum).\n  - Prices are in the billing issue.\n- When a subscription lapses, the org becomes **read-only** after a 14-day grace period (owner and members can read and export, but not send). Data is not deleted automatically.\n- Owner-only **export** of org messages and the member list (JSON) from the app. \"Move to your own server\" stays a documented manual service (see `docs/super-secure/`), not self-service.\n- Keep the MVP defaults (text only, 4,000 chars, no E2E) unless this issue's PR documents and gets approval for a change. **Do not market Shield as end-to-end encrypted.** Describe it as \"closed, admin-controlled, isolated from AI and analytics, encrypted in transit and at rest by Google Cloud\".\n\n## Server-side enforcement\n- `premium_verify.php` sets an org-scoped entitlement: a custom claim on the owner (`dostShieldUntil`, `dostShieldSeats`), which a trusted server endpoint mirrors to `secureOrgs/{orgId}.plan` (`seatLimit`, `activeUntil`). Clients can't write that field.\n- Firestore rules: creating an org requires a valid owner Shield claim. Admitting members checks `activeMemberCount < plan.seatLimit`. Sending messages requires `plan.activeUntil + grace > request.time`.\n- Rules tests for each of these, plus the existing 27 Super Secure tests, must pass in `tests/firestore`.\n\n## Acceptance criteria\n- [ ] A user without a Shield claim can't create an org (rules test).\n- [ ] Shield Team blocks the 11th member, and Shield Business blocks the 26th (rules test).\n- [ ] An expired plan blocks sending after the grace period, but reading and export still work (rules test).\n- [ ] Shield data paths are never read by AI, telemetry or backup code (code search plus unit test of the telemetry and archive exclusions).\n- [ ] The UI says \"Shield\" everywhere. `SUPER_SECURE_MVP.md` and `docs/super-secure/*` are updated.\n\n## Out of scope\n- E2E encryption for Shield (could later reuse the Cipher crypto).\n- SSO/SCIM.\n- Per-seat billing through Play.\n- Media.\n- Automatic hosting migration.\n- Invoicing outside Google Play.\n\n## Branching\nBranch from `development`. Open the PR against `development` (not `main`). Keep feature flags **off by default**; nothing here may enable billing or a paid mode in production without the owner's explicit OK.\n",
       "rewardUsd": 0,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
@@ -481,6 +481,20 @@
       "risk": 0.15,
       "expectedProfitUsd": 25,
       "profitPerHourUsd": 300,
+      "eligible": true
+    },
+    {
+      "id": "github-6441036930",
+      "source": "github",
+      "title": "[bounty] benchmark-ingest",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/156",
+      "description": "Claiming `[bounty] benchmark-ingest` ($250) per `BOUNTIES.md`.\n\nPlan:\n- Extend `benchmarks/run_benchmarks.py` with a `stdlib` group that assembles one combined source from `stdlib/xxhash.ltl`, `stdlib/lz4.ltl`, `std/crypto/chacha20.ltl` and `stdlib/aho_corasick.ltl`, plus the radix sort from `stdlib/algorithms.ltl`.\n- Five micro-benchmarks, same inputs across backends: xxhash64 over 2 MB, lz4 compress+decompress round-trip of 4 MB, chacha20 over 1 MB, aho-corasick with 1,000 patterns over 1 MB, radix_sort_u32 on 100,000 keys.\n- Matching reference implementations in `benchmarks/reference/bench.py` and `bench.js` so the Python and Node numbers come from the same harness, not from a separate script.\n- Commit `benchmarks/results/stdlib_results.md` with the table produced by the harness, plus a note on the machine and iteration count.\n\nWorking with signed-off commits (`git commit -s`), ASCII only per CONTRIBUTING. Payout preference: Ko-Fi. Will link the PR here once the numbers are reproducible.\n\nNote for transparency: I use AI assistance while writing code, with the harness run locally and every result in the table reproduced before I post it.\n",
+      "rewardUsd": 250,
+      "estimatedCostUsd": 0,
+      "estimatedTimeSeconds": 300,
+      "risk": 0.15,
+      "expectedProfitUsd": 250,
+      "profitPerHourUsd": 3000,
       "eligible": true
     },
     {
@@ -526,17 +540,17 @@
       "eligible": true
     },
     {
-      "id": "github-6441036930",
+      "id": "github-6515665343",
       "source": "github",
-      "title": "[bounty] benchmark-ingest",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/156",
-      "description": "Claiming `[bounty] benchmark-ingest` ($250) per `BOUNTIES.md`.\n\nPlan:\n- Extend `benchmarks/run_benchmarks.py` with a `stdlib` group that assembles one combined source from `stdlib/xxhash.ltl`, `stdlib/lz4.ltl`, `std/crypto/chacha20.ltl` and `stdlib/aho_corasick.ltl`, plus the radix sort from `stdlib/algorithms.ltl`.\n- Five micro-benchmarks, same inputs across backends: xxhash64 over 2 MB, lz4 compress+decompress round-trip of 4 MB, chacha20 over 1 MB, aho-corasick with 1,000 patterns over 1 MB, radix_sort_u32 on 100,000 keys.\n- Matching reference implementations in `benchmarks/reference/bench.py` and `bench.js` so the Python and Node numbers come from the same harness, not from a separate script.\n- Commit `benchmarks/results/stdlib_results.md` with the table produced by the harness, plus a note on the machine and iteration count.\n\nWorking with signed-off commits (`git commit -s`), ASCII only per CONTRIBUTING. Payout preference: Ko-Fi. Will link the PR here once the numbers are reproducible.\n\nNote for transparency: I use AI assistance while writing code, with the harness run locally and every result in the table reproduced before I post it.\n",
-      "rewardUsd": 250,
+      "title": "[bounty] stdlib.base64 tutorial",
+      "url": "https://github.com/bad-antics/lateralus-lang/issues/254",
+      "description": "I would like to claim the recurring $25 stdlib tutorial bounty for `stdlib/base64.ltl`.\n\nPlanned deliverable:\n- A concise tutorial covering encode/decode, URL-safe variants, validation, and length helpers.\n- A runnable Lateralus example.\n- A pinned RFC 4648 test vector and round-trip checks.\n\nI will keep the change scoped to the tutorial/example and tests, use a signed-off commit, and submit a PR after local verification.\r\n",
+      "rewardUsd": 25,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
       "risk": 0.15,
-      "expectedProfitUsd": 250,
-      "profitPerHourUsd": 3000,
+      "expectedProfitUsd": 25,
+      "profitPerHourUsd": 300,
       "eligible": true
     },
     {
@@ -573,20 +587,6 @@
       "title": "[bounty] stdlib uuid module tutorial",
       "url": "https://github.com/bad-antics/lateralus-lang/issues/95",
       "description": "Hi maintainers,\n\nI would like to claim the recurring $25 micro-bounty for authoring a comprehensive tutorial and test suite for the `stdlib/uuid` module (UUIDv4 and UUIDv7 generation, parsing, validation, and serialization per RFC 4122 & RFC 9562).\n\n### Scope & Deliverables\n- **Tutorial Article:** `docs/blog/uuid-tutorial.ltlml` detailing UUID generation, timestamp extraction from UUIDv7, RFC 4122 version/variant bit verification, and error handling.\n- **Test Suite:** `tests/test_stdlib_uuid.py` validating 100% test vectors across all targets (Python, JS, C).\n- **Compliance:** 100% original work, MIT licensed, signed-off commit (`git commit -s`), and passing tests.\n\nPull request is ready and will be linked to this issue.\n\n### Payout Details\n- **PayPal:** `askgsm@live.fr` / https://paypal.me/asskoure\n- **EVM (Base / Ethereum):** `0xC10373008eFb38192C87C375ac63aB12E27C684C`\n- **Ko-Fi:** https://ko-fi.com/asskoure\n",
-      "rewardUsd": 25,
-      "estimatedCostUsd": 0,
-      "estimatedTimeSeconds": 300,
-      "risk": 0.15,
-      "expectedProfitUsd": 25,
-      "profitPerHourUsd": 300,
-      "eligible": true
-    },
-    {
-      "id": "github-6404649675",
-      "source": "github",
-      "title": "[bounty] base64 stdlib tutorial: availability and payment",
-      "url": "https://github.com/bad-antics/lateralus-lang/issues/77",
-      "description": "### Component\n\nLanguage Syntax\n\n### Problem or motivation\n\nI’d like to claim the $25 micro-bounty for a tutorial on `stdlib/base64.ltl`, including runnable examples and RFC 4648 test vectors.\n\n### Proposed solution\n\nBefore starting, please confirm that the bounty is active and funded, the submission and contributor eligibility requirements, and whether payment through PayPal or bank transfer is possible.\n\n### Code examples\n\n```lateralus\n\n```\n\n### Alternatives considered\n\n_No response_\n\n### Is this a breaking change?\n\nNo",
       "rewardUsd": 25,
       "estimatedCostUsd": 0,
       "estimatedTimeSeconds": 300,
